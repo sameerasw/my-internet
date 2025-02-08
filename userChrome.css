@@ -1,0 +1,230 @@
+/* Zen transparency */
+:root{
+	--zen-main-browser-background: #00000000 !important;
+}
+
+/* Hidden buttons */
+/* #nav-bar-overflow-button, */
+#zen-current-workspace-indicator{
+	display: none
+}
+
+/* #nav-bar-overflow-button{
+	width: 2px !important;
+	opacity: 0 !important;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	
+	&:hover{
+		width: 100% !important;
+		opacity: 1 !important;
+	}
+}
+ */
+/* Overlay buttons at the bottom of tab list */
+/* #downloads-button{
+	position: absolute;
+	bottom: 0.8em;
+	right: 0em;
+	scale: 1;
+	z-index: 1000;
+	width: fit-content !important;
+	
+	.toolbarbutton-text{
+		display: none !important;
+	}
+	
+	.toolbarbutton-badge{
+		display: none !important;
+	}
+} */
+/* #unified-extensions-button{
+	position: absolute;
+	bottom: 4.5em;
+	left: 1em;
+	z-index: 1000;
+} */
+
+/* Bottom workspace pill */
+/* #zen-workspaces-button{
+	width: 100% !important;
+}
+#zen-sidebar-icons-wrapper{
+	background-color: var(--zen-toolbar-element-bg) !important;
+	border-radius: 1em;
+	padding: 0.25em !important;
+} */
+
+
+/* Make 3 dot menu hidden */
+/* #PanelUI-menu-button{
+	opacity: 0 !important;
+	transition: opacity 0.3s ease-in-out !important;
+	&:hover{
+		opacity: 1 !important;
+	}
+} */
+
+/* #titlebar{
+	border-radius: 1.5em !important;
+} */
+
+/* reduce the separaters width */
+#vertical-pinned-tabs-container-separator, #tabbrowser-arrowscrollbox-periphery:before, #TabsToolbar-customization-target:after{
+	width: 30% !important;
+}
+
+/* Modify new tab entry */
+[label="Super Speedy Dial"]{
+	.tab-label-container:after{
+		content: "Home" !important;
+	}
+	
+	label{
+		display: none !important;
+	}
+	
+	.tab-icon-image{
+		content: url("chrome://branding/content/icon32.png") !important;
+		border-radius: 100px !important;
+		mix-blend-mode: difference !important;
+	}
+}
+
+
+/* fix workspaces icons */
+toolbarbutton{
+	padding: 0.1em !important;
+}
+
+#zen-sidebar-top-buttons{
+	
+	.titlebar-buttonbox-container{
+		display: none !important;
+	}
+	}
+
+#unified-extensions-button{
+	margin-left: 0.25em !important;
+	image{
+	border-radius: 100px !important;
+		scale: 1.2;
+	}
+}
+
+#identity-permission-box{
+	display: none !important;
+}
+
+[zen-compact-mode="true"]{
+	#titlebar{
+	height: 70% !important;
+/* 		margin: auto !important; */
+		border-radius: 1.5em !important;
+		top: 50% !important;
+		transform: translateY(-50%) !important;
+	}
+}
+
+.tabbrowser-tab, #tabbrowser-arrowscrollbox{
+	transition: all 0.5s ease-in-out !important;
+}
+
+#zen-sidebar-icons-wrapper{
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out !important;
+	
+	&:hover{
+		opacity: 1 !important;
+	}
+}
+
+.unified-extensions-item-action-button{
+	.unified-extensions-item-message-deck{
+		display: none !important;
+	}
+}
+
+/* #main-window{
+	background-image: url('https://gist.github.com/user-attachments/assets/d35320a9-5d2a-414b-8f4d-a9b9fd687710') !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+} */
+
+
+/* no shadow and gaps */
+hbox.browserSidebarContainer, #zen-tabbox-wrapper {
+	box-shadow: none !important;
+	margin: 0 !important;
+}
+
+#zen-appcontent-navbar-container{
+	display: none !important;
+}
+
+#zen-appcontent-wrapper{
+	left: 0 !important;
+	top: 0 !important;
+	max-width: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* #zen-browser-tabs-wrapper{
+	background-image: url(https://lastfm-recently-played.vercel.app/api?user=S4M33R4&loved=true&header_size=none&footer_style=none&width=300&bg_color=000000ee&count=1);
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+	background-size: contain !important;
+} */
+/* #urlbar{
+	transition: scale 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+	scale: 0 !important;
+	opacity: 0 !important;
+}
+
+#urlbar[open][zen-floating-urlbar="true"]{
+	opacity: 1 !important;
+	scale: 1 !important;
+} */
+
+/* Ongoing experiemnts */
+#tabbrowser-arrowscrollbox, tab{
+	transition: all 0.3s ease-in-out !important;
+}
+
+tab:not([zen-essential='true']) .tab-background{
+	transition: all 0.2s ease-in-out !important;
+	scale: 0 !important;
+}
+
+tab:not([zen-essential='true']) .tab-background[selected]{
+	scale: 1 !important;
+}
+
+#tabbrowser-tabpanels hbox{
+/* 	transition: all 0.2s ease-out !important; */
+	transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
+	scale: 0.8 !important;
+	opacity: 0;
+/* 	left: -100vw; */
+}
+#tabbrowser-tabpanels hbox.deck-selected{
+	scale: 1 !important;
+	opacity: 1 !important;
+/* 	left: 0 !important; */
+}
+
+#browser .browserContainer{
+	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
+}
+
+[zen-compact-mode="true"] #navigator-toolbox{
+	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.1) !important;
+}
+
+#browser:has(#urlbar[open][zen-floating-urlbar="true"]) .browserContainer {
+  pointer-events: none;
+	scale: 1.1 !important;
+  filter: blur(10px) brightness(70%) !important;
+}
