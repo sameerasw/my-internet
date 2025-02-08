@@ -1,4 +1,8 @@
-.content bard-sidenav-container bard-sidenav{
+:root .dark-theme{
+  --gem-sys-color--surface: #00000000;
+  }
+  
+  .content bard-sidenav-container bard-sidenav{
     width: 1% !important;
     opacity: 0.2;
     transition: all 0.5s ease-in-out;
@@ -8,6 +12,9 @@
     }
   }
   
+  [_nghost-ng-c3432699829]{
+    background-color: #00000000;
+  }
   
   .content-container chat-window .chat-container .bottom-container{
     margin-bottom: 30px;
@@ -17,4 +24,6 @@
     display: none;
   }
   
-  
+  input-container hallucination-disclaimer{
+    display: none;
+  }
