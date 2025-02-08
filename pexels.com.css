@@ -1,0 +1,11 @@
+body, h4, h3, h2, h1, h5, h6, span, a{
+    color: #ffffff !important;
+  }
+  
+  .Navbar_container__PS9oP{
+    background-color: #00000000;
+    backdrop-filter: blur(60px);
+    border: none;
+    background: #00000000;
+    box-shadow: none;
+  }

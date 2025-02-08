@@ -1,0 +1,12 @@
+:root{
+    --color-surface-container-lowest: #00000000;
+    --color-sidebars-background: #00000000;
+  }
+  
+  .makersuite-layout, .layout-navbar, select-header, .navbar-header, .router-outlet-wrapper, .nav-toggle-wrapper, .chunk-editor-main, ms-run-settings, .footer{
+    background-color: #00000000;
+  }
+  
+  div.disclaimer-container.ng-tns-c1318864088-1.ng-star-inserted{
+    display: none;
+  }

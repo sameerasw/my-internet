@@ -1,0 +1,38 @@
+#site-wrap, body{
+    background-color: #00000000;
+  }
+  
+  :root{
+    --darkreader-neutral-background: #00000000;
+    --darkreader-background-ffffff: #00000000
+  }
+  
+  ul.side-menu-footer, #pagefooter {
+    display: none;
+    
+  }
+  
+  div.hide-in-background.themed-background-primary-fill-only.left-off-canvas-menu.color-selection-live-mode {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  
+  .element-card{
+    border-radius: 1em;
+    background-color: #00000044;
+  }
+  
+   .course-banner{
+     border-radius: 1em 1em 0 0;
+   }
+  
+   .bb-offcanvas-panel{
+     background-color: #111111;
+   }
+  
+   body{
+     background: none !important;
+   }

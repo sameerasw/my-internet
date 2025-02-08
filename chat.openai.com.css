@@ -1,0 +1,19 @@
+#__next .flex-col .text-token-primary:has(.inline-flex){
+    opacity: 0.01;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  
+  .flex-col .flex-col :last-child:has(.text-center){
+    margin-bottom: 20px;
+  }
+  
+  body{
+      background-color: var(--arc-palette-background) !important;
+  }
+  
+  div.mb-5.text-2xl.font-medium {
+    color: var(--arc-palette-foregroundSecondary);
+  }

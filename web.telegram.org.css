@@ -1,0 +1,23 @@
+:root{
+    --color-background: #00000000;
+    --theme-background-color: #00000000;
+    --color-borders: #00000000;
+    --color-light-shadow: #00000000;
+  }
+  
+  body, html, html.theme-dark, #root, html.theme-dark .ThfRMqwq::before, html.theme-dark .C6IaXYew:not(.K1xhz7U5):not(.CwoXMwaR)::after{
+    background-image: none !important;
+  }
+  
+  .C6IaXYew, .ThfRMqwq{
+    background-color: #00000000;
+  }
+  
+  .menu-container{
+    background-color: #000000;
+  }
+  
+  .settings-main-menu{
+    border: none;
+    box-shadow: none;
+  }

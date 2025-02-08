@@ -1,0 +1,11 @@
+:root{
+    --color-background-body: transparent;
+    --color-background-base: transparent;
+    --shadow-elevation-1: none;
+    --color-background-alt: transparent;
+  }
+  
+  .video-player, .video-player__container, .channel-root{
+    background: #00000000 !important;
+    background-color: #00000000 !important;
+  }

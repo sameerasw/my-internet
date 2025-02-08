@@ -1,0 +1,23 @@
+:root{
+    --background-secondary: #00000000;
+    --background-primary: #00000000;
+    --background-tertiary: #00000000;
+    --home-background: #00000000;
+    --bg-base-primary: #00000000;
+  }
+  
+  .theme-light, .theme-dark{
+    --__header-bar-background: #00000000;
+    --shadow-border-filter: #00000000;
+    --border-faint: #00000000;
+    --border-strong: #00000000;
+    --background-secondary-alt: #00000000;
+  }
+  
+  img.bannerImg_f37cb1{
+    border-radius: 0 0 1em 1em;
+  }
+  
+  .callContainer_cb9592{
+    background: #00000000;
+  }

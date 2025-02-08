@@ -1,0 +1,45 @@
+.dark{
+    --app-background: #00000000;
+    --app-background-stripe: #00000000;
+    --WDS-app-wash: #00000000;
+    --panel-header-background: #00000000;
+    --navbar-background: #00000000;
+    --panel-background-lighter: #00000000;
+    --intro-background: #00000000;
+    --background-default: #00000000;
+    --butterbar-default-background: #00000000;
+    --filters-container-background: #00000000;
+    --search-input-container-background: #00000000;
+    --search-container-background: #00000000;
+    --conversation-header-border: #00000000;
+    --border-list: #00000000;
+    --conversation-panel-background: #00000000;
+    --rich-text-panel-background: #00000000;
+  --drawer-background-deep: #00000000;
+  --drawer-section-background: #00000000;
+  }
+  
+  .two, .three{
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    margin: 0;
+    top: 0;
+  }
+  
+  .xu3j5b3, .xvkby78::after, .xso031l{
+    border: none;
+    outline: none;
+  }
+  
+  ._al_d, div.x9f619.x78zum5.x6s0dn4.xl56j7k.xcxhlts.xktsk01.x1fqp7bg.x1d52u69.x889kno.x178xt8z.x13fuv20.xyj1x25.xzwifym {
+    display: none;
+  }
+  
+  [data-asset-chat-background-dark], div._ajv7:nth-child(3){
+    display: none;;
+  }
+  
+  .x13x2ugz{
+    border-radius: 2em;
+  }

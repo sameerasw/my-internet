@@ -1,0 +1,20 @@
+.content bard-sidenav-container bard-sidenav{
+    width: 1% !important;
+    opacity: 0.2;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+      width: 70px !important;
+      opacity: 1;
+    }
+  }
+  
+  
+  .content-container chat-window .chat-container .bottom-container{
+    margin-bottom: 30px;
+  }
+  
+  div.banner.regular.experiment.desktop, .bottom-container[_ngcontent-ng-c868377058]:before {
+    display: none;
+  }
+  
+  

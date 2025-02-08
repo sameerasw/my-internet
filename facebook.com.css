@@ -1,0 +1,20 @@
+:root{
+    --web-wash: #00000000;
+    --nav-bar-background: #00000000;
+  }
+  
+  body, #mount_0_0_u1 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3){
+    background-color: #00000000;
+  }
+  
+  div.x2lah0s.xyamay9.x1pi30zi.x1l90r2v.x1swvt13 {
+    display: none;
+  }
+  
+  div.xnp8db0:nth-child(1),div.xnp8db0:nth-child(4){
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      opacity: 1;
+    }
+  }
