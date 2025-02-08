@@ -1,15 +1,19 @@
 :root{
-    --bg-color: #00000000;
+  --bg-color: #00000000;
+}
+
+footer{
+  display: none;
+}
+
+header{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    opacity: 1;
   }
-  
-  footer{
-    display: none;
-  }
-  
-  header{
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    &:hover{
-      opacity: 1;
-    }
-  }
+}
+
+#words .word letter{
+  color: var(--ss-font-placeholder-color) !important;
+}
