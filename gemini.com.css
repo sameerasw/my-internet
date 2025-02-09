@@ -1,29 +1,43 @@
 :root .dark-theme{
-  --gem-sys-color--surface: #00000000;
+--gem-sys-color--surface: #00000000;
+}
+
+.content bard-sidenav-container bard-sidenav{
+  width: 1% !important;
+  opacity: 0.1;
+  transition: all 0.5s ease-in-out;
+  &:hover{
+    width: 15% !important;
+    opacity: 1;
   }
-  
-  .content bard-sidenav-container bard-sidenav{
-    width: 1% !important;
-    opacity: 0.2;
-    transition: all 0.5s ease-in-out;
-    &:hover{
-      width: 70px !important;
-      opacity: 1;
-    }
+}
+
+[_nghost-ng-c3432699829]{
+  background-color: #00000000 !important;
+  background: none !important;
+}
+
+.content-container chat-window .chat-container .bottom-container{
+  margin-bottom: 30px;
+}
+
+input-container::before {
+  display: none;
+}
+
+input-container hallucination-disclaimer{
+  display: none;
+}
+
+.input-area-container {
+  margin-bottom: 2em !important;
+}
+
+.side-nav-menu-button, .boqOnegoogleliteOgbOneGoogleBar, top-bar-actions{
+  opacity: 0 !important;
+  transition: opacity 0.3s ease-in-out !important;
+
+  &:hover{
+    opacity: 1 !important;
   }
-  
-  [_nghost-ng-c3432699829]{
-    background-color: #00000000;
-  }
-  
-  .content-container chat-window .chat-container .bottom-container{
-    margin-bottom: 30px;
-  }
-  
-  div.banner.regular.experiment.desktop, .bottom-container[_ngcontent-ng-c868377058]:before {
-    display: none;
-  }
-  
-  input-container hallucination-disclaimer{
-    display: none;
-  }
+}
