@@ -2,7 +2,7 @@
 
 My custom CSS for websites I visit the most.
 
-[Browse the repository](https://github.com/sameerasw/my-internet)
+[Browse the repository](https://github.com/sameerasw/my-internet) (More website themes available)
 
 [Visit my website](https://www.sameerasw.com)
 
