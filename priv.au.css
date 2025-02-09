@@ -1,0 +1,31 @@
+:root{
+--color-header-background: #00000000;
+--color-sidebar-border: #00000000;
+--color-result-background: #00000000;
+}  
+
+footer{
+  display: none;
+}
+
+html, #search_header, article{
+  background-color: #00000000;
+  border: none;
+}
+
+#links_on_top {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover{
+    opacity: 1;
+  }
+}
+
+article{
+  margin: 0;
+
+  img{
+    border-radius: 0.5em;
+  }
+}
