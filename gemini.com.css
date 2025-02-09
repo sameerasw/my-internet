@@ -1,15 +1,6 @@
 :root .dark-theme{
 --gem-sys-color--surface: #00000000;
-}
-
-.content bard-sidenav-container bard-sidenav{
-  width: 1% !important;
-  opacity: 0.1;
-  transition: all 0.5s ease-in-out;
-  &:hover{
-    width: 15% !important;
-    opacity: 1;
-  }
+--gem-sys-color--surface-container: #00000000;
 }
 
 [_nghost-ng-c3432699829]{
