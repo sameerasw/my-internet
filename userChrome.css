@@ -188,7 +188,6 @@ hbox.browserSidebarContainer, #zen-tabbox-wrapper {
 	scale: 1 !important;
 } */
 
-/* Ongoing experiemnts */
 #tabbrowser-arrowscrollbox, tab{
 	transition: all 0.3s ease-in-out !important;
 }
@@ -205,14 +204,14 @@ tab:not([zen-essential='true']) .tab-background[selected]{
 #tabbrowser-tabpanels hbox{
 /* 	transition: all 0.2s ease-out !important; */
 	transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
-	scale: 0.8 !important;
+/* 	scale: 0.8 !important; */
 	opacity: 0;
-/* 	left: -100vw; */
+	left: -5vw;
 }
 #tabbrowser-tabpanels hbox.deck-selected{
-	scale: 1 !important;
+/* 	scale: 1 !important; */
 	opacity: 1 !important;
-/* 	left: 0 !important; */
+	left: 0 !important;
 }
 
 #browser .browserContainer{
@@ -227,4 +226,8 @@ tab:not([zen-essential='true']) .tab-background[selected]{
   pointer-events: none;
 	scale: 1.1 !important;
   filter: blur(10px) brightness(70%) !important;
+}
+
+#urlbar[open][zen-floating-urlbar="true"] #urlbar-background{
+	border-radius: 2em !important;
 }
