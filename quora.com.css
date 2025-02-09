@@ -1,0 +1,14 @@
+body,
+.q-color-mode--dark .qu-borderColor--raised{
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.qu-borderRadius--small {
+  border-radius: 1em;
+}
+
+div.q-box.qu-py--small.qu-color--gray_light {
+  display: none;
+}
