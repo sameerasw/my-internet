@@ -231,3 +231,9 @@ tab:not([zen-essential='true']) .tab-background[selected]{
 #urlbar[open][zen-floating-urlbar="true"] #urlbar-background{
 	border-radius: 2em !important;
 }
+
+/* Fix find in page */
+
+findbar *{
+	opacity: 1 !important;
+}
