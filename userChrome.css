@@ -104,6 +104,7 @@ toolbarbutton{
 	}
 	}
 
+/* extension (zen) button scale for macos */
 #unified-extensions-button{
 	margin-left: 0.25em !important;
 	image{
@@ -112,10 +113,12 @@ toolbarbutton{
 	}
 }
 
+/* url bar cleanup */
 #identity-permission-box{
 	display: none !important;
 }
 
+/* compact mode mini sidebar */
 [zen-compact-mode="true"]{
 	#titlebar{
 	height: 70% !important;
@@ -130,6 +133,7 @@ toolbarbutton{
 	transition: all 0.5s ease-in-out !important;
 }
 
+/* hidden sidebar bottom buttoms */
 #zen-sidebar-icons-wrapper{
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out !important;
@@ -152,13 +156,13 @@ toolbarbutton{
   background-size: cover !important;
 } */
 
-
 /* no shadow and gaps */
 hbox.browserSidebarContainer, #zen-tabbox-wrapper {
 	box-shadow: none !important;
 	margin: 0 !important;
 }
 
+/* No window controls */
 #zen-appcontent-navbar-container{
 	display: none !important;
 }
@@ -188,6 +192,7 @@ hbox.browserSidebarContainer, #zen-tabbox-wrapper {
 	scale: 1 !important;
 } */
 
+/* Tab switch animation */
 #tabbrowser-arrowscrollbox, tab{
 	transition: all 0.3s ease-in-out !important;
 }
@@ -204,12 +209,11 @@ tab:not([zen-essential='true']) .tab-background[selected]{
 #tabbrowser-tabpanels hbox{
 /* 	transition: all 0.2s ease-out !important; */
 	transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
-/* 	scale: 0.8 !important; */
+	scale: 0.8 !important;
 	opacity: 0;
-	left: -5vw;
 }
 #tabbrowser-tabpanels hbox.deck-selected{
-/* 	scale: 1 !important; */
+	scale: 1 !important;
 	opacity: 1 !important;
 	left: 0 !important;
 }
@@ -218,10 +222,12 @@ tab:not([zen-essential='true']) .tab-background[selected]{
 	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
 }
 
+/* bouncy compact sidebar reveal - better kept off */
 [zen-compact-mode="true"] #navigator-toolbox{
 	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.1) !important;
 }
 
+/* URL bar page animation */
 #browser:has(#urlbar[open][zen-floating-urlbar="true"]) .browserContainer {
   pointer-events: none;
 	scale: 1.1 !important;
@@ -233,7 +239,111 @@ tab:not([zen-essential='true']) .tab-background[selected]{
 }
 
 /* Fix find in page */
-
 findbar *{
 	opacity: 1 !important;
+}
+
+/* .titlebar-buttonbox-container, */
+/* #zen-appcontent-navbar-container{
+	position: absolute !important;
+	right: 0 !important;
+	top: 0 !important;
+	height: 15px !important; 
+	
+} */
+
+/* Loading tab animation */
+tab[busy]{
+	scale: 0.95 !important;
+	.tab-background{
+		opacity: 0.3 !important;
+	}
+} 
+
+/* Animations */
+/* trackpad gestures*/
+.browserStack browser {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.1s !important;
+    /* Add initial border-radius to prevent sharp corners */
+    border-radius: 0.75em !important;
+}
+
+/* Previous animation*/
+.browserStack:has(#historySwipeAnimationPreviousArrow:not([style="translate: none;"])) browser {
+    scale: 0.95 !important;
+    transform: translateX(3%) !important;    
+    border-radius: 2em !important;
+}
+
+/* Next animation*/
+.browserStack:has(#historySwipeAnimationNextArrow:not([style="translate: none;"])) browser {
+    scale: 0.95 !important;
+    transform: translateX(-3%) !important;  
+    border-radius: 2em !important;   
+}
+
+/* smoothen trackpad gestures */
+.browserStack browser[style*="transform: none"] {
+    border-radius: 0.75em !important;
+} 
+  
+/* ctrl tab visuals*/
+#ctrlTab-panel{
+	--panel-background: var(--lwt-accent-color) !important;
+    transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.2s !important;
+	scale: 0.7;
+}
+
+#ctrlTab-panel:has(.ctrlTab-preview:not([hidden="true"])){
+	scale: 1 !important;
+}
+
+slot:nth-child(1){
+		border-radius: 2em !important;
+	padding: 0 !important; 
+	}
+
+.ctrlTab-preview-inner{
+/* 	padding: 0 !important; */ 
+	margin: 0 !important;
+	transition: all 0.2s ease-in-out;
+
+	.ctrlTab-canvas{
+		border-radius: 1em !important;
+		overflow: hidden;
+
+		img{
+			background-color: #000000  !important;
+		}
+	}
+
+	.ctrlTab-favicon-container{
+		justify-content: center !important;
+		transition: all 0.5s ease-in-out;
+
+		image{
+			border-radius: 50% !important;
+			transition: all 0.5s ease-in-out !important;
+/* 			scale: 1.25 !important; */  
+		}
+	}
+
+	.ctrlTab-label{
+		margin-top: 1.5em !important;
+	}
+}
+
+.ctrlTab-preview:focus > .ctrlTab-preview-inner{
+	outline: none !important;  		
+/* border: none !important;   */    
+	background-color: var(--sidebar-background-color) !important;   
+	border-radius: 1.5em !important; 
+	scale: 1.03 !important;     
+	
+	.ctrlTab-favicon-container{
+		
+		image{
+			padding: 2px !important;
+		}
+	}
 }
