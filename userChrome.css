@@ -292,8 +292,3 @@ findbar{
 		opacity: 0 !important;
 	}  
 }
-
-#tabbrowser-tabpanels hbox{
-	scale: 1 !important;
-}
-
