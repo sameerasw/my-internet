@@ -272,3 +272,28 @@ slot:nth-child(1){
     }
 } 
   
+  
+/* Find */
+findbar{
+	transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.2s !important;
+	position: absolute !important;
+	left: 0 !important;  
+	right: 0 !important;
+	margin: 0.5em 15%;
+	border-radius: 1em;
+	font-size: 1.4em;
+	
+		.findbar-textbox{
+			padding: 0.25em 1em !important;
+			border-radius: 1em !important;
+		}
+	&[hidden="true"]{
+	scale: 0 !important;
+		opacity: 0 !important;
+	}  
+}
+
+#tabbrowser-tabpanels hbox{
+	scale: 1 !important;
+}
+
