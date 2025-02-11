@@ -142,16 +142,16 @@ tab:not([zen-essential='true']) .tab-background[selected]{
 	scale: 1 !important;
 }
 
-#tabbrowser-tabpanels hbox{
-/* 	transition: all 0.2s ease-out !important; */
+#tabbrowser-tabpanels hbox:not([zen-split="true"]){
 	transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
-	scale: 0.8 !important;
+	scale: 0.9 !important;
 	opacity: 0;
+/* 	left: -5vw; */
 }
-#tabbrowser-tabpanels hbox.deck-selected{
+#tabbrowser-tabpanels hbox.deck-selected:not([zen-split="true"]){
 	scale: 1 !important;
 	opacity: 1 !important;
-	left: 0 !important;
+/* 	left: 0 !important; */
 }
 
 /* website view animations */
