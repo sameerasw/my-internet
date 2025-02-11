@@ -133,7 +133,7 @@ findbar *{
 	transition: all 0.3s ease-in-out !important;
 }
 
-tab:not([zen-essential='true']) .tab-background{
+tab:not([zen-essential='true']):not([multiselected="true"]) .tab-background{
 	transition: all 0.2s ease-in-out !important;
 	scale: 0 !important;
 }
