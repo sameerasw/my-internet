@@ -1,6 +1,6 @@
 # my-internet
 
-My custom CSS for websites I visit the most.
+My custom CSS for websites I visit the most. Click on the preview to view the file or visit the repo.
 
 [Browse the repository](https://github.com/sameerasw/my-internet) (More website themes available)
 
@@ -8,6 +8,9 @@ My custom CSS for websites I visit the most.
 
 [How to get transparency in Zen](https://sameerasw.notion.site/Zen-Transparency-1939c6099d4080468f02cf05ae50e827?pvs=4)
 
+---
+## userChrome.css - my Zen browser styling
+[![CleanShot 2025-02-11 at 11  04 22@2x Large](https://github.com/user-attachments/assets/141ba655-8af3-4099-b2a9-26d3e33a5d2d)](https://github.com/sameerasw/my-internet/blob/main/userChrome.css)
 ---
 
 ### youtube.com
