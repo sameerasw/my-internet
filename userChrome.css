@@ -292,3 +292,8 @@ findbar{
 		opacity: 0 !important;
 	}  
 }
+
+/* fix statusbar */
+#statuspanel { 
+	opacity: 1 !important;
+}
