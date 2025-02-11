@@ -42,7 +42,6 @@
 	}
 }
 
-
 /* fix workspaces icons */
 toolbarbutton{
 	padding: 0.1em !important;
@@ -55,8 +54,19 @@ toolbarbutton{
 		}
 }
 
-#zen-appcontent-navbar-container{
+/* url bar cleanup */
+#zen-appcontent-navbar-container, #page-action-buttons, #identity-permission-box{
 	display: none !important;
+}
+
+/* hidden sidebar buttons */
+#zen-sidebar-icons-wrapper, #home-button{
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out !important;
+	
+	&:hover{
+		opacity: 1 !important;
+	}
 }
 
 /* extension (zen) button scale for macos */
@@ -66,11 +76,6 @@ toolbarbutton{
 	border-radius: 100px !important;
 		scale: 1.2;
 	}
-}
-
-/* url bar cleanup */
-#identity-permission-box{
-	display: none !important;
 }
 
 /* compact mode mini sidebar */
@@ -83,16 +88,6 @@ toolbarbutton{
 		border-radius: 1.5em !important;
 	}
 } 
-
-/* hidden sidebar bottom buttoms */
-#zen-sidebar-icons-wrapper{
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out !important;
-	
-	&:hover{
-		opacity: 1 !important;
-	}
-}
 
 /* Zen browser custom bg image */
 /* #main-window{
