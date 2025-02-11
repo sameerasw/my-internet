@@ -297,3 +297,17 @@ findbar{
 #statuspanel { 
 	opacity: 1 !important;
 }
+
+/* keep unloaded tab icon bright */
+.tabbrowser-tab[pending="true"]{
+	opacity: 1 !important;
+	filter: none !important;
+	
+	.tab-background, .tab-label-container{
+		opacity: 0.2 !important;
+	}
+	
+	.tab-icon-image{
+		opacity: 1 !important;
+	}
+}
