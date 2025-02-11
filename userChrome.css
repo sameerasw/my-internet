@@ -84,11 +84,6 @@ toolbarbutton{
 	}
 } 
 
-/* tab list animations */
-.tabbrowser-tab, #tabbrowser-arrowscrollbox{
-	transition: all 0.5s ease-in-out !important;
-}
-
 /* hidden sidebar bottom buttoms */
 #zen-sidebar-icons-wrapper{
 	opacity: 0;
