@@ -1,62 +1,64 @@
-/* Additional : https://github.com/KristofferTroncoso/ThemeSong */
-
 /* transparent bg */
 :root{
-    --ts-body-color: #00000000; 
-    }
-    
-    /* hover navbar and titlebar */
-    .ytmusic-guide-renderer, ytmusic-nav-bar {
-      opacity: 0.01;
-      transition: opacity 0.5s ease-in-out;
-      &:hover{
-        opacity: 1;
-      }
-    }
-    
-    /* hidden */
-    #side-panel,
-    #nav-bar-divider,
-    #background,
-    div.av.style-scope.ytmusic-player-page,
-    ytmusic-chip-cloud-renderer.style-scope.ytmusic-section-list-renderer,
-    tp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper-toast-open{
-      display: none !important;
-    }
-    
-    /* centered player */
-    #player{
-      max-height: 100vh;
-      aspect-ratio: 1;
-      width: 100%;
-      margin: auto !important;
-    }
-    
-    /* navbar and titlebar bg removed */
-    #nav-bar-background, #mini-guide-background{
-      border: none !important;
-      height: 0;
-      width: 0;
-    }
-    
-    #guide, ytmusic-nav-bar, .background-gradient{
-      background-color: var(--ts-body-color) !important;
-      background-image: none !important;
-      background-repeat: no-repeat;
-    }
-    
-    #player-page{
-      padding: 0 !important;
-      margin: 0 !important;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-    }
-    
-    ytmusic-player-bar, #player-bar-background{
-      margin: 0.5%;
-      width: 99%;
-      border-radius: 1em;
-      overflow: hidden;
-    }
+--ts-body-color: #00000000; 
+}
+
+body{
+  background-color: transparent;
+}
+
+/* hover navbar and titlebar */
+.ytmusic-guide-renderer, ytmusic-nav-bar {
+  opacity: 0.01;
+  transition: opacity 0.5s ease-in-out;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+/* hidden */
+#side-panel,
+#nav-bar-divider,
+#background,
+div.av.style-scope.ytmusic-player-page,
+ytmusic-chip-cloud-renderer.style-scope.ytmusic-section-list-renderer,
+tp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper-toast-open{
+  display: none !important;
+}
+
+/* centered player */
+#player{
+  max-height: 100vh;
+  aspect-ratio: 1;
+  width: 100%;
+  margin: auto !important;
+}
+
+/* navbar and titlebar bg removed */
+#nav-bar-background, #mini-guide-background{
+  border: none !important;
+  height: 0;
+  width: 0;
+}
+
+#guide, ytmusic-nav-bar, .background-gradient{
+  background-color: var(--ts-body-color) !important;
+  background-image: none !important;
+  background-repeat: no-repeat;
+}
+
+#player-page{
+  padding: 0 !important;
+  margin: 0 !important;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+ytmusic-player-bar, #player-bar-background{
+  margin: 0.5%;
+  width: 99%;
+  border-radius: 1em;
+  overflow: hidden;
+}
