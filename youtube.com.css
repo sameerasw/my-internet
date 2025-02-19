@@ -1,5 +1,4 @@
 /* Additional :  https://github.com/code4charity/YouTube-Extension/ , https://addons.mozilla.org/en-US/firefox/addon/youtube-timestamps/ */
-
 /* transparency */
 :root{
   --primary-background-color: #00000000;
@@ -89,7 +88,7 @@ ytd-menu-renderer #button {
   }
 }
 
-/* Make video backgroound transparent */
+/* Make video background transparent */
 .html5-main-video, .html5-video-container, #movie_player, #container, #ytd-player, #player-container, #player-full-bleed-container, #full-bleed-container{
   background-color: #00000000 !important;
 }
@@ -98,7 +97,8 @@ ytd-menu-renderer #button {
 #chat{
   position: absolute !important;
 height: 800px;
-top: 50em;
+top: 50vh;
+transform: translateY(-50%);
 }
 
 /* search box background */
@@ -106,7 +106,13 @@ top: 50em;
   background-color: var(--yt-spec-text-primary-inverse) !important;
 }
 
-/* ------ Remove this ------ */
+yt-live-chat-renderer{
+  background: none !important;
+  background-color: transparent !important;
+}
+
+/* ------ Remove from here ------ */
+
 /* forcing video to take full size in view */
 ytd-watch-flexy{
   margin-top: 0;
@@ -133,7 +139,7 @@ ytd-watch-flexy{
 }
 
 .__youtube-timestamps__preview-wrapper{
-  scale: 1.5;
+  scale: 1.2;
   transform: translateX(16%);
   .__youtube-timestamps__preview{
   border-radius: 1em;
@@ -161,6 +167,7 @@ ytd-watch-flexy{
 }
 
 /* ----- I can't rmmbr what these did LOL ----- */
+
 #content #dismissible:hover{
   ytd-video-meta-block{
     opacity: 1;
@@ -169,4 +176,27 @@ ytd-watch-flexy{
 
 #panels-full-bleed-container{
   width: 0;
+}
+
+
+/* youtube timed comments styling */
+.comments-container{
+
+  div.wrapper{
+    background-color: transparent;
+  }
+  
+  div.clickable-comment, div.replies{
+    background-color: #00000033 !important;
+    backdrop-filter: blur(20px);
+    padding: 1em !important;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    max-width: 40em;
+  transition: all 0.4s ease-in-out !important;
+
+      .likes-and-replies{
+        opacity: 0.3;
+      }
+  }
 }
