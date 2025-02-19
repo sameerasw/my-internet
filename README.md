@@ -29,7 +29,7 @@ My custom CSS for websites I visit the most. Click on the preview to view the fi
 [![CleanShot 2025-02-08 at 5  21 38@2x Large](https://github.com/user-attachments/assets/2c74bbd2-34f8-4bee-887f-f74ccf6a2529)](https://github.com/sameerasw/my-internet/blob/main/facebook.com.css)
 
 ### gemini.com
-[![CleanShot 2025-02-08 at 5  27 10@2x Large](https://github.com/user-attachments/assets/c6d44454-a0f7-4669-9856-e9ea6ffc41db)](https://github.com/sameerasw/my-internet/blob/main/gemini.com.css)
+[![CleanShot 2025-02-08 at 5  27 10@2x Large](https://github.com/user-attachments/assets/c6d44454-a0f7-4669-9856-e9ea6ffc41db)](https://github.com/sameerasw/my-internet/blob/main/gemini.google.com.css)
 
 ### github.com
 [![CleanShot 2025-02-08 at 5  27 29@2x Large](https://github.com/user-attachments/assets/4868141b-92b7-496d-8b35-dfa36f8c550e)](https://github.com/sameerasw/my-internet/blob/main/github.com.css)
