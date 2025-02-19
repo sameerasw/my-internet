@@ -24,6 +24,6 @@ input-container hallucination-disclaimer{
   }
 }
 
-input-container{
+input-container, .input-gradient::before{
   background: none !important;
 }
