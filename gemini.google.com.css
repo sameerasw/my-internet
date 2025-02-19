@@ -27,3 +27,8 @@ input-container hallucination-disclaimer{
 input-container, .input-gradient::before{
   background: none !important;
 }
+
+.cdk-overlay-pane > div, mat-card{
+  background-color: var(--bard-color-neutral-96);
+  border-radius: 1em;
+}
