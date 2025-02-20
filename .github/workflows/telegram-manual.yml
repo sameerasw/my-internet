@@ -11,5 +11,5 @@ jobs:
         uses: cbrgm/telegram-github-action@v1
         with:
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          to: tidwib
           message: "Test message from GitHub"
