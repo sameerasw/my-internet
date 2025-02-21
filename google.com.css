@@ -18,9 +18,8 @@ body{
   background-color: #00000000;
 }
 
-.in7vHe.FR7ZSc.FR7ZSc .niO4u, div.RNNXgb {
+.in7vHe.FR7ZSc.FR7ZSc .niO4u, div.RNNXgb, .aajZCb {
   background-color: var(--EpFNW) !important;
-  /* color: #ffffff !important; */
 }
 
 .minidiv .sfbg, .minidiv .sfbg, .JryvJ .qS9jbf, .sHEJob, .Hwkikb.WY0eLb{
@@ -28,20 +27,16 @@ body{
   border: none !important;
 }
 
-#sfooter {
+#sfooter, [role="contentinfo"] {
   display: none !important;
 }
 
 .rfiSsc{
   opacity: 0;
-  /* height: 20px; */
   transition: all 0.3s ease-in-out;
-  /* position: sticky;
-  top: 0px; */
 
   &:hover{
     opacity: 1;
-    /* height: 120px !important; */
   }
 }
 
