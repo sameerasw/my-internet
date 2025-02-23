@@ -84,7 +84,7 @@ ytd-menu-renderer #button {
   }
 
   #video-title{
-    height: 1.2em;
+    /* height: 1.2em; */
   }
 }
 
@@ -102,8 +102,9 @@ transform: translateY(-50%);
 }
 
 /* search box background */
-.ytSearchboxComponentSearchButton, div.style-scope.tp-yt-app-drawer{
+.ytSearchboxComponentSearchButton, div.style-scope.tp-yt-app-drawer, .ytSearchboxComponentInputBox{
   background-color: var(--yt-spec-text-primary-inverse) !important;
+  color: var(--yt-live-chat-text-input-field-placeholder-color);
 }
 
 yt-live-chat-renderer{
@@ -111,8 +112,7 @@ yt-live-chat-renderer{
   background-color: transparent !important;
 }
 
-/* ------ Remove from here ------ */
-
+/* ------ Remove this ------ */
 /* forcing video to take full size in view */
 ytd-watch-flexy{
   margin-top: 0;
