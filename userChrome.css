@@ -259,7 +259,7 @@ slot:nth-child(1){
 /*  transparent url bar  */
  #urlbar[open][zen-floating-urlbar="true"] {
      #urlbar-background {
-         background-color: light-dark(color-mix(in srgb, #fdfdfd 75%, transparent), color-mix(in srgb, #0e0e0e 75%, transparent)) !important;
+         background-color: light-dark(color-mix(in srgb, #fdfdfd 70%, transparent), color-mix(in srgb, #0e0e0e 70%, transparent)) !important;
     }
 	 
 } 
@@ -308,7 +308,7 @@ findbar{
 
 /* fix for new url bar placement */
 #urlbar[open][zen-floating-urlbar="true"]{
-	top: 35vh !important;
+	top: 30vh !important;
 }
 
 /* Remove new tab background color */
