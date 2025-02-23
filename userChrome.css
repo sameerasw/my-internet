@@ -1,6 +1,7 @@
 /* Zen transparency */
 :root{
 	--zen-main-browser-background: #00000000 !important;
+/* 	--zen-main-browser-background: #000000 !important; */
 }
 
 /* Hidden buttons */
@@ -79,7 +80,7 @@ toolbarbutton{
 }
 
 /* compact mode mini sidebar */
-[zen-compact-mode="true"] #navigator-toolbox{
+/* [zen-compact-mode="true"] #navigator-toolbox{
 	height: 70% !important;  
 	background-clip: red !important; 
 		top: 50% !important;
@@ -87,7 +88,7 @@ toolbarbutton{
 	#titlebar{
 		border-radius: 1.5em !important;
 	}
-} 
+}  */
 
 /* Zen browser custom bg image */
 /* #main-window{
@@ -157,7 +158,7 @@ tab:not([zen-essential='true']) .tab-background[selected]{
 }
 
 #urlbar[open][zen-floating-urlbar="true"] #urlbar-background{
-	border-radius: 2em !important;
+	border-radius: 1em !important;
 }
 
 /* Loading tab animation */
@@ -206,7 +207,7 @@ tab[busy]{
 }
 
 slot:nth-child(1){
-		border-radius: 2em !important;
+		border-radius: 1em !important;
 	padding: 0 !important; 
 	}
 
@@ -260,6 +261,7 @@ slot:nth-child(1){
      #urlbar-background {
          background-color: light-dark(color-mix(in srgb, #fdfdfd 75%, transparent), color-mix(in srgb, #0e0e0e 75%, transparent)) !important;
     }
+	 
 } 
   
   
@@ -289,7 +291,7 @@ findbar{
 }
 
 /* keep unloaded tab icon bright */
-.tabbrowser-tab[pending="true"]{
+/* .tabbrowser-tab[pending="true"]{
 	opacity: 1 !important;
 	filter: none !important;
 	
@@ -300,4 +302,16 @@ findbar{
 	.tab-icon-image{
 		opacity: 1 !important;
 	}
+}
+ */
+
+
+/* fix for new url bar placement */
+#urlbar[open][zen-floating-urlbar="true"]{
+	top: 35vh !important;
+}
+
+/* Remove new tab background color */
+.browserStack browser {
+	background-color: transparent !important;
 }
