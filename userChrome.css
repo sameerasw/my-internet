@@ -259,7 +259,7 @@ slot:nth-child(1){
 /*  transparent url bar  */
  #urlbar[open][zen-floating-urlbar="true"] {
      #urlbar-background {
-         background-color: light-dark(color-mix(in srgb, #fdfdfd 70%, transparent), color-mix(in srgb, #0e0e0e 70%, transparent)) !important;
+         background-color: light-dark(color-mix(in srgb, #fdfdfd 75%, transparent), color-mix(in srgb, #0e0e0e 75%, transparent)) !important;
     }
 	 
 } 
@@ -308,10 +308,30 @@ findbar{
 
 /* fix for new url bar placement */
 #urlbar[open][zen-floating-urlbar="true"]{
-	top: 30vh !important;
+	top: 35vh !important;
 }
 
 /* Remove new tab background color */
 .browserStack browser {
 	background-color: transparent !important;
+}
+
+/* custom extension icons */
+/* stylebot */
+[label="Stylebot"] image{
+		list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important;
+}
+
+/* dark reader */
+[label="Dark Reader"] image{
+		list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/moon-512.png") !important;
+}
+
+/* dark theme */
+[lwt-sidebar="dark"]{
+		[label="Dark Reader"], [label="Stylebot"] {
+			image{
+		    filter: invert(1);
+			}
+	}
 }
