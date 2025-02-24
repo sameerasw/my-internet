@@ -1,3 +1,5 @@
+/* Unfortunately, we can not modify the tasks tab in the calendar since it's inside an iframe which can not be themed */
+
 body, [jsname="mOIbvc"], .R6TFwe, .sS0sZd, [jsname="vhZMvf"], [jsname="KBzNL"]{
   --gm3-sys-color-surface-container-low: transparent;
 
