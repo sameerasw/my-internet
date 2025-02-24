@@ -306,17 +306,17 @@ findbar{
  */
 
 
-/* fix for new url bar placement */
+/* macOS only - fix for new url bar placement */
 #urlbar[open][zen-floating-urlbar="true"]{
 	top: 35vh !important;
 }
 
-/* Remove new tab background color */
+/* Remove new tab background color white tint in 1.8b+ */
 .browserStack browser {
 	background-color: transparent !important;
 }
 
-/* custom extension icons */
+/* optional - custom extension icons */
 /* stylebot */
 [label="Stylebot"] image{
 		list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important;
@@ -327,7 +327,7 @@ findbar{
 		list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/moon-512.png") !important;
 }
 
-/* dark theme */
+/* dark theme icon colors */
 [lwt-sidebar="dark"]{
 		[label="Dark Reader"], [label="Stylebot"] {
 			image{
