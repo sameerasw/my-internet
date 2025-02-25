@@ -57,7 +57,7 @@ a:hover {
 }
 
 footer.footer.pt-8.pb-6.f6.color-fg-muted.p-responsive {
-/*   display: none !important; */
+  display: none !important;
 }
 
 div.prc-Dialog-Dialog-luvDS,
