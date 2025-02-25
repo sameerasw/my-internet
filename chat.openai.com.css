@@ -1,19 +1,19 @@
 #__next .flex-col .text-token-primary:has(.inline-flex){
-    opacity: 0.01;
-    transition: all 0.5s ease-in-out;
+    opacity: 0.01 !important;
+    transition: all 0.5s ease-in-out !important;
     &:hover{
-      opacity: 1;
+      opacity: 1 !important;
     }
   }
   
   .flex-col .flex-col :last-child:has(.text-center){
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
   }
   
   body{
-      background-color: var(--arc-palette-background) !important;
+      background-color: var(--arc-palette-background) !important !important;
   }
   
   div.mb-5.text-2xl.font-medium {
-    color: var(--arc-palette-foregroundSecondary);
+    color: var(--arc-palette-foregroundSecondary) !important;
   }
