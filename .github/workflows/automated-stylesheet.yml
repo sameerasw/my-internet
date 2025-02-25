@@ -1,0 +1,27 @@
+name: Update styles.json
+
+on:
+  push:
+    paths:
+      - '**/*.css'
+      - '!userChrome.css'
+  workflow_dispatch:
+
+jobs:
+  update-styles-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run script to update styles.json
+        run: node update-styles-json.js
