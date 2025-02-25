@@ -1,18 +1,18 @@
 /* transparent bg */
 :root{
---ts-body-color: #00000000; 
+--ts-body-color: #00000000 !important;
 }
 
 body{
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 /* hover navbar and titlebar */
 .ytmusic-guide-renderer, ytmusic-nav-bar {
-  opacity: 0.01;
-  transition: opacity 0.5s ease-in-out;
+  opacity: 0.01 !important;
+  transition: opacity 0.5s ease-in-out !important;
   &:hover{
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 
@@ -28,37 +28,37 @@ tp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper
 
 /* centered player */
 #player{
-  max-height: 100vh;
-  aspect-ratio: 1;
-  width: 100%;
+  max-height: 100vh !important;
+  aspect-ratio: 1 !important;
+  width: 100% !important;
   margin: auto !important;
 }
 
 /* navbar and titlebar bg removed */
 #nav-bar-background, #mini-guide-background{
   border: none !important;
-  height: 0;
-  width: 0;
+  height: 0 !important;
+  width: 0 !important;
 }
 
 #guide, ytmusic-nav-bar, .background-gradient{
   background-color: var(--ts-body-color) !important;
   background-image: none !important;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
 }
 
 #player-page{
   padding: 0 !important;
   margin: 0 !important;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
+  left: 0 !important;
+  top: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
 }
 
 ytmusic-player-bar, #player-bar-background{
-  margin: 0.5%;
-  width: 99%;
-  border-radius: 1em;
-  overflow: hidden;
+  margin: 0.5% !important;
+  width: 99% !important;
+  border-radius: 1em !important;
+  overflow: hidden !important;
 }
