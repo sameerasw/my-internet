@@ -1,14 +1,14 @@
 body{
-    background-color: #00000000;
-    background: #00000000;
+    background-color: #00000000 !important;
+    background: #00000000 !important;
   }
   
   .notion-app-inner, .notion-cursor-listener, .notion-frame, .notion-sidebar-container, header{
     background-color: #00000000 !important;
     background: #00000000 !important;
-    box-shadow: none;
+    box-shadow: none !important;
   }
   
   div.autolayout-row.autolayout-fill-width.autolayout-center.autolayout-space {
-    display: none;
+    display: none !important;
   }
