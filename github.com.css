@@ -1,8 +1,8 @@
 :root {
-  --bgColor-default: #00000000 !important;
-  --bgColor-muted: #00000000 !important;
-  --bgColor-inset: #00000000 !important;
-  --borderColor-default: #00000000 !important;
+  --bgColor-default: #000000 !important;
+  --bgColor-muted: #000000 !important;
+  --bgColor-inset: #000000 !important;
+  --borderColor-default: #000000 !important;
 }
 
 div.feed-item-content.d-flex.flex-column.pt-2.pb-2.border.color-border-default.rounded-2.color-shadow-small.width-full.height-fit,
