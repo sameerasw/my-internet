@@ -11,7 +11,7 @@
   }
   
   body{
-      background-color: var(--arc-palette-background) !important !important;
+      background-color: var(--arc-palette-background) !important;
   }
   
   div.mb-5.text-2xl.font-medium {

@@ -1,8 +1,8 @@
 :root{
-    --color-background-body: transparent;
-    --color-background-base: transparent;
-    --shadow-elevation-1: none;
-    --color-background-alt: transparent;
+    --color-background-body: transparent !important;
+    --color-background-base: transparent !important;
+    --shadow-elevation-1: none !important;
+    --color-background-alt: transparent !important;
   }
   
   .video-player, .video-player__container, .channel-root{

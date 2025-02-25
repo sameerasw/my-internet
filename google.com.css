@@ -3,11 +3,11 @@ html, body, div, section, article, header, footer, main, aside, nav, span, form,
 }
 
 .aajZCb{
-background-color: var(--uv-styles-color-surface);
+background-color: var(--uv-styles-color-surface) !important;
 }
 
 div.sfbg {
-  background-color: var(--darkreader-border-ffffff);
+  background-color: var(--darkreader-border-ffffff) !important;
 }
 
 :root{
@@ -15,7 +15,7 @@ div.sfbg {
 }
 
 body{
-  background-color: #00000000;
+  background-color: #00000000 !important;
 }
 
 .in7vHe.FR7ZSc.FR7ZSc .niO4u, div.RNNXgb, .aajZCb {
@@ -32,14 +32,14 @@ body{
 }
 
 .rfiSsc{
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
 
   &:hover{
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 
 .w6VYqd{
-  background-color: #fff;
+  background-color: #fff !important;
 }

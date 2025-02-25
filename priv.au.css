@@ -1,31 +1,31 @@
 :root{
---color-header-background: #00000000;
---color-sidebar-border: #00000000;
---color-result-background: #00000000;
+--color-header-background: #00000000 !important;
+--color-sidebar-border: #00000000 !important;
+--color-result-background: #00000000 !important;
 }  
 
 footer{
-  display: none;
+  display: none !important;
 }
 
 html, #search_header, article{
-  background-color: #00000000;
-  border: none;
+  background-color: #00000000 !important;
+  border: none !important;
 }
 
 #links_on_top {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease-in-out !important;
 
   &:hover{
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 
 article{
-  margin: 0;
+  margin: 0 !important;
 
   img{
-    border-radius: 0.5em;
+    border-radius: 0.5em !important;
   }
 }

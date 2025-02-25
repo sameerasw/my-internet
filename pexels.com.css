@@ -3,9 +3,9 @@ body, h4, h3, h2, h1, h5, h6, span, a{
   }
   
   .Navbar_container__PS9oP{
-    background-color: #00000000;
-    backdrop-filter: blur(60px);
-    border: none;
-    background: #00000000;
-    box-shadow: none;
+    background-color: #00000000 !important;
+    backdrop-filter: blur(60px) !important;
+    border: none !important;
+    background: #00000000 !important;
+    box-shadow: none !important;
   }

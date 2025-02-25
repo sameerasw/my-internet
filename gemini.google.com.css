@@ -1,14 +1,14 @@
 :root .dark-theme, :root .light-theme{
---gem-sys-color--surface: #00000000;
---gem-sys-color--surface-container: #00000000;
+--gem-sys-color--surface: #00000000 !important;
+--gem-sys-color--surface-container: #00000000 !important;
 }
 
 .content-container chat-window .chat-container .bottom-container{
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 
 input-container hallucination-disclaimer{
-  display: none;
+  display: none !important;
 }
 
 .input-area-container {
@@ -29,6 +29,6 @@ input-container, .input-gradient::before{
 }
 
 .cdk-overlay-pane > div, mat-card{
-  background-color: var(--bard-color-neutral-96);
-  border-radius: 1em;
+  background-color: var(--bard-color-neutral-96) !important;
+  border-radius: 1em !important;
 }

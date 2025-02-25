@@ -1,13 +1,13 @@
 :root{
-    --web-wash: #00000000;
-    --messenger-card-background: #00000000;
-    --mwp-header-background-color: #00000000;
-    --mwp-message-row-background: #00000000;
+    --web-wash: #00000000 !important;
+    --messenger-card-background: #00000000 !important;
+    --mwp-header-background-color: #00000000 !important;
+    --mwp-message-row-background: #00000000 !important;
   }
   
   .xcrg951{
-    background-color: #00000000;
-    box-shadow: none;
-    /* border: 2px solid #00000044; */
+    background-color: #00000000 !important;
+    box-shadow: none !important;
+    /* border: 2px solid #00000044 !important; */
   }
   

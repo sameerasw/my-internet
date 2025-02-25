@@ -1,39 +1,39 @@
 :root.theme-dark, .theme-rpl{
-    --color-neutral-background: #00000000;
+    --color-neutral-background: #00000000 !important;
   }
   
   .bg-neutral-background, #left-sidebar-container{
-    background-color: #00000000;
-    border: none;
+    background-color: #00000000 !important;
+    border: none !important;
   }
   
   div aside recent-posts {
-    display: none;
+    display: none !important;
   }
   
   .overflow-visible > div:nth-child(32), faceplate-dropdown-menu{
-    /* background-color: var(--color-danger-onBackground) !important; */
-    border-radius: 1em 1em 0 0 ;
+    /* background-color: var(--color-danger-onBackground) !important !important; */
+    border-radius: 1em 1em 0 0  !important;
   }
   
   div.left-sidebar, #right-sidebar-container {
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
+    opacity: 0 !important;
+    transition: all 0.3s ease-in-out !important;
     &:hover{
-      opacity: 1;
+      opacity: 1 !important;
     }
   }
   
   nav.z-\[2\] > nav:nth-child(18), div.visible{
-    display: none;
+    display: none !important;
   }
   
   hr.w-100.my-sm.border-neutral-border-weak {
-    display: none;
+    display: none !important;
   }
   
   p {
-    /* color: #fff; */
+    /* color: #fff !important; */
   }
   
   

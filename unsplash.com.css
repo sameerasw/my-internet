@@ -3,36 +3,36 @@
   }
   
   body{
-    background-color: #00000000;
+    background-color: #00000000 !important;
   }
   
   figure:has(.se4Qe){
-    display: none;
+    display: none !important;
   }
   
   figure{
     border-radius: 20px !important;
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
+    overflow: hidden !important;
+    transition: all 0.5s ease-in-out !important;
   }
   
   
   figure:hover{
     border-radius: 10px !important;
-    scale: 1.1;
-    box-shadow: #00000088 0px 0px 50px;
-    z-index: 10;
+    scale: 1.1 !important;
+    box-shadow: #00000088 0px 0px 50px !important;
+    z-index: 10 !important;
   }
   
   header{
-    z-index: 1000;
-    background-color: #00000000;
-    backdrop-filter: blur(10px);
+    z-index: 1000 !important;
+    background-color: #00000000 !important;
+    backdrop-filter: blur(10px) !important;
     color: #ffffff !important;
   }
   
   .xWFB_, header form{
-    background-color: #00000000;
+    background-color: #00000000 !important;
   }
   
   html, body, .EtnYM , .b4j4s {
@@ -41,19 +41,19 @@
   }
   
   .b4j4s{
-    position: relative;
-    top: 0;
-    transition: all 0.5s ease-in-out;
-    opacity: 0.2;
-    margin-bottom: 10px;
+    position: relative !important;
+    top: 0 !important;
+    transition: all 0.5s ease-in-out !important;
+    opacity: 0.2 !important;
+    margin-bottom: 10px !important;
   }
   
   .b4j4s:hover{
-    opacity: 1;
+    opacity: 1 !important;
   }
   
   div.zLj3X.rJ2xz.bYpwS.U8eXG.M5vdR, div.hwFVM, .nOssi, .r1yVH, #popover-secondary-menu {
-    display: none;
+    display: none !important;
   }
   
   body, .V1p2c{
@@ -65,21 +65,21 @@
   }
   
   div.tHGFe, ul.QmKQx.hSanJ {
-    display: none;
+    display: none !important;
   }
   
   .ZdQR2{
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
+    opacity: 0 !important;
+    transition: all 0.3s ease-in-out !important;
     &:hover{
-      opacity: 1;
+      opacity: 1 !important;
     }
   }
   
   div.vpXdX.Hrdtv.KWauk.nxjMA {
-    /* color: #fff; */
+    /* color: #fff !important; */
   }
   
   div.uqkHb.ufM77 {
-    background-color: #fff;
+    background-color: #fff !important;
   }

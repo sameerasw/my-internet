@@ -6,9 +6,9 @@ body,
 }
 
 .qu-borderRadius--small {
-  border-radius: 1em;
+  border-radius: 1em !important;
 }
 
 div.q-box.qu-py--small.qu-color--gray_light {
-  display: none;
+  display: none !important;
 }

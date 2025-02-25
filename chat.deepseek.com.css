@@ -4,22 +4,22 @@ body[data-ds-dark-theme]{
 }
 
 .b480065b{
-  background: none;
+  background: none !important;
 }
 
 div.fcaa63f8.d9fb9344, .fcaa63f8{
-  display: none;
+  display: none !important;
 }
 
 .dc04ec1d, div.ds-flex {
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease-in-out !important;
 
   &:hover{
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 
 div.aaff8b8f {
-  margin-bottom: 1em;
+  margin-bottom: 1em !important;
 }

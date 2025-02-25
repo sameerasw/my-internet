@@ -1,16 +1,16 @@
 :root{
-  --bg-color: #00000000;
+  --bg-color: #00000000 !important;
 }
 
 footer{
-  display: none;
+  display: none !important;
 }
 
 header{
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
   &:hover{
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 

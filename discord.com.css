@@ -1,27 +1,27 @@
 :root{
-    --background-secondary: #00000000;
-    --background-primary: #00000000;
-    --background-tertiary: #00000000;
-    --home-background: #00000000;
-    --bg-base-primary: #00000000;
+    --background-secondary: #00000000 !important;
+    --background-primary: #00000000 !important;
+    --background-tertiary: #00000000 !important;
+    --home-background: #00000000 !important;
+    --bg-base-primary: #00000000 !important;
   }
   
   .theme-light, .theme-dark{
-    --__header-bar-background: #00000000;
-    --shadow-border-filter: #00000000;
-    --border-faint: #00000000;
-    --border-strong: #00000000;
-    --background-secondary-alt: #00000000;
+    --__header-bar-background: #00000000 !important;
+    --shadow-border-filter: #00000000 !important;
+    --border-faint: #00000000 !important;
+    --border-strong: #00000000 !important;
+    --background-secondary-alt: #00000000 !important;
   }
   
   img.bannerImg_f37cb1{
-    border-radius: 0 0 1em 1em;
+    border-radius: 0 0 1em 1em !important;
   }
   
   .callContainer_cb9592{
-    background: #00000000;
+    background: #00000000 !important;
   }
   
 .floating__01ae2{
-  background-color: var(--custom-text-widget-background-color-header-default);
+  background-color: var(--custom-text-widget-background-color-header-default) !important;
 }

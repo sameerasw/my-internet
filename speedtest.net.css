@@ -1,5 +1,5 @@
 div.lower-content.lower-content-blend, footer , .connection-component-container > div:nth-child(3){
-    display: none;
+    display: none !important;
   }
   
   #container, body, .pre-fold, .main-content, .main, .container, .pure-g, .pure-u-custom-speedtest {
@@ -16,10 +16,10 @@ div.lower-content.lower-content-blend, footer , .connection-component-container 
   }
   
   div.pure-u-1 {
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
+    opacity: 0 !important;
+    transition: all 0.3s ease-in-out !important;
     &:hover{
-      opacity: 1;
+      opacity: 1 !important;
     }
   }
   
@@ -29,9 +29,9 @@ div.lower-content.lower-content-blend, footer , .connection-component-container 
   }
   
   .pure-u-custom-ad-skyscraper{
-    display: none;
+    display: none !important;
   }
   
   .pure-u-custom-speedtest{
-    margin: auto;
+    margin: auto !important;
   }

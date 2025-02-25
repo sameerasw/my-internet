@@ -1,34 +1,34 @@
 :root{
-    --darkreader-background-ffffff: #00000000;
-    --darkreader-background-333333: #00000000;
-    --darkreader-background-fefefe: #00000000;
-  --darkreader-background-f1f1f1: #00000000;
+    --darkreader-background-ffffff: #00000000 !important;
+    --darkreader-background-333333: #00000000 !important;
+    --darkreader-background-fefefe: #00000000 !important;
+  --darkreader-background-f1f1f1: #00000000 !important;
   }
   
   footer {
-    display: none;
+    display: none !important;
   }
   
   div.l-side-column {
-    display: none;
+    display: none !important;
   }
   
   div.l-gutter {
-    display: none;
+    display: none !important;
   }
   
   section.sandiego.l-header-nav-bottom.sticky {
-    display: none;
+    display: none !important;
   }
   
   body, .sandiego table thead, tfoot, table, tbody, article{
     background-color: #00000000 !important;
-    background: #00000000;
-    border: none;
+    background: #00000000 !important;
+    border: none !important;
   }
   
   .dropdown li, .links a{
-    border: none;;
+    border: none  !important;
   }
   
   .l-two-column-page{

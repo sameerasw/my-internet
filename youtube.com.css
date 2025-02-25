@@ -189,7 +189,7 @@ ytd-watch-flexy{
   div.clickable-comment, div.replies{
     background-color: #00000033 !important;
     backdrop-filter: blur(20px) !important;
-    padding: 1em !important !important;
+    padding: 1em !important;
     margin-bottom: 1em !important;
     border-radius: 1em !important;
     max-width: 40em !important;

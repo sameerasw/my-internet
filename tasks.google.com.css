@@ -1,4 +1,4 @@
 .vWh0f{
---tasks-body-background: transparent;
---tasks-surface-container-low: transparent;
+--tasks-body-background: transparent !important;
+--tasks-surface-container-low: transparent !important;
 }
