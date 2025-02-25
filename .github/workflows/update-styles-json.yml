@@ -3,7 +3,7 @@ name: Update styles.json
 on:
   push:
     paths:
-      - '**/*.css'
+      - '*.css'
       - '!userChrome.css'
   workflow_dispatch:
 
