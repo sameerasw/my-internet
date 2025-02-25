@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const stylesDir = path.join(__dirname, 'styles');
+const rootDir = path.join(__dirname);
 const outputFile = path.join(__dirname, 'styles.json');
 
 const excludeFile = 'userChrome.css';
@@ -9,9 +9,9 @@ const excludeFile = 'userChrome.css';
 function updateStylesJson() {
   const styles = {};
 
-  fs.readdirSync(stylesDir).forEach(file => {
+  fs.readdirSync(rootDir).forEach(file => {
     if (file.endsWith('.css') && file !== excludeFile) {
-      const content = fs.readFileSync(path.join(stylesDir, file), 'utf-8');
+      const content = fs.readFileSync(path.join(rootDir, file), 'utf-8');
       styles[file] = content;
     }
   });
