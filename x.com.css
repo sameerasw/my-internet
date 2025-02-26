@@ -1,22 +1,28 @@
-body, .r-kemksi, .r-5zmot, .css-175oi2r{
+/* transparecy */
+body,
+.r-kemksi,
+.r-5zmot,
+.css-175oi2r {
   background-color: #00000000 !important;
   border: none !important;
 }
 
- .r-1gn8etr{
-   position: sticky !important;
-   top: -50px !important;
- }
+[data-testid="Dropdown"] {
+  background-color: #000 !important;
+}
 
+/* layout fixes */
+.r-1gn8etr {
+  position: sticky !important;
+  top: -50px !important;
+}
+
+/* hover */
 div.css-175oi2r.r-vacyoi.r-ttdzmv,
 div.css-175oi2r.r-1pi2tsx.r-1wtj0ep.r-1rnoaur.r-o96wvk.r-is05cd {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
-}
-
-[data-testid="Dropdown"]{
-  background-color: #000 !important;
 }

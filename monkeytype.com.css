@@ -1,19 +1,23 @@
-:root{
+/* transparecy */
+:root {
   --bg-color: #00000000 !important;
 }
 
-footer{
+/* hide footer */
+footer {
   display: none !important;
 }
 
-header{
+/* hide header */
+header {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }
 
-#words .word letter{
+/* fix text color */
+#words .word letter {
   color: var(--ss-font-placeholder-color) !important;
 }

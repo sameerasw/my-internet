@@ -1,20 +1,28 @@
-:root{
-    --web-wash: #00000000 !important;
-    --nav-bar-background: #00000000 !important;
+/* transparecy */
+:root {
+  --web-wash: #00000000 !important;
+  --nav-bar-background: #00000000 !important;
+}
+
+body,
+#mount_0_0_u1
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div:nth-child(1)
+  > div:nth-child(3) {
+  background-color: #00000000 !important;
+}
+
+/* other changes */
+div.x2lah0s.xyamay9.x1pi30zi.x1l90r2v.x1swvt13 {
+  display: none !important;
+}
+
+div.xnp8db0:nth-child(1),
+div.xnp8db0:nth-child(4) {
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover {
+    opacity: 1 !important;
   }
-  
-  body, #mount_0_0_u1 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3){
-    background-color: #00000000 !important;
-  }
-  
-  div.x2lah0s.xyamay9.x1pi30zi.x1l90r2v.x1swvt13 {
-    display: none !important;
-  }
-  
-  div.xnp8db0:nth-child(1),div.xnp8db0:nth-child(4){
-    opacity: 0 !important;
-    transition: all 0.3s ease-in-out !important;
-    &:hover{
-      opacity: 1 !important;
-    }
-  }
+}

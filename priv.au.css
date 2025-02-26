@@ -1,31 +1,36 @@
-:root{
---color-header-background: #00000000 !important;
---color-sidebar-border: #00000000 !important;
---color-result-background: #00000000 !important;
-}  
-
-footer{
-  display: none !important;
+/* transparecy */
+:root {
+  --color-header-background: #00000000 !important;
+  --color-sidebar-border: #00000000 !important;
+  --color-result-background: #00000000 !important;
 }
 
-html, #search_header, article{
+html,
+#search_header,
+article {
   background-color: #00000000 !important;
   border: none !important;
 }
 
+/* no footer */
+footer {
+  display: none !important;
+}
+
+/* other changes */
 #links_on_top {
   opacity: 0 !important;
   transition: opacity 0.3s ease-in-out !important;
 
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }
 
-article{
+article {
   margin: 0 !important;
 
-  img{
+  img {
     border-radius: 0.5em !important;
   }
 }
