@@ -16,7 +16,7 @@
       "transparecy": "body[data-ds-dark-theme] {\n  --dsr-bg: transparent !important;\n  --dsr-side-bg: transparent !important;\n}\n\n.b480065b {\n  background: none !important;\n}",
       "other changes": "div.fcaa63f8.d9fb9344,\n.fcaa63f8 {\n  display: none !important;\n}\n\n.dc04ec1d,\ndiv.ds-flex {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\ndiv.aaff8b8f {\n  margin-bottom: 1em !important;\n}"
     },
-    "chat.openai.com.css": {
+    "chatgpt.com.css": {
       "hover and others": "#__next .flex-col .text-token-primary:has(.inline-flex) {\n  opacity: 0.01 !important;\n  transition: all 0.5s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\n.flex-col .flex-col :last-child:has(.text-center) {\n  margin-bottom: 20px !important;\n}",
       "transparecy": "body {\n  background-color: var(--arc-palette-background) !important;\n}\n\ndiv.mb-5.text-2xl.font-medium {\n  color: var(--arc-palette-foregroundSecondary) !important;\n}"
     },
