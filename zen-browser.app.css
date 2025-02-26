@@ -1,0 +1,13 @@
+/* transparency */
+body, .astronav-items{
+  background-color: #00000000;
+}
+
+.bg-dark{
+  background-color: #ffffff88;
+  border: none;
+}
+
+:root{
+  --light: transparent;
+}
