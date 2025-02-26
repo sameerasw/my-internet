@@ -4,6 +4,10 @@
       "transparecy": ":root{\n    --color-surface-container-lowest: #00000000 !important;\n    --color-sidebars-background: #00000000 !important;\n  }\n  \n  .makersuite-layout, .layout-navbar, select-header, .navbar-header, .router-outlet-wrapper, .nav-toggle-wrapper, .chunk-editor-main, ms-run-settings, .footer{\n    background-color: #00000000 !important;\n  }",
       "hide disclaimer": "div.disclaimer-container.ng-tns-c1318864088-1.ng-star-inserted{\n    display: none !important;\n  }"
     },
+    "app.netlify.com.css": {
+      "transparecy": ":root{\n  --colorBgApp: transparent !important;\n}",
+      "no footer": "footer.app-footer {\n  display: none !important;\n}"
+    },
     "basicappleguy.com.css": {
       "transparency": "body{\n  background-color: #00000000 !important;\n}",
       "transparency with darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important\n}"
