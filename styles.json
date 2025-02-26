@@ -17,8 +17,9 @@
       "other changes": "div.fcaa63f8.d9fb9344,\n.fcaa63f8 {\n  display: none !important;\n}\n\n.dc04ec1d,\ndiv.ds-flex {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\ndiv.aaff8b8f {\n  margin-bottom: 1em !important;\n}"
     },
     "chatgpt.com.css": {
-      "hover and others": "#__next .flex-col .text-token-primary:has(.inline-flex) {\n  opacity: 0.01 !important;\n  transition: all 0.5s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\n.flex-col .flex-col :last-child:has(.text-center) {\n  margin-bottom: 20px !important;\n}",
-      "transparecy": "body {\n  background-color: var(--arc-palette-background) !important;\n}\n\ndiv.mb-5.text-2xl.font-medium {\n  color: var(--arc-palette-foregroundSecondary) !important;\n}"
+      "transparecy": ":root{\n  --main-surface-background: #00000000 !important;\n  --main-surface-primary: #00000000 !important;\n  --sidebar-surface-primary: #00000000 !important;\n}",
+      "hover": "div.hidden:nth-child(5), div.right-0:nth-child(1){\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n\n  &:hover{\n    opacity: 1 !important;\n  }\n}",
+      "hidden elements": "button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light.text-xs.text-token-text-secondary, div.w-full:nth-child(6) {\n  display: none !important;\n}"
     },
     "discord.com.css": {
       "transparecy": ":root {\n  --background-secondary: #00000000 !important;\n  --background-primary: #00000000 !important;\n  --background-tertiary: #00000000 !important;\n  --home-background: #00000000 !important;\n  --bg-base-primary: #00000000 !important;\n}\n\n.theme-light,\n.theme-dark {\n  --__header-bar-background: #00000000 !important;\n  --shadow-border-filter: #00000000 !important;\n  --border-faint: #00000000 !important;\n  --border-strong: #00000000 !important;\n  --background-secondary-alt: #00000000 !important;\n}\n\n.callContainer_cb9592 {\n  background: #00000000 !important;\n}\n\n.floating__01ae2 {\n  background-color: var(\n    --custom-text-widget-background-color-header-default\n  ) !important;\n}",
