@@ -116,12 +116,17 @@ yt-live-chat-renderer {
 }
 
 /* Theatre view : full window view */
-ytd-watch-flexy {
+ytd-watch-flexy[theater=""]{
   margin-top: 0 !important;
+  #movie_player > div.html5-video-container video{
+    height: 100vh !important;
+    width: 100vw !important;
+  }
 }
-#movie_player > div.html5-video-container video {
-  height: 100vh !important;
-  width: 100vw !important;
+
+/* no ambient mode */
+#cinematics-container{
+  display: none !important;
 }
 
 /* Addon : timed comments */
