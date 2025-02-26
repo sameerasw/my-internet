@@ -1,8 +1,5 @@
 {
   "website": {
-    "calendar.google.com.css": {
-      "Unfortunately, we can not modify the tasks tab in the calendar since it's inside an iframe which can not be themed": "body, [jsname=\"mOIbvc\"], .R6TFwe, .sS0sZd, [jsname=\"vhZMvf\"], [jsname=\"KBzNL\"]{\n  --gm3-sys-color-surface-container-low: transparent !important;\n\n  background-color: transparent !important;\n}\n\n.BiKU4b{\n  border: none !important;\n}"
-    },
     "github.com.css": {
       "#01 transparecy": ":root {\n  --bgColor-default: #00000000 !important;\n  --bgColor-muted: #00000000 !important;\n  --bgColor-inset: #00000000 !important;\n  --borderColor-default: #00000000 !important;\n}",
       "#02 border styling": "div.feed-item-content.d-flex.flex-column.pt-2.pb-2.border.color-border-default.rounded-2.color-shadow-small.width-full.height-fit,\n.feed-item-content,\n.input-contrast,\n.color-bg-default,\n.Box-body,\n.Box {\n  border-radius: 20px !important;\n  border: none !important;\n}\n\ndiv.color-bg-subtle.rounded-1.flex-justify-between.p-3,\nsection.dashboard-break-word.comment-body.markdown-body.m-0.p-3.color-bg-subtle.mb-0.rounded-1 {\n  border-radius: 10px !important;\n  border: none !important;\n}\n\naside.feed-left-sidebar.col-md-4.col-lg-3.color-border-muted.border-bottom.hide-md.hide-sm.border-right.color-bg-default,\nbody,\ndiv.d-md-flex,\n.AppHeader-globalBar,\ndiv.color-bg-subtle.rounded-1.flex-justify-between.p-3,\n.comment-body,\n.AppHeader-localBar,\n.ebYtvW,\n.bAmAao,\n.Counter,\n.types__StyledButton-sc-ws60qy-0,\n.TextInput-wrapper,\n.feed-item-content,\n.color-bg-default,\n.input-contrast,\n.Box-body,\n.Box {\n  border: none !important;\n}\n\ntd {\n  border: none !important;\n}\n\ntr:hover,\na:hover {\n  border-radius: 20px !important;\n}",
@@ -10,30 +7,6 @@
       "#04 hide footer": "footer.footer.pt-8.pb-6.f6.color-fg-muted.p-responsive {\n  display: none !important;\n}",
       "#05 hover tabs": "aside.feed-right-sidebar,\naside.feed-left-sidebar,\n.AppHeader-localBar {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
       "#06 overlay color fixes": "div.prc-Dialog-Dialog-luvDS,\n.Overlay,\n.Overlay__StyledOverlay-sc-51280t-0,\ndetails-menu,\n.search-suggestions,\n[role=\"dialog\"] {\n  background-color: var(--bgColor-disabled) !important;\n}"
-    },
-    "instagram.com.css": {
-      "--ig-separator: #00000000 !important;": "}\n\n.xvbhtw8{\n  background-color: #00000000 !important;\n  border: none !important;\n}\n\ndiv.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 {\n  display: none !important;\n}\n\n.xso031l {\n  border-radius: 1.5em !important;\n}\n\n*{\n  background-color: #00000000 !important;\n}\n\n.xopu45v{\n  border: none !important;\n}"
-    },
-    "messenger.com.css": {
-      "border: 2px solid #00000044 !important;": "}"
-    },
-    "music.youtube.com.css": {
-      "transparent bg": ":root{\n--ts-body-color: #00000000 !important;\n}\n\nbody{\n  background-color: transparent !important;\n}",
-      "hover navbar and titlebar": ".ytmusic-guide-renderer, ytmusic-nav-bar {\n  opacity: 0.01 !important;\n  transition: opacity 0.5s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}",
-      "hidden": "#side-panel,\n#nav-bar-divider,\n#background,\ndiv.av.style-scope.ytmusic-player-page,\nytmusic-chip-cloud-renderer.style-scope.ytmusic-section-list-renderer,\ntp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper-toast-open{\n  display: none !important;\n}",
-      "centered player": "#player{\n  max-height: 100vh !important;\n  aspect-ratio: 1 !important;\n  width: 100% !important;\n  margin: auto !important;\n}",
-      "navbar and titlebar bg removed": "#nav-bar-background, #mini-guide-background{\n  border: none !important;\n  height: 0 !important;\n  width: 0 !important;\n}\n\n#guide, ytmusic-nav-bar, .background-gradient{\n  background-color: var(--ts-body-color) !important;\n  background-image: none !important;\n  background-repeat: no-repeat !important;\n}\n\n#player-page{\n  padding: 0 !important;\n  margin: 0 !important;\n  left: 0 !important;\n  top: 0 !important;\n  height: 100% !important;\n  width: 100% !important;\n}\n\nytmusic-player-bar, #player-bar-background{\n  margin: 0.5% !important;\n  width: 99% !important;\n  border-radius: 1em !important;\n  overflow: hidden !important;\n}"
-    },
-    "reddit.com.css": {
-      "background-color: var(--color-danger-onBackground) !important !important;": "border-radius: 1em 1em 0 0  !important;\n  }\n  \n  div.left-sidebar, #right-sidebar-container {\n    opacity: 0 !important;\n    transition: all 0.3s ease-in-out !important;\n    &:hover{\n      opacity: 1 !important;\n    }\n  }\n  \n  nav.z-\\[2\\] > nav:nth-child(18), div.visible{\n    display: none !important;\n  }\n  \n  hr.w-100.my-sm.border-neutral-border-weak {\n    display: none !important;\n  }\n  \n  p {",
-      "color: #fff !important;": "}\n  \n  \n  shreddit-app, body, html{\n    background-color: #00000000 !important;\n  }"
-    },
-    "sourceforge.net.css": {
-      "max-width: 100% !important;": ".l-content-column{\n      margin: 0 auto !important;\n    }\n  }\n  \n  .l-header-nav-bottom {\n    display: none !important;\n  }"
-    },
-    "unsplash.com.css": {
-      "background-color: #00000000 !important;": "}\n  \n  :root{\n    --color-white: #00000000\n  }\n  \n  div.tHGFe, ul.QmKQx.hSanJ {\n    display: none !important;\n  }\n  \n  .ZdQR2{\n    opacity: 0 !important;\n    transition: all 0.3s ease-in-out !important;\n    &:hover{\n      opacity: 1 !important;\n    }\n  }\n  \n  div.vpXdX.Hrdtv.KWauk.nxjMA {",
-      "color: #fff !important;": "}\n  \n  div.uqkHb.ufM77 {\n    background-color: #fff !important;\n  }"
     },
     "youtube.com.css": {
       "transparency": ":root{\n  --primary-background-color: #00000000 !important;\n  --dark-theme-background-color: #00000000 !important;\n--yt-spec-base-background: #00000000 !important;\n--yt-spec-brand-background-solid: #00000000 !important;\n}\n\nhtml[dark]{\n  background-color: #00000000 !important;\n}\n  \n#container.ytd-searchbox{\n  background-color: #00000000 !important;\n}",
