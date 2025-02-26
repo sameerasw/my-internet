@@ -1,0 +1,15 @@
+/* transparency */
+:root, .bg-surface-lower, .bg-black{
+  --tw-bg-opacity: 0 !important;
+  --background-color: transparent !important;
+}
+
+/* nav shadow */
+nav{
+  box-shadow: none !important;
+}
+
+/* overlay bg */
+.z-dropdown{
+  background-color: var(--tw-shadow-color, #000) !important;
+}
