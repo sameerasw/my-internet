@@ -1,0 +1,14 @@
+/* transparecy */
+:root{
+  --geist-background: transparent !important;
+  --ds-background-200-value: transparent !important;
+}
+
+html, header, [data-testid="navbar/submenu"], footer{
+  background-color: transparent !important;
+}
+
+/* overlay fix */
+[role="menu"]{
+  background-color: var(--accents-2) !important;
+}
