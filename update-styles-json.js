@@ -12,14 +12,17 @@ function updateStylesJson() {
   fs.readdirSync(rootDir).forEach(file => {
     if (file.endsWith('.css') && file !== excludeFile) {
       const content = fs.readFileSync(path.join(rootDir, file), 'utf-8');
-      const features = content.split(/\/\* (.*?) \*\//).filter((_, index) => index % 2 !== 0);
+      const parts = content.split(/\/\* (.*#\d{2}) \*\//);
 
-      features.forEach((feature, index) => {
-        const cssCode = content.split(/\/\* (.*?) \*\//).filter((_, idx) => idx % 2 === 0)[index].trim();
-        if (!styles.website[file]) {
-          styles.website[file] = {};
+      parts.forEach((part, index) => {
+        if (index % 2 === 1) {
+          const feature = part.trim();
+          const cssCode = parts[index + 1].trim();
+          if (!styles.website[file]) {
+            styles.website[file] = {};
+          }
+          styles.website[file][feature] = cssCode;
         }
-        styles.website[file][feature] = cssCode;
       });
     }
   });
