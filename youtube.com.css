@@ -1,4 +1,3 @@
-/* Additional :  https://github.com/code4charity/YouTube-Extension/ , https://addons.mozilla.org/en-US/firefox/addon/youtube-timestamps/ */
 /* transparency */
 :root{
   --primary-background-color: #00000000 !important;
@@ -15,7 +14,7 @@ html[dark]{
   background-color: #00000000 !important;
 }
 
-  /* no left side guide */
+/* no left side guide */
 ytd-mini-guide-renderer {
   display: none !important;
 }
@@ -27,7 +26,6 @@ ytd-mini-guide-renderer {
 #masthead-container{
   #background.ytd-masthead{
     background-color: #00000000 !important;
-    /* backdrop-filter: blur(30px) !important; */
   }
 }
 
@@ -72,19 +70,13 @@ ytd-menu-renderer #button {
       height: 45px !important;
 
       .yt-spec-avatar-shape__image{
-        /* scale: 1.2 !important; */
         border-radius: 1.5em !important;
-        /* margin: 0.1em !important; */
       }
     }
 
     &:hover{
       scale: 1.2 !important;
     }
-  }
-
-  #video-title{
-    /* height: 1.2em !important; */
   }
 }
 
@@ -112,8 +104,7 @@ yt-live-chat-renderer{
   background-color: transparent !important;
 }
 
-/* ------ Remove this ------ */
-/* forcing video to take full size in view */
+/* Theatre mode : forcing video to take full size in view */
 ytd-watch-flexy{
   margin-top: 0 !important;
 }
