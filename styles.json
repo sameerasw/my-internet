@@ -1,3 +1,35 @@
 {
-  "website": {}
+  "website": {
+    "aistudio.google.com.css": {},
+    "calendar.google.com.css": {},
+    "chat.deepseek.com.css": {},
+    "chat.openai.com.css": {},
+    "discord.com.css": {},
+    "facebook.com.css": {},
+    "gemini.google.com.css": {},
+    "github.com.css": {},
+    "google.com.css": {},
+    "instagram.com.css": {},
+    "keep.google.com.css": {},
+    "learning.westminster.ac.uk.css": {},
+    "messenger.com.css": {},
+    "monkeytype.com.css": {},
+    "music.youtube.com.css": {},
+    "notion.so.css": {},
+    "pexels.com.css": {},
+    "pinterest.com.css": {},
+    "priv.au.css": {},
+    "quora.com.css": {},
+    "reddit.com.css": {},
+    "sameerasw.com.css": {},
+    "sourceforge.net.css": {},
+    "speedtest.net.css": {},
+    "tasks.google.com.css": {},
+    "twitch.tv.css": {},
+    "unsplash.com.css": {},
+    "web.telegram.org.css": {},
+    "web.whatsapp.com.css": {},
+    "x.com.css": {},
+    "youtube.com.css": {}
+  }
 }
