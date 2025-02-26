@@ -118,10 +118,11 @@ yt-live-chat-renderer {
 /* Theatre view : full window view */
 ytd-watch-flexy[theater=""]{
   margin-top: 0 !important;
-  #movie_player > div.html5-video-container video{
-    height: 100vh !important;
-    width: 100vw !important;
-  }
+#movie_player > div.html5-video-container video{
+  height: 100vh !important;
+  width: 100vw !important;
+  left: 0 !important;
+}
 }
 
 /* no ambient mode */
