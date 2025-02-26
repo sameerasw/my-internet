@@ -1,0 +1,13 @@
+/* transparecy */
+:root{
+  --darkreader-bg--gm3-sys-color-background: transparent !important;
+  --darkreader-background-ffffff: transparent !important;
+  --darkreader-bg--gm3-sys-color-surface-container: transparent !important;
+  --gm3-sys-color-background: transparent !important;
+  --gm3-sys-color-surface-container: transparent !important;
+}
+
+/* roundness */
+.RY3tic{
+  border-radius: 0.5em !important;
+}
