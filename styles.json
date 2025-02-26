@@ -51,7 +51,8 @@
       "transparecy": ":root ._aa4d,\n:root ._ar45 {\n  --ig-primary-background: #00000000 !important;\n  --ig-highlight-background: #00000000 !important;\n  --ig-secondary-background: #00000000 !important;\n}\n\n.xvbhtw8 {\n  background-color: #00000000 !important;\n  border: none !important;\n}",
       "hide elements": "div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 {\n  display: none !important;\n}",
       "other changes": ".xso031l {\n  border-radius: 1.5em !important;\n}\n\n* {\n  background-color: #00000000 !important;\n}\n\n.xopu45v {\n  border: none !important;\n}",
-      "comments overlay fix": "[role=\"dialog\"] [role=\"presentation\"] > div > div{\n  background-color: var(--fds-highlight-cell-background) !important;\n  border-radius: 2em !important;\n}"
+      "comments overlay fix": "[role=\"dialog\"] [role=\"presentation\"] > div > div{\n  background-color: var(--fds-highlight-cell-background) !important;\n  border-radius: 2em !important;\n}",
+      "profile overlay fix": "div.x6s0dn4.xvbhtw8.x1lq5wgf.xgqcy7u.x30kzoy.x9jhf4c.x1xcus5i.xrvj5dj.x1dh5ka.xyamay9.x1l90r2v.x1n2onr6.xgpatz3.x1mu97ne {\n  background-color: var(--fds-highlight-cell-background) !important;\n}"
     },
     "keep.google.com.css": {
       "styles": "body,\nheader,\n.PvRhvb-bN97Pc {\n  background-color: transparent !important;\n  border: none !important;\n}"
