@@ -1,21 +1,21 @@
-/* hover and others */
-#__next .flex-col .text-token-primary:has(.inline-flex) {
-  opacity: 0.01 !important;
-  transition: all 0.5s ease-in-out !important;
-  &:hover {
+/* transparecy */
+:root{
+  --main-surface-background: #00000000 !important;
+  --main-surface-primary: #00000000 !important;
+  --sidebar-surface-primary: #00000000 !important;
+}
+
+/* hover */
+div.hidden:nth-child(5), div.right-0:nth-child(1){
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+
+  &:hover{
     opacity: 1 !important;
   }
 }
 
-.flex-col .flex-col :last-child:has(.text-center) {
-  margin-bottom: 20px !important;
-}
-
-/* transparecy */
-body {
-  background-color: var(--arc-palette-background) !important;
-}
-
-div.mb-5.text-2xl.font-medium {
-  color: var(--arc-palette-foregroundSecondary) !important;
+/* hidden elements */
+button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light.text-xs.text-token-text-secondary, div.w-full:nth-child(6) {
+  display: none !important;
 }
