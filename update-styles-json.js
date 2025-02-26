@@ -12,13 +12,13 @@ function updateStylesJson() {
   fs.readdirSync(rootDir).forEach(file => {
     if (file.endsWith('.css') && file !== excludeFile) {
       const content = fs.readFileSync(path.join(rootDir, file), 'utf-8');
-      const parts = content.split(/\/\* (.*#\d{2}) \*\//);
+      const parts = content.split(/\/\* (.*?) \*\//);
       let isValid = true;
       const features = {};
 
-      for (let index = 0; index < parts.length; index += 2) {
-        const feature = parts[index + 1]?.trim();
-        const cssCode = parts[index + 2]?.trim();
+      for (let index = 1; index < parts.length; index += 2) {
+        const feature = parts[index]?.trim();
+        const cssCode = parts[index + 1]?.trim();
 
         if (feature && cssCode) {
           try {
