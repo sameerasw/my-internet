@@ -13,17 +13,25 @@ function updateStylesJson() {
     if (file.endsWith('.css') && file !== excludeFile) {
       const content = fs.readFileSync(path.join(rootDir, file), 'utf-8');
       const parts = content.split(/\/\* (.*#\d{2}) \*\//);
+      let isValid = true;
+      const features = {};
 
       parts.forEach((part, index) => {
         if (index % 2 === 1) {
           const feature = part.trim();
           const cssCode = parts[index + 1].trim();
-          if (!styles.website[file]) {
-            styles.website[file] = {};
+          try {
+            JSON.stringify({ [feature]: cssCode });
+            features[feature] = cssCode;
+          } catch (e) {
+            isValid = false;
           }
-          styles.website[file][feature] = cssCode;
         }
       });
+
+      if (isValid) {
+        styles.website[file] = features;
+      }
     }
   });
 
