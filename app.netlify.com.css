@@ -1,0 +1,9 @@
+/* transparecy */
+:root{
+  --colorBgApp: transparent !important;
+}
+
+/*  no footer */
+footer.app-footer {
+  display: none !important;
+}
