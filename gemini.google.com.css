@@ -1,13 +1,21 @@
-:root .dark-theme, :root .light-theme{
---gem-sys-color--surface: #00000000 !important;
---gem-sys-color--surface-container: #00000000 !important;
+/* transparecy */
+:root .dark-theme,
+:root .light-theme {
+  --gem-sys-color--surface: #00000000 !important;
+  --gem-sys-color--surface-container: #00000000 !important;
 }
 
-.content-container chat-window .chat-container .bottom-container{
+input-container,
+.input-gradient::before {
+  background: none !important;
+}
+
+/* other changes */
+.content-container chat-window .chat-container .bottom-container {
   margin-bottom: 30px !important;
 }
 
-input-container hallucination-disclaimer{
+input-container hallucination-disclaimer {
   display: none !important;
 }
 
@@ -15,20 +23,20 @@ input-container hallucination-disclaimer{
   margin-bottom: 2em !important;
 }
 
-.side-nav-menu-button, .boqOnegoogleliteOgbOneGoogleBar, top-bar-actions{
+.cdk-overlay-pane > div,
+mat-card {
+  background-color: var(--bard-color-neutral-96) !important;
+  border-radius: 1em !important;
+}
+
+/* hover */
+.side-nav-menu-button,
+.boqOnegoogleliteOgbOneGoogleBar,
+top-bar-actions {
   opacity: 0 !important;
   transition: opacity 0.3s ease-in-out !important;
 
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
-}
-
-input-container, .input-gradient::before{
-  background: none !important;
-}
-
-.cdk-overlay-pane > div, mat-card{
-  background-color: var(--bard-color-neutral-96) !important;
-  border-radius: 1em !important;
 }

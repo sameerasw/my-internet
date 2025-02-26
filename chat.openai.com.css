@@ -1,19 +1,21 @@
-#__next .flex-col .text-token-primary:has(.inline-flex){
-    opacity: 0.01 !important;
-    transition: all 0.5s ease-in-out !important;
-    &:hover{
-      opacity: 1 !important;
-    }
+/* hover and others */
+#__next .flex-col .text-token-primary:has(.inline-flex) {
+  opacity: 0.01 !important;
+  transition: all 0.5s ease-in-out !important;
+  &:hover {
+    opacity: 1 !important;
   }
-  
-  .flex-col .flex-col :last-child:has(.text-center){
-    margin-bottom: 20px !important;
-  }
-  
-  body{
-      background-color: var(--arc-palette-background) !important;
-  }
-  
-  div.mb-5.text-2xl.font-medium {
-    color: var(--arc-palette-foregroundSecondary) !important;
-  }
+}
+
+.flex-col .flex-col :last-child:has(.text-center) {
+  margin-bottom: 20px !important;
+}
+
+/* transparecy */
+body {
+  background-color: var(--arc-palette-background) !important;
+}
+
+div.mb-5.text-2xl.font-medium {
+  color: var(--arc-palette-foregroundSecondary) !important;
+}

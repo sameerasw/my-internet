@@ -1,27 +1,30 @@
-:root ._aa4d, :root ._ar45{
+/* transparecy */
+:root ._aa4d,
+:root ._ar45 {
   --ig-primary-background: #00000000 !important;
   --ig-highlight-background: #00000000 !important;
   --ig-secondary-background: #00000000 !important;
-  /* --ig-separator: #00000000 !important; */
 }
 
-.xvbhtw8{
+.xvbhtw8 {
   background-color: #00000000 !important;
   border: none !important;
 }
 
+/* hide elements */
 div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 {
   display: none !important;
 }
 
+/* other changes */
 .xso031l {
   border-radius: 1.5em !important;
 }
 
-*{
+* {
   background-color: #00000000 !important;
 }
 
-.xopu45v{
+.xopu45v {
   border: none !important;
 }

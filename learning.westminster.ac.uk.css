@@ -1,38 +1,43 @@
-#site-wrap, body{
-    background-color: #00000000 !important;
+/* transparecy */
+#site-wrap,
+body {
+  background-color: #00000000 !important;
+}
+
+:root {
+  --darkreader-neutral-background: #00000000 !important;
+  --darkreader-background-ffffff: #00000000 !important;
+}
+
+body {
+  background: none !important;
+}
+
+/* hide elements */
+ul.side-menu-footer,
+#pagefooter {
+  display: none !important;
+}
+
+/* border and others */
+.element-card {
+  border-radius: 1em !important;
+  background-color: #00000044 !important;
+}
+
+.course-banner {
+  border-radius: 1em 1em 0 0 !important;
+}
+
+.bb-offcanvas-panel {
+  background-color: #111111 !important;
+}
+
+/* hover */
+div.hide-in-background.themed-background-primary-fill-only.left-off-canvas-menu.color-selection-live-mode {
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover {
+    opacity: 1 !important;
   }
-  
-  :root{
-    --darkreader-neutral-background: #00000000 !important;
-    --darkreader-background-ffffff: #00000000 !important;
-  }
-  
-  ul.side-menu-footer, #pagefooter {
-    display: none !important;
-    
-  }
-  
-  div.hide-in-background.themed-background-primary-fill-only.left-off-canvas-menu.color-selection-live-mode {
-    opacity: 0 !important;
-    transition: all 0.3s ease-in-out !important;
-    &:hover{
-      opacity: 1 !important;
-    }
-  }
-  
-  .element-card{
-    border-radius: 1em !important;
-    background-color: #00000044 !important;
-  }
-  
-   .course-banner{
-     border-radius: 1em 1em 0 0 !important;
-   }
-  
-   .bb-offcanvas-panel{
-     background-color: #111111 !important;
-   }
-  
-   body{
-     background: none !important;
-   }
+}

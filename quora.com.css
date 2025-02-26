@@ -1,10 +1,12 @@
+/* transparecy */
 body,
-.q-color-mode--dark .qu-borderColor--raised{
+.q-color-mode--dark .qu-borderColor--raised {
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
 }
 
+/* other changes */
 .qu-borderRadius--small {
   border-radius: 1em !important;
 }

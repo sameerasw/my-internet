@@ -1,23 +1,30 @@
-:root{
-    --color-background: #00000000 !important;
-    --theme-background-color: #00000000 !important;
-    --color-borders: #00000000 !important;
-    --color-light-shadow: #00000000 !important;
-  }
-  
-  body, html, html.theme-dark, #root, html.theme-dark .ThfRMqwq::before, html.theme-dark .C6IaXYew:not(.K1xhz7U5):not(.CwoXMwaR)::after{
-    background-image: none !important;
-  }
-  
-  .C6IaXYew, .ThfRMqwq{
-    background-color: #00000000 !important;
-  }
-  
-  .menu-container{
-    background-color: #000000 !important;
-  }
-  
-  .settings-main-menu{
-    border: none !important;
-    box-shadow: none !important;
-  }
+/* transparecy */
+:root {
+  --color-background: #00000000 !important;
+  --theme-background-color: #00000000 !important;
+  --color-borders: #00000000 !important;
+  --color-light-shadow: #00000000 !important;
+}
+
+body,
+html,
+html.theme-dark,
+#root,
+html.theme-dark .ThfRMqwq::before,
+html.theme-dark .C6IaXYew:not(.K1xhz7U5):not(.CwoXMwaR)::after {
+  background-image: none !important;
+}
+
+.C6IaXYew,
+.ThfRMqwq {
+  background-color: #00000000 !important;
+}
+
+.menu-container {
+  background-color: #000000 !important;
+}
+
+.settings-main-menu {
+  border: none !important;
+  box-shadow: none !important;
+}

@@ -1,37 +1,53 @@
-div.lower-content.lower-content-blend, footer , .connection-component-container > div:nth-child(3){
-    display: none !important;
+/* transparecy */
+html,
+body,
+.pre-fold,
+.masthead-dark {
+  background: #00000000 !important;
+  background-color: #00000000 !important;
+}
+
+/* layout fixes */
+#container,
+body,
+.pre-fold,
+.main-content,
+.main,
+.container,
+.pure-g,
+.pure-u-custom-speedtest {
+  height: 100% !important;
+}
+
+.pre-fold {
+  align-items: center !important;
+  margin: auto 0 !important;
+}
+
+.container,
+.speedtest-container {
+  margin: auto auto !important;
+}
+
+/* hover */
+div.pure-u-1 {
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover {
+    opacity: 1 !important;
   }
-  
-  #container, body, .pre-fold, .main-content, .main, .container, .pure-g, .pure-u-custom-speedtest {
-    height: 100% !important;
-  }
-  
-  .pre-fold{
-    align-items: center !important;
-    margin: auto 0 !important;
-  }
-  
-  .container, .speedtest-container{
-    margin: auto auto !important;
-  }
-  
-  div.pure-u-1 {
-    opacity: 0 !important;
-    transition: all 0.3s ease-in-out !important;
-    &:hover{
-      opacity: 1 !important;
-    }
-  }
-  
-  html, body, .pre-fold, .masthead-dark{
-    background: #00000000 !important;
-    background-color: #00000000 !important;
-  }
-  
-  .pure-u-custom-ad-skyscraper{
-    display: none !important;
-  }
-  
-  .pure-u-custom-speedtest{
-    margin: auto !important;
-  }
+}
+
+/* hide elements */
+div.lower-content.lower-content-blend,
+footer,
+.connection-component-container > div:nth-child(3) {
+  display: none !important;
+}
+.pure-u-custom-ad-skyscraper {
+  display: none !important;
+}
+
+.pure-u-custom-speedtest {
+  margin: auto !important;
+}

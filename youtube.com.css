@@ -1,51 +1,51 @@
-/* Additional :  https://github.com/code4charity/YouTube-Extension/ , https://addons.mozilla.org/en-US/firefox/addon/youtube-timestamps/ */
 /* transparency */
-:root{
+:root {
   --primary-background-color: #00000000 !important;
   --dark-theme-background-color: #00000000 !important;
---yt-spec-base-background: #00000000 !important;
---yt-spec-brand-background-solid: #00000000 !important;
+  --yt-spec-base-background: #00000000 !important;
+  --yt-spec-brand-background-solid: #00000000 !important;
 }
 
-html[dark]{
-  background-color: #00000000 !important;
-}
-  
-#container.ytd-searchbox{
+html[dark] {
   background-color: #00000000 !important;
 }
 
-  /* no left side guide */
+#container.ytd-searchbox {
+  background-color: #00000000 !important;
+}
+
+/* no left side guide */
 ytd-mini-guide-renderer {
   display: none !important;
 }
-#page-manager{
+#page-manager {
   margin-left: 0 !important;
 }
 
 /* transparent youtube header */
-#masthead-container{
-  #background.ytd-masthead{
+#masthead-container {
+  #background.ytd-masthead {
     background-color: #00000000 !important;
-    /* backdrop-filter: blur(30px) !important; */
   }
 }
 
 /* Hide youtube filter chips at top */
-.ytd-two-column-browse-results-renderer #header{
+.ytd-two-column-browse-results-renderer #header {
   display: none !important;
 }
 
 /* Make youtube feed more compact */
 ytd-rich-item-renderer[rendered-from-rich-grid] {
-    --ytd-rich-item-row-usable-width: calc(100% - var(--ytd-rich-grid-gutter-margin)* 1) !important;
+  --ytd-rich-item-row-usable-width: calc(
+    100% - var(--ytd-rich-grid-gutter-margin) * 1
+  ) !important;
   margin-bottom: 1em !important;
 }
-ytd-video-meta-block.grid #metadata.ytd-video-meta-block{
+ytd-video-meta-block.grid #metadata.ytd-video-meta-block {
   flex-direction: row !important;
-  text-overflow:ellipsis !important;
+  text-overflow: ellipsis !important;
 
-  #metadata-line span:nth-child(3){
+  #metadata-line span:nth-child(3) {
     width: 2em !important;
     height: 1em !important;
     margin-left: 0.5em !important;
@@ -53,71 +53,73 @@ ytd-video-meta-block.grid #metadata.ytd-video-meta-block{
 }
 
 /* Youtube home feed cards improvements */
-ytd-rich-grid-media{
-    margin-bottom: 0.7em !important;
-ytd-menu-renderer #button {
-  opacity: 0 !important;
-  transition: opacity 0.3s ease-in-out !important;
-}
-  :hover ytd-menu-renderer #button{
+ytd-rich-grid-media {
+  margin-bottom: 0.7em !important;
+  ytd-menu-renderer #button {
+    opacity: 0 !important;
+    transition: opacity 0.3s ease-in-out !important;
+  }
+  :hover ytd-menu-renderer #button {
     opacity: 1 !important;
   }
 
-  #avatar-container{
+  #avatar-container {
     margin: 1.75em 1.5em 0 0.5em !important;
     transition: scale 0.4s ease-in-out !important;
 
-    .yt-spec-avatar-shape--avatar-size-medium{
+    .yt-spec-avatar-shape--avatar-size-medium {
       width: 45px !important;
       height: 45px !important;
 
-      .yt-spec-avatar-shape__image{
-        /* scale: 1.2 !important; */
+      .yt-spec-avatar-shape__image {
         border-radius: 1.5em !important;
-        /* margin: 0.1em !important; */
       }
     }
 
-    &:hover{
+    &:hover {
       scale: 1.2 !important;
     }
-  }
-
-  #video-title{
-    /* height: 1.2em !important; */
   }
 }
 
 /* Make video background transparent */
-.html5-main-video, .html5-video-container, #movie_player, #container, #ytd-player, #player-container, #player-full-bleed-container, #full-bleed-container{
+.html5-main-video,
+.html5-video-container,
+#movie_player,
+#container,
+#ytd-player,
+#player-container,
+#player-full-bleed-container,
+#full-bleed-container {
   background-color: #00000000 !important;
 }
 
 /* transparent overlay chat */
-#chat{
+#chat {
   position: absolute !important;
-height: 800px !important;
-top: 50vh !important;
-transform: translateY(-50%) !important;
+  height: 800px !important;
+  top: 50vh !important;
+  transform: translateY(-50%) !important;
 }
 
 /* search box background */
-.ytSearchboxComponentSearchButton, div.style-scope.tp-yt-app-drawer, .ytSearchboxComponentInputBox{
+.ytSearchboxComponentSearchButton,
+div.style-scope.tp-yt-app-drawer,
+.ytSearchboxComponentInputBox {
   background-color: var(--yt-spec-text-primary-inverse) !important;
   color: var(--yt-live-chat-text-input-field-placeholder-color) !important;
 }
 
-yt-live-chat-renderer{
+yt-live-chat-renderer {
   background: none !important;
   background-color: transparent !important;
 }
 
-/* ------ Remove this ------ */
-/* forcing video to take full size in view */
-ytd-watch-flexy{
+/* Theatre mode : forcing video to take full size in view */
+ytd-watch-flexy {
   margin-top: 0 !important;
 }
-#movie_player > div.html5-video-container video{
+#movie_player > div.html5-video-container video {
   height: 100vh !important;
   width: 100vw !important;
 }
@@ -128,75 +130,75 @@ ytd-watch-flexy{
 }
 
 /* Extension : timed comments on seekbar mods */
-.__youtube-timestamps__stamp{
+.__youtube-timestamps__stamp {
   scale: 3 !important;
   border-radius: 1.5px !important;
   transition: all 0.3s ease-in-out !important;
 
-  &:hover{
+  &:hover {
     scale: 5 !important;
   }
 }
 
-.__youtube-timestamps__preview-wrapper{
+.__youtube-timestamps__preview-wrapper {
   scale: 1.2 !important;
   transform: translateX(16%) !important;
-  .__youtube-timestamps__preview{
-  border-radius: 1em !important;
-  backdrop-filter: blur(20px) !important;
-  background-color: #00000099 !important;
-  border: solid 2px gray !important;
+  .__youtube-timestamps__preview {
+    border-radius: 1em !important;
+    backdrop-filter: blur(20px) !important;
+    background-color: #00000099 !important;
+    border: solid 2px gray !important;
 
-.__youtube-timestamps__preview__avatar{
-  height: 2.5em !important;
-  width: 2.5em !important;
-  border-radius: 0.5em !important;
-}
+    .__youtube-timestamps__preview__avatar {
+      height: 2.5em !important;
+      width: 2.5em !important;
+      border-radius: 0.5em !important;
+    }
 
-  .__youtube-timestamps__preview__text-stamp{
-    background-color: #ffaaaa !important;
-    padding: 0.1em 0.3em !important;
-    border-radius: 0.5em !important;
-    color: #000 !important;
-  }
+    .__youtube-timestamps__preview__text-stamp {
+      background-color: #ffaaaa !important;
+      padding: 0.1em 0.3em !important;
+      border-radius: 0.5em !important;
+      color: #000 !important;
+    }
 
-  .__youtube-timestamps__preview__name, .__youtube-timestamps__preview__text{
-  color: #ffffff !important;
-  }
+    .__youtube-timestamps__preview__name,
+    .__youtube-timestamps__preview__text {
+      color: #ffffff !important;
+    }
   }
 }
 
 /* ----- I can't rmmbr what these did LOL ----- */
 
-#content #dismissible:hover{
-  ytd-video-meta-block{
+#content #dismissible:hover {
+  ytd-video-meta-block {
     opacity: 1 !important;
   }
 }
 
-#panels-full-bleed-container{
+#panels-full-bleed-container {
   width: 0 !important;
 }
 
-
 /* youtube timed comments styling */
-.comments-container{
-
-  div.wrapper{
+.comments-container {
+  div.wrapper {
     background-color: transparent !important;
   }
-  
-  div.clickable-comment, div.replies{
+
+  div.clickable-comment,
+  div.replies {
     background-color: #00000033 !important;
     backdrop-filter: blur(20px) !important;
     padding: 1em !important;
     margin-bottom: 1em !important;
     border-radius: 1em !important;
     max-width: 40em !important;
-  transition: all 0.4s ease-in-out !important;
+    transition: all 0.4s ease-in-out !important;
 
-      .likes-and-replies{
-        opacity: 0.3 !important;
-      }
+    .likes-and-replies {
+      opacity: 0.3 !important;
+    }
   }
 }

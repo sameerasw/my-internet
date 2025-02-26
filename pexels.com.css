@@ -1,11 +1,21 @@
-body, h4, h3, h2, h1, h5, h6, span, a{
-    color: #ffffff !important;
-  }
-  
-  .Navbar_container__PS9oP{
-    background-color: #00000000 !important;
-    backdrop-filter: blur(60px) !important;
-    border: none !important;
-    background: #00000000 !important;
-    box-shadow: none !important;
-  }
+/* text color */
+body,
+h4,
+h3,
+h2,
+h1,
+h5,
+h6,
+span,
+a {
+  color: #ffffff !important;
+}
+
+/* navbar */
+.Navbar_container__PS9oP {
+  background-color: #00000000 !important;
+  backdrop-filter: blur(60px) !important;
+  border: none !important;
+  background: #00000000 !important;
+  box-shadow: none !important;
+}

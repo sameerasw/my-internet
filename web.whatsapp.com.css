@@ -1,45 +1,53 @@
-.dark{
-    --app-background: #00000000 !important;
-    --app-background-stripe: #00000000 !important;
-    --WDS-app-wash: #00000000 !important;
-    --panel-header-background: #00000000 !important;
-    --navbar-background: #00000000 !important;
-    --panel-background-lighter: #00000000 !important;
-    --intro-background: #00000000 !important;
-    --background-default: #00000000 !important;
-    --butterbar-default-background: #00000000 !important;
-    --filters-container-background: #00000000 !important;
-    --search-input-container-background: #00000000 !important;
-    --search-container-background: #00000000 !important;
-    --conversation-header-border: #00000000 !important;
-    --border-list: #00000000 !important;
-    --conversation-panel-background: #00000000 !important;
-    --rich-text-panel-background: #00000000 !important;
+/* transparecy */
+.dark {
+  --app-background: #00000000 !important;
+  --app-background-stripe: #00000000 !important;
+  --WDS-app-wash: #00000000 !important;
+  --panel-header-background: #00000000 !important;
+  --navbar-background: #00000000 !important;
+  --panel-background-lighter: #00000000 !important;
+  --intro-background: #00000000 !important;
+  --background-default: #00000000 !important;
+  --butterbar-default-background: #00000000 !important;
+  --filters-container-background: #00000000 !important;
+  --search-input-container-background: #00000000 !important;
+  --search-container-background: #00000000 !important;
+  --conversation-header-border: #00000000 !important;
+  --border-list: #00000000 !important;
+  --conversation-panel-background: #00000000 !important;
+  --rich-text-panel-background: #00000000 !important;
   --drawer-background-deep: #00000000 !important;
   --drawer-section-background: #00000000 !important;
-  }
-  
-  .two, .three{
-    width: 100vw !important;
-    max-width: 100vw !important;
-    height: 100vh !important;
-    margin: 0 !important;
-    top: 0 !important;
-  }
-  
-  .xu3j5b3, .xvkby78::after, .xso031l{
-    border: none !important;
-    outline: none !important;
-  }
-  
-  ._al_d, div.x9f619.x78zum5.x6s0dn4.xl56j7k.xcxhlts.xktsk01.x1fqp7bg.x1d52u69.x889kno.x178xt8z.x13fuv20.xyj1x25.xzwifym {
-    display: none !important;
-  }
-  
-  [data-asset-chat-background-dark], div._ajv7:nth-child(3){
-    display: none !important;
-  }
-  
-  .x13x2ugz{
-    border-radius: 2em !important;
-  }
+}
+
+/* layout fixes */
+.two,
+.three {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  top: 0 !important;
+}
+
+/* other changes */
+.xu3j5b3,
+.xvkby78::after,
+.xso031l {
+  border: none !important;
+  outline: none !important;
+}
+
+._al_d,
+div.x9f619.x78zum5.x6s0dn4.xl56j7k.xcxhlts.xktsk01.x1fqp7bg.x1d52u69.x889kno.x178xt8z.x13fuv20.xyj1x25.xzwifym {
+  display: none !important;
+}
+
+[data-asset-chat-background-dark],
+div._ajv7:nth-child(3) {
+  display: none !important;
+}
+
+.x13x2ugz {
+  border-radius: 2em !important;
+}
