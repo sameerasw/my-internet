@@ -1,4 +1,4 @@
-/* transparency */
+/* Transparency */
 :root {
   --primary-background-color: #00000000 !important;
   --dark-theme-background-color: #00000000 !important;
@@ -14,7 +14,7 @@ html[dark] {
   background-color: #00000000 !important;
 }
 
-/* no left side guide */
+/* No left side guide */
 ytd-mini-guide-renderer {
   display: none !important;
 }
@@ -22,19 +22,19 @@ ytd-mini-guide-renderer {
   margin-left: 0 !important;
 }
 
-/* transparent youtube header */
+/* Transparent header */
 #masthead-container {
   #background.ytd-masthead {
     background-color: #00000000 !important;
   }
 }
 
-/* Hide youtube filter chips at top */
+/* Hide filter chips */
 .ytd-two-column-browse-results-renderer #header {
   display: none !important;
 }
 
-/* Make youtube feed more compact */
+/* Make feed compact */
 ytd-rich-item-renderer[rendered-from-rich-grid] {
   --ytd-rich-item-row-usable-width: calc(
     100% - var(--ytd-rich-grid-gutter-margin) * 1
@@ -52,7 +52,7 @@ ytd-video-meta-block.grid #metadata.ytd-video-meta-block {
   }
 }
 
-/* Youtube home feed cards improvements */
+/* Feed cards improvements */
 ytd-rich-grid-media {
   margin-bottom: 0.7em !important;
   ytd-menu-renderer #button {
@@ -82,7 +82,7 @@ ytd-rich-grid-media {
   }
 }
 
-/* Make video background transparent */
+/* Transparent video background */
 .html5-main-video,
 .html5-video-container,
 #movie_player,
@@ -115,7 +115,7 @@ yt-live-chat-renderer {
   background-color: transparent !important;
 }
 
-/* Theatre mode : forcing video to take full size in view */
+/* Theatre view : full window view */
 ytd-watch-flexy {
   margin-top: 0 !important;
 }
@@ -124,12 +124,7 @@ ytd-watch-flexy {
   width: 100vw !important;
 }
 
-/* Extension : Web scrobbler extension warning removed */
-#scrobbler-infobox-el {
-  display: none !important;
-}
-
-/* Extension : timed comments on seekbar mods */
+/* Addon : timed comments */
 .__youtube-timestamps__stamp {
   scale: 3 !important;
   border-radius: 1.5px !important;
@@ -169,19 +164,6 @@ ytd-watch-flexy {
   }
 }
 
-/* ----- I can't rmmbr what these did LOL ----- */
-
-#content #dismissible:hover {
-  ytd-video-meta-block {
-    opacity: 1 !important;
-  }
-}
-
-#panels-full-bleed-container {
-  width: 0 !important;
-}
-
-/* youtube timed comments styling */
 .comments-container {
   div.wrapper {
     background-color: transparent !important;
@@ -201,4 +183,15 @@ ytd-watch-flexy {
       opacity: 0.3 !important;
     }
   }
+}
+
+/* Misc */
+#content #dismissible:hover {
+  ytd-video-meta-block {
+    opacity: 1 !important;
+  }
+}
+
+#panels-full-bleed-container {
+  width: 0 !important;
 }
