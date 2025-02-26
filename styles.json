@@ -57,6 +57,11 @@
     "keep.google.com.css": {
       "styles": "body,\nheader,\n.PvRhvb-bN97Pc {\n  background-color: transparent !important;\n  border: none !important;\n}"
     },
+    "kick.com.css": {
+      "transparency": ":root, .bg-surface-lower, .bg-black{\n  --tw-bg-opacity: 0 !important;\n  --background-color: transparent !important;\n}",
+      "nav shadow": "nav{\n  box-shadow: none !important;\n}",
+      "overlay bg": ".z-dropdown{\n  background-color: var(--tw-shadow-color, #000) !important;\n}"
+    },
     "learning.westminster.ac.uk.css": {
       "transparecy": "#site-wrap,\nbody {\n  background-color: #00000000 !important;\n}\n\n:root {\n  --darkreader-neutral-background: #00000000 !important;\n  --darkreader-background-ffffff: #00000000 !important;\n}\n\nbody {\n  background: none !important;\n}",
       "hide elements": "ul.side-menu-footer,\n#pagefooter {\n  display: none !important;\n}",
