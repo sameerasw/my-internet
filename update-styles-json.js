@@ -16,20 +16,22 @@ function updateStylesJson() {
       let isValid = true;
       const features = {};
 
-      parts.forEach((part, index) => {
-        if (index % 2 === 1) {
-          const feature = part.trim();
-          const cssCode = parts[index + 1].trim();
+      for (let index = 0; index < parts.length; index += 2) {
+        const feature = parts[index + 1]?.trim();
+        const cssCode = parts[index + 2]?.trim();
+
+        if (feature && cssCode) {
           try {
             JSON.stringify({ [feature]: cssCode });
             features[feature] = cssCode;
           } catch (e) {
             isValid = false;
+            break;
           }
         }
-      });
+      }
 
-      if (isValid) {
+      if (isValid && Object.keys(features).length > 0) {
         styles.website[file] = features;
       }
     }
