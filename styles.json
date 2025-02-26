@@ -154,7 +154,7 @@
       "youtube timed comments styling": ".comments-container {\n  div.wrapper {\n    background-color: transparent !important;\n  }\n\n  div.clickable-comment,\n  div.replies {\n    background-color: #00000033 !important;\n    backdrop-filter: blur(20px) !important;\n    padding: 1em !important;\n    margin-bottom: 1em !important;\n    border-radius: 1em !important;\n    max-width: 40em !important;\n    transition: all 0.4s ease-in-out !important;\n\n    .likes-and-replies {\n      opacity: 0.3 !important;\n    }\n  }\n}"
     },
     "zen-browser.app.css": {
-      "transparency": "body, .astronav-items{\n  background-color: #00000000;\n}\n\n.bg-dark{\n  background-color: #ffffff88;\n  border: none;\n}\n\n:root{\n  --light: transparent;\n}"
+      "transparency": "body, .astronav-items{\n  background-color: #00000000 !important;\n}\n\n.bg-dark{\n  background-color: #ffffff88 !important;\n  border: none !important;\n}\n\n:root{\n  --light: transparent !important;\n}"
     }
   }
 }
