@@ -220,6 +220,9 @@
       "stack-navbar": ".s-topbar{\n  background-color: transparent !important;\n  backdrop-filter: blur(10px) !important;\n}",
       "stack-no footer": "#footer{\n  display: none !important;\n}"
     },
+    "substack.com.css": {
+      "substack-transparency": ".pc-root, .reader-nav-root, .bg-primary-zk6FDl, .topNav-x_3DWw{\n  background-color: transparent !important;\n  border: none !important;\n}"
+    },
     "tasks.google.com.css": {
       "tasks-transparecy": ".vWh0f {\n  --tasks-body-background: transparent !important;\n  --tasks-surface-container-low: transparent !important;\n}"
     },
