@@ -1,0 +1,24 @@
+/* bloo-transparency */
+.media-ui-LeaderboardAd_parallaxWrapper-JMVgdxR--aU-, [data-component="logo-bar"], [data-component="menu-desktop"], [data-component="logo"]{
+  background-color: transparent !important;
+}
+
+/* bloo-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* bloo-hidden */
+#bb-that{
+  display: none !important;
+}
+
+/* bloo-no borders */
+section, .gridLayout_gridLayout__zTmc7, .LineupContent2Up_story__6VATd, .PhoenixTickerBarWrapper_tickerBarWrapper__2cAU2, [data-testid="secondary-stories"], [data-component="grid-module"]{
+  border: none !important;
+}
+
+/* bloo-nav blur */
+nav{
+  backdrop-filter: blur(20px) !important;
+}
