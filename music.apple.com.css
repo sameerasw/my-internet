@@ -1,0 +1,18 @@
+/* applem-no borders */
+@media (prefers-color-scheme: dark), @media (prefers-color-scheme: light)  {
+  :root{
+  --labelDivider: none !important;
+  --playerDropShadow2: none !important;
+  --playerInnerShadow: none !important;
+}
+}
+
+/* applem-transparency */
+body, .navigation, amp-chrome-player::before{
+  background-color: transparent !important;
+}
+
+/* applem-no thanks */
+[slot="native-cta"]{
+  display: none !important;;
+}
