@@ -1,0 +1,15 @@
+/* transparecy */
+html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{
+    --background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* no borders */
+html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{
+    border: none !important;
+}
+
+/* overlay fixes */
+[role="menu"] .css-175oi2r, [role="dialog"] .css-175oi2r{
+    background-color: var(--backgroundLight) !important;
+}
