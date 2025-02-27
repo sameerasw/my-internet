@@ -13,14 +13,15 @@ My custom CSS for websites I visit the most. Click on the preview to view the fi
 - Every property should include `!important` to make sure it gets applied.
 - Do NOT leave commented out code.
 - Add propper comments for each section of a feature at the beginning with a clear but compact description.
+- Each comment of the same file should have a unique domain specific identified prefix (yt- ytm- gh- ...) which will help the browser to separately apply themes.
   
   ```
-    /* transparency */
+    /* yt-transparency */
     :root{
       --colorBgApp: transparent !important;
     }
 
-    /*  no footer */
+    /*  yt-no footer */
     footer.app-footer {
       display: none !important;
     }
