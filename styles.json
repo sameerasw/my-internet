@@ -101,6 +101,12 @@
       "in-no borders": ":root{\n  --color-border-faint: transparent !important;\n}",
       "in-navbar blur": "header{\n  backdrop-filter: blur(20px) !important;\n}"
     },
+    "mail.google.com.css": {
+      "gmail-transparency": ".aAU, .bkK > .nH, .a6o::before, .WR.aeN,.wl, .yO, .aKh, .Nt{\n  background: none !important;\n  background-color: transparent !important;\n}",
+      "gmail-no borders": ".aAU, .bkK > .nH, .a6o::before, .WR.aeN,.wl, .yO, .aKh, .Nt{\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "gmail-hidden": "div.apa.nH.oy8Mbf {\n  display: none !important;\n}",
+      "gmail-preview (experimental)": "[jsname=\"h50Ewe\"]{\n  .UG, .iY, p, h1, h2, h3, h4, h5, h6, span, .nH, div{\n    background: none !important;\n    background-color: transparent !important;\n    color: var(--gm3-sys-color-surface-variant) !important;\n    fill: var(--gm3-sys-color-surface-variant) !important;\n  }\n}"
+    },
     "messenger.com.css": {
       "fbm-transparecy": ":root {\n  --web-wash: #00000000 !important;\n  --messenger-card-background: #00000000 !important;\n  --mwp-header-background-color: #00000000 !important;\n  --mwp-message-row-background: #00000000 !important;\n}\n\n.xcrg951 {\n  background-color: #00000000 !important;\n  box-shadow: none !important;\n}"
     },
