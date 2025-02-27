@@ -81,6 +81,6 @@ div.prc-Dialog-Dialog-luvDS,
 .Overlay__StyledOverlay-sc-51280t-0,
 details-menu,
 .search-suggestions,
-[role="dialog"] {
+[role="dialog"], .Popover-message {
   background-color: var(--bgColor-disabled) !important;
 }
