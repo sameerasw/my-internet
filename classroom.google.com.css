@@ -1,0 +1,16 @@
+/* class-overlay fix */
+[role="menu"]{
+  background-color: var(--darkreader-background-fffffff2) !important;
+}
+
+/* class-transparency */
+.OX4Vcb, nav, .Tabkde, .Aopndd, .RIDjNe, .mwJvDe .KEDCCd{
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* class-darkreader */
+:root{
+--darkreader-background-ffffff: transparent !important;
+}
