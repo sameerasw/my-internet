@@ -12,6 +12,13 @@
       "transparency": "body{\n  background-color: #00000000 !important;\n}",
       "transparency with darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important\n}"
     },
+    "bloomberg.com.css": {
+      "bloo-transparency": ".media-ui-LeaderboardAd_parallaxWrapper-JMVgdxR--aU-, [data-component=\"logo-bar\"], [data-component=\"menu-desktop\"], [data-component=\"logo\"]{\n  background-color: transparent !important;\n}",
+      "bloo-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "bloo-hidden": "#bb-that{\n  display: none !important;\n}",
+      "bloo-no borders": "section, .gridLayout_gridLayout__zTmc7, .LineupContent2Up_story__6VATd, .PhoenixTickerBarWrapper_tickerBarWrapper__2cAU2, [data-testid=\"secondary-stories\"], [data-component=\"grid-module\"]{\n  border: none !important;\n}",
+      "bloo-nav blur": "nav{\n  backdrop-filter: blur(20px) !important;\n}"
+    },
     "bsky.app.css": {
       "transparecy": "html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{\n    --background: transparent !important;\n    background-color: transparent !important;\n}",
       "no borders": "html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{\n    border: none !important;\n}",
