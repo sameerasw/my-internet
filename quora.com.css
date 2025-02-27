@@ -1,4 +1,4 @@
-/* transparecy */
+/* quora-transparecy */
 body,
 .q-color-mode--dark .qu-borderColor--raised {
   background-color: transparent !important;
@@ -6,7 +6,7 @@ body,
   box-shadow: none !important;
 }
 
-/* other changes */
+/* quora-other changes */
 .qu-borderRadius--small {
   border-radius: 1em !important;
 }

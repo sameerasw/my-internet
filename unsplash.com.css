@@ -1,4 +1,4 @@
-/* transparecy */
+/* unsplash-transparecy */
 :root {
   --darkreader-background-ffffff: transparent !important;
   --color-white: #00000000 !important;
@@ -21,12 +21,12 @@ body,
   color: #fff !important;
 }
 
-/* hide elements */
+/* unsplash-hide elements */
 figure:has(.se4Qe) {
   display: none !important;
 }
 
-/* other styles */
+/* unsplash-other styles */
 figure {
   border-radius: 20px !important;
   overflow: hidden !important;

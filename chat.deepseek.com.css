@@ -1,4 +1,4 @@
-/* transparecy */
+/* deepseek-transparecy */
 body[data-ds-dark-theme] {
   --dsr-bg: transparent !important;
   --dsr-side-bg: transparent !important;
@@ -8,7 +8,7 @@ body[data-ds-dark-theme] {
   background: none !important;
 }
 
-/* other changes */
+/* deepseek-other changes */
 div.fcaa63f8.d9fb9344,
 .fcaa63f8 {
   display: none !important;

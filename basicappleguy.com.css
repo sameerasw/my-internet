@@ -1,9 +1,9 @@
-/* transparency */
+/* basicapple-transparency */
 body{
   background-color: #00000000 !important;
 }
 
-/* transparency with darkreader */
+/* basicapple-transparency with darkreader */
 :root{
   --darkreader-background-ffffff: transparent !important
 }

@@ -1,4 +1,4 @@
-/* transparecy */
+/* notion-transparecy */
 body {
   background-color: #00000000 !important;
   background: #00000000 !important;
@@ -14,7 +14,7 @@ header {
   box-shadow: none !important;
 }
 
-/* hide elements */
+/* notion-hide elements */
 div.autolayout-row.autolayout-fill-width.autolayout-center.autolayout-space {
   display: none !important;
 }

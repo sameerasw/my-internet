@@ -1,4 +1,4 @@
-/* transparecy */
+/* fb-transparecy */
 :root {
   --web-wash: #00000000 !important;
   --nav-bar-background: #00000000 !important;
@@ -13,7 +13,7 @@ body,
   background-color: #00000000 !important;
 }
 
-/* other changes */
+/* fb-other changes */
 div.x2lah0s.xyamay9.x1pi30zi.x1l90r2v.x1swvt13 {
   display: none !important;
 }

@@ -1,4 +1,4 @@
-/* Transparency */
+/* yt-Transparency */
 :root {
   --primary-background-color: #00000000 !important;
   --dark-theme-background-color: #00000000 !important;
@@ -14,7 +14,7 @@ html[dark] {
   background-color: #00000000 !important;
 }
 
-/* No left side guide */
+/* yt-No left side guide */
 ytd-mini-guide-renderer {
   display: none !important;
 }
@@ -22,19 +22,19 @@ ytd-mini-guide-renderer {
   margin-left: 0 !important;
 }
 
-/* Transparent header */
+/* yt-Transparent header */
 #masthead-container {
   #background.ytd-masthead {
     background-color: #00000000 !important;
   }
 }
 
-/* Hide filter chips */
+/* yt-Hide filter chips */
 .ytd-two-column-browse-results-renderer #header {
   display: none !important;
 }
 
-/* Make feed compact */
+/* yt-Make feed compact */
 ytd-rich-item-renderer[rendered-from-rich-grid] {
   --ytd-rich-item-row-usable-width: calc(
     100% - var(--ytd-rich-grid-gutter-margin) * 1
@@ -52,7 +52,7 @@ ytd-video-meta-block.grid #metadata.ytd-video-meta-block {
   }
 }
 
-/* Feed cards improvements */
+/* yt-Feed cards improvements */
 ytd-rich-grid-media {
   margin-bottom: 0.7em !important;
   ytd-menu-renderer #button {
@@ -82,7 +82,7 @@ ytd-rich-grid-media {
   }
 }
 
-/* Transparent video background */
+/* yt-Transparent video background */
 .html5-main-video,
 .html5-video-container,
 #movie_player,
@@ -94,7 +94,7 @@ ytd-rich-grid-media {
   background-color: #00000000 !important;
 }
 
-/* transparent overlay chat */
+/* yt-transparent overlay chat */
 #chat {
   position: absolute !important;
   height: 800px !important;
@@ -102,7 +102,7 @@ ytd-rich-grid-media {
   transform: translateY(-50%) !important;
 }
 
-/* search box background */
+/* yt-search box background */
 .ytSearchboxComponentSearchButton,
 div.style-scope.tp-yt-app-drawer,
 .ytSearchboxComponentInputBox {
@@ -115,7 +115,7 @@ yt-live-chat-renderer {
   background-color: transparent !important;
 }
 
-/* Theatre view : full window view */
+/* yt-Theatre view : full window view */
 ytd-watch-flexy[theater=""]{
   margin-top: 0 !important;
 #movie_player > div.html5-video-container video{
@@ -125,12 +125,12 @@ ytd-watch-flexy[theater=""]{
 }
 }
 
-/* no ambient mode */
+/* yt-no ambient mode */
 #cinematics-container{
   display: none !important;
 }
 
-/* Addon : timed comments */
+/* yt-Addon : timed comments */
 .__youtube-timestamps__stamp {
   scale: 3 !important;
   border-radius: 1.5px !important;
@@ -191,7 +191,7 @@ ytd-watch-flexy[theater=""]{
   }
 }
 
-/* Misc */
+/* yt-Misc */
 #content #dismissible:hover {
   ytd-video-meta-block {
     opacity: 1 !important;

@@ -1,11 +1,11 @@
-/* transparecy */
+/* cgpt-transparecy */
 :root{
   --main-surface-background: #00000000 !important;
   --main-surface-primary: #00000000 !important;
   --sidebar-surface-primary: #00000000 !important;
 }
 
-/* hover */
+/* cgpt-hover */
 div.hidden:nth-child(5), div.right-0:nth-child(1){
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
@@ -15,7 +15,7 @@ div.hidden:nth-child(5), div.right-0:nth-child(1){
   }
 }
 
-/* hidden elements */
+/* cgpt-hidden elements */
 button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light.text-xs.text-token-text-secondary, div.w-full:nth-child(6) {
   display: none !important;
 }

@@ -1,4 +1,4 @@
-/* transparecy */
+/* priv-transparecy */
 :root {
   --color-header-background: #00000000 !important;
   --color-sidebar-border: #00000000 !important;
@@ -12,12 +12,12 @@ article {
   border: none !important;
 }
 
-/* no footer */
+/* priv-no footer */
 footer {
   display: none !important;
 }
 
-/* other changes */
+/* priv-other changes */
 #links_on_top {
   opacity: 0 !important;
   transition: opacity 0.3s ease-in-out !important;

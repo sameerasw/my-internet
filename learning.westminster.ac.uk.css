@@ -1,4 +1,4 @@
-/* transparecy */
+/* bb-transparecy */
 #site-wrap,
 body {
   background-color: #00000000 !important;
@@ -13,13 +13,13 @@ body {
   background: none !important;
 }
 
-/* hide elements */
+/* bb-hide elements */
 ul.side-menu-footer,
 #pagefooter {
   display: none !important;
 }
 
-/* border and others */
+/* bb-border and others */
 .element-card {
   border-radius: 1em !important;
   background-color: #00000044 !important;
@@ -33,7 +33,7 @@ ul.side-menu-footer,
   background-color: #111111 !important;
 }
 
-/* hover */
+/* bb-hover */
 div.hide-in-background.themed-background-primary-fill-only.left-off-canvas-menu.color-selection-live-mode {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;

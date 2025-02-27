@@ -1,4 +1,4 @@
-/* transparecy */
+/* wa-transparecy */
 .dark {
   --app-background: #00000000 !important;
   --app-background-stripe: #00000000 !important;
@@ -20,7 +20,7 @@
   --drawer-section-background: #00000000 !important;
 }
 
-/* layout fixes */
+/* wa-layout fixes */
 .two,
 .three {
   width: 100vw !important;
@@ -30,7 +30,7 @@
   top: 0 !important;
 }
 
-/* other changes */
+/* wa-other changes */
 .xu3j5b3,
 .xvkby78::after,
 .xso031l {

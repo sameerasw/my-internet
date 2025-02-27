@@ -1,4 +1,4 @@
-/* transparecy */
+/* ookla-transparecy */
 html,
 body,
 .pre-fold,
@@ -7,7 +7,7 @@ body,
   background-color: #00000000 !important;
 }
 
-/* layout fixes */
+/* ookla-layout fixes */
 #container,
 body,
 .pre-fold,
@@ -29,7 +29,7 @@ body,
   margin: auto auto !important;
 }
 
-/* hover */
+/* ookla-hover */
 div.pure-u-1 {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
@@ -38,7 +38,7 @@ div.pure-u-1 {
   }
 }
 
-/* hide elements */
+/* ookla-hide elements */
 div.lower-content.lower-content-blend,
 footer,
 .connection-component-container > div:nth-child(3) {

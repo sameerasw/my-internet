@@ -1,4 +1,4 @@
-/* transparecy */
+/* discord-transparecy */
 :root {
   --background-secondary: #00000000 !important;
   --background-primary: #00000000 !important;
@@ -26,7 +26,7 @@
   ) !important;
 }
 
-/* other changes */
+/* discord-other changes */
 img.bannerImg_f37cb1 {
   border-radius: 0 0 1em 1em !important;
 }

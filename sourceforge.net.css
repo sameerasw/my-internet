@@ -1,4 +1,4 @@
-/* transparecy */
+/* sf-transparecy */
 :root {
   --darkreader-background-ffffff: #00000000 !important;
   --darkreader-background-333333: #00000000 !important;
@@ -17,7 +17,7 @@ article {
   border: none !important;
 }
 
-/* hide elements */
+/* sf-hide elements */
 footer {
   display: none !important;
 }
@@ -38,7 +38,7 @@ section.sandiego.l-header-nav-bottom.sticky {
   display: none !important;
 }
 
-/* no border and other changes */
+/* sf-no border and other changes */
 .dropdown li,
 .links a {
   border: none !important;

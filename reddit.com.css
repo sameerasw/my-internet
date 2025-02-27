@@ -1,4 +1,4 @@
-/* transparecy */
+/* reddit-transparecy */
 :root.theme-dark,
 .theme-rpl {
   --color-neutral-background: #00000000 !important;
@@ -16,7 +16,7 @@ html {
   background-color: #00000000 !important;
 }
 
-/* hide elements */
+/* reddit-hide elements */
 div aside recent-posts {
   display: none !important;
 }
@@ -30,13 +30,13 @@ hr.w-100.my-sm.border-neutral-border-weak {
   display: none !important;
 }
 
-/* other changes */
+/* reddit-other changes */
 .overflow-visible > div:nth-child(32),
 faceplate-dropdown-menu {
   border-radius: 1em 1em 0 0 !important;
 }
 
-/* hover */
+/* reddit-hover */
 div.left-sidebar,
 #right-sidebar-container {
   opacity: 0 !important;

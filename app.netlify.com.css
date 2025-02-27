@@ -1,9 +1,9 @@
-/* transparecy */
+/* netlify-transparecy */
 :root{
   --colorBgApp: transparent !important;
 }
 
-/*  no footer */
+/* netlify-no footer */
 footer.app-footer {
   display: none !important;
 }

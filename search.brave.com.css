@@ -1,9 +1,9 @@
-/* transparecy */
+/* brave-transparecy */
 :root{
   --color-page-background: transparent !important;
 }
 
-/* no, thank you */
+/* brave-no, thank you */
 div.download-cta.svelte-1avqjm8 {
   display: none  !important;
 }

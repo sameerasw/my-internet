@@ -1,4 +1,4 @@
-/* transparent bg */
+/* ytm-transparent bg */
 :root {
   --ts-body-color: #00000000 !important;
 }
@@ -7,7 +7,7 @@ body {
   background-color: transparent !important;
 }
 
-/* hover navbar and titlebar */
+/* ytm-hover navbar and titlebar */
 .ytmusic-guide-renderer,
 ytmusic-nav-bar {
   opacity: 0.01 !important;
@@ -17,7 +17,7 @@ ytmusic-nav-bar {
   }
 }
 
-/* hide elements */
+/* ytm-hide elements */
 #side-panel,
 #nav-bar-divider,
 #background,
@@ -27,7 +27,7 @@ tp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper
   display: none !important;
 }
 
-/* centered player */
+/* ytm-centered player */
 #player {
   max-height: 100vh !important;
   aspect-ratio: 1 !important;
@@ -35,7 +35,7 @@ tp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper
   margin: auto !important;
 }
 
-/* navbar and titlebar bg removed */
+/* ytm-navbar and titlebar bg removed */
 #nav-bar-background,
 #mini-guide-background {
   border: none !important;

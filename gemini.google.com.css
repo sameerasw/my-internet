@@ -1,4 +1,4 @@
-/* transparecy */
+/* gemini-transparecy */
 :root .dark-theme,
 :root .light-theme {
   --gem-sys-color--surface: #00000000 !important;
@@ -10,7 +10,7 @@ input-container,
   background: none !important;
 }
 
-/* other changes */
+/* gemini-other changes */
 .content-container chat-window .chat-container .bottom-container {
   margin-bottom: 30px !important;
 }
@@ -29,7 +29,7 @@ mat-card {
   border-radius: 1em !important;
 }
 
-/* hover */
+/* gemini-hover */
 .side-nav-menu-button,
 .boqOnegoogleliteOgbOneGoogleBar,
 top-bar-actions {

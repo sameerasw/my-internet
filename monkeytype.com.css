@@ -1,14 +1,14 @@
-/* transparecy */
+/* monkey-transparecy */
 :root {
   --bg-color: #00000000 !important;
 }
 
-/* hide footer */
+/* monkey-hide footer */
 footer {
   display: none !important;
 }
 
-/* hide header */
+/* monkey-hide header */
 header {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
@@ -17,7 +17,7 @@ header {
   }
 }
 
-/* fix text color */
+/* monkey-fix text color */
 #words .word letter {
   color: var(--ss-font-placeholder-color) !important;
 }

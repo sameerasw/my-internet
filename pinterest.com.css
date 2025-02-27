@@ -1,4 +1,4 @@
-/* transparecy */
+/* pin-transparecy */
 :root {
   --color-background-box-light: transparent !important;
   --color-background-box-default: transparent !important;
@@ -13,7 +13,7 @@
   background-color: transparent !important;
 }
 
-/* text color */
+/* pin-text color */
 body,
 #VerticalNavContent {
   color: #fff !important;
