@@ -1,0 +1,15 @@
+/* in-transparency */
+:root{
+  --color-background-canvas: transparent !important;
+  --color-background-container: transparent !important;
+}
+
+/* in-no borders */
+:root{
+  --color-border-faint: transparent !important;
+}
+
+/* in-navbar blur */
+header{
+  backdrop-filter: blur(20px) !important;
+}
