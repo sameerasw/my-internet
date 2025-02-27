@@ -1,0 +1,26 @@
+/* gmail-transparency */
+.aAU, .bkK > .nH, .a6o::before, .WR.aeN,.wl, .yO, .aKh, .Nt{
+  background: none !important;
+  background-color: transparent !important;
+}
+
+/* gmail-no borders */
+.aAU, .bkK > .nH, .a6o::before, .WR.aeN,.wl, .yO, .aKh, .Nt{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* gmail-hidden */
+div.apa.nH.oy8Mbf {
+  display: none !important;
+}
+
+/* gmail-preview (experimental) */
+[jsname="h50Ewe"]{
+  .UG, .iY, p, h1, h2, h3, h4, h5, h6, span, .nH, div{
+    background: none !important;
+    background-color: transparent !important;
+    color: var(--gm3-sys-color-surface-variant) !important;
+    fill: var(--gm3-sys-color-surface-variant) !important;
+  }
+}
