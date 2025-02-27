@@ -1,0 +1,5 @@
+/* claude-transparency */
+html, body{
+  background-color: transparent !important;
+  background: none !important;
+}
