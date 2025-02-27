@@ -17,6 +17,11 @@ ytmusic-nav-bar {
   }
 }
 
+ytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app{
+  background-color: transparent !important;
+  border: none !important;
+}
+
 /* ytm-hide elements */
 #side-panel,
 #nav-bar-divider,
