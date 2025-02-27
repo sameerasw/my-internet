@@ -4,6 +4,12 @@
       "aistd-transparecy": ":root{\n    --color-surface-container-lowest: #00000000 !important;\n    --color-sidebars-background: #00000000 !important;\n  }\n  \n  .makersuite-layout, .layout-navbar, select-header, .navbar-header, .router-outlet-wrapper, .nav-toggle-wrapper, .chunk-editor-main, ms-run-settings, .footer{\n    background-color: #00000000 !important;\n  }",
       "aistd-hide disclaimer": "div.disclaimer-container.ng-tns-c1318864088-1.ng-star-inserted{\n    display: none !important;\n  }"
     },
+    "app.any.do.css": {
+      "anydo-no sidebar bg": ".AppImage__hasImage.u-anydo-dark-theme .AppSidebar, .AppImage__hasImage .MyDayRoute--theme{\n   --app-sidebar-bg-color: transparent !important;\n   --myday-sidebar-bg-color: transparent !important;\n}",
+      "anydo-transparency": "html, body{\n   background-color: transparent !important;\n   background: none !important;\n }",
+      "anydo-no wallpaper": "body > div:nth-child(4) > picture:nth-child(1), [aria-label=\"Choose your background\"]{\n   display: none !important;\n }",
+      "anydo-no thank you": ".c_RYlk5GSCd6SYMYEgWI{\n   display: none !important;;\n }"
+    },
     "app.netlify.com.css": {
       "netlify-transparecy": ":root{\n  --colorBgApp: transparent !important;\n}",
       "netlify-no footer": "footer.app-footer {\n  display: none !important;\n}"
