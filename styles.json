@@ -1,16 +1,16 @@
 {
   "website": {
     "aistudio.google.com.css": {
-      "transparecy": ":root{\n    --color-surface-container-lowest: #00000000 !important;\n    --color-sidebars-background: #00000000 !important;\n  }\n  \n  .makersuite-layout, .layout-navbar, select-header, .navbar-header, .router-outlet-wrapper, .nav-toggle-wrapper, .chunk-editor-main, ms-run-settings, .footer{\n    background-color: #00000000 !important;\n  }",
-      "hide disclaimer": "div.disclaimer-container.ng-tns-c1318864088-1.ng-star-inserted{\n    display: none !important;\n  }"
+      "aistd-transparecy": ":root{\n    --color-surface-container-lowest: #00000000 !important;\n    --color-sidebars-background: #00000000 !important;\n  }\n  \n  .makersuite-layout, .layout-navbar, select-header, .navbar-header, .router-outlet-wrapper, .nav-toggle-wrapper, .chunk-editor-main, ms-run-settings, .footer{\n    background-color: #00000000 !important;\n  }",
+      "aistd-hide disclaimer": "div.disclaimer-container.ng-tns-c1318864088-1.ng-star-inserted{\n    display: none !important;\n  }"
     },
     "app.netlify.com.css": {
-      "transparecy": ":root{\n  --colorBgApp: transparent !important;\n}",
-      "no footer": "footer.app-footer {\n  display: none !important;\n}"
+      "netlify-transparecy": ":root{\n  --colorBgApp: transparent !important;\n}",
+      "netlify-no footer": "footer.app-footer {\n  display: none !important;\n}"
     },
     "basicappleguy.com.css": {
-      "transparency": "body{\n  background-color: #00000000 !important;\n}",
-      "transparency with darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important\n}"
+      "basicapple-transparency": "body{\n  background-color: #00000000 !important;\n}",
+      "basicapple-transparency with darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important\n}"
     },
     "bloomberg.com.css": {
       "bloo-transparency": ".media-ui-LeaderboardAd_parallaxWrapper-JMVgdxR--aU-, [data-component=\"logo-bar\"], [data-component=\"menu-desktop\"], [data-component=\"logo\"]{\n  background-color: transparent !important;\n}",
@@ -20,81 +20,81 @@
       "bloo-nav blur": "nav{\n  backdrop-filter: blur(20px) !important;\n}"
     },
     "bsky.app.css": {
-      "transparecy": "html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{\n    --background: transparent !important;\n    background-color: transparent !important;\n}",
-      "no borders": "html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{\n    border: none !important;\n}",
-      "overlay fixes": "[role=\"menu\"] .css-175oi2r, [role=\"dialog\"] .css-175oi2r{\n    background-color: var(--backgroundLight) !important;\n}"
+      "bsky-transparecy": "html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{\n    --background: transparent !important;\n    background-color: transparent !important;\n}",
+      "bsky-no borders": "html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{\n    border: none !important;\n}",
+      "bsky-overlay fixes": "[role=\"menu\"] .css-175oi2r, [role=\"dialog\"] .css-175oi2r{\n    background-color: var(--backgroundLight) !important;\n}"
     },
     "calendar.google.com.css": {
-      "transparecy": "body,\n[jsname=\"mOIbvc\"],\n.R6TFwe,\n.sS0sZd,\n[jsname=\"vhZMvf\"],\n[jsname=\"KBzNL\"] {\n  --gm3-sys-color-surface-container-low: transparent !important;\n\n  background-color: transparent !important;\n}",
-      "remove borders": ".BiKU4b {\n  border: none !important;\n}"
+      "calendr-transparecy": "body,\n[jsname=\"mOIbvc\"],\n.R6TFwe,\n.sS0sZd,\n[jsname=\"vhZMvf\"],\n[jsname=\"KBzNL\"] {\n  --gm3-sys-color-surface-container-low: transparent !important;\n\n  background-color: transparent !important;\n}",
+      "calendr-remove borders": ".BiKU4b {\n  border: none !important;\n}"
     },
     "chat.deepseek.com.css": {
-      "transparecy": "body[data-ds-dark-theme] {\n  --dsr-bg: transparent !important;\n  --dsr-side-bg: transparent !important;\n}\n\n.b480065b {\n  background: none !important;\n}",
-      "other changes": "div.fcaa63f8.d9fb9344,\n.fcaa63f8 {\n  display: none !important;\n}\n\n.dc04ec1d,\ndiv.ds-flex {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\ndiv.aaff8b8f {\n  margin-bottom: 1em !important;\n}"
+      "deepseek-transparecy": "body[data-ds-dark-theme] {\n  --dsr-bg: transparent !important;\n  --dsr-side-bg: transparent !important;\n}\n\n.b480065b {\n  background: none !important;\n}",
+      "deepseek-other changes": "div.fcaa63f8.d9fb9344,\n.fcaa63f8 {\n  display: none !important;\n}\n\n.dc04ec1d,\ndiv.ds-flex {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\ndiv.aaff8b8f {\n  margin-bottom: 1em !important;\n}"
     },
     "chatgpt.com.css": {
-      "transparecy": ":root{\n  --main-surface-background: #00000000 !important;\n  --main-surface-primary: #00000000 !important;\n  --sidebar-surface-primary: #00000000 !important;\n}",
-      "hover": "div.hidden:nth-child(5), div.right-0:nth-child(1){\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n\n  &:hover{\n    opacity: 1 !important;\n  }\n}",
-      "hidden elements": "button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light.text-xs.text-token-text-secondary, div.w-full:nth-child(6) {\n  display: none !important;\n}"
+      "cgpt-transparecy": ":root{\n  --main-surface-background: #00000000 !important;\n  --main-surface-primary: #00000000 !important;\n  --sidebar-surface-primary: #00000000 !important;\n}",
+      "cgpt-hover": "div.hidden:nth-child(5), div.right-0:nth-child(1){\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n\n  &:hover{\n    opacity: 1 !important;\n  }\n}",
+      "cgpt-hidden elements": "button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light.text-xs.text-token-text-secondary, div.w-full:nth-child(6) {\n  display: none !important;\n}"
     },
     "discord.com.css": {
-      "transparecy": ":root {\n  --background-secondary: #00000000 !important;\n  --background-primary: #00000000 !important;\n  --background-tertiary: #00000000 !important;\n  --home-background: #00000000 !important;\n  --bg-base-primary: #00000000 !important;\n}\n\n.theme-light,\n.theme-dark {\n  --__header-bar-background: #00000000 !important;\n  --shadow-border-filter: #00000000 !important;\n  --border-faint: #00000000 !important;\n  --border-strong: #00000000 !important;\n  --background-secondary-alt: #00000000 !important;\n}\n\n.callContainer_cb9592 {\n  background: #00000000 !important;\n}\n\n.floating__01ae2 {\n  background-color: var(\n    --custom-text-widget-background-color-header-default\n  ) !important;\n}",
-      "other changes": "img.bannerImg_f37cb1 {\n  border-radius: 0 0 1em 1em !important;\n}"
+      "discord-transparecy": ":root {\n  --background-secondary: #00000000 !important;\n  --background-primary: #00000000 !important;\n  --background-tertiary: #00000000 !important;\n  --home-background: #00000000 !important;\n  --bg-base-primary: #00000000 !important;\n}\n\n.theme-light,\n.theme-dark {\n  --__header-bar-background: #00000000 !important;\n  --shadow-border-filter: #00000000 !important;\n  --border-faint: #00000000 !important;\n  --border-strong: #00000000 !important;\n  --background-secondary-alt: #00000000 !important;\n}\n\n.callContainer_cb9592 {\n  background: #00000000 !important;\n}\n\n.floating__01ae2 {\n  background-color: var(\n    --custom-text-widget-background-color-header-default\n  ) !important;\n}",
+      "discord-other changes": "img.bannerImg_f37cb1 {\n  border-radius: 0 0 1em 1em !important;\n}"
     },
     "facebook.com.css": {
-      "transparecy": ":root {\n  --web-wash: #00000000 !important;\n  --nav-bar-background: #00000000 !important;\n}\n\nbody,\n#mount_0_0_u1\n  > div:nth-child(1)\n  > div:nth-child(1)\n  > div:nth-child(1)\n  > div:nth-child(3) {\n  background-color: #00000000 !important;\n}",
-      "other changes": "div.x2lah0s.xyamay9.x1pi30zi.x1l90r2v.x1swvt13 {\n  display: none !important;\n}\n\ndiv.xnp8db0:nth-child(1),\ndiv.xnp8db0:nth-child(4) {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
+      "fb-transparecy": ":root {\n  --web-wash: #00000000 !important;\n  --nav-bar-background: #00000000 !important;\n}\n\nbody,\n#mount_0_0_u1\n  > div:nth-child(1)\n  > div:nth-child(1)\n  > div:nth-child(1)\n  > div:nth-child(3) {\n  background-color: #00000000 !important;\n}",
+      "fb-other changes": "div.x2lah0s.xyamay9.x1pi30zi.x1l90r2v.x1swvt13 {\n  display: none !important;\n}\n\ndiv.xnp8db0:nth-child(1),\ndiv.xnp8db0:nth-child(4) {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
     "ft.com.css": {
-      "transparency": "html, .n-layout__header-before, .o-header, .markets-data-wrapper{\n  background-color: transparent !important;\n}",
-      "transparency darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
-      "no post background": ".slice__content, .separator--dotted{\n  background-color: transparent !important;\n  background: none !important;\n}",
-      "no borders": ".o-header__row, .layout__grid-content, .list__item-link, .separator--solid, .story-group__article, .spotlight-grid--secondary-story{\n  border: none !important;\n}",
-      "no footer": "footer{\n  display: none !important;\n}"
+      "ft-transparency": "html, .n-layout__header-before, .o-header, .markets-data-wrapper{\n  background-color: transparent !important;\n}",
+      "ft-transparency darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "ft-no post background": ".slice__content, .separator--dotted{\n  background-color: transparent !important;\n  background: none !important;\n}",
+      "ft-no borders": ".o-header__row, .layout__grid-content, .list__item-link, .separator--solid, .story-group__article, .spotlight-grid--secondary-story{\n  border: none !important;\n}",
+      "ft-no footer": "footer{\n  display: none !important;\n}"
     },
     "gemini.google.com.css": {
-      "transparecy": ":root .dark-theme,\n:root .light-theme {\n  --gem-sys-color--surface: #00000000 !important;\n  --gem-sys-color--surface-container: #00000000 !important;\n}\n\ninput-container,\n.input-gradient::before {\n  background: none !important;\n}",
-      "other changes": ".content-container chat-window .chat-container .bottom-container {\n  margin-bottom: 30px !important;\n}\n\ninput-container hallucination-disclaimer {\n  display: none !important;\n}\n\n.input-area-container {\n  margin-bottom: 2em !important;\n}\n\n.cdk-overlay-pane > div,\nmat-card {\n  background-color: var(--bard-color-neutral-96) !important;\n  border-radius: 1em !important;\n}",
-      "hover": ".side-nav-menu-button,\n.boqOnegoogleliteOgbOneGoogleBar,\ntop-bar-actions {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
+      "gemini-transparecy": ":root .dark-theme,\n:root .light-theme {\n  --gem-sys-color--surface: #00000000 !important;\n  --gem-sys-color--surface-container: #00000000 !important;\n}\n\ninput-container,\n.input-gradient::before {\n  background: none !important;\n}",
+      "gemini-other changes": ".content-container chat-window .chat-container .bottom-container {\n  margin-bottom: 30px !important;\n}\n\ninput-container hallucination-disclaimer {\n  display: none !important;\n}\n\n.input-area-container {\n  margin-bottom: 2em !important;\n}\n\n.cdk-overlay-pane > div,\nmat-card {\n  background-color: var(--bard-color-neutral-96) !important;\n  border-radius: 1em !important;\n}",
+      "gemini-hover": ".side-nav-menu-button,\n.boqOnegoogleliteOgbOneGoogleBar,\ntop-bar-actions {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
     "github.com.css": {
-      "#01 transparecy": ":root {\n  --bgColor-default: #00000000 !important;\n  --bgColor-muted: #00000000 !important;\n  --bgColor-inset: #00000000 !important;\n  --borderColor-default: #00000000 !important;\n}",
-      "#02 border styling": "div.feed-item-content.d-flex.flex-column.pt-2.pb-2.border.color-border-default.rounded-2.color-shadow-small.width-full.height-fit,\n.feed-item-content,\n.input-contrast,\n.color-bg-default,\n.Box-body,\n.Box {\n  border-radius: 20px !important;\n  border: none !important;\n}\n\ndiv.color-bg-subtle.rounded-1.flex-justify-between.p-3,\nsection.dashboard-break-word.comment-body.markdown-body.m-0.p-3.color-bg-subtle.mb-0.rounded-1 {\n  border-radius: 10px !important;\n  border: none !important;\n}\n\naside.feed-left-sidebar.col-md-4.col-lg-3.color-border-muted.border-bottom.hide-md.hide-sm.border-right.color-bg-default,\nbody,\ndiv.d-md-flex,\n.AppHeader-globalBar,\ndiv.color-bg-subtle.rounded-1.flex-justify-between.p-3,\n.comment-body,\n.AppHeader-localBar,\n.ebYtvW,\n.bAmAao,\n.Counter,\n.types__StyledButton-sc-ws60qy-0,\n.TextInput-wrapper,\n.feed-item-content,\n.color-bg-default,\n.input-contrast,\n.Box-body,\n.Box {\n  border: none !important;\n}\n\ntd {\n  border: none !important;\n}\n\ntr:hover,\na:hover {\n  border-radius: 20px !important;\n}",
-      "#03 hide elements": "form.Box.position-relative.rounded-2.mb-4.p-3.js-notice-dismiss.overflow-hidden,\ndiv.mb-3.dashboard-changelog.color-bg-default.border.color-border-muted.p-3.rounded-2,\ndiv.d-flex.flex-items-between.footer.container-lg.my-5.px-0 {\n  display: none !important;\n}",
-      "#04 hide footer": "footer.footer.pt-8.pb-6.f6.color-fg-muted.p-responsive {\n  display: none !important;\n}",
-      "#05 hover tabs": "aside.feed-right-sidebar,\naside.feed-left-sidebar,\n.AppHeader-localBar {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
-      "#06 overlay color fixes": "div.prc-Dialog-Dialog-luvDS,\n.Overlay,\n.Overlay__StyledOverlay-sc-51280t-0,\ndetails-menu,\n.search-suggestions,\n[role=\"dialog\"] {\n  background-color: var(--bgColor-disabled) !important;\n}"
+      "gh-transparecy": ":root {\n  --bgColor-default: #00000000 !important;\n  --bgColor-muted: #00000000 !important;\n  --bgColor-inset: #00000000 !important;\n  --borderColor-default: #00000000 !important;\n}",
+      "gh-border styling": "div.feed-item-content.d-flex.flex-column.pt-2.pb-2.border.color-border-default.rounded-2.color-shadow-small.width-full.height-fit,\n.feed-item-content,\n.input-contrast,\n.color-bg-default,\n.Box-body,\n.Box {\n  border-radius: 20px !important;\n  border: none !important;\n}\n\ndiv.color-bg-subtle.rounded-1.flex-justify-between.p-3,\nsection.dashboard-break-word.comment-body.markdown-body.m-0.p-3.color-bg-subtle.mb-0.rounded-1 {\n  border-radius: 10px !important;\n  border: none !important;\n}\n\naside.feed-left-sidebar.col-md-4.col-lg-3.color-border-muted.border-bottom.hide-md.hide-sm.border-right.color-bg-default,\nbody,\ndiv.d-md-flex,\n.AppHeader-globalBar,\ndiv.color-bg-subtle.rounded-1.flex-justify-between.p-3,\n.comment-body,\n.AppHeader-localBar,\n.ebYtvW,\n.bAmAao,\n.Counter,\n.types__StyledButton-sc-ws60qy-0,\n.TextInput-wrapper,\n.feed-item-content,\n.color-bg-default,\n.input-contrast,\n.Box-body,\n.Box {\n  border: none !important;\n}\n\ntd {\n  border: none !important;\n}\n\ntr:hover,\na:hover {\n  border-radius: 20px !important;\n}",
+      "gh-hide elements": "form.Box.position-relative.rounded-2.mb-4.p-3.js-notice-dismiss.overflow-hidden,\ndiv.mb-3.dashboard-changelog.color-bg-default.border.color-border-muted.p-3.rounded-2,\ndiv.d-flex.flex-items-between.footer.container-lg.my-5.px-0 {\n  display: none !important;\n}",
+      "gh-hide footer": "footer.footer.pt-8.pb-6.f6.color-fg-muted.p-responsive {\n  display: none !important;\n}",
+      "gh-hover tabs": "aside.feed-right-sidebar,\naside.feed-left-sidebar,\n.AppHeader-localBar {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
+      "gh-overlay color fixes": "div.prc-Dialog-Dialog-luvDS,\n.Overlay,\n.Overlay__StyledOverlay-sc-51280t-0,\ndetails-menu,\n.search-suggestions,\n[role=\"dialog\"] {\n  background-color: var(--bgColor-disabled) !important;\n}"
     },
     "google.com.css": {
-      "transparecy": "html,\nbody,\ndiv,\nsection,\narticle,\nheader,\nfooter,\nmain,\naside,\nnav,\nspan,\nform,\ninput,\nbutton,\ntable,\ntbody,\ntr,\ntd {\n  background: transparent !important;\n}\n\n.aajZCb {\n  background-color: var(--uv-styles-color-surface) !important;\n}\n\ndiv.sfbg {\n  background-color: var(--darkreader-border-ffffff) !important;\n}\n\n:root {\n  --darkreader-background-ffffff: transparent !important;\n}\n\nbody {\n  background-color: #00000000 !important;\n}\n\n.in7vHe.FR7ZSc.FR7ZSc .niO4u,\ndiv.RNNXgb,\n.aajZCb {\n  background-color: var(--EpFNW) !important;\n}",
-      "shadows and borders": ".minidiv .sfbg,\n.minidiv .sfbg,\n.JryvJ .qS9jbf,\n.sHEJob,\n.Hwkikb.WY0eLb {\n  box-shadow: none !important;\n  border: none !important;\n}\n\n#sfooter,\n[role=\"contentinfo\"] {\n  display: none !important;\n}\n\n.w6VYqd {\n  background-color: #fff !important;\n}",
-      "hover": ".rfiSsc {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
+      "google-transparecy": "html,\nbody,\ndiv,\nsection,\narticle,\nheader,\nfooter,\nmain,\naside,\nnav,\nspan,\nform,\ninput,\nbutton,\ntable,\ntbody,\ntr,\ntd {\n  background: transparent !important;\n}\n\n.aajZCb {\n  background-color: var(--uv-styles-color-surface) !important;\n}\n\ndiv.sfbg {\n  background-color: var(--darkreader-border-ffffff) !important;\n}\n\n:root {\n  --darkreader-background-ffffff: transparent !important;\n}\n\nbody {\n  background-color: #00000000 !important;\n}\n\n.in7vHe.FR7ZSc.FR7ZSc .niO4u,\ndiv.RNNXgb,\n.aajZCb {\n  background-color: var(--EpFNW) !important;\n}",
+      "google-shadows and borders": ".minidiv .sfbg,\n.minidiv .sfbg,\n.JryvJ .qS9jbf,\n.sHEJob,\n.Hwkikb.WY0eLb {\n  box-shadow: none !important;\n  border: none !important;\n}\n\n#sfooter,\n[role=\"contentinfo\"] {\n  display: none !important;\n}\n\n.w6VYqd {\n  background-color: #fff !important;\n}",
+      "google-hover": ".rfiSsc {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
     "google.pl.css": {
-      "transparecy": "html,\nbody,\ndiv,\nsection,\narticle,\nheader,\nfooter,\nmain,\naside,\nnav,\nspan,\nform,\ninput,\nbutton,\ntable,\ntbody,\ntr,\ntd {\n  background: transparent !important;\n}\n\n.aajZCb {\n  background-color: var(--uv-styles-color-surface) !important;\n}\n\ndiv.sfbg {\n  background-color: var(--darkreader-border-ffffff) !important;\n}\n\n:root {\n  --darkreader-background-ffffff: transparent !important;\n}\n\nbody {\n  background-color: #00000000 !important;\n}\n\n.in7vHe.FR7ZSc.FR7ZSc .niO4u,\ndiv.RNNXgb,\n.aajZCb {\n  background-color: var(--EpFNW) !important;\n}",
-      "shadows and borders": ".minidiv .sfbg,\n.minidiv .sfbg,\n.JryvJ .qS9jbf,\n.sHEJob,\n.Hwkikb.WY0eLb {\n  box-shadow: none !important;\n  border: none !important;\n}\n\n#sfooter,\n[role=\"contentinfo\"] {\n  display: none !important;\n}\n\n.w6VYqd {\n  background-color: #fff !important;\n}",
-      "hover": ".rfiSsc {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
+      "google-transparecy": "html,\nbody,\ndiv,\nsection,\narticle,\nheader,\nfooter,\nmain,\naside,\nnav,\nspan,\nform,\ninput,\nbutton,\ntable,\ntbody,\ntr,\ntd {\n  background: transparent !important;\n}\n\n.aajZCb {\n  background-color: var(--uv-styles-color-surface) !important;\n}\n\ndiv.sfbg {\n  background-color: var(--darkreader-border-ffffff) !important;\n}\n\n:root {\n  --darkreader-background-ffffff: transparent !important;\n}\n\nbody {\n  background-color: #00000000 !important;\n}\n\n.in7vHe.FR7ZSc.FR7ZSc .niO4u,\ndiv.RNNXgb,\n.aajZCb {\n  background-color: var(--EpFNW) !important;\n}",
+      "google-shadows and borders": ".minidiv .sfbg,\n.minidiv .sfbg,\n.JryvJ .qS9jbf,\n.sHEJob,\n.Hwkikb.WY0eLb {\n  box-shadow: none !important;\n  border: none !important;\n}\n\n#sfooter,\n[role=\"contentinfo\"] {\n  display: none !important;\n}\n\n.w6VYqd {\n  background-color: #fff !important;\n}",
+      "google-hover": ".rfiSsc {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
     "instagram.com.css": {
-      "transparecy": ":root ._aa4d,\n:root ._ar45 {\n  --ig-primary-background: #00000000 !important;\n  --ig-highlight-background: #00000000 !important;\n  --ig-secondary-background: #00000000 !important;\n}\n\n.xvbhtw8 {\n  background-color: #00000000 !important;\n  border: none !important;\n}",
-      "hide elements": "div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 {\n  display: none !important;\n}",
-      "other changes": ".xso031l {\n  border-radius: 1.5em !important;\n}\n\n* {\n  background-color: #00000000 !important;\n}\n\n.xopu45v {\n  border: none !important;\n}",
-      "comments overlay fix": "[role=\"dialog\"] [role=\"presentation\"] > div > div{\n  background-color: var(--fds-highlight-cell-background) !important;\n  border-radius: 2em !important;\n}",
-      "profile overlay fix": "div.x6s0dn4.xvbhtw8.x1lq5wgf.xgqcy7u.x30kzoy.x9jhf4c.x1xcus5i.xrvj5dj.x1dh5ka.xyamay9.x1l90r2v.x1n2onr6.xgpatz3.x1mu97ne {\n  background-color: var(--fds-highlight-cell-background) !important;\n}"
+      "ig-transparecy": ":root ._aa4d,\n:root ._ar45 {\n  --ig-primary-background: #00000000 !important;\n  --ig-highlight-background: #00000000 !important;\n  --ig-secondary-background: #00000000 !important;\n}\n\n.xvbhtw8 {\n  background-color: #00000000 !important;\n  border: none !important;\n}",
+      "ig-hide elements": "div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 {\n  display: none !important;\n}",
+      "ig-other changes": ".xso031l {\n  border-radius: 1.5em !important;\n}\n\n* {\n  background-color: #00000000 !important;\n}\n\n.xopu45v {\n  border: none !important;\n}",
+      "ig-comments overlay fix": "[role=\"dialog\"] [role=\"presentation\"] > div > div{\n  background-color: var(--fds-highlight-cell-background) !important;\n  border-radius: 2em !important;\n}",
+      "ig-profile overlay fix": "div.x6s0dn4.xvbhtw8.x1lq5wgf.xgqcy7u.x30kzoy.x9jhf4c.x1xcus5i.xrvj5dj.x1dh5ka.xyamay9.x1l90r2v.x1n2onr6.xgpatz3.x1mu97ne {\n  background-color: var(--fds-highlight-cell-background) !important;\n}"
     },
     "keep.google.com.css": {
-      "styles": "body,\nheader,\n.PvRhvb-bN97Pc {\n  background-color: transparent !important;\n  border: none !important;\n}"
+      "keep-styles": "body,\nheader,\n.PvRhvb-bN97Pc {\n  background-color: transparent !important;\n  border: none !important;\n}"
     },
     "kick.com.css": {
-      "transparency": ":root, .bg-surface-lower, .bg-black{\n  --tw-bg-opacity: 0 !important;\n  --background-color: transparent !important;\n}",
-      "nav shadow": "nav{\n  box-shadow: none !important;\n}",
-      "overlay bg": ".z-dropdown{\n  background-color: var(--tw-shadow-color, #000) !important;\n}"
+      "kick-transparency": ":root, .bg-surface-lower, .bg-black{\n  --tw-bg-opacity: 0 !important;\n  --background-color: transparent !important;\n}",
+      "kick-nav shadow": "nav{\n  box-shadow: none !important;\n}",
+      "kick-overlay bg": ".z-dropdown{\n  background-color: var(--tw-shadow-color, #000) !important;\n}"
     },
     "learning.westminster.ac.uk.css": {
-      "transparecy": "#site-wrap,\nbody {\n  background-color: #00000000 !important;\n}\n\n:root {\n  --darkreader-neutral-background: #00000000 !important;\n  --darkreader-background-ffffff: #00000000 !important;\n}\n\nbody {\n  background: none !important;\n}",
-      "hide elements": "ul.side-menu-footer,\n#pagefooter {\n  display: none !important;\n}",
-      "border and others": ".element-card {\n  border-radius: 1em !important;\n  background-color: #00000044 !important;\n}\n\n.course-banner {\n  border-radius: 1em 1em 0 0 !important;\n}\n\n.bb-offcanvas-panel {\n  background-color: #111111 !important;\n}",
-      "hover": "div.hide-in-background.themed-background-primary-fill-only.left-off-canvas-menu.color-selection-live-mode {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
+      "bb-transparecy": "#site-wrap,\nbody {\n  background-color: #00000000 !important;\n}\n\n:root {\n  --darkreader-neutral-background: #00000000 !important;\n  --darkreader-background-ffffff: #00000000 !important;\n}\n\nbody {\n  background: none !important;\n}",
+      "bb-hide elements": "ul.side-menu-footer,\n#pagefooter {\n  display: none !important;\n}",
+      "bb-border and others": ".element-card {\n  border-radius: 1em !important;\n  background-color: #00000044 !important;\n}\n\n.course-banner {\n  border-radius: 1em 1em 0 0 !important;\n}\n\n.bb-offcanvas-panel {\n  background-color: #111111 !important;\n}",
+      "bb-hover": "div.hide-in-background.themed-background-primary-fill-only.left-off-canvas-menu.color-selection-live-mode {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
     "linkedin.com.css": {
       "in-transparency": ":root{\n  --color-background-canvas: transparent !important;\n  --color-background-container: transparent !important;\n}",
@@ -102,121 +102,121 @@
       "in-navbar blur": "header{\n  backdrop-filter: blur(20px) !important;\n}"
     },
     "messenger.com.css": {
-      "transparecy": ":root {\n  --web-wash: #00000000 !important;\n  --messenger-card-background: #00000000 !important;\n  --mwp-header-background-color: #00000000 !important;\n  --mwp-message-row-background: #00000000 !important;\n}\n\n.xcrg951 {\n  background-color: #00000000 !important;\n  box-shadow: none !important;\n}"
+      "fbm-transparecy": ":root {\n  --web-wash: #00000000 !important;\n  --messenger-card-background: #00000000 !important;\n  --mwp-header-background-color: #00000000 !important;\n  --mwp-message-row-background: #00000000 !important;\n}\n\n.xcrg951 {\n  background-color: #00000000 !important;\n  box-shadow: none !important;\n}"
     },
     "monkeytype.com.css": {
-      "transparecy": ":root {\n  --bg-color: #00000000 !important;\n}",
-      "hide footer": "footer {\n  display: none !important;\n}",
-      "hide header": "header {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
-      "fix text color": "#words .word letter {\n  color: var(--ss-font-placeholder-color) !important;\n}"
+      "monkey-transparecy": ":root {\n  --bg-color: #00000000 !important;\n}",
+      "monkey-hide footer": "footer {\n  display: none !important;\n}",
+      "monkey-hide header": "header {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
+      "monkey-fix text color": "#words .word letter {\n  color: var(--ss-font-placeholder-color) !important;\n}"
     },
     "music.youtube.com.css": {
-      "transparent bg": ":root {\n  --ts-body-color: #00000000 !important;\n}\n\nbody {\n  background-color: transparent !important;\n}",
-      "hover navbar and titlebar": ".ytmusic-guide-renderer,\nytmusic-nav-bar {\n  opacity: 0.01 !important;\n  transition: opacity 0.5s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
-      "hide elements": "#side-panel,\n#nav-bar-divider,\n#background,\ndiv.av.style-scope.ytmusic-player-page,\nytmusic-chip-cloud-renderer.style-scope.ytmusic-section-list-renderer,\ntp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper-toast-open {\n  display: none !important;\n}",
-      "centered player": "#player {\n  max-height: 100vh !important;\n  aspect-ratio: 1 !important;\n  width: 100% !important;\n  margin: auto !important;\n}",
-      "navbar and titlebar bg removed": "#nav-bar-background,\n#mini-guide-background {\n  border: none !important;\n  height: 0 !important;\n  width: 0 !important;\n}\n\n#guide,\nytmusic-nav-bar,\n.background-gradient {\n  background-color: var(--ts-body-color) !important;\n  background-image: none !important;\n  background-repeat: no-repeat !important;\n}\n\n#player-page {\n  padding: 0 !important;\n  margin: 0 !important;\n  left: 0 !important;\n  top: 0 !important;\n  height: 100% !important;\n  width: 100% !important;\n}\n\nytmusic-player-bar,\n#player-bar-background {\n  margin: 0.5% !important;\n  width: 99% !important;\n  border-radius: 1em !important;\n  overflow: hidden !important;\n}"
+      "ytm-transparent bg": ":root {\n  --ts-body-color: #00000000 !important;\n}\n\nbody {\n  background-color: transparent !important;\n}",
+      "ytm-hover navbar and titlebar": ".ytmusic-guide-renderer,\nytmusic-nav-bar {\n  opacity: 0.01 !important;\n  transition: opacity 0.5s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
+      "ytm-hide elements": "#side-panel,\n#nav-bar-divider,\n#background,\ndiv.av.style-scope.ytmusic-player-page,\nytmusic-chip-cloud-renderer.style-scope.ytmusic-section-list-renderer,\ntp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper-toast-open {\n  display: none !important;\n}",
+      "ytm-centered player": "#player {\n  max-height: 100vh !important;\n  aspect-ratio: 1 !important;\n  width: 100% !important;\n  margin: auto !important;\n}",
+      "ytm-navbar and titlebar bg removed": "#nav-bar-background,\n#mini-guide-background {\n  border: none !important;\n  height: 0 !important;\n  width: 0 !important;\n}\n\n#guide,\nytmusic-nav-bar,\n.background-gradient {\n  background-color: var(--ts-body-color) !important;\n  background-image: none !important;\n  background-repeat: no-repeat !important;\n}\n\n#player-page {\n  padding: 0 !important;\n  margin: 0 !important;\n  left: 0 !important;\n  top: 0 !important;\n  height: 100% !important;\n  width: 100% !important;\n}\n\nytmusic-player-bar,\n#player-bar-background {\n  margin: 0.5% !important;\n  width: 99% !important;\n  border-radius: 1em !important;\n  overflow: hidden !important;\n}"
     },
     "notion.so.css": {
-      "transparecy": "body {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n}\n\n.notion-app-inner,\n.notion-cursor-listener,\n.notion-frame,\n.notion-sidebar-container,\nheader {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  box-shadow: none !important;\n}",
-      "hide elements": "div.autolayout-row.autolayout-fill-width.autolayout-center.autolayout-space {\n  display: none !important;\n}"
+      "notion-transparecy": "body {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n}\n\n.notion-app-inner,\n.notion-cursor-listener,\n.notion-frame,\n.notion-sidebar-container,\nheader {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  box-shadow: none !important;\n}",
+      "notion-hide elements": "div.autolayout-row.autolayout-fill-width.autolayout-center.autolayout-space {\n  display: none !important;\n}"
     },
     "pexels.com.css": {
-      "text color": "body,\nh4,\nh3,\nh2,\nh1,\nh5,\nh6,\nspan,\na {\n  color: #ffffff !important;\n}",
-      "navbar": ".Navbar_container__PS9oP {\n  background-color: #00000000 !important;\n  backdrop-filter: blur(60px) !important;\n  border: none !important;\n  background: #00000000 !important;\n  box-shadow: none !important;\n}"
+      "pexels-text color": "body,\nh4,\nh3,\nh2,\nh1,\nh5,\nh6,\nspan,\na {\n  color: #ffffff !important;\n}",
+      "pexels-navbar": ".Navbar_container__PS9oP {\n  background-color: #00000000 !important;\n  backdrop-filter: blur(60px) !important;\n  border: none !important;\n  background: #00000000 !important;\n  box-shadow: none !important;\n}"
     },
     "photos.google.com.css": {
-      "transparecy": ":root{\n  --darkreader-bg--gm3-sys-color-background: transparent !important;\n  --darkreader-background-ffffff: transparent !important;\n  --darkreader-bg--gm3-sys-color-surface-container: transparent !important;\n  --gm3-sys-color-background: transparent !important;\n  --gm3-sys-color-surface-container: transparent !important;\n}",
-      "roundness": ".RY3tic{\n  border-radius: 0.5em !important;\n}"
+      "photos-transparecy": ":root{\n  --darkreader-bg--gm3-sys-color-background: transparent !important;\n  --darkreader-background-ffffff: transparent !important;\n  --darkreader-bg--gm3-sys-color-surface-container: transparent !important;\n  --gm3-sys-color-background: transparent !important;\n  --gm3-sys-color-surface-container: transparent !important;\n}",
+      "photos-roundness": ".RY3tic{\n  border-radius: 0.5em !important;\n}"
     },
     "pinterest.com.css": {
-      "transparecy": ":root {\n  --color-background-box-light: transparent !important;\n  --color-background-box-default: transparent !important;\n}\n\n.mainContainer\n  > div:nth-child(1)\n  > div:nth-child(3)\n  > div:nth-child(1)\n  > div:nth-child(2)\n  > div:nth-child(1) {\n  background-color: transparent !important;\n}",
-      "text color": "body,\n#VerticalNavContent {\n  color: #fff !important;\n  fill: #fff !important;\n}\n\n#VerticalNavContent {\n  filter: invert() !important;\n  border: none !important;\n}"
+      "pin-transparecy": ":root {\n  --color-background-box-light: transparent !important;\n  --color-background-box-default: transparent !important;\n}\n\n.mainContainer\n  > div:nth-child(1)\n  > div:nth-child(3)\n  > div:nth-child(1)\n  > div:nth-child(2)\n  > div:nth-child(1) {\n  background-color: transparent !important;\n}",
+      "pin-text color": "body,\n#VerticalNavContent {\n  color: #fff !important;\n  fill: #fff !important;\n}\n\n#VerticalNavContent {\n  filter: invert() !important;\n  border: none !important;\n}"
     },
     "priv.au.css": {
-      "transparecy": ":root {\n  --color-header-background: #00000000 !important;\n  --color-sidebar-border: #00000000 !important;\n  --color-result-background: #00000000 !important;\n}\n\nhtml,\n#search_header,\narticle {\n  background-color: #00000000 !important;\n  border: none !important;\n}",
-      "no footer": "footer {\n  display: none !important;\n}",
-      "other changes": "#links_on_top {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\narticle {\n  margin: 0 !important;\n\n  img {\n    border-radius: 0.5em !important;\n  }\n}"
+      "priv-transparecy": ":root {\n  --color-header-background: #00000000 !important;\n  --color-sidebar-border: #00000000 !important;\n  --color-result-background: #00000000 !important;\n}\n\nhtml,\n#search_header,\narticle {\n  background-color: #00000000 !important;\n  border: none !important;\n}",
+      "priv-no footer": "footer {\n  display: none !important;\n}",
+      "priv-other changes": "#links_on_top {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\narticle {\n  margin: 0 !important;\n\n  img {\n    border-radius: 0.5em !important;\n  }\n}"
     },
     "quora.com.css": {
-      "transparecy": "body,\n.q-color-mode--dark .qu-borderColor--raised {\n  background-color: transparent !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
-      "other changes": ".qu-borderRadius--small {\n  border-radius: 1em !important;\n}\n\ndiv.q-box.qu-py--small.qu-color--gray_light {\n  display: none !important;\n}"
+      "quora-transparecy": "body,\n.q-color-mode--dark .qu-borderColor--raised {\n  background-color: transparent !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "quora-other changes": ".qu-borderRadius--small {\n  border-radius: 1em !important;\n}\n\ndiv.q-box.qu-py--small.qu-color--gray_light {\n  display: none !important;\n}"
     },
     "reddit.com.css": {
-      "transparecy": ":root.theme-dark,\n.theme-rpl {\n  --color-neutral-background: #00000000 !important;\n}\n\n.bg-neutral-background,\n#left-sidebar-container {\n  background-color: #00000000 !important;\n  border: none !important;\n}\n\nshreddit-app,\nbody,\nhtml {\n  background-color: #00000000 !important;\n}",
-      "hide elements": "div aside recent-posts {\n  display: none !important;\n}\n\nnav.z-\\[2\\] > nav:nth-child(18),\ndiv.visible {\n  display: none !important;\n}\n\nhr.w-100.my-sm.border-neutral-border-weak {\n  display: none !important;\n}",
-      "other changes": ".overflow-visible > div:nth-child(32),\nfaceplate-dropdown-menu {\n  border-radius: 1em 1em 0 0 !important;\n}",
-      "hover": "div.left-sidebar,\n#right-sidebar-container {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
+      "reddit-transparecy": ":root.theme-dark,\n.theme-rpl {\n  --color-neutral-background: #00000000 !important;\n}\n\n.bg-neutral-background,\n#left-sidebar-container {\n  background-color: #00000000 !important;\n  border: none !important;\n}\n\nshreddit-app,\nbody,\nhtml {\n  background-color: #00000000 !important;\n}",
+      "reddit-hide elements": "div aside recent-posts {\n  display: none !important;\n}\n\nnav.z-\\[2\\] > nav:nth-child(18),\ndiv.visible {\n  display: none !important;\n}\n\nhr.w-100.my-sm.border-neutral-border-weak {\n  display: none !important;\n}",
+      "reddit-other changes": ".overflow-visible > div:nth-child(32),\nfaceplate-dropdown-menu {\n  border-radius: 1em 1em 0 0 !important;\n}",
+      "reddit-hover": "div.left-sidebar,\n#right-sidebar-container {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
     "sameerasw.com.css": {
-      "transprecy": ":root {\n  --background-color-primary: #00000000 !important;\n}"
+      "sameerasw-transprecy": ":root {\n  --background-color-primary: #00000000 !important;\n}"
     },
     "search.brave.com.css": {
-      "transparecy": ":root{\n  --color-page-background: transparent !important;\n}",
-      "no, thank you": "div.download-cta.svelte-1avqjm8 {\n  display: none  !important;\n}"
+      "brave-transparecy": ":root{\n  --color-page-background: transparent !important;\n}",
+      "brave-no, thank you": "div.download-cta.svelte-1avqjm8 {\n  display: none  !important;\n}"
     },
     "sourceforge.net.css": {
-      "transparecy": ":root {\n  --darkreader-background-ffffff: #00000000 !important;\n  --darkreader-background-333333: #00000000 !important;\n  --darkreader-background-fefefe: #00000000 !important;\n  --darkreader-background-f1f1f1: #00000000 !important;\n}\n\nbody,\n.sandiego table thead,\ntfoot,\ntable,\ntbody,\narticle {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  border: none !important;\n}",
-      "hide elements": "footer {\n  display: none !important;\n}\n\ndiv.l-side-column {\n  display: none !important;\n}\n\ndiv.l-gutter {\n  display: none !important;\n}\n\n.l-header-nav-bottom {\n  display: none !important;\n}\n\nsection.sandiego.l-header-nav-bottom.sticky {\n  display: none !important;\n}",
-      "no border and other changes": ".dropdown li,\n.links a {\n  border: none !important;\n}\n\n.l-two-column-page {\n  .l-content-column {\n    margin: 0 auto !important;\n  }\n}"
+      "sf-transparecy": ":root {\n  --darkreader-background-ffffff: #00000000 !important;\n  --darkreader-background-333333: #00000000 !important;\n  --darkreader-background-fefefe: #00000000 !important;\n  --darkreader-background-f1f1f1: #00000000 !important;\n}\n\nbody,\n.sandiego table thead,\ntfoot,\ntable,\ntbody,\narticle {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  border: none !important;\n}",
+      "sf-hide elements": "footer {\n  display: none !important;\n}\n\ndiv.l-side-column {\n  display: none !important;\n}\n\ndiv.l-gutter {\n  display: none !important;\n}\n\n.l-header-nav-bottom {\n  display: none !important;\n}\n\nsection.sandiego.l-header-nav-bottom.sticky {\n  display: none !important;\n}",
+      "sf-no border and other changes": ".dropdown li,\n.links a {\n  border: none !important;\n}\n\n.l-two-column-page {\n  .l-content-column {\n    margin: 0 auto !important;\n  }\n}"
     },
     "speedtest.net.css": {
-      "transparecy": "html,\nbody,\n.pre-fold,\n.masthead-dark {\n  background: #00000000 !important;\n  background-color: #00000000 !important;\n}",
-      "layout fixes": "#container,\nbody,\n.pre-fold,\n.main-content,\n.main,\n.container,\n.pure-g,\n.pure-u-custom-speedtest {\n  height: 100% !important;\n}\n\n.pre-fold {\n  align-items: center !important;\n  margin: auto 0 !important;\n}\n\n.container,\n.speedtest-container {\n  margin: auto auto !important;\n}",
-      "hover": "div.pure-u-1 {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
-      "hide elements": "div.lower-content.lower-content-blend,\nfooter,\n.connection-component-container > div:nth-child(3) {\n  display: none !important;\n}\n.pure-u-custom-ad-skyscraper {\n  display: none !important;\n}\n\n.pure-u-custom-speedtest {\n  margin: auto !important;\n}"
+      "ookla-transparecy": "html,\nbody,\n.pre-fold,\n.masthead-dark {\n  background: #00000000 !important;\n  background-color: #00000000 !important;\n}",
+      "ookla-layout fixes": "#container,\nbody,\n.pre-fold,\n.main-content,\n.main,\n.container,\n.pure-g,\n.pure-u-custom-speedtest {\n  height: 100% !important;\n}\n\n.pre-fold {\n  align-items: center !important;\n  margin: auto 0 !important;\n}\n\n.container,\n.speedtest-container {\n  margin: auto auto !important;\n}",
+      "ookla-hover": "div.pure-u-1 {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
+      "ookla-hide elements": "div.lower-content.lower-content-blend,\nfooter,\n.connection-component-container > div:nth-child(3) {\n  display: none !important;\n}\n.pure-u-custom-ad-skyscraper {\n  display: none !important;\n}\n\n.pure-u-custom-speedtest {\n  margin: auto !important;\n}"
     },
     "stackoverflow.com.css": {
-      "transparency": "body.unified-theme, body.unified-theme *{\n  --theme-background-color: transparent !important;\n  --theme-content-background-color: transparent !important;\n  border: none !important;\n}",
-      "transparency darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
-      "navbar": ".s-topbar{\n  background-color: transparent !important;\n  backdrop-filter: blur(10px) !important;\n}",
-      "no footer": "#footer{\n  display: none !important;\n}"
+      "stack-transparency": "body.unified-theme, body.unified-theme *{\n  --theme-background-color: transparent !important;\n  --theme-content-background-color: transparent !important;\n  border: none !important;\n}",
+      "stack-transparency darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "stack-navbar": ".s-topbar{\n  background-color: transparent !important;\n  backdrop-filter: blur(10px) !important;\n}",
+      "stack-no footer": "#footer{\n  display: none !important;\n}"
     },
     "tasks.google.com.css": {
-      "transparecy": ".vWh0f {\n  --tasks-body-background: transparent !important;\n  --tasks-surface-container-low: transparent !important;\n}"
+      "tasks-transparecy": ".vWh0f {\n  --tasks-body-background: transparent !important;\n  --tasks-surface-container-low: transparent !important;\n}"
     },
     "twitch.tv.css": {
-      "transparecy": ":root {\n  --color-background-body: transparent !important;\n  --color-background-base: transparent !important;\n  --shadow-elevation-1: none !important;\n  --color-background-alt: transparent !important;\n}\n\n.video-player,\n.video-player__container,\n.channel-root {\n  background: #00000000 !important;\n  background-color: #00000000 !important;\n}"
+      "twitch-transparecy": ":root {\n  --color-background-body: transparent !important;\n  --color-background-base: transparent !important;\n  --shadow-elevation-1: none !important;\n  --color-background-alt: transparent !important;\n}\n\n.video-player,\n.video-player__container,\n.channel-root {\n  background: #00000000 !important;\n  background-color: #00000000 !important;\n}"
     },
     "unsplash.com.css": {
-      "transparecy": ":root {\n  --darkreader-background-ffffff: transparent !important;\n  --color-white: #00000000 !important;\n}\n\nbody {\n  background-color: #00000000 !important;\n}\n\n.xWFB_,\nheader form {\n  background-color: #00000000 !important;\n}\n\nhtml,\nbody,\n.EtnYM,\n.b4j4s {\n  background-color: #00000000 !important;\n  color: #fff !important;\n}",
-      "hide elements": "figure:has(.se4Qe) {\n  display: none !important;\n}",
-      "other styles": "figure {\n  border-radius: 20px !important;\n  overflow: hidden !important;\n  transition: all 0.5s ease-in-out !important;\n}\n\nfigure:hover {\n  border-radius: 10px !important;\n  scale: 1.1 !important;\n  box-shadow: #00000088 0px 0px 50px !important;\n  z-index: 10 !important;\n}\n\nheader {\n  z-index: 1000 !important;\n  background-color: #00000000 !important;\n  backdrop-filter: blur(10px) !important;\n  color: #ffffff !important;\n}\n\n.b4j4s {\n  position: relative !important;\n  top: 0 !important;\n  transition: all 0.5s ease-in-out !important;\n  opacity: 0.2 !important;\n  margin-bottom: 10px !important;\n}\n\n.b4j4s:hover {\n  opacity: 1 !important;\n}\n\ndiv.zLj3X.rJ2xz.bYpwS.U8eXG.M5vdR,\ndiv.hwFVM,\n.nOssi,\n.r1yVH,\n#popover-secondary-menu {\n  display: none !important;\n}\n\ndiv.tHGFe,\nul.QmKQx.hSanJ {\n  display: none !important;\n}\n\n.ZdQR2 {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}\ndiv.uqkHb.ufM77 {\n  background-color: #fff !important;\n}"
+      "unsplash-transparecy": ":root {\n  --darkreader-background-ffffff: transparent !important;\n  --color-white: #00000000 !important;\n}\n\nbody {\n  background-color: #00000000 !important;\n}\n\n.xWFB_,\nheader form {\n  background-color: #00000000 !important;\n}\n\nhtml,\nbody,\n.EtnYM,\n.b4j4s {\n  background-color: #00000000 !important;\n  color: #fff !important;\n}",
+      "unsplash-hide elements": "figure:has(.se4Qe) {\n  display: none !important;\n}",
+      "unsplash-other styles": "figure {\n  border-radius: 20px !important;\n  overflow: hidden !important;\n  transition: all 0.5s ease-in-out !important;\n}\n\nfigure:hover {\n  border-radius: 10px !important;\n  scale: 1.1 !important;\n  box-shadow: #00000088 0px 0px 50px !important;\n  z-index: 10 !important;\n}\n\nheader {\n  z-index: 1000 !important;\n  background-color: #00000000 !important;\n  backdrop-filter: blur(10px) !important;\n  color: #ffffff !important;\n}\n\n.b4j4s {\n  position: relative !important;\n  top: 0 !important;\n  transition: all 0.5s ease-in-out !important;\n  opacity: 0.2 !important;\n  margin-bottom: 10px !important;\n}\n\n.b4j4s:hover {\n  opacity: 1 !important;\n}\n\ndiv.zLj3X.rJ2xz.bYpwS.U8eXG.M5vdR,\ndiv.hwFVM,\n.nOssi,\n.r1yVH,\n#popover-secondary-menu {\n  display: none !important;\n}\n\ndiv.tHGFe,\nul.QmKQx.hSanJ {\n  display: none !important;\n}\n\n.ZdQR2 {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}\ndiv.uqkHb.ufM77 {\n  background-color: #fff !important;\n}"
     },
     "vercel.com.css": {
-      "transparecy": ":root{\n  --geist-background: transparent !important;\n  --ds-background-200-value: transparent !important;\n}\n\nhtml, header, [data-testid=\"navbar/submenu\"], footer{\n  background-color: transparent !important;\n}",
-      "overlay fix": "[role=\"menu\"]{\n  background-color: var(--accents-2) !important;\n}"
+      "vercel-transparecy": ":root{\n  --geist-background: transparent !important;\n  --ds-background-200-value: transparent !important;\n}\n\nhtml, header, [data-testid=\"navbar/submenu\"], footer{\n  background-color: transparent !important;\n}",
+      "vercel-overlay fix": "[role=\"menu\"]{\n  background-color: var(--accents-2) !important;\n}"
     },
     "web.telegram.org.css": {
-      "transparecy": ":root {\n  --color-background: #00000000 !important;\n  --theme-background-color: #00000000 !important;\n  --color-borders: #00000000 !important;\n  --color-light-shadow: #00000000 !important;\n}\n\nbody,\nhtml,\nhtml.theme-dark,\n#root,\nhtml.theme-dark .ThfRMqwq::before,\nhtml.theme-dark .C6IaXYew:not(.K1xhz7U5):not(.CwoXMwaR)::after {\n  background-image: none !important;\n}\n\n.C6IaXYew,\n.ThfRMqwq {\n  background-color: #00000000 !important;\n}\n\n.menu-container {\n  background-color: #000000 !important;\n}\n\n.settings-main-menu {\n  border: none !important;\n  box-shadow: none !important;\n}"
+      "tg-transparecy": ":root {\n  --color-background: #00000000 !important;\n  --theme-background-color: #00000000 !important;\n  --color-borders: #00000000 !important;\n  --color-light-shadow: #00000000 !important;\n}\n\nbody,\nhtml,\nhtml.theme-dark,\n#root,\nhtml.theme-dark .ThfRMqwq::before,\nhtml.theme-dark .C6IaXYew:not(.K1xhz7U5):not(.CwoXMwaR)::after {\n  background-image: none !important;\n}\n\n.C6IaXYew,\n.ThfRMqwq {\n  background-color: #00000000 !important;\n}\n\n.menu-container {\n  background-color: #000000 !important;\n}\n\n.settings-main-menu {\n  border: none !important;\n  box-shadow: none !important;\n}"
     },
     "web.whatsapp.com.css": {
-      "transparecy": ".dark {\n  --app-background: #00000000 !important;\n  --app-background-stripe: #00000000 !important;\n  --WDS-app-wash: #00000000 !important;\n  --panel-header-background: #00000000 !important;\n  --navbar-background: #00000000 !important;\n  --panel-background-lighter: #00000000 !important;\n  --intro-background: #00000000 !important;\n  --background-default: #00000000 !important;\n  --butterbar-default-background: #00000000 !important;\n  --filters-container-background: #00000000 !important;\n  --search-input-container-background: #00000000 !important;\n  --search-container-background: #00000000 !important;\n  --conversation-header-border: #00000000 !important;\n  --border-list: #00000000 !important;\n  --conversation-panel-background: #00000000 !important;\n  --rich-text-panel-background: #00000000 !important;\n  --drawer-background-deep: #00000000 !important;\n  --drawer-section-background: #00000000 !important;\n}",
-      "layout fixes": ".two,\n.three {\n  width: 100vw !important;\n  max-width: 100vw !important;\n  height: 100vh !important;\n  margin: 0 !important;\n  top: 0 !important;\n}",
-      "other changes": ".xu3j5b3,\n.xvkby78::after,\n.xso031l {\n  border: none !important;\n  outline: none !important;\n}\n\n._al_d,\ndiv.x9f619.x78zum5.x6s0dn4.xl56j7k.xcxhlts.xktsk01.x1fqp7bg.x1d52u69.x889kno.x178xt8z.x13fuv20.xyj1x25.xzwifym {\n  display: none !important;\n}\n\n[data-asset-chat-background-dark],\ndiv._ajv7:nth-child(3) {\n  display: none !important;\n}\n\n.x13x2ugz {\n  border-radius: 2em !important;\n}"
+      "wa-transparecy": ".dark {\n  --app-background: #00000000 !important;\n  --app-background-stripe: #00000000 !important;\n  --WDS-app-wash: #00000000 !important;\n  --panel-header-background: #00000000 !important;\n  --navbar-background: #00000000 !important;\n  --panel-background-lighter: #00000000 !important;\n  --intro-background: #00000000 !important;\n  --background-default: #00000000 !important;\n  --butterbar-default-background: #00000000 !important;\n  --filters-container-background: #00000000 !important;\n  --search-input-container-background: #00000000 !important;\n  --search-container-background: #00000000 !important;\n  --conversation-header-border: #00000000 !important;\n  --border-list: #00000000 !important;\n  --conversation-panel-background: #00000000 !important;\n  --rich-text-panel-background: #00000000 !important;\n  --drawer-background-deep: #00000000 !important;\n  --drawer-section-background: #00000000 !important;\n}",
+      "wa-layout fixes": ".two,\n.three {\n  width: 100vw !important;\n  max-width: 100vw !important;\n  height: 100vh !important;\n  margin: 0 !important;\n  top: 0 !important;\n}",
+      "wa-other changes": ".xu3j5b3,\n.xvkby78::after,\n.xso031l {\n  border: none !important;\n  outline: none !important;\n}\n\n._al_d,\ndiv.x9f619.x78zum5.x6s0dn4.xl56j7k.xcxhlts.xktsk01.x1fqp7bg.x1d52u69.x889kno.x178xt8z.x13fuv20.xyj1x25.xzwifym {\n  display: none !important;\n}\n\n[data-asset-chat-background-dark],\ndiv._ajv7:nth-child(3) {\n  display: none !important;\n}\n\n.x13x2ugz {\n  border-radius: 2em !important;\n}"
     },
     "x.com.css": {
-      "transparecy": "body,\n.r-kemksi,\n.r-5zmot,\n.css-175oi2r {\n  background-color: #00000000 !important;\n  border: none !important;\n}\n\n[data-testid=\"Dropdown\"] {\n  background-color: #000 !important;\n}",
-      "layout fixes": ".r-1gn8etr {\n  position: sticky !important;\n  top: -50px !important;\n}",
-      "hover": "div.css-175oi2r.r-vacyoi.r-ttdzmv,\ndiv.css-175oi2r.r-1pi2tsx.r-1wtj0ep.r-1rnoaur.r-o96wvk.r-is05cd {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
+      "x-transparecy": "body,\n.r-kemksi,\n.r-5zmot,\n.css-175oi2r {\n  background-color: #00000000 !important;\n  border: none !important;\n}\n\n[data-testid=\"Dropdown\"] {\n  background-color: #000 !important;\n}",
+      "x-layout fixes": ".r-1gn8etr {\n  position: sticky !important;\n  top: -50px !important;\n}",
+      "x-hover": "div.css-175oi2r.r-vacyoi.r-ttdzmv,\ndiv.css-175oi2r.r-1pi2tsx.r-1wtj0ep.r-1rnoaur.r-o96wvk.r-is05cd {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
     "youtube.com.css": {
-      "Transparency": ":root {\n  --primary-background-color: #00000000 !important;\n  --dark-theme-background-color: #00000000 !important;\n  --yt-spec-base-background: #00000000 !important;\n  --yt-spec-brand-background-solid: #00000000 !important;\n}\n\nhtml[dark] {\n  background-color: #00000000 !important;\n}\n\n#container.ytd-searchbox {\n  background-color: #00000000 !important;\n}",
-      "No left side guide": "ytd-mini-guide-renderer {\n  display: none !important;\n}\n#page-manager {\n  margin-left: 0 !important;\n}",
-      "Transparent header": "#masthead-container {\n  #background.ytd-masthead {\n    background-color: #00000000 !important;\n  }\n}",
-      "Hide filter chips": ".ytd-two-column-browse-results-renderer #header {\n  display: none !important;\n}",
-      "Make feed compact": "ytd-rich-item-renderer[rendered-from-rich-grid] {\n  --ytd-rich-item-row-usable-width: calc(\n    100% - var(--ytd-rich-grid-gutter-margin) * 1\n  ) !important;\n  margin-bottom: 1em !important;\n}\nytd-video-meta-block.grid #metadata.ytd-video-meta-block {\n  flex-direction: row !important;\n  text-overflow: ellipsis !important;\n\n  #metadata-line span:nth-child(3) {\n    width: 2em !important;\n    height: 1em !important;\n    margin-left: 0.5em !important;\n  }\n}",
-      "Feed cards improvements": "ytd-rich-grid-media {\n  margin-bottom: 0.7em !important;\n  ytd-menu-renderer #button {\n    opacity: 0 !important;\n    transition: opacity 0.3s ease-in-out !important;\n  }\n  :hover ytd-menu-renderer #button {\n    opacity: 1 !important;\n  }\n\n  #avatar-container {\n    margin: 1.75em 1.5em 0 0.5em !important;\n    transition: scale 0.4s ease-in-out !important;\n\n    .yt-spec-avatar-shape--avatar-size-medium {\n      width: 45px !important;\n      height: 45px !important;\n\n      .yt-spec-avatar-shape__image {\n        border-radius: 1.5em !important;\n      }\n    }\n\n    &:hover {\n      scale: 1.2 !important;\n    }\n  }\n}",
-      "Transparent video background": ".html5-main-video,\n.html5-video-container,\n#movie_player,\n#container,\n#ytd-player,\n#player-container,\n#player-full-bleed-container,\n#full-bleed-container {\n  background-color: #00000000 !important;\n}",
-      "transparent overlay chat": "#chat {\n  position: absolute !important;\n  height: 800px !important;\n  top: 50vh !important;\n  transform: translateY(-50%) !important;\n}",
-      "search box background": ".ytSearchboxComponentSearchButton,\ndiv.style-scope.tp-yt-app-drawer,\n.ytSearchboxComponentInputBox {\n  background-color: var(--yt-spec-text-primary-inverse) !important;\n  color: var(--yt-live-chat-text-input-field-placeholder-color) !important;\n}\n\nyt-live-chat-renderer {\n  background: none !important;\n  background-color: transparent !important;\n}",
-      "Theatre view : full window view": "ytd-watch-flexy[theater=\"\"]{\n  margin-top: 0 !important;\n#movie_player > div.html5-video-container video{\n  height: 100vh !important;\n  width: 100vw !important;\n  left: 0 !important;\n}\n}",
-      "no ambient mode": "#cinematics-container{\n  display: none !important;\n}",
-      "Addon : timed comments": ".__youtube-timestamps__stamp {\n  scale: 3 !important;\n  border-radius: 1.5px !important;\n  transition: all 0.3s ease-in-out !important;\n\n  &:hover {\n    scale: 5 !important;\n  }\n}\n\n.__youtube-timestamps__preview-wrapper {\n  scale: 1.2 !important;\n  transform: translateX(16%) !important;\n  .__youtube-timestamps__preview {\n    border-radius: 1em !important;\n    backdrop-filter: blur(20px) !important;\n    background-color: #00000099 !important;\n    border: solid 2px gray !important;\n\n    .__youtube-timestamps__preview__avatar {\n      height: 2.5em !important;\n      width: 2.5em !important;\n      border-radius: 0.5em !important;\n    }\n\n    .__youtube-timestamps__preview__text-stamp {\n      background-color: #ffaaaa !important;\n      padding: 0.1em 0.3em !important;\n      border-radius: 0.5em !important;\n      color: #000 !important;\n    }\n\n    .__youtube-timestamps__preview__name,\n    .__youtube-timestamps__preview__text {\n      color: #ffffff !important;\n    }\n  }\n}\n\n.comments-container {\n  div.wrapper {\n    background-color: transparent !important;\n  }\n\n  div.clickable-comment,\n  div.replies {\n    background-color: #00000033 !important;\n    backdrop-filter: blur(20px) !important;\n    padding: 1em !important;\n    margin-bottom: 1em !important;\n    border-radius: 1em !important;\n    max-width: 40em !important;\n    transition: all 0.4s ease-in-out !important;\n\n    .likes-and-replies {\n      opacity: 0.3 !important;\n    }\n  }\n}",
-      "Misc": "#content #dismissible:hover {\n  ytd-video-meta-block {\n    opacity: 1 !important;\n  }\n}\n\n#panels-full-bleed-container {\n  width: 0 !important;\n}"
+      "yt-Transparency": ":root {\n  --primary-background-color: #00000000 !important;\n  --dark-theme-background-color: #00000000 !important;\n  --yt-spec-base-background: #00000000 !important;\n  --yt-spec-brand-background-solid: #00000000 !important;\n}\n\nhtml[dark] {\n  background-color: #00000000 !important;\n}\n\n#container.ytd-searchbox {\n  background-color: #00000000 !important;\n}",
+      "yt-No left side guide": "ytd-mini-guide-renderer {\n  display: none !important;\n}\n#page-manager {\n  margin-left: 0 !important;\n}",
+      "yt-Transparent header": "#masthead-container {\n  #background.ytd-masthead {\n    background-color: #00000000 !important;\n  }\n}",
+      "yt-Hide filter chips": ".ytd-two-column-browse-results-renderer #header {\n  display: none !important;\n}",
+      "yt-Make feed compact": "ytd-rich-item-renderer[rendered-from-rich-grid] {\n  --ytd-rich-item-row-usable-width: calc(\n    100% - var(--ytd-rich-grid-gutter-margin) * 1\n  ) !important;\n  margin-bottom: 1em !important;\n}\nytd-video-meta-block.grid #metadata.ytd-video-meta-block {\n  flex-direction: row !important;\n  text-overflow: ellipsis !important;\n\n  #metadata-line span:nth-child(3) {\n    width: 2em !important;\n    height: 1em !important;\n    margin-left: 0.5em !important;\n  }\n}",
+      "yt-Feed cards improvements": "ytd-rich-grid-media {\n  margin-bottom: 0.7em !important;\n  ytd-menu-renderer #button {\n    opacity: 0 !important;\n    transition: opacity 0.3s ease-in-out !important;\n  }\n  :hover ytd-menu-renderer #button {\n    opacity: 1 !important;\n  }\n\n  #avatar-container {\n    margin: 1.75em 1.5em 0 0.5em !important;\n    transition: scale 0.4s ease-in-out !important;\n\n    .yt-spec-avatar-shape--avatar-size-medium {\n      width: 45px !important;\n      height: 45px !important;\n\n      .yt-spec-avatar-shape__image {\n        border-radius: 1.5em !important;\n      }\n    }\n\n    &:hover {\n      scale: 1.2 !important;\n    }\n  }\n}",
+      "yt-Transparent video background": ".html5-main-video,\n.html5-video-container,\n#movie_player,\n#container,\n#ytd-player,\n#player-container,\n#player-full-bleed-container,\n#full-bleed-container {\n  background-color: #00000000 !important;\n}",
+      "yt-transparent overlay chat": "#chat {\n  position: absolute !important;\n  height: 800px !important;\n  top: 50vh !important;\n  transform: translateY(-50%) !important;\n}",
+      "yt-search box background": ".ytSearchboxComponentSearchButton,\ndiv.style-scope.tp-yt-app-drawer,\n.ytSearchboxComponentInputBox {\n  background-color: var(--yt-spec-text-primary-inverse) !important;\n  color: var(--yt-live-chat-text-input-field-placeholder-color) !important;\n}\n\nyt-live-chat-renderer {\n  background: none !important;\n  background-color: transparent !important;\n}",
+      "yt-Theatre view : full window view": "ytd-watch-flexy[theater=\"\"]{\n  margin-top: 0 !important;\n#movie_player > div.html5-video-container video{\n  height: 100vh !important;\n  width: 100vw !important;\n  left: 0 !important;\n}\n}",
+      "yt-no ambient mode": "#cinematics-container{\n  display: none !important;\n}",
+      "yt-Addon : timed comments": ".__youtube-timestamps__stamp {\n  scale: 3 !important;\n  border-radius: 1.5px !important;\n  transition: all 0.3s ease-in-out !important;\n\n  &:hover {\n    scale: 5 !important;\n  }\n}\n\n.__youtube-timestamps__preview-wrapper {\n  scale: 1.2 !important;\n  transform: translateX(16%) !important;\n  .__youtube-timestamps__preview {\n    border-radius: 1em !important;\n    backdrop-filter: blur(20px) !important;\n    background-color: #00000099 !important;\n    border: solid 2px gray !important;\n\n    .__youtube-timestamps__preview__avatar {\n      height: 2.5em !important;\n      width: 2.5em !important;\n      border-radius: 0.5em !important;\n    }\n\n    .__youtube-timestamps__preview__text-stamp {\n      background-color: #ffaaaa !important;\n      padding: 0.1em 0.3em !important;\n      border-radius: 0.5em !important;\n      color: #000 !important;\n    }\n\n    .__youtube-timestamps__preview__name,\n    .__youtube-timestamps__preview__text {\n      color: #ffffff !important;\n    }\n  }\n}\n\n.comments-container {\n  div.wrapper {\n    background-color: transparent !important;\n  }\n\n  div.clickable-comment,\n  div.replies {\n    background-color: #00000033 !important;\n    backdrop-filter: blur(20px) !important;\n    padding: 1em !important;\n    margin-bottom: 1em !important;\n    border-radius: 1em !important;\n    max-width: 40em !important;\n    transition: all 0.4s ease-in-out !important;\n\n    .likes-and-replies {\n      opacity: 0.3 !important;\n    }\n  }\n}",
+      "yt-Misc": "#content #dismissible:hover {\n  ytd-video-meta-block {\n    opacity: 1 !important;\n  }\n}\n\n#panels-full-bleed-container {\n  width: 0 !important;\n}"
     },
     "zen-browser.app.css": {
-      "transparency": "body, .astronav-items{\n  background-color: #00000000 !important;\n}\n\n.bg-dark{\n  background-color: #ffffff88 !important;\n  border: none !important;\n}\n\n:root{\n  --light: transparent !important;\n}"
+      "zen-transparency": "body, .astronav-items{\n  background-color: #00000000 !important;\n}\n\n.bg-dark{\n  background-color: #ffffff88 !important;\n  border: none !important;\n}\n\n:root{\n  --light: transparent !important;\n}"
     }
   }
 }
