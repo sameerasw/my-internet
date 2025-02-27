@@ -43,11 +43,11 @@ div.x9f619.x78zum5.x6s0dn4.xl56j7k.xcxhlts.xktsk01.x1fqp7bg.x1d52u69.x889kno.x17
   display: none !important;
 }
 
-[data-asset-chat-background-dark],
-div._ajv7:nth-child(3) {
-  display: none !important;
-}
-
 .x13x2ugz {
   border-radius: 2em !important;
+}
+
+/* wa-overlay fixes  */
+div.xds687c:nth-child(1){
+  background-color: var(--background-document-with-captions) !important;
 }
