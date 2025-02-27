@@ -84,6 +84,11 @@
       "border and others": ".element-card {\n  border-radius: 1em !important;\n  background-color: #00000044 !important;\n}\n\n.course-banner {\n  border-radius: 1em 1em 0 0 !important;\n}\n\n.bb-offcanvas-panel {\n  background-color: #111111 !important;\n}",
       "hover": "div.hide-in-background.themed-background-primary-fill-only.left-off-canvas-menu.color-selection-live-mode {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
+    "linkedin.com.css": {
+      "in-transparency": ":root{\n  --color-background-canvas: transparent !important;\n  --color-background-container: transparent !important;\n}",
+      "in-no borders": ":root{\n  --color-border-faint: transparent !important;\n}",
+      "in-navbar blur": "header{\n  backdrop-filter: blur(20px) !important;\n}"
+    },
     "messenger.com.css": {
       "transparecy": ":root {\n  --web-wash: #00000000 !important;\n  --messenger-card-background: #00000000 !important;\n  --mwp-header-background-color: #00000000 !important;\n  --mwp-message-row-background: #00000000 !important;\n}\n\n.xcrg951 {\n  background-color: #00000000 !important;\n  box-shadow: none !important;\n}"
     },
