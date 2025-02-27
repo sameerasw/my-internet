@@ -142,6 +142,11 @@
       "monkey-hide header": "header {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
       "monkey-fix text color": "#words .word letter {\n  color: var(--ss-font-placeholder-color) !important;\n}"
     },
+    "music.apple.com.css": {
+      "applem-no borders": "@media (prefers-color-scheme: dark), @media (prefers-color-scheme: light)  {\n  :root{\n  --labelDivider: none !important;\n  --playerDropShadow2: none !important;\n  --playerInnerShadow: none !important;\n}\n}",
+      "applem-transparency": "body, .navigation, amp-chrome-player::before{\n  background-color: transparent !important;\n}",
+      "applem-no thanks": "[slot=\"native-cta\"]{\n  display: none !important;;\n}"
+    },
     "music.youtube.com.css": {
       "ytm-transparent bg": ":root {\n  --ts-body-color: #00000000 !important;\n}\n\nbody {\n  background-color: transparent !important;\n}",
       "ytm-hover navbar and titlebar": ".ytmusic-guide-renderer,\nytmusic-nav-bar {\n  opacity: 0.01 !important;\n  transition: opacity 0.5s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\nytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app{\n  background-color: transparent !important;\n  border: none !important;\n}",
