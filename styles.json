@@ -74,7 +74,7 @@
       "gh-hide elements": "form.Box.position-relative.rounded-2.mb-4.p-3.js-notice-dismiss.overflow-hidden,\ndiv.mb-3.dashboard-changelog.color-bg-default.border.color-border-muted.p-3.rounded-2,\ndiv.d-flex.flex-items-between.footer.container-lg.my-5.px-0 {\n  display: none !important;\n}",
       "gh-hide footer": "footer.footer.pt-8.pb-6.f6.color-fg-muted.p-responsive {\n  display: none !important;\n}",
       "gh-hover tabs": "aside.feed-right-sidebar,\naside.feed-left-sidebar,\n.AppHeader-localBar {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
-      "gh-overlay color fixes": "div.prc-Dialog-Dialog-luvDS,\n.Overlay,\n.Overlay__StyledOverlay-sc-51280t-0,\ndetails-menu,\n.search-suggestions,\n[role=\"dialog\"] {\n  background-color: var(--bgColor-disabled) !important;\n}"
+      "gh-overlay color fixes": "div.prc-Dialog-Dialog-luvDS,\n.Overlay,\n.Overlay__StyledOverlay-sc-51280t-0,\ndetails-menu,\n.search-suggestions,\n[role=\"dialog\"], .Popover-message {\n  background-color: var(--bgColor-disabled) !important;\n}"
     },
     "google.com.css": {
       "google-transparecy": "html,\nbody,\ndiv,\nsection,\narticle,\nheader,\nfooter,\nmain,\naside,\nnav,\nspan,\nform,\ninput,\nbutton,\ntable,\ntbody,\ntr,\ntd {\n  background: transparent !important;\n}\n\n.aajZCb {\n  background-color: var(--uv-styles-color-surface) !important;\n}\n\ndiv.sfbg {\n  background-color: var(--darkreader-border-ffffff) !important;\n}\n\n:root {\n  --darkreader-background-ffffff: transparent !important;\n}\n\nbody {\n  background-color: #00000000 !important;\n}\n\n.in7vHe.FR7ZSc.FR7ZSc .niO4u,\ndiv.RNNXgb,\n.aajZCb {\n  background-color: var(--EpFNW) !important;\n}",
