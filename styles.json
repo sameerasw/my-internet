@@ -12,6 +12,11 @@
       "transparency": "body{\n  background-color: #00000000 !important;\n}",
       "transparency with darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important\n}"
     },
+    "bsky.app.css": {
+      "transparecy": "html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{\n    --background: transparent !important;\n    background-color: transparent !important;\n}",
+      "no borders": "html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{\n    border: none !important;\n}",
+      "overlay fixes": "[role=\"menu\"] .css-175oi2r, [role=\"dialog\"] .css-175oi2r{\n    background-color: var(--backgroundLight) !important;\n}"
+    },
     "calendar.google.com.css": {
       "transparecy": "body,\n[jsname=\"mOIbvc\"],\n.R6TFwe,\n.sS0sZd,\n[jsname=\"vhZMvf\"],\n[jsname=\"KBzNL\"] {\n  --gm3-sys-color-surface-container-low: transparent !important;\n\n  background-color: transparent !important;\n}",
       "remove borders": ".BiKU4b {\n  border: none !important;\n}"
