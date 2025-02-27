@@ -1,0 +1,31 @@
+/* ddg-transparecy */
+html, body, .desktop-homepage_root__Ikj1_, .site-wrapper, .metabar:not(.is-stuck), .tileview--grid .metabar--fixed::before, #zci-images, .zci-wrap, #zci-videos{
+  background-color: transparent !important;
+}
+
+/* ddg-hidden promo */
+.desktop-homepage_heroContent__4HUFA{
+  display: none;
+}
+
+/* ddg-no home scroll */
+.homepage-cta-section_scrollCta__Wmixn, #features{
+  display: none;
+}
+
+/* ddg-centered search */
+.is-not-mobile-devicem, .container_root__Ycg94, .header_header__w2BOs, .header_headerContent__LYxh6{
+  height: 100vh !important;
+  margin: auto inherit;
+}
+
+/* ddg-no footer */
+.footer{
+  display: none !important;
+}
+
+/* ddg-transparent header */
+#header_wrapper{
+  background-color: transparent !important;
+  position: sticky !important;
+}
