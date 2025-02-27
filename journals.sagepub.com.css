@@ -1,0 +1,21 @@
+/* sagepub-transparency */
+html, body, .header, [role="navigation"], [role="menuitem"] button, .more-sage-products__container{
+  background-color: transparent !important;
+  background: none !important;
+}
+
+/* sagepub-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* sagepub-no borders */
+body, .header, [role="navigation"], [role="menuitem"] button, .more-sage-products__container{
+border: none !important;
+box-shadow: none !important;
+}
+
+/* sagepub-no footer */
+footer{
+  display: none !important;
+}
