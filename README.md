@@ -15,7 +15,7 @@ My custom CSS for websites I visit the most. Click on the preview to view the fi
 - Add propper comments for each section of a feature at the beginning with a clear but compact description.
   
   ```
-    /* transparecy */
+    /* transparency */
     :root{
       --colorBgApp: transparent !important;
     }
