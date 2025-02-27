@@ -8,6 +8,9 @@
       "netlify-transparecy": ":root{\n  --colorBgApp: transparent !important;\n}",
       "netlify-no footer": "footer.app-footer {\n  display: none !important;\n}"
     },
+    "app.slack.com.css": {
+      "slack-transparency": ".p-theme_background, [aria-label=\"Channel general\"], .p-ia4_client .p-view_contents--primary, .p-view_header--with-bookmarks-bar, .channel_tab_bar__HY3uU, .c-scrollbar__hider, .workspace__primary_view_footer{\n  background-color: transparent !important;\n  background: none !important;\n  filter: none !important;\n  border: none !important;\n}\n\n:root, .sk-client-theme--dark{\n  --dt_color-theme-surf-inv-sec: transparent !important;\n  --dt_color-otl-ter: transparent !important;\n  border: none !important;\n}"
+    },
     "basicappleguy.com.css": {
       "basicapple-transparency": "body{\n  background-color: #00000000 !important;\n}",
       "basicapple-transparency with darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important\n}"
