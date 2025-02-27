@@ -8,6 +8,28 @@ My custom CSS for websites I visit the most. Click on the preview to view the fi
 
 [How to get transparency in Zen](https://sameerasw.notion.site/Zen-Transparency-1939c6099d4080468f02cf05ae50e827?pvs=4)
 
+## Contributing styles
+- Make sure the file is named in the correct format [website domain].css (google.com.css and docs.google.com.css are 2 styles which are not merged)
+- Every property should include `!important` to make sure it gets applied.
+- Do NOT leave commented out code.
+- Add propper comments for each section of a feature at the beginning with a clear but compact description.
+  
+  ```
+    /* transparecy */
+    :root{
+      --colorBgApp: transparent !important;
+    }
+
+    /*  no footer */
+    footer.app-footer {
+      display: none !important;
+    }
+  ```
+  
+- Once comitted to the repository, github actions will parse the css file and update/ generate the [styles.js](https://github.com/sameerasw/my-internet/blob/main/styles.json) and then will be deployed to the github pages allowing the add-on to fetch from it.
+- Thank you <3
+
+
 ---
 ## userChrome.css - my Zen browser styling
 [![CleanShot 2025-02-11 at 11  04 22@2x Large](https://github.com/user-attachments/assets/141ba655-8af3-4099-b2a9-26d3e33a5d2d)](https://github.com/sameerasw/my-internet/blob/main/userChrome.css)
