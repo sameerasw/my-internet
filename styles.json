@@ -142,6 +142,12 @@
       "hover": "div.pure-u-1 {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
       "hide elements": "div.lower-content.lower-content-blend,\nfooter,\n.connection-component-container > div:nth-child(3) {\n  display: none !important;\n}\n.pure-u-custom-ad-skyscraper {\n  display: none !important;\n}\n\n.pure-u-custom-speedtest {\n  margin: auto !important;\n}"
     },
+    "stackoverflow.com.css": {
+      "transparency": "body.unified-theme, body.unified-theme *{\n  --theme-background-color: transparent !important;\n  --theme-content-background-color: transparent !important;\n  border: none !important;\n}",
+      "transparency darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "navbar": ".s-topbar{\n  background-color: transparent !important;\n  backdrop-filter: blur(10px) !important;\n}",
+      "no footer": "#footer{\n  display: none !important;\n}"
+    },
     "tasks.google.com.css": {
       "transparecy": ".vWh0f {\n  --tasks-body-background: transparent !important;\n  --tasks-surface-container-low: transparent !important;\n}"
     },
