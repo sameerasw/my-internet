@@ -1,0 +1,13 @@
+/* slack-transparency */
+.p-theme_background, [aria-label="Channel general"], .p-ia4_client .p-view_contents--primary, .p-view_header--with-bookmarks-bar, .channel_tab_bar__HY3uU, .c-scrollbar__hider, .workspace__primary_view_footer{
+  background-color: transparent !important;
+  background: none !important;
+  filter: none !important;
+  border: none !important;
+}
+
+:root, .sk-client-theme--dark{
+  --dt_color-theme-surf-inv-sec: transparent !important;
+  --dt_color-otl-ter: transparent !important;
+  border: none !important;
+}
