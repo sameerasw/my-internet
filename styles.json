@@ -170,6 +170,9 @@
       "ytm-centered player": "#player {\n  max-height: 100vh !important;\n  aspect-ratio: 1 !important;\n  width: 100% !important;\n  margin: auto !important;\n}",
       "ytm-navbar and titlebar bg removed": "#nav-bar-background,\n#mini-guide-background {\n  border: none !important;\n  height: 0 !important;\n  width: 0 !important;\n}\n\n#guide,\nytmusic-nav-bar,\n.background-gradient {\n  background-color: var(--ts-body-color) !important;\n  background-image: none !important;\n  background-repeat: no-repeat !important;\n}\n\n#player-page {\n  padding: 0 !important;\n  margin: 0 !important;\n  left: 0 !important;\n  top: 0 !important;\n  height: 100% !important;\n  width: 100% !important;\n}\n\nytmusic-player-bar,\n#player-bar-background {\n  margin: 0.5% !important;\n  width: 99% !important;\n  border-radius: 1em !important;\n  overflow: hidden !important;\n}"
     },
+    "news.ycombinator.com.css": {
+      "ycom-transparency": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}\ntable{\n  background-color: transparent !important;\n}"
+    },
     "notion.so.css": {
       "notion-transparecy": "body {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n}\n\n.notion-app-inner,\n.notion-cursor-listener,\n.notion-frame,\n.notion-sidebar-container,\nheader {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  box-shadow: none !important;\n}",
       "notion-hide elements": "div.autolayout-row.autolayout-fill-width.autolayout-center.autolayout-space {\n  display: none !important;\n}"
