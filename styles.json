@@ -174,6 +174,11 @@
       "notion-transparecy": "body {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n}\n\n.notion-app-inner,\n.notion-cursor-listener,\n.notion-frame,\n.notion-sidebar-container,\nheader {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  box-shadow: none !important;\n}",
       "notion-hide elements": "div.autolayout-row.autolayout-fill-width.autolayout-center.autolayout-space {\n  display: none !important;\n}"
     },
+    "perplexity.ai.css": {
+      "perplexity-transparency": "body,#__next > main:nth-child(1) > div:nth-child(1),  .erp-tab\\:rounded-none, div.sticky:nth-child(2), .pb-\\[144px\\] > div:nth-child(1), .pb-32 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1), .mt-xs > div:nth-child(1) > div:nth-child(1){\n  background-color: transparent !important;\n  border: none !important;\n}",
+      "perplexity-hover": ".grid-cols-6{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}",
+      "perplexity-hidden": "div.pb-md:nth-child(3){\n  display: none !important;\n}"
+    },
     "pexels.com.css": {
       "pexels-text color": "body,\nh4,\nh3,\nh2,\nh1,\nh5,\nh6,\nspan,\na {\n  color: #ffffff !important;\n}",
       "pexels-navbar": ".Navbar_container__PS9oP {\n  background-color: #00000000 !important;\n  backdrop-filter: blur(60px) !important;\n  border: none !important;\n  background: #00000000 !important;\n  box-shadow: none !important;\n}"
