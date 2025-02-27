@@ -1,0 +1,19 @@
+/* cobalt-transparency */
+body, #cobalt, #sidebar, #content{
+  background-color: transparent !important;
+  background: none !important;
+}
+
+/* cobalt-hidden */
+#terms-note{
+  display: none !important;
+}
+
+/* cobalt-hover */
+#sidebar, #supported-services{
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
+}
