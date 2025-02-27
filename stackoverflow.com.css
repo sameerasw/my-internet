@@ -1,0 +1,22 @@
+/* transparency */
+body.unified-theme, body.unified-theme *{
+  --theme-background-color: transparent !important;
+  --theme-content-background-color: transparent !important;
+  border: none !important;
+}
+
+/* transparency darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* navbar */
+.s-topbar{
+  background-color: transparent !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* no footer */
+#footer{
+  display: none !important;
+}
