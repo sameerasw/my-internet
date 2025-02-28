@@ -1,0 +1,22 @@
+/* chrome-transparency */
+header, .LXTxRc-AznF2e, .W7g1Rb-rymPhb-ibnC6b, .MHH2Z{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* chrome-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* chrome-no footer */
+footer{
+  display: none !important;
+}
+
+/* chrome-no thanks */
+#c241{
+  display: none !important;
+}
