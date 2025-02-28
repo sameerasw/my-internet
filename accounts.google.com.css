@@ -1,0 +1,7 @@
+/* gacc-transparency */
+html, body, .S7xv8{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
