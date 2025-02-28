@@ -1,0 +1,17 @@
+/* threads-transparency */
+html, body, .x1g7m7fl, #barcelona-page-layout, .x1ggkfyp, .x3ir7cq, .xz401s1, .xzii09s{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.x9f619 *{
+  border: none !important;
+}
+
+/* threads-overlay fixes */
+ [role="menu"] > div > div, [role="dialog"] > div > div{
+  background-color: var(--nav-bar-background) !important;
+  border-radius: 1em !important;
+}
