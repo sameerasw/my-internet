@@ -1,5 +1,5 @@
 /* transparency */
-body, #header, #sr-header-area, .side, .spacer, .link.odd{
+body, #header, #sr-header-area, .side, .spacer, .link.odd, [role="main"], .res-nightmode .entry.res-selected, .res-nightmode .link{
   background-color: transparent !important;
   border: none !important;
 }
