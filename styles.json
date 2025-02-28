@@ -310,6 +310,10 @@
       "wa-other changes": ".xu3j5b3,\n.xvkby78::after,\n.xso031l {\n  border: none !important;\n  outline: none !important;\n}\n\n._al_d,\ndiv.x9f619.x78zum5.x6s0dn4.xl56j7k.xcxhlts.xktsk01.x1fqp7bg.x1d52u69.x889kno.x178xt8z.x13fuv20.xyj1x25.xzwifym {\n  display: none !important;\n}\n\n.x13x2ugz {\n  border-radius: 2em !important;\n}",
       "wa-overlay fixes": "div.xds687c:nth-child(1){\n  background-color: var(--background-document-with-captions) !important;\n}"
     },
+    "wikipedia.org.css": {
+      "transparency": ":root{\n  --background-color-interactive-subtle: transparent !important;\n}\n\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
+    },
     "x.com.css": {
       "x-transparecy": "body,\n.r-kemksi,\n.r-5zmot,\n.css-175oi2r {\n  background-color: #00000000 !important;\n  border: none !important;\n}\n\n[data-testid=\"Dropdown\"] {\n  background-color: #000 !important;\n}",
       "x-layout fixes": ".r-1gn8etr {\n  position: sticky !important;\n  top: -50px !important;\n}",
