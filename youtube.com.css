@@ -235,7 +235,7 @@ ytd-merch-shelf-renderer{
   position: fixed !important;
   z-index: 1000 !important;
   top: 3vh !important;
-  left: 0 !important;
+  left: -35em !important;
   width: 40em !important;
   height: 90vh !important;
   overflow-y: scroll !important;
@@ -248,6 +248,7 @@ ytd-merch-shelf-renderer{
 
   &:hover{
     opacity: 1 !important;
+    left: 0 !important;
   }
 
 }
