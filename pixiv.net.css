@@ -1,0 +1,13 @@
+/* pixiv-forced transparency */
+html,
+div,
+section,
+input,
+button{
+  background: transparent !important;
+}
+
+/* pixiv-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
