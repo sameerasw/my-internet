@@ -298,6 +298,10 @@
     "tasks.google.com.css": {
       "tasks-transparecy": ".vWh0f {\n  --tasks-body-background: transparent !important;\n  --tasks-surface-container-low: transparent !important;\n}"
     },
+    "threads.net.css": {
+      "threads-transparency": "html, body, .x1g7m7fl, #barcelona-page-layout, .x1ggkfyp, .x3ir7cq, .xz401s1, .xzii09s{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n.x9f619 *{\n  border: none !important;\n}",
+      "threads-overlay fixes": "[role=\"menu\"] > div > div, [role=\"dialog\"] > div > div{\n  background-color: var(--nav-bar-background) !important;\n  border-radius: 1em !important;\n}"
+    },
     "twitch.tv.css": {
       "twitch-transparecy": ":root {\n  --color-background-body: transparent !important;\n  --color-background-base: transparent !important;\n  --shadow-elevation-1: none !important;\n  --color-background-alt: transparent !important;\n}\n\n.video-player,\n.video-player__container,\n.channel-root {\n  background: #00000000 !important;\n  background-color: #00000000 !important;\n}"
     },
