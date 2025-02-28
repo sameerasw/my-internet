@@ -1,0 +1,50 @@
+/* transparency */
+body, #header, #sr-header-area, .side, .spacer, .link.odd{
+  background-color: transparent !important;
+  border: none !important;
+}
+
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparency !important;
+}
+
+/* misc */
+#redesign-beta-optin-btn{
+  display: none !important;
+}
+
+.listing-chooser{
+  border-radius: 1em !important;
+}
+
+/* hover */
+.listing-chooser, #sr-header-area{
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
+}
+
+/* tabs */
+.tabmenu{
+  li a{
+    border-radius: 0.5em !important;
+    background-color: transparent !important;
+  }
+
+  li.selected a{
+    background-color: white !important;
+  }
+}
+
+/* no footer */
+.footer-parent{
+  display: none !important;
+}
+
+/* no thanks */
+.premium-banner-outer{
+  display: none !important;
+}
