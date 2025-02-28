@@ -204,7 +204,7 @@ display: none !important;
 }
 
 /* yt-hover header */
-#masthead-container{
+#masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){
   top: -40px !important;
   opacity: 0 !important;
   transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
