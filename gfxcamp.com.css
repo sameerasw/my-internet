@@ -1,0 +1,25 @@
+/* transparency */
+html, body, header, nav, #nav-topbar.nav-container{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* transparent body */
+.container-inner, .main, .main::before, .main::after, .sidebar-content, .page-title, .post-row{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* no footer */
+footer{
+  display: none !important;
+}
+
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
