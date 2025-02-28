@@ -115,16 +115,6 @@ yt-live-chat-renderer {
   background-color: transparent !important;
 }
 
-/* yt-Theatre view : full window view */
-ytd-watch-flexy[theater=""]{
-  margin-top: 0 !important;
-#movie_player > div.html5-video-container video{
-  height: 100vh !important;
-  width: 100vw !important;
-  left: 0 !important;
-}
-}
-
 /* yt-no ambient mode */
 #cinematics-container{
   display: none !important;
@@ -135,6 +125,7 @@ ytd-watch-flexy[theater=""]{
   scale: 3 !important;
   border-radius: 1.5px !important;
   transition: all 0.3s ease-in-out !important;
+  z-index: 10000000000000 !important;
 
   &:hover {
     scale: 5 !important;
@@ -201,3 +192,70 @@ ytd-watch-flexy[theater=""]{
 #panels-full-bleed-container {
   width: 0 !important;
 }
+
+
+/* yt-no feed distractions */
+#contents ytd-rich-section-renderer{
+display: none !important;
+}
+
+:root{
+  --ytd-toolbar-height: 0 !important;
+}
+
+/* yt-hover header */
+#masthead-container{
+  top: -40px !important;
+  opacity: 0 !important;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
+  &:hover{
+    opacity: 1 !important;
+    top: 0 !important;
+  }
+}
+
+/* yt-clean player page */
+ytd-merch-shelf-renderer{
+  display: none !important;
+}
+
+/* yt-Theatre: zen view */
+[theater=""] #full-bleed-container{
+  height: 100vh !important;
+  max-height: 100vh !important;
+  top: 0 !important;
+}
+
+/* yt-zen view comments */
+[theater=""] #columns #secondary{
+  display: none !important;
+}
+
+[theater=""] ytd-comments{
+  position: fixed !important;
+  z-index: 1000 !important;
+  top: 3vh !important;
+  left: 0 !important;
+  width: 40em !important;
+  height: 90vh !important;
+  overflow-y: scroll !important;
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+
+  background-color: var(--yt-spec-outline-inverse-medium) !important;
+  padding: 0 3em !important;
+  border-radius: 0 2em 2em 0 !important;
+
+  &:hover{
+    opacity: 1 !important;
+  }
+
+}
+
+/* yt-zen view comments blur */
+[theater=""] ytd-comments{
+  backdrop-filter: blur(20px) !important;
+}
+
+
+
