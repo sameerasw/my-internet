@@ -1,0 +1,12 @@
+/* transparency */
+html, body, .bg-white{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
