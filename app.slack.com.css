@@ -1,5 +1,5 @@
 /* slack-transparency */
-.p-theme_background, [aria-label="Channel general"], .p-ia4_client .p-view_contents--primary, .p-view_header--with-bookmarks-bar, .channel_tab_bar__HY3uU, .c-scrollbar__hider, .workspace__primary_view_footer{
+.p-theme_background, [aria-label="Channel general"], .p-ia4_client .p-view_contents--primary, .p-view_header--with-bookmarks-bar, .channel_tab_bar__HY3uU, .c-scrollbar__hider, .workspace__primary_view_footer, .c-message_kit__background, .parts-screen-body, .p-ia4_client .p-view_contents--secondary, .p-quip_flexpane--quip_canvas_sideview, .p-quip_flexpane--quip_canvas_sideview .p-quip_flexpane--quip_canvas_sideview__body, .p-quip_embed, .p-flexpane--iap1 .p-flexpane_header, .sk-client-theme--dark .p-canvas_template_options__preview-footer--wrapper{
   background-color: transparent !important;
   background: none !important;
   filter: none !important;
