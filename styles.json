@@ -4,6 +4,9 @@
       "transparency": ":root{\n  --background-color-interactive-subtle: transparent !important;\n}\n\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
     },
+    "accounts.google.com.css": {
+      "gacc-transparency": "html, body, .S7xv8{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}"
+    },
     "aistudio.google.com.css": {
       "aistd-transparecy": ":root{\n    --color-surface-container-lowest: #00000000 !important;\n    --color-sidebars-background: #00000000 !important;\n  }\n  \n  .makersuite-layout, .layout-navbar, select-header, .navbar-header, .router-outlet-wrapper, .nav-toggle-wrapper, .chunk-editor-main, ms-run-settings, .footer{\n    background-color: #00000000 !important;\n  }",
       "aistd-hide disclaimer": "div.disclaimer-container.ng-tns-c1318864088-1.ng-star-inserted{\n    display: none !important;\n  }"
