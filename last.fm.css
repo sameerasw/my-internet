@@ -1,0 +1,26 @@
+/* transparency */
+html, body, .top-bar, #content, .content-top, .content-top:after, .page-content, .stationlink::after, .chartlist-row, .chartlist-row::after, header{
+  background-color: transparent !important;
+border: none !important;
+}
+
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparency !important;
+}
+
+/* no thanks */
+.subscribe-cta, .free-description, [href="/pro"]{
+display: none !important;
+}
+
+/* no footer */
+.footer{
+  display: none !important;
+}
+
+/* border radius */
+.recs-feed-inner-wrap, .header-background{
+  border-radius: 1em !important;
+  overflow: hidden !important;
+}
