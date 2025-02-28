@@ -194,6 +194,10 @@
     "messenger.com.css": {
       "fbm-transparecy": ":root {\n  --web-wash: #00000000 !important;\n  --messenger-card-background: #00000000 !important;\n  --mwp-header-background-color: #00000000 !important;\n  --mwp-message-row-background: #00000000 !important;\n}\n\n.xcrg951 {\n  background-color: #00000000 !important;\n  box-shadow: none !important;\n}"
     },
+    "miruro.tv.css": {
+      "miruro-transparency": "html, body, .eGxCRW, .iDHeGb, .daqunT, .hIxxKF, .ijmopf, .cqJwte, .eakZjw, .gfuLhl, .kdqxUl, .fwmihZ, .iiVqpN{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "miruro-no footer": "footer{\n  display: none !important;\n}"
+    },
     "monkeytype.com.css": {
       "monkey-transparecy": ":root {\n  --bg-color: #00000000 !important;\n}",
       "monkey-hide footer": "footer {\n  display: none !important;\n}",
