@@ -267,6 +267,12 @@
       "vercel-transparecy": ":root{\n  --geist-background: transparent !important;\n  --ds-background-200-value: transparent !important;\n}\n\nhtml, header, [data-testid=\"navbar/submenu\"], footer{\n  background-color: transparent !important;\n}",
       "vercel-overlay fix": "[role=\"menu\"]{\n  background-color: var(--accents-2) !important;\n}"
     },
+    "wallstreetoasis.com.css": {
+      "transparency": ":root{\n  --color-page-bg: transparent !important;\n}\n\n#header.header-monkey-origin, .forum__dropdown, .forum__dropdown a, .box-content{\n  background-color: transparent !important;\n}\n\n.region-sidebar-right .block .box-content ul li{\n  border: none !important;\n}",
+      "blurry header": "#header{\n  backdrop-filter: blur(20px) !important;\n}",
+      "no footer": ".region-footer-1{\n  display: none !important;\n}",
+      "misc": "section.sidebar-placement.block.block-favish-ads.block-block-favish-ads-placeholder.clearfix {\n  display: none;\n}"
+    },
     "web.telegram.org.css": {
       "tg-transparecy": ":root {\n  --color-background: #00000000 !important;\n  --theme-background-color: #00000000 !important;\n  --color-borders: #00000000 !important;\n  --color-light-shadow: #00000000 !important;\n}\n\nbody,\nhtml,\nhtml.theme-dark,\n#root,\nhtml.theme-dark .ThfRMqwq::before,\nhtml.theme-dark .C6IaXYew:not(.K1xhz7U5):not(.CwoXMwaR)::after {\n  background-image: none !important;\n}\n\n.C6IaXYew,\n.ThfRMqwq {\n  background-color: #00000000 !important;\n}\n\n.menu-container {\n  background-color: #000000 !important;\n}\n\n.settings-main-menu {\n  border: none !important;\n  box-shadow: none !important;\n}"
     },
