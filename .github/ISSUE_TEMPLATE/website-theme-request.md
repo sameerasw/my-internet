@@ -1,7 +1,6 @@
 ---
 name: Website theme request
-about: Request your favorite site to be themed adna dded to the repository to be able
-  to available in the Zen Internet addon.
+about: Request your favorite site to be themed and added to the repository so that it can be available in the Zen Internet addon.
 title: "[THEME]"
 labels: Theme
 assignees: sameerasw
