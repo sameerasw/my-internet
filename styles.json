@@ -21,6 +21,12 @@
       "basicapple-transparency": "body{\n  background-color: #00000000 !important;\n}",
       "basicapple-transparency with darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important\n}"
     },
+    "behance.net.css": {
+      "transparency": "html, body, #site-content, .PrimaryNav-strip-Xyi::after, .PrimaryNav-strip-Xyi::before, .PrimaryNav-strip-Xyi, .Nav-storyNav-Uw0, .Btn-base-L7P, .ForYouUnified-root-R69{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}",
+      "no thanks": ".ForYou-rowWrapper-U4T{\n  display: none;\n}"
+    },
     "bloomberg.com.css": {
       "bloo-transparency": ".media-ui-LeaderboardAd_parallaxWrapper-JMVgdxR--aU-, [data-component=\"logo-bar\"], [data-component=\"menu-desktop\"], [data-component=\"logo\"]{\n  background-color: transparent !important;\n}",
       "bloo-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
