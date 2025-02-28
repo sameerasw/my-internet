@@ -123,6 +123,11 @@
       "google-shadows and borders": ".minidiv .sfbg,\n.minidiv .sfbg,\n.JryvJ .qS9jbf,\n.sHEJob,\n.Hwkikb.WY0eLb {\n  box-shadow: none !important;\n  border: none !important;\n}\n\n#sfooter,\n[role=\"contentinfo\"] {\n  display: none !important;\n}\n\n.w6VYqd {\n  background-color: #fff !important;\n}",
       "google-hover": ".rfiSsc {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
+    "huaban.com.css": {
+      "transparency": "html, body, .rBK5SX3w, .Fem_ciFN{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer, .mVp_rqCJ{\n  display: none !important;\n}"
+    },
     "instagram.com.css": {
       "ig-transparecy": ":root ._aa4d,\n:root ._ar45 {\n  --ig-primary-background: #00000000 !important;\n  --ig-highlight-background: #00000000 !important;\n  --ig-secondary-background: #00000000 !important;\n}\n\n.xvbhtw8 {\n  background-color: #00000000 !important;\n  border: none !important;\n}",
       "ig-hide elements": "div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 {\n  display: none !important;\n}",
