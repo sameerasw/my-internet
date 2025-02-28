@@ -177,6 +177,15 @@
       "notion-transparecy": "body {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n}\n\n.notion-app-inner,\n.notion-cursor-listener,\n.notion-frame,\n.notion-sidebar-container,\nheader {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  box-shadow: none !important;\n}",
       "notion-hide elements": "div.autolayout-row.autolayout-fill-width.autolayout-center.autolayout-space {\n  display: none !important;\n}"
     },
+    "old.reddit.com.css": {
+      "transparency": "body, #header, #sr-header-area, .side, .spacer, .link.odd{\n  background-color: transparent !important;\n  border: none !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparency !important;\n}",
+      "misc": "#redesign-beta-optin-btn{\n  display: none !important;\n}\n\n.listing-chooser{\n  border-radius: 1em !important;\n}",
+      "hover": ".listing-chooser, #sr-header-area{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}",
+      "tabs": ".tabmenu{\n  li a{\n    border-radius: 0.5em !important;\n    background-color: transparent !important;\n  }\n\n  li.selected a{\n    background-color: white !important;\n  }\n}",
+      "no footer": ".footer-parent{\n  display: none !important;\n}",
+      "no thanks": ".premium-banner-outer{\n  display: none !important;\n}"
+    },
     "perplexity.ai.css": {
       "perplexity-transparency": "body,#__next > main:nth-child(1) > div:nth-child(1),  .erp-tab\\:rounded-none, div.sticky:nth-child(2), .pb-\\[144px\\] > div:nth-child(1), .pb-32 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1), .mt-xs > div:nth-child(1) > div:nth-child(1), .dark\\:bg-offsetDark{\n  background-color: transparent !important;\n  border: none !important;\n}",
       "perplexity-hover": ".grid-cols-6{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}",
