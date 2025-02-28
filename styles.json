@@ -15,7 +15,7 @@
       "netlify-no footer": "footer.app-footer {\n  display: none !important;\n}"
     },
     "app.slack.com.css": {
-      "slack-transparency": ".p-theme_background, [aria-label=\"Channel general\"], .p-ia4_client .p-view_contents--primary, .p-view_header--with-bookmarks-bar, .channel_tab_bar__HY3uU, .c-scrollbar__hider, .workspace__primary_view_footer{\n  background-color: transparent !important;\n  background: none !important;\n  filter: none !important;\n  border: none !important;\n}\n\n:root, .sk-client-theme--dark{\n  --dt_color-theme-surf-inv-sec: transparent !important;\n  --dt_color-otl-ter: transparent !important;\n  border: none !important;\n}"
+      "slack-transparency": ".p-theme_background, [aria-label=\"Channel general\"], .p-ia4_client .p-view_contents--primary, .p-view_header--with-bookmarks-bar, .channel_tab_bar__HY3uU, .c-scrollbar__hider, .workspace__primary_view_footer, .c-message_kit__background, .parts-screen-body, .p-ia4_client .p-view_contents--secondary, .p-quip_flexpane--quip_canvas_sideview, .p-quip_flexpane--quip_canvas_sideview .p-quip_flexpane--quip_canvas_sideview__body, .p-quip_embed, .p-flexpane--iap1 .p-flexpane_header, .sk-client-theme--dark .p-canvas_template_options__preview-footer--wrapper{\n  background-color: transparent !important;\n  background: none !important;\n  filter: none !important;\n  border: none !important;\n}\n\n:root, .sk-client-theme--dark{\n  --dt_color-theme-surf-inv-sec: transparent !important;\n  --dt_color-otl-ter: transparent !important;\n  border: none !important;\n}"
     },
     "basicappleguy.com.css": {
       "basicapple-transparency": "body{\n  background-color: #00000000 !important;\n}",
