@@ -1,0 +1,26 @@
+/* v2t-transparency */
+html, body, header, .ring-offset-background, .shadow-lg{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* v2t-no footer */
+footer{
+  display: none !important;
+}
+
+/* v2t-hover */
+.relative{
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
+}
+
+/* v2t-hidden */
+p.text-center:nth-child(4), div.hidden{
+  display: none !important;
+}
