@@ -132,6 +132,13 @@
       "kick-nav shadow": "nav{\n  box-shadow: none !important;\n}",
       "kick-overlay bg": ".z-dropdown{\n  background-color: var(--tw-shadow-color, #000) !important;\n}"
     },
+    "last.fm.css": {
+      "transparency": "html, body, .top-bar, #content, .content-top, .content-top:after, .page-content, .stationlink::after, .chartlist-row, .chartlist-row::after, header{\n  background-color: transparent !important;\nborder: none !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparency !important;\n}",
+      "no thanks": ".subscribe-cta, .free-description, [href=\"/pro\"]{\ndisplay: none !important;\n}",
+      "no footer": ".footer{\n  display: none !important;\n}",
+      "border radius": ".recs-feed-inner-wrap, .header-background{\n  border-radius: 1em !important;\n  overflow: hidden !important;\n}"
+    },
     "learning.westminster.ac.uk.css": {
       "bb-transparecy": "#site-wrap,\nbody {\n  background-color: #00000000 !important;\n}\n\n:root {\n  --darkreader-neutral-background: #00000000 !important;\n  --darkreader-background-ffffff: #00000000 !important;\n}\n\nbody {\n  background: none !important;\n}",
       "bb-hide elements": "ul.side-menu-footer,\n#pagefooter {\n  display: none !important;\n}",
