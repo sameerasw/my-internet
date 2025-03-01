@@ -12,17 +12,17 @@ html, body, .dcg-sliding-interior, .dcg-main-header-container{
 }
 
 .dcg-dropdown-popover > div:nth-child(1){
-  background-color: var(--darkreader-background-fcfcfc);
+  background-color: var(--darkreader-background-fcfcfc) !important;
 }
 
 /* desmos-borders */
 #main{
-  border-radius: 1em;
-  overflow: hidden;
+  border-radius: 1em !important;
+  overflow: hidden !important;
 }
 
 .dcg-keypad-btn-container span{
-  border-radius: 0.5em;
+  border-radius: 0.5em !important;
 }
 
 /* desmos-no footer */
