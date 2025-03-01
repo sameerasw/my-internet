@@ -282,6 +282,11 @@
       "brave-transparecy": ":root{\n  --color-page-background: transparent !important;\n}",
       "brave-no, thank you": "div.download-cta.svelte-1avqjm8 {\n  display: none  !important;\n}"
     },
+    "soundcloud.com.css": {
+      "sndcld-transparency": "html, body{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "sndcld-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "sndcld-no footer": ".l-footer{\n  display: none !important;\n}"
+    },
     "sourceforge.net.css": {
       "sf-transparecy": ":root {\n  --darkreader-background-ffffff: #00000000 !important;\n  --darkreader-background-333333: #00000000 !important;\n  --darkreader-background-fefefe: #00000000 !important;\n  --darkreader-background-f1f1f1: #00000000 !important;\n}\n\nbody,\n.sandiego table thead,\ntfoot,\ntable,\ntbody,\narticle {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  border: none !important;\n}",
       "sf-hide elements": "footer {\n  display: none !important;\n}\n\ndiv.l-side-column {\n  display: none !important;\n}\n\ndiv.l-gutter {\n  display: none !important;\n}\n\n.l-header-nav-bottom {\n  display: none !important;\n}\n\nsection.sandiego.l-header-nav-bottom.sticky {\n  display: none !important;\n}",
