@@ -1,0 +1,31 @@
+/* desmos-transparency */
+html, body, .dcg-sliding-interior, .dcg-main-header-container{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* desmos-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+.dcg-dropdown-popover > div:nth-child(1){
+  background-color: var(--darkreader-background-fcfcfc);
+}
+
+/* desmos-borders */
+#main{
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.dcg-keypad-btn-container span{
+  border-radius: 0.5em;
+}
+
+/* desmos-no footer */
+.dcg-basic-calculator-footer{
+  display: none !important;
+}
