@@ -1,0 +1,38 @@
+/* geeks-transparency */
+html,
+body,
+topMainHeader,
+.mainContainerSubheader
+.containerSubheader,
+#secondarySubHeader,
+.leftIcon,
+.rightIcon,
+.index_homePageContainer__H8GJD,
+.HomePageSearchContainer_homePageSearchContainer__bNc8c,
+#topMainHeader,
+.header-main__wrapper,
+.header-main__slider,
+#hslider,
+#main,
+#home-page,
+html #home-page, body #home-page,
+.main_wrapper
+{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+:root{
+  --header-bg-color: transparent !important;
+}
+
+.header-main__slider.removeSticky{
+  background-color: var(--summary-background-colour) !important;
+}
+
+/* geeks-no footer */
+footer{
+  display: none !important;
+}
