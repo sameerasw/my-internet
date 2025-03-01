@@ -1,0 +1,35 @@
+/* convert-transparency */
+html, body, header, nav, .bg-gradient-navbar, .app-content{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.converter-header .container{
+  background-color: #00000088 !important;
+  border-radius: 2em !important;
+}
+
+.card{
+  border-radius: 1em !important;
+}
+
+/* convert-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* convert-hidden*/
+footer, #content{
+  display: none !important;
+}
+
+/* convert-hover */
+nav{
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
+}
