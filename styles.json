@@ -88,6 +88,12 @@
       "cobalt-hidden": "#terms-note{\n  display: none !important;\n}",
       "cobalt-hover": "#sidebar, #supported-services{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}"
     },
+    "desmos.com.css": {
+      "desmos-transparency": "html, body, .dcg-sliding-interior, .dcg-main-header-container{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "desmos-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}\n\n.dcg-dropdown-popover > div:nth-child(1){\n  background-color: var(--darkreader-background-fcfcfc);\n}",
+      "desmos-borders": "#main{\n  border-radius: 1em;\n  overflow: hidden;\n}\n\n.dcg-keypad-btn-container span{\n  border-radius: 0.5em;\n}",
+      "desmos-no footer": ".dcg-basic-calculator-footer{\n  display: none !important;\n}"
+    },
     "discord.com.css": {
       "discord-transparecy": ":root {\n  --background-secondary: #00000000 !important;\n  --background-primary: #00000000 !important;\n  --background-tertiary: #00000000 !important;\n  --home-background: #00000000 !important;\n  --bg-base-primary: #00000000 !important;\n}\n\n.theme-light,\n.theme-dark {\n  --__header-bar-background: #00000000 !important;\n  --shadow-border-filter: #00000000 !important;\n  --border-faint: #00000000 !important;\n  --border-strong: #00000000 !important;\n  --background-secondary-alt: #00000000 !important;\n}\n\n.callContainer_cb9592 {\n  background: #00000000 !important;\n}\n\n.floating__01ae2 {\n  background-color: var(\n    --custom-text-widget-background-color-header-default\n  ) !important;\n}",
       "discord-other changes": "img.bannerImg_f37cb1 {\n  border-radius: 0 0 1em 1em !important;\n}"
