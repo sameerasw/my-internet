@@ -362,6 +362,10 @@
       "vercel-transparecy": ":root{\n  --geist-background: transparent !important;\n  --ds-background-200-value: transparent !important;\n}\n\nhtml, header, [data-testid=\"navbar/submenu\"], footer{\n  background-color: transparent !important;\n}",
       "vercel-overlay fix": "[role=\"menu\"]{\n  background-color: var(--accents-2) !important;\n}"
     },
+    "w3schools.com.css": {
+      "w3-transparency": "html, body.darkpagetheme, #top-nav-bar, #pagetop,body.darkpagetheme .topnavcontainer,body.darkpagetheme #subtopnav, #scroll_right_btn, body.darkpagetheme .contentcontainer, .w3-sidebar, #belowtopnav, #leftmenuinnerinner, body.darkpagetheme .w3-white, .contentcontainer, .w3-white, .topnavcontainer, #subtopnav, hr, #main, body.darkpagetheme #subtopnav, body.darkpagetheme .topnavcontainer, body.darkpagetheme .topnavbackground, body.darkpagetheme .topnavcontainer, body.darkpagetheme #subtopnav{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n.topnavbackground{\n  display: none;\n}",
+      "w3-no footer": "#footerwrapper, #wrappercontainer{\n  display: none !important;\n}"
+    },
     "wallstreetoasis.com.css": {
       "transparency": ":root{\n  --color-page-bg: transparent !important;\n}\n\n#header.header-monkey-origin, .forum__dropdown, .forum__dropdown a, .box-content{\n  background-color: transparent !important;\n}\n\n.region-sidebar-right .block .box-content ul li{\n  border: none !important;\n}",
       "blurry header": "#header{\n  backdrop-filter: blur(20px) !important;\n}",
