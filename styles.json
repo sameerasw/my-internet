@@ -378,7 +378,7 @@
       "yt-Misc": "#content #dismissible:hover {\n  ytd-video-meta-block {\n    opacity: 1 !important;\n  }\n}\n\n#panels-full-bleed-container {\n  width: 0 !important;\n}",
       "yt-no feed distractions": "#contents ytd-rich-section-renderer{\ndisplay: none !important;\n}\n\n:root{\n  --ytd-toolbar-height: 0 !important;\n}",
       "yt-hover header": "#masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){\n  top: -40px !important;\n  opacity: 0 !important;\n  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;\n  &:hover{\n    opacity: 1 !important;\n    top: 0 !important;\n  }\n}",
-      "yt-clean player page": "ytd-merch-shelf-renderer{\n  display: none !important;\n}",
+      "yt-clean player page": "ytd-merch-shelf-renderer, .annotation{\n  display: none !important;\n}",
       "yt-Theatre: zen view": "[theater=\"\"] #full-bleed-container{\n  height: 100vh !important;\n  max-height: 100vh !important;\n  top: 0 !important;\n}",
       "yt-zen view comments": "[theater=\"\"] #columns #secondary{\n  display: none !important;\n}\n\n[theater=\"\"] ytd-comments{\n  position: fixed !important;\n  z-index: 1000 !important;\n  top: 3vh !important;\n  left: -35em !important;\n  width: 40em !important;\n  height: 90vh !important;\n  overflow-y: scroll !important;\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n\n  background-color: var(--yt-spec-outline-inverse-medium) !important;\n  padding: 0 3em !important;\n  border-radius: 0 2em 2em 0 !important;\n\n  &:hover{\n    opacity: 1 !important;\n    left: 0 !important;\n  }\n\n}",
       "yt-zen view comments blur": "[theater=\"\"] ytd-comments{\n  backdrop-filter: blur(20px) !important;\n}"
