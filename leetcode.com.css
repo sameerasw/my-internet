@@ -1,0 +1,24 @@
+/* leetcode-transparency */
+html, body, nav, .storyboard, .side-block{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* leetcode-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-1a1a1a: transparent !important;
+  --darkreader-background-282828: transparent !important;
+}
+
+/* leetcode-no footer */
+footer{
+  display: none !important;
+}
+
+/* leetcode-no dividers */
+hr{
+  opacity: 0 !important;
+}
