@@ -1,0 +1,29 @@
+/* analytics-transparency */
+html, body, .app-content, .ga-report,.ga-report-content, .ng-star-inserted, gmp-header, .fade-right::after, .template-picker-component{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.floating-header, .ga-report-header{
+  border-radius: 1em !important;
+}
+
+/* analytics-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* analytics-no footer */
+.ga-footer{
+  display: none !important;
+}
+
+
+/* analytics-sidebar hover */
+.ng-star-inserted.opened{
+  background-color: var(--mat-table-background-color) !important;
+  border-radius: 0 2em 2em 0 !important;
+  padding-right: 0.5em !important;
+}
