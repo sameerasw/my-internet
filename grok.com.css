@@ -1,0 +1,21 @@
+/* grok-transparency */
+html, body, .bg-background{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* grok-hover */
+.top-0, .text-\[11px\], .action-buttons{
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
+}
+
+/* grok-overlay fix */
+[role="dialog"]{
+  background-color: var(--popover) !important;
+}
