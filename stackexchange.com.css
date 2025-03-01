@@ -1,0 +1,17 @@
+/* stackex-transparency */
+html, body, header, #content, .question-container{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* stackex-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* stackex-no footer */
+footer{
+  display: none !important;
+}
