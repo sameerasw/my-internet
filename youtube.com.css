@@ -211,6 +211,10 @@ ytd-merch-shelf-renderer, .annotation{
   top: 0 !important;
 }
 
+#masthead-container, #columns #secondary{
+  transition: all 1s ease-in-out 0.5s !important;
+}
+
 body:has([theater=""]):not(:has(ytd-two-column-browse-results-renderer)) #masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){
   top: -40px !important;
   opacity: 0 !important;
@@ -228,7 +232,12 @@ body:has([theater=""]):not(:has(ytd-two-column-browse-results-renderer)) #masthe
 
 /* yt-zen view comments */
 [theater=""] #columns #secondary{
+  scale: 0 !important;
   display: none !important;
+}
+
+ytd-comments{
+  transition: all 0.5s ease-in-out !important;
 }
 
 [theater=""] ytd-comments{
@@ -240,7 +249,6 @@ body:has([theater=""]):not(:has(ytd-two-column-browse-results-renderer)) #masthe
   height: 90vh !important;
   overflow-y: scroll !important;
   opacity: 0 !important;
-  transition: all 0.3s ease-in-out !important;
 
   background-color: var(--yt-live-chat-shimmer-background-color) !important;
   padding: 0 3em !important;
