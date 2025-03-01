@@ -145,6 +145,10 @@
       "transparency": "html, body, ._yb_lrldux, #ybar-inner-wrap, main, .hero-headlines.yf-1m9jpnz, .container-wrapper.yf-x6ev64, .container, .dock-header{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
     },
+    "fmhy.net.css": {
+      "fmhy-transparency": ":root{\n  --darkreader-background-ffffff: transparent !important;\n  --vp-sidebar-bg-color: transparent;\n  --vp-nav-bg-color: transparent;\n  --vp-c-divider: transparent;\n}\n\nbody{\n  background-color: #00000000;\n}",
+      "fmhy-hidden": "div.aside-curtain {\n  display: none;\n}"
+    },
     "ft.com.css": {
       "ft-transparency": "html, .n-layout__header-before, .o-header, .markets-data-wrapper{\n  background-color: transparent !important;\n}",
       "ft-transparency darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
