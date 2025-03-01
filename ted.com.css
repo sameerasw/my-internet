@@ -1,0 +1,17 @@
+/* ted-transparency */
+html, body, .bg-white, #maincontent{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* ted-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* ted-no footer */
+footer{
+  display: none !important;
+}
