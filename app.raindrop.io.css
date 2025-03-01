@@ -1,0 +1,12 @@
+/* raindrop-transparency */
+html, body, .svSidebar, .svMain, .header-Tqac, article,  article:before, .svSidebar::after, .main-XeiN, .svReader{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* raindrop-no thanks */
+.upgrade-R9fx{
+  display: none !important;
+}
