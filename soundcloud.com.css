@@ -1,0 +1,18 @@
+/* sndcld-transparency */
+html, body{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* sndcld-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* sndcld-no footer */
+.l-footer{
+  display: none !important;
+}
+
