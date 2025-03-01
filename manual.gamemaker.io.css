@@ -1,0 +1,21 @@
+/* gamemaker-transparency */
+html, body, .header, nav, .functionbar, #toc-panel, .sidebarsizer, .topic, .functionholder, .layout-visible{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* gamemaker-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+.topic{
+  border-radius: 2em;
+}
+
+/* gamemaker-no footer */
+footer{
+  display: none !important;
+}
