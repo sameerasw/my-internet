@@ -215,7 +215,7 @@ display: none !important;
 }
 
 /* yt-clean player page */
-ytd-merch-shelf-renderer{
+ytd-merch-shelf-renderer, .annotation{
   display: none !important;
 }
 
