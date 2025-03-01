@@ -199,21 +199,6 @@ yt-live-chat-renderer {
 display: none !important;
 }
 
-:root{
-  --ytd-toolbar-height: 0 !important;
-}
-
-/* yt-hover header */
-#masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){
-  top: -40px !important;
-  opacity: 0 !important;
-  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
-  &:hover{
-    opacity: 1 !important;
-    top: 0 !important;
-  }
-}
-
 /* yt-clean player page */
 ytd-merch-shelf-renderer, .annotation{
   display: none !important;
@@ -225,6 +210,21 @@ ytd-merch-shelf-renderer, .annotation{
   max-height: 100vh !important;
   top: 0 !important;
 }
+
+body:has([theater=""]):not(:has(ytd-two-column-browse-results-renderer)) #masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){
+  top: -40px !important;
+  opacity: 0 !important;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
+  &:hover{
+    opacity: 1 !important;
+    top: 0 !important;
+  }
+}
+
+:root:has([theater=""]):not(:has(ytd-two-column-browse-results-renderer)){
+  --ytd-toolbar-height: 0 !important;
+}
+
 
 /* yt-zen view comments */
 [theater=""] #columns #secondary{
@@ -242,7 +242,7 @@ ytd-merch-shelf-renderer, .annotation{
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
 
-  background-color: var(--yt-spec-outline-inverse-medium) !important;
+  background-color: var(--yt-live-chat-shimmer-background-color) !important;
   padding: 0 3em !important;
   border-radius: 0 2em 2em 0 !important;
 
@@ -256,7 +256,9 @@ ytd-merch-shelf-renderer, .annotation{
 /* yt-zen view comments blur */
 [theater=""] ytd-comments{
   backdrop-filter: blur(20px) !important;
+  background-color: var(--yt-spec-outline-inverse-medium) !important;
 }
+
 
 
 
