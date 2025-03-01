@@ -44,6 +44,11 @@
       "no footer": "footer{\n  display: none !important;\n}",
       "no thanks": ".ForYou-rowWrapper-U4T{\n  display: none;\n}"
     },
+    "bing.com.css": {
+      "bing-transparency": "html, body, .hp_body, .hp_top_cover_container::before, header, #b_content, .b_algo, .dg_b, #rfPane{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  background-image: none !important;\n}",
+      "bing-hidden": ".bottom_row, #hp_top_cover, .shaders, .hp_top_cover_container, .hp_media_container{\n  display: none !important;\n}",
+      "bing-no footer": "footer{\n  display: none !important;\n}"
+    },
     "bloomberg.com.css": {
       "bloo-transparency": ".media-ui-LeaderboardAd_parallaxWrapper-JMVgdxR--aU-, [data-component=\"logo-bar\"], [data-component=\"menu-desktop\"], [data-component=\"logo\"]{\n  background-color: transparent !important;\n}",
       "bloo-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
