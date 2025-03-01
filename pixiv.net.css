@@ -1,10 +1,20 @@
 /* pixiv-forced transparency */
-html,
-div,
-section,
-input,
-button{
-  background: transparent !important;
+html{
+  background-color: transparent !important;
+}
+
+:root{
+    --charcoal-background1: transparent !important;
+    --charcoal-background2-hover: transparent !important;
+    --charcoal-surface1: transparent !important;
+    
+}
+
+
+.charcoal-token,.iqkFre,.iUhfll,.bGUtlw,.gTliJP,.hGOogv,.dWlHet,.cxXhWC,.cuTZeZ{
+    --charcoal-background1: transparent !important;
+    --charcoal-background2-hover: transparent !important;
+    background: transparent !important;
 }
 
 /* pixiv-darkreader */
