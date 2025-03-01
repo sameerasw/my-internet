@@ -11,6 +11,12 @@
       "aistd-transparecy": ":root{\n    --color-surface-container-lowest: #00000000 !important;\n    --color-sidebars-background: #00000000 !important;\n  }\n  \n  .makersuite-layout, .layout-navbar, select-header, .navbar-header, .router-outlet-wrapper, .nav-toggle-wrapper, .chunk-editor-main, ms-run-settings, .footer{\n    background-color: #00000000 !important;\n  }",
       "aistd-hide disclaimer": "div.disclaimer-container.ng-tns-c1318864088-1.ng-star-inserted{\n    display: none !important;\n  }"
     },
+    "analytics.google.com.css": {
+      "analytics-transparency": "html, body, .app-content, .ga-report,.ga-report-content, .ng-star-inserted, gmp-header, .fade-right::after, .template-picker-component{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n.floating-header, .ga-report-header{\n  border-radius: 1em !important;\n}",
+      "analytics-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "analytics-no footer": ".ga-footer{\n  display: none !important;\n}",
+      "analytics-sidebar hover": ".ng-star-inserted.opened{\n  background-color: var(--mat-table-background-color) !important;\n  border-radius: 0 2em 2em 0 !important;\n  padding-right: 0.5em !important;\n}"
+    },
     "app.any.do.css": {
       "anydo-no sidebar bg": ".AppImage__hasImage.u-anydo-dark-theme .AppSidebar, .AppImage__hasImage .MyDayRoute--theme{\n   --app-sidebar-bg-color: transparent !important;\n   --myday-sidebar-bg-color: transparent !important;\n}",
       "anydo-transparency": "html, body{\n   background-color: transparent !important;\n   background: none !important;\n }",
