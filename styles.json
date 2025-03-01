@@ -88,6 +88,11 @@
       "cobalt-hidden": "#terms-note{\n  display: none !important;\n}",
       "cobalt-hover": "#sidebar, #supported-services{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}"
     },
+    "deepl.com.css": {
+      "deepl-transparency": "html, body, .page-header, div.bg-gray-50{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n[data-testid=\"translator-source-lang-list\"],[data-testid=\"translator-target-lang-list\"], .FlyoutPanel-module--visible--ecbf4, [data-headlessui-state=\"open\"]{\n  background-color: var(--darkreader-bg--color-gray-50, var(--tw-ring-offset-color)) !important;\n}",
+      "deepl-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "deepl-no footer": "footer{\n  display: none !important;\n}"
+    },
     "desmos.com.css": {
       "desmos-transparency": "html, body, .dcg-sliding-interior, .dcg-main-header-container{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "desmos-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}\n\n.dcg-dropdown-popover > div:nth-child(1){\n  background-color: var(--darkreader-background-fcfcfc) !important;\n}",
