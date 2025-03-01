@@ -203,6 +203,13 @@
       "grok-hover": ".top-0, .text-\\[11px\\], .action-buttons{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}",
       "grok-overlay fix": "[role=\"dialog\"]{\n  background-color: var(--popover) !important;\n}"
     },
+    "gsmarena.com.css": {
+      "gsm-transparency": "html, body, #header, #header::after, .top-bar, #outer, .main, #specs-list table, .ttl, .nfo, .sidebar, .clearfix, .module-phones.module-related, #user-comments, .user-thread, .sub-footer, .more, table, h3, h4, td{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "gsm-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "gsm-no footer": "#footer{\n  display: none !important;\n}",
+      "gsm-round": ".pricing-container, #topsearch-text, .review-header, .page-specs, .module-phones-link img, .review-widget, iframe{\n  border-radius: 0.75em !important;\n  overflow: hidden !important;\n}\n\n#header.headroom--not-top .wrapper, .{\n  background-color: var(--link-color);\n  border-radius: 0.75em !important;\n}",
+      "gsm-hidden": ".brandmenu-v2{\n  display: none;\n}"
+    },
     "huaban.com.css": {
       "transparency": "html, body, .rBK5SX3w, .Fem_ciFN{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
