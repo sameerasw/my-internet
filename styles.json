@@ -140,6 +140,10 @@
       "ft-no borders": ".o-header__row, .layout__grid-content, .list__item-link, .separator--solid, .story-group__article, .spotlight-grid--secondary-story{\n  border: none !important;\n}",
       "ft-no footer": "footer{\n  display: none !important;\n}"
     },
+    "geeksforgeeks.org.css": {
+      "geeks-transparency": "html,\nbody,\ntopMainHeader,\n.mainContainerSubheader\n.containerSubheader,\n#secondarySubHeader,\n.leftIcon,\n.rightIcon,\n.index_homePageContainer__H8GJD,\n.HomePageSearchContainer_homePageSearchContainer__bNc8c,\n#topMainHeader,\n.header-main__wrapper,\n.header-main__slider,\n#hslider,\n#main,\n#home-page,\nhtml #home-page, body #home-page,\n.main_wrapper\n{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n:root{\n  --header-bg-color: transparent !important;\n}\n\n.header-main__slider.removeSticky{\n  background-color: var(--summary-background-colour) !important;\n}",
+      "geeks-no footer": "footer{\n  display: none !important;\n}"
+    },
     "gemini.google.com.css": {
       "gemini-transparecy": ":root .dark-theme,\n:root .light-theme {\n  --gem-sys-color--surface: #00000000 !important;\n  --gem-sys-color--surface-container: #00000000 !important;\n}\n\ninput-container,\n.input-gradient::before {\n  background: none !important;\n}",
       "gemini-other changes": ".content-container chat-window .chat-container .bottom-container {\n  margin-bottom: 30px !important;\n}\n\ninput-container hallucination-disclaimer {\n  display: none !important;\n}\n\n.input-area-container {\n  margin-bottom: 2em !important;\n}\n\n.cdk-overlay-pane > div,\nmat-card {\n  background-color: var(--bard-color-neutral-96) !important;\n  border-radius: 1em !important;\n}",
