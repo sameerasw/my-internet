@@ -1,0 +1,16 @@
+/* fmhy-transparency */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+  --vp-sidebar-bg-color: transparent;
+  --vp-nav-bg-color: transparent;
+  --vp-c-divider: transparent;
+}
+
+body{
+  background-color: #00000000;
+}
+
+/* fmhy-hidden */
+div.aside-curtain {
+  display: none;
+}
