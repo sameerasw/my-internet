@@ -178,6 +178,11 @@
       "google-shadows and borders": ".minidiv .sfbg,\n.minidiv .sfbg,\n.JryvJ .qS9jbf,\n.sHEJob,\n.Hwkikb.WY0eLb {\n  box-shadow: none !important;\n  border: none !important;\n}\n\n#sfooter,\n[role=\"contentinfo\"] {\n  display: none !important;\n}\n\n.w6VYqd {\n  background-color: #fff !important;\n}",
       "google-hover": ".rfiSsc {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
+    "grok.com.css": {
+      "grok-transparency": "html, body, .bg-background{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "grok-hover": ".top-0, .text-\\[11px\\], .action-buttons{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}",
+      "grok-overlay fix": "[role=\"dialog\"]{\n  background-color: var(--popover) !important;\n}"
+    },
     "huaban.com.css": {
       "transparency": "html, body, .rBK5SX3w, .Fem_ciFN{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
