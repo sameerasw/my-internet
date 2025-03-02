@@ -1,5 +1,5 @@
 /* gh-transparency */
-html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folders-and-files"] .bgColor-muted, nav, .dxnHPp, .kcVpNH, .discussion-timeline-actions, .TimelineItem-break, .gh-header, .PageLayout-pane{
+html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folders-and-files"] .bgColor-muted, nav, .dxnHPp, .kcVpNH, .discussion-timeline-actions, .TimelineItem-break, .gh-header, .PageLayout-pane, .bSTcOH, .gOhIYN{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -7,7 +7,7 @@ html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folde
 }
 
 /* gh-transparent lists */
- .PageLayout-content .Box, .PageLayout-content .Box-row{
+ .PageLayout-content .Box, .PageLayout-content .Box-row, #repo-content-turbo-frame .Box{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -27,12 +27,12 @@ html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folde
 }
 
 #user-profile-frame .Box,
-.mgKNn {
+.mgKNn, .fGELhp, .timeline-comment {
   background: none !important;
   box-shadow: none !important;
 }
 
-.feed-item-content, .color-bg-subtle, .ajax-pagination-btn{
+.feed-item-content, .color-bg-subtle, .ajax-pagination-btn, action-graph .color-bg-inset{
   background-color: transparent !important;
   background: none !important;
   box-shadow: none !important;
@@ -57,7 +57,7 @@ table, .eIKYQa, div.border-bottom, td{
   border: none !important;
 }
 
-.dJnomT, .gOHzTT, .Box-header, #repos-sticky-header > div{
-  border-radius: 1em !important;
+.dJnomT,.jPdcfu, .gOHzTT, .eBevHz, .Box-header, #repos-sticky-header > div, .jbBkdO{
+  border-radius: 0.5em !important;
   overflow: hidden;
 }
