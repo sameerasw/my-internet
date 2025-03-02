@@ -1,0 +1,17 @@
+/* cloudflare-transparency */
+html, body, nav, header, aside, [aria-label="Collapse sidebar"], [aria-label="Expand sidebar"], div.c_if{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* cloudflare-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* cloudflare-no footer */
+footer.c_c{
+  display: none !important;
+}
