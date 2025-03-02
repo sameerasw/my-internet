@@ -1,0 +1,27 @@
+/* galxe-transparency */
+html, body, nav, header, div.mix-blend-multiply:nth-child(1), img.top-0{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* galxe-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* galxe-no footer */
+footer{
+  display: none !important;
+}
+
+/* galxe-hidden */
+img.top-0{
+  display: none !important;
+}
+
+/* galxe-no sticky header */
+header{
+  position: relative !important;
+}
