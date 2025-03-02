@@ -116,6 +116,11 @@
       "desmos-borders": "#main{\n  border-radius: 1em !important;\n  overflow: hidden !important;\n}\n\n.dcg-keypad-btn-container span{\n  border-radius: 0.5em !important;\n}",
       "desmos-no footer": ".dcg-basic-calculator-footer{\n  display: none !important;\n}"
     },
+    "developer.mozilla.org.css": {
+      "transparency": "html, body, header, .article-actions-container, .sidebar-filter-container{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "no footer": "footer, .article-footer{\n  display: none !important;\n}",
+      "non sticky": ".sticky-header-container{\n  position: relative !important;\n}"
+    },
     "discord.com.css": {
       "discord-transparecy": ":root {\n  --background-secondary: #00000000 !important;\n  --background-primary: #00000000 !important;\n  --background-tertiary: #00000000 !important;\n  --home-background: #00000000 !important;\n  --bg-base-primary: #00000000 !important;\n}\n\n.theme-light,\n.theme-dark {\n  --__header-bar-background: #00000000 !important;\n  --shadow-border-filter: #00000000 !important;\n  --border-faint: #00000000 !important;\n  --border-strong: #00000000 !important;\n  --background-secondary-alt: #00000000 !important;\n}\n\n.callContainer_cb9592 {\n  background: #00000000 !important;\n}\n\n.floating__01ae2 {\n  background-color: var(\n    --custom-text-widget-background-color-header-default\n  ) !important;\n}",
       "discord-other changes": "img.bannerImg_f37cb1 {\n  border-radius: 0 0 1em 1em !important;\n}"
