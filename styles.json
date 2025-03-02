@@ -44,6 +44,11 @@
       "no footer": "footer{\n  display: none !important;\n}",
       "no thanks": ".ForYou-rowWrapper-U4T{\n  display: none;\n}"
     },
+    "bilibili.com.css": {
+      "bilibili-transparency": "html, body, #i_cecream, .large-header, .bili-header .bili-header__banner, .bili-header .bili-header__channel{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n  --darkreader-bg--bg3: transparent !important;\n}",
+      "bilibili-rounded": ".bili-video-card__wrap{\n  border-radius: 0.5em !important;\n}"
+    },
     "bing.com.css": {
       "bing-transparency": "html, body, .hp_body, .hp_top_cover_container::before, header, #b_content, .b_algo, .dg_b, #rfPane{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  background-image: none !important;\n}",
       "bing-hidden": ".bottom_row, #hp_top_cover, .shaders, .hp_top_cover_container, .hp_media_container{\n  display: none !important;\n}",
