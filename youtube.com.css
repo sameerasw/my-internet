@@ -138,7 +138,7 @@ yt-live-chat-renderer {
   .__youtube-timestamps__preview {
     border-radius: 1em !important;
     backdrop-filter: blur(20px) !important;
-    background-color: #00000099 !important;
+    background-color: #000000bb !important;
     border: solid 2px gray !important;
 
     .__youtube-timestamps__preview__avatar {
@@ -168,7 +168,7 @@ yt-live-chat-renderer {
 
   div.clickable-comment,
   div.replies {
-    background-color: #00000033 !important;
+    background-color: #00000077 !important;
     backdrop-filter: blur(20px) !important;
     padding: 1em !important;
     margin-bottom: 1em !important;
