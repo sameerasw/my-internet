@@ -15,8 +15,19 @@ html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folde
 }
 
 /* gh-bordered boxes */
- .mgKNn, #user-profile-frame .Box,[data-selector="repos-split-pane-content"] section, [data-selector="repos-split-pane-content"] .NWhVB, [data-selector="repos-split-pane-content"] .cm-gutters,[data-selector="repos-split-pane-content"] .ͼ5,[data-selector="repos-split-pane-content"] .eWVknf,[data-selector="repos-split-pane-content"] .ͼ5c,[data-selector="repos-split-pane-content"] .ͼ5c .cm-content{
-  background-color: transparent !important;
+[data-selector="repos-split-pane-content"] {
+  section,
+  .NWhVB,
+  .cm-gutters,
+  [data-testid="codemirror-editor"],
+  [data-testid="codemirror-editor"] .cm-content {
+    background: none !important;
+    box-shadow: none !important;
+  }
+}
+
+#user-profile-frame .Box,
+.mgKNn {
   background: none !important;
   box-shadow: none !important;
 }
