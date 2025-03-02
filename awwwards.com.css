@@ -1,0 +1,22 @@
+/* awwwards-transparency */
+html, body, nav, header, .content-header{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* awwwards-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* awwwards-no footer */
+footer{
+  display: none !important;
+}
+
+/* awwwards-hidden */
+.marquee-top{
+  display: none !important;
+}
