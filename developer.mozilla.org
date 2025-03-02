@@ -1,0 +1,17 @@
+/* transparency */
+html, body, header, .article-actions-container, .sidebar-filter-container{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* no footer */
+footer, .article-footer{
+  display: none !important;
+}
+
+/* non sticky */
+.sticky-header-container{
+  position: relative !important;
+}
