@@ -243,6 +243,11 @@
       "sagepub-no borders": "body, .header, [role=\"navigation\"], [role=\"menuitem\"] button, .more-sage-products__container{\nborder: none !important;\nbox-shadow: none !important;\n}",
       "sagepub-no footer": "footer{\n  display: none !important;\n}"
     },
+    "kagi.com.css": {
+      "kagi-transparency": "html, body, .search-results, .search-header, .search-footer, .search-container {\n    background-color: transparent !important;\n    background: none !important;\n    border: none !important;\n    box-shadow: none !important;\n    background-image: none !important;\n  }",
+      "kagi-hidden": ".search-footer, .search-header, .ads-container, .sponsored-links {\n    display: none !important;\n  }",
+      "kagi-no-footer": "footer {\n    display: none !important;\n  }"
+    },
     "keep.google.com.css": {
       "keep-styles": "body,\nheader,\n.PvRhvb-bN97Pc {\n  background-color: transparent !important;\n  border: none !important;\n}"
     },
