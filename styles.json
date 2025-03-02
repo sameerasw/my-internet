@@ -378,6 +378,13 @@
       "onedrive-no thanks": ".odsp-spartan-nav-expanded .storageUpsellBanner_860752dd.bannerGleam_860752dd, .od-QuotaBannerWrapper-placeholder{\n  display: none;\n}",
       "onedrive-hover fix": "[role=\"row\"]:has(.odsp-spartan-cell):hover{\n  background-color: var(--ms-palette-whiteTranslucent40);\n}"
     },
+    "open.spotify.com.css": {
+      "spotify-transparency": "html, body, nav, header, [data-right-sidebar-hidden], [data-testid=\"global-nav-bar\"], #Desktop_LeftSidebar_Id, nav[aria-label=\"Main\"] > div, .YourLibraryX, .jEMA2gVoLgPQqAFrPhFw, .S4OmZ_IZexmZ5dasPqW5, #Desktop_PanelContainer_Id{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "spotify-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "spotify-no footer": "[data-testid=\"left-sidebar-footer\"], .main-view-container__mh-footer-container {\n  display: none !important;\n}",
+      "spotify-rounded now playing": "#Desktop_PanelContainer_Id::before{\n  border-radius: 1em !important;\n}",
+      "spotify-no thanks": "[data-testid=\"upgrade-button\"], a[href=\"/download\"]{\n  display: none !important;\n}"
+    },
     "perplexity.ai.css": {
       "perplexity-transparency": "body,#__next > main:nth-child(1) > div:nth-child(1),  .erp-tab\\:rounded-none, div.sticky:nth-child(2), .pb-\\[144px\\] > div:nth-child(1), .pb-32 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1), .mt-xs > div:nth-child(1) > div:nth-child(1), .dark\\:bg-offsetDark{\n  background-color: transparent !important;\n  border: none !important;\n}",
       "perplexity-hover": ".grid-cols-6{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}",
