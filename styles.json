@@ -154,6 +154,11 @@
       "docs-transparency": "html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-editor, #docs-editor-container, .kix-appview-editor, .navigation-widget-floating-navigation-button.navigation-widget, .outlines-widget-chaptered .kix-outlines-widget-header-contents,\n#docs-header:not(.docs-hub-appbar) .docs-titlebar-buttons{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  --gm3-sys-color-surface-bright: transparent !important;\n}",
       "docs-borders": ".kix-page-paginated{\n  border-radius: 1em !important;\n  overflow: hidden;\n}"
     },
+    "dribble.com.css": {
+      "dribble-transparency": "html, body, nav, header, #wrap, .filter-subnav, .site-nav__wrapper::before{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "dribble-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "dribble-no footer": "#footer{\n  display: none !important;\n}"
+    },
     "drive.google.com.css": {
       "drive-transparency": ".YkfxEe, .ZHllM, .ALpC8b, .a-b-uoC0bf.a-b-L .a-b-jl, .S630me, .PolqHc, body, .owVllc, .jLwBBf, .aaHEi, .zyephd, .sEppUc, .IkfnSb .zXGQ6d, .iBEKub{\n  background-color: transparent !important;\n}"
     },
