@@ -1,0 +1,18 @@
+/* bilibili-transparency */
+html, body, #i_cecream, .large-header, .bili-header .bili-header__banner, .bili-header .bili-header__channel{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+  --darkreader-bg--bg3: transparent !important;
+}
+
+/* bilibili-rounded */
+.bili-video-card__wrap{
+  border-radius: 0.5em !important;
+}
