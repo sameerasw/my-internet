@@ -1,0 +1,23 @@
+/* msblog-transparency */
+html, body, nav, header, .global-head-cont, .panel, .u-bc-grey, .l-container::before{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* msblog-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* msblog-no footer */
+footer{
+  display: none !important;
+}
+
+/* msblog-border */
+.s-list__item, .tribe-image img{
+  border-radius: 1em !important;
+  overflow: hidden !important;
+}
