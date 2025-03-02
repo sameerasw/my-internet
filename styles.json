@@ -110,6 +110,11 @@
     "copilot.microsoft.com.css": {
       "copilot-transparency": "html, body, .dark\\:bg-midnight-850:is([data-theme=\"dark\"] *), .bg-gradient-chat-light{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\ndiv.space-y-8:nth-child(1){display: none !important;}"
     },
+    "dash.cloudflare.com.css": {
+      "cloudflare-transparency": "html, body, nav, header, aside, [aria-label=\"Collapse sidebar\"], [aria-label=\"Expand sidebar\"], div.c_if{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "cloudflare-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "cloudflare-no footer": "footer.c_c{\n  display: none !important;\n}"
+    },
     "deepl.com.css": {
       "deepl-transparency": "html, body, .page-header, div.bg-gray-50{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n[data-testid=\"translator-source-lang-list\"],[data-testid=\"translator-target-lang-list\"], .FlyoutPanel-module--visible--ecbf4, [data-headlessui-state=\"open\"]{\n  background-color: var(--darkreader-bg--color-gray-50, var(--tw-ring-offset-color)) !important;\n}",
       "deepl-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
