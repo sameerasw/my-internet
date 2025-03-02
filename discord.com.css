@@ -30,3 +30,18 @@
 img.bannerImg_f37cb1 {
   border-radius: 0 0 1em 1em !important;
 }
+
+
+/* discord-collapsed sidebar */
+html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade){
+  width: 0px !important;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s !important;
+  &:hover{
+  width: 240px !important;
+  }
+}
+
+.container_c48ade:has(nav[aria-label="Servers sidebar"]:hover) .sidebar_c48ade:not(.hidden_c48ade){
+  opacity: 1 !important;
+  width: 240px !important;
+}
