@@ -1,86 +1,54 @@
-/* gh-transparecy */
-:root {
-  --bgColor-default: #00000000 !important;
-  --bgColor-muted: #00000000 !important;
-  --bgColor-inset: #00000000 !important;
-  --borderColor-default: #00000000 !important;
-}
-
-/* gh-border styling */
-div.feed-item-content.d-flex.flex-column.pt-2.pb-2.border.color-border-default.rounded-2.color-shadow-small.width-full.height-fit,
-.feed-item-content,
-.input-contrast,
-.color-bg-default,
-.Box-body,
-.Box {
-  border-radius: 20px !important;
+/* gh-transparency */
+html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folders-and-files"] .bgColor-muted, nav, .dxnHPp, .kcVpNH, .discussion-timeline-actions, .TimelineItem-break, .gh-header, .PageLayout-pane{
+  background-color: transparent !important;
+  background: none !important;
   border: none !important;
+  box-shadow: none !important;
 }
 
-div.color-bg-subtle.rounded-1.flex-justify-between.p-3,
-section.dashboard-break-word.comment-body.markdown-body.m-0.p-3.color-bg-subtle.mb-0.rounded-1 {
-  border-radius: 10px !important;
+/* gh-transparent lists */
+ .PageLayout-content .Box, .PageLayout-content .Box-row{
+  background-color: transparent !important;
+  background: none !important;
   border: none !important;
+  box-shadow: none !important;
 }
 
-aside.feed-left-sidebar.col-md-4.col-lg-3.color-border-muted.border-bottom.hide-md.hide-sm.border-right.color-bg-default,
-body,
-div.d-md-flex,
-.AppHeader-globalBar,
-div.color-bg-subtle.rounded-1.flex-justify-between.p-3,
-.comment-body,
-.AppHeader-localBar,
-.ebYtvW,
-.bAmAao,
-.Counter,
-.types__StyledButton-sc-ws60qy-0,
-.TextInput-wrapper,
-.feed-item-content,
-.color-bg-default,
-.input-contrast,
-.Box-body,
-.Box {
-  border: none !important;
+/* gh-bordered boxes */
+ .mgKNn, #user-profile-frame .Box,[data-selector="repos-split-pane-content"] section, [data-selector="repos-split-pane-content"] .NWhVB, [data-selector="repos-split-pane-content"] .cm-gutters,[data-selector="repos-split-pane-content"] .ͼ5,[data-selector="repos-split-pane-content"]
+ .ͼ5 .cm-content{
+  background-color: transparent !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
-td {
-  border: none !important;
+.feed-item-content, .color-bg-subtle, .ajax-pagination-btn{
+  background-color: transparent !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
-tr:hover,
-a:hover {
-  border-radius: 20px !important;
+/* gh-no footer */
+footer:has(h2), div.px-2:nth-child(3){
+  /* display: none !important; */
+  opacity: 0;
 }
 
-/* gh-hide elements */
-form.Box.position-relative.rounded-2.mb-4.p-3.js-notice-dismiss.overflow-hidden,
-div.mb-3.dashboard-changelog.color-bg-default.border.color-border-muted.p-3.rounded-2,
-div.d-flex.flex-items-between.footer.container-lg.my-5.px-0 {
-  display: none !important;
-}
-
-/* gh-hide footer */
-footer.footer.pt-8.pb-6.f6.color-fg-muted.p-responsive {
-  display: none !important;
-}
-
-/* gh-hover tabs */
-aside.feed-right-sidebar,
-aside.feed-left-sidebar,
-.AppHeader-localBar {
+/* gh-hover */
+.feed-left-sidebar, .feed-right-sidebar{
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover {
+  &:hover{
     opacity: 1 !important;
   }
 }
 
-/* gh-overlay color fixes */
-div.prc-Dialog-Dialog-luvDS,
-.Overlay,
-.Overlay__StyledOverlay-sc-51280t-0,
-details-menu,
-.search-suggestions,
-[role="dialog"], .Popover-message, [role="menu"], .SelectMenu-modal {
-  background-color: var(--bgColor-disabled) !important;
+/* gh-border mods */
+table, .eIKYQa, div.border-bottom, td{
+  border: none !important;
+}
+
+.dJnomT, .gOHzTT, .Box-header, #repos-sticky-header > div{
+  border-radius: 1em !important;
+  overflow: hidden;
 }
