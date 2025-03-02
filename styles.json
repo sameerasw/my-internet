@@ -464,7 +464,7 @@
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
     },
     "youtube.com.css": {
-      "yt-Transparency": ":root {\n  --primary-background-color: #00000000 !important;\n  --dark-theme-background-color: #00000000 !important;\n  --yt-spec-base-background: #00000000 !important;\n  --yt-spec-brand-background-solid: #00000000 !important;\n}\n\nhtml[dark] {\n  background-color: #00000000 !important;\n}\n\n#container.ytd-searchbox {\n  background-color: #00000000 !important;\n}",
+      "yt-Transparency": ":root {\n  --primary-background-color: #00000000 !important;\n  --dark-theme-background-color: #00000000 !important;\n  --yt-spec-base-background: #00000000 !important;\n  --yt-spec-brand-background-solid: #00000000 !important;\n}\n\nhtml[dark], html {\n  background-color: #00000000 !important;\n}\n\n#container.ytd-searchbox {\n  background-color: #00000000 !important;\n}",
       "yt-No left side guide": "ytd-mini-guide-renderer {\n  display: none !important;\n}\n#page-manager {\n  margin-left: 0 !important;\n}",
       "yt-Transparent header": "#masthead-container {\n  #background.ytd-masthead {\n    background-color: #00000000 !important;\n  }\n}",
       "yt-Hide filter chips": ".ytd-two-column-browse-results-renderer #header {\n  display: none !important;\n}",
@@ -480,7 +480,7 @@
       "yt-clean player page": "ytd-merch-shelf-renderer, .annotation{\n  display: none !important;\n}",
       "yt-Theatre: zen view": "[theater=\"\"] #full-bleed-container{\n  height: 100vh !important;\n  max-height: 100vh !important;\n  top: 0 !important;\n}\n\n#masthead-container, #columns #secondary{\n  transition: all 1s ease-in-out 0.5s !important;\n}\n\nbody:has([theater=\"\"]):not(:has(ytd-two-column-browse-results-renderer)) #masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){\n  top: -40px !important;\n  opacity: 0 !important;\n  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;\n  &:hover{\n    opacity: 1 !important;\n    top: 0 !important;\n  }\n}\n\n:root:has([theater=\"\"]):not(:has(ytd-two-column-browse-results-renderer)){\n  --ytd-toolbar-height: 0 !important;\n}",
       "yt-zen view comments": "[theater=\"\"] #columns #secondary{\n  scale: 0 !important;\n  display: none !important;\n}\n\nytd-comments{\n  transition: all 0.5s ease-in-out !important;\n}\n\n[theater=\"\"] ytd-comments{\n  position: fixed !important;\n  z-index: 1000 !important;\n  top: 3vh !important;\n  left: -35em !important;\n  width: 40em !important;\n  height: 90vh !important;\n  overflow-y: scroll !important;\n  opacity: 0 !important;\n\n  background-color: var(--yt-live-chat-shimmer-background-color) !important;\n  padding: 0 3em !important;\n  border-radius: 0 2em 2em 0 !important;\n\n  &:hover{\n    opacity: 1 !important;\n    left: 0 !important;\n  }\n\n}",
-      "yt-zen view comments blur": "[theater=\"\"] ytd-comments{\n  backdrop-filter: blur(20px) !important;\n  background-color: var(--yt-spec-outline-inverse-medium) !important;\n}"
+      "yt-zen view comments blur": "[theater=\"\"] ytd-comments{\n  /* backdrop-filter: blur(20px) !important;\n  background-color: var(--yt-spec-outline-inverse-medium) !important; */\n  display: none;\n}"
     },
     "youvideototext.com.css": {
       "v2t-transparency": "html, body, header, .ring-offset-background, .shadow-lg{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
