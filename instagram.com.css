@@ -12,8 +12,9 @@
   background-image: none !important;
 }
 
+
 /* ig-hide elements */
-div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 {
+div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1, .x3hkoc4 {
   display: none !important;
 }
 
@@ -30,6 +31,11 @@ div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1
   border: none !important;
 }
 
+/* ig-centered */
+.x17snn68.x17snn68{
+  width: 100vw !important;
+}
+
 /* ig-comments overlay fix */
 [role="dialog"] [role="presentation"] > div > div{
   background-color: var(--fds-highlight-cell-background) !important;
@@ -42,17 +48,21 @@ div.x6s0dn4.xvbhtw8.x1lq5wgf.xgqcy7u.x30kzoy.x9jhf4c.x1xcus5i.xrvj5dj.x1dh5ka.xy
   border-radius: 1em !important;
 }
 
-/* ig-comments overlay fix */
-[role="dialog"] [role="presentation"] > div > div{
-  background-color: var(--fds-highlight-cell-background) !important;
-  border-radius: 2em !important;
-}
-
 [role="dialog"]:has([role="presentation"]){
   background: none !important;
 }
 
-/* ig-no footer */
+/* no footer */
 footer{
   display: none !important;
+}
+
+/* hover */
+div.xixxii4:nth-child(2):has([href="#"])
+{
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
 }
