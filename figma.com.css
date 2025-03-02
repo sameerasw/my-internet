@@ -1,0 +1,17 @@
+/* figma-transparency */
+html, body, .sidebar--navDefault--pYuzm, .x1n5zjp5, #fullscreen-root .gpu-view-content canvas{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+:root, [data-preferred-theme="dark"], [data-preferred-theme="light"]{
+  --color-bg: transparent !important;
+  --color-border: transparent !important;
+}
+
+/* figma-overlay fix */
+.toolbelt--root--jwHGa{
+  background-color: var(--color-bg-secondary) !important;
+}
