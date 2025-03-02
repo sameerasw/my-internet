@@ -73,6 +73,12 @@
       "bing-hidden": ".bottom_row, #hp_top_cover, .shaders, .hp_top_cover_container, .hp_media_container{\n  display: none !important;\n}",
       "bing-no footer": "footer{\n  display: none !important;\n}"
     },
+    "blogs.windows.com.css": {
+      "msblog-transparency": "html, body, nav, header, .global-head-cont, .panel, .u-bc-grey, .l-container::before{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "msblog-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "msblog-no footer": "footer{\n  display: none !important;\n}",
+      "msblog-border": ".s-list__item, .tribe-image img{\n  border-radius: 1em !important;\n  overflow: hidden !important;\n}"
+    },
     "bloomberg.com.css": {
       "bloo-transparency": ".media-ui-LeaderboardAd_parallaxWrapper-JMVgdxR--aU-, [data-component=\"logo-bar\"], [data-component=\"menu-desktop\"], [data-component=\"logo\"]{\n  background-color: transparent !important;\n}",
       "bloo-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
