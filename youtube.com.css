@@ -6,7 +6,7 @@
   --yt-spec-brand-background-solid: #00000000 !important;
 }
 
-html[dark] {
+html[dark], html {
   background-color: #00000000 !important;
 }
 
@@ -263,10 +263,7 @@ ytd-comments{
 
 /* yt-zen view comments blur */
 [theater=""] ytd-comments{
-  backdrop-filter: blur(20px) !important;
-  background-color: var(--yt-spec-outline-inverse-medium) !important;
+  /* backdrop-filter: blur(20px) !important;
+  background-color: var(--yt-spec-outline-inverse-medium) !important; */
+  display: none;
 }
-
-
-
-
