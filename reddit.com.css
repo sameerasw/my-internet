@@ -16,8 +16,13 @@ html {
   background-color: #00000000 !important;
 }
 
+/* reddit-no chat feed */
+[source="chat_module_home"]{
+  display: none !important;
+}
+
 /* reddit-hide elements */
-div aside recent-posts {
+div aside recent-posts, hr {
   display: none !important;
 }
 
