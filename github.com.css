@@ -15,8 +15,7 @@ html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folde
 }
 
 /* gh-bordered boxes */
- .mgKNn, #user-profile-frame .Box,[data-selector="repos-split-pane-content"] section, [data-selector="repos-split-pane-content"] .NWhVB, [data-selector="repos-split-pane-content"] .cm-gutters,[data-selector="repos-split-pane-content"] .ͼ5,[data-selector="repos-split-pane-content"]
- .ͼ5 .cm-content{
+ .mgKNn, #user-profile-frame .Box,[data-selector="repos-split-pane-content"] section, [data-selector="repos-split-pane-content"] .NWhVB, [data-selector="repos-split-pane-content"] .cm-gutters,[data-selector="repos-split-pane-content"] .ͼ5,[data-selector="repos-split-pane-content"] .eWVknf,[data-selector="repos-split-pane-content"] .ͼ5c,[data-selector="repos-split-pane-content"] .ͼ5c .cm-content{
   background-color: transparent !important;
   background: none !important;
   box-shadow: none !important;
@@ -30,7 +29,7 @@ html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folde
 
 /* gh-no footer */
 footer:has(h2), div.px-2:nth-child(3){
-  opacity: 0;
+  opacity: 0 !important;
 }
 
 /* gh-hover */
