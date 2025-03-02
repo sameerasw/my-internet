@@ -1,0 +1,22 @@
+/* pokemon-transparency */
+html, body, nav, #header, #room-rooms,[data-darkreader-inline-bgcolor], #room-battles, .ps-room.ps-room-opaque, .battle-log, .battle-controls, .battle-log-add, #room-overused, .chat-log{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* pokemon-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* pokemon-no footer */
+footer{
+  display: none !important;
+}
+
+/* pokemon-widlcard (keep off) */
+div{
+  background-color: transparent !important;
+}
