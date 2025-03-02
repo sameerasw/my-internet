@@ -79,25 +79,6 @@ toolbarbutton{
 	}
 }
 
-/* compact mode mini sidebar */
-/* [zen-compact-mode="true"] #navigator-toolbox{
-	height: 70% !important;  
-	background-clip: red !important; 
-		top: 50% !important;
-		transform: translateY(-50%) !important;
-	#titlebar{
-		border-radius: 1.5em !important;
-	}
-}  */
-
-/* Zen browser custom bg image */
-/* #main-window{
-	background-image: url('https://gist.github.com/user-attachments/assets/d35320a9-5d2a-414b-8f4d-a9b9fd687710') !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-} */
-
 /* no shadow and gaps (macOS) */
 hbox.browserSidebarContainer, #zen-tabbox-wrapper {
 	box-shadow: none !important;
@@ -133,7 +114,7 @@ tab:not([zen-essential='true']) .tab-background[selected]{
 	scale: 1 !important;
 }
 
-#tabbrowser-tabpanels > hbox:not([zen-split="true"]){
+#tabbrowser-tabpanels > hbox:not([zen-split="true"]):not(:has(.zen-glance-background)){
 	transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
 	scale: 0.9 !important;
 	opacity: 0;
@@ -146,12 +127,12 @@ tab:not([zen-essential='true']) .tab-background[selected]{
 }
 
 /* website view animations */
-#browser .browserContainer{
+#browser:not(:has(.zen-glance-background)) #tabbrowser-tabpanels{
 	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
 }
 
 /* URL bar page animation */
-#browser:has(#urlbar[open][zen-floating-urlbar="true"]) .browserContainer {
+#browser:has(#urlbar[open][zen-floating-urlbar="true"]) #tabbrowser-tabpanels {
   pointer-events: none;
 	scale: 1.1 !important;
   filter: blur(10px) brightness(70%) !important;
@@ -170,7 +151,7 @@ tab[busy]{
 } 
 
 /* trackpad gestures*/
-.browserStack browser {
+tabpanels .browserStack browser {
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.1s !important;
     /* Add initial border-radius to prevent sharp corners */
     border-radius: 0.75em !important;
@@ -290,21 +271,6 @@ findbar{
 	opacity: 1 !important;
 }
 
-/* keep unloaded tab icon bright */
-/* .tabbrowser-tab[pending="true"]{
-	opacity: 1 !important;
-	filter: none !important;
-	
-	.tab-background, .tab-label-container{
-		opacity: 0.2 !important;
-	}
-	
-	.tab-icon-image{
-		opacity: 1 !important;
-	}
-}
- */
-
 
 /* fix for new url bar placement */
 #urlbar[open][zen-floating-urlbar="true"]{
@@ -314,21 +280,31 @@ findbar{
 /* Remove new tab background color */
 .browserStack browser {
 	background-color: transparent !important;
-	transition: all 0.75s ease-in-out;
 }
 
 /* empty tab image */
 #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack browser {
 	background-color: transparent !important;
-	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important;
+	
+/* ⌘T */
+/* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
+	
+/* zen logo	*/
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Zen_Browser_logo_%28red_circles%29.svg") !important;
+	
+/* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
+/* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
+/* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
   background-position: center !important;
   background-repeat: no-repeat !important;
+	background-size: 50px !important;
+	filter: saturate(0);
 }
 
 /* dark theme for image */
 html:not([lwt-sidebar="dark"]){
 	#browser:has([zen-empty-tab="true"][selected="true"]) .browserStack browser {
-		    filter: invert(1);
+		    filter: invert(1) saturate(0);
 	}
 }
 
