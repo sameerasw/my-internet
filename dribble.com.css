@@ -1,0 +1,17 @@
+/* dribble-transparency */
+html, body, nav, header, #wrap, .filter-subnav, .site-nav__wrapper::before{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* dribble-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* dribble-no footer */
+#footer{
+  display: none !important;
+}
