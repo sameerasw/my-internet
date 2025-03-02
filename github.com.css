@@ -30,7 +30,6 @@ html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folde
 
 /* gh-no footer */
 footer:has(h2), div.px-2:nth-child(3){
-  /* display: none !important; */
   opacity: 0;
 }
 
