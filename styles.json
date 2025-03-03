@@ -206,6 +206,11 @@
       "figma-transparency": "html, body, .sidebar--navDefault--pYuzm, .x1n5zjp5, #fullscreen-root .gpu-view-content canvas{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n:root, [data-preferred-theme=\"dark\"], [data-preferred-theme=\"light\"]{\n  --color-bg: transparent !important;\n  --color-border: transparent !important;\n}",
       "figma-overlay fix": ".toolbelt--root--jwHGa{\n  background-color: var(--color-bg-secondary) !important;\n}"
     },
+    "film-grab.com.css": {
+      "filmgrab-transparency": "html, body, nav, header, #page, #masthead::after, .header-wrap, #sticky-header, .single-post-title{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "filmgrab-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "filmgrab-no footer": "footer{\n  display: none !important;\n}"
+    },
     "finance.yahoo.com.css": {
       "transparency": "html, body, ._yb_lrldux, #ybar-inner-wrap, main, .hero-headlines.yf-1m9jpnz, .container-wrapper.yf-x6ev64, .container, .dock-header{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
