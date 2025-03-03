@@ -11,6 +11,10 @@ html, body, nav, header, main, .ipc-page-content-container .ipc-page-grid, .ipc-
   --darkreader-background-ffffff: transparent !important;
 }
 
+#react-autowhatever-navSuggestionSearch, [role="presentation"], .ipc-menu [role="presentation"], .mdc-menu[role="presentation"], .drawer__panel[role="presentation"], [role="menu"]{
+  background-color: var(--darkreader-bg--ipt-baseAlt-shade1-bg) !important;
+}
+
 /* imdb-no footer */
 footer{
   display: none !important;
