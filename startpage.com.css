@@ -1,0 +1,26 @@
+/* startpage-transparency */
+html, body, nav, header{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* startpage-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* startpage-no footer */
+.footer-above-the-fold, footer, .feedback-serp-container{
+  display: none !important;
+}
+
+/* startpage-hover */
+#home-top-header, .top-nav-container{
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
+}
