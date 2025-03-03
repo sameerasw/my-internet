@@ -1,0 +1,17 @@
+/* imdb-transparency */
+html, body, nav, header, main, .ipc-page-content-container .ipc-page-grid, .ipc-page-grid__item > div, .leJvKv, .ipc-page-section--baseAlt, section, #ipc-wrap-background-id, [data-testid="symphony-NavigationWidget"], .ipc-tabs--base.ipc-tabs--shade1{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* imdb-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* imdb-no footer */
+footer{
+  display: none !important;
+}
