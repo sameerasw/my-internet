@@ -27,7 +27,7 @@ html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folde
 }
 
 #user-profile-frame .Box,
-.mgKNn, .fGELhp, .timeline-comment {
+.mgKNn, .fGELhp, .timeline-comment, .empty-diff-line, .Diff-module__diffHeaderWrapper--rsdD4::before {
   background: none !important;
   box-shadow: none !important;
 }
