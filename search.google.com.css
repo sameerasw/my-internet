@@ -1,0 +1,17 @@
+/* searchg-transparency */
+html, body, nav, header{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* searchg-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* searchg-no footer */
+footer{
+  display: none !important;
+}
