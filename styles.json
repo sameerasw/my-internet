@@ -453,6 +453,11 @@
       "quora-transparecy": "body,\n.q-color-mode--dark .qu-borderColor--raised {\n  background-color: transparent !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "quora-other changes": ".qu-borderRadius--small {\n  border-radius: 1em !important;\n}\n\ndiv.q-box.qu-py--small.qu-color--gray_light {\n  display: none !important;\n}"
     },
+    "reddit-wrapped.kadoa.com.css": {
+      "redditwrapped-transparency": "html, body, nav, header{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "redditwrapped-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "redditwrapped-hidden": "footer{\n  display: none !important;\n}\n\ndiv.py-5.flex.justify-center.items-center {\n  display: none !important;\n}"
+    },
     "reddit.com.css": {
       "reddit-transparecy": ":root.theme-dark,\n.theme-rpl {\n  --color-neutral-background: #00000000 !important;\n}\n\n.bg-neutral-background,\n#left-sidebar-container {\n  background-color: #00000000 !important;\n  border: none !important;\n}\n\nshreddit-app,\nbody,\nhtml {\n  background-color: #00000000 !important;\n}",
       "reddit-no chat feed": "[source=\"chat_module_home\"]{\n  display: none !important;\n}",
