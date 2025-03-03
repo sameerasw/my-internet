@@ -1,0 +1,26 @@
+/* messages-transparency */
+html, body, nav, .header, mw-main-nav, mw-main-landing, mw-conversation-container, .input-background, mw-new-conversation-container{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* messages-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* messages-no footer */
+footer{
+  display: none !important;
+}
+
+/* messages-round */
+.conv-container mws-conversation-list-item > a, .contact-chip-input, .contact-chip-input input{
+  border-radius: 1em;
+
+  &::after{
+    display: none;
+  }
+}
