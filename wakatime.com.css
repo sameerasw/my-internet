@@ -1,0 +1,33 @@
+/* wakatime-transparency */
+html, body, nav, header, .waka-navbar, .nav-side-menu, .nav-side-menu .brand, .chart-box, .panel, .panel-heading, .card{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* wakatime-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* wakatime-no footer */
+footer, .navbar-header{
+  display: none !important;
+}
+
+/* wakatime-no thanks */
+.sidebar-upgrade-item, .upgrade-box, .mock-dashboard-img{
+  display: none !important;
+}
+
+
+
+/* wakatime-hover */
+.menu-bottom{
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
+}
