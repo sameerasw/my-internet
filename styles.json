@@ -268,7 +268,7 @@
     "grok.com.css": {
       "grok-transparency": "html, body, .bg-background{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "grok-hover": ".top-0, .text-\\[11px\\], .action-buttons{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}",
-      "grok-overlay fix": "[role=\"dialog\"]{\n  background-color: var(--popover) !important;\n}"
+      "grok-overlay fix": "[role=\"dialog\"], div.duration-100{\n  background-color: var(--popover) !important;\n}"
     },
     "gsmarena.com.css": {
       "gsm-transparency": "html, body, #header, #header::after, .top-bar, #outer, .main, #specs-list table, .ttl, .nfo, .sidebar, .clearfix, .module-phones.module-related, #user-comments, .user-thread, .sub-footer, .more, table, h3, h4, td{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
