@@ -1,0 +1,21 @@
+/* redditwrapped-transparency */
+html, body, nav, header{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* redditwrapped-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* redditwrapped-hidden */
+footer{
+  display: none !important;
+}
+
+div.py-5.flex.justify-center.items-center {
+  display: none !important;
+}
