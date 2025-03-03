@@ -6,6 +6,10 @@ html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folde
   box-shadow: none !important;
 }
 
+modal-dialog .search-suggestions{
+  background-color: var(--bgColor-inset) !important;
+}
+
 /* gh-transparent lists */
  .PageLayout-content .Box, .PageLayout-content .Box-row, #repo-content-turbo-frame .Box{
   background-color: transparent !important;
