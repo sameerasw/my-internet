@@ -8,6 +8,14 @@ My custom CSS for websites I visit the most. Click on the preview to view the fi
 
 [How to get transparency in Zen](https://sameerasw.notion.site/Zen-Transparency-1939c6099d4080468f02cf05ae50e827?pvs=4)
 
+<a href="https://star-history.com/#sameerasw/my-internet&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sameerasw/my-internet&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sameerasw/my-internet&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sameerasw/my-internet&type=Date" />
+ </picture>
+</a>
+
 ## Contributing styles
 - Make sure the file is named in the correct format [website domain].css (google.com.css and docs.google.com.css are 2 styles which are not merged)
 - Every property should include `!important` to make sure it gets applied.
