@@ -1,5 +1,5 @@
 /* gh-transparency */
-html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folders-and-files"] .bgColor-muted, nav, .dxnHPp, .kcVpNH, .discussion-timeline-actions, .TimelineItem-break, .gh-header, .PageLayout-pane, .bSTcOH, .gOhIYN{
+html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folders-and-files"] .bgColor-muted, nav, .dxnHPp, .kcVpNH, .discussion-timeline-actions, .TimelineItem-break, .gh-header, .PageLayout-pane, .bSTcOH, .gOhIYN, #blob-edit-side-panel-id{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -20,7 +20,7 @@ html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folde
   .NWhVB,
   .cm-gutters,
   [data-testid="codemirror-editor"],
-  [data-testid="codemirror-editor"] .cm-content {
+  [data-testid="codemirror-editor"] .cm-content, .llKfAj {
     background: none !important;
     box-shadow: none !important;
   }
