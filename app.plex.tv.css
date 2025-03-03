@@ -1,0 +1,26 @@
+/* plex-transparency */
+html, body, nav, header, .NavBar-container-F87RQ_, .SourceSidebar-openSidebar-I364_Z{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.FullPageBackground-backgroundContainer-mKhZ21{
+  display: none !important;
+}
+
+/* plex-transparent movie bg */
+video{
+  background-color: transparent !important;
+}
+
+/* plex-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* plex-no footer */
+footer{
+  display: none !important;
+}
