@@ -215,7 +215,7 @@ ytd-merch-shelf-renderer, .annotation{
   transition: all 1s ease-in-out 0.5s !important;
 }
 
-body:has([theater=""]):not(:has(ytd-two-column-browse-results-renderer)) #masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){
+body:has(ytd-watch-flexy) #masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){
   top: -40px !important;
   opacity: 0 !important;
   transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
@@ -225,7 +225,7 @@ body:has([theater=""]):not(:has(ytd-two-column-browse-results-renderer)) #masthe
   }
 }
 
-:root:has([theater=""]):not(:has(ytd-two-column-browse-results-renderer)){
+:root:has(ytd-watch-flexy){
   --ytd-toolbar-height: 0 !important;
 }
 
@@ -263,7 +263,5 @@ ytd-comments{
 
 /* yt-zen view comments blur */
 [theater=""] ytd-comments{
-  /* backdrop-filter: blur(20px) !important;
-  background-color: var(--yt-spec-outline-inverse-medium) !important; */
-  display: none;
+  bacdrop-filter: blur(20px) !important;
 }
