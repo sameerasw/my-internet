@@ -1,0 +1,17 @@
+/* filmgrab-transparency */
+html, body, nav, header, #page, #masthead::after, .header-wrap, #sticky-header, .single-post-title{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* filmgrab-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* filmgrab-no footer */
+footer{
+  display: none !important;
+}
