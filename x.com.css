@@ -1,12 +1,12 @@
 /* x-transparency */
-html, body, [data-testid="primaryColumn"], .css-175oi2r:has([role="progressbar"]), .r-kemksi:has([aria-live="polite"]), [aria-label="Home timeline"] .r-5zmot{
+html, body, [data-testid="primaryColumn"], .css-175oi2r:has([role="progressbar"]), .r-kemksi:has([aria-live="polite"]), [aria-label="Home timeline"] .r-5zmot, [aria-label="Grok"] .r-5zmot{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
 }
 
-[data-testid="Dropdown"], .css-175oi2r[role="dialog"] {
+[data-testid="Dropdown"], .css-175oi2r[role="dialog"], div.r-ifefl9:nth-child(2) {
   background-color: #000 !important;
 }
 
