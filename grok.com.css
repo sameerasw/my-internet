@@ -16,6 +16,6 @@ html, body, .bg-background{
 }
 
 /* grok-overlay fix */
-[role="dialog"]{
+[role="dialog"], div.duration-100{
   background-color: var(--popover) !important;
 }
