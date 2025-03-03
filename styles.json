@@ -6,6 +6,11 @@
       "namecheap-no footer": "footer, layout-livechat{\n  display: none !important;\n}",
       "namecheap-no borders": "[data-toggle=\"tab\"], hr{\n  border: none !important;\n}"
     },
+    "+notion.site.css": {
+      "notion-transparecy": "body {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n}\n\n.notion-app-inner,\n.notion-cursor-listener,\n.notion-frame,\n.notion-sidebar-container,\nheader {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  box-shadow: none !important;\n}",
+      "notion-hide elements": "div.autolayout-row.autolayout-fill-width.autolayout-center.autolayout-space {\n  display: none !important;\n}",
+      "notion-rounded banner": ".layout-full img{\n  border-radius: 1em;\n}"
+    },
     "+wikipedia.org.css": {
       "transparency": ":root{\n  --background-color-interactive-subtle: transparent !important;\n}\n\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
