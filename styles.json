@@ -558,6 +558,13 @@
       "w3-transparency": "html, body.darkpagetheme, #top-nav-bar, #pagetop,body.darkpagetheme .topnavcontainer,body.darkpagetheme #subtopnav, #scroll_right_btn, body.darkpagetheme .contentcontainer, .w3-sidebar, #belowtopnav, #leftmenuinnerinner, body.darkpagetheme .w3-white, .contentcontainer, .w3-white, .topnavcontainer, #subtopnav, hr, #main, body.darkpagetheme #subtopnav, body.darkpagetheme .topnavcontainer, body.darkpagetheme .topnavbackground, body.darkpagetheme .topnavcontainer, body.darkpagetheme #subtopnav{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n.topnavbackground{\n  display: none;\n}",
       "w3-no footer": "#footerwrapper, #wrappercontainer{\n  display: none !important;\n}"
     },
+    "wakatime.com.css": {
+      "wakatime-transparency": "html, body, nav, header, .waka-navbar, .nav-side-menu, .nav-side-menu .brand, .chart-box, .panel, .panel-heading, .card{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "wakatime-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "wakatime-no footer": "footer, .navbar-header{\n  display: none !important;\n}",
+      "wakatime-no thanks": ".sidebar-upgrade-item, .upgrade-box, .mock-dashboard-img{\n  display: none !important;\n}",
+      "wakatime-hover": ".menu-bottom{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}"
+    },
     "wallstreetoasis.com.css": {
       "transparency": ":root{\n  --color-page-bg: transparent !important;\n}\n\n#header.header-monkey-origin, .forum__dropdown, .forum__dropdown a, .box-content{\n  background-color: transparent !important;\n}\n\n.region-sidebar-right .block .box-content ul li{\n  border: none !important;\n}",
       "blurry header": "#header{\n  backdrop-filter: blur(20px) !important;\n}",
