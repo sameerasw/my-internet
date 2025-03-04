@@ -65,6 +65,11 @@
     "app.slack.com.css": {
       "slack-transparency": ".p-theme_background, [aria-label=\"Channel general\"], .p-ia4_client .p-view_contents--primary, .p-view_header--with-bookmarks-bar, .channel_tab_bar__HY3uU, .c-scrollbar__hider, .workspace__primary_view_footer, .c-message_kit__background, .parts-screen-body, .p-ia4_client .p-view_contents--secondary, .p-quip_flexpane--quip_canvas_sideview, .p-quip_flexpane--quip_canvas_sideview .p-quip_flexpane--quip_canvas_sideview__body, .p-quip_embed, .p-flexpane--iap1 .p-flexpane_header, .sk-client-theme--dark .p-canvas_template_options__preview-footer--wrapper{\n  background-color: transparent !important;\n  background: none !important;\n  filter: none !important;\n  border: none !important;\n}\n\n:root, .sk-client-theme--dark{\n  --dt_color-theme-surf-inv-sec: transparent !important;\n  --dt_color-otl-ter: transparent !important;\n  border: none !important;\n}"
     },
+    "appinn.com.css": {
+      "appinn-transparency": "html, body, nav, header, [role=\"navigation\"]{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "appinn-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "appinn-no footer": "footer{\n  display: none !important;\n}"
+    },
     "awwwards.com.css": {
       "awwwards-transparency": "html, body, nav, header, .content-header{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "awwwards-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
