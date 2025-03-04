@@ -102,6 +102,11 @@
       "bsky-no borders": "html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{\n    border: none !important;\n}",
       "bsky-overlay fixes": "[role=\"menu\"] .css-175oi2r, [role=\"dialog\"] .css-175oi2r{\n    background-color: var(--backgroundLight) !important;\n}"
     },
+    "c4dsky.com.css": {
+      "c4dsky-transparency": "html, body, nav, header, .box{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "c4dsky-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "c4dsky-no footer": "footer{\n  display: none !important;\n}"
+    },
     "calendar.google.com.css": {
       "calendr-transparecy": "body,\n[jsname=\"mOIbvc\"],\n.R6TFwe,\n.sS0sZd,\n[jsname=\"vhZMvf\"],\n[jsname=\"KBzNL\"] {\n  --gm3-sys-color-surface-container-low: transparent !important;\n\n  background-color: transparent !important;\n}",
       "calendr-remove borders": ".BiKU4b {\n  border: none !important;\n}"
