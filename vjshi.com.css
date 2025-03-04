@@ -1,0 +1,17 @@
+/* vjshi-transparency */
+html, body, nav, header, section, section .bg-gradient-to-b{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* vjshi-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* vjshi-no footer */
+footer, .bg-neutral-20{
+  display: none !important;
+}
