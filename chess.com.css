@@ -1,0 +1,21 @@
+/* chess-transparency */
+html, body, .nav, header, #sb, .index-suggestion-component{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* chess-no footer */
+footer{
+  display: none !important;
+}
+
+/* chess-hover */
+#sb{
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
+}
