@@ -359,6 +359,11 @@
       "in-no borders": ":root{\n  --color-border-faint: transparent !important;\n}",
       "in-navbar blur": "header{\n  backdrop-filter: blur(20px) !important;\n}"
     },
+    "lookae.com.css": {
+      "lookae-transparency": "html, body, nav, header{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "lookae-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "lookae-no footer": "footer{\n  display: none !important;\n}"
+    },
     "mail.google.com.css": {
       "gmail-transparency": ".aAU, .bkK > .nH, .a6o::before, .WR.aeN,.wl, .yO, .aKh, .Nt{\n  background: none !important;\n  background-color: transparent !important;\n}",
       "gmail-no borders": ".aAU, .bkK > .nH, .a6o::before, .WR.aeN,.wl, .yO, .aKh, .Nt{\n  border: none !important;\n  box-shadow: none !important;\n}",
