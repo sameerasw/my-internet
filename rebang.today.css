@@ -1,0 +1,17 @@
+/* rebang-transparency */
+html, body, nav, header, #root > div, .dark .dark\:bg-primaryDark-200, .bg-primary-200{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* rebang-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* rebang-no footer */
+footer{
+  display: none !important;
+}
