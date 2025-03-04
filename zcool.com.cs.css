@@ -1,0 +1,17 @@
+/* zcool-transparency */
+html, body, nav, header, section{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* zcool-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* zcool-no footer */
+footer{
+  display: none !important;
+}
