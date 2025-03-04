@@ -1,0 +1,17 @@
+/* v2ex-transparency */
+html, body, nav, header, #Wrapper, #Top, #Main > .box, .cell, #Rightbar .box{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* v2ex-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* v2ex-no footer */
+#Bottom{
+  display: none !important;
+}
