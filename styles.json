@@ -240,6 +240,12 @@
       "gemini-other changes": ".content-container chat-window .chat-container .bottom-container {\n  margin-bottom: 30px !important;\n}\n\ninput-container hallucination-disclaimer {\n  display: none !important;\n}\n\n.input-area-container {\n  margin-bottom: 2em !important;\n}\n\n.cdk-overlay-pane > div,\nmat-card {\n  background-color: var(--bard-color-neutral-96) !important;\n  border-radius: 1em !important;\n}",
       "gemini-hover": ".side-nav-menu-button,\n.boqOnegoogleliteOgbOneGoogleBar,\ntop-bar-actions {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
+    "getpocket.com.css": {
+      "getpocket-transparency": "html, body, nav, header{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "getpocket-no footer": "footer{\n  display: none !important;\n}",
+      "getpocket-no sticky header": "header{\n  position: relative !important;\n}",
+      "getpocket-no thanks": "[data-testid=\"upgrade-link\"]{\n  display: none !important;\n}"
+    },
     "gfxcamp.com.css": {
       "transparency": "html, body, header, nav, #nav-topbar.nav-container{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "transparent body": ".container-inner, .main, .main::before, .main::after, .sidebar-content, .page-title, .post-row{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
