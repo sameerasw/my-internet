@@ -1,0 +1,17 @@
+/* lookae-transparency */
+html, body, nav, header{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* lookae-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* lookae-no footer */
+footer{
+  display: none !important;
+}
