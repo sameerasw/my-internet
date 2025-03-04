@@ -1,0 +1,12 @@
+/* ithome-transparency */
+html, body, nav, header, #top:not(.su), .titleBar, .banner, .contentwrapper, .newslist li{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* ithome-no footer */
+footer{
+  display: none !important;
+}
