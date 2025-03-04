@@ -1,0 +1,17 @@
+/* c4dsky-transparency */
+html, body, nav, header, .box{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* c4dsky-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* c4dsky-no footer */
+footer{
+  display: none !important;
+}
