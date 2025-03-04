@@ -1,0 +1,22 @@
+/* marca-transparency */
+html, body, nav, header, .main-top-header-container, .main-nav-container, .main-tab-highlight::before, .ue-c-main-navigation__teams, .ue-l-cover-grid__inner, .ue-c-carousel, .ue-c-carousel-theme, .ue-l-article__inner{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* marca-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* marca-no footer */
+footer{
+  display: none !important;
+}
+
+/* marca-hidden */
+.seo-links-container-justify-center, .seo-links-container{
+  display: none !important;
+}
