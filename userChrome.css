@@ -1,334 +1,397 @@
 /* Zen transparency */
-:root{
-	--zen-main-browser-background: #00000000 !important;
-/* 	--zen-main-browser-background: #000000 !important; */
+:root {
+  --zen-main-browser-background: #00000000 !important;
 }
 
 /* Hidden buttons */
 /* #nav-bar-overflow-button, */
-#zen-current-workspace-indicator{
-	display: none
-}
-
-/* Bottom workspace pill */
-#zen-workspaces-button{
-	width: 100% !important;
-}
-
-#zen-sidebar-icons-wrapper{
-	background-color: var(--zen-toolbar-element-bg) !important;
-	border-radius: 1em;
-	padding: 0.25em !important;
+#zen-current-workspace-indicator {
+  display: none;
 }
 
 /* reduce the separaters width */
-#vertical-pinned-tabs-container-separator, #tabbrowser-arrowscrollbox-periphery:before, #TabsToolbar-customization-target:after{
-	width: 30% !important;
+#vertical-pinned-tabs-container-separator,
+#tabbrowser-arrowscrollbox-periphery:before,
+#TabsToolbar-customization-target:after, .vertical-pinned-tabs-container-separator {
+  width: 30% !important;
 }
 
 /* Modify new tab entry */
-[label="Super Speedy Dial"]{
-	.tab-label-container:after{
-		content: "Home" !important;
-	}
-	
-	label{
-		display: none !important;
-	}
-	
-	.tab-icon-image{
-		content: url("chrome://branding/content/icon32.png") !important;
-		border-radius: 100px !important;
-		mix-blend-mode: difference !important;
-	}
+[label="Super Speedy Dial"] {
+  .tab-label-container:after {
+    content: "Home" !important;
+  }
+
+  label {
+    display: none !important;
+  }
+
+  .tab-icon-image {
+    content: url("chrome://branding/content/icon32.png") !important;
+    border-radius: 100px !important;
+    mix-blend-mode: difference !important;
+  }
 }
 
 /* fix workspaces icons */
-toolbarbutton{
-	padding: 0.1em !important;
+toolbarbutton {
+  padding: 0em !important;
 }
 
 /* no window controls */
-	#zen-sidebar-top-buttons{
-		.titlebar-buttonbox-container{
-			display: none !important;
-		}
+#zen-sidebar-top-buttons {
+  .titlebar-buttonbox-container {
+    display: none !important;
+  }
 }
 
 /* url bar cleanup */
-#zen-appcontent-navbar-container, #page-action-buttons, #identity-permission-box{
-	display: none !important;
+#zen-appcontent-navbar-container,
+#page-action-buttons,
+#identity-permission-box {
+  display: none !important;
 }
 
 /* hidden sidebar buttons */
-#zen-sidebar-icons-wrapper, #home-button{
-	opacity: 0;
-	transition: opacity 0.5s ease-in-out !important;
-	
-	&:hover{
-		opacity: 1 !important;
-	}
+#zen-sidebar-icons-wrapper,
+#home-button {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out !important;
+
+  &:hover {
+    opacity: 1 !important;
+  }
 }
 
 /* extension (zen) button scale for macos */
-#unified-extensions-button{
-	margin-left: 0.25em !important;
-	image{
-	border-radius: 100px !important;
-		scale: 1.2;
-	}
+#unified-extensions-button {
+  margin-left: 0.25em !important;
+  image {
+    border-radius: 100px !important;
+    scale: 1.4;
+  }
 }
 
 /* no shadow and gaps (macOS) */
-hbox.browserSidebarContainer, #zen-tabbox-wrapper {
-	box-shadow: none !important;
-	margin: 0 !important;
+hbox.browserSidebarContainer,
+#zen-tabbox-wrapper {
+  box-shadow: none !important;
+  margin: 0 !important;
 }
 
-#zen-appcontent-wrapper{
-	left: 0 !important;
-	top: 0 !important;
-	max-width: 100% !important;
-	margin: 0 !important;
-	padding: 0 !important;
+#zen-appcontent-wrapper {
+  left: 0 !important;
+  top: 0 !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Fix find in page */
-findbar *{
-	opacity: 1 !important;
+findbar * {
+  opacity: 1 !important;
 }
-
 
 /* Animations */
 /* Tab switch animation */
-#tabbrowser-arrowscrollbox, tab{
-	transition: all 0.3s ease-in-out !important;
+#tabbrowser-arrowscrollbox,
+tab {
+  transition: all 0.3s ease-in-out !important;
 }
 
-tab:not([zen-essential='true']):not([multiselected="true"]) .tab-background{
-	transition: all 0.2s ease-in-out !important;
-	scale: 0 !important;
+tab:not([zen-essential="true"]):not([multiselected="true"]) .tab-background {
+  transition: all 0.2s ease-in-out !important;
+  scale: 0 !important;
 }
 
-tab:not([zen-essential='true']) .tab-background[selected]{
-	scale: 1 !important;
+tab:not([zen-essential="true"]) .tab-background[selected] {
+  scale: 1 !important;
 }
 
-#tabbrowser-tabpanels > hbox:not([zen-split="true"]):not(:has(.zen-glance-background)){
-	transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
-	scale: 0.9 !important;
-	opacity: 0;
-/* 	left: -5vw; */
+#tabbrowser-tabpanels
+  > hbox:not([zen-split="true"]):not(:has(.zen-glance-background)) {
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
+  scale: 0.9 !important;
+  opacity: 0;
+  /* 	left: -5vw; */
 }
-#tabbrowser-tabpanels > hbox.deck-selected:not([zen-split="true"]){
-	scale: 1 !important;
-	opacity: 1 !important;
-/* 	left: 0 !important; */
+#tabbrowser-tabpanels > hbox.deck-selected:not([zen-split="true"]) {
+  scale: 1 !important;
+  opacity: 1 !important;
+  /* 	left: 0 !important; */
 }
 
 /* website view animations */
-#browser:not(:has(.zen-glance-background)) #tabbrowser-tabpanels{
-	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
+#browser:not(:has(.zen-glance-background)) #tabbrowser-tabpanels {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
 }
 
 /* URL bar page animation */
 #browser:has(#urlbar[open][zen-floating-urlbar="true"]) #tabbrowser-tabpanels {
   pointer-events: none;
-	scale: 1.1 !important;
+  scale: 1.1 !important;
   filter: blur(10px) brightness(70%) !important;
 }
 
-#urlbar[open][zen-floating-urlbar="true"] #urlbar-background{
-	border-radius: 1em !important;
+#urlbar[open][zen-floating-urlbar="true"] #urlbar-background {
+  border-radius: 1em !important;
 }
 
 /* Loading tab animation */
-tab[busy]{
-	scale: 0.95 !important;
-	.tab-background{
-		opacity: 0.3 !important;
-	}
-} 
+tab[busy] {
+  scale: 0.95 !important;
+  .tab-background {
+    opacity: 0.3 !important;
+  }
+}
 
 /* trackpad gestures*/
 tabpanels .browserStack browser {
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.1s !important;
-    /* Add initial border-radius to prevent sharp corners */
-    border-radius: 0.75em !important;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.1s !important;
+  /* Add initial border-radius to prevent sharp corners */
+  border-radius: 0.75em !important;
 }
 
 /* Previous animation*/
-.browserStack:has(#historySwipeAnimationPreviousArrow:not([style="translate: none;"])) browser {
-    scale: 0.95 !important;
-    transform: translateX(3%) !important;    
-    border-radius: 2em !important;
+.browserStack:has(
+    #historySwipeAnimationPreviousArrow:not([style="translate: none;"])
+  )
+  browser {
+  scale: 0.95 !important;
+  transform: translateX(3%) !important;
+  border-radius: 2em !important;
 }
 
 /* Next animation*/
-.browserStack:has(#historySwipeAnimationNextArrow:not([style="translate: none;"])) browser {
-    scale: 0.95 !important;
-    transform: translateX(-3%) !important;  
-    border-radius: 2em !important;   
+.browserStack:has(
+    #historySwipeAnimationNextArrow:not([style="translate: none;"])
+  )
+  browser {
+  scale: 0.95 !important;
+  transform: translateX(-3%) !important;
+  border-radius: 2em !important;
 }
 
 /* smoothen trackpad gestures */
 .browserStack browser[style*="transform: none"] {
-    border-radius: 0.75em !important;
-} 
-  
+  border-radius: 0.75em !important;
+}
+
 /* ctrl tab visuals and animations */
-#ctrlTab-panel{
-	--panel-background: var(--lwt-accent-color) !important;
-    transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.2s !important;
-	scale: 0.7;
+#ctrlTab-panel {
+  --panel-background: var(--lwt-accent-color) !important;
+  transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.2s !important;
+  scale: 0.7;
 }
 
-#ctrlTab-panel:has(.ctrlTab-preview:not([hidden="true"])){
-	scale: 1 !important;
+#ctrlTab-panel:has(.ctrlTab-preview:not([hidden="true"])) {
+  scale: 1 !important;
 }
 
-slot:nth-child(1){
-		border-radius: 1em !important;
-	padding: 0 !important; 
-	}
-
-.ctrlTab-preview-inner{
-/* 	padding: 0 !important; */ 
-	margin: 0 !important;
-	transition: all 0.2s ease-in-out;
-
-	.ctrlTab-canvas{
-		border-radius: 1em !important;
-		overflow: hidden;
-
-		img{
-			background-color: #000000  !important;
-		}
-	}
-
-	.ctrlTab-favicon-container{
-		justify-content: center !important;
-		transition: all 0.5s ease-in-out;
-
-		image{
-			border-radius: 50% !important;
-			transition: all 0.5s ease-in-out !important;
-/* 			scale: 1.25 !important; */  
-		}
-	}
-
-	.ctrlTab-label{
-		margin-top: 1.5em !important;
-	}
+slot:nth-child(1) {
+  border-radius: 1em !important;
+  padding: 0 !important;
 }
 
-.ctrlTab-preview:focus > .ctrlTab-preview-inner{
-	outline: none !important;  		
-/* border: none !important;   */    
-	background-color: var(--sidebar-background-color) !important;   
-	border-radius: 1.5em !important; 
-	scale: 1.03 !important;     
-	
-	.ctrlTab-favicon-container{
-		
-		image{
-			padding: 2px !important;
-		}
-	}
+.ctrlTab-preview-inner {
+  /* 	padding: 0 !important; */
+  margin: 0 !important;
+  transition: all 0.2s ease-in-out;
+
+  .ctrlTab-canvas {
+    border-radius: 1em !important;
+    overflow: hidden;
+
+    img {
+      background-color: #000000 !important;
+    }
+  }
+
+  .ctrlTab-favicon-container {
+    justify-content: center !important;
+    transition: all 0.5s ease-in-out;
+
+    image {
+      border-radius: 50% !important;
+      transition: all 0.5s ease-in-out !important;
+      /* 			scale: 1.25 !important; */
+    }
+  }
+
+  .ctrlTab-label {
+    margin-top: 1.5em !important;
+  }
+}
+
+.ctrlTab-preview:focus > .ctrlTab-preview-inner {
+  outline: none !important;
+  /* border: none !important;   */
+  background-color: var(--sidebar-background-color) !important;
+  border-radius: 1.5em !important;
+  scale: 1.03 !important;
+
+  .ctrlTab-favicon-container {
+    image {
+      padding: 2px !important;
+    }
+  }
 }
 
 /*  transparent url bar  */
- #urlbar[open][zen-floating-urlbar="true"] {
-     #urlbar-background {
-         background-color: light-dark(color-mix(in srgb, #fdfdfd 75%, transparent), color-mix(in srgb, #0e0e0e 75%, transparent)) !important;
-    }
-	 
-} 
-  
-  
+#urlbar[open][zen-floating-urlbar="true"] {
+  #urlbar-background {
+    background-color: light-dark(
+      color-mix(in srgb, #fdfdfd 75%, transparent),
+      color-mix(in srgb, #0e0e0e 75%, transparent)
+    ) !important;
+  }
+}
+
 /* Find */
-findbar{
-	transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.2s !important;
-	position: absolute !important;
-	left: 0 !important;  
-	right: 0 !important;
-	margin: 0.5em 15%;
-	border-radius: 1em;
-	font-size: 1.4em;
-	
-		.findbar-textbox{
-			padding: 0.25em 1em !important;
-			border-radius: 1em !important;
-		}
-	&[hidden="true"]{
-	scale: 0 !important;
-		opacity: 0 !important;
-	}  
+findbar {
+  transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.2s !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0.5em 15%;
+  border-radius: 1em;
+  font-size: 1.4em;
+
+  .findbar-textbox {
+    padding: 0.25em 1em !important;
+    border-radius: 1em !important;
+  }
+  &[hidden="true"] {
+    scale: 0 !important;
+    opacity: 0 !important;
+  }
 }
 
-/* fix statusbar */
-#statuspanel { 
-	opacity: 1 !important;
-}
-
-
-/* fix for new url bar placement */
-#urlbar[open][zen-floating-urlbar="true"]{
-/* 	top: 35vh !important; */
-}
 
 /* Remove new tab background color */
 .browserStack browser {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 /* empty tab image */
 #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack browser {
-	background-color: transparent !important;
-	
-/* ⌘T */
-/* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
-	
-/* zen logo	*/
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Zen_Browser_logo_%28red_circles%29.svg") !important;
-	
-/* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
-/* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
-/* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
+  background-color: transparent !important;
+
+  /* âT */
+  /* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
+
+  /* zen logo	*/
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Zen_Browser_logo_%28red_circles%29.svg") !important;
+
+  /* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
+  /* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
+  /* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
   background-position: center !important;
   background-repeat: no-repeat !important;
-	background-size: 50px !important;
-	filter: saturate(0);
+  background-size: 50px !important;
+  filter: saturate(0);
 }
 
 /* dark theme for image */
-html:not([lwt-sidebar="dark"]){
-	#browser:has([zen-empty-tab="true"][selected="true"]) .browserStack browser {
-		    filter: invert(1) saturate(0);
-	}
+html:not([lwt-sidebar="dark"]) {
+  #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack browser {
+    filter: invert(1) saturate(0);
+  }
 }
 
 /* custom extension icons */
 /* stylebot */
-[label="Stylebot"] image{
-		list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important;
+[label="Stylebot"] image {
+  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important;
 }
 
 /* dark reader */
-[label="Dark Reader"] image{
-		list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/moon-512.png") !important;
+[label="Dark Reader"] image {
+  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/moon-512.png") !important;
 }
 
 /* dark reader */
-[label="Zen Internet"] image{
-		list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important;
+[label="Zen Internet"] image {
+  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important;
 }
 
-/* dark theme */
-[lwt-sidebar="dark"]{
-	[label="Dark Reader"], [label="Stylebot"], [label="Zen Internet"]{
-			image{
-		    filter: invert(1);
-			}
-	}
+/* dark theme icons */
+[lwt-sidebar="dark"] {
+  [label="Dark Reader"],
+  [label="Stylebot"],
+  [label="Zen Internet"] {
+    image {
+      filter: invert(1);
+    }
+  }
+}
+
+/* cool workspace mod by Minimal Zen (Dark) theme */
+#zen-workspaces-button {
+  border-radius: 8px !important;
+  background-color: rgba(255,255,255,0.1) !important;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2) !important;
+  padding: 3px !important;
+
+  .subviewbutton {
+    border-radius: 6px !important;
+    transition: background-color 0.2s ease !important;
+    font-size: 16px !important;
+    filter: grayscale(0%) !important;
+    --toolbarbutton-hover-background: color-mix(in srgb, var(--zen-branding-bg-reverse) 10%, transparent 90%) !important;
+
+    &:hover {
+      background-color: var(--toolbarbutton-hover-background) !important;
+    }
+
+    &:active {
+      background-color: var(--toolbarbutton-active-background) !important;
+    }
+
+    /*noinspection CssInvalidFunction*/
+    &[active] {
+      background-color: light-dark(rgba(255,255,255,1), rgba(255,255,255,0.2)) !important;
+      box-shadow: 0 0 4px rgba(0,0,0,0.2) !important;
+      overflow: hidden !important;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-top: 50%;
+        background: linear-gradient(0, rgba(0, 0, 0, 0.2), transparent);
+      }
+    }
+  }
+}
+
+/* sidebar mods */
+#sidebar-box, #bookmarksPanel.sidebar-panel, #sidebar-header, #history-panel, html, #header{
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#sidebar{
+  border-radius: 1em !important;
+  overflow: hidden !important;
+  margin: 0 14px 14px 0  !important;
+}
+
+#header:has(select[data-l10n-id="genai-header-provider-menu"]){
+  display: none !important;
+}
+
+#sidebar-header{
+  transition: all 0.3s ease-in-out !important;
+  top: 0px !important;
+  position: relative !important;
+  height: 0 !important;
+  opacity: 0.01 !important;
+  &:hover{
+    top: 0px !important;
+    height: 40px !important;
+    opacity: 1 !important;
+  }
 }
