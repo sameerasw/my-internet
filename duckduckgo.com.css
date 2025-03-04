@@ -29,3 +29,7 @@ html, body, .desktop-homepage_root__Ikj1_, .site-wrapper, .metabar:not(.is-stuck
   background-color: transparent !important;
   position: sticky !important;
 }
+
+nav::before, nav::after, .XvPRmQVeIoCP5lQhICTv.ofDl_1VxUG_EKc3b9E3x::before{
+  display: none !important;
+}
