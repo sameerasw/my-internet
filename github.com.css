@@ -6,10 +6,6 @@ html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folde
   box-shadow: none !important;
 }
 
-modal-dialog .search-suggestions{
-  background-color: var(--bgColor-inset) !important;
-}
-
 /* gh-transparent lists */
  .PageLayout-content .Box, .PageLayout-content .Box-row, #repo-content-turbo-frame .Box{
   background-color: transparent !important;
@@ -64,4 +60,10 @@ table, .eIKYQa, div.border-bottom, td{
 .dJnomT,.jPdcfu, .gOHzTT, .eBevHz, .Box-header, #repos-sticky-header > div, .jbBkdO{
   border-radius: 0.5em !important;
   overflow: hidden;
+}
+
+/* gh-overlay fixes */
+modal-dialog .search-suggestions,details-dialog.Box, .Box-body{
+  background-color: var(--bgColor-inset) !important;
+  border-radius: 1em !important;
 }
