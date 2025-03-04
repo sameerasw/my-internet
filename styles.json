@@ -605,6 +605,11 @@
       "unsplash-hide elements": "figure:has(.se4Qe) {\n  display: none !important;\n}",
       "unsplash-other styles": "figure {\n  border-radius: 20px !important;\n  overflow: hidden !important;\n  transition: all 0.5s ease-in-out !important;\n}\n\nfigure:hover {\n  border-radius: 10px !important;\n  scale: 1.1 !important;\n  box-shadow: #00000088 0px 0px 50px !important;\n  z-index: 10 !important;\n}\n\nheader {\n  z-index: 1000 !important;\n  background-color: #00000000 !important;\n  backdrop-filter: blur(10px) !important;\n  color: #ffffff !important;\n}\n\n.b4j4s {\n  position: relative !important;\n  top: 0 !important;\n  transition: all 0.5s ease-in-out !important;\n  opacity: 0.2 !important;\n  margin-bottom: 10px !important;\n}\n\n.b4j4s:hover {\n  opacity: 1 !important;\n}\n\ndiv.zLj3X.rJ2xz.bYpwS.U8eXG.M5vdR,\ndiv.hwFVM,\n.nOssi,\n.r1yVH,\n#popover-secondary-menu {\n  display: none !important;\n}\n\ndiv.tHGFe,\nul.QmKQx.hSanJ {\n  display: none !important;\n}\n\n.ZdQR2 {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}\ndiv.uqkHb.ufM77 {\n  background-color: #fff !important;\n}"
     },
+    "v2ex.com.css": {
+      "v2ex-transparency": "html, body, nav, header, #Wrapper, #Top, #Main > .box, .cell, #Rightbar .box{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "v2ex-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "v2ex-no footer": "#Bottom{\n  display: none !important;\n}"
+    },
     "vercel.com.css": {
       "vercel-transparecy": ":root{\n  --geist-background: transparent !important;\n  --ds-background-200-value: transparent !important;\n}\n\nhtml, header, [data-testid=\"navbar/submenu\"], footer{\n  background-color: transparent !important;\n}",
       "vercel-overlay fix": "[role=\"menu\"]{\n  background-color: var(--accents-2) !important;\n}"
