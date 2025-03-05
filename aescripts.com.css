@@ -1,0 +1,17 @@
+/* aescripts-transparency */
+html, body, nav, header, .main, .main-container, #browse-main-categories, .top-header{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* aescripts-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* aescripts-no footer */
+footer{
+  display: none !important;
+}
