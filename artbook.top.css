@@ -1,0 +1,17 @@
+/* artbook-transparency */
+html, body, nav, body:not(:has(.actGotop[style="display: block;"])) header, #home, .opus_list, .item_work{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* artbook-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* artbook-no footer */
+footer{
+  display: none !important;
+}
