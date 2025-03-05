@@ -261,7 +261,13 @@ ytd-comments{
 
 }
 
-/* yt-zen view comments blur */
+/* yt-zen comments solid */
 [theater=""] ytd-comments{
-  bacdrop-filter: blur(20px) !important;
+  background-color: var(--yt-spec-text-primary-inverse) !important;
+}
+
+/* yt-zen comments blur */
+[theater=""] ytd-comments{
+  background-color: var(--yt-live-chat-shimmer-background-color) !important;
+  backdrop-filter: blur(20px) !important;
 }
