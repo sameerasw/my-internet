@@ -43,7 +43,7 @@ faceplate-dropdown-menu {
 
 /* reddit-hover */
 div.left-sidebar,
-#right-sidebar-container {
+#right-sidebar-container, flex-left-nav-container {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
   &:hover {
