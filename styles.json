@@ -29,6 +29,11 @@
     "accounts.google.com.css": {
       "gacc-transparency": "html, body, .S7xv8{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}"
     },
+    "aescripts.com.css": {
+      "aescripts-transparency": "html, body, nav, header, .main, .main-container, #browse-main-categories, .top-header{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "aescripts-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "aescripts-no footer": "footer{\n  display: none !important;\n}"
+    },
     "aistudio.google.com.css": {
       "aistd-transparecy": ":root{\n    --color-surface-container-lowest: #00000000 !important;\n    --color-sidebars-background: #00000000 !important;\n  }\n  \n  .makersuite-layout, .layout-navbar, select-header, .navbar-header, .router-outlet-wrapper, .nav-toggle-wrapper, .chunk-editor-main, ms-run-settings, .footer, .turn-footer[_ngcontent-ng-c2950371965] > [_ngcontent-ng-c2950371965], .turn-footer[_ngcontent-ng-c2950371965]{\n    background-color: #00000000 !important;\n  }",
       "aistd-hide disclaimer": "div.disclaimer-container.ng-tns-c1318864088-1.ng-star-inserted{\n    display: none !important;\n  }"
