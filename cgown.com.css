@@ -1,0 +1,17 @@
+/* cgown-transparency */
+html, body, nav, header{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* cgown-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* cgown-no footer */
+footer{
+  display: none !important;
+}
