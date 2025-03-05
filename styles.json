@@ -74,6 +74,11 @@
       "appinn-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "appinn-no footer": "footer{\n  display: none !important;\n}"
     },
+    "artbook.top.css": {
+      "artbook-transparency": "html, body, nav, body:not(:has(.actGotop[style=\"display: block;\"])) header, #home, .opus_list, .item_work{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "artbook-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "artbook-no footer": "footer{\n  display: none !important;\n}"
+    },
     "awwwards.com.css": {
       "awwwards-transparency": "html, body, nav, header, .content-header{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "awwwards-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
