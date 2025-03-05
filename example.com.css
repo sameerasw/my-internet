@@ -1,0 +1,17 @@
+/* transparency */
+html, body, nav, #nav, .nav, header, #header, .header, app, #app, .app{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* no footer */
+footer, #footer, .footer{
+  display: none !important;
+}
