@@ -1,4 +1,4 @@
-/* transparency */
+/* ex-forced transparency */
 html, body, nav, #nav, .nav, header, #header, .header, app, #app, .app{
   background-color: transparent !important;
   background: none !important;
@@ -6,12 +6,12 @@ html, body, nav, #nav, .nav, header, #header, .header, app, #app, .app{
   box-shadow: none !important;
 }
 
-/* darkreader */
+/* ex-forced darkreader */
 :root{
   --darkreader-background-ffffff: transparent !important;
 }
 
-/* no footer */
+/* ex-forced no footer */
 footer, #footer, .footer{
   display: none !important;
 }
