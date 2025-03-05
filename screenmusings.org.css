@@ -1,0 +1,17 @@
+/* screenmusings-transparency */
+html, body, nav, header, #thumbnails-container{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* screenmusings-no footer */
+footer{
+  display: none !important;
+}
+
+/* screenmusings-rounded */
+#navigation{
+  border-radius: 1em !important;
+}
