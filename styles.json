@@ -302,6 +302,11 @@
       "gh-border mods": "table, .eIKYQa, div.border-bottom, td{\n  border: none !important;\n}\n\n.dJnomT,.jPdcfu, .gOHzTT, .eBevHz, .Box-header, #repos-sticky-header > div, .jbBkdO{\n  border-radius: 0.5em !important;\n  overflow: hidden;\n}",
       "gh-overlay fixes": "modal-dialog .search-suggestions,details-dialog.Box, .Box-body{\n  background-color: var(--bgColor-inset) !important;\n  border-radius: 1em !important;\n}"
     },
+    "gndown.com.css": {
+      "transparency": "html, body, nav,body:not(.nav-fixed) header, .excerpts-title, .excerpt, .widget-nav, .widget{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
+    },
     "google.com.css": {
       "google-transparecy": "html,\nbody,\ndiv,\nsection,\narticle,\nheader,\nfooter,\nmain,\naside,\nnav,\nspan,\nform,\ninput,\nbutton,\ntable,\ntbody,\ntr,\ntd {\n  background: transparent !important;\n}\n\n.aajZCb {\n  background-color: var(--uv-styles-color-surface) !important;\n}\n\ndiv.sfbg {\n  background-color: var(--darkreader-border-ffffff) !important;\n}\n\n:root {\n  --darkreader-background-ffffff: transparent !important;\n}\n\nbody {\n  background-color: #00000000 !important;\n}\n\n.in7vHe.FR7ZSc.FR7ZSc .niO4u,\ndiv.RNNXgb,\n.aajZCb {\n  background-color: var(--EpFNW) !important;\n}",
       "google-shadows and borders": ".minidiv .sfbg,\n.minidiv .sfbg,\n.JryvJ .qS9jbf,\n.sHEJob,\n.Hwkikb.WY0eLb {\n  box-shadow: none !important;\n  border: none !important;\n}\n\n#sfooter,\n[role=\"contentinfo\"] {\n  display: none !important;\n}\n\n.w6VYqd {\n  background-color: #fff !important;\n}",
