@@ -1,0 +1,5 @@
+/* theonion-transparent */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+  --wp--preset--color--shade-2: transparent !important;
+}
