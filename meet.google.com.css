@@ -1,0 +1,22 @@
+/* meet-transparency */
+html, body, nav, header, [jsname="Jup3Tc"], .c8mVDd, c-wiz, .Sdwpn.P9KVBf, .P9KVBf .dkjMxf, .R3Gmyc, .WUFI9b{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* meet-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* meet-no footer */
+footer, .xDIlIc, .sxAeHb{
+  display: none !important;
+}
+
+/* meet-hidden */
+.XG3Kfe, h1.r3f7Nb, .MZWksc{
+  display: none !important;
+}
