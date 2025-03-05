@@ -1,0 +1,17 @@
+/* sspai-transparency */
+html, body, nav, header, #app, .loadingDiv, #app::after, .ss__custom__header__wrapper[data-v-1cf92778]::after{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* sspai-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* sspai-no footer */
+footer{
+  display: none !important;
+}
