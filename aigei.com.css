@@ -1,0 +1,17 @@
+/* aigei-transparency */
+html, body, nav, header, .main-top-nav, .viewport_container, .comp_index_top_calendar_container, .comp_index_top_work_container, .comp_index_top_copyright_container, .comp_container{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* aigei-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* aigei-no footer */
+footer{
+  display: none !important;
+}
