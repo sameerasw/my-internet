@@ -1,0 +1,9 @@
+/* transparency */
+:root{
+    --background-color-interactive-subtle: transparent !important;
+  }
+  
+  /* no footer */
+  footer{
+    display: none !important;
+  }
