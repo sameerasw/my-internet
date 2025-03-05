@@ -1,0 +1,17 @@
+/* openrouter-transparency */
+html, body, nav, header, .bg-background, .bg-popover:has([aria-controls="search-command-list"]), .to-background{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* openrouter-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* openrouter-no footer */
+footer, hr{
+  display: none !important;
+}
