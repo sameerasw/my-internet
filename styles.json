@@ -558,6 +558,11 @@
     "sameerasw.com.css": {
       "sameerasw-transprecy": ":root {\n  --background-color-primary: #00000000 !important;\n}"
     },
+    "screenmusings.org.css": {
+      "screenmusings-transparency": "html, body, nav, header, #thumbnails-container{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "screenmusings-no footer": "footer{\n  display: none !important;\n}",
+      "screenmusings-rounded": "#navigation{\n  border-radius: 1em !important;\n}"
+    },
     "search.brave.com.css": {
       "brave-transparecy": ":root{\n  --color-page-background: transparent !important;\n}",
       "brave-no, thank you": "div.download-cta.svelte-1avqjm8 {\n  display: none  !important;\n}"
