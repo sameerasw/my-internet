@@ -1,0 +1,17 @@
+/* stats.fm-transparency */
+html, body, nav, header, .font-body > .bg-foreground, p.bg-background{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* no footer */
+footer{
+  display: none !important;
+}
