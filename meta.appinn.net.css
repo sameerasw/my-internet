@@ -1,0 +1,17 @@
+/* appinn-transparency */
+html, body, nav, header, .sidebar-wrapper, .sidebar-footer-wrapper{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* appinn-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* appinn-no footer */
+footer{
+  display: none !important;
+}
