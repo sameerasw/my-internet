@@ -1,0 +1,12 @@
+/* translate-transparency */
+html, body, nav, header, .ccvoYb, .QcsUad, [jsname="HexNre"]::after, [jsname="ji7Qmb"]::after, nav.U0xwnf::after, c-wiz{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* translate-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
