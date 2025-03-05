@@ -658,6 +658,9 @@
       "ted-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "ted-no footer": "footer{\n  display: none !important;\n}"
     },
+    "theonion.com.css": {
+      "theonion-transparent": ":root{\n  --darkreader-background-ffffff: transparent !important;\n  --wp--preset--color--shade-2: transparent !important;\n}"
+    },
     "threads.net.css": {
       "threads-transparency": "html, body, .x1g7m7fl, #barcelona-page-layout, .x1ggkfyp, .x3ir7cq, .xz401s1, .xzii09s{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n.x9f619 *{\n  border: none !important;\n}",
       "threads-overlay fixes": "[role=\"menu\"] > div > div, [role=\"dialog\"] > div > div{\n  background-color: var(--nav-bar-background) !important;\n  border-radius: 1em !important;\n}",
