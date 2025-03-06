@@ -1,0 +1,21 @@
+/* gitlab-transparency */
+html, body, nav, header, [data-testid="top-bar"], .gl-bg-subtle, table{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* gitlab-no footer */
+footer{
+  display: none !important;
+}
+
+/* gitlab-hover */
+#super-sidebar{
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
+}
