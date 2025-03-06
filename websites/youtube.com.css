@@ -116,7 +116,7 @@ ytd-app #content{
   transition: opacity 0.4s ease-in-out 0.3s !important;
 }
 ytd-app:has(#video-preview-container:hover) #content{
-  opacity: 0.5;
+  opacity: 0.5 !important;
 }
 
 /* yt-no feed distractions */
