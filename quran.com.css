@@ -1,0 +1,22 @@
+/* quran-transparency */
+html, body, nav, header, .NavbarBody_itemsContainer__l6N_R, .HomePageHero_backgroundImage__BUFE_, .index_bodyContainer__CKN6o, .QuranReader_container__BlSji, .ContextMenu_sectionsContainer__FQqlA, .ContextMenu_container__4zfsC{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* quran-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* quran-no footer */
+footer{
+  display: none !important;
+}
+
+/* quran-no bg */
+.HomePageHero_backgroundImage__BUFE_ svg{
+  display: none !important;
+}
