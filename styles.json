@@ -568,6 +568,12 @@
       "quora-transparecy": "body,\n.q-color-mode--dark .qu-borderColor--raised {\n  background-color: transparent !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "quora-other changes": ".qu-borderRadius--small {\n  border-radius: 1em !important;\n}\n\ndiv.q-box.qu-py--small.qu-color--gray_light {\n  display: none !important;\n}"
     },
+    "quran.com.css": {
+      "quran-transparency": "html, body, nav, header, .NavbarBody_itemsContainer__l6N_R, .HomePageHero_backgroundImage__BUFE_, .index_bodyContainer__CKN6o, .QuranReader_container__BlSji, .ContextMenu_sectionsContainer__FQqlA, .ContextMenu_container__4zfsC{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "quran-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "quran-no footer": "footer{\n  display: none !important;\n}",
+      "quran-no bg": ".HomePageHero_backgroundImage__BUFE_ svg{\n  display: none !important;\n}"
+    },
     "rebang.today.css": {
       "rebang-transparency": "html, body, nav, header, #root > div, .dark .dark\\:bg-primaryDark-200, .bg-primary-200{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "rebang-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
