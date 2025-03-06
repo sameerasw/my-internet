@@ -7,6 +7,12 @@
       "aliexpress-sticky header": "#_full_container_header_23_{\n  border-radius: 1em !important;\n}",
       "aliexpress-borders": "[data-spm=\"sale_banner\"]{\n  border-radius: 1em !important;\n  overflow: hidden !important;\n  margin: 1em !important;\n}\n\na._1UZxx{\n  border-radius: 2em !important;\n  padding: 1em !important;"
     },
+    "+itch.io.css": {
+      "itch-transparency": "html, body, nav, header, .index_sidebar, #maincontent, .primary_header, .anon_intro{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "itch-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "itch-no footer": ".footer{\n  display: none !important;\n}",
+      "itch-no game bg": "#wrapper, #wrapper > #inner_column{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}"
+    },
     "+namecheap.com.css": {
       "namecheap-transparency": "html, body, #header, nav, #header .top-hat, #apnav li, th, td, .gb-header, .gb-top-block, .uiexpiringsoon .nav-tabs, .tab-list, li.tab{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "namecheap-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
