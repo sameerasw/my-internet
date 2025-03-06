@@ -1,4 +1,4 @@
-/* feedly-transparency */
+/* feedly-Transparency */
 html, body, nav, header, .FeedlyChrome, #feedlyFrame, #headerBarFX, .TopHeaderBar, .LeftnavEmptySpace{
   background-color: transparent !important;
   background: none !important;
@@ -6,7 +6,7 @@ html, body, nav, header, .FeedlyChrome, #feedlyFrame, #headerBarFX, .TopHeaderBa
   box-shadow: none !important;
 }
 
-/* feedly-no thanks */
+/* feedly-No thanks */
 .TZCVJGAQJfvz8bV8MrrA{
   display: none !important;
 }
