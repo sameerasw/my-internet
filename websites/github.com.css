@@ -1,10 +1,11 @@
 /* gh-transparency */
-html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folders-and-files"] .bgColor-muted, nav, .dxnHPp, .kcVpNH, .discussion-timeline-actions, .TimelineItem-break, .gh-header, .PageLayout-pane, .bSTcOH, .gOhIYN, #blob-edit-side-panel-id, #repository-container-header{
+html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folders-and-files"] .bgColor-muted, nav, .dxnHPp, .kcVpNH, .discussion-timeline-actions, .TimelineItem-break, .gh-header, .PageLayout-pane, .bSTcOH, .gOhIYN, #blob-edit-side-panel-id, #repository-container-header, #notification-shelf:not(.is-stuck), #user-profile-frame .Box-body{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
 }
+
 /* gh-transparent lists */
  .PageLayout-content .Box, .PageLayout-content .Box-row, #repo-content-turbo-frame .Box{
   background-color: transparent !important;
