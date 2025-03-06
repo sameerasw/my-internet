@@ -1,5 +1,5 @@
 /* arstechnica-transparency */
-html, body, nav, header, header > div{
+html, body, nav, header, header > div, div.dusk\:bg-gray-700:nth-child(4), article > div{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
