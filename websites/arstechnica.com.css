@@ -1,0 +1,17 @@
+/* arstechnica-transparency */
+html, body, nav, header, header > div{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* arstechnica-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* arstechnica-no footer */
+footer{
+  display: none !important;
+}
