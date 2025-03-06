@@ -1,0 +1,17 @@
+/* ghacks-transparency */
+html, body, nav, header, .ghacks-header div, section, .home-latest-artitles, .home-popular-posts{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* ghacks-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* ghacks-no footer */
+footer{
+  display: none !important;
+}
