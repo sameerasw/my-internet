@@ -22,6 +22,11 @@
       "pin-transparecy": ":root {\n  --color-background-box-light: transparent !important;\n  --color-background-box-default: transparent !important;\n}\n\n.mainContainer\n  > div:nth-child(1)\n  > div:nth-child(3)\n  > div:nth-child(1)\n  > div:nth-child(2)\n  > div:nth-child(1) {\n  background-color: transparent !important;\n}",
       "pin-text color": "body,\n#VerticalNavContent {\n  color: #fff !important;\n  fill: #fff !important;\n}\n\n#VerticalNavContent {\n  filter: invert() !important;\n  border: none !important;\n}"
     },
+    "+sharepoint.com.css": {
+      "sharepoint-transparency": "html, body, nav, header, [data-automationid=\"spartan-od-app-container\"], #odList, [data-automationid=\"row-header\"], [role=\"row\"], .odsp-spartan-cell{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  border-image: none !important;\n}",
+      "sharepoint-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "sharepoint-no footer": "footer{\n  display: none !important;\n}"
+    },
     "+wikipedia.org.css": {
       "transparency": ":root{\n  --background-color-interactive-subtle: transparent !important;\n}\n\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
