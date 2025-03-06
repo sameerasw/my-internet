@@ -1,0 +1,28 @@
+/* reverso-transparency */
+html, body, nav, header, app-new-top-bar-desktop, .translation-box, .logo-wrapper{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* reverso-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* reverso-no footer */
+footer{
+  display: none !important;
+}
+
+/* reverso-no thanks */
+app-ab-double-banner, app-premium-banner, app-features-promotion{
+  display: none !important;
+}
+
+/* reverso-card transparency */
+.translation-box-wrapper{
+  background-color: transparent !important;
+  border: 1px solid gray;
+}
