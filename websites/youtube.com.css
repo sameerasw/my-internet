@@ -71,6 +71,11 @@ ytd-rich-item-renderer{
   }
 }
 
+#inline-preview-player, #video-preview-container:has(#inline-preview-player){
+  border-radius: 1.2em !important;
+  overflow: hidden !important;
+}
+
 ytd-rich-grid-media {
   border-radius: 1.2em;
     height: 100%!important;
