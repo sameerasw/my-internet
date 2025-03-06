@@ -1,0 +1,12 @@
+/* feedly-transparency */
+html, body, nav, header, .FeedlyChrome, #feedlyFrame, #headerBarFX, .TopHeaderBar, .LeftnavEmptySpace{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* feedly-no thanks */
+.TZCVJGAQJfvz8bV8MrrA{
+  display: none !important;
+}
