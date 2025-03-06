@@ -1,0 +1,25 @@
+/* itch-transparency */
+html, body, nav, header, .index_sidebar, #maincontent, .primary_header, .anon_intro{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* itch-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* itch-no footer */
+.footer{
+  display: none !important;
+}
+
+/* itch-no game bg */
+#wrapper, #wrapper > #inner_column{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
