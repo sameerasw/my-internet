@@ -1,0 +1,18 @@
+/* sharepoint-transparency */
+html, body, nav, header, [data-automationid="spartan-od-app-container"], #odList, [data-automationid="row-header"], [role="row"], .odsp-spartan-cell{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-image: none !important;
+}
+
+/* sharepoint-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* sharepoint-no footer */
+footer{
+  display: none !important;
+}
