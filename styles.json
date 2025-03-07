@@ -847,6 +847,11 @@
       "steam-transparency": "html, body, nav, header, #global_header, .content, .tab_container, #content_login, .game_page_background.game{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "steam-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "steam-no footer": "footer{\n  display: none !important;\n}"
+    },
+    "steamcommunity.com.css": {
+      "steamcom-transparency": "html, body, nav, header, #global_header, .content, .tab_container, #content_login, .game_page_background.game, .apphub_background{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "steamcom-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "steamcom-no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
