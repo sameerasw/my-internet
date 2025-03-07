@@ -32,11 +32,12 @@ jobs:
 
     - name: Create Pre-Release
       id: create_pre_release
-      uses: octokit/request-action@v2.x
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        route: POST /repos/${{ github.repository }}/releases
-        release_name: "Pre-Release ${{ github.sha }}"
         tag_name: "pre-release-${{ github.sha }}"
+        release_name: "Pre-Release ${{ github.sha }}"
         body: |
           Pre-release for commit ${{ github.sha }}
 
@@ -44,7 +45,3 @@ jobs:
           ${{ steps.read_diff.outputs.diff }}
         draft: true
         prerelease: true
-        files: |
-          userChrome.css
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
