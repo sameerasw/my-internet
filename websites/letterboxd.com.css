@@ -1,0 +1,50 @@
+/* lb-Transparency */
+body, .site-body, footer {
+  background: transparent !important;
+}
+.backdropped .site-header .site-header-bg {
+  background-image: none !important;
+}
+
+/* lb-Better-Text-Color */
+p {
+  color: #a0b0be !important;
+}
+
+/* lb-Hide-Footer */
+footer {
+  display: none !important;
+}
+
+/* lb-Fade-Background-Image */ 
+.backdropimage {
+  -webkit-mask-image: 
+    linear-gradient(90deg,rgba(0,0,0,1) 50%, rgba(0,0,0,0) 95%),
+    linear-gradient(180deg,rgba(0,0,0,1) 50%, rgba(0,0,0,0) 95%),
+    linear-gradient(270deg,rgba(0,0,0,1) 50%, rgba(0,0,0,0) 95%) !important;
+  -webkit-mask-composite: intersect !important;
+  mask-image: 
+    linear-gradient(90deg,rgba(0,0,0,1) 50%, rgba(0,0,0,0) 95%),
+    linear-gradient(180deg,rgba(0,0,0,1) 50%, rgba(0,0,0,0) 95%),
+    linear-gradient(270deg,rgba(0,0,0,1) 50%, rgba(0,0,0,0) 95%) !important;
+  mask-composite: intersect !important;
+}
+.backdrop-wrapper .backdropmask::before {
+  background-image: none !important;
+}
+
+/* lb-Actions-Panel-Transparency */
+.actions-panel ul li {
+	background: transparent !important;
+	background-color: transparent !important;
+}
+
+/* lb-Actions-Panel-Borders */
+.actions-panel ul li {
+	border: none !important;
+}
+
+/* lb-Hide-Watch-Panel */
+.watch-panel {
+	display: none !important;
+}
