@@ -282,15 +282,11 @@ findbar {
 /* empty tab image */
 #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack{
   
-  /* âT */
   /* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
 
   /* zen logo	*/
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Zen_Browser_logo_%28red_circles%29.svg") !important;
 
-  /* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
-  /* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
-  /* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: 50px !important;
