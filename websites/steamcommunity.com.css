@@ -1,0 +1,17 @@
+/* steamcom-transparency */
+html, body, nav, header, #global_header, .content, .tab_container, #content_login, .game_page_background.game, .apphub_background{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* steamcom-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* steamcom-no footer */
+footer{
+  display: none !important;
+}
