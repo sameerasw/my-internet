@@ -1,0 +1,40 @@
+name: Create Pre-Release on userChrome.css Commit
+
+on:
+  push:
+    paths:
+      - "userChrome.css"
+  workflow_dispatch:
+
+jobs:
+  create_pre_release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Calculate Diff
+      id: diff
+      run: git diff HEAD^ HEAD -- userChrome.css > diff.txt
+
+    - name: Read Diff
+      id: read_diff
+      run: echo "::set-output name=diff::$(cat diff.txt)"
+
+    - name: Create Pre-Release
+      id: create_pre_release
+      uses: octokit/request-action@v2.x
+      with:
+        route: POST /repos/${{ github.repository }}/releases
+        release_name: "Pre-Release ${{ github.sha }}"
+        tag_name: "pre-release-${{ github.sha }}"
+        body: |
+          Pre-release for commit ${{ github.sha }}
+
+          Changes in userChrome.css:
+          ${{ steps.read_diff.outputs.diff }}
+        draft: true
+        prerelease: true
+        files: |
+          userChrome.css
