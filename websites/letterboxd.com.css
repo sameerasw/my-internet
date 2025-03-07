@@ -2,6 +2,9 @@
 body, .site-body, footer {
   background: transparent !important;
 }
+.backdropped .site-header .site-header-bg {
+  background-image: none !important;
+}
 
 /* lb-Better-Text-Color */
 p {
