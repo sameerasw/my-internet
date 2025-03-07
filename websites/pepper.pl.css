@@ -1,0 +1,5 @@
+/* transparent pepper.pl */
+:root{
+  --bgBasePrimary: transparent !important;
+  --bgBaseSecondary: transparent !important;
+}
