@@ -832,6 +832,11 @@
       "lb-Actions-Panel-Transparency": ".actions-panel ul li {\n\tbackground: transparent !important;\n\tbackground-color: transparent !important;\n}",
       "lb-Actions-Panel-Borders": ".actions-panel ul li {\n\tborder: none !important;\n}",
       "lb-Hide-Watch-Panel": ".watch-panel {\n\tdisplay: none !important;\n}"
+    },
+    "tagesschau.de.css": {
+      "tagesschau-transparency": "html, body, nav, header, .teasergroup, .teaser__teaserinfo, .teaser, .background-standard, .timeline, .trenner, .content-wrapper__group, p{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\nheader:has(.is-visible)  .header__items{\n  background-color: transparent !important;\n}",
+      "tagesschau-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "tagesschau-no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
