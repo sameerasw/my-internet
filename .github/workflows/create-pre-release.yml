@@ -43,5 +43,7 @@ jobs:
 
           Changes in userChrome.css:
           ${{ steps.read_diff.outputs.diff }}
-        draft: true
+        draft: false
         prerelease: true
+        files: userChrome.css
+        make_latest: true
