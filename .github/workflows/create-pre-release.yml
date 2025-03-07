@@ -1,4 +1,4 @@
-name: Create Pre-Release on userChrome.css Commit
+name: userChrome.css update
 
 on:
   push:
@@ -16,7 +16,15 @@ jobs:
 
     - name: Calculate Diff
       id: diff
-      run: git diff HEAD^ HEAD -- userChrome.css > diff.txt
+      run: |
+        if [ $(git rev-parse --is-shallow-repository) = true ]; then
+          git fetch --unshallow
+        fi
+        if [ $(git rev-list --count HEAD) -gt 1 ]; then
+          git diff HEAD^ HEAD -- userChrome.css > diff.txt
+        else
+          echo "No previous commit to compare." > diff.txt
+        fi
 
     - name: Read Diff
       id: read_diff
