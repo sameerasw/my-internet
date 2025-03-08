@@ -1,0 +1,22 @@
+/* gplay-transparency */
+html, body, nav, header, .Usd1Ac:has([jscontroller="tKHFxf"]){
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* gplay-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* gplay-no footer */
+footer{
+  display: none !important;
+}
+
+/* gplay-app rounded banner */
+.dzkqwc:has(c-wiz){
+  border-radius: 2em !important;
+}
