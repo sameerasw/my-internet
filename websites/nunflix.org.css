@@ -1,5 +1,5 @@
 /* nunflix-transparency */
-html, body, nav, header{
+html, body, nav, header, .video-player-page{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
