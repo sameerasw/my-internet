@@ -1,0 +1,17 @@
+/* dictionary-transparency */
+html, body, nav, header, #header-hero, .bh, .bpb, .bw{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* dictionary-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* dictionary-no footer */
+footer{
+  display: none !important;
+}
