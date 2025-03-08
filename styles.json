@@ -944,6 +944,11 @@
       "forbes-transparency": "html, body, nav, header, .main-content, .happening-now, .fbs-slider__slide::before, .for-you-card, .fbs-slider__slides-wrapper::after{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "forbes-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "forbes-no footer": "footer, hr{\n  display: none !important;\n}"
+    },
+    "vimeo.com.css": {
+      "vimeo-transparency": "html, body, nav, header, [data-vh-view=\"vh-player-view\"], main, .css-1y8xpa1, .css-1w6eqkf{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "vimeo-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "vimeo-no footer": "footer, .css-dzwbth{\n  display: none !important;\n}"
     }
   }
 }
