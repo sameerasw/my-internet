@@ -1,0 +1,12 @@
+/* python-transparency */
+html, body, nav, header, [role="navigation"], #sidebarbutton{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* python-no footer */
+footer{
+  display: none !important;
+}
