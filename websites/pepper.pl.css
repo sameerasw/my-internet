@@ -2,4 +2,9 @@
 :root{
   --bgBasePrimary: transparent !important;
   --bgBaseSecondary: transparent !important;
+  --bgBaseTertiary: transparent !important;
+  --bgNeutralPrimary: transparent !important;
+}
+.footer{
+  background-color: transparent !important;
 }
