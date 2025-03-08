@@ -954,6 +954,9 @@
       "transparency": "html, body, nav, header, .Frame_wrap_3g67Q, .LoginTopNav_box_271MN, .woo-panel-main{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n.Index_top_3Tw6o{\n  background-color: var(--w-retweet-background) !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "rumble.com.css": {
+      "rumble-transparency": "html, body, nav, header, main, #main-menu, .homepage-featured, .homepage-featured--left, .homepage-featured--right,  .media-page-related-media-desktop-sidebar, .mediaList-list.related, div.media-description-section, .content, .videoPlayer-Rumble-cls, #vid_v6o3erg > div:nth-child(1){\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}"
     }
   }
 }
