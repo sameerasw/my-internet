@@ -21,7 +21,7 @@ body:has(.persistent-player--theatre){
   }
 }
 
-.highlight{
+.highlight, .chat-input-tray__open{
   background-color: var(--color-background-input-checkbox-checked-background) !important;
 }
 
