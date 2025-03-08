@@ -58,7 +58,7 @@ div.RNNXgb,
 }
 
 .w6VYqd {
-  background-color: #fff !important;
+  background-color: light-dark(#fff, #000) !important;
 }
 
 /* google-hover */
@@ -79,4 +79,11 @@ div.RNNXgb,
 #liveresults-sports-immersive__match-fullpage  .nGzje{
   background-color: var(--uv-styles-color-footer) !important;
   border-radius: 2em !important;
+}
+
+/* google-maps */
+html:has([title="Google Maps"]){
+.xoLGzf, .tXNTee, .hdeJwf, .DAdBuc, .E9Z7uf .m6QErb.iS1Ot, .ztgaDb, .WzvKIe{
+  background: light-dark(#fff, #000) !important;
+}
 }
