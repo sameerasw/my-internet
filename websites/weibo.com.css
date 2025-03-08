@@ -1,0 +1,22 @@
+/* transparency */
+html, body, nav, header, .Frame_wrap_3g67Q, .LoginTopNav_box_271MN, .woo-panel-main{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.Index_top_3Tw6o{
+  background-color: var(--w-retweet-background) !important;
+}
+
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* no footer */
+footer{
+  display: none !important;
+}
+
