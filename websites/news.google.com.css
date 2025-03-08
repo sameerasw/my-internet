@@ -1,0 +1,24 @@
+/* news-transparency */
+html, body, nav, header, c-wiz, .dm7YTc .isdDAc, .KDoq1, hr, .dSBEqc, .qN9IM, [aria-label="Scroll chips forward"], [aria-label="Scroll chips backward"], .dm7YTc .nTN4Wc, [jsname="fjw8sb"], div.nTN4Wc, .Z2kkN{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.dm7YTc .Ly25Ed, .dm7YTc .Z2kkN, .sQBzPb, .ryo59b, .i0Zvib, .ndIcDe, .Ly25Ed, .isdDAc{
+  background-color: transparent !important;
+  border: solid light-dark(#000, #fff) 1px !important;
+}
+
+[role="menubar"]{
+  background-color: light-dark(#fff, #444) !important;
+  div:not([aria-selected="true"]) a {color: light-dark(#000,#fff) !important;}
+  border-radius: 5em;
+  margin-top: 0 !important;
+}
+
+/* news-weather fix */
+[jsname="sYlLx"]:has([aria-hidden="true"]){
+  opacity: 0 !important;
+}
