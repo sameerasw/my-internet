@@ -38,13 +38,13 @@ body #masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){
   }
 }
 
+:root{
+  --ytd-toolbar-height: 0px !important;
+}
+
 /* yt-no voice search */
 #voice-search-button{
   display: none !important;
-}
-
-:root{
-  --ytd-toolbar-height: 0px !important;
 }
 
 #chips-wrapper{

@@ -1,0 +1,21 @@
+/* tagesschau-transparency */
+html, body, nav, header, .teasergroup, .teaser__teaserinfo, .teaser, .background-standard, .timeline, .trenner, .content-wrapper__group, p{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+header:has(.is-visible)  .header__items{
+  background-color: transparent !important;
+}
+
+/* tagesschau-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* tagesschau-no footer */
+footer{
+  display: none !important;
+}
