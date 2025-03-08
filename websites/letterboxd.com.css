@@ -1,5 +1,5 @@
 /* lb-Transparency */
-body, .site-body, footer, .journal-header, .journal-page-header, .page-body, .journal-page-section.latest-articles .article-summary-grid.-medium::before, .journal-page-section.home-feature, body.editorial .page-bg {
+body, .site-body, footer, .journal-header, .journal-page-header, .page-body, .journal-page-section.latest-articles .article-summary-grid.-medium::before, .journal-page-section.home-feature, body.editorial .page-bg, .journal-page-header + .article-hero::before {
   background: transparent !important;
 }
 .backdropped .site-header .site-header-bg {
