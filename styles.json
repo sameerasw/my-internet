@@ -872,6 +872,11 @@
     "docs.python.org.css": {
       "python-transparency": "html, body, nav, header, [role=\"navigation\"], #sidebarbutton{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "python-no footer": "footer{\n  display: none !important;\n}"
+    },
+    "rutracker.org.css": {
+      "rutracker-transparency": "html, body, nav, header, #body_container, #page_container, #main-nav, .topmenu, h3, .news_title, td, .sb2-block{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "rutracker-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "rutracker-no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
