@@ -887,6 +887,12 @@
       "bundesliga-transparency": "html, body, nav, header, .tile__match, .tile__epg, .teaser, dfl-editorial-teaser, .partnerbar, .row{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "bundesliga-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "bundesliga-no footer": "footer{\n  display: none !important;\n}"
+    },
+    "amazon.com.css": {
+      "amazon-transparency": "html, body, nav, header, #nav-belt, #nav-main, #pageContent, .a-cardui, .image-shoveler, .a-section, #dp, #nav-progressive-subnav, #nav-subnav{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "amazon-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "amazon-no footer": "footer, #navFooter,hr{\n  display: none !important;\n}",
+      "amazon-hidden": "#desktop-banner, #desktop-banner-stripe{\n  display: none !important;\n}"
     }
   }
 }
