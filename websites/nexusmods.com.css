@@ -1,0 +1,7 @@
+/* nexusmods-transparency */
+html, body, nav, header, ::before, .home-intro, .collections-banner-wrapper, .static .wrap, .modtabs{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
