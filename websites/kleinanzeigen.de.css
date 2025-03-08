@@ -1,0 +1,17 @@
+/* kleinanzeigen-transparency */
+html, body, nav, header, #site-header-top, .site-base, .ka-site-header, .surface, li, .tilesbox-featured, .tilesbox, .contentbox--vip, .splitlinebox{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* kleinanzeigen-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* kleinanzeigen-no footer */
+footer{
+  display: none !important;
+}
