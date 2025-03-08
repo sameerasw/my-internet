@@ -1,0 +1,27 @@
+/* notebooklm-transparency */
+html, body, nav, header, welcome-page, notebook{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+/* notebooklm-no card bg */
+section{
+  background-color: transparent !important;
+}
+
+omnibar, .panel-header{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* notebooklm-card borders */
+
+section{
+  background-color: transparent !important;
+  border: solid light-dark(#999,#444) 1px !important; 
+}
