@@ -1,0 +1,5 @@
+/* transparent gg.deals */
+html, body, .footer-wrapper {
+  background-color: transparent !important;
+  background: none !important;
+}
