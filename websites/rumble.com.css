@@ -1,0 +1,7 @@
+/* rumble-transparency */
+html, body, nav, header, main, #main-menu, .homepage-featured, .homepage-featured--left, .homepage-featured--right,  .media-page-related-media-desktop-sidebar, .mediaList-list.related, div.media-description-section, .content, .videoPlayer-Rumble-cls, #vid_v6o3erg > div:nth-child(1){
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
