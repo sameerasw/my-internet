@@ -1,0 +1,22 @@
+/* amazon-transparency */
+html, body, nav, header, #nav-belt, #nav-main, #pageContent, .a-cardui, .image-shoveler, .a-section, #dp, #nav-progressive-subnav, #nav-subnav{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* amazon-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* amazon-no footer */
+footer, #navFooter,hr{
+  display: none !important;
+}
+
+/* amazon-hidden */
+#desktop-banner, #desktop-banner-stripe{
+  display: none !important;
+}
