@@ -917,6 +917,11 @@
     },
     "nexusmods.com.css": {
       "nexusmods-transparency": "html, body, nav, header, ::before, .home-intro, .collections-banner-wrapper, .static .wrap, .modtabs{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}"
+    },
+    "notebooklm.google.com.css": {
+      "notebooklm-transparency": "html, body, nav, header, welcome-page, notebook{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "notebooklm-no card bg": "section{\n  background-color: transparent !important;\n}\n\nomnibar, .panel-header{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "notebooklm-card borders": "section{\n  background-color: transparent !important;\n  border: solid light-dark(#999,#444) 1px !important; \n}"
     }
   }
 }
