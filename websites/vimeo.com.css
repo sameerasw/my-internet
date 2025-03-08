@@ -1,0 +1,17 @@
+/* vimeo-transparency */
+html, body, nav, header, [data-vh-view="vh-player-view"], main, .css-1y8xpa1, .css-1w6eqkf{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* vimeo-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* vimeo-no footer */
+footer, .css-dzwbth{
+  display: none !important;
+}
