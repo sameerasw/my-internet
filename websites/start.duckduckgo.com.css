@@ -1,0 +1,12 @@
+/* transparency */
+html, body, nav, header, main{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* no footer */
+footer, div.center_root___q8wn:nth-child(2){
+  display: none !important;
+}
