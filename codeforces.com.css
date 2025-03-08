@@ -1,0 +1,9 @@
+/* transparency */
+:root{
+--colorBgapp: transparent !important;
+  }
+  
+  /* no footer */
+  footer{
+    display: none !important;
+  }
