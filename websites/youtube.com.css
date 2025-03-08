@@ -69,9 +69,8 @@ ytd-rich-item-renderer{
     flex-direction: row !important;
 
     #metadata-line span:nth-child(3) {
-      width: 2em !important;
       height: 1em !important;
-      margin-left: 0.5em !important;
+      margin-left: 1em !important;
     }
   }
 }
