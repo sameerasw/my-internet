@@ -6,17 +6,17 @@ body, .site-body, footer {
   background-image: none !important;
 }
 
-/* lb-Better-Text-Color */
+/* lb-Better Text Color */
 p {
   color: #a0b0be !important;
 }
 
-/* lb-Hide-Footer */
+/* lb-Hide Footer */
 footer {
   display: none !important;
 }
 
-/* lb-Fade-Background-Image */ 
+/* lb-Fade Background Image */ 
 .backdropimage {
   -webkit-mask-image: 
     linear-gradient(90deg,rgba(0,0,0,1) 50%, rgba(0,0,0,0) 95%),
@@ -33,18 +33,18 @@ footer {
   background-image: none !important;
 }
 
-/* lb-Actions-Panel-Transparency */
+/* lb-Actions Panel Transparency */
 .actions-panel ul li {
 	background: transparent !important;
 	background-color: transparent !important;
 }
 
-/* lb-Actions-Panel-Borders */
+/* lb-Actions Panel Borders */
 .actions-panel ul li {
 	border: none !important;
 }
 
-/* lb-Hide-Watch-Panel */
+/* lb-Hide Watch Panel */
 .watch-panel {
 	display: none !important;
 }
