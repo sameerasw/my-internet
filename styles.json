@@ -858,6 +858,9 @@
     },
     "pepper.pl.css": {
       "transparent pepper.pl": ":root{\n  --bgBasePrimary: transparent !important;\n  --bgBaseSecondary: transparent !important;\n}"
+    },
+    "gg.deals.css": {
+      "transparent gg.deals": "html, body, .footer-wrapper {\n  background-color: transparent !important;\n  background: none !important;\n}"
     }
   }
 }
