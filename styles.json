@@ -910,6 +910,10 @@
       "kleinanzeigen-transparency": "html, body, nav, header, #site-header-top, .site-base, .ka-site-header, .surface, li, .tilesbox-featured, .tilesbox, .contentbox--vip, .splitlinebox{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "kleinanzeigen-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "kleinanzeigen-no footer": "footer{\n  display: none !important;\n}"
+    },
+    "news.google.com.css": {
+      "news-transparency": "html, body, nav, header, c-wiz, .dm7YTc .isdDAc, .KDoq1, hr, .dSBEqc, .qN9IM, [aria-label=\"Scroll chips forward\"], [aria-label=\"Scroll chips backward\"], .dm7YTc .nTN4Wc, [jsname=\"fjw8sb\"], div.nTN4Wc, .Z2kkN{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n.dm7YTc .Ly25Ed, .dm7YTc .Z2kkN, .sQBzPb, .ryo59b, .i0Zvib, .ndIcDe, .Ly25Ed, .isdDAc{\n  background-color: transparent !important;\n  border: solid light-dark(#000, #fff) 1px !important;\n}\n\n[role=\"menubar\"]{\n  background-color: light-dark(#fff, #444) !important;\n  div:not([aria-selected=\"true\"]) a {color: light-dark(#000,#fff) !important;}\n  border-radius: 5em;\n  margin-top: 0 !important;\n}",
+      "news-weather fix": "[jsname=\"sYlLx\"]:has([aria-hidden=\"true\"]){\n  opacity: 0 !important;\n}"
     }
   }
 }
