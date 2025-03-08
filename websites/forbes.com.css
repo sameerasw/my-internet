@@ -1,0 +1,17 @@
+/* forbes-transparency */
+html, body, nav, header, .main-content, .happening-now, .fbs-slider__slide::before, .for-you-card, .fbs-slider__slides-wrapper::after{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* forbes-darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* forbes-no footer */
+footer, hr{
+  display: none !important;
+}
