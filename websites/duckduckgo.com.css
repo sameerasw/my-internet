@@ -1,5 +1,5 @@
 /* ddg-transparecy */
-html, body, .desktop-homepage_root__Ikj1_, .site-wrapper, .metabar:not(.is-stuck), .tileview--grid .metabar--fixed::before, #zci-images, .zci-wrap, #zci-videos{
+html, body, .desktop-homepage_root__Ikj1_, .site-wrapper, .metabar:not(.is-stuck), .tileview--grid .metabar--fixed::before, #zci-images, .zci-wrap, #zci-videos, main{
   background-color: transparent !important;
 }
 
@@ -13,11 +13,6 @@ html, body, .desktop-homepage_root__Ikj1_, .site-wrapper, .metabar:not(.is-stuck
   display: none;
 }
 
-/* ddg-centered search */
-.is-not-mobile-devicem, .container_root__Ycg94, .header_header__w2BOs, .header_headerContent__LYxh6{
-  height: 100vh !important;
-  margin: auto inherit;
-}
 
 /* ddg-no footer */
 .footer{
