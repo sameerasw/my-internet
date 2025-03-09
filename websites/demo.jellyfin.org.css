@@ -1,0 +1,7 @@
+/* jellyfin-transparency */
+html, body, nav, header, .backgroundContainer, .skinHeader{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
