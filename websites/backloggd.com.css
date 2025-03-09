@@ -11,7 +11,6 @@ footer,
   --back-highlight: rgba(0, 0, 0, 0) !important;
 }
 
-/* bkl-navbar*/
 .navbar {
   border-bottom: none !important;
   border-bottom: none !important;
@@ -20,6 +19,14 @@ footer,
 #primary-nav.hide-border #nav-bar-search,
 #primary-nav.hide-border .search-btn {
   border-width: 0px !important;
+}
+
+.modal-search .search-btn,
+.navbar .search-btn,
+.modal-search .search-bar,
+.navbar .search-bar,
+.btn-general {
+  background-color: #00000000 !important;
 }
 
 /* bkl-no footer */
