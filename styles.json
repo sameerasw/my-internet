@@ -955,6 +955,9 @@
     "backloggd.com.css": {
       "bkl-transparency": ":root {\n  --back-primary: #00000000 !important;\n  --back-secondary: #00000000 !important;\n  --back-highlight: rgba(0, 0, 0, 0) !important;\n  --back-field: #00000000 !important;\n  --back-field-highlight: #0001041c !important;\n}",
       "bkl-no footer": "footer {\n  display: none !important;\n}"
+    },
+    "docs.zen-browser.app.css": {
+      "zdocs-transparency": "html, body, nav, header, .page .center, .overflow::after{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}"
     }
   }
 }
