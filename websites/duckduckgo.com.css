@@ -5,14 +5,13 @@ html, body, .desktop-homepage_root__Ikj1_, .site-wrapper, .metabar:not(.is-stuck
 
 /* ddg-hidden promo */
 .desktop-homepage_heroContent__4HUFA{
-  display: none;
+  display: none !important;
 }
 
 /* ddg-no home scroll */
 .homepage-cta-section_scrollCta__Wmixn, #features{
-  display: none;
+  display: none !important;
 }
-
 
 /* ddg-no footer */
 .footer{
