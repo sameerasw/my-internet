@@ -1,0 +1,46 @@
+/* anili-transparency */
+html,
+body {
+  background-color: transparent !important;
+}
+
+.container,
+.content,
+.wrapper,
+.main,
+.sidebar,
+.header,
+.footer,
+.card,
+.box {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+:root {
+  --color-foreground: #00000000 !important;
+  --color-foreground-grey: #00000000 !important;
+}
+
+.media-card[data-v-70df6e62] {
+  background: #00000000 !important;
+  box-shadow: none !important;
+}
+
+.site-theme-dark {
+  --color-foreground: #00000000 !important;
+}
+
+.search[data-v-219025ae] {
+  background: #00000000 !important;
+}
+
+/* anili-nav bar transparency */
+.transparent[data-v-62eacfff] {
+  background: #00000000 !important;
+  color: #fffffff0 !important;
+}
+
+/* anili-no footer */
+.footer {
+  display: none !important;
+}
