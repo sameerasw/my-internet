@@ -1001,6 +1001,11 @@
       "transparency": "html, body, nav, header{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "anilist.co.css": {
+      "anili-transparency": "html,\nbody {\n  background-color: transparent !important;\n}\n\n.container,\n.content,\n.wrapper,\n.main,\n.sidebar,\n.header,\n.footer,\n.card,\n.box {\n  background-color: rgba(255, 255, 255, 0) !important;\n}\n\n:root {\n  --color-foreground: #00000000 !important;\n  --color-foreground-grey: #00000000 !important;\n}\n\n.media-card[data-v-70df6e62] {\n  background: #00000000 !important;\n  box-shadow: none !important;\n}\n\n.site-theme-dark {\n  --color-foreground: #00000000 !important;\n}\n\n.search[data-v-219025ae] {\n  background: #00000000 !important;\n}",
+      "anili-nav bar transparency": ".transparent[data-v-62eacfff] {\n  background: #00000000 !important;\n  color: #fffffff0 !important;\n}",
+      "anili-no footer": ".footer {\n  display: none !important;\n}"
     }
   }
 }
