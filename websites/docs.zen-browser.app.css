@@ -1,0 +1,7 @@
+/* zdocs-transparency */
+html, body, nav, header, .page .center, .overflow::after{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
