@@ -1,0 +1,17 @@
+/* transparency */
+html, body, nav, header, .header-wrapper, .header-wrapper::after, #data-tree-switcher, .header-nav-features, #main-contents, .news-content-spotlight, .section-header, [rel="np"], .tiw-region, .news-card-simple, .header-nav{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#page-content{
+  background-color: transparent !important;
+  background: none !important;
+  border-color: transparent !important;
+}
+
+.header-wrapper:has(.header-nav-wrapper:not([style=""])){
+  background-color: #000 !important;
+}
