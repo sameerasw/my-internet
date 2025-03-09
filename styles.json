@@ -981,6 +981,10 @@
       "transparency": "html, body, nav, header.border-transparent, header::after, header > div::after, header > div, .bg-transparent, span, li, section{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\nheader.border-transparent{\n  background-color: var(--color-outline) !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}\n\nheader.border-transparent{\n  background-color: #fff !important;\n}"
+    },
+    "steamrip.com.css": {
+      "transparency": "html, body, nav.fixed-top, .section-item, .container-wrapper, #tie-wrapper{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\nnav.fixed-unpinned{\n  background-color: var(--main-nav-background) !important;\n  border-radius: 1em;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
