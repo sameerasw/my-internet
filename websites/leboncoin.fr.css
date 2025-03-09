@@ -1,0 +1,25 @@
+/* transparency */
+html, body, nav, header.border-transparent, header::after, header > div::after, header > div, .bg-transparent, span, li, section{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+header.border-transparent{
+  background-color: var(--color-outline) !important;
+}
+
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* no footer */
+footer{
+  display: none !important;
+}
+
+header.border-transparent{
+  background-color: #fff !important;
+}
