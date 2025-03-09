@@ -1,5 +1,5 @@
 /* jellyfin-transparency */
-html, body, nav, header, .backgroundContainer, .skinHeader{
+html, body, nav, header, .backgroundContainer, .skinHeader, video, .videoPlayerContainer, .detailPageSecondaryContainer, .detailRibbon, .backdropImage{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
