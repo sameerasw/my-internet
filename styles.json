@@ -965,7 +965,7 @@
       "no footer": "footer{\n  display: none !important;\n}"
     },
     "demo.jellyfin.org.css": {
-      "jellyfin-transparency": "html, body, nav, header, .backgroundContainer, .skinHeader{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}"
+      "jellyfin-transparency": "html, body, nav, header, .backgroundContainer, .skinHeader, video, .videoPlayerContainer, .detailPageSecondaryContainer, .detailRibbon, .backdropImage{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}"
     },
     "wowhead.com.css": {
       "transparency": "html, body, nav, header, .header-wrapper, .header-wrapper::after, #data-tree-switcher, .header-nav-features, #main-contents, .news-content-spotlight, .section-header, [rel=\"np\"], .tiw-region, .news-card-simple, .header-nav{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n#page-content{\n  background-color: transparent !important;\n  background: none !important;\n  border-color: transparent !important;\n}\n\n.header-wrapper:has(.header-nav-wrapper:not([style=\"\"])){\n  background-color: #000 !important;\n}"
