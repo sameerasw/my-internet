@@ -1,5 +1,5 @@
 /* jellyfin-transparency */
-html, body, nav, header, .backgroundContainer, .skinHeader, video, .videoPlayerContainer, .detailPageSecondaryContainer, .detailRibbon, .backdropImage{
+html, body, nav, header, .backgroundContainer, .skinHeader, video, .videoPlayerContainer, .detailPageSecondaryContainer, .detailRibbon, .backdropImage, .paperList, .MuiPaper-root, .visualCardBox, .MuiBox-root, .MuiTableRow-root{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
