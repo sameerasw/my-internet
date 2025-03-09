@@ -1,4 +1,5 @@
 /* sameerasw-transprecy */
-:root {
-  --background-color-primary: #00000000 !important;
+body, #background{
+  background-color: transparent !important;
+  background: none !important;
 }
