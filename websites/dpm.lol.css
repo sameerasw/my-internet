@@ -1,0 +1,17 @@
+/* dpm-transparency */
+html, body, header, div.bg-black-800, div.bg-black-700, div.bg-black-600, button.bg-black-600  {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* dpm-selected-tab-transparency */
+.data-\[state\=active\]\:bg-black-800[data-state="active"] {
+	background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* dpm-new-header-ul-transparency */
+ul.bg-black-700 {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
