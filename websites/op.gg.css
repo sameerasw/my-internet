@@ -1,0 +1,32 @@
+/* dpm-transparency */
+html, body, div.z-gnb, .DesktopGNB-module_desktop-gnb__939BZ, .bg-\[var\(--color-main-900\)\], .bg-main-500  {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* opgg-profile-line-fix*/
+div.overflow-auto {
+  border: none
+}
+
+/* opgg-profile-transparency*/
+[class*="bg-gray-0"], [class*="bg-gray-100"], .bg-main-100, td, th  {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+
+/* opgg-profile-remove-grey-overlay */
+span.bottom-\[-45px\]:nth-child(2) {
+  background-image: none !important;
+}
+
+/* opgg-profile-reposition-profile-image*/
+.opacity-40 {
+  width: 110% !important;
+  left: 400px;
+}
