@@ -1,10 +1,32 @@
 /* bkl-transparency */
+body,
+.site-body,
+footer,
+.article-hero::before {
+  background: transparent !important;
+}
+
 :root {
-  --back-primary: #00000000 !important;
   --back-secondary: #00000000 !important;
   --back-highlight: rgba(0, 0, 0, 0) !important;
-  --back-field: #00000000 !important;
-  --back-field-highlight: #0001041c !important;
+}
+
+.navbar {
+  border-bottom: none !important;
+  border-bottom: none !important;
+}
+
+#primary-nav.hide-border #nav-bar-search,
+#primary-nav.hide-border .search-btn {
+  border-width: 0px !important;
+}
+
+.modal-search .search-btn,
+.navbar .search-btn,
+.modal-search .search-bar,
+.navbar .search-bar,
+.btn-general {
+  background-color: #00000000 !important;
 }
 
 /* bkl-no footer */
