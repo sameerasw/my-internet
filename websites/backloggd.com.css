@@ -1,0 +1,13 @@
+/* bkl-transparency */
+:root {
+  --back-primary: #00000000 !important;
+  --back-secondary: #00000000 !important;
+  --back-highlight: rgba(0, 0, 0, 0) !important;
+  --back-field: #00000000 !important;
+  --back-field-highlight: #0001041c !important;
+}
+
+/* bkl-no footer */
+footer {
+  display: none !important;
+}
