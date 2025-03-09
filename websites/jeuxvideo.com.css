@@ -1,0 +1,12 @@
+/* transparency */
+html, body, nav, header, .header__top, .header__bottom, #homepage, .bg-body, #page-news{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* no footer */
+footer{
+  display: none !important;
+}
