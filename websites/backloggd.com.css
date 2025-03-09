@@ -11,6 +11,16 @@ footer,
   --back-highlight: rgba(0, 0, 0, 0) !important;
 }
 
+/* bkl-navbar*/
+.navbar {
+  border-bottom: none !important;
+  border-bottom: none !important;
+}
+
+#primary-nav.hide-border #nav-bar-search,
+#primary-nav.hide-border .search-btn {
+  border-width: 0px !important;
+}
 
 /* bkl-no footer */
 footer {
