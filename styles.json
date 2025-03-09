@@ -986,6 +986,11 @@
     "steamrip.com.css": {
       "transparency": "html, body, nav.fixed-top, .section-item, .container-wrapper, #tie-wrapper{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\nnav.fixed-unpinned{\n  background-color: var(--main-nav-background) !important;\n  border-radius: 1em;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "minesweeper.online.css": {
+      "minesweeperonline-transparency": "html,\nbody {\n  background-color: transparent !important;\n}\n\nheader .navbar-desktop {\n  background-color: transparent !important;\n  box-shadow: none !important;\n}\n\n.main-content {\n  background-color: transparent !important;\n  box-shadow: none !important;\n}\n\n.main-column {\n  box-shadow: none !important;\n}",
+      "minesweeperonline-hover": "#header {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n}\n#header:hover {\n  opacity: 1 !important;\n}\n.left-column {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n}\n\n.left-column:hover {\n  opacity: 1 !important;\n}\n\n.game-bottom-panel {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n}\n\n.game-bottom-panel:hover {\n  opacity: 1 !important;\n}\n\n#LevelSelectBlock {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n}\n\n#LevelSelectBlock:hover {\n  opacity: 1 !important;\n}",
+      "minesweeperonline-hide footer": "footer {\n  display: none !important;\n}"
     }
   }
 }
