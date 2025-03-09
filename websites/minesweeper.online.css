@@ -1,0 +1,59 @@
+/* minesweeperonline-transparency */
+html,
+body {
+  background-color: transparent !important;
+}
+
+header .navbar-desktop {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.main-content {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.main-column {
+  box-shadow: none !important;
+}
+
+/* minesweeperonline-hover */
+#header {
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+#header:hover {
+  opacity: 1 !important;
+}
+.left-column {
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.left-column:hover {
+  opacity: 1 !important;
+}
+
+.game-bottom-panel {
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.game-bottom-panel:hover {
+  opacity: 1 !important;
+}
+
+#LevelSelectBlock {
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+#LevelSelectBlock:hover {
+  opacity: 1 !important;
+}
+
+/* minesweeperonline-hide footer */
+footer {
+  display: none !important;
+}
