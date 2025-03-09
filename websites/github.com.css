@@ -1,5 +1,5 @@
 /* gh-transparency */
-html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folders-and-files"] .bgColor-muted, nav, .dxnHPp, .kcVpNH, .discussion-timeline-actions, .TimelineItem-break, .gh-header, .PageLayout-pane, .bSTcOH, .gOhIYN, #blob-edit-side-panel-id, #repository-container-header, .empty-cell{
+html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folders-and-files"] .bgColor-muted, nav, .dxnHPp, .kcVpNH, .discussion-timeline-actions, .TimelineItem-break, .gh-header, .PageLayout-pane, .bSTcOH, .gOhIYN, #blob-edit-side-panel-id, #repository-container-header, .empty-cell, .FleZw{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
