@@ -972,6 +972,10 @@
     },
     "app.tuta.com.css": {
       "transparency": "html, body, nav, .header-nav, .nav-bg, drawer-menu, .list-column, .list-row.nofocus > div, .fill-absolute.col.items-center.justify-center.overflow-hidden{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}"
+    },
+    "jeuxvideo.com.css": {
+      "transparency": "html, body, nav, header, .header__top, .header__bottom, #homepage, .bg-body, #page-news{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
