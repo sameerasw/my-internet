@@ -69,6 +69,7 @@ ytd-rich-item-renderer{
     flex-direction: row !important;
 
     #metadata-line span:nth-child(3) {
+      /* width: 2em !important; */
       height: 1em !important;
       margin-left: 1em !important;
     }
@@ -95,7 +96,7 @@ ytd-rich-grid-media {
 
 /* yt-thumbnail hover */
 #inline-preview-player{
-  transition: scale 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  transition: scale 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s !important;
   scale: 1 !important;
 }
 
@@ -108,14 +109,16 @@ ytd-rich-grid-media {
 
 #video-preview-container:has(#inline-preview-player):hover{
   scale: 1.25 !important;
-  box-shadow: black 0px 0px 50px;
+  box-shadow: #0008 0px 0px 60px;
+  transition: scale 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s !important;
 }
 ytd-app #content{
   opacity: 1 !important;
-  transition: opacity 0.4s ease-in-out 0.3s !important;
+  transition: opacity 0.3s ease-in-out !important;
 }
 ytd-app:has(#video-preview-container:hover) #content{
   opacity: 0.5 !important;
+  transition: opacity 4s ease-in-out 1s !important;
 }
 
 /* yt-no feed distractions */
