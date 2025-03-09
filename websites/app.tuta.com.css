@@ -1,0 +1,7 @@
+/* transparency */
+html, body, nav, .header-nav, .nav-bg, drawer-menu, .list-column, .list-row.nofocus > div, .fill-absolute.col.items-center.justify-center.overflow-hidden{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
