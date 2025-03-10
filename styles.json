@@ -1006,6 +1006,23 @@
       "anili-transparency": "html,\nbody {\n  background-color: transparent !important;\n}\n\n.container,\n.content,\n.wrapper,\n.main,\n.sidebar,\n.header,\n.footer,\n.card,\n.box {\n  background-color: rgba(255, 255, 255, 0) !important;\n}\n\n:root {\n  --color-foreground: #00000000 !important;\n  --color-foreground-grey: #00000000 !important;\n}\n\n.media-card[data-v-70df6e62] {\n  background: #00000000 !important;\n  box-shadow: none !important;\n}\n\n.site-theme-dark {\n  --color-foreground: #00000000 !important;\n}\n\n.search[data-v-219025ae] {\n  background: #00000000 !important;\n}",
       "anili-nav bar transparency": ".transparent[data-v-62eacfff] {\n  background: #00000000 !important;\n  color: #fffffff0 !important;\n}",
       "anili-no footer": ".footer {\n  display: none !important;\n}"
+    },
+    "isthereanydeal.com.css": {
+      "deal-transparency": "html,\nbody,\n.main.svelte-1bfe86d,\n.games.svelte-1bfe86d,\nheader.svelte-3t7qbu,\n.band {\n  background-color: #00000000 !important;\n}\n\n:root {\n  --bg-dark-4: #00000000 !important;\n  --bg-dark-3: #00000000 !important;\n  --bg-light-3: #00000000 !important;\n}\n\n.deal {\n  box-shadow: none !important;\n}",
+      "deal-nav bar hover": "header {\n  opacity: 0 !important;\n}\n\nheader:hover {\n  opacity: 1 !important;\n}",
+      "deal-no footer": "footer {\n  display: none !important;\n}"
+    },
+    "scholar.google.com.css": {
+      "gs-transparency": "html,\nbody,\n#gs_hdr_drw_in,\ndiv,\n#gs_hdr,\n.gs_hdr {\n  background-color: transparent !important;\n}\n\n.gs_grn,\na.gs_in_ib .gs_lbl,\nbody {\n  color: #fff !important;\n}",
+      "gs-search bar": "#gs_hdr_tsi {\n  border: 1px solid !important;\n  color: #fff !important;\n  background: transparent !important;\n}",
+      "gs-hover": "#gs_hdr_mnu,\n#gs_hdr_hpl,\n#gs_hdr_act_i {\n  opacity: 0 !important;\n}\n#gs_hdr_mnu:hover,\n#gs_hdr_hpl:hover,\n#gs_hdr_act_i:hover {\n  opacity: 1 !important;\n  transition: 0.3s !important;\n}",
+      "gs-no footer": "#gs_ftr {\n  background-color: transparent !important;\n  border: none !important;\n  display: none !important;\n}"
+    },
+    "store.epicgames.com.css": {
+      "epic-transparency": "html,\nbody {\n  background: transparent !important;\n}\n\nheader,\nfooter,\nmain,\nsection,\ndiv {\n  background: transparent !important;\n}",
+      "epic-nav bar transparency": ":root {\n  --color-background-transparent-default: transparent !important;\n}",
+      "epic-others": "*::before,\n*::after {\n  background: transparent !important;\n}",
+      "epic-no footer": "footer {\n  display: none !important;\n}"
     }
   }
 }
