@@ -1,0 +1,25 @@
+/* transparency */
+html, body, nav, header, .DesktopGNB-module_desktop-gnb__939BZ, .lnb--home, .opgg-header, .opgg-header__snb, body > div, .gnb--home{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* no footer */
+footer{
+  display: none !important;
+}
+
+/* no game banner */
+.content__bg, .content__wrapper{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
