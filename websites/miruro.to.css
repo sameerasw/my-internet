@@ -6,6 +6,38 @@ html, body, .eGxCRW, .iDHeGb, .daqunT, .hIxxKF, .ijmopf, .cqJwte, .eakZjw, .gfuL
   box-shadow: none !important;
 }
 
+.hBwOID,
+.eOIvsD,
+.iqgZQl,
+.cuwNkP,
+.fohjVB,
+.ebVvxo,
+.goUZUI,
+.iPPeAo {
+  background: transparent !important;
+}
+
+/* miruro-hover */
+.dYcGWG {
+  opacity: 0 !important;
+}
+
+.dYcGWG:hover {
+  opacity: 1 !important;
+  transition: 2s;
+}
+
+.hrJsuo {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* miruro-comments */
+.dBlywK {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
 /* miruro-no footer */
 footer{
   display: none !important;
