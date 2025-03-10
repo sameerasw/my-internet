@@ -1041,11 +1041,15 @@
       "no footer": "footer{\n  display: none !important;\n}"
     },
     "miruro.to.css": {
-      "miruro-transparency": "html, body, .eGxCRW, .iDHeGb, .daqunT, .hIxxKF, .ijmopf, .cqJwte, .eakZjw, .gfuLhl, .kdqxUl, .fwmihZ, .iiVqpN, .ghhYJl{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "miruro-transparency": "html, body, .eGxCRW, .iDHeGb, .daqunT, .hIxxKF, .ijmopf, .cqJwte, .eakZjw, .gfuLhl, .kdqxUl, .fwmihZ, .iiVqpN, .ghhYJl{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n.hBwOID,\n.eOIvsD,\n.iqgZQl,\n.cuwNkP,\n.fohjVB,\n.ebVvxo,\n.goUZUI,\n.iPPeAo {\n  background: transparent !important;\n}",
+      "miruro-hover": ".dYcGWG {\n  opacity: 0 !important;\n}\n\n.dYcGWG:hover {\n  opacity: 1 !important;\n  transition: 2s;\n}\n\n.hrJsuo {\n  background: transparent !important;\n  border: none !important;\n}",
+      "miruro-comments": ".dBlywK {\n  background-color: transparent !important;\n  color: #fff !important;\n}",
       "miruro-no footer": "footer{\n  display: none !important;\n}"
     },
     "miruro.online.css": {
-      "miruro-transparency": "html, body, .eGxCRW, .iDHeGb, .daqunT, .hIxxKF, .ijmopf, .cqJwte, .eakZjw, .gfuLhl, .kdqxUl, .fwmihZ, .iiVqpN, .ghhYJl{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "miruro-transparency": "html, body, .eGxCRW, .iDHeGb, .daqunT, .hIxxKF, .ijmopf, .cqJwte, .eakZjw, .gfuLhl, .kdqxUl, .fwmihZ, .iiVqpN, .ghhYJl{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n\n.hBwOID,\n.eOIvsD,\n.iqgZQl,\n.cuwNkP,\n.fohjVB,\n.ebVvxo,\n.goUZUI,\n.iPPeAo {\n  background: transparent !important;\n}",
+      "miruro-hover": ".dYcGWG {\n  opacity: 0 !important;\n}\n\n.dYcGWG:hover {\n  opacity: 1 !important;\n  transition: 2s;\n}\n\n.hrJsuo {\n  background: transparent !important;\n  border: none !important;\n}",
+      "miruro-comments": ".dBlywK {\n  background-color: transparent !important;\n  color: #fff !important;\n}",
       "miruro-no footer": "footer{\n  display: none !important;\n}"
     },
     "+wiktionary.com.css": {
