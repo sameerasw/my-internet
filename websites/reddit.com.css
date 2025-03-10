@@ -4,8 +4,7 @@
   --color-neutral-background: #00000000 !important;
 }
 
-.bg-neutral-background,
-#left-sidebar-container {
+.bg-neutral-background{
   background-color: #00000000 !important;
   border: none !important;
 }
@@ -22,7 +21,7 @@ html {
 }
 
 /* reddit-hide elements */
-div aside recent-posts, hr {
+div aside recent-posts, hr{
   display: none !important;
 }
 
@@ -42,10 +41,15 @@ faceplate-dropdown-menu {
 }
 
 /* reddit-hover */
-div.left-sidebar,
-#right-sidebar-container, flex-left-nav-container {
+#flex-left-nav-container, #flex-nav-buttons{
+  background-color: light-dark(#fff, #000) !important;
+  border-radius: 1em !important;
+}
+
+#flex-left-nav-container,
+#right-sidebar-container{
+  transition: opacity 0.3s ease-in-out !important;
   opacity: 0 !important;
-  transition: all 0.3s ease-in-out !important;
   &:hover {
     opacity: 1 !important;
   }
