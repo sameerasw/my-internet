@@ -1,0 +1,33 @@
+/* deal-transparency */
+html,
+body,
+.main.svelte-1bfe86d,
+.games.svelte-1bfe86d,
+header.svelte-3t7qbu,
+.band {
+  background-color: #00000000 !important;
+}
+
+:root {
+  --bg-dark-4: #00000000 !important;
+  --bg-dark-3: #00000000 !important;
+  --bg-light-3: #00000000 !important;
+}
+
+.deal {
+  box-shadow: none !important;
+}
+
+/* deal-nav bar hover */
+header {
+  opacity: 0 !important;
+}
+
+header:hover {
+  opacity: 1 !important;
+}
+
+/* deal-no footer */
+footer {
+  display: none !important;
+}
