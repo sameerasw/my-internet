@@ -18,6 +18,15 @@ header.svelte-3t7qbu,
   box-shadow: none !important;
 }
 
+/* deal-nav bar hover */
+header {
+  opacity: 0 !important;
+}
+
+header:hover {
+  opacity: 1 !important;
+}
+
 /* deal-no footer */
 footer {
   display: none !important;
