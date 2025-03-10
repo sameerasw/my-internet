@@ -206,15 +206,15 @@ ytd-comments{
   backdrop-filter: blur(20px) !important;
 }
 
-/* yt-transparent overlay chat */
-#chat {
+/* yt-zen view overlay chat */
+[theater=""] #chat {
   position: absolute !important;
   height: 800px !important;
   top: 50vh !important;
   transform: translateY(-50%) !important;
 }
 
-yt-live-chat-renderer {
+[theater=""] yt-live-chat-renderer {
   background: none !important;
   background-color: transparent !important;
 }
