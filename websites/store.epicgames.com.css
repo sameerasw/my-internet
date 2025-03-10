@@ -1,0 +1,13 @@
+/* epic-transparency */
+html,
+body {
+  background: transparent !important;
+}
+
+header,
+footer,
+main,
+section,
+div {
+  background: transparent !important;
+}
