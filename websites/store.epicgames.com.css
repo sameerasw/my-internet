@@ -11,3 +11,19 @@ section,
 div {
   background: transparent !important;
 }
+
+/* epic-nav bar transparency */
+:root {
+  --color-background-transparent-default: transparent !important;
+}
+
+/* epic-others */
+*::before,
+*::after {
+  background: transparent !important;
+}
+
+/* epic-no footer */
+footer {
+  display: none !important;
+}
