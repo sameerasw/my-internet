@@ -13,3 +13,12 @@ header.svelte-3t7qbu,
   --bg-dark-3: #00000000 !important;
   --bg-light-3: #00000000 !important;
 }
+
+.deal {
+  box-shadow: none !important;
+}
+
+/* deal-no footer */
+footer {
+  display: none !important;
+}
