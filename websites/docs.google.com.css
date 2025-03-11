@@ -6,7 +6,7 @@
 
 /* docs-transparency */
 html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-editor, #docs-editor-container, .kix-appview-editor, .navigation-widget-floating-navigation-button.navigation-widget, .outlines-widget-chaptered .kix-outlines-widget-header-contents,
-#docs-header:not(.docs-hub-appbar) .docs-titlebar-buttons{
+#docs-header:not(.docs-hub-appbar) .docs-titlebar-buttons, .docs-revisions-chromecover-content-color-default, .docs-revisions-sidebar, .docs-revisions-sidebar-header, .docs-revisions-sidebar-revisions-list-container, .docs-revisions-tile-content-wrapper, .docs-revisions-sidebar-date-group, .docs-revisions-tile, .left-sidebar-container{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -18,30 +18,37 @@ html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-edit
 .kix-page-paginated {
     border-radius: 1em !important;
     overflow: hidden !important;
+    outline: none !important;
 }
 
 /* docs-color fix */
-.docs-gm .docs-menubar .goog-control, .docs-appbar-circle-button, .docs-titlebar-badge-container, #docs-parent-collections-container-outer{
+.docs-gm .docs-menubar .goog-control, .docs-appbar-circle-button, .docs-titlebar-badge-container, #docs-parent-collections-container-outer, .docs-revisions-icon-img, .navigation-widget-hat-close-button, .docs-revisions-chromecover-titlebar-button-back-container, .javascriptMaterialdesignGm3WizIconButtonFilled-icon-button__icon-slot{
     filter: invert(1) !important;
 }
-
 
 .docs-title-input-label-inner {
   visibility: hidden !important;
 }
 
-
-.docs-title-input {
+.docs-title-input, .docs-revisions-tile-collaborator-name, .docs-revisions-collapsible-pane-detailed-tiles-container, .docs-revisions-tile-descriptor, .docs-revisions-tile-text-box, .docs-revisions-chromecover-titlebar-name-label, .docs-revisions-sidebar-title-text , .docs-revisions-sidebar-date-group, .navigation-widget-header, .docs-revisions-sidebar-actions *, .docs-material-gm-select-caption{
     color: white !important;
 }
 
+.navigation-widget-empty-content {
+    color: #bbb !important;
+}
+.docs-material-gm-select-outer-box {
+    border-color: white !important;
+}
+
 /* docs-rounded ruler */
-#kix-horizontal-ruler {
+#kix-horizontal-ruler, #kix-vertical-ruler{
     border-radius: 10px !important;
 }
 
-#kix-vertical-ruler {
-    border-radius: 10px !important;
+.docs-body-pageless #kix-horizontal-ruler {
+	margin-left: 16px;
+	padding-left: initial;
 }
 
 /* docs-autohide sidebar */
@@ -52,5 +59,16 @@ html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-edit
 
 .left-sidebar-container:hover {
     opacity: 1 !important;
+}
+
+/* docs-blured instant bubble */
+#docs-instant-bubble:hover {
+  background-color: rgb(255 255 255 / 70%) !important;
+}
+
+#docs-instant-bubble {
+  background-color: rgb(255 255 255 / 20%) !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.5s !important;
 }
 
