@@ -1,0 +1,16 @@
+/* ninite-transparency */
+body,
+html,
+div {
+  background: transparent !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+/* ninite-no footer & links */
+.footer {
+  display: none !important;
+}
+div.col-sm-12 {
+  display: none !important;
+}
