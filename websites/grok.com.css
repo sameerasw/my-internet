@@ -1,21 +1,28 @@
 /* grok-transparency */
-html, body, .bg-background{
+html,
+body,
+.bg-background {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* grok-hover */
-.top-0, .text-\[11px\], .action-buttons{
+.top-0,
+.text-\[11px\],
+.action-buttons {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }
 
 /* grok-overlay fix */
-[role="dialog"], div.duration-100{
+[role="dialog"],
+div.duration-100 {
   background-color: var(--popover) !important;
 }

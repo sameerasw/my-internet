@@ -1,21 +1,40 @@
 /* imdb-transparency */
-html, body, nav, header, main, .ipc-page-content-container .ipc-page-grid, .ipc-page-grid__item > div, .leJvKv, .ipc-page-section--baseAlt, section, #ipc-wrap-background-id, [data-testid="symphony-NavigationWidget"], .ipc-tabs--base.ipc-tabs--shade1{
+html,
+body,
+nav,
+header,
+main,
+.ipc-page-content-container .ipc-page-grid,
+.ipc-page-grid__item > div,
+.leJvKv,
+.ipc-page-section--baseAlt,
+section,
+#ipc-wrap-background-id,
+[data-testid="symphony-NavigationWidget"],
+.ipc-tabs--base.ipc-tabs--shade1 {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* imdb-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
-#react-autowhatever-navSuggestionSearch, [role="presentation"], .ipc-menu [role="presentation"], .mdc-menu[role="presentation"], .drawer__panel[role="presentation"], [role="menu"]{
+#react-autowhatever-navSuggestionSearch,
+[role="presentation"],
+.ipc-menu [role="presentation"],
+.mdc-menu[role="presentation"],
+.drawer__panel[role="presentation"],
+[role="menu"] {
   background-color: var(--darkreader-bg--ipt-baseAlt-shade1-bg) !important;
 }
 
 /* imdb-no footer */
-footer{
+footer {
   display: none !important;
 }

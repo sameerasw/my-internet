@@ -1,17 +1,33 @@
 /* transparency */
-html, body, nav, header, .header-wrapper, .header-wrapper::after, #data-tree-switcher, .header-nav-features, #main-contents, .news-content-spotlight, .section-header, [rel="np"], .tiw-region, .news-card-simple, .header-nav{
+html,
+body,
+nav,
+header,
+.header-wrapper,
+.header-wrapper::after,
+#data-tree-switcher,
+.header-nav-features,
+#main-contents,
+.news-content-spotlight,
+.section-header,
+[rel="np"],
+.tiw-region,
+.news-card-simple,
+.header-nav {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-#page-content{
+#page-content {
   background-color: transparent !important;
   background: none !important;
   border-color: transparent !important;
 }
 
-.header-wrapper:has(.header-nav-wrapper:not([style=""])){
+.header-wrapper:has(.header-nav-wrapper:not([style=""])) {
   background-color: #000 !important;
 }

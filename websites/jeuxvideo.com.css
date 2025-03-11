@@ -1,12 +1,22 @@
 /* transparency */
-html, body, nav, header, .header__top, .header__bottom, #homepage, .bg-body, #page-news{
+html,
+body,
+nav,
+header,
+.header__top,
+.header__bottom,
+#homepage,
+.bg-body,
+#page-news {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

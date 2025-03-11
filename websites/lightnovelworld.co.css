@@ -1,35 +1,49 @@
 /* novel-transparency */
-html, body, nav, header, #novel, .novel-body, .comment-item, li.show_replies, #chapter-article, .titles, .chapternav, #chapter-comments{
+html,
+body,
+nav,
+header,
+#novel,
+.novel-body,
+.comment-item,
+li.show_replies,
+#chapter-article,
+.titles,
+.chapternav,
+#chapter-comments {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* novel-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* novel-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* novel-hidden */
-.glass-background, .DlIdmrby{
+.glass-background,
+.DlIdmrby {
   display: none !important;
 }
 
 /* novel-transparent paper */
-#chapter-container{
+#chapter-container {
   background-color: transparent !important;
 }
 
 /* novel-floating reader */
-#chapter-container{
+#chapter-container {
   background-color: transparent !important;
   border: solid 1px var(--bg-nav-header) !important;
   border-radius: 1em !important;
-  box-shadow: #00000066 0px 0px 300px
+  box-shadow: #00000066 0px 0px 300px;
 }

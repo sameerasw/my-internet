@@ -1,31 +1,36 @@
 /* desmos-transparency */
-html, body, .dcg-sliding-interior, .dcg-main-header-container{
+html,
+body,
+.dcg-sliding-interior,
+.dcg-main-header-container {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* desmos-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
-.dcg-dropdown-popover > div:nth-child(1){
+.dcg-dropdown-popover > div:nth-child(1) {
   background-color: var(--darkreader-background-fcfcfc) !important;
 }
 
 /* desmos-borders */
-#main{
+#main {
   border-radius: 1em !important;
   overflow: hidden !important;
 }
 
-.dcg-keypad-btn-container span{
+.dcg-keypad-btn-container span {
   border-radius: 0.5em !important;
 }
 
 /* desmos-no footer */
-.dcg-basic-calculator-footer{
+.dcg-basic-calculator-footer {
   display: none !important;
 }

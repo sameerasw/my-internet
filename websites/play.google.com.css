@@ -1,22 +1,28 @@
 /* gplay-transparency */
-html, body, nav, header, .Usd1Ac:has([jscontroller="tKHFxf"]){
+html,
+body,
+nav,
+header,
+.Usd1Ac:has([jscontroller="tKHFxf"]) {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* gplay-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* gplay-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* gplay-app rounded banner */
-.dzkqwc:has(c-wiz){
+.dzkqwc:has(c-wiz) {
   border-radius: 2em !important;
 }

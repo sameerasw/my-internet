@@ -1,22 +1,27 @@
 /* chrome-transparency */
-header, .LXTxRc-AznF2e, .W7g1Rb-rymPhb-ibnC6b, .MHH2Z{
+header,
+.LXTxRc-AznF2e,
+.W7g1Rb-rymPhb-ibnC6b,
+.MHH2Z {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* chrome-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* chrome-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* chrome-no thanks */
-#c241{
+#c241 {
   display: none !important;
 }

@@ -1,33 +1,46 @@
 /* wakatime-transparency */
-html, body, nav, header, .waka-navbar, .nav-side-menu, .nav-side-menu .brand, .chart-box, .panel, .panel-heading, .card{
+html,
+body,
+nav,
+header,
+.waka-navbar,
+.nav-side-menu,
+.nav-side-menu .brand,
+.chart-box,
+.panel,
+.panel-heading,
+.card {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* wakatime-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* wakatime-no footer */
-footer, .navbar-header{
+footer,
+.navbar-header {
   display: none !important;
 }
 
 /* wakatime-no thanks */
-.sidebar-upgrade-item, .upgrade-box, .mock-dashboard-img{
+.sidebar-upgrade-item,
+.upgrade-box,
+.mock-dashboard-img {
   display: none !important;
 }
 
-
-
 /* wakatime-hover */
-.menu-bottom{
+.menu-bottom {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }

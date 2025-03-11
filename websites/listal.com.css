@@ -1,20 +1,17 @@
-/* canva-transparency */
+/* listal-transparency */
 html,
 body,
-.EyQHyw,
-.fZgOqw,
-.eZq8Ig::before,
-.eZq8Ig.ocGgIA::after,
-._oWbbw::after,
-._orzOA::after,
-.gpRQSw,
-.sfOjmQ,
-.fLKksQ,
-.xzANJg,
-.OFiy3Q,
-.TYxWRA,
-.eZq8Ig.JwseWQ .fZgOqw::before,
-.fZgOqw {
+nav,
+header,
+#headernew,
+#adclick,
+.mainwrapper,
+div.pure-u-1:nth-child(1)
+  > div:nth-child(1)
+  > div:nth-child(2)
+  > div:nth-child(2)
+  > div,
+#itempagewrapper {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -23,8 +20,7 @@ body,
     border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-/* canva-no thanks */
-.UmIUVw,
-.GBjf5Q {
-  display: none;
+/* listal-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
 }

@@ -1,21 +1,34 @@
 /* tagesschau-transparency */
-html, body, nav, header, .teasergroup, .teaser__teaserinfo, .teaser, .background-standard, .timeline, .trenner, .content-wrapper__group, p{
+html,
+body,
+nav,
+header,
+.teasergroup,
+.teaser__teaserinfo,
+.teaser,
+.background-standard,
+.timeline,
+.trenner,
+.content-wrapper__group,
+p {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-header:has(.is-visible)  .header__items{
+header:has(.is-visible) .header__items {
   background-color: transparent !important;
 }
 
 /* tagesschau-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* tagesschau-no footer */
-footer{
+footer {
   display: none !important;
 }

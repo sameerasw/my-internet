@@ -1,17 +1,28 @@
 /* aigei-transparency */
-html, body, nav, header, .main-top-nav, .viewport_container, .comp_index_top_calendar_container, .comp_index_top_work_container, .comp_index_top_copyright_container, .comp_container{
+html,
+body,
+nav,
+header,
+.main-top-nav,
+.viewport_container,
+.comp_index_top_calendar_container,
+.comp_index_top_work_container,
+.comp_index_top_copyright_container,
+.comp_container {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* aigei-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* aigei-no footer */
-footer{
+footer {
   display: none !important;
 }

@@ -1,22 +1,26 @@
 /* removebg-transparency */
-html, body, #navbar{
+html,
+body,
+#navbar {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* removebg-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* removebg-minimal */
-div.prism:nth-child(2) > div:nth-child(n+2):nth-child(-n+11){
+div.prism:nth-child(2) > div:nth-child(n + 2):nth-child(-n + 11) {
   display: none;
 }

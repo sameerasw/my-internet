@@ -1,16 +1,41 @@
 /* w3-transparency */
-html, body.darkpagetheme, #top-nav-bar, #pagetop,body.darkpagetheme .topnavcontainer,body.darkpagetheme #subtopnav, #scroll_right_btn, body.darkpagetheme .contentcontainer, .w3-sidebar, #belowtopnav, #leftmenuinnerinner, body.darkpagetheme .w3-white, .contentcontainer, .w3-white, .topnavcontainer, #subtopnav, hr, #main, body.darkpagetheme #subtopnav, body.darkpagetheme .topnavcontainer, body.darkpagetheme .topnavbackground, body.darkpagetheme .topnavcontainer, body.darkpagetheme #subtopnav{
+html,
+body.darkpagetheme,
+#top-nav-bar,
+#pagetop,
+body.darkpagetheme .topnavcontainer,
+body.darkpagetheme #subtopnav,
+#scroll_right_btn,
+body.darkpagetheme .contentcontainer,
+.w3-sidebar,
+#belowtopnav,
+#leftmenuinnerinner,
+body.darkpagetheme .w3-white,
+.contentcontainer,
+.w3-white,
+.topnavcontainer,
+#subtopnav,
+hr,
+#main,
+body.darkpagetheme #subtopnav,
+body.darkpagetheme .topnavcontainer,
+body.darkpagetheme .topnavbackground,
+body.darkpagetheme .topnavcontainer,
+body.darkpagetheme #subtopnav {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-.topnavbackground{
+.topnavbackground {
   display: none;
 }
 
 /* w3-no footer */
-#footerwrapper, #wrappercontainer{
+#footerwrapper,
+#wrappercontainer {
   display: none !important;
 }

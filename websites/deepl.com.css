@@ -1,21 +1,32 @@
 /* deepl-transparency */
-html, body, .page-header, div.bg-gray-50{
+html,
+body,
+.page-header,
+div.bg-gray-50 {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-[data-testid="translator-source-lang-list"],[data-testid="translator-target-lang-list"], .FlyoutPanel-module--visible--ecbf4, [data-headlessui-state="open"]{
-  background-color: var(--darkreader-bg--color-gray-50, var(--tw-ring-offset-color)) !important;
+[data-testid="translator-source-lang-list"],
+[data-testid="translator-target-lang-list"],
+.FlyoutPanel-module--visible--ecbf4,
+[data-headlessui-state="open"] {
+  background-color: var(
+    --darkreader-bg--color-gray-50,
+    var(--tw-ring-offset-color)
+  ) !important;
 }
 
 /* deepl-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* deepl-no footer */
-footer{
+footer {
   display: none !important;
 }

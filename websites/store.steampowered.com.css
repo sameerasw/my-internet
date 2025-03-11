@@ -1,17 +1,27 @@
 /* steam-transparency */
-html, body, nav, header, #global_header, .content, .tab_container, #content_login, .game_page_background.game{
+html,
+body,
+nav,
+header,
+#global_header,
+.content,
+.tab_container,
+#content_login,
+.game_page_background.game {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* steam-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* steam-no footer */
-footer{
+footer {
   display: none !important;
 }

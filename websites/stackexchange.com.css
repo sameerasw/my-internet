@@ -1,17 +1,23 @@
 /* stackex-transparency */
-html, body, header, #content, .question-container{
+html,
+body,
+header,
+#content,
+.question-container {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* stackex-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* stackex-no footer */
-footer{
+footer {
   display: none !important;
 }

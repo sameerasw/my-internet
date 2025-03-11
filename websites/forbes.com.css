@@ -1,17 +1,28 @@
 /* forbes-transparency */
-html, body, nav, header, .main-content, .happening-now, .fbs-slider__slide::before, .for-you-card, .fbs-slider__slides-wrapper::after{
+html,
+body,
+nav,
+header,
+.main-content,
+.happening-now,
+.fbs-slider__slide::before,
+.for-you-card,
+.fbs-slider__slides-wrapper::after {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* forbes-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* forbes-no footer */
-footer, hr{
+footer,
+hr {
   display: none !important;
 }

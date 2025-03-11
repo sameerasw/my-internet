@@ -1,27 +1,35 @@
 /* onedrive-transparency */
-html, body, .od3Background_fed57d36, .list_13bd9a05, .headerRow_13bd9a05, .row_13bd9a05{
+html,
+body,
+.od3Background_fed57d36,
+.list_13bd9a05,
+.headerRow_13bd9a05,
+.row_13bd9a05 {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* onedrive-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* onedrive-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* onedrive-no thanks */
-.odsp-spartan-nav-expanded .storageUpsellBanner_860752dd.bannerGleam_860752dd, .od-QuotaBannerWrapper-placeholder{
+.odsp-spartan-nav-expanded .storageUpsellBanner_860752dd.bannerGleam_860752dd,
+.od-QuotaBannerWrapper-placeholder {
   display: none;
 }
 
 /* onedrive-hover fix */
-[role="row"]:has(.odsp-spartan-cell):hover{
+[role="row"]:has(.odsp-spartan-cell):hover {
   background-color: var(--ms-palette-whiteTranslucent40);
 }

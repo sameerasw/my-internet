@@ -1,22 +1,39 @@
 /* amazon-transparency */
-html, body, nav, header, #nav-belt, #nav-main, #pageContent, .a-cardui, .image-shoveler, .a-section, #dp, #nav-progressive-subnav, #nav-subnav{
+html,
+body,
+nav,
+header,
+#nav-belt,
+#nav-main,
+#pageContent,
+.a-cardui,
+.image-shoveler,
+.a-section,
+#dp,
+#nav-progressive-subnav,
+#nav-subnav {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* amazon-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* amazon-no footer */
-footer, #navFooter,hr{
+footer,
+#navFooter,
+hr {
   display: none !important;
 }
 
 /* amazon-hidden */
-#desktop-banner, #desktop-banner-stripe{
+#desktop-banner,
+#desktop-banner-stripe {
   display: none !important;
 }

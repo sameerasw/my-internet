@@ -1,17 +1,24 @@
 /* appinn-transparency */
-html, body, nav, header, .sidebar-wrapper, .sidebar-footer-wrapper{
+html,
+body,
+nav,
+header,
+.sidebar-wrapper,
+.sidebar-footer-wrapper {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* appinn-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* appinn-no footer */
-footer{
+footer {
   display: none !important;
 }

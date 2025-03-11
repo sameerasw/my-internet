@@ -1,33 +1,62 @@
 /* gsm-transparency */
-html, body, #header, #header::after, .top-bar, #outer, .main, #specs-list table, .ttl, .nfo, .sidebar, .clearfix, .module-phones.module-related, #user-comments, .user-thread, .sub-footer, .more, table, h3, h4, td{
+html,
+body,
+#header,
+#header::after,
+.top-bar,
+#outer,
+.main,
+#specs-list table,
+.ttl,
+.nfo,
+.sidebar,
+.clearfix,
+.module-phones.module-related,
+#user-comments,
+.user-thread,
+.sub-footer,
+.more,
+table,
+h3,
+h4,
+td {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* gsm-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* gsm-no footer */
-#footer{
+#footer {
   display: none !important;
 }
 
 /* gsm-round */
- .pricing-container, #topsearch-text, .review-header, .page-specs, .module-phones-link img, .review-widget, iframe{
+.pricing-container,
+#topsearch-text,
+.review-header,
+.page-specs,
+.module-phones-link img,
+.review-widget,
+iframe {
   border-radius: 0.75em !important;
   overflow: hidden !important;
 }
 
-#header.headroom--not-top .wrapper, .{
+#header.headroom--not-top .wrapper,
+. {
   background-color: var(--link-color);
   border-radius: 0.75em !important;
 }
 
 /* gsm-hidden */
-.brandmenu-v2{
+.brandmenu-v2 {
   display: none;
 }

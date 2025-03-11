@@ -1,17 +1,25 @@
 /* rebang-transparency */
-html, body, nav, header, #root > div, .dark .dark\:bg-primaryDark-200, .bg-primary-200{
+html,
+body,
+nav,
+header,
+#root > div,
+.dark .dark\:bg-primaryDark-200,
+.bg-primary-200 {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* rebang-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* rebang-no footer */
-footer{
+footer {
   display: none !important;
 }

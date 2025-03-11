@@ -1,17 +1,30 @@
 /* rutracker-transparency */
-html, body, nav, header, #body_container, #page_container, #main-nav, .topmenu, h3, .news_title, td, .sb2-block{
+html,
+body,
+nav,
+header,
+#body_container,
+#page_container,
+#main-nav,
+.topmenu,
+h3,
+.news_title,
+td,
+.sb2-block {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* rutracker-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* rutracker-no footer */
-footer{
+footer {
   display: none !important;
 }

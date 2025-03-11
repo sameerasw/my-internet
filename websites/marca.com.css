@@ -1,22 +1,36 @@
 /* marca-transparency */
-html, body, nav, header, .main-top-header-container, .main-nav-container, .main-tab-highlight::before, .ue-c-main-navigation__teams, .ue-l-cover-grid__inner, .ue-c-carousel, .ue-c-carousel-theme, .ue-l-article__inner{
+html,
+body,
+nav,
+header,
+.main-top-header-container,
+.main-nav-container,
+.main-tab-highlight::before,
+.ue-c-main-navigation__teams,
+.ue-l-cover-grid__inner,
+.ue-c-carousel,
+.ue-c-carousel-theme,
+.ue-l-article__inner {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* marca-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* marca-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* marca-hidden */
-.seo-links-container-justify-center, .seo-links-container{
+.seo-links-container-justify-center,
+.seo-links-container {
   display: none !important;
 }

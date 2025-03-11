@@ -2,8 +2,7 @@
 html,
 body,
 topMainHeader,
-.mainContainerSubheader
-.containerSubheader,
+.mainContainerSubheader .containerSubheader,
 #secondarySubHeader,
 .leftIcon,
 .rightIcon,
@@ -15,24 +14,26 @@ topMainHeader,
 #hslider,
 #main,
 #home-page,
-html #home-page, body #home-page,
-.main_wrapper
-{
+html #home-page,
+body #home-page,
+.main_wrapper {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-:root{
+:root {
   --header-bg-color: transparent !important;
 }
 
-.header-main__slider.removeSticky{
+.header-main__slider.removeSticky {
   background-color: var(--summary-background-colour) !important;
 }
 
 /* geeks-no footer */
-footer{
+footer {
   display: none !important;
 }

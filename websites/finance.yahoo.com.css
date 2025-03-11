@@ -1,12 +1,22 @@
 /* transparency */
-html, body, ._yb_lrldux, #ybar-inner-wrap, main, .hero-headlines.yf-1m9jpnz, .container-wrapper.yf-x6ev64, .container, .dock-header{
+html,
+body,
+._yb_lrldux,
+#ybar-inner-wrap,
+main,
+.hero-headlines.yf-1m9jpnz,
+.container-wrapper.yf-x6ev64,
+.container,
+.dock-header {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

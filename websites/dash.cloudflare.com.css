@@ -1,17 +1,26 @@
 /* cloudflare-transparency */
-html, body, nav, header, aside, [aria-label="Collapse sidebar"], [aria-label="Expand sidebar"], div.c_if{
+html,
+body,
+nav,
+header,
+aside,
+[aria-label="Collapse sidebar"],
+[aria-label="Expand sidebar"],
+div.c_if {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* cloudflare-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* cloudflare-no footer */
-footer.c_c{
+footer.c_c {
   display: none !important;
 }
