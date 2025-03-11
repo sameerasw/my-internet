@@ -618,7 +618,7 @@
       "reverso-card transparency": ".translation-box-wrapper {\n  background-color: transparent !important;\n  border: 1px solid gray;\n}"
     },
     "sameerasw.com.css": {
-      "sameerasw-transprecy": "body, #background{\n  background-color: transparent !important;\n  background: none !important;\n}"
+      "sameerasw-transprecy": "body, #background{\n  background-color: transparent !important;\n  background: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     },
     "screenmusings.org.css": {
       "screenmusings-transparency": "html,\nbody,\nnav,\nheader,\n#thumbnails-container {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
@@ -640,12 +640,12 @@
       "sndcld-no footer": ".l-footer {\n  display: none !important;\n}"
     },
     "sourceforge.net.css": {
-      "sf-transparecy": ":root {\n  --darkreader-background-ffffff: #00000000 !important;\n  --darkreader-background-333333: #00000000 !important;\n  --darkreader-background-fefefe: #00000000 !important;\n  --darkreader-background-f1f1f1: #00000000 !important;\n}\n\nbody,\n.sandiego table thead,\ntfoot,\ntable,\ntbody,\narticle {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  border: none !important;\n}",
+      "sf-transparecy": ":root {\n  --darkreader-background-ffffff: #00000000 !important;\n  --darkreader-background-333333: #00000000 !important;\n  --darkreader-background-fefefe: #00000000 !important;\n  --darkreader-background-f1f1f1: #00000000 !important;\n}\n\nbody,\n.sandiego table thead,\ntfoot,\ntable,\ntbody,\narticle {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  border: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "sf-hide elements": "footer {\n  display: none !important;\n}\n\ndiv.l-side-column {\n  display: none !important;\n}\n\ndiv.l-gutter {\n  display: none !important;\n}\n\n.l-header-nav-bottom {\n  display: none !important;\n}\n\nsection.sandiego.l-header-nav-bottom.sticky {\n  display: none !important;\n}",
       "sf-no border and other changes": ".dropdown li,\n.links a {\n  border: none !important;\n}\n\n.l-two-column-page {\n  .l-content-column {\n    margin: 0 auto !important;\n  }\n}"
     },
     "speedtest.net.css": {
-      "ookla-transparecy": "html,\nbody,\n.pre-fold,\n.masthead-dark {\n  background: #00000000 !important;\n  background-color: #00000000 !important;\n}",
+      "ookla-transparecy": "html,\nbody,\n.pre-fold,\n.masthead-dark {\n  background: #00000000 !important;\n  background-color: #00000000 !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "ookla-layout fixes": "#container,\nbody,\n.pre-fold,\n.main-content,\n.main,\n.container,\n.pure-g,\n.pure-u-custom-speedtest {\n  height: 100% !important;\n}\n\n.pre-fold {\n  align-items: center !important;\n  margin: auto 0 !important;\n}\n\n.container,\n.speedtest-container {\n  margin: auto auto !important;\n}",
       "ookla-hover": "div.pure-u-1 {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
       "ookla-hide elements": "div.lower-content.lower-content-blend,\nfooter,\n.connection-component-container > div:nth-child(3) {\n  display: none !important;\n}\n.pure-u-custom-ad-skyscraper {\n  display: none !important;\n}\n\n.pure-u-custom-speedtest {\n  margin: auto !important;\n}"
