@@ -183,8 +183,8 @@
       "chrome-no thanks": "#c241 {\n  display: none !important;\n}"
     },
     "classroom.google.com.css": {
-      "class-overlay fix": "[role=\"menu\"]{\n  background-color: var(--darkreader-background-fffffff2) !important;\n}",
-      "class-transparency": ".OX4Vcb, nav, .Tabkde, .Aopndd, .RIDjNe, .mwJvDe .KEDCCd{\n  background-color: transparent !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "class-overlay fix": "[role=\"menu\"]{\n  background-color: var(--darkreader-background-fffffff2) !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "class-transparency": ".OX4Vcb, nav, .Tabkde, .Aopndd, .RIDjNe, .mwJvDe .KEDCCd{\n  background-color: transparent !important;\n  border: none !important;\n  box-shadow: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "class-darkreader": ":root{\n--darkreader-background-ffffff: transparent !important;\n}"
     },
     "claude.ai.css": {
@@ -196,7 +196,7 @@
       "convert-hover": "nav {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
     "cobalt.tools.css": {
-      "cobalt-transparency": "body, #cobalt, #sidebar, #content{\n  background-color: transparent !important;\n  background: none !important;\n}",
+      "cobalt-transparency": "body, #cobalt, #sidebar, #content{\n  background-color: transparent !important;\n  background: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "cobalt-hidden": "#terms-note{\n  display: none !important;\n}",
       "cobalt-hover": "#sidebar, #supported-services{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}"
     },
