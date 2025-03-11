@@ -15,27 +15,42 @@ html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-edit
 }
 
 /* docs-borders */
-.kix-page-paginated{
-  border-radius: 1em !important;
-  overflow: hidden !important;
+.kix-page-paginated {
+    border-radius: 1em !important;
+    overflow: hidden !important;
 }
 
-/* docs-white menu text */
-.docs-gm .docs-menubar .goog-control {
-  color: #fff !important;
+/* docs-color fix */
+.docs-gm .docs-menubar .goog-control, .docs-appbar-circle-button, .docs-titlebar-badge-container, #docs-parent-collections-container-outer{
+    filter: invert(1) !important;
 }
 
-/* docs-white title label */
-#docs-title-input-label-inner {
-	color: rgba(0,0,0,0) !important;
+
+.docs-title-input-label-inner {
+  visibility: hidden !important;
 }
 
+
+.docs-title-input {
+    color: white !important;
+}
 
 /* docs-rounded ruler */
 #kix-horizontal-ruler {
-	border-radius: 10px !important;
+    border-radius: 10px !important;
 }
 
 #kix-vertical-ruler {
-	border-radius: 10px !important;
+    border-radius: 10px !important;
 }
+
+/* docs-autohide sidebar */
+.left-sidebar-container {
+    opacity: 0 !important;
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
+}
+
+.left-sidebar-container:hover {
+    opacity: 1 !important;
+}
+
