@@ -1055,6 +1055,10 @@
     "+wiktionary.com.css": {
       "transparency": ":root{\n  --background-color-interactive-subtle: transparent !important;\n}\n\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "medium.com.css": {
+      "medium-transparency": ".c, a, h1, h2, h3, h4, h5, h6, span, p{\n  background-color: transparent;\n  color: #fff !important;\n\n  &:hover{\n    color: #bbb !important;\n  }\n}\n\n.ex, .ae{\n  border: none !important;\n}\n\nsvg, .bk path{\n  fill: light-dark(#fff, #000) !important;\n}",
+      "medium-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
     }
   }
 }
