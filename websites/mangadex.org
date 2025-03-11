@@ -1,0 +1,7 @@
+/* mangadex-transparency */
+html, body, nav, header, .bg-accent, .drawer, .banner-bg{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
