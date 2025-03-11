@@ -407,14 +407,14 @@
       "kick-overlay bg": ".z-dropdown{\n  background-color: var(--tw-shadow-color, #000) !important;\n}"
     },
     "last.fm.css": {
-      "transparency": "html, body, .top-bar, #content, .content-top, .content-top:after, .page-content, .stationlink::after, .chartlist-row, .chartlist-row::after, header{\n  background-color: transparent !important;\nborder: none !important;\n}",
+      "transparency": "html, body, .top-bar, #content, .content-top, .content-top:after, .page-content, .stationlink::after, .chartlist-row, .chartlist-row::after, header{\n  background-color: transparent !important;\nborder: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparency !important;\n}",
       "no thanks": ".subscribe-cta, .free-description, [href=\"/pro\"]{\ndisplay: none !important;\n}",
       "no footer": ".footer{\n  display: none !important;\n}",
       "border radius": ".recs-feed-inner-wrap, .header-background{\n  border-radius: 1em !important;\n  overflow: hidden !important;\n}"
     },
     "learning.westminster.ac.uk.css": {
-      "bb-transparecy": "#site-wrap,\nbody {\n  background-color: #00000000 !important;\n}\n\n:root {\n  --darkreader-neutral-background: #00000000 !important;\n  --darkreader-background-ffffff: #00000000 !important;\n}\n\nbody {\n  background: none !important;\n}",
+      "bb-transparecy": "#site-wrap,\nbody {\n  background-color: #00000000 !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n:root {\n  --darkreader-neutral-background: #00000000 !important;\n  --darkreader-background-ffffff: #00000000 !important;\n}\n\nbody {\n  background: none !important;\n}",
       "bb-hide elements": "ul.side-menu-footer,\n#pagefooter {\n  display: none !important;\n}",
       "bb-border and others": ".element-card {\n  border-radius: 1em !important;\n  background-color: #00000044 !important;\n}\n\n.course-banner {\n  border-radius: 1em 1em 0 0 !important;\n}\n\n.bb-offcanvas-panel {\n  background-color: #111111 !important;\n}",
       "bb-hover": "div.hide-in-background.themed-background-primary-fill-only.left-off-canvas-menu.color-selection-live-mode {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
@@ -449,8 +449,8 @@
       "lottielab-no footer": "footer {\n  display: none !important;\n}"
     },
     "mail.google.com.css": {
-      "gmail-transparency": ".aAU, .bkK > .nH, .a6o::before, .WR.aeN,.wl, .yO, .aKh, .Nt{\n  background: none !important;\n  background-color: transparent !important;\n}",
-      "gmail-no borders": ".aAU, .bkK > .nH, .a6o::before, .WR.aeN,.wl, .yO, .aKh, .Nt{\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "gmail-transparency": ".aAU, .bkK > .nH, .a6o::before, .WR.aeN,.wl, .yO, .aKh, .Nt{\n  background: none !important;\n  background-color: transparent !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "gmail-no borders": ".aAU, .bkK > .nH, .a6o::before, .WR.aeN,.wl, .yO, .aKh, .Nt{\n  border: none !important;\n  box-shadow: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "gmail-hidden": "div.apa.nH.oy8Mbf {\n  display: none !important;\n}",
       "gmail-preview (experimental)": "[jsname=\"h50Ewe\"]{\n  .UG, .iY, p, h1, h2, h3, h4, h5, h6, span, .nH, div{\n    background: none !important;\n    background-color: transparent !important;\n    color: var(--gm3-sys-color-surface-variant) !important;\n    fill: var(--gm3-sys-color-surface-variant) !important;\n  }\n}"
     },
@@ -1057,7 +1057,7 @@
       "no footer": "footer {\n  display: none !important;\n}"
     },
     "medium.com.css": {
-      "medium-transparency": ".c, a, h1, h2, h3, h4, h5, h6, span, p{\n  background-color: transparent;\n  color: #fff !important;\n\n  &:hover{\n    color: #bbb !important;\n  }\n}\n\n.ex, .ae{\n  border: none !important;\n}\n\nsvg, .bk path{\n  fill: light-dark(#fff, #000) !important;\n}",
+      "medium-transparency": ".c, a, h1, h2, h3, h4, h5, h6, span, p{\n  background-color: transparent;\n  color: #fff !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n\n  &:hover{\n    color: #bbb !important;\n  }\n}\n\n.ex, .ae{\n  border: none !important;\n}\n\nsvg, .bk path{\n  fill: light-dark(#fff, #000) !important;\n}",
       "medium-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
     },
     "themoviedb.org.css": {
