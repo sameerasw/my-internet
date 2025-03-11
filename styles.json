@@ -501,7 +501,7 @@
       "applem-no thanks": "[slot=\"native-cta\"]{\n  display: none !important;;\n}"
     },
     "music.youtube.com.css": {
-      "ytm-transparent bg": ":root {\n  --ts-body-color: #00000000 !important;\n}\n\nbody {\n  background-color: transparent !important;\n}",
+      "ytm-transparent bg": ":root {\n  --ts-body-color: #00000000 !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\nbody {\n  background-color: transparent !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "ytm-hover navbar and titlebar": ".ytmusic-guide-renderer,\nytmusic-nav-bar {\n  opacity: 0.01 !important;\n  transition: opacity 0.5s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\nytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app{\n  background-color: transparent !important;\n  border: none !important;\n}",
       "ytm-hide elements": "#side-panel,\n#nav-bar-divider,\n#background,\ndiv.av.style-scope.ytmusic-player-page,\nytmusic-chip-cloud-renderer.style-scope.ytmusic-section-list-renderer,\ntp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper-toast-open {\n  display: none !important;\n}",
       "ytm-centered player": "#player {\n  max-height: 100vh !important;\n  aspect-ratio: 1 !important;\n  width: 100% !important;\n  margin: auto !important;\n}",
@@ -518,7 +518,7 @@
       "ycom-transparency": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}\ntable{\n  background-color: transparent !important;\n}"
     },
     "notion.so.css": {
-      "notion-transparecy": "body {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n}\n\n.notion-app-inner,\n.notion-cursor-listener,\n.notion-frame,\n.notion-sidebar-container,\nheader {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  box-shadow: none !important;\n}",
+      "notion-transparecy": "body {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.notion-app-inner,\n.notion-cursor-listener,\n.notion-frame,\n.notion-sidebar-container,\nheader {\n  background-color: #00000000 !important;\n  background: #00000000 !important;\n  box-shadow: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "notion-hide elements": "div.autolayout-row.autolayout-fill-width.autolayout-center.autolayout-space {\n  display: none !important;\n}"
     },
     "old.reddit.com.css": {
