@@ -107,7 +107,7 @@
       "awwwards-hidden": ".marquee-top {\n  display: none !important;\n}"
     },
     "basicappleguy.com.css": {
-      "basicapple-transparency": "body{\n  background-color: #00000000 !important;\n}",
+      "basicapple-transparency": "body{\n  background-color: #00000000 !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "basicapple-transparency with darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important\n}"
     },
     "behance.net.css": {
@@ -133,14 +133,14 @@
       "msblog-border": ".s-list__item,\n.tribe-image img {\n  border-radius: 1em !important;\n  overflow: hidden !important;\n}"
     },
     "bloomberg.com.css": {
-      "bloo-transparency": ".media-ui-LeaderboardAd_parallaxWrapper-JMVgdxR--aU-, [data-component=\"logo-bar\"], [data-component=\"menu-desktop\"], [data-component=\"logo\"]{\n  background-color: transparent !important;\n}",
+      "bloo-transparency": ".media-ui-LeaderboardAd_parallaxWrapper-JMVgdxR--aU-, [data-component=\"logo-bar\"], [data-component=\"menu-desktop\"], [data-component=\"logo\"]{\n  background-color: transparent !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "bloo-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "bloo-hidden": "#bb-that{\n  display: none !important;\n}",
       "bloo-no borders": "section, .gridLayout_gridLayout__zTmc7, .LineupContent2Up_story__6VATd, .PhoenixTickerBarWrapper_tickerBarWrapper__2cAU2, [data-testid=\"secondary-stories\"], [data-component=\"grid-module\"]{\n  border: none !important;\n}",
       "bloo-nav blur": "nav{\n  backdrop-filter: blur(20px) !important;\n}"
     },
     "bsky.app.css": {
-      "bsky-transparecy": "html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{\n    --background: transparent !important;\n    background-color: transparent !important;\n}",
+      "bsky-transparecy": "html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{\n    --background: transparent !important;\n    background-color: transparent !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "bsky-no borders": "html.theme--dim, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), .css-175oi2r{\n    border: none !important;\n}",
       "bsky-overlay fixes": "[role=\"menu\"] .css-175oi2r, [role=\"dialog\"] .css-175oi2r{\n    background-color: var(--backgroundLight) !important;\n}"
     },
@@ -150,7 +150,7 @@
       "c4dsky-no footer": "footer {\n  display: none !important;\n}"
     },
     "calendar.google.com.css": {
-      "calendr-transparecy": "body,\n[jsname=\"mOIbvc\"],\n.R6TFwe,\n.sS0sZd,\n[jsname=\"vhZMvf\"],\n[jsname=\"KBzNL\"] {\n  --gm3-sys-color-surface-container-low: transparent !important;\n\n  background-color: transparent !important;\n}",
+      "calendr-transparecy": "body,\n[jsname=\"mOIbvc\"],\n.R6TFwe,\n.sS0sZd,\n[jsname=\"vhZMvf\"],\n[jsname=\"KBzNL\"] {\n  --gm3-sys-color-surface-container-low: transparent !important;\n\n  background-color: transparent !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "calendr-remove borders": ".BiKU4b {\n  border: none !important;\n}"
     },
     "canva.com.css": {
