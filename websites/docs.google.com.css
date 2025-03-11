@@ -24,21 +24,34 @@ html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-edit
 }
 
 /* docs-color fix */
-.docs-gm .docs-menubar .goog-control, .docs-appbar-circle-button, .docs-titlebar-badge-container, #docs-parent-collections-container-outer, .docs-revisions-icon-img, .navigation-widget-hat-close-button, .docs-revisions-chromecover-titlebar-button-back-container, .javascriptMaterialdesignGm3WizIconButtonFilled-icon-button__icon-slot{
-    filter: invert(1) !important;
-}
-
 .docs-title-input-label-inner {
   visibility: hidden !important;
 }
 
-.docs-title-input, .docs-revisions-tile-collaborator-name, .docs-revisions-collapsible-pane-detailed-tiles-container, .docs-revisions-tile-descriptor, .docs-revisions-tile-text-box, .docs-revisions-chromecover-titlebar-name-label, .docs-revisions-sidebar-title-text , .docs-revisions-sidebar-date-group, .navigation-widget-header, .docs-revisions-sidebar-actions *, .docs-material-gm-select-caption{
-    color: white !important;
+@media (prefers-color-scheme: dark) {
+    .docs-title-input, .docs-revisions-tile-collaborator-name, .docs-revisions-collapsible-pane-detailed-tiles-container, .docs-revisions-tile-descriptor, .docs-revisions-tile-text-box, .docs-revisions-chromecover-titlebar-name-label, .docs-revisions-sidebar-title-text , .docs-revisions-sidebar-date-group, .navigation-widget-header, .docs-revisions-sidebar-actions *, .docs-material-gm-select-caption{
+        color: white !important;
+    }
+
+
+    .docs-gm .docs-menubar .goog-control, .docs-appbar-circle-button, .docs-titlebar-badge-container, #docs-parent-collections-container-outer, .docs-revisions-icon-img, .navigation-widget-hat-close-button, .docs-revisions-chromecover-titlebar-button-back-container, .javascriptMaterialdesignGm3WizIconButtonFilled-icon-button__icon-slot{
+        filter: invert(1) !important;
+    }
+    
+    .navigation-widget-empty-content {
+        color: #bbb !important;
+    }
 }
 
-.navigation-widget-empty-content {
-    color: #bbb !important;
+@media (prefers-color-scheme: light) {
+    .docs-title-input, .docs-revisions-tile-collaborator-name, .docs-revisions-collapsible-pane-detailed-tiles-container, .docs-revisions-tile-descriptor, .docs-revisions-tile-text-box, .docs-revisions-chromecover-titlebar-name-label, .docs-revisions-sidebar-title-text , .docs-revisions-sidebar-date-group, .navigation-widget-header, .docs-revisions-sidebar-actions *, .docs-material-gm-select-caption{
+        color: black !important;
+    }
+    .navigation-widget-empty-content {
+        color: #444 !important;
+    }
 }
+
 .docs-material-gm-select-outer-box {
     border-color: white !important;
 }
