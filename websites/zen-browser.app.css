@@ -15,3 +15,7 @@ body, .astronav-items{
 :root{
   --light: transparent !important;
 }
+
+.shadow-lg {
+	color: black !important;
+}
