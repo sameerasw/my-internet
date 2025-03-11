@@ -374,7 +374,7 @@
       "imdb-no footer": "footer {\n  display: none !important;\n}"
     },
     "instagram.com.css": {
-      "ig-transparecy": ":root ._aa4d,\n:root ._ar45 {\n  --ig-primary-background: #00000000 !important;\n  --ig-highlight-background: #00000000 !important;\n  --ig-secondary-background: #00000000 !important;\n}\n\n.xvbhtw8, .x103n6ev, .xzxgvzf {\n  background-color: #00000000 !important;\n  border: none !important;\n  background-image: none !important;\n}",
+      "ig-transparecy": ":root ._aa4d,\n:root ._ar45 {\n  --ig-primary-background: #00000000 !important;\n  --ig-highlight-background: #00000000 !important;\n  --ig-secondary-background: #00000000 !important;\n}\n\n.xvbhtw8, .x103n6ev, .xzxgvzf {\n  background-color: #00000000 !important;\n  border: none !important;\n  background-image: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "ig-hide elements": "div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1, .x3hkoc4 {\n  display: none !important;\n}",
       "ig-other changes": ".xso031l {\n  border-radius: 1.5em !important;\n}\n\n* {\n  background-color: #00000000 !important;\n}\n\n.xopu45v {\n  border: none !important;\n}",
       "ig-centered": ".x17snn68.x17snn68{\n  width: 100vw !important;\n}",
