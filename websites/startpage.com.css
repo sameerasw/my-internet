@@ -1,26 +1,34 @@
 /* startpage-transparency */
-html, body, nav, header{
+html,
+body,
+nav,
+header {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* startpage-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* startpage-no footer */
-.footer-above-the-fold, footer, .feedback-serp-container{
+.footer-above-the-fold,
+footer,
+.feedback-serp-container {
   display: none !important;
 }
 
 /* startpage-hover */
-#home-top-header, .top-nav-container{
+#home-top-header,
+.top-nav-container {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }

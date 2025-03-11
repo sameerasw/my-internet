@@ -1,24 +1,30 @@
 /* leetcode-transparency */
-html, body, nav, .storyboard, .side-block{
+html,
+body,
+nav,
+.storyboard,
+.side-block {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* leetcode-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
   --darkreader-background-1a1a1a: transparent !important;
   --darkreader-background-282828: transparent !important;
 }
 
 /* leetcode-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* leetcode-no dividers */
-hr{
+hr {
   opacity: 0 !important;
 }

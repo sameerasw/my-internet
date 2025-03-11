@@ -1,18 +1,43 @@
 /* gh-transparency */
-html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folders-and-files"] .bgColor-muted, nav, .dxnHPp, .kcVpNH, .discussion-timeline-actions, .TimelineItem-break, .gh-header, .PageLayout-pane, .bSTcOH, .gOhIYN, #blob-edit-side-panel-id, #repository-container-header, .empty-cell, .FleZw{
+html,
+body,
+header,
+.color-bg-default,
+.feed-background,
+[aria-labelledby="folders-and-files"] .bgColor-muted,
+nav,
+.dxnHPp,
+.kcVpNH,
+.discussion-timeline-actions,
+.TimelineItem-break,
+.gh-header,
+.PageLayout-pane,
+.bSTcOH,
+.gOhIYN,
+#blob-edit-side-panel-id,
+#repository-container-header,
+.empty-cell,
+.FleZw {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* gh-transparent lists */
- .PageLayout-content .Box, .PageLayout-content .Box-row, #repo-content-turbo-frame .Box{
+.PageLayout-content .Box,
+.PageLayout-content .Box-row,
+#repo-content-turbo-frame .Box {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* gh-bordered boxes */
@@ -21,50 +46,72 @@ html, body, header, .color-bg-default, .feed-background, [aria-labelledby="folde
   .NWhVB,
   .cm-gutters,
   [data-testid="codemirror-editor"],
-  [data-testid="codemirror-editor"] .cm-content, .llKfAj {
+  [data-testid="codemirror-editor"] .cm-content,
+  .llKfAj {
     background: none !important;
     box-shadow: none !important;
   }
 }
 
 #user-profile-frame .Box,
-.mgKNn, .fGELhp, .timeline-comment, .empty-diff-line, .Diff-module__diffHeaderWrapper--rsdD4::before {
+.mgKNn,
+.fGELhp,
+.timeline-comment,
+.empty-diff-line,
+.Diff-module__diffHeaderWrapper--rsdD4::before {
   background: none !important;
   box-shadow: none !important;
 }
 
-.feed-item-content, .color-bg-subtle, .ajax-pagination-btn, action-graph .color-bg-inset{
+.feed-item-content,
+.color-bg-subtle,
+.ajax-pagination-btn,
+action-graph .color-bg-inset {
   background-color: transparent !important;
   background: none !important;
   box-shadow: none !important;
 }
 
 /* gh-no footer */
-footer:has(h2), div.px-2:nth-child(3){
+footer:has(h2),
+div.px-2:nth-child(3) {
   opacity: 0 !important;
 }
 
 /* gh-hover */
-.feed-left-sidebar, .feed-right-sidebar{
+.feed-left-sidebar,
+.feed-right-sidebar {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }
 
 /* gh-border mods */
-table, .eIKYQa, div.border-bottom, td{
+table,
+.eIKYQa,
+div.border-bottom,
+td {
   border: none !important;
 }
 
-.dJnomT,.jPdcfu, .gOHzTT, .eBevHz, .Box-header, #repos-sticky-header > div, .jbBkdO, .file-header{
+.dJnomT,
+.jPdcfu,
+.gOHzTT,
+.eBevHz,
+.Box-header,
+#repos-sticky-header > div,
+.jbBkdO,
+.file-header {
   border-radius: 0.5em !important;
   overflow: hidden;
 }
 
 /* gh-overlay fixes */
-modal-dialog .search-suggestions,details-dialog.Box, .Box-body{
+modal-dialog .search-suggestions,
+details-dialog.Box,
+.Box-body {
   background-color: var(--bgColor-inset) !important;
   border-radius: 1em !important;
 }

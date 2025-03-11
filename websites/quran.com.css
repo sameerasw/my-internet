@@ -1,22 +1,33 @@
 /* quran-transparency */
-html, body, nav, header, .NavbarBody_itemsContainer__l6N_R, .HomePageHero_backgroundImage__BUFE_, .index_bodyContainer__CKN6o, .QuranReader_container__BlSji, .ContextMenu_sectionsContainer__FQqlA, .ContextMenu_container__4zfsC{
+html,
+body,
+nav,
+header,
+.NavbarBody_itemsContainer__l6N_R,
+.HomePageHero_backgroundImage__BUFE_,
+.index_bodyContainer__CKN6o,
+.QuranReader_container__BlSji,
+.ContextMenu_sectionsContainer__FQqlA,
+.ContextMenu_container__4zfsC {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* quran-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* quran-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* quran-no bg */
-.HomePageHero_backgroundImage__BUFE_ svg{
+.HomePageHero_backgroundImage__BUFE_ svg {
   display: none !important;
 }

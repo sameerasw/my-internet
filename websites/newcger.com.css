@@ -1,28 +1,36 @@
 /* transparency */
-html, body, header, section, .blockTit{
+html,
+body,
+header,
+section,
+.blockTit {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* borders */
-.imageTextItem li, .hover-img img, .addAttentionItem li{
+.imageTextItem li,
+.hover-img img,
+.addAttentionItem li {
   border-radius: 1em !important;
   overflow: hidden !important;
 }
 
 /* no ads */
-[data-name="advertisement"]{
+[data-name="advertisement"] {
   display: none !important;
 }

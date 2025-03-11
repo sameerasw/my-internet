@@ -1,7 +1,31 @@
 /* outlook-transparency */
-html, body, nav, header, #appContainer, #O365_NavHeader, [aria-label="App launcher"], #owaBranding_container > div, #LeftRail, .gU1Tf, [aria-label="Hide navigation pane"], .root-171, .pivot-header-root > button, .QIl4y, .YYA9V, [data-app-section="MessageList"], .bkYAr, #ReadingPaneContainerId, #OwaTitleBar button, #O365_HeaderRightRegion, .IjQyD, .customScrollBar, .X4w2q{
+html,
+body,
+nav,
+header,
+#appContainer,
+#O365_NavHeader,
+[aria-label="App launcher"],
+#owaBranding_container > div,
+#LeftRail,
+.gU1Tf,
+[aria-label="Hide navigation pane"],
+.root-171,
+.pivot-header-root > button,
+.QIl4y,
+.YYA9V,
+[data-app-section="MessageList"],
+.bkYAr,
+#ReadingPaneContainerId,
+#OwaTitleBar button,
+#O365_HeaderRightRegion,
+.IjQyD,
+.customScrollBar,
+.X4w2q {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }

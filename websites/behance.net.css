@@ -1,23 +1,32 @@
 /* transparency */
-html, body, #site-content, .PrimaryNav-strip-Xyi::after, .PrimaryNav-strip-Xyi::before, .PrimaryNav-strip-Xyi, .Nav-storyNav-Uw0, .Btn-base-L7P, .ForYouUnified-root-R69{
+html,
+body,
+#site-content,
+.PrimaryNav-strip-Xyi::after,
+.PrimaryNav-strip-Xyi::before,
+.PrimaryNav-strip-Xyi,
+.Nav-storyNav-Uw0,
+.Btn-base-L7P,
+.ForYouUnified-root-R69 {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* no thanks */
-.ForYou-rowWrapper-U4T{
+.ForYou-rowWrapper-U4T {
   display: none;
 }
-

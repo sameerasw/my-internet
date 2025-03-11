@@ -1,26 +1,36 @@
 /* threads-transparency */
-html, body, .x1g7m7fl, #barcelona-page-layout, .x1ggkfyp, .x3ir7cq, .xz401s1, .xzii09s{
+html,
+body,
+.x1g7m7fl,
+#barcelona-page-layout,
+.x1ggkfyp,
+.x3ir7cq,
+.xz401s1,
+.xzii09s {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-.x9f619 *{
+.x9f619 * {
   border: none !important;
 }
 
 /* threads-overlay fixes */
- [role="menu"] > div > div, [role="dialog"] > div > div{
+[role="menu"] > div > div,
+[role="dialog"] > div > div {
   background-color: var(--nav-bar-background) !important;
   border-radius: 1em !important;
 }
 
 /* threads-sidebar icon contrast */
-.__fb-dark-mode .x7c8izy svg{
+.__fb-dark-mode .x7c8izy svg {
   color: var(--chat-text-blockquote-color-text-primary-media) !important;
 }
 
-.__fb-light-mode .x7c8izy svg{
+.__fb-light-mode .x7c8izy svg {
   color: var(--fds-black-alpha-80) !important;
 }

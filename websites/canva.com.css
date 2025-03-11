@@ -1,12 +1,30 @@
 /* canva-transparency */
-html, body, .EyQHyw, .fZgOqw, .eZq8Ig::before, .eZq8Ig.ocGgIA::after, ._oWbbw::after, ._orzOA::after, .gpRQSw, .sfOjmQ, .fLKksQ, .xzANJg, .OFiy3Q, .TYxWRA, .eZq8Ig.JwseWQ .fZgOqw::before, .fZgOqw{
+html,
+body,
+.EyQHyw,
+.fZgOqw,
+.eZq8Ig::before,
+.eZq8Ig.ocGgIA::after,
+._oWbbw::after,
+._orzOA::after,
+.gpRQSw,
+.sfOjmQ,
+.fLKksQ,
+.xzANJg,
+.OFiy3Q,
+.TYxWRA,
+.eZq8Ig.JwseWQ .fZgOqw::before,
+.fZgOqw {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* canva-no thanks */
-.UmIUVw, .GBjf5Q{
+.UmIUVw,
+.GBjf5Q {
   display: none;
 }

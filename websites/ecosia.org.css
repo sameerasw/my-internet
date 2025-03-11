@@ -1,31 +1,42 @@
 /* eco-transparency */
-html, body, section, .layout, [aria-label="Main header"], .mainline__result-wrapper{
+html,
+body,
+section,
+.layout,
+[aria-label="Main header"],
+.mainline__result-wrapper {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* eco-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* eco-no sections */
-.indexpage section, .forest-section, .wave-separator, .instant-answer__wave{
+.indexpage section,
+.forest-section,
+.wave-separator,
+.instant-answer__wave {
   display: none !important;
 }
 
 /* eco-hover */
-.notifications, .main-header__nav{
+.notifications,
+.main-header__nav {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }
 
 /* eco-no thanks */
-.main-header__install-cta{
+.main-header__install-cta {
   display: none !important;
 }

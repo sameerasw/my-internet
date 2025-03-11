@@ -1,21 +1,31 @@
 /* docs-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
   --darkreader-background-f9fbfd: transparent !important;
 }
 
 /* docs-transparency */
-html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-editor, #docs-editor-container, .kix-appview-editor, .navigation-widget-floating-navigation-button.navigation-widget, .outlines-widget-chaptered .kix-outlines-widget-header-contents,
-#docs-header:not(.docs-hub-appbar) .docs-titlebar-buttons{
+html,
+body,
+body.docs-grille-gm3,
+#docs-chrome:not(.docs-hub-chrome),
+#docs-editor,
+#docs-editor-container,
+.kix-appview-editor,
+.navigation-widget-floating-navigation-button.navigation-widget,
+.outlines-widget-chaptered .kix-outlines-widget-header-contents,
+#docs-header:not(.docs-hub-appbar) .docs-titlebar-buttons {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
   --gm3-sys-color-surface-bright: transparent !important;
 }
 
 /* docs-borders */
-.kix-page-paginated{
+.kix-page-paginated {
   border-radius: 1em !important;
   overflow: hidden;
 }

@@ -1,7 +1,28 @@
 /* themoviedb-transparency */
-html, body, nav, header,.search_bar, .search_bar section, main, section, .page_wrap::after, .column_wrapper, .column_content::after, #shortcut_bar_scroller, #new_shortcut_bar, .custom_bg, .header_large, .white_column, p, .no_cast, #media_scroller::after, #recommendation_scroller::after{
+html,
+body,
+nav,
+header,
+.search_bar,
+.search_bar section,
+main,
+section,
+.page_wrap::after,
+.column_wrapper,
+.column_content::after,
+#shortcut_bar_scroller,
+#new_shortcut_bar,
+.custom_bg,
+.header_large,
+.white_column,
+p,
+.no_cast,
+#media_scroller::after,
+#recommendation_scroller::after {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }

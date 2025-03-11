@@ -1,17 +1,23 @@
 /* screenmusings-transparency */
-html, body, nav, header, #thumbnails-container{
+html,
+body,
+nav,
+header,
+#thumbnails-container {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* screenmusings-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* screenmusings-rounded */
-#navigation{
+#navigation {
   border-radius: 1em !important;
 }

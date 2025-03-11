@@ -1,21 +1,30 @@
 /* lottielab-transparency */
-html, body, nav, header, .grid.fixed.bg-white, #sidebar > div, .select-none div:nth-child(1), .bg-editor-bg{
+html,
+body,
+nav,
+header,
+.grid.fixed.bg-white,
+#sidebar > div,
+.select-none div:nth-child(1),
+.bg-editor-bg {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* lottielab-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
-[role="menu"]{
+[role="menu"] {
   background-color: var(--darkreader-background-333333) !important;
 }
 
 /* lottielab-no footer */
-footer{
+footer {
   display: none !important;
 }

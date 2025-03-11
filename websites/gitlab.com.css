@@ -1,21 +1,29 @@
 /* gitlab-transparency */
-html, body, nav, header, [data-testid="top-bar"], .gl-bg-subtle, table{
+html,
+body,
+nav,
+header,
+[data-testid="top-bar"],
+.gl-bg-subtle,
+table {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* gitlab-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* gitlab-hover */
-#super-sidebar{
+#super-sidebar {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }

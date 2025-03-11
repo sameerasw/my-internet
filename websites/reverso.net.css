@@ -1,28 +1,38 @@
 /* reverso-transparency */
-html, body, nav, header, app-new-top-bar-desktop, .translation-box, .logo-wrapper{
+html,
+body,
+nav,
+header,
+app-new-top-bar-desktop,
+.translation-box,
+.logo-wrapper {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* reverso-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* reverso-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* reverso-no thanks */
-app-ab-double-banner, app-premium-banner, app-features-promotion{
+app-ab-double-banner,
+app-premium-banner,
+app-features-promotion {
   display: none !important;
 }
 
 /* reverso-card transparency */
-.translation-box-wrapper{
+.translation-box-wrapper {
   background-color: transparent !important;
   border: 1px solid gray;
 }

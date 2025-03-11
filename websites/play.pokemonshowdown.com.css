@@ -1,22 +1,36 @@
 /* pokemon-transparency */
-html, body, nav, #header, #room-rooms,[data-darkreader-inline-bgcolor], #room-battles, .ps-room.ps-room-opaque, .battle-log, .battle-controls, .battle-log-add, #room-overused, .chat-log{
+html,
+body,
+nav,
+#header,
+#room-rooms,
+[data-darkreader-inline-bgcolor],
+#room-battles,
+.ps-room.ps-room-opaque,
+.battle-log,
+.battle-controls,
+.battle-log-add,
+#room-overused,
+.chat-log {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* pokemon-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* pokemon-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* pokemon-widlcard (keep off) */
-div{
+div {
   background-color: transparent !important;
 }

@@ -1,21 +1,28 @@
 /* chess-transparency */
-html, body, .nav, header, #sb, .index-suggestion-component{
+html,
+body,
+.nav,
+header,
+#sb,
+.index-suggestion-component {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* chess-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* chess-hover */
-#sb{
+#sb {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }

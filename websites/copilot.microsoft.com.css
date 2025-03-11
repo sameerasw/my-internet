@@ -1,9 +1,16 @@
 /* copilot-transparency */
-html, body, .dark\:bg-midnight-850:is([data-theme="dark"] *), .bg-gradient-chat-light{
+html,
+body,
+.dark\:bg-midnight-850:is([data-theme="dark"] *),
+.bg-gradient-chat-light {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-div.space-y-8:nth-child(1){display: none !important;}
+div.space-y-8:nth-child(1) {
+  display: none !important;
+}

@@ -1,26 +1,38 @@
 /* messages-transparency */
-html, body, nav, .header, mw-main-nav, mw-main-landing, mw-conversation-container, .input-background, mw-new-conversation-container{
+html,
+body,
+nav,
+.header,
+mw-main-nav,
+mw-main-landing,
+mw-conversation-container,
+.input-background,
+mw-new-conversation-container {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* messages-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* messages-no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* messages-round */
-.conv-container mws-conversation-list-item > a, .contact-chip-input, .contact-chip-input input{
+.conv-container mws-conversation-list-item > a,
+.contact-chip-input,
+.contact-chip-input input {
   border-radius: 1em;
 
-  &::after{
+  &::after {
     display: none;
   }
 }

@@ -1,17 +1,27 @@
 /* filmgrab-transparency */
-html, body, nav, header, #page, #masthead::after, .header-wrap, #sticky-header, .single-post-title{
+html,
+body,
+nav,
+header,
+#page,
+#masthead::after,
+.header-wrap,
+#sticky-header,
+.single-post-title {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* filmgrab-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* filmgrab-no footer */
-footer{
+footer {
   display: none !important;
 }

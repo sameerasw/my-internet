@@ -1,17 +1,24 @@
 /* transparency */
-html, body, nav.fixed-top, .section-item, .container-wrapper, #tie-wrapper{
+html,
+body,
+nav.fixed-top,
+.section-item,
+.container-wrapper,
+#tie-wrapper {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-nav.fixed-unpinned{
+nav.fixed-unpinned {
   background-color: var(--main-nav-background) !important;
   border-radius: 1em;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

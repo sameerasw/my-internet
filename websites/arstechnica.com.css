@@ -1,17 +1,25 @@
 /* arstechnica-transparency */
-html, body, nav, header, header > div, div.dusk\:bg-gray-700:nth-child(4), article > div{
+html,
+body,
+nav,
+header,
+header > div,
+div.dusk\:bg-gray-700:nth-child(4),
+article > div {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* arstechnica-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* arstechnica-no footer */
-footer{
+footer {
   display: none !important;
 }

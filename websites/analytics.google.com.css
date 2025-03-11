@@ -1,28 +1,38 @@
 /* analytics-transparency */
-html, body, .app-content, .ga-report,.ga-report-content, .ng-star-inserted, gmp-header, .fade-right::after, .template-picker-component{
+html,
+body,
+.app-content,
+.ga-report,
+.ga-report-content,
+.ng-star-inserted,
+gmp-header,
+.fade-right::after,
+.template-picker-component {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-.floating-header, .ga-report-header{
+.floating-header,
+.ga-report-header {
   border-radius: 1em !important;
 }
 
 /* analytics-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* analytics-no footer */
-.ga-footer{
+.ga-footer {
   display: none !important;
 }
 
-
 /* analytics-sidebar hover */
-.ng-star-inserted.opened{
+.ng-star-inserted.opened {
   background-color: var(--mat-table-background-color) !important;
   border-radius: 0 2em 2em 0 !important;
   padding-right: 0.5em !important;

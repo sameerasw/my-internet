@@ -6,27 +6,40 @@
   --color-background-alt: transparent !important;
 }
 
-html, body, nav, header, .chat-room, .channel-root__right-column, .ixiIRM > div:nth-child(1), .stream-display-ad__container_squeezeback, .video-player,
+html,
+body,
+nav,
+header,
+.chat-room,
+.channel-root__right-column,
+.ixiIRM > div:nth-child(1),
+.stream-display-ad__container_squeezeback,
+.video-player,
 .video-player__container,
-.channel-root{
+.channel-root {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-body:has(.persistent-player--theatre){
-    .channel-root, nav{
+body:has(.persistent-player--theatre) {
+  .channel-root,
+  nav {
     display: none !important;
   }
 }
 
-.highlight, .chat-input-tray__open{
-  background-color: var(--color-background-input-checkbox-checked-background) !important;
+.highlight,
+.chat-input-tray__open {
+  background-color: var(
+    --color-background-input-checkbox-checked-background
+  ) !important;
 }
 
-
 /* twitch-no footer */
-footer{
+footer {
   display: none !important;
 }

@@ -1,27 +1,42 @@
 /* spotify-transparency */
-html, body, nav, header, [data-right-sidebar-hidden], [data-testid="global-nav-bar"], #Desktop_LeftSidebar_Id, nav[aria-label="Main"] > div, .YourLibraryX, .jEMA2gVoLgPQqAFrPhFw, .S4OmZ_IZexmZ5dasPqW5, #Desktop_PanelContainer_Id{
+html,
+body,
+nav,
+header,
+[data-right-sidebar-hidden],
+[data-testid="global-nav-bar"],
+#Desktop_LeftSidebar_Id,
+nav[aria-label="Main"] > div,
+.YourLibraryX,
+.jEMA2gVoLgPQqAFrPhFw,
+.S4OmZ_IZexmZ5dasPqW5,
+#Desktop_PanelContainer_Id {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* spotify-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* spotify-no footer */
-[data-testid="left-sidebar-footer"], .main-view-container__mh-footer-container {
+[data-testid="left-sidebar-footer"],
+.main-view-container__mh-footer-container {
   display: none !important;
 }
 
 /* spotify-rounded now playing */
-#Desktop_PanelContainer_Id::before{
+#Desktop_PanelContainer_Id::before {
   border-radius: 1em !important;
 }
 
 /* spotify-no thanks */
-[data-testid="upgrade-button"], a[href="/download"]{
+[data-testid="upgrade-button"],
+a[href="/download"] {
   display: none !important;
 }

@@ -1,17 +1,26 @@
 /* openrouter-transparency */
-html, body, nav, header, .bg-background, .bg-popover:has([aria-controls="search-command-list"]), .to-background{
+html,
+body,
+nav,
+header,
+.bg-background,
+.bg-popover:has([aria-controls="search-command-list"]),
+.to-background {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* openrouter-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* openrouter-no footer */
-footer, hr{
+footer,
+hr {
   display: none !important;
 }
