@@ -1,6 +1,7 @@
 /* class-overlay fix */
 [role="menu"]{
   background-color: var(--darkreader-background-fffffff2) !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* class-transparency */
@@ -8,6 +9,7 @@
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* class-darkreader */
