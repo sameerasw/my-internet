@@ -2,6 +2,7 @@
 body, #header, #sr-header-area, .side, .spacer, .link.odd, [role="main"], .res-nightmode .entry.res-selected, .res-nightmode .link{
   background-color: transparent !important;
   border: none !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
