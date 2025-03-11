@@ -11,6 +11,8 @@ html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-edit
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
   --gm3-sys-color-surface-bright: transparent !important;
 }
 
