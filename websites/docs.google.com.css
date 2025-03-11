@@ -17,7 +17,7 @@ html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-edit
 /* docs-borders */
 .kix-page-paginated{
   border-radius: 1em !important;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 /* docs-menubar-colors */
