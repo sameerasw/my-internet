@@ -1,7 +1,3 @@
-/* Zen transparency */
-:root {
-  --zen-main-browser-background: #00000000 !important;
-}
 
 /* Hidden buttons */
 /* #nav-bar-overflow-button, */
@@ -241,15 +237,6 @@ slot:nth-child(1) {
   }
 }
 
-/*  transparent url bar  */
-#urlbar[open][zen-floating-urlbar="true"] {
-  #urlbar-background {
-    background-color: light-dark(
-      color-mix(in srgb, #fdfdfd 75%, transparent),
-      color-mix(in srgb, #0e0e0e 75%, transparent)
-    ) !important;
-  }
-}
 
 /* Find */
 findbar {
@@ -272,12 +259,6 @@ findbar {
 }
 
 
-/* Remove new tab background color */
-.browserStack{
-  browser {
-    background-color: transparent !important;
-  }
-}
 
 /* empty tab image */
 #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack{
@@ -291,11 +272,8 @@ findbar {
   background-repeat: no-repeat !important;
   background-size: 50px !important;
   filter: saturate(0);
-  
-  browser {
-  background-color: transparent !important;
-  opacity: 0 !important;
-  }
+/* 	  background-size: cover !important; */
+ 
 }
 
 /* hide compact sidebar when no tabs open */
@@ -417,4 +395,38 @@ html:not([lwt-sidebar="dark"]) {
 /*     transform: translateY(12px) !important; */
     margin-top: 15px !important
   }
+}
+
+
+/*  transparent url bar  */
+#urlbar[open][zen-floating-urlbar="true"] {
+  #urlbar-background {
+    background-color: light-dark(
+      color-mix(in srgb, #fdfdfd 50%, transparent),
+      color-mix(in srgb, #0e0e0e 50%, transparent)
+    ) !important;
+  }
+}
+
+/* compact sidebar usable blur */
+body:has([zen-compact-mode="true"]) #titlebar{
+  background: #0009 !important;
+  backdrop-filter: blur(30px) !important;
+}
+
+#browser::after{
+  opacity: 0 !important;
+  left: -300px !important;
+  width: 198px !important;
+  border-radius: 1em !important;
+  height: (100vh-5px) !important;
+  margin: 5px !important;
+  top: 0 !important;
+  background-color: var(--toolbar-bgcolor) !important;
+  transition: left 0.2s cubic-bezier(0.175, 0.585, 0.32, 1.1) !important;
+}
+
+body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"] [zen-has-hover="true"]) #browser::after{
+  opacity: 1 !important;
+  left: -1px !important;
 }
