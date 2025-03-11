@@ -18,14 +18,17 @@ tbody,
 tr,
 td {
   background: transparent !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 .aajZCb {
   background-color: var(--uv-styles-color-surface) !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 div.sfbg {
   background-color: var(--darkreader-border-ffffff) !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 :root {
@@ -34,12 +37,14 @@ div.sfbg {
 
 body {
   background-color: #00000000 !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 .in7vHe.FR7ZSc.FR7ZSc .niO4u,
 div.RNNXgb,
 .aajZCb {
   background-color: var(--EpFNW) !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* google-shadows and borders */
@@ -59,6 +64,7 @@ div.RNNXgb,
 
 .w6VYqd {
   background-color: light-dark(#fff, #000) !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* google-hover */
@@ -74,16 +80,19 @@ div.RNNXgb,
 /* google-full overlay fix */
 #liveresults-sports-immersive__match-fullpage {
   background-color: var(--EpFNW) !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 #liveresults-sports-immersive__match-fullpage  .nGzje{
   background-color: var(--uv-styles-color-footer) !important;
   border-radius: 2em !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* google-maps */
 html:has([title="Google Maps"]){
 .xoLGzf, .tXNTee, .hdeJwf, .DAdBuc, .E9Z7uf .m6QErb.iS1Ot, .ztgaDb, .WzvKIe{
   background: light-dark(#fff, #000) !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 }
