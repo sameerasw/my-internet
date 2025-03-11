@@ -51,7 +51,7 @@
       "aigei-no footer": "footer {\n  display: none !important;\n}"
     },
     "aistudio.google.com.css": {
-      "aistd-transparecy": ":root{\n    --color-surface-container-lowest: #00000000 !important;\n    --color-sidebars-background: #00000000 !important;\n  }\n  \n  .makersuite-layout, .layout-navbar, select-header, .navbar-header, .router-outlet-wrapper, .nav-toggle-wrapper, .chunk-editor-main, ms-run-settings, .footer, .turn-footer[_ngcontent-ng-c2950371965] > [_ngcontent-ng-c2950371965], .turn-footer[_ngcontent-ng-c2950371965]{\n    background-color: #00000000 !important;\n  }",
+      "aistd-transparecy": ":root{\n    --color-surface-container-lowest: #00000000 !important;\n    --color-sidebars-background: #00000000 !important;\n  }\n  \n  .makersuite-layout, .layout-navbar, select-header, .navbar-header, .router-outlet-wrapper, .nav-toggle-wrapper, .chunk-editor-main, ms-run-settings, .footer, .turn-footer[_ngcontent-ng-c2950371965] > [_ngcontent-ng-c2950371965], .turn-footer[_ngcontent-ng-c2950371965]{\n    background-color: #00000000 !important;\n      transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n  }",
       "aistd-hide disclaimer": "div.disclaimer-container.ng-tns-c1318864088-1.ng-star-inserted{\n    display: none !important;\n  }"
     },
     "analytics.google.com.css": {
