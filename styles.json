@@ -954,7 +954,7 @@
       "ddg-transparent header": "#header_wrapper{\n  background-color: transparent !important;\n  position: sticky !important;\n}\n\nnav::before, nav::after, .XvPRmQVeIoCP5lQhICTv.ofDl_1VxUG_EKc3b9E3x::before{\n  display: none !important;\n}"
     },
     "backloggd.com.css": {
-      "bkl-transparency": "body,\n.site-body,\nfooter,\n.article-hero::before {\n  background: transparent !important;\n}\n\n:root {\n  --back-secondary: #00000000 !important;\n  --back-highlight: rgba(0, 0, 0, 0) !important;\n}\n\n.navbar {\n  border-bottom: none !important;\n  border-bottom: none !important;\n}\n\n#primary-nav.hide-border #nav-bar-search,\n#primary-nav.hide-border .search-btn {\n  border-width: 0px !important;\n}\n\n.modal-search .search-btn,\n.navbar .search-btn,\n.modal-search .search-bar,\n.navbar .search-bar,\n.btn-general {\n  background-color: #00000000 !important;\n}",
+      "bkl-transparency": "body,\n.site-body,\nfooter,\n.article-hero::before {\n  background: transparent !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n:root {\n  --back-secondary: #00000000 !important;\n  --back-highlight: rgba(0, 0, 0, 0) !important;\n}\n\n.navbar {\n  border-bottom: none !important;\n  border-bottom: none !important;\n}\n\n#primary-nav.hide-border #nav-bar-search,\n#primary-nav.hide-border .search-btn {\n  border-width: 0px !important;\n}\n\n.modal-search .search-btn,\n.navbar .search-btn,\n.modal-search .search-bar,\n.navbar .search-bar,\n.btn-general {\n  background-color: #00000000 !important;\n}",
       "bkl-no footer": "footer {\n  display: none !important;\n}"
     },
     "docs.zen-browser.app.css": {
