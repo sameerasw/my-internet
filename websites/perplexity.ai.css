@@ -2,6 +2,7 @@
 body,#__next > main:nth-child(1) > div:nth-child(1),  .erp-tab\:rounded-none, div.sticky:nth-child(2), .pb-\[144px\] > div:nth-child(1), .pb-32 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1), .mt-xs > div:nth-child(1) > div:nth-child(1), .dark\:bg-offsetDark{
   background-color: transparent !important;
   border: none !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* perplexity-hover */
