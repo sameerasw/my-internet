@@ -1059,6 +1059,9 @@
     "medium.com.css": {
       "medium-transparency": ".c, a, h1, h2, h3, h4, h5, h6, span, p{\n  background-color: transparent;\n  color: #fff !important;\n\n  &:hover{\n    color: #bbb !important;\n  }\n}\n\n.ex, .ae{\n  border: none !important;\n}\n\nsvg, .bk path{\n  fill: light-dark(#fff, #000) !important;\n}",
       "medium-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
+    },
+    "themoviedb.org.css": {
+      "themoviedb-transparency": "html, body, nav, header,.search_bar, .search_bar section, main, section, .page_wrap::after, .column_wrapper, .column_content::after, #shortcut_bar_scroller, #new_shortcut_bar, .custom_bg, .header_large, .white_column, p, .no_cast, #media_scroller::after, #recommendation_scroller::after{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}"
     }
   }
 }
