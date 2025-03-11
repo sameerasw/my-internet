@@ -20,22 +20,22 @@ html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-edit
   overflow: hidden !important;
 }
 
-/* docs-menubar-colors */
+/* docs-white menu text */
 .docs-gm .docs-menubar .goog-control {
   color: #fff !important;
 }
 
-/* docs-title-label */
+/* docs-white title label */
 #docs-title-input-label-inner {
 	color: rgba(0,0,0,0) !important;
 }
 
-/* docs-horizontal-ruler - making it a bit rounded */
+
+/* docs-rounded ruler */
 #kix-horizontal-ruler {
 	border-radius: 10px !important;
 }
 
-/* docs-vertical-ruler - making it a bit rounded */
 #kix-vertical-ruler {
 	border-radius: 10px !important;
 }
