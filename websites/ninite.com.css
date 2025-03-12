@@ -14,3 +14,8 @@ div {
 div.col-sm-12 {
   display: none !important;
 }
+
+/* ninite-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
