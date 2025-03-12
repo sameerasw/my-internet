@@ -1,0 +1,53 @@
+name: PR Comment
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Add comment to new pull request
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.payload.pull_request.number,
+            body: `
+            You can use the example.com.css as a starter for most websites.
+
+            Make sure the file is named in the correct format [website domain].css (google.com.css and docs.google.com.css are 2 styles which are not merged)
+
+            Please respect auto theming for day and night themes. If the website does not have a dark theme, account for dark reader.
+
+            Do not use wildcards such as applying transparency for all div elements since that is handled with force theming in the addon.
+
+            Every property should include !important to make sure it gets applied.
+
+            Do NOT leave commented out code.
+
+            Add proper comments for each section of a feature at the beginning with a clear but compact description.
+
+            Each comment of the same file should have a unique domain specific identified prefix (yt- ytm- gh- ...) which will help the browser to separately apply themes.
+
+            \`\`\`
+            /* yt-transparency */
+            :root{
+              --colorBgApp: transparent !important;
+            }
+
+            /* yt-no footer */
+            footer.app-footer {
+              display: none !important;
+            }
+            \`\`\`
+
+            Once committed to the repository, GitHub Actions will parse the CSS file and update/generate the styles.js and then will be deployed to the GitHub Pages allowing the add-on to fetch from it.
+
+            Thank you <3
+            `
+          })
