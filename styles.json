@@ -1089,6 +1089,11 @@
     "ninite.com.css": {
       "ninite-transparency": "body,\nhtml,\ndiv {\n  background: transparent !important;\n  color: #fff !important;\n  border: none !important;\n}",
       "ninite-no footer & links": ".footer {\n  display: none !important;\n}\ndiv.col-sm-12 {\n  display: none !important;\n}"
+    },
+    "fast.com.css": {
+      "fast-transparency": "html,\nbody {\n  background: transparent !important;\n}",
+      "fast-white color": "div,\nspan,\nbutton {\n  color: #fff !important;\n\n  border-color: #fff !important;\n}",
+      "fast-others": ".more-info-link {\n  border: none !important;\n  color: #fff !important;\n}\n\ndiv.powered-by {\n  display: none !important;\n}"
     }
   }
 }
