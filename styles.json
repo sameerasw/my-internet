@@ -1086,6 +1086,10 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .bg-gradient-to-b, .border-black, .bg-gray-0, .bg-white-veil, .bg-gradient-to-t, main > div > div > div{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "fmhy.pages.dev.css": {
+      "fmhy-transparency": ":root{\n  --darkreader-background-ffffff: transparent !important;\n  --vp-sidebar-bg-color: transparent;\n  --vp-nav-bg-color: transparent;\n  --vp-c-divider: transparent;\n}\n\nbody{\n  background-color: #00000000;\n}",
+      "fmhy-hidden": "div.aside-curtain {\n  display: none;\n}"
     }
   }
 }
