@@ -5,6 +5,11 @@ const rootDir = path.join(__dirname, 'websites');
 const outputFile = path.join(__dirname, 'styles.json');
 const excludeFile = 'userChrome.css';
 
+// Check if the output file exists and create it if it doesn't
+if (!fs.existsSync(outputFile)) {
+  fs.writeFileSync(outputFile, JSON.stringify({ website: {} }, null, 2));
+}
+
 function updateStylesJson() {
   const styles = JSON.parse(fs.readFileSync(outputFile, 'utf-8')) || { website: {} };
 
