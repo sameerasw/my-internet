@@ -602,7 +602,7 @@
       "redditwrapped-hidden": "footer {\n  display: none !important;\n}\n\ndiv.py-5.flex.justify-center.items-center {\n  display: none !important;\n}"
     },
     "reddit.com.css": {
-      "reddit-transparecy": ":root.theme-dark,\n.theme-rpl {\n  --color-neutral-background: #00000000 !important;\n}\n\n.bg-neutral-background{\n  background-color: #00000000 !important;\n  border: none !important;\n}\n\nshreddit-app,\nbody,\nhtml {\n  background-color: #00000000 !important;\n}",
+      "reddit-transparecy": ":root.theme-dark,\n.theme-rpl {\n  --color-neutral-background: #00000000 !important;\n}\n\n.bg-neutral-background, #subreddit-right-rail__partial aside{\n  background-color: #00000000 !important;\n  border: none !important;\n}\n\nshreddit-app,\nbody,\nhtml {\n  background-color: #00000000 !important;\n}",
       "reddit-no chat feed": "[source=\"chat_module_home\"]{\n  display: none !important;\n}",
       "reddit-hide elements": "div aside recent-posts, hr{\n  display: none !important;\n}\n\nnav.z-\\[2\\] > nav:nth-child(18),\ndiv.visible {\n  display: none !important;\n}\n\nhr.w-100.my-sm.border-neutral-border-weak {\n  display: none !important;\n}",
       "reddit-other changes": ".overflow-visible > div:nth-child(32),\nfaceplate-dropdown-menu {\n  border-radius: 1em 1em 0 0 !important;\n}",
