@@ -17,7 +17,10 @@ My custom CSS for websites I visit the most. Click on the preview to view the fi
 </a>
 
 ## Contributing styles
+- You can use the [example.com.css](https://github.com/sameerasw/my-internet/raw/refs/heads/main/websites/example.com.css) as a starter for most websites.
 - Make sure the file is named in the correct format [website domain].css (google.com.css and docs.google.com.css are 2 styles which are not merged)
+- Please respect auto theming for day and night themes. If the website does not have a dark theme, account for dark reader.
+- Do not use wildcards such as applying transparency for all div elements since that is handled with force theming in the addon.
 - Every property should include `!important` to make sure it gets applied.
 - Do NOT leave commented out code.
 - Add propper comments for each section of a feature at the beginning with a clear but compact description.
