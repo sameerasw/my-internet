@@ -11,8 +11,7 @@ body, .astronav-items{
 
 /* footer */
 #footer {
-  background-color: color-mix(in srgb, var(--zen-dark) 70%, transparent) !important;
-  backdrop-filter: blur(10px) !important;
+  background-color: color-mix(in srgb, var(--zen-dark), transparent) !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
     border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
   border: none !important;
