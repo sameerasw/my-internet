@@ -363,10 +363,8 @@
       "faceit-transparency": "* {\n  background-color: transparent !important;\n  border: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n[class*=\"styles__HolderButton\"], [class*=\"styles__Container\"], [class*=\"styles__HolderDiv\"], [class*=\"Card-sc\"], [class*=\"styles__CanvasHolder\"], [class*=\"ListContentPlayer__Holder\"] {\n  background-color: rgba(0, 0, 0, 0.2) !important;\n  border: none !important;\n}\n[class*=\"modal-\"], #radix-:rq: {\n  background-color: rgba(0, 0, 0, 0.5) !important;\n  border: none !important;\n}"
     },
     "fast.com.css": {
-      "fast-transparency": "html,\nbody {\n  background: transparent !important;\n}",
-      "fast-white color": "div,\nspan,\nbutton {\n  color: #fff !important;\n\n  border-color: #fff !important;\n}",
-      "fast-others": ".more-info-link {\n  border: none !important;\n  color: #fff !important;\n}\n\ndiv.powered-by {\n  display: none !important;\n}",
-      "fast-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}"
+      "fast-transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.speed-container{\n  color: light-dark(#000, #fff) !important;\n}",
+      "fast-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
     },
     "feedly.com.css": {
       "feedly-Transparency": "html,\nbody,\nnav,\nheader,\n.FeedlyChrome,\n#feedlyFrame,\n#headerBarFX,\n.TopHeaderBar,\n.LeftnavEmptySpace {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
