@@ -1094,7 +1094,8 @@
     "fast.com.css": {
       "fast-transparency": "html,\nbody {\n  background: transparent !important;\n}",
       "fast-white color": "div,\nspan,\nbutton {\n  color: #fff !important;\n\n  border-color: #fff !important;\n}",
-      "fast-others": ".more-info-link {\n  border: none !important;\n  color: #fff !important;\n}\n\ndiv.powered-by {\n  display: none !important;\n}"
+      "fast-others": ".more-info-link {\n  border: none !important;\n  color: #fff !important;\n}\n\ndiv.powered-by {\n  display: none !important;\n}",
+      "fast-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}"
     }
   }
 }
