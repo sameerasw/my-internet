@@ -1097,6 +1097,10 @@
     "allegro.pl.css": {
       "allegro-transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, [data-role=\"header-secondary-bar\"], .opbox-sheet, .opbox-sheet, [role=\"presentation\"], [data-role=\"app-container\"] > div, [itemprop=\"description\"], [data-item=\"true\"]{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.carousel-item[data-role=\"offer-tile\"]{\n  border-radius: 1em;\n  padding: 10px !important;\n}",
       "allegro-no footer": "footer, [data-box-name=\"metrum-footer-partial\"]{\n  display: none !important;\n}"
+    },
+    "otomoto.pl.css": {
+      "otomoto-transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, [data-sentry-element=\"PageBody\"]{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "otomoto-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
     }
   }
 }
