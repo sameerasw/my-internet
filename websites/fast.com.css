@@ -22,3 +22,8 @@ button {
 div.powered-by {
   display: none !important;
 }
+
+/* fast-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
