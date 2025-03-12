@@ -1085,6 +1085,10 @@
       "hf-transparency": "body,\nhtml {\n  background: transparent !important;\n}\n\nsection,\na,\narticle,\nheader {\n  background: transparent !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
       "hf-div": "div {\n  border: none !important;\n  box-shadow: none !important;\n  background: transparent !important;\n}",
       "hf-no footers": "footer {\n  display: none !important;\n}"
+    },
+    "ninite.com.css": {
+      "ninite-transparency": "body,\nhtml,\ndiv {\n  background: transparent !important;\n  color: #fff !important;\n  border: none !important;\n}",
+      "ninite-no footer & links": ".footer {\n  display: none !important;\n}\ndiv.col-sm-12 {\n  display: none !important;\n}"
     }
   }
 }
