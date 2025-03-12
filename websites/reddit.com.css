@@ -4,7 +4,7 @@
   --color-neutral-background: #00000000 !important;
 }
 
-.bg-neutral-background{
+.bg-neutral-background, #subreddit-right-rail__partial aside{
   background-color: #00000000 !important;
   border: none !important;
 }
