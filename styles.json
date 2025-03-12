@@ -1089,7 +1089,8 @@
     },
     "ninite.com.css": {
       "ninite-transparency": "body,\nhtml,\ndiv {\n  background: transparent !important;\n  color: #fff !important;\n  border: none !important;\n}",
-      "ninite-no footer & links": ".footer {\n  display: none !important;\n}\ndiv.col-sm-12 {\n  display: none !important;\n}"
+      "ninite-no footer & links": ".footer {\n  display: none !important;\n}\ndiv.col-sm-12 {\n  display: none !important;\n}",
+      "ninite-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}"
     },
     "fast.com.css": {
       "fast-transparency": "html,\nbody {\n  background: transparent !important;\n}",
