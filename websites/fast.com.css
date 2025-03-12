@@ -1,0 +1,29 @@
+/* fast-transparency */
+html,
+body {
+  background: transparent !important;
+}
+
+/* fast-white color */
+div,
+span,
+button {
+  color: #fff !important;
+
+  border-color: #fff !important;
+}
+
+/* fast-others */
+.more-info-link {
+  border: none !important;
+  color: #fff !important;
+}
+
+div.powered-by {
+  display: none !important;
+}
+
+/* fast-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}

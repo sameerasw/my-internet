@@ -1,0 +1,26 @@
+/* hf-transparency */
+body,
+html {
+  background: transparent !important;
+}
+
+section,
+a,
+article,
+header {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* hf-div */
+div {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* hf-no footers */
+footer {
+  display: none !important;
+}

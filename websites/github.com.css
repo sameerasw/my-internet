@@ -115,3 +115,8 @@ details-dialog.Box,
   background-color: var(--bgColor-inset) !important;
   border-radius: 1em !important;
 }
+
+/* gh-no button shadow */
+button {
+  box-shadow: none !important;
+}
