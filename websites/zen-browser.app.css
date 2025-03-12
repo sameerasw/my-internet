@@ -1,17 +1,18 @@
 /* zen-transparency */
+:root{
+  --light: transparent !important;
+}
+
 body, .astronav-items{
   background-color: #00000000 !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
     border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-.bg-dark{
-  background-color: #ffffff88 !important;
+/* footer */
+#footer {
+  background-color: color-mix(in srgb, var(--zen-dark), transparent) !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
     border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
   border: none !important;
-}
-
-:root{
-  --light: transparent !important;
 }

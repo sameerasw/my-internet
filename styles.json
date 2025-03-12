@@ -603,11 +603,11 @@
       "redditwrapped-hidden": "footer {\n  display: none !important;\n}\n\ndiv.py-5.flex.justify-center.items-center {\n  display: none !important;\n}"
     },
     "reddit.com.css": {
-      "reddit-transparecy": ":root.theme-dark,\n.theme-rpl {\n  --color-neutral-background: #00000000 !important;\n}\n\n.bg-neutral-background{\n  background-color: #00000000 !important;\n  border: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\nshreddit-app,\nbody,\nhtml {\n  background-color: #00000000 !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "reddit-transparecy": ":root.theme-dark,\n.theme-rpl {\n  --color-neutral-background: #00000000 !important;\n}\n\n.bg-neutral-background, #subreddit-right-rail__partial aside{\n  background-color: #00000000 !important;\n  border: none !important;\n}\n\nshreddit-app,\nbody,\nhtml {\n  background-color: #00000000 !important;\n}",
       "reddit-no chat feed": "[source=\"chat_module_home\"]{\n  display: none !important;\n}",
       "reddit-hide elements": "div aside recent-posts, hr{\n  display: none !important;\n}\n\nnav.z-\\[2\\] > nav:nth-child(18),\ndiv.visible {\n  display: none !important;\n}\n\nhr.w-100.my-sm.border-neutral-border-weak {\n  display: none !important;\n}",
       "reddit-other changes": ".overflow-visible > div:nth-child(32),\nfaceplate-dropdown-menu {\n  border-radius: 1em 1em 0 0 !important;\n}",
-      "reddit-hover": "#flex-left-nav-container, #flex-nav-buttons{\n  background-color: light-dark(#fff, #000) !important;\n  border-radius: 1em !important;\n}\n\n#flex-left-nav-container,\n#right-sidebar-container{\n  transition: opacity 0.3s ease-in-out !important;\n  opacity: 0 !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
+      "reddit-hover": "[expanded=\"0\"] #flex-left-nav-container, #flex-nav-buttons{\n  background-color: light-dark(#fff, #000) !important;\n  border-radius: 1em !important;\n}\n\n#flex-left-nav-container,\n#right-sidebar-container{\n  transition: opacity 0.3s ease-in-out !important;\n  opacity: 0 !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
     "remove.bg.css": {
       "removebg-transparency": "html,\nbody,\n#navbar {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
@@ -812,7 +812,8 @@
       "zcool-no footer": "footer {\n  display: none !important;\n}"
     },
     "zen-browser.app.css": {
-      "zen-transparency": "body, .astronav-items{\n  background-color: #00000000 !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.bg-dark{\n  background-color: #ffffff88 !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n  border: none !important;\n}\n\n:root{\n  --light: transparent !important;\n}"
+      "zen-transparency": ":root{\n  --light: transparent !important;\n}\n\nbody, .astronav-items{\n  background-color: #00000000 !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "footer": "#footer {\n  background-color: color-mix(in srgb, var(--zen-dark), transparent) !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n  border: none !important;\n}"
     },
     "feedly.com.css": {
       "feedly-Transparency": "html,\nbody,\nnav,\nheader,\n.FeedlyChrome,\n#feedlyFrame,\n#headerBarFX,\n.TopHeaderBar,\n.LeftnavEmptySpace {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
@@ -1082,21 +1083,25 @@
     "pass.proton.me.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     },
-    "huggingface.co.css": {
-      "hf-transparency": "body,\nhtml {\n  background: transparent !important;\n}\n\nsection,\na,\narticle,\nheader {\n  background: transparent !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
-      "hf-div": "div {\n  border: none !important;\n  box-shadow: none !important;\n  background: transparent !important;\n}",
-      "hf-no footers": "footer {\n  display: none !important;\n}"
+    "deno.land.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .bg-gradient-to-b, .border-black, .bg-gray-0, .bg-white-veil, .bg-gradient-to-t, main > div > div > div{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     },
-    "ninite.com.css": {
-      "ninite-transparency": "body,\nhtml,\ndiv {\n  background: transparent !important;\n  color: #fff !important;\n  border: none !important;\n}",
-      "ninite-no footer & links": ".footer {\n  display: none !important;\n}\ndiv.col-sm-12 {\n  display: none !important;\n}",
-      "ninite-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}"
+    "fmhy.pages.dev.css": {
+      "fmhy-transparency": ":root{\n  --darkreader-background-ffffff: transparent !important;\n  --vp-sidebar-bg-color: transparent;\n  --vp-nav-bg-color: transparent;\n  --vp-c-divider: transparent;\n}\n\nbody{\n  background-color: #00000000;\n}",
+      "fmhy-hidden": "div.aside-curtain {\n  display: none;\n}"
     },
-    "fast.com.css": {
-      "fast-transparency": "html,\nbody {\n  background: transparent !important;\n}",
-      "fast-white color": "div,\nspan,\nbutton {\n  color: #fff !important;\n\n  border-color: #fff !important;\n}",
-      "fast-others": ".more-info-link {\n  border: none !important;\n  color: #fff !important;\n}\n\ndiv.powered-by {\n  display: none !important;\n}",
-      "fast-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}"
+    "aniwatchtv.to.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #mw-top::before, #mw-top, .share-buttons.share-buttons-detail, .anis-cover-wrap, .anis-cover, #episodes-content, .player-servers, .watch-player, .player-controls, #servers-content{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+    },
+    "allegro.pl.css": {
+      "allegro-transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, [data-role=\"header-secondary-bar\"], .opbox-sheet, .opbox-sheet, [role=\"presentation\"], [data-role=\"app-container\"] > div, [itemprop=\"description\"], [data-item=\"true\"]{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.carousel-item[data-role=\"offer-tile\"]{\n  border-radius: 1em;\n  padding: 10px !important;\n}",
+      "allegro-no footer": "footer, [data-box-name=\"metrum-footer-partial\"]{\n  display: none !important;\n}"
+    },
+    "otomoto.pl.css": {
+      "otomoto-transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, [data-sentry-element=\"PageBody\"]{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "otomoto-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
     }
   }
 }
