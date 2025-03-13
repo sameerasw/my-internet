@@ -1120,6 +1120,11 @@
     },
     "chat.qwen.ai.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #app-container > div, #chat-container > div, .bg-gradient-to-b, .font-primary > .bg-white{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+    },
+    "wsj.com.css": {
+      "wsj-transparency": "html, body, nav, #nav, header, .app-root, #pass-sidebar, #main, #content, section, .css-66ce12-Box, .css-153ebha-Box, .css-1d2x55d{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "wsj-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "wsj-no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
