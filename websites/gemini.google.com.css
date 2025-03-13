@@ -22,7 +22,7 @@ input-area-v2.ng-tns-c2580532240-2.ui-improvements-phase-1.ng-star-inserted {
   margin-bottom: 30px !important;
 }
 
-input-container hallucination-disclaimer {
+input-container hallucination-disclaimer, .disclaimer {
   display: none !important;
 }
 
