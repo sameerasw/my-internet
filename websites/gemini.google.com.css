@@ -11,10 +11,10 @@ input-container,
    transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-/* remove the outline of the text input and replace it with a backround */
+/* gemini-better text input */
 input-area-v2.ng-tns-c2580532240-2.ui-improvements-phase-1.ng-star-inserted {
  border: 0px;
- background: var(--bard-color-new-conversation-button); /* or var(--gem-sys-color--surface-container-high) */
+ background: var(--bard-color-new-conversation-button);
 }
 
 /* gemini-other changes */
