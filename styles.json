@@ -415,7 +415,7 @@
     "gemini.google.com.css": {
       "gemini-transparecy": ":root .dark-theme,\n:root .light-theme {\n  --gem-sys-color--surface: #00000000 !important;\n  --gem-sys-color--surface-container: #00000000 !important;\n}\n\ninput-container,\n.input-gradient::before {\n  background: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "gemini-better text input": "input-area-v2.ng-tns-c2580532240-2.ui-improvements-phase-1.ng-star-inserted {\n border: 0px;\n background: var(--bard-color-new-conversation-button);\n}",
-      "gemini-other changes": ".content-container chat-window .chat-container .bottom-container {\n  margin-bottom: 30px !important;\n}\n\ninput-container hallucination-disclaimer {\n  display: none !important;\n}\n\n.input-area-container {\n  margin-bottom: 2em !important;\n}\n\n.cdk-overlay-pane > div,\nmat-card {\n  background-color: var(--bard-color-neutral-96) !important;\n  border-radius: 1em !important;\n}",
+      "gemini-other changes": ".content-container chat-window .chat-container .bottom-container {\n  margin-bottom: 30px !important;\n}\n\ninput-container hallucination-disclaimer, .disclaimer {\n  display: none !important;\n}\n\n.input-area-container {\n  margin-bottom: 2em !important;\n}\n\n.cdk-overlay-pane > div,\nmat-card {\n  background-color: var(--bard-color-neutral-96) !important;\n  border-radius: 1em !important;\n}",
       "gemini-hover": ".side-nav-menu-button,\n.boqOnegoogleliteOgbOneGoogleBar,\ntop-bar-actions {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
     "getpocket.com.css": {
