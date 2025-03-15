@@ -224,6 +224,11 @@ ytd-comments{
   background-color: transparent !important;
 }
 
+/* yt-transparent sidebar */
+ytd-app {
+  --app-drawer-content-container-background-color: transparent !important;
+}
+
 /* yt-Misc */
 #content #dismissible:hover {
   ytd-video-meta-block {
