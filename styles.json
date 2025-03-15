@@ -1133,6 +1133,9 @@
     "+facebook.com.css": {
       "fb-transparecy": ":root {\n  --web-wash: #00000000 !important;\n  --nav-bar-background: #00000000 !important;\n}\n\nbody,\n#mount_0_0_u1\n  > div:nth-child(1)\n  > div:nth-child(1)\n  > div:nth-child(1)\n  > div:nth-child(3) {\n  background-color: #00000000 !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "fb-other changes": "div.x2lah0s.xyamay9.x1pi30zi.x1l90r2v.x1swvt13 {\n  display: none !important;\n}\n\ndiv.xnp8db0:nth-child(1),\ndiv.xnp8db0:nth-child(4) {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
+    },
+    "opentip.kaspersky.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .Layout_page_vTMAHjdl > div, .ant-upload-drag-container, .ant-upload, .SelectFileDesktop_upload_iWqG2wFF, #rc-tabs-0-panel-upload > div{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     }
   }
 }
