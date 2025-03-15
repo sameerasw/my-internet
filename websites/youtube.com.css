@@ -4,6 +4,14 @@ html[dark], html, #container.ytd-searchbox, ytd-app, #page-header-container, #pa
   background: none !important;
 }
 
+#guide-content.ytd-app {
+  background: transparent !important;
+}
+
+ytd-app {
+  --app-drawer-content-container-background-color: transparent !important;
+}
+
 #tabs-divider, #short-video-container #cinematic-container{
   display: none !important;
 }
@@ -222,6 +230,15 @@ ytd-comments{
 [theater=""] yt-live-chat-renderer {
   background: none !important;
   background-color: transparent !important;
+}
+
+/* yt-disable transparent sidebar */
+#guide-content.ytd-app {
+  background: var(--yt-spec-base-background) !important;
+}
+
+ytd-app {
+  --app-drawer-content-container-background-color: var( --yt-spec-base-background ) !important;
 }
 
 /* yt-Misc */
