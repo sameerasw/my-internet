@@ -1,12 +1,23 @@
 /* yt-Transparency */
-html[dark], html, #container.ytd-searchbox, ytd-app, #page-header-container, #page-header, #tabs-container, #tabs-inner-container, #chips-wrapper  {
+html[dark], html, #container.ytd-searchbox, ytd-app, #page-header-container, #page-header, #tabs-container, #tabs-inner-container, #chips-wrapper, .navigation-container, #cinematic-shorts-scrim, #shorts-container  {
   background-color: #00000000 !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  background: none !important;
 }
 
-#tabs-divider{
+#guide-content.ytd-app {
+  background: transparent !important;
+}
+
+ytd-app {
+  --app-drawer-content-container-background-color: transparent !important;
+}
+
+#tabs-divider, #short-video-container #cinematic-container{
   display: none !important;
+}
+
+#shorts-container{
+  height: 98vh !important;
 }
 
 /* yt-No left side guide */
@@ -21,16 +32,12 @@ ytd-mini-guide-renderer {
 #masthead-container {
   #background.ytd-masthead {
     background-color: #00000000 !important;
-    transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
   }
 }
 
 .ytSearchboxComponentSearchButton {
   background-color: var(--yt-spec-text-primary-inverse) !important;
   color: var(--yt-live-chat-text-input-field-placeholder-color) !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* yt-auto hide header */
@@ -212,7 +219,7 @@ ytd-comments{
   backdrop-filter: blur(20px) !important;
 }
 
-/* yt-zen view overlay chat */
+/* yt-transparent overlay chat */
 [theater=""] #chat {
   position: absolute !important;
   height: 800px !important;
@@ -223,6 +230,15 @@ ytd-comments{
 [theater=""] yt-live-chat-renderer {
   background: none !important;
   background-color: transparent !important;
+}
+
+/* yt-disable transparent sidebar */
+#guide-content.ytd-app {
+  background: var(--yt-spec-base-background) !important;
+}
+
+ytd-app {
+  --app-drawer-content-container-background-color: var( --yt-spec-base-background ) !important;
 }
 
 /* yt-Misc */

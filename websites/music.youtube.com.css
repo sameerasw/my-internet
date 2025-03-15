@@ -74,3 +74,8 @@ ytmusic-player-bar,
   border-radius: 1em !important;
   overflow: hidden !important;
 }
+
+/* ytm-no mini video */
+ ytmusic-player#player[player-ui-state="MINIPLAYER"]{
+   display: none !important;
+}

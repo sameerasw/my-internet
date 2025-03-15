@@ -5,7 +5,7 @@ body,
 .css-175oi2r:has([role="progressbar"]),
 .r-kemksi:has([aria-live="polite"]),
 [aria-label="Home timeline"] .r-5zmot,
-[aria-label="Grok"] .r-5zmot {
+[aria-label="Grok"] .r-5zmot, .r-kemksi  {
   background-color: transparent !important;
   background: none !important;
   border: none !important;

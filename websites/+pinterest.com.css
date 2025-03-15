@@ -4,6 +4,10 @@
   --color-background-box-default: transparent !important;
 }
 
+.qiB > div{
+  background-color: transparent !important;
+}
+
 .mainContainer
   > div:nth-child(1)
   > div:nth-child(3)
