@@ -1147,6 +1147,12 @@
     "theverge.com.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .duet--page-layout--homepage, .fv9mhf6, .fv9mhf3, .duet--layout--river-container, .bi882e5, .duet--page-layout--post, .duet--layout--entry-body-container{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
+    },
+    "mail.proton.me.css": {
+      "protonmail-Transparency": ".sidebar, .header, body, .items-column-list, .content, .main, .drawer-sidebar,\n.searchbox, .input,\n.toolbar, .items-column-list-container, .checkbox-fakecheck, .toolbar .select-all-wrapper:hover,\n.item-container-wrapper, .item-container,\n.button-promotion,\n.message-header, .button-group, .button-group-item,\n.message-attachments, .message-attachmentList-item,\n.ui-prominent, .ui-standard,\n.field, .toggle-container.toggle-container, .button-outline-weak {\n  background: transparent !important;\n}",
+      "protonmail-Disable Borders": ".input, .toolbar, .item-container, .main, .main-area-border, .message-container, .vr {\n  border: none !important;\n}",
+      "protonmail-White Borders": ".input, .main, .main-area-border, .message-attachmentList-item, .message-container {\n  border-color: white !important;\n}\n.toolbar, .item-container, .vr {\n  border: none !important;\n}",
+      "protonmail-Light Themes Support": ":root, .ui-standard, .ui-prominent {\n  --text-norm: white !important;\n  --text-weak: #cccccc !important;\n  --optional-email-item-read-text-color: #cccccc !important;\n}\n.drawer-app, .drawer-app .button-outline-weak, body .drawer-app, .drawer-app-header-actions, .apps-dropdown-app-name {\n  color: black !important;\n}\n.bg-weak {\n  background: transparent !important;\n}"
     }
   }
 }
