@@ -235,7 +235,7 @@ ytd-comments{
   width: 0 !important;
 }
 
-ytd-two-column-browse-results-renderer{
+ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer){
   margin-left: 100px !important;
 }
 
