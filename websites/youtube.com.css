@@ -235,6 +235,10 @@ ytd-comments{
   width: 0 !important;
 }
 
+ytd-two-column-browse-results-renderer{
+  margin-left: 100px !important;
+}
+
 /* yt-Addon : timed comments pop-up */
 .__youtube-timestamps__stamp {
   scale: 3 !important;
