@@ -1,0 +1,38 @@
+/* protonmail-Transparency */
+.sidebar, .header, body, .items-column-list, .content, .main, .drawer-sidebar,
+.searchbox, .input,
+.toolbar, .items-column-list-container, .checkbox-fakecheck, .toolbar .select-all-wrapper:hover,
+.item-container-wrapper, .item-container,
+.button-promotion,
+.message-header, .button-group, .button-group-item,
+.message-attachments, .message-attachmentList-item,
+.ui-prominent, .ui-standard,
+.field, .toggle-container.toggle-container, .button-outline-weak {
+  background: transparent !important;
+}
+
+/* protonmail-Disable Borders */
+.input, .toolbar, .item-container, .main, .main-area-border, .message-container, .vr {
+  border: none !important;
+}
+
+/* protonmail-White Borders */ 
+.input, .main, .main-area-border, .message-attachmentList-item, .message-container {
+  border-color: white !important;
+}
+.toolbar, .item-container, .vr {
+  border: none !important;
+}
+
+/* protonmail-Light Themes Support */
+:root, .ui-standard, .ui-prominent {
+  --text-norm: white !important;
+  --text-weak: #cccccc !important;
+  --optional-email-item-read-text-color: #cccccc !important;
+}
+.drawer-app, .drawer-app .button-outline-weak, body .drawer-app, .drawer-app-header-actions, .apps-dropdown-app-name {
+  color: black !important;
+}
+.bg-weak {
+  background: transparent !important;
+}
