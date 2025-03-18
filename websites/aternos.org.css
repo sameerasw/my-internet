@@ -1,0 +1,27 @@
+/* aternos-transparency */
+body,
+header.header,
+div#facts.row,
+div#about.row.dark,
+div#features.row.dark,
+div.splash-footer,
+div.row,
+div.row.dark,
+.main,
+section.content {
+  background-color: transparent !important;
+  border: none !important;
+  transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out !important;
+}
+
+/* aternos-no borders */
+div.icontext-icon,
+div.tetris-row-element {
+  border: none !important;
+}
+
+/* aternos-no footer */
+footer,
+.footer {
+  display: none !important;
+}
