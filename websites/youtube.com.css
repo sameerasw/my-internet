@@ -1,5 +1,5 @@
 /* yt-Transparency */
-html[dark], html, #container.ytd-searchbox, ytd-app, #page-header-container, #page-header, #tabs-container, #tabs-inner-container, #chips-wrapper, .navigation-container, #cinematic-shorts-scrim, #shorts-container  {
+html[dark], html, #container.ytd-searchbox, ytd-app, #page-header-container, #page-header, #tabs-container, #tabs-inner-container, #chips-wrapper, .navigation-container, #cinematic-shorts-scrim, #shorts-container, #full-bleed-container  {
   background-color: #00000000 !important;
   background: none !important;
 }
@@ -146,6 +146,11 @@ display: none !important;
 #player-full-bleed-container,
 #full-bleed-container {
   background-color: #00000000 !important;
+  background: transparent !important;
+}
+
+#cinematics{
+  display: none !important;
 }
 
 /* yt-no ambient mode */
