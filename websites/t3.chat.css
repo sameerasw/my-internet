@@ -1,5 +1,5 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .border-r{
+html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .border-r, .group\/sidebar-wrapper > div, .dark\:bg-sidebar > div, main > div, .to-transparent, .bg-noise, .bg-gradient-noise-top {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -7,7 +7,7 @@ html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .bo
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-/* no footer */
-footer, span:has(a[href="/terms-of-service"]){
+/* hidden */
+footer, span:has(a[href="/terms-of-service"]), .prose:has(a[href="/terms-of-service"]), .ease-snappy svg{
   display: none !important;
 }
