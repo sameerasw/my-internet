@@ -1,0 +1,44 @@
+/* bb-transparecy */
+#site-wrap,
+body {
+  background-color: #00000000 !important;
+   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+:root {
+  --darkreader-neutral-background: #00000000 !important;
+  --darkreader-background-ffffff: #00000000 !important;
+}
+
+body {
+  background: none !important;
+}
+
+/* bb-hide elements */
+ul.side-menu-footer,
+#pagefooter {
+  display: none !important;
+}
+
+/* bb-border and others */
+.element-card {
+  border-radius: 1em !important;
+  background-color: #00000044 !important;
+}
+
+.course-banner {
+  border-radius: 1em 1em 0 0 !important;
+}
+
+.bb-offcanvas-panel {
+  background-color: #111111 !important;
+}
+
+/* bb-hover */
+div.hide-in-background.themed-background-primary-fill-only.left-off-canvas-menu.color-selection-live-mode {
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover {
+    opacity: 1 !important;
+  }
+}
