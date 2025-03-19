@@ -1,0 +1,40 @@
+/* codeberg-transparency */
+html,
+body,
+#navbar {
+    background: none !important;
+}
+
+.segment {
+    background-color: color-mix(in srgb, var(--color-box-body), transparent 50%) !important;
+}
+
+.secondary-nav {
+    background: none !important;
+}
+
+/* codeberg-hover */
+#dashboard-repo-list,
+#navbar {
+    opacity: 0;
+    transition: all 0.3s ease-in-out !important;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+#navbar {
+    min-height: 10px !important;
+    height: 10px !important;
+    transition: all 0.3s ease-in-out !important;
+
+    &:hover {
+        height: 50px !important;
+    }
+}
+
+/* codeberg-rounded corners */
+img {
+    border-radius: 10px !important;
+}
