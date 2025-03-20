@@ -17,12 +17,12 @@
 }
 
 /* protonmail-Disable Borders */
-.input, .toolbar, .item-container, .main, .main-area-border, .message-container, .vr {
+.input, .toolbar, .item-container, .main, .main-area-border, .message-container, .vr, .button-group, .message-attachmentList-item, .banner {
   border: none !important; 
 }
 
 /* protonmail-Switch Border Color */ 
-.input, .main, .main-area-border, .message-attachmentList-item, .message-container {
+.input, .main, .main-area-border, .message-attachmentList-item, .message-container, .button-group, .banner {
   border-color: light-dark(black, white) !important;
 }
 .toolbar, .item-container, .vr {
