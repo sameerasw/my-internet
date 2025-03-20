@@ -4,10 +4,11 @@ body,
 .R6TFwe,
 .sS0sZd,
 [jsname="vhZMvf"],
-[jsname="KBzNL"] {
+[jsname="KBzNL"], li.F262Ye, .gZ8fdb {
   --gm3-sys-color-surface-container-low: transparent !important;
 
   background-color: transparent !important;
+  border: none !important;
    transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
