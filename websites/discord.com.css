@@ -46,3 +46,9 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade){
   opacity: 1 !important;
   width: 240px !important;
 }
+
+
+/* mysterious ; */
+.app_a3002d{
+  color: transparent !important;
+}
