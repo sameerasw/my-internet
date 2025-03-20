@@ -206,7 +206,7 @@
       "c4dsky-no footer": "footer {\n  display: none !important;\n}"
     },
     "calendar.google.com.css": {
-      "calendr-transparecy": "body,\n[jsname=\"mOIbvc\"],\n.R6TFwe,\n.sS0sZd,\n[jsname=\"vhZMvf\"],\n[jsname=\"KBzNL\"] {\n  --gm3-sys-color-surface-container-low: transparent !important;\n\n  background-color: transparent !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "calendr-transparecy": "body,\n[jsname=\"mOIbvc\"],\n.R6TFwe,\n.sS0sZd,\n[jsname=\"vhZMvf\"],\n[jsname=\"KBzNL\"], li.F262Ye, .gZ8fdb {\n  --gm3-sys-color-surface-container-low: transparent !important;\n\n  background-color: transparent !important;\n  border: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "calendr-remove borders": ".BiKU4b {\n  border: none !important;\n}"
     },
     "canva.com.css": {
