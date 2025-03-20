@@ -4,34 +4,36 @@
 .toolbar, .items-column-list-container, .checkbox-fakecheck, .toolbar .select-all-wrapper:hover,
 .item-container-wrapper, .item-container,
 .button-promotion,
-.message-header, .button-group, .button-group-item,
+.message-header, .button-group, .button-group-item, .banner,
+.message-content,
 .message-attachments, .message-attachmentList-item,
 .ui-prominent, .ui-standard,
+.your-plan-section-container div ul li, .plan-selection div ul li,
 .field, .toggle-container.toggle-container, .button-outline-weak {
   background: transparent !important;
+}
+:root {
+  color-scheme: light dark;
 }
 
 /* protonmail-Disable Borders */
 .input, .toolbar, .item-container, .main, .main-area-border, .message-container, .vr {
-  border: none !important;
+  border: none !important; 
 }
 
 /* protonmail-White Borders */ 
 .input, .main, .main-area-border, .message-attachmentList-item, .message-container {
-  border-color: white !important;
+  border-color: light-dark(black, white) !important;
 }
 .toolbar, .item-container, .vr {
   border: none !important;
 }
 
 /* protonmail-Light Themes Support */
-:root, .ui-standard, .ui-prominent {
-  --text-norm: white !important;
-  --text-weak: #cccccc !important;
-  --optional-email-item-read-text-color: #cccccc !important;
-}
-.drawer-app, .drawer-app .button-outline-weak, body .drawer-app, .drawer-app-header-actions, .apps-dropdown-app-name {
-  color: black !important;
+.ui-standard, .ui-prominent {
+  --text-norm: light-dark(black, white) !important;
+  --text-weak: light-dark(#333333,#cccccc) !important;
+  --optional-email-item-read-text-color: light-dark(#333333,#cccccc) !important;
 }
 .bg-weak {
   background: transparent !important;
