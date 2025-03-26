@@ -1255,6 +1255,11 @@
       "amazon-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "amazon-no footer": "footer,\n#navFooter,\nhr {\n  display: none !important;\n}",
       "amazon-hidden": "#desktop-banner,\n#desktop-banner-stripe {\n  display: none !important;\n}"
+    },
+    "codeberg.org.css": {
+      "codeberg-transparency": "html,\nbody,\n#navbar {\n    background: none !important;\n}\n\n.segment {\n    background-color: color-mix(in srgb, var(--color-box-body), transparent 50%) !important;\n}\n\n.secondary-nav {\n    background: none !important;\n}",
+      "codeberg-hover": "#dashboard-repo-list,\n#navbar {\n    opacity: 0 !important;\n    transition: all 0.3s ease-in-out !important;\n\n    &:hover {\n        opacity: 1 !important;\n    }\n}\n\n#navbar {\n    min-height: 10px !important;\n    height: 10px !important;\n    transition: all 0.3s ease-in-out !important;\n\n    &:hover {\n        height: 50px !important;\n    }\n}",
+      "codeberg-rounded corners": "img {\n    border-radius: 10px !important;\n}"
     }
   }
 }
