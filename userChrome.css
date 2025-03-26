@@ -1,3 +1,7 @@
+#zen-media-controls-toolbar toolbaritem{
+  background-color: light-dark(#fff5, #0005) !important;
+}
+
 
 /* Hidden buttons */
 /* #nav-bar-overflow-button, */
@@ -71,7 +75,6 @@ toolbarbutton {
 /* no shadow and gaps (macOS) */
 hbox.browserSidebarContainer,
 #zen-tabbox-wrapper {
-  box-shadow: none !important;
   margin: 0 !important;
 }
 
@@ -409,8 +412,7 @@ html:not([lwt-sidebar="dark"]) {
 }
 
 /* compact sidebar usable blur */
-body:has([zen-compact-mode="true"]) #titlebar{
-  background: #0009 !important;
+/* body:has([zen-compact-mode="true"]) #titlebar{
   backdrop-filter: blur(30px) !important;
 }
 
@@ -430,3 +432,22 @@ body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"]
   opacity: 1 !important;
   left: -1px !important;
 }
+ */
+/* 
+#zen-media-main-vbox > hbox{
+  order: 1 !important;
+}
+
+#zen-media-main-vbox > vbox{
+  order: 2 !important;
+}
+
+ */
+
+/* #zen-media-pip-button{
+  display: block !important;
+}
+
+#zen-media-close-button{
+  display: none !important;
+} */
