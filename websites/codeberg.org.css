@@ -16,11 +16,11 @@ body,
 /* codeberg-hover */
 #dashboard-repo-list,
 #navbar {
-    opacity: 0;
+    opacity: 0 !important;
     transition: all 0.3s ease-in-out !important;
 
     &:hover {
-        opacity: 1;
+        opacity: 1 !important;
     }
 }
 
