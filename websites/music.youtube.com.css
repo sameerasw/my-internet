@@ -79,3 +79,27 @@ ytmusic-player-bar,
  ytmusic-player#player[player-ui-state="MINIPLAYER"]{
    display: none !important;
 }
+
+
+/* ytm-immersive player */
+#content{
+  transition: opacity 0.5s ease-in-out !important;
+}
+
+
+#player, #song-image #thumbnail{
+  border-radius: 2em !important;
+  overflow: hidden !important;
+}
+
+#player-page{
+    background-color: transparent !important;
+    background: none !important;
+  }
+
+[player-ui-state="PLAYER_PAGE_OPEN"]{
+#content{
+  opacity: 0 !important;
+}
+
+}
