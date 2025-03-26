@@ -1,25 +1,15 @@
 /* discord-transparecy */
-:root {
+:root, .theme-light,
+.theme-dark {
   --background-secondary: #00000000 !important;
   --background-primary: #00000000 !important;
   --background-tertiary: #00000000 !important;
   --home-background: #00000000 !important;
   --bg-base-primary: #00000000 !important;
+  --background-base-lowest: transparent !important;
 }
 
-.theme-light,
-.theme-dark {
-  --__header-bar-background: #00000000 !important;
-  --shadow-border-filter: #00000000 !important;
-  --border-faint: #00000000 !important;
-  --border-strong: #00000000 !important;
-  --background-secondary-alt: #00000000 !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
-}
-
-.callContainer_cb9592 {
-  background: #00000000 !important;
-}
+html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .callContainer_cb9592, .bg__960e4, .tabBody__133bf, .sidebarList_c48ade, main, .chat_f75fb0, .page_c48ade, .children__9293f::after {   background-color: transparent !important;   background: none !important;   border: none !important;   box-shadow: none !important;   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important; }
 
 .floating__01ae2 {
   background-color: var(
@@ -32,23 +22,7 @@ img.bannerImg_f37cb1 {
   border-radius: 0 0 1em 1em !important;
 }
 
-
-/* discord-collapsed sidebar */
-html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade){
-  width: 0px !important;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s !important;
-  &:hover{
-  width: 240px !important;
-  }
-}
-
-.container_c48ade:has(nav[aria-label="Servers sidebar"]:hover) .sidebar_c48ade:not(.hidden_c48ade){
-  opacity: 1 !important;
-  width: 240px !important;
-}
-
-
-/* mysterious ; */
+/* mistreous ; */
 .app_a3002d{
   color: transparent !important;
 }
