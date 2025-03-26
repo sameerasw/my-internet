@@ -5,7 +5,7 @@
       "aliexpress-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "aliexpress-no footer": ".footer-wrap, .bgImageWrapper_3110068d{\n  display: none !important;\n}",
       "aliexpress-sticky header": "#_full_container_header_23_{\n  border-radius: 1em !important;\n}",
-      "aliexpress-borders": "[data-spm=\"sale_banner\"]{\n  border-radius: 1em !important;\n  overflow: hidden !important;\n  margin: 1em !important;\n}\n\na._1UZxx{\n  border-radius: 2em !important;\n  padding: 1em !important;"
+      "aliexpress-borders": "[data-spm=\"sale_banner\"]{\n  border-radius: 1em !important;\n  overflow: hidden !important;\n  margin: 1em !important;\n}\n\na._1UZxx{\n  border-radius: 2em !important;\n  padding: 1em !important;\n}"
     },
     "+itch.io.css": {
       "itch-transparency": "html,\nbody,\nnav,\nheader,\n.index_sidebar,\n#maincontent,\n.primary_header,\n.anon_intro {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
