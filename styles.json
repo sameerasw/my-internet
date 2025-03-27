@@ -1315,6 +1315,12 @@
       "nv-flex-layout": "html.fzoom body div#wrap div#container {\n  display: flex !important;\n  padding-top: 45vh !important;\n}\n\ndiv#search_area.search_area {\n  position: relative !important;\n  top: 45vh !important;\n}\n\ndiv#shortcutArea.shortcut_area.type_recommend {\n  position: relative !important;\n  top: 42vh !important;\n}",
       "nv-header-adjustments": "html.fzoom body div#wrap div#header.ani_fixed \ndiv#topSearchWrap.header_inner div#search_area.search_area {\n  top: 0vh !important;\n}\n\nhtml.fzoom body div#wrap div#header \ndiv#topSearchWrap.header_inner div#shortcutArea.shortcut_area.type_recommend.is_expanded {\n  top: 45.3vh !important;\n}",
       "nv-menu-positioning": "div#topAsideArea.menu_area, \ndiv#topPayArea.pay_area, \ndiv#topTalkArea.talk_area, \ndiv#topNotiArea.notify_area, \ndiv#topShoppingArea.shopping_area {\n  position: absolute !important;\n}"
+    },
+    "printables.com.css": {
+      "printables-transparency": "body,\nheader,\nsection,\n#main-nav-bar,\n#header-top-bar,\n.nav-container,\n.promo-box-bg,\n.bg-gradient,\n.section-bg,\n.bg,\n.card,\n.club-card,\nform,\narticle,\n.gray-bg-content,\n.box-content,\n.user-info-wrapper-border,\ninput,\nselect,\n.select,\n.feed-item,\n.show-more,\n.filter-category li,\na.btn.btn-info,\n.info,\n.icon-wrapper,\n.breadcrumb-wrapper a,\n.breadcrumbs button,\n.messenger-container,\n.messenger-layout,\n.message:hover,\n.table *,\n.placeholder *,\n.tab-content.gray {\n  background: transparent !important;\n}",
+      "printables-hide header": "#header-top-bar,\n#main-nav-bar {\n  opacity: 0 !important;\n  transition: opacity .2s ease;\n}\n\n#header-top-bar:hover,\n#main-nav-bar:hover {\n  opacity: 1 !important;\n}",
+      "printables-hide footer": "footer {\n  opacity: 0 !important;\n  transition: opacity .2s ease;\n}\n\nfooter:hover {\n  opacity: 1 !important;\n}",
+      "printables-hide sidebar": "[data-name=\"sidebar\"] {\n  opacity: 0 !important;\n  transition: opacity .2s ease;\n}\n\n[data-name=\"sidebar\"]:hover {\n  opacity: 1 !important;\n}"
     }
   }
 }
