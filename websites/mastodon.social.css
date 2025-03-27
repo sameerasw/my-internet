@@ -1,4 +1,4 @@
-/* transparency */
+/* mastodon-transparency */
 html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .tabs-bar__wrapper{
   background-color: transparent !important;
   background: none !important;
@@ -12,7 +12,7 @@ html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .ta
   border-radius: 0.5em !important;
 }
 
-/* hover */
+/* mastodon-hover */
 .columns-area__panels__pane__inner{
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
