@@ -1265,6 +1265,11 @@
       "apple-no borders": "@media (prefers-color-scheme: dark), @media (prefers-color-scheme: light)  {\n  :root{\n  --labelDivider: none !important;\n  --playerDropShadow2: none !important;\n  --playerInnerShadow: none !important;\n}\n}",
       "apple-transparency": "body, .navigation, amp-chrome-player::before{\n  background-color: transparent !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "apple-no thanks": "[slot=\"native-cta\"]{\n  display: none !important;;\n}"
+    },
+    "thepiratebay10.xyz.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, table, tr, td, th, h2{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
