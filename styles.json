@@ -1274,6 +1274,11 @@
     "community.oneplus.com.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .ob-nav, .promotion, main{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
+    },
+    "keh.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, [data-element=\"main\"] > div, .bg-container-lighter, #wrapper-2{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer, .header-banner{\n  display: none !important;\n}"
     }
   }
 }
