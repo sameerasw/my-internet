@@ -1,5 +1,5 @@
 /* nexusmods-transparency */
-html, body, nav, header, header > div, ::before, .home-intro, .collections-banner-wrapper, .static .wrap, .modtabs, .to-surface-base{
+html, body, nav, header, header > div, ::before, .home-intro, .collections-banner-wrapper, .static .wrap, .modtabs, .to-surface-base, section > div, .info-details, .tabcontent{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -7,5 +7,10 @@ html, body, nav, header, header > div, ::before, .home-intro, .collections-banne
 }
 
 #mainContent > .relative > div img.w-screen{
+  display: none !important;
+}
+
+/* no footer */
+footer{
   display: none !important;
 }
