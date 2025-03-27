@@ -1,0 +1,69 @@
+/* printables-transparency */
+body,
+header,
+section,
+#main-nav-bar,
+#header-top-bar,
+.nav-container,
+.promo-box-bg,
+.bg-gradient,
+.section-bg,
+.bg,
+.card,
+.club-card,
+form,
+article,
+.gray-bg-content,
+.box-content,
+.user-info-wrapper-border,
+input,
+select,
+.select,
+.feed-item,
+.show-more,
+.filter-category li,
+a.btn.btn-info,
+.info,
+.icon-wrapper,
+.breadcrumb-wrapper a,
+.breadcrumbs button,
+.messenger-container,
+.messenger-layout,
+.message:hover,
+.table *,
+.placeholder *,
+.tab-content.gray {
+  background: transparent !important;
+}
+
+/* printables-hide header */
+#header-top-bar,
+#main-nav-bar {
+  opacity: 0 !important;
+  transition: opacity .2s ease;
+}
+
+#header-top-bar:hover,
+#main-nav-bar:hover {
+  opacity: 1 !important;
+}
+
+/* printables-hide footer */
+footer {
+  opacity: 0 !important;
+  transition: opacity .2s ease;
+}
+
+footer:hover {
+  opacity: 1 !important;
+}
+
+/* printables-hide sidebar */
+[data-name="sidebar"] {
+  opacity: 0 !important;
+  transition: opacity .2s ease;
+}
+
+[data-name="sidebar"]:hover {
+  opacity: 1 !important;
+}
