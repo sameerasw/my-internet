@@ -75,7 +75,7 @@ div.RNNXgb,
   background-color: var(--EpFNW) !important;
 }
 
-#liveresults-sports-immersive__match-fullpage  .nGzje{
-  background-color: var(--uv-styles-color-footer) !important;
+#liveresults-sports-immersive__match-fullpage  .nGzje, [data-hveid="CAEQAQ"], #liveresults-sports-immersive__league-fullpage > div:nth-child(2) > div:nth-child(1){
+  background-color: var(--uv-styles-color-footer, var(--EpFNW)) !important;
   border-radius: 2em !important;
 }
