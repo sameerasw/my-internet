@@ -1299,6 +1299,15 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "hidden": "footer, .grid-layout:has(.f-description-02), .blocks, .container:has([aria-label=\"X\"]), .transform-gpu{\n  display: none !important;\n}"
+    },
+    "chzzk.naver.com.css": {
+      "cz-transparent-background": "body {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}",
+      "cz-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "cz-hide-footer": "footer, \n#footer, \n.footer {\n  display: none !important;\n}",
+      "cz-toolbar-header-transparent": "div.toolbar_container__k2trF, \ndiv.header_wrapper__bBUcP {\n  background-color: transparent !important;\n}",
+      "cz-header-navigation": "div.header_service__DyG7M, \nnav#navigation.navigator_is_expanded__4Q1h9, \nnav#navigation {\n  background-color: var(--color-bg-topbanner) !important;\n  border-radius: 15px !important;\n  margin: 10px !important;\n  padding-top: 14px !important;\n  padding-bottom: 18px !important;\n}",
+      "cz-header-width": "div.header_wrapper__bBUcP {\n  width: 126% !important;\n}",
+      "cz-header-positioning": "h1.header_logo__JUJQo {\n  left: 95px !important;\n}\n\ndiv.header_wrapper__bBUcP \n  header.header_area__mzpMy \n  button.header_button__oszSs {\n  left: 10px !important;\n}\n\ndiv.search_form__jjNJN, a.toolbar_link__p4qbh{\n  background-color: var(--color-bg-topbanner) !important;\n}"
     }
   }
 }
