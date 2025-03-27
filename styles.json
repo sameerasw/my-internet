@@ -1260,6 +1260,11 @@
       "codeberg-transparency": "html,\nbody,\n#navbar {\n    background: none !important;\n}\n\n.segment {\n    background-color: color-mix(in srgb, var(--color-box-body), transparent 50%) !important;\n}\n\n.secondary-nav {\n    background: none !important;\n}",
       "codeberg-hover": "#dashboard-repo-list,\n#navbar {\n    opacity: 0 !important;\n    transition: all 0.3s ease-in-out !important;\n\n    &:hover {\n        opacity: 1 !important;\n    }\n}\n\n#navbar {\n    min-height: 10px !important;\n    height: 10px !important;\n    transition: all 0.3s ease-in-out !important;\n\n    &:hover {\n        height: 50px !important;\n    }\n}",
       "codeberg-rounded corners": "img {\n    border-radius: 10px !important;\n}"
+    },
+    "podcasts.apple.com.css": {
+      "apple-no borders": "@media (prefers-color-scheme: dark), @media (prefers-color-scheme: light)  {\n  :root{\n  --labelDivider: none !important;\n  --playerDropShadow2: none !important;\n  --playerInnerShadow: none !important;\n}\n}",
+      "apple-transparency": "body, .navigation, amp-chrome-player::before{\n  background-color: transparent !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "apple-no thanks": "[slot=\"native-cta\"]{\n  display: none !important;;\n}"
     }
   }
 }
