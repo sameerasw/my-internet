@@ -1318,9 +1318,9 @@
     },
     "printables.com.css": {
       "printables-transparency": "body,\nheader,\nsection,\n#main-nav-bar,\n#header-top-bar,\n.nav-container,\n.promo-box-bg,\n.bg-gradient,\n.section-bg,\n.bg,\n.card,\n.club-card,\nform,\narticle,\n.gray-bg-content,\n.box-content,\n.user-info-wrapper-border,\ninput,\nselect,\n.select,\n.feed-item,\n.show-more,\n.filter-category li,\na.btn.btn-info,\n.info,\n.icon-wrapper,\n.breadcrumb-wrapper a,\n.breadcrumbs button,\n.messenger-container,\n.messenger-layout,\n.message:hover,\n.table *,\n.placeholder *,\n.tab-content.gray {\n  background: transparent !important;\n}",
-      "printables-hide header": "#header-top-bar,\n#main-nav-bar {\n  opacity: 0 !important;\n  transition: opacity .2s ease;\n}\n\n#header-top-bar:hover,\n#main-nav-bar:hover {\n  opacity: 1 !important;\n}",
-      "printables-hide footer": "footer {\n  opacity: 0 !important;\n  transition: opacity .2s ease;\n}\n\nfooter:hover {\n  opacity: 1 !important;\n}",
-      "printables-hide sidebar": "[data-name=\"sidebar\"] {\n  opacity: 0 !important;\n  transition: opacity .2s ease;\n}\n\n[data-name=\"sidebar\"]:hover {\n  opacity: 1 !important;\n}"
+      "printables-hide header": "#header-top-bar,\n#main-nav-bar {\n  opacity: 0 !important;\n  transition: opacity .2s ease !important;\n}\n\n#header-top-bar:hover,\n#main-nav-bar:hover {\n  opacity: 1 !important;\n}",
+      "printables-hide footer": "footer {\n  opacity: 0 !important;\n  transition: opacity .2s ease !important;\n}\n\nfooter:hover {\n  opacity: 1 !important;\n}",
+      "printables-hide sidebar": "[data-name=\"sidebar\"] {\n  opacity: 0 !important;\n  transition: opacity .2s ease !important;\n}\n\n[data-name=\"sidebar\"]:hover {\n  opacity: 1 !important;\n}"
     }
   }
 }
