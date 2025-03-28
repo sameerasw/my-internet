@@ -4,7 +4,7 @@
     --color-sidebars-background: #00000000 !important;
   }
   
-  .makersuite-layout, .layout-navbar, select-header, .navbar-header, .router-outlet-wrapper, .nav-toggle-wrapper, .chunk-editor-main, ms-run-settings, .footer, .turn-footer[_ngcontent-ng-c2950371965] > [_ngcontent-ng-c2950371965], .turn-footer[_ngcontent-ng-c2950371965], body, ms-header-root, .system-instructions textarea{
+  .makersuite-layout, .layout-navbar, select-header, .navbar-header, .router-outlet-wrapper, .nav-toggle-wrapper, .chunk-editor-main, ms-run-settings, .footer, .turn-footer[_ngcontent-ng-c2950371965] > [_ngcontent-ng-c2950371965], .turn-footer[_ngcontent-ng-c2950371965], body, ms-header-root, .system-instructions textarea, .model-run-time-pill, .turn-footer[_ngcontent-ng-c2569464191]{
     background-color: #00000000 !important;
     transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
   }
