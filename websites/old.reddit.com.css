@@ -40,6 +40,29 @@ body, #header, #sr-header-area, .side, .spacer, .link.odd, [role="main"], .res-n
   }
 }
 
+/* res night mode */
+.res-nightmode {
+  &.entry.res-selected, .res-nightmode .entry.res-selected .md-container {
+    background-color: transparent !important;
+  }
+
+  /* .thing is required for extra specificity to override the RES rules */
+  &.res-commentBoxes .comment .comment.thing,
+  &.res-commentBoxes .comment .comment .comment .comment.thing,
+  &.res-commentBoxes .comment .comment .comment .comment .comment .comment.thing,
+  &.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment.thing,
+  &.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment.thing {
+    background-color: transparent !important;
+  }
+  &.res-commentBoxes .comment.thing,
+  &.res-commentBoxes .comment .comment .comment.thing,
+  &.res-commentBoxes .comment .comment .comment .comment .comment.thing,
+  &.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment.thing,
+  &.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment.thing {
+    background-color: transparent !important;
+  }
+}
+
 /* no footer */
 .footer-parent{
   display: none !important;
