@@ -1,7 +1,6 @@
 /* google-transparecy */
 html,
 body,
-div,
 section,
 article,
 header,
@@ -15,7 +14,8 @@ button,
 table,
 tbody,
 tr,
-td {
+td,
+div:not([role="img"]) {
   background: transparent !important;
 }
 
@@ -75,6 +75,15 @@ div.RNNXgb,
   background-color: var(--EpFNW) !important;
 }
 
+#searchform.minidiv  div.RNNXgb, .Al1iSe > div > div{
+  background-color: var(--uv-styles-color-footer, var(--EpFNW)) !important;
+}
+
+.kuydt:not(.ecGr2) {
+  background-color: var(--EpFNW) !important;
+  border-radius: 1em 0 0 1em;
+}
+
 #liveresults-sports-immersive__match-fullpage  .nGzje, [data-hveid="CAEQAQ"], #liveresults-sports-immersive__league-fullpage > div:nth-child(2) > div:nth-child(1){
   background-color: var(--uv-styles-color-footer, var(--EpFNW)) !important;
   border-radius: 2em !important;
@@ -87,6 +96,6 @@ div.RNNXgb,
     transition: background-color 0.5s ease-in-out !important;
 }
 
-#searchform.minidiv  div.RNNXgb{
-  background-color: var(--uv-styles-color-footer, var(--EpFNW)) !important;
+div.jMr4y {
+  
 }
