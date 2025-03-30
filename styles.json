@@ -1416,6 +1416,9 @@
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}",
       "other": ".top-banner-container{\n  position: relative !important;\n}\n\n.site-background-banner{\n  display: none !important;\n}\n.header-sticky header{\n  background-color: light-dark(#000, #000);\n  border-radius: 1em !important;\n}"
+    },
+    "outlook.office.com.css": {
+      "outlook-transparency": "html,\nbody,\nnav,\nheader,\n#appContainer,\n#O365_NavHeader,\n[aria-label=\"App launcher\"],\n#owaBranding_container > div,\n#LeftRail,\n.gU1Tf,\n[aria-label=\"Hide navigation pane\"],\n.root-171,\n.pivot-header-root > button,\n.QIl4y,\n.YYA9V,\n[data-app-section=\"MessageList\"],\n.bkYAr,\n#ReadingPaneContainerId,\n#OwaTitleBar button,\n#O365_HeaderRightRegion,\n.IjQyD,\n.customScrollBar,\n.X4w2q {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     }
   }
 }
