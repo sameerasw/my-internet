@@ -148,3 +148,7 @@ button[aria-label="Search this repository"],
   background-color: light-dark(#fff8, #0005) !important;
   border-radius: 0.5em !important;
 }
+
+.row-module__timelineBodyRowContainer--ml7YX{
+  padding: 0.5em !important;
+}
