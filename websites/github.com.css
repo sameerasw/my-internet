@@ -18,8 +18,7 @@ nav,
 #repository-container-header,
 .empty-cell,
 .FleZw,
-.MarkdownInput-module__textArea--QjIwG,
-[data-listview-component="items-list"] > div:has([role="listitem"]) {
+.MarkdownInput-module__textArea--QjIwG {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -144,7 +143,7 @@ a[aria-label="Add file"],
 button[aria-label="Search this repository"],
 [data-testid="issue-body"],
 .prc-Timeline-TimelineBody-WWZY0 > div,
-#\:rc\:-list-view-container {
+#\:rc\:-list-view-container, .container:has(#repos-sticky-header) {
   box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
   background-color: light-dark(#fff8, #0005) !important;
