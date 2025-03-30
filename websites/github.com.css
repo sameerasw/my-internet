@@ -143,7 +143,8 @@ a[aria-label="Add file"],
 button[aria-label="Search this repository"],
 [data-testid="issue-body"],
 .prc-Timeline-TimelineBody-WWZY0 > div,
-#\:rc\:-list-view-container, .container:has(#repos-sticky-header) {
+#\:rc\:-list-view-container, .container:has(#repos-sticky-header),
+.UnderlineNav-item:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
   background-color: light-dark(#fff8, #0005) !important;
@@ -152,4 +153,40 @@ button[aria-label="Search this repository"],
 
 .row-module__timelineBodyRowContainer--ml7YX{
   padding: 0.5em !important;
+}
+
+/* no tab text */
+.UnderlineNav-item{
+   span:not([class="Counter"]){
+  opacity: 0 !important;
+  width: 0em !important;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important
+   }
+  &:hover{
+    span:not([class="Counter"]){
+  width: 6em !important;
+  opacity: 1 !important;
+   }
+  }
+}
+
+/* repo sidebar hover */
+.Layout-sidebar{
+  .BorderGrid-cell{
+  .mt-2, ul, div:not(.hide-sm.hide-md, .flex-items-center, .my-3, .f6){
+    height: 0 !important;
+    opacity: 0 !important;
+    margin: 0 !important;
+    transition: all 0.5s ease-out !important
+  }
+  }
+  &:hover{
+  .BorderGrid-cell{
+    .mt-2, ul, div:not(.hide-sm.hide-md, .flex-items-center, .my-3, .f6){
+    height: 100% !important;
+    opacity: 1 !important;
+    margin: 0.5em !important;
+    }
+  }
+  }
 }
