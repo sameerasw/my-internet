@@ -141,9 +141,10 @@ table[aria-labelledby="folders-and-files"],
 .Box-body,
 a[aria-label="Add file"],
 button[aria-label="Search this repository"],
-[data-testid="issue-body"] {
+[data-testid="issue-body"],
+.prc-Timeline-TimelineBody-WWZY0 > div {
   box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset;
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
   background-color: light-dark(#fff8, #0005) !important;
   border-radius: 0.5em !important;
 }
