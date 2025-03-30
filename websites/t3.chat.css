@@ -8,6 +8,6 @@ html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .bo
 }
 
 /* hidden */
-footer, span:has(a[href="/terms-of-service"]), .prose:has(a[href="/terms-of-service"]), .ease-snappy svg{
+footer, span:has(a[href="/terms-of-service"]), .prose:has(a[href="/terms-of-service"]), .ease-snappy svg, [style="clip-path: inset(0px 12px 0px 0px);"]{
   display: none !important;
 }
