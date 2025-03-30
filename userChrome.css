@@ -319,45 +319,6 @@ html:not([lwt-sidebar="dark"]) {
 }
 
 
-#zen-workspaces-button {
-  border-radius: 8px !important;
-  background-color: rgba(255,255,255,0.1) !important;
-  box-shadow: 0 0 12px rgba(0,0,0,0.2) !important;
-  padding: 3px !important;
-
-  .subviewbutton {
-    border-radius: 6px !important;
-    transition: background-color 0.2s ease !important;
-    font-size: 16px !important;
-    filter: grayscale(0%) !important;
-    --toolbarbutton-hover-background: color-mix(in srgb, var(--zen-branding-bg-reverse) 10%, transparent 90%) !important;
-
-    &:hover {
-      background-color: var(--toolbarbutton-hover-background) !important;
-    }
-
-    &:active {
-      background-color: var(--toolbarbutton-active-background) !important;
-    }
-
-    /*noinspection CssInvalidFunction*/
-    &[active] {
-      background-color: light-dark(rgba(255,255,255,1), rgba(255,255,255,0.2)) !important;
-      box-shadow: 0 0 4px rgba(0,0,0,0.2) !important;
-      overflow: hidden !important;
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        margin-top: 50%;
-        background: linear-gradient(0, rgba(0, 0, 0, 0.2), transparent);
-      }
-    }
-  }
-}
-
 /* sidebar mods */
 #sidebar-box, #bookmarksPanel.sidebar-panel, #sidebar-header, #history-panel, html, #header{
   background-color: transparent !important;
