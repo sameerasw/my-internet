@@ -1410,6 +1410,12 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, [data-zone-name=\"product-page\"] > div, [data-baobab-name=\"header\"] > div, #\\/content\\/header\\/header, [data-baobab-name=\"header\"] > div > div{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "proshop.dk.css": {
+      "transparency": "html, body, nav,.header-sticky-show header, .app-root, #pass-sidebar, #main, #content, section, .site-container-fullwidth, .site-container, .site-content-table{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}",
+      "other": ".top-banner-container{\n  position: relative !important;\n}\n\n.site-background-banner{\n  display: none !important;\n}\n.header-sticky header{\n  background-color: light-dark(#000, #000);\n  border-radius: 1em !important;\n}"
     }
   }
 }
