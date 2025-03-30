@@ -99,14 +99,13 @@ ytmusic-player-bar,
     background: none !important;
   }
 
-[player-ui-state="PLAYER_PAGE_OPEN"]{
-#content{
-  opacity: 0 !important;
-}
+
 
 ytmusic-player-bar, #player-bar-background{
-    background-color: #0004  !important;
+    background-color: #0002  !important;
   }
 
-}
-
+  ytmusic-app-layout > #content{
+    height: calc(100vh - 190px) !important;
+    overflow: scroll !important;
+  }
