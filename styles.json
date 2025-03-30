@@ -1345,6 +1345,11 @@
     },
     "rateyourmusic.com.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .ui_featured_content_review, .page_feature_main_inner, .header_item, #column_container_right, .page_release_art_frame, .release_left_column, #content_wrapper_outer, #content_wrapper{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+    },
+    "fitgirl-repacks.site.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .site, #secondary, .entry-content, .entry-meta, #page::before{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
