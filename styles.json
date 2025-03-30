@@ -1402,6 +1402,9 @@
     },
     "firefly-iii.org.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .main-sidebar, .content-wrapper, .skin-firefly-iii .box{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.sidebar-menu a, .box-header, .box{\n  border-radius: 0.5em !important;\n}"
+    },
+    "chat.beeper.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .bp_LeftPanel, .bp_MainPanel, .mx_ResizeHandle, .mx_RoomHeader, .mx_MainSplit, .mx_MainSplit > div > div{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     }
   }
 }
