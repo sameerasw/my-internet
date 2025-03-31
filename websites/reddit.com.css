@@ -19,8 +19,13 @@ html {
   display: none !important;
 }
 
+/* no recent posts */
+div aside recent-posts{
+  /* display: none !important; */
+}
+
 /* reddit-hide elements */
-div aside recent-posts, hr{
+hr{
   display: none !important;
 }
 
