@@ -113,7 +113,9 @@ td {
 
 /* gh-overlay fixes */
 modal-dialog .search-suggestions,
-details-dialog.Box {
+details-dialog.Box,
+.Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top,
+[role="dialog"] {
   background-color: var(--bgColor-inset) !important;
   border-radius: 1em !important;
 }
