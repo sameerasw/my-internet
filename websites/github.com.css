@@ -18,7 +18,10 @@ nav,
 #repository-container-header,
 .empty-cell,
 .FleZw,
-.MarkdownInput-module__textArea--QjIwG {
+.MarkdownInput-module__textArea--QjIwG,
+.notifications-list-item, 
+.notifications-list-item.notification-read,
+.search-results-page {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -146,7 +149,12 @@ button[aria-label="Search this repository"],
 .prc-Timeline-TimelineBody-WWZY0 > div,
 #\:rc\:-list-view-container, .container:has(#repos-sticky-header),
 .UnderlineNav-item:hover,
-[data-timeline-event-id] {
+[data-timeline-event-id],
+.notifications-list,
+.notifications-list-item.notification-unread,
+.Box-header,
+.Box-sc-g0xbh4-0.iwUbcA,
+[type="button"] {
   box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
   background-color: light-dark(#fff8, #0005) !important;
