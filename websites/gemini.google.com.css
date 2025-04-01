@@ -56,7 +56,7 @@ top-bar-actions {
 
   /* the buttons that are in a div with the input area */
 div:has(input-area-v2) button{
-  display: flex; 
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
