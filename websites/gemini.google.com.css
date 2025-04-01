@@ -6,7 +6,7 @@
 }
 
 input-container,
-.input-gradient::before {
+.input-gradient::before, .toolbox-drawer-container button {
   background: none !important;
    transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
@@ -53,3 +53,10 @@ top-bar-actions {
     box-shadow:  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     background-color: light-dark(#fff8, #0005)  !important;
   }
+
+  /* the buttons that are in a div with the input area */
+div:has(input-area-v2) button{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
