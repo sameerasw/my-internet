@@ -68,7 +68,8 @@ nav,
 .ajax-pagination-btn,
 action-graph .color-bg-inset,
 [data-testid="comment-header"]
-.Box-sc-g0xbh4-0 {
+.Box-sc-g0xbh4-0,
+.copilotPreview__suggestionButton:not(:hover) {
   background-color: transparent !important;
   background: none !important;
   box-shadow: none !important;
