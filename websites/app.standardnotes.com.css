@@ -1,0 +1,10 @@
+/* Make background transparent, but still readable */
+/* Also removes borders because they look ugly */
+:root {
+    --background-norm: rgba(0, 0, 0, 0.1) !important;
+    --background-weak: rgba(0, 0, 0, 0) !important;
+    --background-strong: rgba(0, 0, 0, 0.1) !important;
+    --border-norm: rgba(0, 0, 0, 0) !important;
+    --border-weak: rgba(0, 0, 0, 0) !important;
+    --border-strong: rgba(0, 0, 0, 0) !important;
+}
