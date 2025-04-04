@@ -103,7 +103,7 @@ body:not(:has(toolbarbutton[expanded])) #urlbar:not([open]){
 }
 
   #navigator-toolbox{
-    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
+    transition: all 0.3s ease-in-out !important;
     height: 0 !important;
     top: -35px !important;
     opacity: 0 !important;
@@ -153,15 +153,15 @@ body:has(toolbarbutton[expanded]):not(:has(#sidebar-wrapper.expandOnHover)), bod
 #navigator-toolbox:has(#urlbar:not([open])){
   position: absolute !important;
   z-index: 100000 !important;
-  width: 100vw !important;
+/*   width: 100vw !important; */
+  width: fit-content !important;
 }
 
 #nav-bar{
+  transition: all 0.3s ease-in-out 0.3s !important;
   #urlbar-container #urlbar:not([open]){
     width: 160px !important;
     margin: auto 5px !important;
-/*     margin: auto 20% !important; */
-/*     padding-left: 10px !important; */
     border-radius: 100px !important;
     
     
@@ -181,8 +181,9 @@ body:has(toolbarbutton[expanded]):not(:has(#sidebar-wrapper.expandOnHover)), bod
   }
   
   .titlebar-buttonbox-container{
-    width: 0 !important;
-    transition: width 0.3s ease-in-out !important;
+/*     width: 0 !important; */
+    opacity: 0 !important;
+    transition: width 0.3s ease-in-out 0.2s !important;
 
     .titlebar-button{
       width: 30px;
@@ -191,19 +192,46 @@ body:has(toolbarbutton[expanded]):not(:has(#sidebar-wrapper.expandOnHover)), bod
       margin: 5px !important;
     }
   }
+}
+
+
+  #navigator-toolbox{
+    left: -600px !important;
+  }
+
+#urlbar-container{
+  width: fit-content !important;
+  flex: none !important;
+  margin-right: 170px !important;
+}
+
+
+body:has(#urlbar:not([open])):has(#urlbar:not([open]):hover, #nav-bar-customization-target:hover, .titlebar-buttonbox-container:hover, #nav-bar:hover, toolbarbutton[open="true"]){
   
-  &:hover{
     .titlebar-buttonbox-container{
-  width: 130px !important;
-}
+      width: 150px !important;
+      padding-left:20px !important;
+      opacity: 1 !important;
+    }
     
     
-  .unified-extensions-item, #unified-extensions-button, #PanelUI-button, #sidebar-button{
-    opacity: 1 !important;
+    .unified-extensions-item, #unified-extensions-button, #PanelUI-button, #sidebar-button{
+      opacity: 1 !important;
+    }
+  
+  
+  #navigator-toolbox{
+    left: 0px !important;
   }
+  
+  #nav-bar{
+    background-color: light-dark(#fff, #000) !important;
+    opacity: 1 !important;
+    border-radius: 1em !important;
   }
   
 }
+
 
 #back-button, #forward-button{
   display: none !important;
@@ -345,7 +373,7 @@ slot:nth-child(1) {
 }
 
 [collapsed=""] .tab-group-label{
-  background: color-mix(in srgb, var(--tab-group-color) 30%, transparent) !important;
+  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
   color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
   border-radius: 7px !important;
   
@@ -355,27 +383,13 @@ slot:nth-child(1) {
   }
 }
 
-tab-group:not([collapsed=""]){
-/*   border: solid var(--tab-group-color) 1px !important; */
-  background: color-mix(in srgb, var(--tab-group-color) 30%, transparent) !important;
-  border-radius: 10px 10px 10px 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-  margin-top: 20px !important;
-  margin-bottom: 20px !important;
-}
-
-
 [expanded=""] tab-group:not([collapsed=""]){
-  margin-right: 10px !important;
+  margin-right: 10px !important;  
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   margin-top: 5px !important;
   margin-bottom: 5px !important;
   
-  .tab-group-label{
-  margin-right: 0 !important;
-  }
 }
 
  #vertical-pinned-tabs-container{
@@ -395,16 +409,14 @@ tab-group:not([collapsed=""]){
 }
 
 body:has(toolbarbutton[expanded]):not(:has(#sidebar-wrapper.expandOnHover)){
+  
   #sidebar-main{
   /*   position: fixed !important; */
     padding-top: 50px !important;
   }
-  
-  #nav-bar:hover{
-    background-color: light-dark(#fff, #000) !important;
-    opacity: 1 !important;
-  }
+ 
 }
+
 
 #vertical-spacer{
   display: none !important;
