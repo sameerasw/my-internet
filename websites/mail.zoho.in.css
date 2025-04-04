@@ -1,0 +1,80 @@
+/* zm-Transparency */
+.SC_load,
+.zmAppLight,
+.zmAppDark {
+  color: #fff !important;
+  background-color: transparent !important;
+  --app-bg: transparent !important;
+  --app-box-bg: transparent !important;
+  --app-rhsbar-bg: transparent !important;
+  --backdrop-filter: blur(16px) saturate(180%) !important;
+}
+
+.zmAppDark {
+  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
+  --backdrop-fg: #fff !important;
+}
+.zmAppLight {
+  --backdrop-bg: rgba(255, 255, 255, 0.75) !important;
+  --backdrop-fg: #000 !important;
+}
+
+.zmLHSDark,
+.zwpAppTheme.zmLHSDark,
+.zmLHSLight,
+.zwpAppTheme.zmLHSLight {
+  --app-lhs-bg: transparent !important;
+}
+
+.zmLHSDark,
+.zwpAppTheme.zmLHSDark {
+  --app-lhs-list-color: var(--app-text-color) !important;
+  --app-lhs-list-selected-color: var(--app-text-color) !important;
+}
+
+.zmLHSLight,
+.zwpAppTheme.zmLHSLight {
+  --app-lhs-list-color: var(--app-text-color) !important;
+  --app-lhs-list-selected-color: var(--app-text-color) !important;
+}
+
+.zmSActive,
+.zmdrawer__1ep6vdh,
+.zmhamburger-heading-label__zNjuB,
+.zmhamburger__heading--sticky__jaoED,
+.zmsettings-wrapper {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+.wms-mainui,
+.wms-chatwindowcontainer,
+.wms-menucontainer,
+.zmsettings-block {
+  background: none !important;
+}
+
+.zmsettings-page-header {
+  position: relative !important;
+}
+
+.activeTab,
+.activeTab::before {
+  background-color: var(--app-highlight-bg) !important;
+}
+.activeTab span::before {
+  background: none !important;
+}
+
+.zmPanelToggleRHSTrigger {
+  color: var(--backdrop-fg) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+@media (max-width: 899px) {
+  .zmShowLHS,
+  .zmTMail {
+    backdrop-filter: var(--backdrop-filter) !important;
+    background-color: var(--backdrop-bg) !important;
+  }
+}
