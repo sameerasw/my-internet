@@ -1462,6 +1462,13 @@
       "google-hover": ".rfiSsc {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
       "google-full overlay fix": "#liveresults-sports-immersive__match-fullpage {\n  background-color: var(--EpFNW) !important;\n}\n\n#searchform.minidiv  div.RNNXgb, .Al1iSe > div > div, [jscontroller=\"Dvn7fe\"]:has([data-bkt=\"searchbox\"]) .aajZCb{\n  background-color: var(--uv-styles-color-footer, var(--EpFNW)) !important;\n}\n\n.kuydt:not(.ecGr2) {\n  background-color: var(--EpFNW) !important;\n  border-radius: 1em 0 0 1em;\n}\n\n#liveresults-sports-immersive__match-fullpage  .nGzje, [data-hveid=\"CAEQAQ\"], #liveresults-sports-immersive__league-fullpage > div:nth-child(2) > div:nth-child(1){\n  background-color: var(--uv-styles-color-footer, var(--EpFNW)) !important;\n  border-radius: 2em !important;\n}",
       "google-glass input": "div.RNNXgb{\n    box-shadow:  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;\n    background-color: transparent !important;\n    transition: background-color 0.5s ease-in-out !important;\n}"
+    },
+    "robu.in.css": {
+      "robu-Transparency": "body {\n  background-color: transparent !important;\n}",
+      "robu-forced darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n  --backdrop-bg: rgba(255, 255, 255, 0.75);\n}\n\n[data-darkreader-scheme=\"dark\"] {\n  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n}",
+      "robu-forced no footer": "footer {\n  display: none !important;\n}",
+      "robu-transparent header": ".mobile-header-v2,\n.robu_highlight_menu,\n.robu_highlight_menu a {\n  background-color: transparent !important;\n}",
+      "robu-blur dropdown": ".dropdown-menu,\n.stuck,\n.dgwt-wcas-search-focused .dgwt-wcas-sf-wrapp,\n.dgwt-wcas-suggestions-wrapp,\n.dgwt-wcas-details-wrapp,\n#robu-brand-fill-checkBoxes,\n.off-canvas-navigation {\n  backdrop-filter: blur(16px) saturate(180%) !important;\n  background-color: var(--backdrop-bg) !important;\n}"
     }
   }
 }
