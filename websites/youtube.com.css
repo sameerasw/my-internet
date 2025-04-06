@@ -304,3 +304,7 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer){
     }
   }
 }
+/* yt-no bottom gradient in player */
+.ytp-gradient-bottom {
+  display: none !important;
+}
