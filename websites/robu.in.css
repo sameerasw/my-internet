@@ -1,0 +1,38 @@
+/* robu-Transparency */
+body {
+  background-color: transparent !important;
+}
+
+/* robu-forced darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+  --backdrop-bg: rgba(255, 255, 255, 0.75);
+}
+
+[data-darkreader-scheme="dark"] {
+  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* robu-forced no footer */
+footer {
+  display: none !important;
+}
+
+/* robu-transparent header */
+.mobile-header-v2,
+.robu_highlight_menu,
+.robu_highlight_menu a {
+  background-color: transparent !important;
+}
+
+/* robu-blur dropdown */
+.dropdown-menu,
+.stuck,
+.dgwt-wcas-search-focused .dgwt-wcas-sf-wrapp,
+.dgwt-wcas-suggestions-wrapp,
+.dgwt-wcas-details-wrapp,
+#robu-brand-fill-checkBoxes,
+.off-canvas-navigation {
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  background-color: var(--backdrop-bg) !important;
+}
