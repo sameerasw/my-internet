@@ -9,7 +9,8 @@ c-wiz,
 .Sdwpn.P9KVBf,
 .P9KVBf .dkjMxf,
 .R3Gmyc,
-.WUFI9b {
+.WUFI9b,
+[aria-label="navigational drawer"] {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -26,13 +27,19 @@ c-wiz,
 /* meet-no footer */
 footer,
 .xDIlIc,
-.sxAeHb {
+.sxAeHb,
+[jsname="cDPtp"] {
   display: none !important;
 }
 
 /* meet-hidden */
-.XG3Kfe,
-h1.r3f7Nb,
-.MZWksc {
+h1.r3f7Nb, .MZWksc:has(span), .sIR20d{
   display: none !important;
 }
+
+/* meet-meet card */
+.mtr0Je{
+  border-radius: 1em !important;
+  margin-bottom: 1em !important;
+}
+
