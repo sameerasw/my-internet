@@ -209,7 +209,8 @@
     },
     "calendar.google.com.css": {
       "calendr-transparecy": "body,\n[jsname=\"mOIbvc\"],\n.R6TFwe,\n.sS0sZd,\n[jsname=\"vhZMvf\"],\n[jsname=\"KBzNL\"], li.F262Ye, .gZ8fdb {\n  --gm3-sys-color-surface-container-low: transparent !important;\n\n  background-color: transparent !important;\n  border: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
-      "calendr-remove borders": ".BiKU4b {\n  border: none !important;\n}"
+      "calendr-remove borders": ".BiKU4b {\n  border: none !important;\n}",
+      "calendr-glass": "[role=\"main\"]{\n  background-color: color-mix(in srgb, var(--gm3-sys-color-background), transparent 50%) !important;\n  box-shadow:  rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px !important;\n}"
     },
     "canva.com.css": {
       "canva-transparency": "html,\nbody,\n.EyQHyw,\n.fZgOqw,\n.eZq8Ig::before,\n.eZq8Ig.ocGgIA::after,\n._oWbbw::after,\n._orzOA::after,\n.gpRQSw,\n.sfOjmQ,\n.fLKksQ,\n.xzANJg,\n.OFiy3Q,\n.TYxWRA,\n.eZq8Ig.JwseWQ .fZgOqw::before,\n.fZgOqw {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
