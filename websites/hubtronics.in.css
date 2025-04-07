@@ -1,0 +1,56 @@
+/* htcs-transparency */
+body,
+header a,
+.grid-row,
+.module-body,
+.product-price-group,
+.breadcrumb::before,
+.caption,
+.mobile-header,
+.mobile-top-bar,
+.mobile-bar,
+.mobile-logo-wrapper,
+.mobile-wrapper-header,
+.flyout-menu-item a,
+.product-thumb,
+.block-expand-overlay {
+  background-color: transparent !important;
+  background: none !important;
+}
+
+/* htcs-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+  --backdrop-bg: rgba(255, 255, 255, 0.75);
+  --backdrop-filter: blur(16px) saturate(180%) !important;
+}
+
+[data-darkreader-scheme="dark"] {
+  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* htcs-transparent header */
+header,
+.navbar-nav,
+.navbar-nav::before {
+  background-color: transparent !important;
+}
+
+/* htcs-translucent overlays */
+
+.is-sticky .navbar-nav::before,
+.mobile-container,
+.tt-menu,
+.j-dropdown {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+.swiper-container {
+  overflow: hidden !important;
+}
+
+/* htcs-no footer */
+footer {
+  display: none !important;
+}
