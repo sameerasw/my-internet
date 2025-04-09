@@ -1509,6 +1509,10 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #super-deals, .carousel-container, .hp-module-background, .brands-of-the-week, #trending, .hp-product-carousel{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.iherb-header[style=\"top: 36px;\"]{\n  .iherb-header-primary, .header-container, .sub-header-container-wrapper, .link-bar-item, .iherb-header-primary::before{\n    background-color: transparent !important;\n    background: none !important;\n    border: none !important;\n  }\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "goldenhas.com.tr.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .wp-block-group{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
