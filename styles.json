@@ -1472,6 +1472,10 @@
       "robu-forced no footer": "footer {\n  display: none !important;\n}",
       "robu-transparent header": ".mobile-header-v2,\n.robu_highlight_menu,\n.robu_highlight_menu a {\n  background-color: transparent !important;\n}",
       "robu-blur dropdown": ".dropdown-menu,\n.stuck,\n.dgwt-wcas-search-focused .dgwt-wcas-sf-wrapp,\n.dgwt-wcas-suggestions-wrapp,\n.dgwt-wcas-details-wrapp,\n#robu-brand-fill-checkBoxes,\n.off-canvas-navigation {\n  backdrop-filter: blur(16px) saturate(180%) !important;\n  background-color: var(--backdrop-bg) !important;\n}"
+    },
+    "comick.io.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, header > div, header > div > div, .scrollbox, th, td, #comment-section{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
