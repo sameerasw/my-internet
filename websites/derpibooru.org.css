@@ -1,0 +1,238 @@
+/* 
+This theme is designed for dark blue and light blue (light theme hasn't been tested properly, sry) themes on derpibooru. 
+Please use blue color theme on the site instead of other colors. Or add an implementation for your favorite color theme 
+*/
+
+/* dp-transparent */
+body[data-theme="dark-blue"] {
+  --background-color: rgba(0, 0, 0, 0) !important;
+  --page-background-color: rgba(0, 0, 0, 0) !important;
+}
+
+body[data-theme="light-blue"] {
+  --background-color: rgba(255, 255, 255, 0) !important;
+  --page-background-color: rgba(255, 255, 255, 0) !important;
+}
+
+/* dp-transparent-header */
+body[data-theme="dark-blue"] {
+  --header-color: rgba(0, 0, 0, 0.35) !important;
+  --header-hover-color: rgba(0, 0, 0, 0.15) !important;
+  --header-field-color: rgba(0, 0, 0, 0.25) !important;
+  --header-field-hover-color: rgba(0, 0, 0, 0.25) !important;
+  --header-link-background: rgba(0, 0, 0, 0) !important;
+  --header-link-hover: rgba(0, 0, 0, 0.15) !important;
+}
+
+body[data-theme="light-blue"] {
+  --header-color: rgba(255, 255, 255, 0.35) !important;
+  --header-hover-color: rgba(255, 255, 255, 0.15) !important;
+  --header-field-color: rgba(255, 255, 255, 0.25) !important;
+  --header-field-hover-color: rgba(255, 255, 255, 0.25) !important;
+  --header-link-background: rgba(255, 255, 255, 0) !important;
+  --header-link-hover: rgba(255, 255, 255, 0.15) !important;
+}
+
+.header {
+  a.header__link {
+    background: var(--header-link-background) !important;
+  }
+  a.header__link:hover {
+    background: var(--header-link-hover) !important;
+  }
+}
+
+/* for search box */
+.header__input {
+  border-top-left-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+}
+
+.header__input[inputmode="search"] {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.header__search__button[title="Search syntax help"] {
+  border-top-right-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+}
+
+.header__search__button:hover {
+  background: var(--header-hover-color) !important;
+}
+
+/* and search auto-complete */
+:root {
+  --autocomplete-background: rgba(29, 36, 47, 0.8) !important;
+}
+.autocomplete {
+  top: 40px !important;
+  border: none !important;
+  border-radius: 6px !important;
+}
+
+/* and bottom search box */
+body[data-theme="dark-blue"] {
+  --input-color: rgba(0, 0, 0, 0.45) !important;
+  --input-color-focus: rgba(0, 0, 0, 0.55) !important;
+}
+body[data-theme="light-blue"] {
+  --input-color: rgba(255, 255, 255, 0.45) !important;
+  --input-color-focus: rgba(255, 255, 255, 0.55) !important;
+}
+
+.input[id="searchform_q"] {
+  transition: background ease 0.1s !important;
+  border: none !important;
+  border-radius: 6px !important;
+  margin-bottom: 6px !important;
+}
+.input[id="searchform_q"]:focus {
+  background: var(--input-color-focus) !important;
+}
+
+/* user button fix */
+span.header__link-user__dropdown-arrow {
+  background-color: var(--header-link-background) !important;
+}
+
+/* other buttons (optgroup) */
+.header__input {
+  border-top-right-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
+}
+.header__filter-form {
+  transition: transform 0.1s ease !important;
+}
+.header__filter-form:hover {
+  transform: scale(1.02) !important;
+}
+
+/* dp-transparent-secondary-header */
+body[data-theme="dark-blue"] {
+  --header-secondary-color: rgba(0, 0, 0, 0) !important;
+  --header-secondary-hover-color: rgba(0, 0, 0, 0.35) !important;
+}
+
+body[data-theme="light-blue"] {
+  --header-secondary-color: rgba(255, 255, 255, 0) !important;
+  --header-secondary-hover-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.header--secondary {
+  background: var(--header-secondary-color) !important;
+  backdrop-filter: none !important;
+
+  a.header__link {
+    background: var(--header-secondary-color) !important;
+  }
+  a.header__link:hover {
+    background: var(--header-secondary-hover-color) !important;
+  }
+}
+
+/* fix for stream counter */
+.header--secondary span.header__counter {
+  background: var(--header-secondary-color) !important;
+}
+
+/* for dropdown content on buttons */
+.dropdown .dropdown__content > :not(.hidden) {
+  backdrop-filter: blur(10px) !important;
+  background: rgba(0, 0, 0, 0.46) !important;
+}
+.dropdown .dropdown__content > :not(.hidden):hover {
+  background: rgba(0, 0, 0, 0.64) !important;
+}
+
+/* dp-image-list */
+body[data-theme="dark-blue"] {
+  --block-header-color: rgba(0, 0, 0, 0.35) !important;
+  --block-header-hover-color: rgba(0, 0, 0, 0.15) !important;
+  --block-header-light-color: rgba(0, 0, 0, 0.35) !important;
+}
+
+body[data-theme="light-blue"] {
+  --block-header-color: rgba(255, 255, 255, 0.35) !important;
+  --block-header-hover-color: rgba(255, 255, 255, 0.15) !important;
+  --block-header-light-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+main#content.layout--wide
+  .block__header:not(.image-metabar):not([id^="image_meta_"]) {
+  border-top-right-radius: 6px !important;
+  border-top-left-radius: 6px !important;
+}
+
+main#content.layout--wide .block__header:not(:has([id^="image_meta_"])) a {
+  background: var(--header-link-background) !important;
+}
+main#content.layout--wide
+  .block__header:not(:has([id^="image_meta_"]))
+  a:hover {
+  background: var(--block-header-hover-color) !important;
+  color: var(--block-header-link-text-hover-color);
+}
+
+/* dp-image-header-and-box */
+body[data-theme="dark-blue"] {
+  --media-box-header-bg: rgba(0, 0, 0, 0.35) !important;
+}
+
+body[data-theme="light-blue"] {
+  --media-box-header-bg: rgba(255, 255, 255, 0.35) !important;
+}
+
+.media-box__header {
+  background: var(--media-box-header-bg) !important;
+}
+
+/* rounded corners */
+.media-box__header {
+  border-radius: 3px !important;
+}
+.media-box {
+  border-radius: 3px !important;
+}
+
+/* dp-activity-side */
+body[data-theme="dark-blue"] {
+  --background-odd-color: rgba(0, 0, 0, 0.25) !important;
+  --background-even-color: rgba(0, 0, 0, 0.45) !important;
+}
+
+body[data-theme="light-blue"] {
+  --background-odd-color: rgba(255, 255, 255, 0.25) !important;
+  --background-even-color: rgba(255, 255, 255, 0.45) !important;
+}
+
+/* dp-misc-and-fixes */
+/*disable borders*/
+.media-box {
+  border: none !important;
+}
+.block__content {
+  border: none !important;
+}
+.block__header {
+  border-radius: 6px !important;
+}
+.block--fixed {
+  border: none !important;
+}
+
+/* some fixes for buttons on image page */
+main#content.layout--wide .block__header:has([id^="image_meta_"]) {
+  a:has([class]):not(:hover):not(.active) {
+    background: transparent !important;
+  }
+}
+
+/* use where() to lower the style priority and use the site's default values */
+:where(
+    main#content.layout--wide .block__header:has([id^="image_meta_"]) a:hover
+  ) {
+  background: revert; /* DO NOT USE HERE !important !!!! */
+  color: revert;      /* AND HERE TOO !!!! */
+}
