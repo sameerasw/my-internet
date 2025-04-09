@@ -222,8 +222,8 @@
       "cgown-no footer": "footer {\n  display: none !important;\n}"
     },
     "chat.deepseek.com.css": {
-      "deepseek-transparecy": "body[data-ds-dark-theme] {\n  --dsr-bg: transparent !important;\n  --dsr-side-bg: transparent !important;\n}\n\n.b480065b {\n  background: none !important;\n}",
-      "deepseek-other changes": "div.fcaa63f8.d9fb9344,\n.fcaa63f8 {\n  display: none !important;\n}\n\n.dc04ec1d,\ndiv.ds-flex {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\ndiv.aaff8b8f {\n  margin-bottom: 1em !important;\n}"
+      "deepseek-transparecy": "body[data-ds-dark-theme] {\n  --dsr-bg: transparent !important;\n  --dsr-side-bg: transparent !important;\n}\n\n.b480065b, ._871cbca, ._2be88ba, .b8812f16, ._48cdfc1, .f0d4f23d {\n  background: none !important;\n}",
+      "deepseek-other changes": "div.fcaa63f8.d9fb9344,\n.fcaa63f8, ._62b4800 {\n  display: none !important;\n}\n\n.dc04ec1d,\ndiv.ds-flex {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\ndiv.aaff8b8f {\n  margin-bottom: 1em !important;\n}"
     },
     "chatgpt.com.css": {
       "cgpt-transparecy": ":root{\n  --main-surface-background: #00000000 !important;\n  --main-surface-primary: #00000000 !important;\n  --sidebar-surface-primary: #00000000 !important;\n}",
