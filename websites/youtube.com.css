@@ -12,12 +12,26 @@ html[dark], html, #container.ytd-searchbox, ytd-app, #page-header-container, #pa
   height: 98vh !important;
 }
 
+tp-yt-app-drawer > #contentContainer, #guide-content, ytd-mini-guide-renderer, ytd-mini-guide-entry-renderer{
+  background-color: #00000000 !important;
+  background: none !important;
+}
+
 /* yt-No left side guide */
 ytd-mini-guide-renderer {
   display: none !important;
 }
+tp-yt-app-drawer > #contentContainer, #guide-content, ytd-mini-guide-renderer, ytd-mini-guide-entry-renderer{
+  background-color: var(--yt-spec-text-primary-inverse) !important;
+  background: var(--yt-spec-text-primary-inverse) !important;
+}
 #page-manager {
   margin-left: 0 !important;
+}
+
+/* yt-clean side guide */
+ytd-guide-section-renderer:has([title="YouTube Studio"],[title="Sport"], [title="Settings"]), #footer{
+  display: none !important;
 }
 
 /* yt-Transparent header */
@@ -74,6 +88,7 @@ ytd-rich-item-renderer{
     flex-direction: row !important;
 
     #metadata-line span:nth-child(3) {
+      /* width: 2em !important; */
       height: 1em !important;
       margin-left: 1em !important;
     }
@@ -303,8 +318,4 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer){
       opacity: 0.3 !important;
     }
   }
-}
-/* yt-no bottom gradient in player */
-.ytp-gradient-bottom {
-  display: none !important;
 }
