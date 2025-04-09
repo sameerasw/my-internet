@@ -1365,7 +1365,7 @@
       "no footer": "footer{\n  display: none !important;\n}"
     },
     "ya.ru.css": {
-      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .informers3-weather__text, .HeaderDesktop, #search-result li, .NativeScroll-Inner, .AppAdvancedSearch{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .informers3-weather__text, .HeaderDesktop, #search-result li, .NativeScroll-Inner, .AppAdvancedSearch, .HeaderNav-TabCover{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     },
     "prydwen.gg.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .background-switcher > div, .left-menu, .top-nav, .content, .content-background.exilium, .left-menu-content-wrapper{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
