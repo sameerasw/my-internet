@@ -412,3 +412,151 @@ body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"]
 #zen-media-close-button{
   display: none !important;
 } */
+
+/* context menu */
+#tabContextMenu, #contentAreaContextMenu{
+  slot::before{
+    height: 50px !important;
+    width: 50px !important;
+    background-color: red !important;
+  }
+  #context_zen-add-essential,
+  #context_unpinTab,
+  #context_pinTab,
+  #context_bookmarkTab,
+  #context_moveTabOptions,
+  #context_sendTabToDevice,
+  #context_reopenInContainer,
+  #context_selectAllTabs,
+  #context_closeDuplicateTabs,
+  #context_closeTabOptions,
+  #context_undoCloseTab,
+  menuseparator,
+  #context-back,
+  #context-forward,
+  #context-reload,
+  #context-bookmarkpage,
+  #context-savepage,
+  #context-sendpagetodevice,
+  #context-selectall,
+  #context-viewsource,
+  #context-print-selection,
+  #context-viewpartialsource-selection,
+  #context-bookmarklink,
+  #context-savelink,
+  #context-openlinkinusercontext-menu,
+  #context-openlink,
+  #context-sendlinktodevice,
+  #context-searchselect-private
+  {
+    display: none !important;
+  }
+}
+/*   
+  #context_reloadTab,
+  #context_toggleMuteTab,
+  #context_closeTab,
+  #context_zenUnloadTab,
+  #context-take-screenshot,
+  #context-inspect,
+  #context-searchselect,
+  #context-copy
+  {
+    .menu-text{
+      display: none !important;
+    }
+    margin: 5px !important;
+    height: 30px !important;
+    width: 30px!important;
+  align-items: center !important;
+    background-color: light-dark(#0001, #fff1) !important;
+    &:hover{
+    background-color: light-dark(#0003, #fff3) !important;
+    }
+  }
+  
+  #context_closeTab, #context-inspect{
+    order: -100 !important;
+    left: 3px !important;
+  }
+  #context_zenUnloadTab, #context-searchselect{
+    order: -99 !important;
+    left: 53px !important;
+    position: absolute !important;
+  }
+   #context_reloadTab,#context-take-screenshot{
+    order: -98 !important;
+    left: 103px !important;
+    position: absolute !important;
+  }
+   #context_toggleMuteTab,#context-copy{
+    order: -97 !important;
+    left: 153px !important;
+    position: absolute !important;
+  }
+  
+  .menupopup-arrowscrollbox > slot:nth-child(1){
+    padding-top: 40px !important;
+  }
+  
+  menuitem{
+    border-radius: 5px !important;
+  }
+} */
+
+
+.tab-group-label{
+  border: none !important;
+  border-radius: 1em !important;
+  outline: none !important;
+  width: 100% !important;
+  margin-right: 0 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.tab-group-label-container::after{
+  display: none !important;
+}
+
+tab-group .tab-group-label{
+  width: 100% !important;
+  text-align: left !important;
+  padding-left: 10px !important;
+  
+  &:hover{
+    padding-left: 20px !important;
+  }
+}
+
+tab-group .tab-group-label{
+  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
+  border: color-mix(in srgb, var(--tab-group-color) 50%, transparent) 2px solid !important;
+  color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
+  
+  &:hover{
+    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+    color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
+  }
+}
+
+tab-group .tab-stack{
+  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
+  margin-block: 2px !important;
+  border-radius: 1em !important;
+}
+
+.tab-group-label-container{
+  margin-bottom: 3px !important;
+  margin-top: 3px !important;
+}
+
+tab-group .tabbrowser-tab::before{
+  display: none !important;
+}
+
+#tabbrowser-tabs:not([expanded]){
+  tab, tab-group{
+    scale: 1.1 !important;
+  }
+}
+
