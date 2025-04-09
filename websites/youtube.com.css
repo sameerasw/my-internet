@@ -230,6 +230,12 @@ ytd-comments{
   backdrop-filter: blur(20px) !important;
 }
 
+/* yt-zen comments anno..captions */
+body:has([data-title-no-tooltip="Subtitles/closed captions"][aria-pressed="true"]):has(.video-annotations) [theater=""] ytd-comments{
+    opacity: 1 !important;
+    left: 0 !important;
+}
+
 /* yt-transparent overlay chat */
 [theater=""] #chat {
   position: absolute !important;
