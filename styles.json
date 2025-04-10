@@ -1562,6 +1562,14 @@
     },
     "yandex.ru.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .informers3-weather__text, .HeaderDesktop, #search-result li, .NativeScroll-Inner, .AppAdvancedSearch, .HeaderNav-TabCover{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+    },
+    "hubtronics.in.css": {
+      "htcs-Transparency": "body,\nheader a,\n.grid-row,\n.module-body,\n.product-price-group,\n.breadcrumb::before,\n.caption,\n.mobile-header,\n.mobile-top-bar,\n.mobile-bar,\n.mobile-logo-wrapper,\n.mobile-wrapper-header,\n.flyout-menu-item a,\n.product-thumb,\n.block-expand-overlay {\n  background-color: transparent !important;\n  background: none !important;\n}",
+      "htcs-Darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n  --backdrop-bg: rgba(255, 255, 255, 0.75);\n  --backdrop-filter: blur(16px) saturate(180%) !important;\n}\n\n[data-darkreader-scheme=\"dark\"] {\n  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n}",
+      "htcs-Transparent Header": "header,\n.navbar-nav,\n.navbar-nav::before {\n  background-color: transparent !important;\n}",
+      "htcs-Translucent Overlays": ".is-sticky .navbar-nav::before,\n.mobile-container,\n.tt-menu,\n.j-dropdown {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}",
+      "htcs-Misc": ".swiper-container {\n  overflow: hidden !important;\n}",
+      "htcs-No Footer": "footer {\n  display: none !important;\n}"
     }
   }
 }
