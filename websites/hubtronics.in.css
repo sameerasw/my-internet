@@ -1,4 +1,4 @@
-/* htcs-transparency */
+/* htcs-Transparency */
 body,
 header a,
 .grid-row,
@@ -18,7 +18,7 @@ header a,
   background: none !important;
 }
 
-/* htcs-darkreader */
+/* htcs-Darkreader */
 :root {
   --darkreader-background-ffffff: transparent !important;
   --backdrop-bg: rgba(255, 255, 255, 0.75);
@@ -29,15 +29,14 @@ header a,
   --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
 }
 
-/* htcs-transparent header */
+/* htcs-Transparent Header */
 header,
 .navbar-nav,
 .navbar-nav::before {
   background-color: transparent !important;
 }
 
-/* htcs-translucent overlays */
-
+/* htcs-Translucent Overlays */
 .is-sticky .navbar-nav::before,
 .mobile-container,
 .tt-menu,
@@ -46,11 +45,12 @@ header,
   background-color: var(--backdrop-bg) !important;
 }
 
+/* htcs-Misc */
 .swiper-container {
   overflow: hidden !important;
 }
 
-/* htcs-no footer */
+/* htcs-No Footer */
 footer {
   display: none !important;
 }
