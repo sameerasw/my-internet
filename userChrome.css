@@ -504,59 +504,74 @@ body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"]
   }
 } */
 
-
-.tab-group-label{
+/* Tab group label styling */
+.tab-group-label,
+tab-group .tab-group-label {
+  width: 100% !important;
   border: none !important;
   border-radius: 1em !important;
   outline: none !important;
-  width: 100% !important;
   margin-right: 0 !important;
-  transition: all 0.2s ease-in-out !important;
-}
-
-.tab-group-label-container::after{
-  display: none !important;
-}
-
-tab-group .tab-group-label{
-  width: 100% !important;
   text-align: left !important;
   padding-left: 10px !important;
-  
-  &:hover{
-    padding-left: 20px !important;
-  }
-}
-
-tab-group .tab-group-label{
   background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
-  border: color-mix(in srgb, var(--tab-group-color) 50%, transparent) 2px solid !important;
   color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
-  
-  &:hover{
-    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
-    color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
-  }
+  scale: 1 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+tab-group .tab-group-label:hover {
+  padding-left: 15px !important;
+  background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+  color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
+}
+tab-group .tab-group-label:active {
+  scale: 0.9 !important;
+}
+tab-group:not([collapsed]) .tab-group-label {
+  border: 1.5px dashed color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
 }
 
-tab-group .tab-stack{
-  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
-  margin-block: 2px !important;
-  border-radius: 1em !important;
-}
-
-.tab-group-label-container{
-  margin-bottom: 3px !important;
+/* Label container margins */
+.tab-group-label-container {
   margin-top: 3px !important;
+  margin-bottom: 0 !important;
+}
+tab-group[collapsed] .tab-group-label-container {
+  margin-bottom: 3px !important;
 }
 
-tab-group .tabbrowser-tab::before{
+/* Hide label container's after pseudo */
+.tab-group-label-container::after {
   display: none !important;
 }
 
-#tabbrowser-tabs:not([expanded]){
-  tab, tab-group{
-    scale: 1.1 !important;
-  }
+/* Tab stack styles */
+.tab-stack,
+tab-group .tab-stack {
+  transition: all 0.3s ease-in-out !important;
+  border-radius: 1.2em !important;
+  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
+  margin-block: 2px !important;
+}
+.tab-stack:hover,
+tab-group .tab-stack:hover {
+  background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+}
+
+/* Hide tab indicator */
+tab-group .tabbrowser-tab::before {
+  display: none !important;
+}
+
+/* Scale effect when tab bar is not expanded */
+#tabbrowser-tabs:not([expanded]) tab,
+#tabbrowser-tabs:not([expanded]) tab-group {
+  scale: 1.1 !important;
+}
+
+/* Fixed size for tab group */
+tab-group {
+  height: 300px !important;
+  width: 200px !important;
 }
 
