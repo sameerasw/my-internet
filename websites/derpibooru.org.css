@@ -30,10 +30,10 @@ body[data-theme="light-blue"] {
 
 .header {
   a.header__link {
-    background: var(--header-link-background) !important;
+      background: var(--header-link-background) !important;
   }
   a.header__link:hover {
-    background: var(--header-link-hover) !important;
+      background: var(--header-link-hover) !important;
   }
 }
 
@@ -115,10 +115,10 @@ body[data-theme="light-blue"] {
   backdrop-filter: none !important;
 
   a.header__link {
-    background: var(--header-secondary-color) !important;
+      background: var(--header-secondary-color) !important;
   }
   a.header__link:hover {
-    background: var(--header-secondary-hover-color) !important;
+      background: var(--header-secondary-hover-color) !important;
   }
 }
 
@@ -157,6 +157,24 @@ main#content.layout--wide div.column-layout div.column-layout__main div#imagelis
 main#content.layout--wide div.column-layout div.column-layout__main div#imagelist-container.block a:hover {
   background: var(--block-header-hover-color) !important;
   color: var(--block-header-link-text-hover-color) !important;
+}
+main#content.layout--wide div#imagelist-container.block section.block__header.page__header.flex {
+  a {
+      background: transparent !important;
+  }
+  a:hover {
+      background: var(--block-header-hover-color) !important;
+      color: var(--block-header-link-text-hover-color) !important;
+  }
+}
+main#content.layout--wide div#imagelist-container.block div.block__header.block__header--light.page__header.flex {
+  a {
+      background: transparent !important;
+  }
+  a:hover {
+      background: var(--block-header-hover-color) !important;
+      color: var(--block-header-link-text-hover-color) !important;
+  }
 }
 
 
@@ -333,4 +351,13 @@ main#content.layout--wide div.block.block__header div.stretched-mobile-links {
 }
 .column-layout__main .block__header a {
   background: transparent !important;
+}
+main#content.layout--narrow div.page__pagination {
+  a {
+      background: transparent !important;
+  }
+  a:hover {
+      background: var(--block-header-hover-color) !important;
+      color: var(--block-header-link-text-hover-color) !important;
+  }
 }
