@@ -30,7 +30,7 @@ tp-yt-app-drawer > #contentContainer, #guide-content, ytd-mini-guide-renderer, y
 }
 
 /* yt-clean side guide */
-ytd-guide-section-renderer:has([title="YouTube Studio"],[title="Sport"], [title="Settings"]), #footer{
+ytd-guide-section-renderer:has([title="YouTube Studio"],[title="Sport"], [title="Settings"]),ytd-guide-section-renderer #footer{
   display: none !important;
 }
 
@@ -88,6 +88,7 @@ ytd-rich-item-renderer{
     flex-direction: row !important;
 
     #metadata-line span:nth-child(3) {
+      /* width: 2em !important; */
       height: 1em !important;
       margin-left: 1em !important;
     }
