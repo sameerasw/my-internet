@@ -62,7 +62,7 @@ tp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper
     }
   }
 
-  &:has(ytmusic-tab-renderer[page-type="MUSIC_PAGE_TYPE_TRACK_LYRICS"]){
+  &:has(ytmusic-tab-renderer[page-type="MUSIC_PAGE_TYPE_TRACK_LYRICS"]):not(:has(ytmusic-message-renderer:not([style="display: none;"]))){
     right: 0 !important;
     opacity: 1 !important;
   }
