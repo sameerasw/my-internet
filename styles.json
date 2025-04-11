@@ -1623,6 +1623,10 @@
     "playground.allenai.org.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #root > div, .MuiDrawer-root > div, main  > div, main + div{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "console.firebase.google.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, fire-m3-sidebar{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
