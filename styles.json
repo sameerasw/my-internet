@@ -1613,6 +1613,12 @@
     },
     "thinkbuddy.ai.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #root > div > div, #root > div > div > div > div{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+    },
+    "apkmirror.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .listWidget, .appRow, article > div, article > div > div > div, .card-with-tabs > div, .appspec-row, .show-more{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.header-nav{\n  border-radius: 1em !important;\n  margin: 1em !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}",
+      "no thanks": "[data-ai]:has(span.advertisement-text), #bottom-slider, .pushbullet-subscribe-widget{\n  display: none !important;\n}"
     }
   }
 }
