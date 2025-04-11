@@ -25,7 +25,6 @@ ytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app{
 }
 
 /* ytm-hide elements */
-#side-panel,
 #nav-bar-divider,
 #background,
 div.av.style-scope.ytmusic-player-page,
@@ -34,12 +33,50 @@ tp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper
   display: none !important;
 }
 
+/* ytm-player sidebar */
+#side-panel{
+  width: 40em !important;
+  height: 80vh !important;
+  padding: 0 2em !important;
+  right: -30em !important;
+  top: 10vh !important;
+  opacity: 0 !important;
+  position: absolute !important;
+  transition: all 0.3s ease-in-out !important;
+  backdrop-filter: blur(20px) !important;
+  border-radius: 2em 0 0 2em !important;
+  background-color: #0005;
+    box-shadow:  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+
+    tp-yt-paper-tabs{
+      transition: height 0.3s ease-in-out !important;
+      height: 0 !important;
+    }
+
+  &:hover{
+    right: 0 !important;
+    opacity: 1 !important;
+
+    tp-yt-paper-tabs{
+      height: 4em !important;
+    }
+  }
+
+  &:has(ytmusic-tab-renderer[page-type="MUSIC_PAGE_TYPE_TRACK_LYRICS"]){
+    right: 0 !important;
+    opacity: 1 !important;
+  }
+}
+
 /* ytm-centered player */
 #player {
-  max-height: 100vh !important;
+  position: absolute !important;
+  height: 70vh !important;
+  max-width: 70vw !important;
   aspect-ratio: 1 !important;
-  width: 100% !important;
-  margin: auto !important;
+  top: 50vh !important;
+  left: 50vw !important;
+  transform: translate(-50% , -50%) !important;
 }
 
 /* ytm-navbar and titlebar bg removed */
@@ -108,4 +145,36 @@ ytmusic-player-bar, #player-bar-background{
   ytmusic-app-layout > #content{
     height: calc(100vh - 190px) !important;
     overflow: scroll !important;
+  }
+
+/* ytm-centered player */
+ #left-controls{
+    position: absolute !important;
+    left: 50vw !important;
+    bottom:15px !important;
+    transform: translateX(-50%) !important;
+    width: fit-content !important;
+  }
+
+  .time-info{
+position: absolute !important;
+bottom: -10px !important;
+width: 100% !important;
+text-align: center !important;
+padding: 0 !important;
+margin: 0 !important;
+  }
+  
+  .middle-controls{
+    position: absolute !important;
+    left: 1vw !important;
+    bottom:15px !important;
+  }
+
+  .middle-controls{
+    order: 0 !important;
+  }
+
+  #left-controls{
+    order: 1 !important;
   }
