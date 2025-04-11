@@ -30,10 +30,10 @@ body[data-theme="light-blue"] {
 
 .header {
   a.header__link {
-    background: var(--header-link-background) !important;
+      background: var(--header-link-background) !important;
   }
   a.header__link:hover {
-    background: var(--header-link-hover) !important;
+      background: var(--header-link-hover) !important;
   }
 }
 
@@ -115,10 +115,10 @@ body[data-theme="light-blue"] {
   backdrop-filter: none !important;
 
   a.header__link {
-    background: var(--header-secondary-color) !important;
+      background: var(--header-secondary-color) !important;
   }
   a.header__link:hover {
-    background: var(--header-secondary-hover-color) !important;
+      background: var(--header-secondary-hover-color) !important;
   }
 }
 
@@ -146,22 +146,37 @@ body[data-theme="light-blue"] {
   --block-header-hover-color: rgba(255, 255, 255, 0.15) !important;
   --block-header-light-color: rgba(255, 255, 255, 0.35) !important;
 }
-
-main#content.layout--wide
-  .block__header:not(.image-metabar):not([id^="image_meta_"]) {
+main#content.layout--wide div.column-layout div.column-layout__main div#imagelist-container.block {
   border-top-right-radius: 6px !important;
   border-top-left-radius: 6px !important;
 }
 
-main#content.layout--wide .block__header:not(:has([id^="image_meta_"])) a {
+main#content.layout--wide div.column-layout div.column-layout__main div#imagelist-container.block a {
   background: var(--header-link-background) !important;
 }
-main#content.layout--wide
-  .block__header:not(:has([id^="image_meta_"]))
-  a:hover {
+main#content.layout--wide div.column-layout div.column-layout__main div#imagelist-container.block a:hover {
   background: var(--block-header-hover-color) !important;
-  color: var(--block-header-link-text-hover-color);
+  color: var(--block-header-link-text-hover-color) !important;
 }
+main#content.layout--wide div#imagelist-container.block section.block__header.page__header.flex {
+  a {
+      background: transparent !important;
+  }
+  a:hover {
+      background: var(--block-header-hover-color) !important;
+      color: var(--block-header-link-text-hover-color) !important;
+  }
+}
+main#content.layout--wide div#imagelist-container.block div.block__header.block__header--light.page__header.flex {
+  a {
+      background: transparent !important;
+  }
+  a:hover {
+      background: var(--block-header-hover-color) !important;
+      color: var(--block-header-link-text-hover-color) !important;
+  }
+}
+
 
 /* derpy-image header */
 body[data-theme="dark-blue"] {
@@ -181,6 +196,95 @@ body[data-theme="light-blue"] {
 }
 .media-box {
   border-radius: 3px !important;
+}
+
+/* derpy-image page */
+#image_options_area .block__header--js-tabbed {
+  border: none !important;
+  a {
+      border: none !important;
+      background: var(--image-options-area-background) !important;
+      border-radius: 6px !important;
+      margin-right: 6px !important;
+      transition: ease 0.1s !important;
+  }
+  a:hover {
+      border-radius: 6px !important;
+      transform: scale(1.1) !important;
+      margin-right: 12px !important;
+      margin-left: 6px !important;
+  }
+  a:first-child:hover {
+      margin-left: 0px !important;
+      margin-right: 12px !important
+  }
+}
+#js-comment-form .block__header--js-tabbed {
+  border: none !important;
+  background: var(--image-options-area-background) !important;
+  a {
+      border: none !important;
+      background: none !important;
+  }
+  a:hover {
+      border-radius: 6px !important;
+      background: var(--block-header-hover-color) !important;
+      color: var(--block-header-link-text-hover-color) !important;
+  }
+}
+#js-comment-form .block__tab {
+  border: none !important;
+}
+#js-refresh-comments {
+  border: none !important;
+  border-radius: 6px !important;
+  color: #4f95db !important;
+  font-weight: 700;
+}
+#js-refresh-comments:hover {
+  color: var(--block-header-link-text-hover-color) !important;
+  background: var(--image-options-area-button-hover) !important;
+}
+#js-comment-form #fa,
+#js-comment-form #hide-mobile {
+  transition: color 0.3s ease !important;
+}
+#js-comment-form .button[type="submit"] {
+  border: none !important;
+  background: var(--image-options-area-button) !important;
+  border-radius: 3px !important;
+  color: #4f95db !important;
+  font-weight: 600 !important;
+  transition: ease 0.1s !important;
+}
+#js-comment-form .button[type="submit"]:hover {
+  color: var(--block-header-link-text-hover-color) !important;
+  background: var(--image-options-area-button-hover-nt) !important;
+  transform: scale(1.1) !important;
+}
+main#content.layout--wide div.layout--narrow div.image-description div.block div.block__content blockquote {
+  border: none !important;
+  background: var(--image-options-area-background) !important;
+  backdrop-filter: blur(2px) !important;
+  border-radius: 3px !important;
+}
+main#content.layout--wide div.layout--narrow div#image_tags_and_source.js-tagsauce div.block__header__buttons {
+  a {
+      background: none !important;
+  }
+  a:hover {
+      background: var(--block-header-hover-color) !important;
+      color: var(--block-header-link-text-hover-color) !important;
+  }
+}
+main#content.layout--wide div.layout--narrow div.js-sourcesauce div#image-source.block {
+  a {
+      background: none !important;
+  }
+  a:hover {
+      background: var(--block-header-hover-color) !important;
+      color: var(--block-header-link-text-hover-color) !important;
+  }
 }
 
 /* derpy-activity side */
@@ -208,15 +312,52 @@ body[data-theme="light-blue"] {
   border: none !important;
 }
 
-main#content.layout--wide .block__header:has([id^="image_meta_"]) {
-  a:has([class]):not(:hover):not(.active) {
-    background: transparent !important;
-  }
+body[data-theme="dark-blue"] {
+  --image-options-area-background: rgba(0, 0, 0, 0.35) !important;
+  --image-options-area-button: rgba(0, 0, 0, 0.25) !important;
+  --image-options-area-button-hover: rgba(0, 0, 0, 0.15) !important;
+  --image-options-area-button-hover-nt: rgba(0, 0, 0, 0.3) !important;
 }
 
-:where(
-    main#content.layout--wide .block__header:has([id^="image_meta_"]) a:hover
-  ) {
+body[data-theme="light-blue"] {
+  --image-options-area-background: rgba(255, 255, 255, 0.35) !important;
+  --image-options-area-button: rgba(255, 255, 255, 0.25) !important;
+  --image-options-area-button-hover: rgba(255, 255, 255, 0.15) !important;
+  --image-options-area-button-hover-nt: rgba(255, 255, 255, 0.3) !important;
+}
+
+
+main#content.layout--wide div.block.block__header div.stretched-mobile-links {
+  a:has([class]):not(:hover):not(.active) {
+      background: transparent !important;
+  }
+}
+:where(main#content.layout--wide div.block.block__header div.stretched-mobile-links a:hover) {
   background: revert;
   color: revert;
+}
+.column-layout__left > div:nth-child(2) > a:nth-child(1) {
+  background: var(--block-header-color) !important;
+  border-radius: 6px !important;
+}
+.break-word,
+.no-overflow {
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+  border-radius: 6px !important;
+}
+.column-layout__left > div:nth-child(4) > div:nth-child(1) > a:nth-child(1) {
+  background: none !important;
+}
+.column-layout__main .block__header a {
+  background: transparent !important;
+}
+main#content.layout--narrow div.page__pagination {
+  a {
+      background: transparent !important;
+  }
+  a:hover {
+      background: var(--block-header-hover-color) !important;
+      color: var(--block-header-link-text-hover-color) !important;
+  }
 }
