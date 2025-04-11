@@ -226,7 +226,7 @@ main#content.layout--wide .block__header:has([id^="image_meta_"]) {
 }
 .break-word, .no-overflow {
   margin-top: 3px !important;
-  margin-bottom: 6px !important;
+  margin-bottom: 3px !important;
   border-radius: 6px !important;
 }
 .column-layout__left > div:nth-child(4) > div:nth-child(1) > a:nth-child(1) {
