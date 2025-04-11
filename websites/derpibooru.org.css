@@ -198,7 +198,7 @@ body[data-theme="light-blue"] {
   border-radius: 3px !important;
 }
 
-/*derpy-image page*/
+/* derpy-image page */
 #image_options_area .block__header--js-tabbed {
   border: none !important;
   a {
@@ -210,13 +210,13 @@ body[data-theme="light-blue"] {
   }
   a:hover {
       border-radius: 6px !important;
-      transform: scale(1.1);
+      transform: scale(1.1) !important;
       margin-right: 12px !important;
       margin-left: 6px !important;
   }
   a:first-child:hover {
       margin-left: 0px !important;
-      margin-right: 12px!important
+      margin-right: 12px !important
   }
 }
 #js-comment-form .block__header--js-tabbed {
@@ -247,7 +247,7 @@ body[data-theme="light-blue"] {
 }
 #js-comment-form #fa,
 #js-comment-form #hide-mobile {
-  transition: color 0.3s ease;
+  transition: color 0.3s ease !important;
 }
 #js-comment-form .button[type="submit"] {
   border: none !important;
