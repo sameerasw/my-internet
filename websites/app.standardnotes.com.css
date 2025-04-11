@@ -1,6 +1,4 @@
-/* Make background transparent, but still readable */
-/* Also removes borders because they look ugly */
-/* Full transparency for light mode */
+/* transparency */
 :root {
     --background-norm: light-dark(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)) !important;
     --background-weak: light-dark(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) !important;
