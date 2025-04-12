@@ -27,10 +27,19 @@ ytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app{
 /* ytm-hide elements */
 #nav-bar-divider,
 #background,
-div.av.style-scope.ytmusic-player-page,
-ytmusic-chip-cloud-renderer.style-scope.ytmusic-section-list-renderer,
 tp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper-toast-open {
   display: none !important;
+}
+
+ytmusic-chip-cloud-renderer.style-scope.ytmusic-section-list-renderer{
+  opacity: 0 !important;
+  height: fit-content !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
 }
 
 /* ytm-player sidebar */
@@ -115,12 +124,36 @@ ytmusic-player-bar,
 }
 
 #layout:not([player-ui-state="PLAYER_PAGE_OPEN"]) #player-bar-background{
-  background-color: #000 !important;
+  background-color: #0005 !important;
 }
 
-/* ytm-no mini video */
- ytmusic-player#player[player-ui-state="MINIPLAYER"]{
-   display: none !important;
+/* ytm-music video */
+ #player:has(ytmusic-player[player-ui-state="MINIPLAYER"]), 
+ .content.ytmusic-player-page:has(ytmusic-player[player-ui-state="MINIPLAYER"]),#main-panel:has(ytmusic-player[player-ui-state="MINIPLAYER"]), ytmusic-player[player-ui-state="MINIPLAYER"]{
+   position: absolute !important;
+   top: 0 !important;
+   left: 0 !important;
+   bottom: 0 !important;
+   right: 0 !important;
+   width: 350px !important;
+   height: fit-content !important;
+}
+
+ #player-page:has(ytmusic-player[player-ui-state="MINIPLAYER"]) .content{
+  position: fixed !important;
+  left: 100vw !important;
+  transform: translate(-200px, -200px) !important
+}
+
+#av-id:has(ytmusic-av-toggle){
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
 }
 
 
@@ -148,7 +181,7 @@ ytmusic-player-bar, #player-bar-background{
   }
 
   ytmusic-app-layout > #content{
-    height: calc(100vh - 190px) !important;
+    height: calc(100vh - 205px) !important;
     overflow: scroll !important;
   }
 
@@ -174,6 +207,7 @@ margin: 0 !important;
     position: absolute !important;
     left: 1vw !important;
     bottom:15px !important;
+    max-width: 30vw !important;
   }
 
   .middle-controls{
