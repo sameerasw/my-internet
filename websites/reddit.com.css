@@ -21,7 +21,7 @@ html {
 
 /* no recent posts */
 div aside recent-posts{
-  /* display: none !important; */
+  display: none !important;
 }
 
 /* reddit-hide elements */
