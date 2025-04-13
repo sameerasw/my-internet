@@ -13,6 +13,7 @@ header,
 app,
 #app,
 .app,
+.alert,
 .content {
   background-color: transparent !important;
   background: none !important;
