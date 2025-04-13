@@ -1633,6 +1633,11 @@
     },
     "flathub.org.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next > div, main ul.hidden:nth-child(2), header + div.bg-flathub-gainsborow, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+    },
+    "spotifymate.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
