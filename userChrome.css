@@ -1,3 +1,8 @@
+/* ---- Fix for linux transparency ---- */
+:root {
+  --zen-themed-toolbar-bg-transparent: transparent !important;
+}
+
 #zen-media-controls-toolbar toolbaritem{
   background-color: light-dark(#fff5, #0005) !important;
 }
