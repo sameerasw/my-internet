@@ -1630,6 +1630,9 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, nav > div, body:not([style=\"overflow: hidden;\"]) nav > div > div > div, nav + div > div, div.\\$bg-white:nth-child(1){\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n[data-testid=\"picture\"] .\\$object-cover, [data-testid=\"picture\"] + .\\$w-full{\n  display: none !important;\n}\n\n\n@media (prefers-color-scheme: dark) {\n  h1, h2, h3, h4, h5, h6, span, p, li {\n    color: #fff !important;\n  }\n}\n\n\n@media (prefers-color-scheme: light) {\n  h1, h2, h3, h4, h5, h6, span, p, button, li {\n    color: #000 !important;\n  }\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "flathub.org.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next > div, main ul.hidden:nth-child(2), header + div.bg-flathub-gainsborow, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     }
   }
 }
