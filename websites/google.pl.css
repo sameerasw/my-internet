@@ -19,7 +19,7 @@ div:not([role="img"]) {
   background: transparent !important;
 }
 
-.aajZCb, .review-dialog, [role="dialog"] .IHjTsb {
+.aajZCb, .review-dialog, [role="dialog"] .IHjTsb, button + .gXQlA,[isfullscreen="false"] [role="dialog"],[role="dialog"] .JHxP8e , .iRQHZe [tabindex="-1"] {
   background-color: var(--uv-styles-color-surface) !important;
 }
 
