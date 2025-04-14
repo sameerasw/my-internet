@@ -180,7 +180,7 @@ ytmusic-player[player-ui-state="MINIPLAYER"] {
   display: none !important;
 }
 
-/* Show mini playyer */
+/* Show mini player */
 #player[player-ui-state="MINIPLAYER"]{
   display: initial !important;
 }
