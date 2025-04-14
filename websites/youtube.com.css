@@ -191,6 +191,26 @@ ytd-merch-shelf-renderer, .annotation{
   transition: all 0.3s ease-in-out 0.5s !important;
 }
 
+
+body:has([fullscreen=""] ,[theater=""]) #masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){
+  top: -40px !important;
+  opacity: 0 !important;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
+  &:hover{
+    opacity: 1 !important;
+    top: 0 !important;
+  }
+}
+
+
+ytd-app:has([fullscreen=""] ,[theater=""]){
+  --ytd-toolbar-height: 0px !important;
+
+  #page-manager{
+    margin: 0 !important;
+  }
+}
+
 /* yt-zen view comments */
 [theater=""] #columns #secondary{
   scale: 0 !important;
