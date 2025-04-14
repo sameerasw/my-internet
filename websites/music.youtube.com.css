@@ -27,7 +27,7 @@ ytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app {
 
 /* Hide elements */
 #nav-bar-divider,
-#background,
+#browse-page > #background,
 tp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper-toast-open {
   display: none !important;
 }
@@ -143,7 +143,7 @@ ytmusic-player-bar,
   background-color: #0005 !important;
 }
 
-/* Video view */
+/* Mini player tweaks */
 #player:has(ytmusic-player[player-ui-state="MINIPLAYER"]),
 .content.ytmusic-player-page:has(ytmusic-player[player-ui-state="MINIPLAYER"]),
 #main-panel:has(ytmusic-player[player-ui-state="MINIPLAYER"]),
@@ -167,12 +167,22 @@ ytmusic-player[player-ui-state="MINIPLAYER"] {
   position: absolute !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
+  top: -4em !important;
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
 }
 
 #av-id:has(ytmusic-av-toggle):hover {
   opacity: 1 !important;
+}
+
+#player[player-ui-state="MINIPLAYER"]{
+  display: none !important;
+}
+
+/* Show mini playyer */
+#player[player-ui-state="MINIPLAYER"]{
+  display: initial !important;
 }
 
 /* Immersive player */
@@ -197,7 +207,7 @@ ytmusic-app-layout > #content {
   overflow: scroll !important;
 }
 
-/* Centered player bar */
+/* Centered player bar*/
 #left-controls {
   position: absolute !important;
   left: 49vw !important;
@@ -225,7 +235,7 @@ ytmusic-app-layout > #content {
 }
 
 
-/* Addon : timed comments popup */
+/* Addon : timed comments pop-up */
 .__youtube-timestamps__stamp {
   scale: 3 !important;
   border-radius: 1.5px !important;
