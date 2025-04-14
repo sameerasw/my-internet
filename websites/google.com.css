@@ -15,11 +15,11 @@ table,
 tbody,
 tr,
 td,
-div:not([role="img"]) {
+div:not([role="img"], [style="background:#344DC9"], .immersive-container, [role="dialog"], [role="tablist"]) {
   background: transparent !important;
 }
 
-.aajZCb, .review-dialog, [role="dialog"] .IHjTsb, button + .gXQlA,[isfullscreen="false"] [role="dialog"],[role="dialog"] .JHxP8e , .iRQHZe [tabindex="-1"] {
+.aajZCb, .review-dialog, [role="dialog"] .IHjTsb, button + .gXQlA,[isfullscreen="false"] [role="dialog"],[role="dialog"] .JHxP8e , .iRQHZe [tabindex="-1"], #liveresults-sports-immersive__team-fullpage , div.immersive-container{
   background-color: var(--uv-styles-color-surface) !important;
 }
 
@@ -37,7 +37,7 @@ body {
 
 .in7vHe.FR7ZSc.FR7ZSc .niO4u,
 div.RNNXgb,
-.aajZCb {
+.aajZCb, div.immersive-container, [role="dialog"], [role="tablist"] {
   background-color: var(--EpFNW) !important;
 }
 
