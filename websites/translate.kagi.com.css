@@ -1,5 +1,5 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section{
+html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .main-content{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
