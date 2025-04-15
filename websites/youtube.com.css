@@ -192,7 +192,7 @@ ytd-merch-shelf-renderer, .annotation{
 }
 
 
-body:has([fullscreen=""] ,[theater=""]) #masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){
+body:has([fullscreen=""] ,[theater=""]):not(:has(ytd-watch-flexy[hidden=""])) #masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){
   top: -40px !important;
   opacity: 0 !important;
   transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
@@ -203,7 +203,7 @@ body:has([fullscreen=""] ,[theater=""]) #masthead-container:not(:has(.ytSearchbo
 }
 
 
-ytd-app:has([fullscreen=""] ,[theater=""]){
+ytd-app:has([fullscreen=""] ,[theater=""]):not(:has(ytd-watch-flexy[hidden=""])){
   --ytd-toolbar-height: 0px !important;
 
   #page-manager{
