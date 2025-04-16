@@ -1690,6 +1690,11 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .devsite-top-logo-row, devsite-header:not([bottom-row--hidden]) .devsite-top-logo-row-wrapper-wrapper, .devsite-collapsible-section, .devsite-book-nav-bg, .devsite-book-nav-filter, .devsite-book-nav-blur\n    {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.devsite-nav-item{\n  border-radius: 20px !important;\n}",
       "no footer": "footer, devsite-footer-promos, devsite-footer-linkboxes, devsite-footer-utility, devsite-content-footer{\n  display: none !important;\n}",
       "glass effect": "article{\n    box-shadow:  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;\n\n    @media (prefers-color-scheme: light) {\n  background-color: #fff8  !important;\n}\n\n    @media (prefers-color-scheme: dark) {\n  background-color: #0005  !important;\n}\n    \n  }"
+    },
+    "tiktok.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #app > div, #app > div > div > div, #app > div > div > div > div, #column-list-container, .css-rx8r84-DivFeedTabWrapper{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer, .css-1sc4cfm-DivFooterContainer{\n  display: none !important;\n}"
     }
   }
 }
