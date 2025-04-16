@@ -361,3 +361,23 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer){
 .ytp-gradient-bottom {
   display: initial !important;
 }
+
+/* yt-fix new feed layout */
+ytd-rich-item-renderer[rendered-from-rich-grid]{
+  @media only screen and (min-width: 1400px) {
+  --ytd-rich-grid-items-per-row: 4 !important;
+
+  @media only screen and (min-width: 1700px) {
+  --ytd-rich-grid-items-per-row: 5 !important;
+
+  @media only screen and (min-width: 2180px) {
+  --ytd-rich-grid-items-per-row: 6 !important;
+  }
+  }
+  }
+
+}
+
+ytd-rich-item-renderer[is-in-first-column=""]{
+  margin-left: calc(var(--ytd-rich-grid-item-margin)/2) !important
+}
