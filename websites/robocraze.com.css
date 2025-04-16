@@ -1,0 +1,53 @@
+/* rc-Transparency */
+body,
+.utility-bar,
+.header-wrapper,
+.background-none,
+.color-background-1,
+.color-background-2,
+.card__media,
+.multicolumn,
+.multicolumn-card,
+.search__input,
+.accordion,
+.customcard,
+.customcard h2,
+.prorw-sort-by,
+.prorw-summary-starrating,
+.prorw-summary-actions-newreview,
+.prorw-summary-actions-newquestion,
+.card-wrapper,
+.sc-fxdwpw,
+.sc-fxdwpw::before {
+  background-color: transparent !important;
+}
+:root {
+  --backdrop-bg: rgba(255, 255, 255, 0.75);
+  --backdrop-filter: blur(16px) saturate(180%) !important;
+}
+
+/* rc-Darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+[data-darkreader-scheme="dark"] {
+  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* rc-Translucent Overlays */
+.menu-drawer,
+.category-menu,
+.scrolled-past-header,
+.category-submenu,
+.header__submenu,
+.search-modal,
+.predictive-search,
+.sc-dCZjNh {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+/* rc-No Footer */
+.shopify-section-group-footer-group {
+  display: none !important;
+}
