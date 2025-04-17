@@ -1715,6 +1715,10 @@
     "phanpy.social.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #home-page, #modal-container > div, #account-statuses-page, #catchup-page, .timeline-deck, #app > div, #app > #columns > div, .timeline-header, .links-bar{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out,filter 0.5s ease-in-out !important;\n}\n\n.timeline  li, #compose-container-outer{\n    background-color: light-dark(#fff8, #0005)  !important;\n    transition: filter 0.5s ease-in-out, border-radius 0.5s ease-in-out, scale 0.2s ease-in-out !important;\n  }",
       "animations": "#home-page[inert=\"\"], body:has(.szh-menu-container) .timeline li:not(:has(article.status-menu-open)){\n    filter: blur(20px) !important;\n  }\n\nbody:has(.szh-menu-container)  .timeline li:has(article.status-menu-open){\n  border-radius: 1em !important;\n  scale: 1.02 !important;\n  }"
+    },
+    "webtoons.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #mainBannerList, #weekdayList, .daily_tab_wrap, #content > div, .main_challenge, #container, .detail_body.banner, .detail_body.banner > div, #_listUl > li{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n#content > #_bottomDisplay{\n  background-color: light-dark(#fff, #000) !important;\n  border-radius: 1em !important;\n  padding: 0 3em !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
     }
   }
 }
