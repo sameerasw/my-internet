@@ -1727,6 +1727,9 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .dcr-kohrs2, nav a, nav li::before, nav li::after, header > section, header > nav{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n:root{\n  --section-border: #0000 !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "midjourney.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next > div, #pageScroll + .ease-out-quart, #pageScroll + .ease-out-quart+ .ease-out-quart {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.cursor-zoom-out.h-full{\n  background-color: light-dark(#fff6, #0006) !important;\n  border-radius: 2em !important;\n}\n\n.cursor-zoom-out.h-full + div {\n  box-shadow: black 0 0 1000px 80px !important;\n}"
     }
   }
 }
