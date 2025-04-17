@@ -17,6 +17,7 @@ tr,
 td,
 div:not([role="img"], [style="background:#344DC9"], .immersive-container, [role="dialog"], [role="tablist"]) {
   background: transparent !important;
+  background-color: transparent !important;
 }
 
 .aajZCb, .review-dialog, [role="dialog"] .IHjTsb, button + .gXQlA,[isfullscreen="false"] [role="dialog"],[role="dialog"] .JHxP8e , .iRQHZe [tabindex="-1"], #liveresults-sports-immersive__team-fullpage , div.immersive-container{
@@ -37,7 +38,7 @@ body {
 
 .in7vHe.FR7ZSc.FR7ZSc .niO4u,
 div.RNNXgb,
-.aajZCb, div.immersive-container, [role="dialog"], [role="tablist"] {
+.aajZCb, div.immersive-container, [role="dialog"], [role="tablist"]:not(:has([data-ti="overview"])) {
   background-color: var(--EpFNW) !important;
 }
 
