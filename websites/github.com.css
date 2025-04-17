@@ -21,7 +21,11 @@ nav,
 .MarkdownInput-module__textArea--QjIwG,
 .notifications-list-item, 
 .notifications-list-item.notification-read,
-.search-results-page {
+.search-results-page,
+.application-main > div > div,
+#memex-root,
+[aria-label="Project"],
+#memex-project-view-root > div {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -29,6 +33,8 @@ nav,
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
     border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
+
+
 
 /* gh-transparent lists */
 .PageLayout-content .Box,
@@ -39,6 +45,7 @@ nav,
   border: none !important;
   box-shadow: none !important;
 }
+
 
 /* gh-bordered boxes */
 [data-selector="repos-split-pane-content"] {
