@@ -559,7 +559,7 @@
       "kleinanzeigen-no footer": "footer {\n  display: none !important;\n}"
     },
     "last.fm.css": {
-      "transparency": "html, body, .top-bar, #content, .content-top, .content-top:after, .page-content, .stationlink::after, .chartlist-row, .chartlist-row::after, header{\n  background-color: transparent !important;\nborder: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "transparency": "html, body, .top-bar, #content, .content-top, .content-top:after, .page-content, .stationlink::after, .chartlist-row, .chartlist-row::after, header, .lab-header, .pixel-grid .pixel-grid-container{\n  background-color: transparent !important;\nborder: none !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparency !important;\n}",
       "no thanks": ".subscribe-cta, .free-description, [href=\"/pro\"]{\ndisplay: none !important;\n}",
       "no footer": ".footer{\n  display: none !important;\n}",
