@@ -1699,6 +1699,18 @@
     },
     "io.google.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #main-content > div, .home-hero-container, .overflow-hidden.black-dark-gray-gradient{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+    },
+    "robocraze.com.css": {
+      "rc-Transparency": "body,\n.utility-bar,\n.header-wrapper,\n.background-none,\n.color-background-1,\n.color-background-2,\n.card__media,\n.multicolumn,\n.multicolumn-card,\n.search__input,\n.accordion,\n.customcard,\n.customcard h2,\n.prorw-sort-by,\n.prorw-summary-starrating,\n.prorw-summary-actions-newreview,\n.prorw-summary-actions-newquestion,\n.card-wrapper,\n.sc-fxdwpw,\n.sc-fxdwpw::before {\n  background-color: transparent !important;\n}\n:root {\n  --backdrop-bg: rgba(255, 255, 255, 0.75);\n  --backdrop-filter: blur(16px) saturate(180%) !important;\n}",
+      "rc-Darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}\n[data-darkreader-scheme=\"dark\"] {\n  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n}",
+      "rc-Translucent Overlays": ".menu-drawer,\n.category-menu,\n.scrolled-past-header,\n.category-submenu,\n.header__submenu,\n.search-modal,\n.predictive-search,\n.sc-dCZjNh {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}",
+      "rc-No Footer": ".shopify-section-group-footer-group {\n  display: none !important;\n}"
+    },
+    "robokits.co.in.css": {
+      "rk-Transparency": "html,\nbody,\n.dropdown-toggle,\n.navbar,\n.tab-pane,\n.stuck-nav,\n.icon,\n.title-aside-wrapper,\n.settings,\n.product__inside,\n.product__inside__hover,\n.leftColumn,\n#search-dropdown,\n#search,\n#cboxClose {\n  background-color: transparent !important;\n}\n:root {\n  --backdrop-bg: rgba(255, 255, 255, 0.75);\n  --backdrop-filter: blur(16px) saturate(180%) !important;\n}",
+      "rk-Darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}\n[data-darkreader-scheme=\"dark\"] {\n  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n}",
+      "rk-Translucent Overlays": "nav,\n.dropdown-menu,\n.fixedbar,\n.resultsContainer,\n.megamenu__submenu,\n.dropdown-toggle:hover,\n.input-outer {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}",
+      "rk-No Footer": "footer {\n  display: none !important;\n}"
     }
   }
 }
