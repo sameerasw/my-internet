@@ -4,7 +4,7 @@ html[dark], html, #container.ytd-searchbox, ytd-app, #page-header-container, #pa
   background: none !important;
 }
 
-#tabs-divider, #short-video-container #cinematic-container{
+#tabs-divider, #short-video-container #cinematic-container, #frosted-glass{
   display: none !important;
 }
 
