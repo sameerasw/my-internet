@@ -360,7 +360,7 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
   }
 }
 
-#zen-media-close-button{
+#zen-media-buttons-hbox > toolbarbutton{
   opacity: 0 !important;
 /*   background-image: url("") */
   transition: all 0.3s ease-in-out !important;
@@ -393,8 +393,22 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
   height: 98% !important;
 }
 
+#zen-media-controls-toolbar{
+  #zen-media-controls-hbox{
+    order: 0 !important;
+    height: 0 !important;
+    opacity: 0 !important;
+  }
+  
+  &:hover #zen-media-controls-hbox{
+    height: fit-content !important;
+    opacity: 1 !important;
+  }
+}
 
-
+#zen-media-main-vbox > vbox{
+  order: 1 !important;
+}
 
 
 
