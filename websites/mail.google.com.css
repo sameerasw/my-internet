@@ -37,3 +37,9 @@ div.apa.nH.oy8Mbf {
 :root{
   --darkreader-background-ffffff: transparent !important;
 }
+
+
+/*  gmail-rounded corners */
+#\:3, div.nH:nth-child(4) > div:nth-child(1) {
+    border-radius: 8px !important;
+  }
