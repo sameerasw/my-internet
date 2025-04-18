@@ -46,7 +46,6 @@ toolbarbutton {
 }
 
 /* url bar cleanup */
-#zen-appcontent-navbar-container,
 #page-action-buttons,
 #identity-permission-box {
   display: none !important;
@@ -70,20 +69,6 @@ toolbarbutton {
     border-radius: 100px !important;
     scale: 1.4;
   }
-}
-
-/* no shadow and gaps (macOS) */
-hbox.browserSidebarContainer,
-#zen-tabbox-wrapper {
-  margin: 0 !important;
-}
-
-#zen-appcontent-wrapper {
-  left: 0 !important;
-  top: 0 !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 /* Fix find in page */
@@ -369,8 +354,18 @@ body:has(#ctrlTab-panel[hasbeenopened="true"] .ctrlTab-preview:not([hidden="true
 }
 
 
+/* no gaps */
+hbox.browserSidebarContainer,
+#zen-tabbox-wrapper {
+  margin: 0 !important;
+}
 
+/* ----- remove the below on Windows to keep window controls, I don't use them on macOS ----- */
 
+/* remove top border and window controls */
+#zen-appcontent-navbar-container{
+  display: none !important;
+}
 
 
 
