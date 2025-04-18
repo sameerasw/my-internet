@@ -3,6 +3,15 @@
   --color-page-background: transparent !important;
 }
 
+body.fullscreen-drawer-open, header.svelte-5uttf8{
+  background-color: transparent !important;
+  border: none !important;
+}
+
+body.fullscreen-drawer-open #main{
+  opacity: 0 !important;
+}
+
 /* brave-no, thank you */
 div.download-cta.svelte-1avqjm8 {
   display: none  !important;
