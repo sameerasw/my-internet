@@ -1,8 +1,3 @@
-/* ---- Fix for linux transparency ---- */
-:root {
-  --zen-themed-toolbar-bg-transparent: transparent !important;
-}
-
 #zen-media-controls-toolbar toolbaritem{
   background-color: light-dark(#fff5, #0005) !important;
 }
@@ -96,49 +91,8 @@ findbar * {
   opacity: 1 !important;
 }
 
+
 /* Animations */
-/* Tab switch animation */
-#tabbrowser-arrowscrollbox,
-tab {
-  transition: all 0.3s ease-in-out !important;
-}
-
-tab:not([zen-essential="true"]):not([multiselected="true"]) .tab-background {
-  transition: all 0.3s ease-in-out !important;
-  scale: 0 !important;
-}
-
-tab:not([zen-essential="true"]) .tab-background[selected] {
-  scale: 1 !important;
-}
-
-#tabbrowser-tabpanels
-  > hbox:not([zen-split="true"]):not(:has(.zen-glance-background)) {
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35), filter 0.45s ease-in-out , opacity 0.35s ease-in-out !important;
-  scale: 0.9 !important;
-  opacity: 0;
-}
-#tabbrowser-tabpanels > hbox.deck-selected:not([zen-split="true"]) {
-  scale: 1 !important;
-  opacity: 1 !important;
-}
-
-/* website view animations */
-#browser:not(:has(.zen-glance-background)) #tabbrowser-tabpanels {
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
-}
-
-/* URL bar page animation */
-#browser:has(#urlbar[open][zen-floating-urlbar="true"]) #tabbrowser-tabpanels {
-  pointer-events: none;
-  scale: 1.1 !important;
-  filter: blur(10px) brightness(70%) !important;
-}
-
-#urlbar[open][zen-floating-urlbar="true"] #urlbar-background {
-  border-radius: 1em !important;
-}
-
 /* Loading tab animation */
 tab[busy] {
   scale: 0.95 !important;
@@ -147,118 +101,6 @@ tab[busy] {
   }
 }
 
-/* trackpad gestures*/
-tabpanels .browserStack browser {
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.1s !important;
-  /* Add initial border-radius to prevent sharp corners */
-  border-radius: 0.75em !important;
-}
-
-/* Previous animation*/
-.browserStack:has(
-    #historySwipeAnimationPreviousArrow:not([style="translate: none;"])
-  )
-  browser {
-  scale: 0.95 !important;
-  transform: translateX(3%) !important;
-  border-radius: 2em !important;
-}
-
-/* Next animation*/
-.browserStack:has(
-    #historySwipeAnimationNextArrow:not([style="translate: none;"])
-  )
-  browser {
-  scale: 0.95 !important;
-  transform: translateX(-3%) !important;
-  border-radius: 2em !important;
-}
-
-/* smoothen trackpad gestures */
-.browserStack browser[style*="transform: none"] {
-  border-radius: 0.75em !important;
-}
-
-/* ctrl tab visuals and animations */
-#ctrlTab-panel {
-  --panel-background: var(--lwt-accent-color) !important;
-  transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.2s !important;
-  scale: 0.7;
-  border-radius: 1em !important;
-}
-
-#ctrlTab-panel:has(.ctrlTab-preview:not([hidden="true"])) {
-  scale: 1 !important;
-}
-
-slot:nth-child(1) {
-  border-radius: 1em !important;
-/*   padding: 0 !important; */
-}
-
-.ctrlTab-preview-inner {
-  margin: 0 !important;
-  transition: all 0.2s ease-in-out;
-
-  .ctrlTab-canvas {
-    border-radius: 1em !important;
-    overflow: hidden;
-
-    img {
-      background-color: #000000 !important;
-    }
-  }
-
-  .ctrlTab-favicon-container {
-    justify-content: center !important;
-    transition: all 0.5s ease-in-out;
-
-    image {
-      border-radius: 50% !important;
-      transition: all 0.5s ease-in-out !important;
-      /* 			scale: 1.25 !important; */
-    }
-  }
-
-  .ctrlTab-label {
-    margin-top: 1.5em !important;
-  }
-}
-
-.ctrlTab-preview:focus > .ctrlTab-preview-inner {
-  outline: none !important;
-  /* border: none !important;   */
-  background-color: var(--sidebar-background-color) !important;
-  border-radius: 1.5em !important;
-  scale: 1.03 !important;
-
-  .ctrlTab-favicon-container {
-    image {
-      padding: 2px !important;
-    }
-  }
-}
-
-
-/* Find */
-findbar {
-  transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.2s !important;
-  position: absolute !important;
-  left: 0 !important;
-  right: 0 !important;
-  margin: 0.5em 15%;
-  border-radius: 1em;
-  font-size: 1.4em;
-
-  .findbar-textbox {
-    padding: 0.25em 1em !important;
-    border-radius: 1em !important;
-  }
-  &[hidden="true"] {
-    scale: 0 !important;
-    opacity: 0 !important;
-  }
-}
 
 
 
@@ -371,28 +213,6 @@ html:not([lwt-sidebar="dark"]) {
   }
 }
 
-/* compact sidebar usable blur */
-/* body:has([zen-compact-mode="true"]) #titlebar{
-  backdrop-filter: blur(30px) !important;
-}
-
-#browser::after{
-  opacity: 0 !important;
-  left: -300px !important;
-  width: 198px !important;
-  border-radius: 1em !important;
-  height: (100vh-5px) !important;
-  margin: 5px !important;
-  top: 0 !important;
-  background-color: var(--toolbar-bgcolor) !important;
-  transition: left 0.2s cubic-bezier(0.175, 0.585, 0.32, 1.1) !important;
-}
-
-body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"] [zen-has-hover="true"]) #browser::after{
-  opacity: 1 !important;
-  left: -1px !important;
-}
- */
 
 /* context menu */
 #tabContextMenu, #contentAreaContextMenu, #toolbar-context-menu{
@@ -508,3 +328,51 @@ tab-group .tabbrowser-tab::before {
 #tabbrowser-tabs:not([expanded]) tab-group {
   scale: 1.1 !important;
 }
+
+
+/* ctrl tab is back */
+#ctrlTab-previews{
+  border-radius: 2em !important;
+  margin-bottom: 2em !important;
+  padding: 1.5em !important;
+  
+    box-shadow:  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+    background-color: light-dark(#fff8, #0005)  !important;
+}
+
+.ctrlTab-canvas img{
+  border-radius: 1em !important;
+  transition: all 0.5s ease-in-out !important;
+  
+  &:hover, &:active, &:focus{
+    scale: 1.05 !important
+  }
+}
+
+#ctrlTab-preview:active, #ctrlTab-preview:focus{
+  .ctrlTab-canvas img{
+    scale: 1.05 !important
+  }
+}
+
+
+/* ctrl tab visuals and animations */
+#ctrlTab-panel{
+  background-color: transparent !important;
+  --panel-background: transparent !important;
+  --zen-appcontent-border: none !important;
+  border: none !important;
+}
+
+body:has(#ctrlTab-panel[hasbeenopened="true"] .ctrlTab-preview:not([hidden="true"])) #tabbrowser-tabpanels{
+  filter: blur(10px) !important;
+}
+
+
+
+
+
+
+
+
+
