@@ -1,22 +1,12 @@
 /* x-transparency */
-html,
-body,
-[data-testid="primaryColumn"],
-.css-175oi2r:has([role="progressbar"]),
-.r-kemksi:has([aria-live="polite"]),
-[aria-label="Home timeline"] .r-5zmot,
-[aria-label="Grok"] .r-5zmot, .r-kemksi  {
+html, body, [data-testid="primaryColumn"], .css-175oi2r:has([role="progressbar"]), .r-kemksi:has([aria-live="polite"]), [aria-label="Home timeline"] .r-5zmot, [aria-label="Grok"] .r-5zmot, article, div.r-1hycxz:nth-child(1), div.r-1ifxtd0:nth-child(1), div.r-kemksi:nth-child(4), div.r-kemksi:nth-child(5), [data-testid="cellInnerDiv"] > div{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-[data-testid="Dropdown"],
-.css-175oi2r[role="dialog"],
-div.r-ifefl9:nth-child(2) {
+[data-testid="Dropdown"], .css-175oi2r[role="dialog"], div.r-ifefl9:nth-child(2) {
   background-color: #000 !important;
 }
 
@@ -34,4 +24,9 @@ div.css-175oi2r.r-1pi2tsx.r-1wtj0ep.r-1rnoaur.r-o96wvk.r-is05cd {
   &:hover {
     opacity: 1 !important;
   }
+}
+
+/* x-no thanks */
+[aria-label="Subscribe to Premium"], [aria-label="Footer"]{
+  display: none !important;
 }

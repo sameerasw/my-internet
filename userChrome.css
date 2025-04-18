@@ -117,16 +117,10 @@ tab:not([zen-essential="true"]) .tab-background[selected] {
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.35), filter 0.45s ease-in-out , opacity 0.35s ease-in-out !important;
   scale: 0.9 !important;
   opacity: 0;
-/*     filter: saturate(0) !important; */
-/*     filter: blur(20px) !important; */
-  /* 	left: -5vw; */
 }
 #tabbrowser-tabpanels > hbox.deck-selected:not([zen-split="true"]) {
   scale: 1 !important;
   opacity: 1 !important;
-/*   filter: saturate(1) !important; */
-/*     filter: none !important; */
-  /* 	left: 0 !important; */
 }
 
 /* website view animations */
@@ -190,6 +184,7 @@ tabpanels .browserStack browser {
   --panel-background: var(--lwt-accent-color) !important;
   transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.1) 0.2s !important;
   scale: 0.7;
+  border-radius: 1em !important;
 }
 
 #ctrlTab-panel:has(.ctrlTab-preview:not([hidden="true"])) {
@@ -198,11 +193,10 @@ tabpanels .browserStack browser {
 
 slot:nth-child(1) {
   border-radius: 1em !important;
-  padding: 0 !important;
+/*   padding: 0 !important; */
 }
 
 .ctrlTab-preview-inner {
-  /* 	padding: 0 !important; */
   margin: 0 !important;
   transition: all 0.2s ease-in-out;
 
@@ -313,7 +307,7 @@ html:not([lwt-sidebar="dark"]) {
 }
 
 /* dark theme */
-[lwt-sidebar="dark"] {
+[devtoolstheme="dark"] {
   [label="Dark Reader"],
   [label="Stylebot"],
   [label="Zen Internet"] {
@@ -399,21 +393,118 @@ body:has([zen-compact-mode="true"] [zen-user-show=""], [zen-compact-mode="true"]
   left: -1px !important;
 }
  */
-/* 
-#zen-media-main-vbox > hbox{
-  order: 1 !important;
+
+/* context menu */
+#tabContextMenu, #contentAreaContextMenu, #toolbar-context-menu{
+  slot::before{
+    height: 50px !important;
+    width: 50px !important;
+    background-color: red !important;
+  }
+  #context_zen-add-essential,
+  #context_unpinTab,
+  #context_pinTab,
+  #context_bookmarkTab,
+  #context_moveTabOptions,
+  #context_sendTabToDevice,
+  #context_reopenInContainer,
+  #context_selectAllTabs,
+  #context_closeDuplicateTabs,
+  #context_closeTabOptions,
+  #context_undoCloseTab,
+  menuseparator,
+  #context-back,
+  #context-forward,
+  #context-reload,
+  #context-bookmarkpage,
+  #context-savepage,
+  #context-sendpagetodevice,
+  #context-selectall,
+  #context-viewsource,
+  #context-print-selection,
+  #context-viewpartialsource-selection,
+  #context-bookmarklink,
+  #context-savelink,
+  #context-openlinkinusercontext-menu,
+  #context-openlink,
+  #context-sendlinktodevice,
+  #context-searchselect-private,
+  #_52bda3fd-dc48-4b3d-a7b9-58af57879f1e_-menuitem-_stylebot-contextmenu,
+  #addon_darkreader_org-menuitem-_DarkReader-top,
+  #adguardadblocker_adguard_com-menuitem-391,
+  #toolbar-context-reloadSelectedTab,
+  #zen-context-menu-compact-mode,
+  #toolbar-context-selectAllTabs,
+  #toolbar-context-bookmarkSelectedTab,
+  #toolbar-context-undoCloseTab,
+  #toolbar-context-openANewTab,
+  #context_openANewTab
+  {
+    display: none !important;
+  }
 }
 
-#zen-media-main-vbox > vbox{
-  order: 2 !important;
+/* Tab group label styling */
+.tab-group-label,
+tab-group .tab-group-label {
+  width: 100% !important;
+  border: none !important;
+  border-radius: 1em !important;
+  outline: none !important;
+  margin-right: 0 !important;
+  text-align: left !important;
+  padding-left: 10px !important;
+  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
+  color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
+  scale: 1 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+tab-group .tab-group-label:hover {
+  padding-left: 15px !important;
+  background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+  color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
+}
+tab-group .tab-group-label:active {
+  scale: 0.9 !important;
+}
+tab-group:not([collapsed]) .tab-group-label {
+  border: 1.5px dashed color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
 }
 
- */
-
-/* #zen-media-pip-button{
-  display: block !important;
+/* Label container margins */
+.tab-group-label-container {
+  margin-top: 3px !important;
+  margin-bottom: 0 !important;
+}
+tab-group[collapsed] .tab-group-label-container {
+  margin-bottom: 3px !important;
 }
 
-#zen-media-close-button{
+/* Hide label container's after pseudo */
+.tab-group-label-container::after {
   display: none !important;
-} */
+}
+
+/* Tab stack styles */
+.tab-stack,
+tab-group .tab-stack {
+  transition: all 0.3s ease-in-out !important;
+  border-radius: 1.2em !important;
+  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
+  margin-block: 2px !important;
+}
+.tab-stack:hover,
+tab-group .tab-stack:hover {
+  background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+}
+
+/* Hide tab indicator */
+tab-group .tabbrowser-tab::before {
+  display: none !important;
+}
+
+/* Scale effect when tab bar is not expanded */
+#tabbrowser-tabs:not([expanded]) tab,
+#tabbrowser-tabs:not([expanded]) tab-group {
+  scale: 1.1 !important;
+}

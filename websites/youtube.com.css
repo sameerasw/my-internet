@@ -1,10 +1,10 @@
 /* yt-Transparency */
-html[dark], html, #container.ytd-searchbox, ytd-app, #page-header-container, #page-header, #tabs-container, #tabs-inner-container, #chips-wrapper, .navigation-container, #cinematic-shorts-scrim, #shorts-container, #full-bleed-container  {
+html[dark], html, #container.ytd-searchbox, ytd-app, #page-header-container, #page-header, #tabs-container, #tabs-inner-container, #chips-wrapper, .navigation-container, #cinematic-shorts-scrim, #shorts-container  {
   background-color: #00000000 !important;
   background: none !important;
 }
 
-#tabs-divider, #short-video-container #cinematic-container{
+#tabs-divider, #short-video-container #cinematic-container, #frosted-glass{
   display: none !important;
 }
 
@@ -12,12 +12,26 @@ html[dark], html, #container.ytd-searchbox, ytd-app, #page-header-container, #pa
   height: 98vh !important;
 }
 
+tp-yt-app-drawer > #contentContainer, #guide-content, ytd-mini-guide-renderer, ytd-mini-guide-entry-renderer{
+  background-color: #00000000 !important;
+  background: none !important;
+}
+
 /* yt-No left side guide */
 ytd-mini-guide-renderer {
   display: none !important;
 }
+tp-yt-app-drawer > #contentContainer, #guide-content, ytd-mini-guide-renderer, ytd-mini-guide-entry-renderer{
+  background-color: var(--yt-spec-text-primary-inverse) !important;
+  background: var(--yt-spec-text-primary-inverse) !important;
+}
 #page-manager {
   margin-left: 0 !important;
+}
+
+/* yt-clean side guide */
+ytd-guide-section-renderer:has([title="YouTube Studio"],[title="Sport"], [title="Settings"]),ytd-guide-section-renderer #footer{
+  display: none !important;
 }
 
 /* yt-Transparent header */
@@ -152,6 +166,10 @@ display: none !important;
   display: none !important;
 }
 
+.ytp-gradient-bottom {
+  display: none !important;
+}
+
 /* yt-no ambient mode */
 #cinematics-container{
   display: none !important;
@@ -171,6 +189,26 @@ ytd-merch-shelf-renderer, .annotation{
 
 #masthead-container, #columns #secondary{
   transition: all 0.3s ease-in-out 0.5s !important;
+}
+
+
+body:has([fullscreen=""] ,[theater=""]):not(:has(ytd-watch-flexy[hidden=""])) #masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){
+  top: -40px !important;
+  opacity: 0 !important;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
+  &:hover{
+    opacity: 1 !important;
+    top: 0 !important;
+  }
+}
+
+
+ytd-app:has([fullscreen=""] ,[theater=""]):not(:has(ytd-watch-flexy[hidden=""])){
+  --ytd-toolbar-height: 0px !important;
+
+  #page-manager{
+    margin: 0 !important;
+  }
 }
 
 /* yt-zen view comments */
@@ -213,6 +251,12 @@ ytd-comments{
 [theater=""] ytd-comments{
   background-color: var(--yt-live-chat-shimmer-background-color) !important;
   backdrop-filter: blur(20px) !important;
+}
+
+/* yt-zen comments desc..captions */
+body:has([data-title-no-tooltip="Subtitles/closed captions"][aria-pressed="true"]):not(:has([description-collapsed=""])) [theater=""] ytd-comments{
+    opacity: 1 !important;
+    left: 0 !important;
 }
 
 /* yt-transparent overlay chat */
@@ -303,4 +347,41 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer){
       opacity: 0.3 !important;
     }
   }
+}
+
+/* yt-better captions */
+.caption-window{
+  backdrop-filter: blur(10px) !important;
+  border-radius: 1em !important;
+  padding: 1em !important;
+  box-shadow: #0008 0 0 20px !important;
+}
+
+/* yt-Keep player shadow */
+.ytp-gradient-bottom {
+  display: initial !important;
+}
+
+/* yt-fix new feed layout */
+ytd-rich-item-renderer[rendered-from-rich-grid]{
+  @media only screen and (min-width: 1400px) {
+  --ytd-rich-grid-items-per-row: 4 !important;
+
+  @media only screen and (min-width: 1700px) {
+  --ytd-rich-grid-items-per-row: 5 !important;
+
+  @media only screen and (min-width: 2180px) {
+  --ytd-rich-grid-items-per-row: 6 !important;
+  }
+  }
+  }
+
+}
+
+ytd-rich-item-renderer[is-in-first-column=""]{
+  margin-left: calc(var(--ytd-rich-grid-item-margin)/2) !important
+}
+
+#contents{
+  padding-left: calc(var(--ytd-rich-grid-item-margin)/2 + var(--ytd-rich-grid-gutter-margin)) !important;
 }

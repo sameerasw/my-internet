@@ -2,7 +2,10 @@
 html,
 body,
 .dark\:bg-midnight-850:is([data-theme="dark"] *),
-.bg-gradient-chat-light {
+.bg-gradient-chat-light, #app > div,
+.bg-gradient-discover-light, .bg-gradient-discover-dark, #app > div > div::before, #app > div > div::after,
+.bg-sidebar-light, .bg-sidebar-dark, .before\:bg-gradient-to-t::before ,
+.before\:bg-gradient-to-b::before   {
   background-color: transparent !important;
   background: none !important;
   border: none !important;

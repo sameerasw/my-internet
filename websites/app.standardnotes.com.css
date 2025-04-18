@@ -1,0 +1,9 @@
+/* transparency */
+:root {
+    --background-norm: light-dark(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)) !important;
+    --background-weak: light-dark(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) !important;
+    --background-strong: light-dark(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)) !important;
+    --border-norm: light-dark(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) !important;
+    --border-weak: light-dark(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) !important;
+    --border-strong: light-dark(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) !important;
+}

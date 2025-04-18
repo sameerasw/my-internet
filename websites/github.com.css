@@ -21,13 +21,28 @@ nav,
 .MarkdownInput-module__textArea--QjIwG,
 .notifications-list-item, 
 .notifications-list-item.notification-read,
-.search-results-page {
+.search-results-page,
+.application-main > div > div,
+#memex-root,
+[aria-label="Project"],
+#memex-project-view-root > div,
+[aria-label="Formatting tools"] {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
     border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+button[role="tab"]{
+  &[aria-selected="true"]{
+    border-radius: 0.5em !important;
+  }
+}
+
+.MarkdownEditor-module__viewSwitchBorder--zeiDB{
+  display: none !important;
 }
 
 /* gh-transparent lists */
@@ -39,6 +54,7 @@ nav,
   border: none !important;
   box-shadow: none !important;
 }
+
 
 /* gh-bordered boxes */
 [data-selector="repos-split-pane-content"] {
@@ -68,7 +84,8 @@ nav,
 .ajax-pagination-btn,
 action-graph .color-bg-inset,
 [data-testid="comment-header"]
-.Box-sc-g0xbh4-0 {
+.Box-sc-g0xbh4-0,
+.copilotPreview__suggestionButton:not(:hover) {
   background-color: transparent !important;
   background: none !important;
   box-shadow: none !important;
@@ -107,13 +124,12 @@ td {
 .jbBkdO,
 .file-header {
   border-radius: 0.5em !important;
-  overflow: hidden;
 }
 
 /* gh-overlay fixes */
 modal-dialog .search-suggestions,
 details-dialog.Box,
-.Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top {
+.Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top.color-bg-default {
   background-color: var(--bgColor-inset) !important;
   border-radius: 1em !important;
 }
@@ -156,7 +172,8 @@ button[aria-label="Search this repository"],
 .Box-sc-g0xbh4-0.iwUbcA,
 .Box-sc-g0xbh4-0.NWhVB,
 [data-selector="repos-split-pane-content"] .Box-sc-g0xbh4-0.NWhVB,
-.react-issue-comment {
+.react-issue-comment,
+.MarkdownEditor-module__previewWrapper--UHhTL {
   box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
   background-color: light-dark(#fff8, #0005) !important;
