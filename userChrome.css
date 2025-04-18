@@ -342,6 +342,32 @@ body:has(#ctrlTab-panel[hasbeenopened="true"] .ctrlTab-preview:not([hidden="true
 }
 
 
+/* always open media player */
+#zen-media-controls-toolbar{
+  display: block !important;
+  opacity: 1 !important;
+}
+
+#zen-media-controls-toolbar {
+  & .show-on-hover {
+    max-height: unset !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    padding-right: 6px;
+    pointer-events: none;
+    transition:
+max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
+  }
+}
+
+#zen-media-close-button{
+  opacity: 0 !important;
+/*   background-image: url("") */
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
+}
 
 
 
@@ -382,7 +408,6 @@ hbox.browserSidebarContainer,
 #zen-appcontent-navbar-container{
   display: none !important;
 }
-
 
 
 
