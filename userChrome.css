@@ -33,13 +33,6 @@
   }
 }
 
-/* no window controls */
-#zen-sidebar-top-buttons {
-  .titlebar-buttonbox-container {
-    display: none !important;
-  }
-}
-
 /* url bar cleanup */
 #page-action-buttons,
 #identity-permission-box {
@@ -349,10 +342,38 @@ body:has(#ctrlTab-panel[hasbeenopened="true"] .ctrlTab-preview:not([hidden="true
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* no gaps */
 hbox.browserSidebarContainer,
 #zen-tabbox-wrapper {
   margin: 0 !important;
+}
+
+/* no window controls - macOS */
+#zen-sidebar-top-buttons {
+  .titlebar-buttonbox-container {
+    display: none !important;
+  }
 }
 
 /* ----- remove the below on Windows to keep window controls, I don't use them on macOS ----- */
