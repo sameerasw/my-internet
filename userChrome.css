@@ -1,6 +1,4 @@
-#zen-media-controls-toolbar toolbaritem{
-  background-color: light-dark(#fff5, #0005) !important;
-}
+
 
 
 /* Hidden buttons */
@@ -410,12 +408,96 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
   order: 1 !important;
 }
 
+#zen-media-controls-toolbar toolbaritem{
+  background-color: light-dark(#fff3, #0003) !important;
+  transition: all 0.5s ease !important;
+}
+
+#zen-media-controls-toolbar.playing{
+  toolbaritem{
+    background-color: light-dark(#fffc, #000c) !important;
+  }
+  
+  padding: 16px 24px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(
+      to left,
+      #ff5770,
+      #e4428d,
+      #c42da8,
+      #9e16c3,
+      #6501de,
+      #9e16c3,
+      #c42da8,
+      #e4428d,
+      #ff5770
+    );
+    background-size: 200% 200%;
+    animation: animateGlow 3s ease-in-out infinite;
+  }
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 20%;
+  }
+  100% {
+    background-position: 200% 20%;
+  }
+}
 
 
+/* urlbar glow */
+/* #urlbar[open][zen-floating-urlbar="true"] {
+  #urlbar-background{
+    background-color:  #000 !important;
+  padding: 16px 24px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.01);
 
-
-
-
+  &::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(1) translateZ(0);
+    filter: blur(25px);
+    background: linear-gradient(
+      to left,
+      #ff5770,
+      #e4428d,
+      #c42da8,
+      #9e16c3,
+      #6501de,
+      #9e16c3,
+      #c42da8,
+      #e4428d,
+      #ff5770
+    );
+    background-size: 200% 200%;
+    animation: animateGlow 3s ease-in-out infinite;
+  }
+}
+} */
 
 
 
