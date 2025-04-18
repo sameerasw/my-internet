@@ -33,11 +33,6 @@
   }
 }
 
-/* fix workspaces icons */
-toolbarbutton {
-  padding: 0em !important;
-}
-
 /* no window controls */
 #zen-sidebar-top-buttons {
   .titlebar-buttonbox-container {
