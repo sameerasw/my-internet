@@ -1765,6 +1765,11 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #content > div, .md-page-wrapper, .bg-navy-dark, .left-rail-section-content > div, .grey-box, .reading-channel > div, .topic-content, .toc-sticky-header{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "filedr.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .menu_wrap__ntHWM, .post-wrap{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\nnav a, nav span{\n  border: none !important;\n}\n\n.header_wrap__Hn4J0{\n  border-radius: 1em !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
