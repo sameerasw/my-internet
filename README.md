@@ -15,6 +15,7 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
 - Every property should include `!important` to make sure it gets applied.
 - Do NOT leave commented out code.
 - Add propper comments for each section of a feature at the beginning with a clear but compact description.
+- For theming similar domains like app.arduino.cc , login.arduino.cc ..... similar urls with prefixes, you can add a general style with a leading + symbol when creating the stylesheet. ( `+arduino.cc.css` ) [example](https://github.com/sameerasw/my-internet/blob/main/websites/%2Bnixos.org.css)
 - Each comment of the same file should have a unique domain specific identified prefix (yt- ytm- gh- ...) which will help the browser to separately apply themes.
   
   ```
