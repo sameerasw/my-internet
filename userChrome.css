@@ -437,7 +437,7 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
     width: 100%;
     transform: scale(0.9) translateZ(0);
     filter: blur(15px);
-    background: linear-gradient(
+/* background: linear-gradient(
       to left,
       #ff5770,
       #e4428d,
@@ -448,9 +448,32 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
       #c42da8,
       #e4428d,
       #ff5770
-    );
+    ); */
+    background: linear-gradient(
+  135deg,
+  color-mix(in srgb, var(--zen-primary-color) 10%, black),
+  var(--zen-primary-color),
+  color-mix(in srgb, var(--zen-primary-color) 25%, white),
+  var(--zen-primary-color),
+  light-dark(#fffd, #000d),
+  light-dark(#fffd, #000d),
+  var(--zen-primary-color),
+  color-mix(in srgb, var(--zen-primary-color) 50%, white),
+  color-mix(in srgb, var(--zen-primary-color) 25%, white),
+  var(--zen-primary-color),
+  color-mix(in srgb, var(--zen-primary-color) 25%, black),
+  light-dark(#fffd, #000d),
+  color-mix(in srgb, var(--zen-primary-color) 10%, black),
+  light-dark(#fffd, #000d),
+  color-mix(in srgb, var(--zen-primary-color) 75%, black),
+  color-mix(in srgb, var(--zen-primary-color) 50%, black),
+  color-mix(in srgb, var(--zen-primary-color) 25%, black),
+  color-mix(in srgb, var(--zen-primary-color) 10%, black),
+  light-dark(#fffd, #000d)
+);
+
     background-size: 200% 200%;
-    animation: animateGlow 3s ease-in-out infinite;
+    animation: animateGlow 5s cubic-bezier(0.1, 0.7, 0.5, 0.1) infinite;
   }
 }
 
@@ -465,7 +488,7 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
 
 
 /* compact mode player */
-#zen-main-app-wrapper[zen-compact-mode="true"] #zen-media-controls-toolbar{
+#zen-main-app-wrapper[zen-compact-mode="true"]:not(:has(toolbox[zen-user-show=""])) #zen-media-controls-toolbar{
   
   &.playing #zen-media-focus-button{
     position: fixed !important;
