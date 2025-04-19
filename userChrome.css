@@ -393,6 +393,7 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
 #zen-media-buttons-hbox > toolbarbutton{
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
+  
   &:hover{
     opacity: 1 !important;
   }
@@ -405,9 +406,29 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
     overflow: hidden !important;
   }
   
-  &:hover #zen-media-controls-hbox{
+  #zen-media-progress-hbox label{
+    scale: 0 !important;
+    transition: scale 0.3s ease-in-out !important;
+  }
+  
+  #zen-media-progress-bar{
+    margin: 0 !important;
+    scale: 1.4 !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+  
+  &:hover{
+    #zen-media-controls-hbox{
     height: fit-content !important;
     opacity: 1 !important;
+  }
+  #zen-media-progress-hbox label{
+    scale: 1 !important;
+  }
+  #zen-media-progress-bar{
+    margin: 1em !important;
+    scale: 1 !important;
+  }
   }
 }
 
