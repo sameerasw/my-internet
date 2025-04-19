@@ -1,10 +1,10 @@
-# my-internet
+![web-preview-zen](https://github.com/user-attachments/assets/dae63448-0fa8-44a7-a294-e18561de9389)# my-internet
 
 Custom CSS for websites to make the internet beautiful. Transparency being the main feature, these themes also include removal of distractions and further useful features for each website.
 
 ![Screenshot](https://github.com/user-attachments/assets/a938e6b8-b120-4ba9-bc39-0ec932856dda)
 
-## [How to get transparency in Zen](https://sameerasw.notion.site/Zen-Transparency-1939c6099d4080468f02cf05ae50e827?pvs=4)
+## [How to get transparency in Zen](https://www.sameerasw.com/zen)
 
 
 ## Contributing styles
