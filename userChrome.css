@@ -1,6 +1,3 @@
-
-
-
 /* Hidden buttons */
 /* #nav-bar-overflow-button, */
 #zen-current-workspace-indicator {
@@ -71,9 +68,6 @@ tab[busy] {
     opacity: 0.3 !important;
   }
 }
-
-
-
 
 /* empty tab image */
 #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack{
@@ -561,24 +555,9 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
 
 
 
-/* no gaps */
-hbox.browserSidebarContainer,
-#zen-tabbox-wrapper {
-  margin: 0 !important;
-}
-
 /* no window controls - macOS */
 #zen-sidebar-top-buttons {
   .titlebar-buttonbox-container {
     display: none !important;
   }
 }
-
-/* ----- remove the below on Windows to keep window controls, I don't use them on macOS ----- */
-
-/* remove top border and window controls */
-#zen-appcontent-navbar-container{
-  display: none !important;
-}
-
-
