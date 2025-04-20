@@ -1776,6 +1776,28 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .menu_wrap__ntHWM, .post-wrap{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\nnav a, nav span{\n  border: none !important;\n}\n\n.header_wrap__Hn4J0{\n  border-radius: 1em !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "+buymeacoffee.com.css": {
+      "bmac-Transparency": ".bg-floral-white,\n.public-page-wrap,\n.nav,\n.container,\n.bg-white,\n.bg-greyF5,\n.bg-pageTheme1,\n.tw-input-common,\n.tw-bg-greyF0F,\n.bmc-header-logo,\n.sidebar-wrap,\n.tw-bg-white,\n.disable-wrap {\n  background-color: transparent !important;\n  background: none !important;\n}\n:root {\n  --backdrop-bg: rgba(255, 255, 255, 0.75);\n  --backdrop-filter: blur(16px) saturate(180%) !important;\n}",
+      "bmac-Darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}\n[data-darkreader-scheme=\"dark\"] {\n  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n}",
+      "bmac-Translucent Header": ".header-on-scroll {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}",
+      "bmac-Translucent Overlays": "[aria-modal=\"true\"],\n.tw-feature-box,\n.mob-payout-sec,\n.bg-warning,\n.tw-bg-warningYellow,\n.dropdown-menu,\n.z-100 {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}",
+      "bmac-No Footer": ".pb-70[data-v-27aa2dc8=\"\"] {\n  display: none !important;\n}"
+    },
+    "docs.wokwi.com.css": {
+      "wkid-Transparency": "html,\n.theme-code-block,\n.codeBlock_bY9V {\n  background-color: transparent !important;\n  background: none !important;\n}\n\n:root {\n  --backdrop-bg: rgba(255, 255, 255, 0.75) !important;\n  --backdrop-filter: blur(16px) saturate(180%) !important;\n}\n\nhtml[data-theme=\"dark\"] {\n  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n}",
+      "wkid-Translucent Overlays": ".navbar--fixed-top,\n.dropdown__menu,\n.alert,\n.navbar-sidebar {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}",
+      "wkid-Misc": ".navbar-sidebar {\n  height: 100vh !important;\n}",
+      "wkid-No Footer": "footer {\n  display: none !important;\n}"
+    },
+    "wokwi.com.css": {
+      "wki-Transparency": "body,\nheader,\nmain,\n.header-small_toolbar__yvrzx,\n.Pane,\n.tabs_tabs__0p32m,\n.code-editor_editorContainer__hSbk1,\n.monaco-editor,\n.margin,\n.monaco-editor-background,\n.simulation_container___BvyD,\n.mui-xzhep0,\n.markdown-body,\n.tabs_tab__iUAy8,\n.mui-189k4wo,\n.serial-monitor_serialControls__ZApdN *,\n.MuiDrawer-paper,\n.MuiDialogTitle-root,\n.notranslate,\n#nested-list-subheader {\n  background-color: transparent !important;\n  background: none !important;\n}\n:root {\n  --backdrop-bg: rgba(255, 255, 255, 0.75);\n  --backdrop-filter: blur(16px) saturate(180%) !important;\n}\n@media (prefers-color-scheme: dark) {\n  :root {\n    --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n  }\n}",
+      "wki-Translucent Overlays": ".MuiMenu-paper,\n.MuiDialog-paper,\n.MuiPopover-paper,\n.tabs_active__IguNq,\n.MuiDialog-paperWidthMd {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}\n.mui-1w2fn6y,\n.home-page_card__Y_idX,\n.page_card__3gFlg,\n.MuiPaper-elevation2,\n.MuiPaper-elevation1 {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: transparent !important;\n}\n\n.tabs_tab__iUAy8,\n.notranslate,\n.serial-monitor_serialControls__ZApdN * {\n  color: #fff !important;\n}",
+      "wki-No Footer": "footer {\n  display: none !important;\n}"
+    },
+    "www.patreon.com.css": {
+      "ptrn-Transparency": "body,\n.ddnNvy,\n.AppNav_inner__g_uet,\n.sc-jlRLRk,\n.sc-fWCJzd,\n.sc-gGCDDS,\n.jiUDtX,\n.bYBvcO,\n.sc-7ed82751-1,\n.sc-31a3766-0,\n.sc-dUbtfd,\n.sc-783e1624-0,\n.sc-e5acda53-2,\n#Popover-0 {\n  background-color: transparent !important;\n  background: none !important;\n}\n:root {\n  --backdrop-bg: rgba(255, 255, 255, 0.75);\n  --backdrop-filter: blur(16px) saturate(180%) !important;\n}\nhtml .token-modes_colorDark__Lyj72 {\n  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n}\nhtml .token-modes_colorAuto__979ij {\n  @media (prefers-color-scheme: dark) {\n    --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n  }\n}",
+      "ptrn-Translucent Overlays": ".kELvYM,\n.cGiFAO,\n.hHftgo,\n.sc-lcepkR {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}"
     }
   }
 }
