@@ -1,0 +1,52 @@
+/* bmac-Transparency */
+.bg-floral-white,
+.public-page-wrap,
+.nav,
+.container,
+.bg-white,
+.bg-greyF5,
+.bg-pageTheme1,
+.tw-input-common,
+.tw-bg-greyF0F,
+.bmc-header-logo,
+.sidebar-wrap,
+.tw-bg-white,
+.disable-wrap {
+  background-color: transparent !important;
+  background: none !important;
+}
+:root {
+  --backdrop-bg: rgba(255, 255, 255, 0.75);
+  --backdrop-filter: blur(16px) saturate(180%) !important;
+}
+
+/* bmac-Darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+[data-darkreader-scheme="dark"] {
+  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* bmac-Translucent Header */
+.header-on-scroll {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+/* bmac-Translucent Overlays */
+[aria-modal="true"],
+.tw-feature-box,
+.mob-payout-sec,
+.bg-warning,
+.tw-bg-warningYellow,
+.dropdown-menu,
+.z-100 {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+/* bmac-No Footer */
+.pb-70[data-v-27aa2dc8=""] {
+  display: none !important;
+}
