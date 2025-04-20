@@ -46,9 +46,9 @@ button[role="tab"]{
 }
 
 /* gh-transparent lists */
-.PageLayout-content .Box,
+.PageLayout-content .Box:not(.Popover-message),
 .PageLayout-content .Box-row,
-#repo-content-turbo-frame .Box {
+#repo-content-turbo-frame .Box.Box:not(.Popover-message) {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -129,7 +129,7 @@ td {
 /* gh-overlay fixes */
 modal-dialog .search-suggestions,
 details-dialog.Box,
-.Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top.color-bg-default {
+.Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top.color-bg-default, .Popover-message {
   background-color: var(--bgColor-inset) !important;
   border-radius: 1em !important;
 }
