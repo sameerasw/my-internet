@@ -1,3 +1,6 @@
+
+
+
 /* Hidden buttons */
 /* #nav-bar-overflow-button, */
 #zen-current-workspace-indicator {
@@ -68,6 +71,9 @@ tab[busy] {
     opacity: 0.3 !important;
   }
 }
+
+
+
 
 /* empty tab image */
 #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack{
@@ -400,28 +406,10 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
     overflow: hidden !important;
   }
   
-  #zen-media-progress-hbox label{
-    scale: 0 !important;
-    transition: scale 0.3s ease-in-out !important;
-  }
-  
-  #zen-media-progress-bar{
-    margin: 0 !important;
-    scale: 1.4 !important;
-    transition: all 0.3s ease-in-out !important;
-  }
-  
   &:hover{
     #zen-media-controls-hbox{
     height: fit-content !important;
     opacity: 1 !important;
-  }
-  #zen-media-progress-hbox label{
-    scale: 1 !important;
-  }
-  #zen-media-progress-bar{
-    margin: 1em !important;
-    scale: 1 !important;
   }
   }
 }
@@ -444,7 +432,7 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
   &::after {
     position: absolute;
     content: "";
-    top: 5px;
+    bottom: 0px;
     left: 0;
     right: 0;
     z-index: -1;
@@ -452,18 +440,6 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
     width: 100%;
     transform: scale(0.9) translateZ(0);
     filter: blur(15px);
-/* background: linear-gradient(
-      to left,
-      #ff5770,
-      #e4428d,
-      #c42da8,
-      #9e16c3,
-      #6501de,
-      #9e16c3,
-      #c42da8,
-      #e4428d,
-      #ff5770
-    ); */
     background: linear-gradient(
   135deg,
   color-mix(in srgb, var(--zen-primary-color) 10%, black),
@@ -490,6 +466,10 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
     background-size: 200% 200%;
     animation: animateGlow 5s cubic-bezier(0.1, 0.7, 0.5, 0.1) infinite;
   }
+  
+  &:hover::after{
+    height: 150%;
+  }
 }
 
 @keyframes animateGlow {
@@ -503,7 +483,7 @@ max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease, padding 0.2s ease;
 
 
 /* compact mode player */
-#zen-main-app-wrapper[zen-compact-mode="true"]:not(:has(toolbox[zen-user-show=""])) #zen-media-controls-toolbar{
+#zen-main-app-wrapper[zen-compact-mode="true"]:not(:has(toolbox[zen-user-show=""], toolbox[zen-has-hover])) #zen-media-controls-toolbar{
   
   &.playing #zen-media-focus-button{
     position: fixed !important;
