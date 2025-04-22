@@ -66,7 +66,7 @@
       "aigei-no footer": "footer {\n  display: none !important;\n}"
     },
     "aistudio.google.com.css": {
-      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, ms-app, .banner-and-app-container, ms-applets-gallery > .ng-star-inserted, ms-bidi-chat{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.toolbar-container{\n  border: none !important;\n}",
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, ms-app, .banner-and-app-container, ms-applets-gallery > .ng-star-inserted, ms-bidi-chat{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.toolbar-container{\n  border: none !important;\n}\n\nms-bidi-audio-stream-part audio, ms-bidi-audio-part audio{\n  border-radius: 1em !important;\n}",
       "full transparency": "ms-run-settings, ms-gallery-panel, ms-prompt-input-wrapper > div, ms-library > div, ms-applets-gallery > .ng-star-inserted > div, .token-count-content, .syntax-highlighted-code-wrapper{\n    background-color: light-dark(#fff5, #0003)  !important;\n  }",
       "no footer": ".disclaimer-container{\n  display: none !important;\n}"
     },
