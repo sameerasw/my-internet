@@ -1,3 +1,4 @@
+@import url("https://github.com/ferrocyante/Tab-groups-for-Arc-H/raw/refs/heads/main/tab-groups.css")
 
 /* Hidden buttons */
 /* #nav-bar-overflow-button, */
@@ -244,8 +245,9 @@ html,
   }
 }
 
+
 /* Tab group label styling */
-/* .tab-group-label,
+.tab-group-label,
 tab-group .tab-group-label {
   width: 100% !important;
   border: none !important;
@@ -254,77 +256,61 @@ tab-group .tab-group-label {
   margin-right: 0 !important;
   text-align: left !important;
   padding-left: 10px !important;
-  background: color-mix(
-    in srgb,
-    var(--tab-group-color) 20%,
-    transparent
-  ) !important;
+  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
   color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
   scale: 1 !important;
   transition: all 0.2s ease-in-out !important;
 }
 tab-group .tab-group-label:hover {
   padding-left: 15px !important;
-  background: color-mix(
-    in srgb,
-    var(--tab-group-color) 50%,
-    transparent
-  ) !important;
+  background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
   color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
 }
 tab-group .tab-group-label:active {
   scale: 0.9 !important;
 }
 tab-group:not([collapsed]) .tab-group-label {
-  border: 1.5px dashed
-    color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
-} */
+  border: 1.5px dashed color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+}
 
 /* Label container margins */
-/* .tab-group-label-container {
+.tab-group-label-container {
   margin-top: 3px !important;
   margin-bottom: 0 !important;
 }
 tab-group[collapsed] .tab-group-label-container {
   margin-bottom: 3px !important;
-} */
+}
 
 /* Hide label container's after pseudo */
-/* .tab-group-label-container::after {
+.tab-group-label-container::after {
   display: none !important;
-} */
+}
 
 /* Tab stack styles */
-/* .tab-stack,
+.tab-stack,
 tab-group .tab-stack {
   transition: all 0.3s ease-in-out !important;
   border-radius: 1.2em !important;
-  background: color-mix(
-    in srgb,
-    var(--tab-group-color) 20%,
-    transparent
-  ) !important;
+  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
   margin-block: 2px !important;
 }
 .tab-stack:hover,
 tab-group .tab-stack:hover {
-  background: color-mix(
-    in srgb,
-    var(--tab-group-color) 50%,
-    transparent
-  ) !important;
-} */
+  background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+}
 
 /* Hide tab indicator */
-/* tab-group .tabbrowser-tab::before {
+tab-group .tabbrowser-tab::before {
   display: none !important;
-} */
+}
 
 /* Scale effect when tab bar is not expanded */
-/* #tabbrowser-tabs:not([expanded]) tab,
+#tabbrowser-tabs:not([expanded]) tab,
 #tabbrowser-tabs:not([expanded]) tab-group {
   scale: 1.1 !important;
-} */
+}
+
 
 /* ctrl tab is back */
 #ctrlTab-previews {
