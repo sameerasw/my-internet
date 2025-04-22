@@ -1796,6 +1796,18 @@
     "www.patreon.com.css": {
       "ptrn-Transparency": "body,\n.ddnNvy,\n.AppNav_inner__g_uet,\n.sc-jlRLRk,\n.sc-fWCJzd,\n.sc-gGCDDS,\n.jiUDtX,\n.bYBvcO,\n.sc-7ed82751-1,\n.sc-31a3766-0,\n.sc-dUbtfd,\n.sc-783e1624-0,\n.sc-e5acda53-2,\n#Popover-0 {\n  background-color: transparent !important;\n  background: none !important;\n}\n:root {\n  --backdrop-bg: rgba(255, 255, 255, 0.75);\n  --backdrop-filter: blur(16px) saturate(180%) !important;\n}\nhtml .token-modes_colorDark__Lyj72 {\n  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n}\nhtml .token-modes_colorAuto__979ij {\n  @media (prefers-color-scheme: dark) {\n    --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n  }\n}",
       "ptrn-Translucent Overlays": ".kELvYM,\n.cGiFAO,\n.hHftgo,\n.sc-lcepkR {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}"
+    },
+    "+qmk.fm.css": {
+      "qmk-Transparency": "body,\n.VPNavBar,\n.VPFeature,\n.v-application,\n.v-toolbar,\n.v-table,\n.v-table thead *,\n.content-body,\n.VPSidebar,\n.curtain,\n.VPLocalNav {\n  background-color: transparent !important;\n  background: none !important;\n}\n:root {\n  --backdrop-bg: rgba(255, 255, 255, 0.75);\n  --backdrop-filter: blur(16px) saturate(180%) !important;\n}\nhtml[class=\"dark\"],\n#app .v-theme--dark {\n  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n}",
+      "qmk-Translucent Header": ".VPNavBar:not(.top),\n:has(.VPNavBar:not(.top)) .VPLocalNav .container,\n.VPNavScreen {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}",
+      "qmk-Translucent Overlays": ".VPMenu,\n.v-table thead {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}",
+      "qmk-Misc": ".VPLocalNav {\n  border: none !important;\n}",
+      "qmk-No Footer": "footer {\n  display: none !important;\n}"
+    },
+    "+zmk.dev.css": {
+      "zmk-Transparency": "html,\n.hero {\n  background-color: transparent !important;\n  background: none !important;\n}\n:root {\n  --backdrop-bg: rgba(255, 255, 255, 0.75);\n  --backdrop-filter: blur(16px) saturate(180%) !important;\n}\n[data-theme=\"dark\"] {\n  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n}",
+      "zmk-Translucent Overlays": ".navbar,\n.navbar-sidebar {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}",
+      "zmk-No Footer": "footer {\n  display: none !important;\n}"
     }
   }
 }
