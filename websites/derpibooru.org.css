@@ -201,6 +201,17 @@ body[data-theme="light-blue"] {
 }
 
 /*derpy-image page*/
+/* fix for uploade4r name */
+div#extrameta.image-metabar.flex.flex--wrap.block__header--user-credit.center--layout div span.image_uploader strong {
+  a {
+      background: transparent !important;
+      border-radius: 3px !important;
+  }
+  a:hover {
+      background: var(--header-hover-color) !important;
+  }
+}
+
 #image_options_area .block__header--js-tabbed {
   border: none !important;
   a {
@@ -232,7 +243,7 @@ body[data-theme="light-blue"] {
   border: none !important;
   border-radius: 6px !important;
   color: #4f95db !important;
-  font-weight: 700 !important;
+  font-weight: 700;
 }
 #js-refresh-comments:hover {
   color: var(--block-header-link-text-hover-color) !important;
@@ -240,7 +251,7 @@ body[data-theme="light-blue"] {
 }
 #js-comment-form #fa,
 #js-comment-form #hide-mobile {
-  transition: color 0.3s ease !important;
+  transition: color 0.3s ease;
 }
 #js-comment-form .button[type="submit"] {
   border: none !important;
@@ -280,6 +291,34 @@ main#content.layout--wide div.layout--narrow div.js-sourcesauce div#image-source
       color: var(--block-header-link-text-hover-color) !important;
   }
 }
+
+main#content.layout--wide div.block.block__header .flex.flex--wrap.image-metabar.center--layout div.stretched-mobile-links {
+  a.interaction--comments:hover {
+      color: var(--pure-hover) !important
+  }
+}
+
+form#js-comment-form div.block div div.block__tab.communication-edit__tab.selected.js-preview-input-wrapper div.field textarea#js-comment-form_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input {
+  border-radius: 6px !important;
+}
+form#js-comment-form div.block div div.block__tab.communication-edit__tab.selected.js-preview-input-wrapper div.field textarea#js-comment-form_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input:focus {
+  background: var(--input-color) !important;
+  border-radius: 0px !important;
+  backdrop-filter: blur(2px) !important;
+}
+
+main#content.layout--wide div.layout--narrow div.image-description div.block div.block__content pre {
+  background: var(--image-options-area-background) !important;
+  border-radius: 6px !important;
+  padding: 12px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  code {
+      font-family: 'Cascadia Code', 'Fira Code', 'JetBrains Mono', monospace !important;
+      font-weight: 600 !important;
+      font-variation-settings: 'wght' 600 !important;
+  }
+}
+
 
 /* derpy-activity side */
 body[data-theme="dark-blue"] {
@@ -338,6 +377,10 @@ body[data-theme="light-blue"] {
 
 a.block__header--single-item:hover {
   transition: ease 0.1s !important;
+}
+
+form#js-comment-form div.block div div.block__tab.communication-edit__tab.selected.js-preview-input-wrapper div.field textarea#js-comment-form_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input {
+  transition: border 0.5s ease, border-radius 0.2s ease !important;
 }
 
 /* derpy-misc and fixes */
@@ -410,12 +453,12 @@ main#content.layout--narrow div.page__pagination {
 }
 
 a.interaction--downvote.disabled {
-  background: transparent;
-  opacity: 50%;
+  background: transparent !important;
+  opacity: 50% !important;
 }
 
 div.media-box div.media-box__header.media-box__header--link-row a.interaction--comments:hover {
-  color: var(--pure-hover)
+  color: var(--pure-hover) !important;
 }
 a.block__header--single-item:hover {
   background: var(--single-item-bg-hover) !important
