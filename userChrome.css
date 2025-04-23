@@ -240,7 +240,9 @@ html,
   #toolbar-context-bookmarkSelectedTab,
   #toolbar-context-undoCloseTab,
   #toolbar-context-openANewTab,
-  #context_openANewTab {
+  #context_openANewTab,
+  #context-setDesktopBackground,
+  #context-sendimage{
     display: none !important;
   }
 }
