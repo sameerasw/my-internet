@@ -388,12 +388,9 @@ ytd-rich-item-renderer[is-in-first-column=""]{
 
 
 /* better status bg */
+.ytp-big-mode .ytp-gradient-top,
 .ytp-big-mode .ytp-gradient-bottom {
-  opacity: 0;
-}
-
-.ytp-big-mode .ytp-gradient-top {
-  opacity: 0;
+  opacity: 0 !important;
 }
 
 .ytp-chrome-top {
@@ -403,7 +400,6 @@ ytd-rich-item-renderer[is-in-first-column=""]{
   background-color: rgba(0,0,0,0.5) !important;
   margin-top: 0.7em !important;
 }
-
 .ytp-chrome-bottom {
   backdrop-filter: blur(2px) !important;
   background-image: none !important;
