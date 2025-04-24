@@ -1865,6 +1865,10 @@
     },
     "hianimez.to.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .swiper-slide, .share-buttons.share-buttons-detail{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+    },
+    "translate.google.fr.css": {
+      "translate-transparency": "html,\nbody,\nnav,\nheader,\n.ccvoYb,\n.QcsUad,\n[jsname=\"HexNre\"]::after,\n[jsname=\"ji7Qmb\"]::after,\nnav.U0xwnf::after,\nc-wiz {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "translate-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}"
     }
   }
 }
