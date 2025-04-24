@@ -1,23 +1,17 @@
-/* monkey-transparecy */
-:root {
-  --bg-color: #00000000 !important;
+/* transparency */
+html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-/* monkey-hide footer */
-footer {
-  display: none !important;
-}
-
-/* monkey-hide header */
-header {
+/* no footer */
+footer{
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover {
+  &:hover{
     opacity: 1 !important;
   }
-}
-
-/* monkey-fix text color */
-#words .word letter {
-  color: var(--ss-font-placeholder-color) !important;
 }
