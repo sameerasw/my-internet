@@ -1,19 +1,17 @@
 /* copilot-transparency */
-html,
-body,
-.dark\:bg-midnight-850:is([data-theme="dark"] *),
-.bg-gradient-chat-light, #app > div,
-.bg-gradient-discover-light, .bg-gradient-discover-dark, #app > div > div::before, #app > div > div::after,
-.bg-sidebar-light, .bg-sidebar-dark, .before\:bg-gradient-to-t::before ,
-.before\:bg-gradient-to-b::before   {
+html, body, .dark\:bg-midnight-850:is([data-theme="dark"] *), .bg-gradient-chat-light, main > div > div > div, [data-testid="chat-page"] > div > div, [data-testid="composer"] > .t-bottom-fade > div > div{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-div.space-y-8:nth-child(1) {
-  display: none !important;
+div.space-y-8:nth-child(1){display: none !important;}
+
+.w-expanded-composer.to-white\/35{
+  background-color: #fff !important;
+}
+
+.w-expanded-composer.dark\:to-midnight-800\/65:is([data-theme="dark"] *){
+  background-color: #000 !important;
 }
