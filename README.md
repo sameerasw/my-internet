@@ -8,15 +8,19 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
 [![web-preview-zen](https://github.com/user-attachments/assets/dae63448-0fa8-44a7-a294-e18561de9389)](https://www.sameerasw.com/zen)
 
 ## Contributing styles
-- You can use the [example.com.css](https://github.com/sameerasw/my-internet/raw/refs/heads/main/websites/example.com.css) as a starter for most websites.
-- Make sure the file is named in the correct format [website domain].css (google.com.css and docs.google.com.css are 2 styles which are not merged)
-- Please respect auto theming for day and night themes. If the website does not have a dark theme, account for dark reader.
-- Do not use wildcards such as applying transparency for all div elements since that is handled with force theming in the addon.
-- Every property should include `!important` to make sure it gets applied.
-- Do NOT leave commented out code.
-- Add propper comments for each section of a feature at the beginning with a clear but compact description.
-- For theming similar domains like app.arduino.cc , login.arduino.cc ..... similar urls with prefixes, you can add a general style with a leading + symbol when creating the stylesheet. ( `+arduino.cc.css` ) [example](https://github.com/sameerasw/my-internet/blob/main/websites/%2Bnixos.org.css)
-- Each comment of the same file should have a unique domain specific identified prefix (yt- ytm- gh- ...) which will help the browser to separately apply themes.
+> ### Please make sure you go through all the provided instructions before submittinga new theme with a PR.
+
+1. You can use the [example.com.css](https://github.com/sameerasw/my-internet/raw/refs/heads/main/websites/example.com.css) as a starter for most websites to grab the stylesheet format.
+2. Make sure the file is named in the correct format [website domain].css (google.com.css and docs.google.com.css are 2 styles which are not merged unless you do 9.)
+3. Please respect auto theming for day and night themes. If the website does not have a dark theme, account for dark reader.
+4. Do not use wildcards such as applying transparency for all div elements since that is handled with force theming in the addon.
+5. Every property should include `!important` to make sure it gets applied.
+6. Do NOT leave commented out code.
+7. Don't include `www` in the stylesheet file name.
+8. Add propper comments for each section of a feature at the beginning with a clear but compact description.
+9. For theming similar domains like app.arduino.cc , login.arduino.cc ..... similar urls with `prefixes`, you can add a general style with a leading `+` symbol when creating the stylesheet. ( `+arduino.cc.css` ) [example](https://github.com/sameerasw/my-internet/blob/main/websites/%2Bnixos.org.css)
+10. Similarly, for theming websites with a shared domain but with different `suffixes` (like google.com, google.lk...), you can add the `-` symbol to the start of the stylesheet file name so it will replace the provided domain of the file name's domain. (`-google.com.css`). [example](https://github.com/sameerasw/my-internet/blob/main/websites/-ebay.com.css)
+11. [optional] Each comment of the same file should have a unique domain specific identified prefix (yt- ytm- gh- ...) which will help the browser to separately apply themes.
   
   ```
     /* yt-transparency */
@@ -30,8 +34,10 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
     }
   ```
   
-- Once comitted to the repository, github actions will parse the css file and update/ generate the [styles.js](https://github.com/sameerasw/my-internet/blob/main/styles.json) and then will be deployed to the github pages allowing the add-on to fetch from it.
-- Thank you <3
+12. Once comitted to the repository, github actions will parse the css file and update/ generate the [styles.js](https://github.com/sameerasw/my-internet/blob/main/styles.json) and then will be deployed to the github pages allowing the add-on to fetch from it.
+> ### Thank you <3
+
+<br>
 
 <a href="https://star-history.com/#sameerasw/my-internet&Date">
  <picture>
