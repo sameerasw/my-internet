@@ -1,5 +1,5 @@
 /* copilot-transparency */
-html, body, .dark\:bg-midnight-850:is([data-theme="dark"] *), .bg-gradient-chat-light, main > div > div > div, [data-testid="chat-page"] > div > div, [data-testid="composer"] > .t-bottom-fade > div > div{
+html, body, .dark\:bg-midnight-850:is([data-theme="dark"] *), .bg-gradient-chat-light, main > div > div > div, [data-testid="chat-page"] > div > div, [data-testid="composer"] > .t-bottom-fade > div > div, #app > div{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
