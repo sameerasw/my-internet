@@ -4,7 +4,7 @@ html[dark], html, #container.ytd-searchbox, ytd-app, #page-header-container, #pa
   background: none !important;
 }
 
-#tabs-divider, #short-video-container #cinematic-container, #frosted-glass{
+#tabs-divider, #short-video-container #cinematic-container{
   display: none !important;
 }
 
@@ -384,4 +384,54 @@ ytd-rich-item-renderer[is-in-first-column=""]{
 
 #contents{
   padding-left: calc(var(--ytd-rich-grid-item-margin)/2 + var(--ytd-rich-grid-gutter-margin)) !important;
+}
+
+/* yt-immersive search */
+#page-manager, yt-searchbox{
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
+
+  button[aria-label="Search"]{
+    display: none !important;
+  }
+}
+
+.ytSearchboxComponentInputBox{
+  border-radius: 2em !important;
+}
+
+yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus){
+  position: relative !important;
+left: 0vw !important;
+top: -30vh !important;
+height: 60px !important;
+max-width: 700px !important;
+scale: 1.2 !important;
+
+.ytSearchboxComponentInputBox, #i0{
+  background-color:  #fffb !important;
+
+@media (prefers-color-scheme: dark) {
+  background-color:  #000b !important;
+}
+
+box-shadow: black 0 0 30px !important;
+}
+
+#i0{
+margin-top: 30px !important;
+}
+}
+
+.ytd-masthead #center:has(.ytSearchboxComponentInputBoxHasFocus){
+height: 100vh !important;
+width: 100vw !important;
+left: 0 !important;
+top: 0 !important;
+position: fixed !important;
+justify-content: center !important;
+}
+
+#content:has(.ytSearchboxComponentInputBoxHasFocus) #page-manager{
+  filter: blur(20px) !important;
+  scale: 1.05 !important;;
 }
