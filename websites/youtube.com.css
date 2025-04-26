@@ -386,7 +386,7 @@ ytd-rich-item-renderer[is-in-first-column=""]{
   padding-left: calc(var(--ytd-rich-grid-item-margin)/2 + var(--ytd-rich-grid-gutter-margin)) !important;
 }
 
-/* yt-immersive search */
+/* centered search */
 #page-manager, yt-searchbox{
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
 
@@ -405,7 +405,6 @@ left: 0vw !important;
 top: -30vh !important;
 height: 60px !important;
 max-width: 700px !important;
-scale: 1.2 !important;
 
 .ytSearchboxComponentInputBox, #i0{
   background-color:  #fffb !important;
