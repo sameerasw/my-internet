@@ -219,3 +219,13 @@ button[aria-label="Search this repository"],
   }
   }
 }
+
+/* immersive search */
+.application-main{
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
+}
+
+body:has(header > .search-expanded) .application-main {
+  filter: blur(20px) !important;
+  scale: 1.05 !important;
+}
