@@ -403,9 +403,17 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus){
   position: relative !important;
 left: 0vw !important;
 top: -30vh !important;
+
+
+height: 40px !important;
+max-width: 600px !important;
+scale: 1.0 !important;
+
+  @media only screen and (min-width: 1400px) {
 height: 60px !important;
 max-width: 700px !important;
 scale: 1.1 !important;
+  }
 
 .ytSearchboxComponentInputBox, #i0{
   background-color:  #fffb !important;
@@ -418,7 +426,12 @@ box-shadow: black 0 0 30px !important;
 }
 
 #i0{
+margin-top: 10px !important;
+
+
+  @media only screen and (min-width: 1400px) {
 margin-top: 30px !important;
+  }
 }
 }
 
