@@ -405,6 +405,7 @@ left: 0vw !important;
 top: -30vh !important;
 height: 60px !important;
 max-width: 700px !important;
+scale: 1.1 !important;
 
 .ytSearchboxComponentInputBox, #i0{
   background-color:  #fffb !important;
