@@ -1,4 +1,4 @@
-@import url("https://github.com/ferrocyante/Tab-groups-for-Arc-H/raw/refs/heads/main/tab-groups.css")
+/* @import url("https://github.com/ferrocyante/Tab-groups-for-Arc-H/raw/refs/heads/main/tab-groups.css")  */
 
 /* Hidden buttons */
 /* #nav-bar-overflow-button, */
@@ -95,7 +95,13 @@ tab[busy] {
   #browser:has([zen-empty-tab="true"][selected="true"])
   #urlbar:not([open]) {
   opacity: 0 !important;
+    
 }
+
+/* #main-window:has(#zen-main-app-wrapper[zen-compact-mode="true"] hbox#browser:has([zen-empty-tab="true"][selected="true"])) #mainPopupSet > 
+    #tab-preview-panel{
+      display: none !important;
+    } */
 
 /* dark theme for image */
 html:not([lwt-sidebar="dark"]) {
@@ -147,7 +153,6 @@ html,
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  /*   width: 250px !important; */
 }
 
 /* body > browser:nth-child(2)[disableglobalhistory="true"], */
@@ -162,7 +167,6 @@ html,
 }
 
 #sidebar-header {
-  /*   display: none; */
   transition: all 0.3s ease-in-out !important;
   top: 0px !important;
   position: relative !important;
@@ -179,7 +183,6 @@ html,
 .zen-view-splitter-header {
   transition: margin 0.3s ease-in-out;
   &:hover {
-    /*     transform: translateY(12px) !important; */
     margin-top: 15px !important;
   }
 }
@@ -188,8 +191,8 @@ html,
 #urlbar[open][zen-floating-urlbar="true"] {
   #urlbar-background {
     background-color: light-dark(
-      color-mix(in srgb, #fdfdfd 50%, transparent),
-      color-mix(in srgb, #0e0e0e 50%, transparent)
+      color-mix(in srgb, #fdfdfd 80%, transparent),
+      color-mix(in srgb, #0e0e0e 80%, transparent)
     ) !important;
   }
 }
