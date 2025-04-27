@@ -1,4 +1,4 @@
-/* google-transparency */
+/* google-transparecy */
 html,
 body,
 section,
@@ -38,8 +38,12 @@ body {
 
 .in7vHe.FR7ZSc.FR7ZSc .niO4u,
 div.RNNXgb,
-.aajZCb, div.immersive-container, [role="dialog"], [role="tablist"]:not(:has([data-ti="overview"])) {
+.aajZCb, div.immersive-container, [role="dialog"]{
   background-color: var(--EpFNW) !important;
+}
+
+#gsr > .tkcvsb > div{
+  background-color: var(--COEmY) !important
 }
 
 /* google-shadows and borders */
