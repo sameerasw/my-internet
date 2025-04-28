@@ -319,6 +319,28 @@ main#content.layout--wide div.layout--narrow div.image-description div.block div
   }
 }
 
+div#container.layout--center-aligned main#content.layout--wide div.block.block__header .flex.flex--wrap.image-metabar.center--layout div.stretched-mobile-links a {
+    border-radius: 6px !important;
+}
+
+.stretched-mobile-links:has(a.interaction--upvote.active):has(a.interaction--fave.active) {
+    a.interaction--upvote.active {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-left: none !important;
+        border-top-right-radius: 6px !important;
+        border-bottom-right-radius: 6px !important;
+    }
+
+    a.interaction--fave.active {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border-right: none !important;
+        border-top-left-radius: 6px !important;
+        border-bottom-left-radius: 6px !important;
+    }
+}
+
 
 /* derpy-activity side */
 body[data-theme="dark-blue"] {
