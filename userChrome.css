@@ -81,8 +81,13 @@ tab[busy] {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: 50px !important;
-  filter: saturate(0);
+  filter: saturate(0) brightness(1.8) !important;
   /* 	  background-size: cover !important; */
+  
+  
+@media (prefers-color-scheme: dark) {
+  filter: saturate(0) brightness(0.2) !important;
+  }
 }
 
 /* hide compact sidebar when no tabs open */
