@@ -383,6 +383,15 @@ form#js-comment-form div.block div div.block__tab.communication-edit__tab.select
   transition: border 0.5s ease, border-radius 0.2s ease !important;
 }
 
+.block.communication,
+.communication__options {
+  transition: ease 0.2s !important;
+}
+
+div#container.layout--center-aligned main#content.layout--wide div.block.block__header .flex.flex--wrap.image-metabar.center--layout div.stretched-mobile-links a {
+  transition: border-radius ease 0.2s !important;
+}
+
 /* derpy-misc and fixes */
 .media-box {
   border: none !important;
