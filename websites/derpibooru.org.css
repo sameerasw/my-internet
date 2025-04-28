@@ -504,6 +504,11 @@ main#content.layout--narrow div.block div.block__header--sub.block__header--ligh
 
 main#content.layout--narrow div.block div.block__header div.flex.flex--wrap.block__header.block__header--light.page__header {
   background: transparent !important;
+  border-top: solid rgba(0, 0, 0, 0.3) 2px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 6px !important;
+  border-bottom-right-radius: 6px !important;
 }
 
 main#content.layout--narrow div.page__pagination {
