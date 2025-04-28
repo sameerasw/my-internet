@@ -473,7 +473,36 @@ main#content.layout--wide div.block.block__header div.stretched-mobile-links {
 .column-layout__left > div:nth-child(4) > div:nth-child(1) > a:nth-child(1) {
   background: none !important;
 }
-.column-layout__main .block__header a {
+
+div#container.layout--center-aligned main#content.layout--narrow div.block div.block__header:not(.block__header--light):not(.page__header):not(.flex) {
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+main#content.layout--narrow div.block div.block__header--sub.block__header--light.page__header div.page__info span.js-subscription-target {
+  a.js-subscription-link {
+      background: transparent !important;
+      border-radius: 6px !important;
+  }
+  a.js-subscription-link:hover {
+      background: var(--block-header-hover-color) !important;
+      color: var(--block-header-link-text-hover-color) !important;
+      border-radius: 6px !important;
+  }
+}
+
+:where(.block__header):not(:has(.stretched-mobile-links)) {
+  a {
+      background: transparent;
+      border-radius: 6px;
+  }
+  a:hover {
+      background: var(--block-header-hover-color);
+      color: var(--block-header-link-text-hover-color);
+      border-radius: 6px;
+  }
+}
+
+main#content.layout--narrow div.block div.block__header div.flex.flex--wrap.block__header.block__header--light.page__header {
   background: transparent !important;
 }
 
