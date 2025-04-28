@@ -541,3 +541,88 @@ div.media-box div.media-box__header.media-box__header--link-row a.interaction--c
 a.block__header--single-item:hover {
   background: var(--single-item-bg-hover) !important
 }
+
+main#content.layout--wide form#searchform.js-search-form div.block div.block__header.flex a:not(:hover) {
+  background: transparent !important;
+}
+main#content.layout--wide form#searchform.js-search-form div.block div.block__header.flex div.dropdown.block__header__dropdown-tab div.dropdown__content {
+  a {
+      background: rgba(0, 0, 0, 0.46) !important;
+  }
+  a:hover {
+      background: rgba(0, 0, 0, 0.64) !important;
+  }
+}
+
+.communication__body__text {
+  background: rgba(0, 0, 0, 0.21) !important;
+  border-radius: 6px !important;
+  margin-bottom: 6px !important;
+  padding-top: 1px !important;
+}
+hr {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.21), rgba(10, 10, 10, 0.11), rgba(0, 0, 0, 0.21)) !important;
+}
+
+.block__header--js-tabbed {
+  a {
+      border: none !important;
+      background: none !important;
+  }
+  a:hover {
+      border-radius: 6px !important;
+      background: var(--block-header-hover-color) !important;
+      color: var(--block-header-link-text-hover-color) !important;
+  }
+}
+.block__tab.communication-edit__tab.selected.js-preview-input-wrapper {
+  border: none !important;
+}
+.block__tab.communication-edit__tab.selected.js-preview-input-wrapper div.field textarea#post_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input {
+  border-radius: 6px !important;
+}
+.block__tab.communication-edit__tab.selected.js-preview-input-wrapper div.field textarea#post_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input:focus {
+  background: var(--input-color) !important;
+  border-radius: 0px !important;
+}
+
+.paragraph {
+  margin-left: 8px !important
+}
+.communication:target {
+  border: none !important;
+}
+
+.block.communication {
+  border-radius: 3px !important;
+}
+.block.communication:has(a.communication__interaction:hover) {
+  background: var(--header-hover-color) !important;
+  .communication__options {
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25) !important
+  }
+}
+
+.tagsinput {
+  background: var(--image-options-area-background) !important;
+  border-radius: 6px !important;
+  .input:focus {
+      background: var(--input-color) !important;
+  }
+}
+.quick-tag-table__tab > div {
+  border-right: 0 !important;
+  border-left: 0 !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 3px !important;
+  margin-right: 6px !important;
+}
+.block__tab.quick-tag-table__tab {
+  border-right: 0 !important;
+  border-left: 0 !important;
+  border-bottom: 0 !important;
+}
+.js-tagtable .block__header--js-tabbed {
+  background: var(--image-options-area-background) !important;
+  border-radius: 6px !important;
+}
