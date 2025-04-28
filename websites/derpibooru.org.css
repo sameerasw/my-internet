@@ -304,7 +304,6 @@ form#js-comment-form div.block div div.block__tab.communication-edit__tab.select
 form#js-comment-form div.block div div.block__tab.communication-edit__tab.selected.js-preview-input-wrapper div.field textarea#js-comment-form_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input:focus {
   background: var(--input-color) !important;
   border-radius: 0px !important;
-  backdrop-filter: blur(2px) !important;
 }
 
 main#content.layout--wide div.layout--narrow div.image-description div.block div.block__content pre {
