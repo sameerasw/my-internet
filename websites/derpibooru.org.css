@@ -418,7 +418,7 @@ div#container.layout--center-aligned main#content.layout--wide div.block.block__
 .media-box {
   border: none !important;
 }
-.block__content {
+.block__content:not(.flex):not(.alternating-color) {
   border: none !important;
   border-radius: 3px !important;
 }
