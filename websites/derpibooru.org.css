@@ -511,7 +511,16 @@ main#content.layout--narrow div.block div.block__header div.flex.flex--wrap.bloc
   border-bottom-right-radius: 6px !important;
 }
 
-main#content.layout--narrow div.page__pagination {
+.page__pagination {
+  a {
+      background: transparent !important;
+  }
+  a:hover {
+      background: var(--block-header-hover-color) !important;
+      color: var(--block-header-link-text-hover-color) !important;
+  }
+}
+.pagination.hide-mobile-t {
   a {
       background: transparent !important;
   }
