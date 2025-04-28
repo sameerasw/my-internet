@@ -318,7 +318,7 @@ main#content.layout--wide div.layout--narrow div.image-description div.block div
 }
 
 div#container.layout--center-aligned main#content.layout--wide div.block.block__header .flex.flex--wrap.image-metabar.center--layout div.stretched-mobile-links a {
-    border-radius: 6px !important;
+    border-radius: 6px;
 }
 
 .stretched-mobile-links:has(a.interaction--upvote.active):has(a.interaction--fave.active) {
