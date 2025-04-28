@@ -201,7 +201,6 @@ body[data-theme="light-blue"] {
 }
 
 /*derpy-image page*/
-/* fix for uploade4r name */
 div#extrameta.image-metabar.flex.flex--wrap.block__header--user-credit.center--layout div span.image_uploader strong {
   a {
       background: transparent !important;
