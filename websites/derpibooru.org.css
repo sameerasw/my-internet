@@ -401,7 +401,8 @@ a.block__header--single-item:hover {
   transition: ease 0.1s !important;
 }
 
-form#js-comment-form div.block div div.block__tab.communication-edit__tab.selected.js-preview-input-wrapper div.field textarea#js-comment-form_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input {
+form#js-comment-form div.block div div.block__tab.communication-edit__tab.selected.js-preview-input-wrapper div.field textarea#js-comment-form_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input,
+.block__tab.communication-edit__tab.selected.js-preview-input-wrapper div.field textarea#post_body.input.input--wide.input--text.input--resize-vertical.js-toolbar-input.js-preview-input {
   transition: border 0.5s ease, border-radius 0.2s ease !important;
 }
 
