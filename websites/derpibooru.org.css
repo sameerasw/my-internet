@@ -398,6 +398,10 @@ div#container.layout--center-aligned main#content.layout--wide div.block.block__
 }
 .block__content {
   border: none !important;
+  border-radius: 3px !important;
+}
+.block__content {
+  border: none !important
 }
 .block__header {
   border-radius: 6px !important;
