@@ -410,7 +410,7 @@ form#js-comment-form div.block div div.block__tab.communication-edit__tab.select
 }
 
 div#container.layout--center-aligned main#content.layout--wide div.block.block__header .flex.flex--wrap.image-metabar.center--layout div.stretched-mobile-links a {
-  transition: border-radius ease 0.2s !important;
+  transition: all ease 0.2s !important;
 }
 
 /* derpy-misc and fixes */
