@@ -26,7 +26,11 @@ nav,
 #memex-root,
 [aria-label="Project"],
 #memex-project-view-root > div,
-[aria-label="Formatting tools"] {
+[aria-label="Formatting tools"], .slicer-items-module__SlicerPanel--nSeK0,
+.jyoUVC,
+.Box-sc-g0xbh4-0[role="grid"],
+[role="row"],
+.eqCHeb {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -122,7 +126,8 @@ td {
 .Box-header,
 #repos-sticky-header > div,
 .jbBkdO,
-.file-header {
+.file-header,
+.TabNav-item {
   border-radius: 0.5em !important;
 }
 
