@@ -46,21 +46,6 @@ ytd-guide-section-renderer:has([title="YouTube Studio"],[title="Sport"], [title=
   color: var(--yt-live-chat-text-input-field-placeholder-color) !important;
 }
 
-/* yt-auto hide header */
-body #masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)){
-  top: -40px !important;
-  opacity: 0 !important;
-  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
-  &:hover{
-    opacity: 1 !important;
-    top: 0 !important;
-  }
-}
-
-:root{
-  --ytd-toolbar-height: 0px !important;
-}
-
 /* yt-no voice search */
 #voice-search-button{
   display: none !important;
@@ -225,32 +210,37 @@ ytd-comments{
   position: fixed !important;
   z-index: 1000 !important;
   top: 3vh !important;
-  left: -35em !important;
+  right: -35em !important;
   width: 40em !important;
   height: 90vh !important;
   overflow-y: scroll !important;
   opacity: 0 !important;
 
   background-color: var(--yt-live-chat-shimmer-background-color) !important;
+  backdrop-filter: blur(20px) !important;
+
   padding: 0 3em !important;
   border-radius: 0 2em 2em 0 !important;
 
   &:hover{
     opacity: 1 !important;
-    left: 0 !important;
+    right: 0 !important;
   }
 
 }
 
-/* yt-zen comments solid */
+/* yt-zen view comments on left */
 [theater=""] ytd-comments{
-  background-color: var(--yt-spec-text-primary-inverse) !important;
+  left: -35em !important;
+  &:hover{
+    left: 0 !important;
+  }
 }
 
-/* yt-zen comments blur */
+/* yt-zen comments solid */
 [theater=""] ytd-comments{
-  background-color: var(--yt-live-chat-shimmer-background-color) !important;
-  backdrop-filter: blur(20px) !important;
+  backdrop-filter: none !important;
+  background-color: var(--yt-spec-text-primary-inverse) !important;
 }
 
 /* yt-zen comments desc..captions */
@@ -265,6 +255,7 @@ body:has([data-title-no-tooltip="Subtitles/closed captions"][aria-pressed="true"
   height: 800px !important;
   top: 50vh !important;
   transform: translateY(-50%) !important;
+  opacity: 0.9 !important;
 }
 
 [theater=""] yt-live-chat-renderer {
@@ -386,7 +377,7 @@ ytd-rich-item-renderer[is-in-first-column=""]{
   padding-left: calc(var(--ytd-rich-grid-item-margin)/2 + var(--ytd-rich-grid-gutter-margin)) !important;
 }
 
-/* centered search */
+/* Immersive search */
 #page-manager, yt-searchbox{
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
 
