@@ -23,6 +23,7 @@ nav,
 .notifications-list-item,
 .notifications-list-item.notification-read,
 .search-results-page,
+.Box-sc-g0xbh4-0 .erfCwp th,
 .application-main > div > div,
 #memex-root,
 [aria-label="Project"],
@@ -133,6 +134,7 @@ div.border-bottom,
 .discussion-sidebar-item,
 .Box-sc-g0xbh4-0 .crArEc,
 .Box-sc-g0xbh4-0 .dJnomT,
+.d-flex.flex-column.border.rounded-2.mb-3.pl-1,
 .tabnav-tab,
 td {
   border: none !important;
@@ -163,6 +165,13 @@ details-dialog.Box,
 }
 
 /* gh-glass effect */
+.d-flex.flex-column.border.rounded-2.mb-3.pl-1,
+.form-group .form-control,
+.Box-sc-g0xbh4-0 .erfCwp,
+.Box-sc-g0xbh4-0 .eHDvEW,
+.Box-sc-g0xbh4-0 .ldkMIO,
+.Box-sc-g0xbh4-0 .eWEbRA:hover,
+.react-directory-row:hover,
 .tabnav-tab[aria-selected="true"],
 .snippet-clipboard-content.notranslate.position-relative.overflow-auto,
 .Shared-module__CommentBox--x3rre,
@@ -339,3 +348,4 @@ body:has(header > .search-expanded) .application-main {
   background-color: light-dark(#fff8, #00000054) !important;
   border: solid var(--borderWidth-thin) #3d444d !important;
 }
+
