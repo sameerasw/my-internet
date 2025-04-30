@@ -133,6 +133,7 @@ div.border-bottom,
 .discussion-sidebar-item,
 .Box-sc-g0xbh4-0 .crArEc,
 .Box-sc-g0xbh4-0 .dJnomT,
+.tabnav-tab,
 td {
   border: none !important;
 }
@@ -162,6 +163,7 @@ details-dialog.Box,
 }
 
 /* gh-glass effect */
+.tabnav-tab[aria-selected="true"],
 .snippet-clipboard-content.notranslate.position-relative.overflow-auto,
 .Shared-module__CommentBox--x3rre,
 .prc-Button-ButtonBase-c50BI,
