@@ -54,6 +54,14 @@
   image {
     border-radius: 100px !important;
     scale: 1.4;
+    
+    
+  filter: saturate(0) brightness(0.4) !important;
+  
+  
+@media (prefers-color-scheme: dark) {
+  filter: saturate(0) brightness(1.6) !important;
+  }
   }
 }
 
@@ -81,12 +89,12 @@ tab[busy] {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: 50px !important;
-  filter: saturate(0) brightness(1.8) !important;
+  filter: saturate(0) brightness(0.2) !important;
   /* 	  background-size: cover !important; */
   
   
 @media (prefers-color-scheme: dark) {
-  filter: saturate(0) brightness(0.2) !important;
+  filter: saturate(0) brightness(1.8) !important;
   }
 }
 
@@ -128,7 +136,7 @@ html:not([lwt-sidebar="dark"]) {
 
 /* Zen Internet */
 [label="Zen Internet"] image {
-  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important;
+/*   list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important; */
 }
 
 /* Proton Pass free */
@@ -140,7 +148,7 @@ html:not([lwt-sidebar="dark"]) {
 [devtoolstheme="dark"] {
   [label="Dark Reader"],
   [label="Stylebot"],
-  [label="Zen Internet"],
+/*   [label="Zen Internet"], */
   [label="Proton Pass: Free Password Manager"]{
     image {
       filter: invert(1);
@@ -543,7 +551,7 @@ body:has(
   opacity: 1 !important;
 }
 
-#zen-sidebar-bottom-buttons {
+#zen-sidebar-bottom-buttons:not(:has([open="true"])) {
   bottom: -25px !important;
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
@@ -580,6 +588,12 @@ body:has(
   .titlebar-buttonbox-container {
     display: none !important;
   }
+}
+
+/* no split borders */
+hbox[zen-split="true"].deck-selected{
+  border: none !important;
+  outline: none !important;
 }
 
 /* permanently transparent compact sidebar - fix for zen bug ================= remove if you sue the compact sidebar */
