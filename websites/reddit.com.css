@@ -1,4 +1,5 @@
-/* reddit-transparecy */#subreddit-right-rail__partial aside, header, .grid-container, comment-body-header, shreddit-comment-tree, #left-sidebar, #flex-left-nav-container {
+/* reddit-transparecy */
+#subreddit-right-rail__partial aside, header, .grid-container, comment-body-header, shreddit-comment-tree, #left-sidebar, #flex-left-nav-container {
   background-color: #00000000 !important;
   border: none !important;
 }
@@ -21,7 +22,7 @@ html {
 
 /* no recent posts */
 div aside recent-posts{
-  /* display: none !important; */
+  display: none !important;
 }
 
 /* reddit-hide elements */
