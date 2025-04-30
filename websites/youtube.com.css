@@ -29,6 +29,11 @@ tp-yt-app-drawer > #contentContainer:not([opened=""]), #contentContainer:not([op
   margin-left: 0 !important;
 }
 
+tp-yt-app-drawer > #scrim{
+  background-color: var(--yt-spec-text-primary-inverse) !important;
+  border-radius: 30px !important;
+}
+
 /* yt-clean side guide */
 ytd-guide-section-renderer:has([title="YouTube Studio"],[title="Sport"], [title="Settings"]),ytd-guide-renderer #footer{
   display: none !important;
@@ -475,3 +480,4 @@ justify-content: center !important;
   filter: blur(20px) !important;
   scale: 1.05 !important;;
 }
+                        
