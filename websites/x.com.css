@@ -1,5 +1,9 @@
 /* x-transparency */
-html, body, [data-testid="primaryColumn"], .css-175oi2r:has([role="progressbar"]), .r-kemksi:has([aria-live="polite"]), [aria-label="Home timeline"] .r-5zmot, [aria-label="Grok"] .r-5zmot, article, div.r-1hycxz:nth-child(1), div.r-1ifxtd0:nth-child(1), div.r-kemksi:nth-child(4), div.r-kemksi:nth-child(5), [data-testid="cellInnerDiv"] > div, [aria-label="Home timeline"] > div > div > div > div > div > div{
+html, body, [data-testid="primaryColumn"], .css-175oi2r:has([role="progressbar"]), .r-kemksi:has([aria-live="polite"]), [aria-label="Home timeline"] .r-5zmot, [aria-label="Grok"] .r-5zmot, article, div.r-1hycxz:nth-child(1), div.r-1ifxtd0:nth-child(1), div.r-kemksi:nth-child(4), div.r-kemksi:nth-child(5), [data-testid="cellInnerDiv"] > div, [aria-label="Home timeline"] > div > div > div > div > div > div, [aria-label="Section navigation"] [role="tablist"] > div, [aria-label="Section navigation"] > div,
+[aria-label="Section navigation"] > div > div > div > div,
+[aria-label="Section details"] [role="tablist"] > div,
+[aria-label="Section details"] > div,
+[aria-label="Section details"] > div > div > div > div {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
