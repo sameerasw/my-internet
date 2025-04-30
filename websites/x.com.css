@@ -1,5 +1,5 @@
 /* x-transparency */
-html, body, #placeholder, [data-testid="primaryColumn"], .css-175oi2r:has([role="progressbar"]), .r-kemksi:has([aria-live="polite"]), [aria-label="Home timeline"] .r-5zmot, [aria-label="Grok"] .r-5zmot, article, div.r-1hycxz:nth-child(1), div.r-1ifxtd0:nth-child(1), div.r-kemksi:nth-child(4), div.r-kemksi:nth-child(5), [data-testid="cellInnerDiv"] > div{
+html, body, [data-testid="primaryColumn"], .css-175oi2r:has([role="progressbar"]), .r-kemksi:has([aria-live="polite"]), [aria-label="Home timeline"] .r-5zmot, [aria-label="Grok"] .r-5zmot, article, div.r-1hycxz:nth-child(1), div.r-1ifxtd0:nth-child(1), div.r-kemksi:nth-child(4), div.r-kemksi:nth-child(5), [data-testid="cellInnerDiv"] > div, [aria-label="Home timeline"] > div > div > div > div > div > div{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -7,7 +7,7 @@ html, body, #placeholder, [data-testid="primaryColumn"], .css-175oi2r:has([role=
 }
 
 [data-testid="Dropdown"], .css-175oi2r[role="dialog"], div.r-ifefl9:nth-child(2) {
-  background-color: #000 !important;
+  background-color: light-dark(#fff, #000) !important;
 }
 
 /* x-layout fixes */
