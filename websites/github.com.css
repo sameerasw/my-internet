@@ -320,6 +320,7 @@ body:has(header > .search-expanded) .application-main {
   filter: blur(20px) !important;
   scale: 1.05 !important;
 }
+
 /* Hide Separator in toolbar */
 .AppHeader .AppHeader-globalBar .AppHeader-actions::before {
   display: none !important;
