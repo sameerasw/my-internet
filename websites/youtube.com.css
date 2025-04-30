@@ -29,9 +29,8 @@ tp-yt-app-drawer > #contentContainer:not([opened=""]), #contentContainer:not([op
   margin-left: 0 !important;
 }
 
-tp-yt-app-drawer > #scrim{
+tp-yt-app-drawer > #contentContainer{
   background-color: var(--yt-spec-text-primary-inverse) !important;
-  border-radius: 30px !important;
 }
 
 /* yt-clean side guide */
@@ -72,6 +71,10 @@ tp-yt-paper-tabs{
   display: flex;
   justify-content: center;
   justify-items: center;
+}
+
+tp-yt-app-drawer > #contentContainer{
+  background: transparent !important;
 }
 
 /* yt-Transparent header */
@@ -480,4 +483,3 @@ justify-content: center !important;
   filter: blur(20px) !important;
   scale: 1.05 !important;;
 }
-                        
