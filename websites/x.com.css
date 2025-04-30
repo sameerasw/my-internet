@@ -11,7 +11,22 @@ html, body, [data-testid="primaryColumn"], .css-175oi2r:has([role="progressbar"]
 }
 
 [data-testid="Dropdown"], .css-175oi2r[role="dialog"], div.r-ifefl9:nth-child(2) {
-  background-color: light-dark(#fff, #000) !important;
+  background-color: #fff !important;
+
+
+ @media (prefers-color-scheme: dark) {
+  background-color: #000 !important;
+ }
+}
+
+main [role="group"] button:not(:hover) span, 
+main  [role="group"] button:not(:hover) path, time, main [dir="ltr"] span {
+  transition: color 0.2s ease-in-out !important;
+  color: #222 !important;
+
+ @media (prefers-color-scheme: dark) {
+  color: #ddd !important;
+}
 }
 
 /* x-layout fixes */
