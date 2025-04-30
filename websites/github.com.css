@@ -4,6 +4,7 @@ body,
 header,
 .color-bg-default,
 .feed-background,
+.notranslate,
 [aria-labelledby="folders-and-files"] .bgColor-muted,
 nav,
 .dxnHPp,
@@ -130,6 +131,8 @@ table,
 div.border-bottom,
 .tabnav,
 .discussion-sidebar-item,
+.Box-sc-g0xbh4-0 .crArEc,
+.Box-sc-g0xbh4-0 .dJnomT,
 td {
   border: none !important;
 }
@@ -159,7 +162,10 @@ details-dialog.Box,
 }
 
 /* gh-glass effect */
+.snippet-clipboard-content.notranslate.position-relative.overflow-auto,
 .Shared-module__CommentBox--x3rre,
+.prc-Button-ButtonBase-c50BI,
+.Box-sc-g0xbh4-0 .crArEc,
 .copilotPreview,
 .MarkdownEditor-module__inputWrapper--MtV0d,
 .TextInput-wrapper,
