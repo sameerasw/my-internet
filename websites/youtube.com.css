@@ -536,3 +536,16 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
   filter: blur(20px) !important;
   scale: 1.05 !important;
 }
+
+/* Viewstats extension */
+.card {
+  background: var(--yt-spec-badge-chip-background) !important;
+}
+
+.vs-btn {
+  background: var(--yt-spec-badge-chip-background) !important;
+  color: var(--yt-spec-text-primary-inverse) !important;
+  border-radius: 1em !important;
+  padding: 0.5em 1em !important;
+  margin: 0.5em !important;
+}
