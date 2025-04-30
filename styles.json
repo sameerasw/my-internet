@@ -387,9 +387,8 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #app-container > div, #chat-container > div, .bg-gradient-to-b, .font-primary > .bg-white{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     },
     "chatgpt.com.css": {
-      "cgpt-transparecy": ":root{\n  --main-surface-background: #00000000 !important;\n  --main-surface-primary: #00000000 !important;\n  --sidebar-surface-primary: #00000000 !important;\n}",
-      "cgpt-hidden elements": "button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light.text-xs.text-token-text-secondary, div.w-full:nth-child(6) {\n  display: none !important;\n}",
-      "cgpt-composer": "[data-type=\"unified-composer\"] > div{\n    box-shadow:  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;\n    background-color: light-dark(#fff8, #0005)  !important;\n  }"
+      "cgpt-transparecy": ":root{\n  --main-surface-background: #00000000 !important;\n  --main-surface-primary: #00000000 !important;\n  --sidebar-surface-primary: #00000000 !important;\n}\n\n#thread-bottom + .text-token-text-secondary > div{\n  opacity: 0 !important;\n}",
+      "cgpt-hidden elements": "button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light.text-xs.text-token-text-secondary, div.w-full:nth-child(6) {\n  display: none !important;\n}"
     },
     "chess.com.css": {
       "chess-transparency": "html,\nbody,\n.nav,\nheader,\n#sb,\n.index-suggestion-component {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
