@@ -59,6 +59,15 @@ button[role="tab"]{
   box-shadow: none !important;
 }
 
+.CommentBox-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 0px 0px !important;
+  margin: 0px;
+  overflow: hidden;
+  border: none;
+}
 
 /* gh-bordered boxes */
 [data-selector="repos-split-pane-content"] {
@@ -71,6 +80,10 @@ button[role="tab"]{
     background: none !important;
     box-shadow: none !important;
   }
+}
+
+#new_comment_field {
+  margin: 0px !important;
 }
 
 #user-profile-frame .Box,
@@ -115,8 +128,14 @@ div.px-2:nth-child(3) {
 table,
 .eIKYQa,
 div.border-bottom,
+.tabnav,
+.discussion-sidebar-item,
 td {
   border: none !important;
+}
+
+.discussion-sidebar-item {
+  padding-top: 0.5em !important;
 }
 
 .dJnomT,
@@ -172,6 +191,7 @@ button[aria-label="Search this repository"],
 [data-testid="issue-body"],
 #\:rc\:-list-view-container, .container:has(#repos-sticky-header),
 .UnderlineNav-item:hover,
+.TabNav__TabNavLink-sc-pwdi4r-3:hover,
 .notifications-list,
 .notifications-list-item.notification-unread,
 .Box-header,
@@ -182,10 +202,34 @@ button[aria-label="Search this repository"],
 .Box-sc-g0xbh4-0.NWhVB,
 [data-selector="repos-split-pane-content"] .Box-sc-g0xbh4-0.NWhVB,
 .react-issue-comment,
+.MergeBox-module__mergePartialContainer--N4i3Z,
 .MarkdownEditor-module__previewWrapper--UHhTL,
 .FormControl-input,
 .btn.btn-block.js-profile-editable-edit-button,
+.btn.js-quick-submit-alternative,
 #your-repos-filter {
+ box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important; 
+  background-color: light-dark(#fff8, #0005) !important;
+  border-radius: 0.5em !important;
+}
+
+.CommentBox-container, .CommentBox-comment {
+  background-color: light-dark(#fff8, #0005) !important;
+  border-radius: 0 0 10px 10px !important;
+  border: none !important;
+  margin: 0px !important;
+}
+
+#new_comment_field, .CommentBox-comment {
+ box-shadow: none !important;
+}
+
+.tabnav.CommentBox-header {
+  border: none !important;
+  background-color: light-dark(#fff8, #0005) !important;
+}
+
+.timeline-comment-group .timeline-comment{
   box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
   background-color: light-dark(#fff8, #0005) !important;
@@ -211,28 +255,33 @@ button[aria-label="Search this repository"],
   }
 }
 
-.tabnav-tab {
+.tabnav-tab, .TabNav__TabNavLink-sc-pwdi4r-3 {
+&:not(button) {
   font-size: 0px !important;
   line-height: 0px !important;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
 }
-
-.tabnav-tab:hover{
+}
+.tabnav-tab:hover, .TabNav__TabNavLink-sc-pwdi4r-3:hover {
+&:not(button) {
   font-size: inherit !important;
   width: initial !important;
 }
-
-.tabnav-tab.selected {
-  background-color: transparent !important;
-  border: none;
-  border-radius: var(--borderRadius-medium) !important;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
-  background-color: light-dark(#fff8, #0005) !important;
 }
 
-.UnderlineNav-item:hover .Counter{
+.tabnav-tab.selected, .TabNav__TabNavLink-sc-pwdi4r-3.selected {
+  &:not(button) {
+    background-color: transparent !important;
+    border: none;
+    border-radius: var(--borderRadius-medium) !important;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
+    background-color: light-dark(#fff8, #0005) !important;
+  }
+}
+
+.UnderlineNav-item:hover .Counter {
   margin-left: var(--control-medium-gap) !important;
 }
 
