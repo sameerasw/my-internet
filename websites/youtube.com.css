@@ -17,21 +17,56 @@ tp-yt-app-drawer > #contentContainer, #guide-content, ytd-mini-guide-renderer, y
   background: none !important;
 }
 
-/* yt-No left side guide */
+/* yt-Toggle side guide */
 ytd-mini-guide-renderer {
   display: none !important;
 }
-tp-yt-app-drawer > #contentContainer, #guide-content, ytd-mini-guide-renderer, ytd-mini-guide-entry-renderer{
+tp-yt-app-drawer > #contentContainer:not([opened=""]), #contentContainer:not([opened=""]) #guide-content, ytd-mini-guide-renderer, ytd-mini-guide-entry-renderer{
   background-color: var(--yt-spec-text-primary-inverse) !important;
   background: var(--yt-spec-text-primary-inverse) !important;
 }
-#page-manager {
+#content:not(:has(#contentContainer[opened=""])) #page-manager {
   margin-left: 0 !important;
 }
 
 /* yt-clean side guide */
-ytd-guide-section-renderer:has([title="YouTube Studio"],[title="Sport"], [title="Settings"]),ytd-guide-section-renderer #footer{
+ytd-guide-section-renderer:has([title="YouTube Studio"],[title="Sport"], [title="Settings"]),ytd-guide-renderer #footer{
   display: none !important;
+}
+
+ytd-guide-section-renderer, ytd-guide-collapsible-section-entry-renderer{
+  border: none !important;
+}
+
+
+/* yt-mini guide */
+#endpoint.ytd-guide-entry-renderer yt-formatted-string, h3.ytd-guide-section-renderer, #newness-dot, tp-yt-paper-item:not(:hover) yt-icon.guide-entry-badge{
+  display: none !important;
+}
+
+#endpoint.ytd-guide-entry-renderer, ytd-guide-entry-renderer, ytd-guide-collapsible-section-entry-renderer, .ytd-guide-section-renderer, ytd-guide-section-renderer, ytd-guide-renderer > #sections, ytd-guide-renderer, #guide-inner-content, #guide-content, #guide-wrapper, tp-yt-app-drawer, #tabsContent, yt-tab-group-shape, yt-tab-group-shape > [role="tablist"]{
+  width: fit-content !important;
+}
+
+tp-yt-paper-item{
+  padding: 2px 10px !important;
+}
+
+yt-icon.ytd-guide-entry-renderer, yt-img-shadow.ytd-guide-entry-renderer{
+  margin: 0 !important;
+}
+
+tp-yt-paper-tabs{
+  margin: auto 0 !important;
+}
+#page-manager {
+  margin-left: 60px !important;
+}
+
+#tabsContainer.tp-yt-paper-tabs{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 /* yt-Transparent header */
@@ -378,13 +413,14 @@ ytd-rich-item-renderer[is-in-first-column=""]{
 }
 
 /* Immersive search */
-#page-manager, yt-searchbox{
+#page-manager,yt-searchbox{
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
 
-  button[aria-label="Search"]{
+}
+
+  #masthead yt-searchbox button[aria-label="Search"]{
     display: none !important;
   }
-}
 
 .ytSearchboxComponentInputBox{
   border-radius: 2em !important;
