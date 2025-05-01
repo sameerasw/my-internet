@@ -86,6 +86,14 @@ section,
     transition: all 0.3s ease-in-out !important;
 }
 
+/* yr-search-background */
+
+.search__input
+{
+    background-color: #e0e0e0 !important;
+    border-radius: 0.2em !important;
+}
+
 /* no footer */
 footer {
   display: none !important;
