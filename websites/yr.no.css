@@ -56,7 +56,8 @@ section,
 /* yr-no-glass */
 .daily-weather-list__headers,
 .forecast-page__tab-content *,
-.search--expanded *
+.search--expanded *,
+.modal-dialog__dialog *
 {
     background-color: transparent !important;
     background: none !important;
@@ -68,13 +69,13 @@ section,
 .button:hover,
 .daily-weather-list-item:hover
 {
-  transform: translateY(-2px) !important;
   background-color: light-dark(#fffa, #222a) !important;
 }
 
 /* yr-solid-gray */
 .hover-panel,
-.search__suggestions
+.search__suggestions,
+.modal-dialog__dialog
 {
     background-color: light-dark(#e0e0e0, #1e1e1e) !important;
     border-radius: 0.2em !important;
