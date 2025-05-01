@@ -48,14 +48,15 @@ section,
                 rgba(0, 0, 0, 0.06) 0px 2px 1px, 
                 rgba(0, 0, 0, 0.09) 0px 4px 2px !important;
     background-color: light-dark(#fff8, #1118) !important;
-    border-radius: 1em !important;
+    border-radius: 0.2em !important;
     border: none !important;
     transition: transform 0.2s ease-in-out !important;
 }
 
 /* yr-no-glass */
 .daily-weather-list__headers,
-.forecast-page__tab-content *
+.forecast-page__tab-content *,
+.search--expanded *
 {
     background-color: transparent !important;
     background: none !important;
@@ -72,14 +73,15 @@ section,
 }
 
 /* yr-solid-gray */
-.hover-panel
+.hover-panel,
+.search__suggestions
 {
     background-color: light-dark(#e0e0e0, #1e1e1e) !important;
-    border-radius: 1em !important;
+    border-radius: 0.2em !important;
     border: none !important;
     box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1),
                 0px 2px 4px rgba(0, 0, 0, 0.05) !important;
-    padding: 1.5rem !important;
+    padding: 0.7rem !important;
     transition: all 0.3s ease-in-out !important;
 }
 
