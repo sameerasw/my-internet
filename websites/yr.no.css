@@ -65,7 +65,8 @@ section,
 .coast-forecast-daily-list__headers,
 .fluid-table *,
 .statistics-page__toolbar,
-.statistics-graphs__graph-container *
+.statistics-graphs__graph-container *,
+.overlay-panel__children *
 {
     background-color: transparent !important;
     background: none !important;
@@ -83,7 +84,8 @@ section,
 /* yr-solid-gray */
 .hover-panel,
 .search__suggestions,
-.modal-dialog__dialog
+.modal-dialog__dialog,
+.overlay-panel__children
 {
     background-color: light-dark(#e0e0e0, #1e1e1e) !important;
     border-radius: 0.2em !important;
