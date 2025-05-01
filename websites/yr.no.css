@@ -63,7 +63,9 @@ section,
 .modal-dialog__dialog *,
 .card *,
 .coast-forecast-daily-list__headers,
-.fluid-table *
+.fluid-table *,
+.statistics-page__toolbar,
+.statistics-graphs__graph-container *
 {
     background-color: transparent !important;
     background: none !important;
