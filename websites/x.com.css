@@ -19,16 +19,6 @@ html, body, [data-testid="primaryColumn"], .css-175oi2r:has([role="progressbar"]
  }
 }
 
-main [role="group"] button:not(:hover) span, 
-main  [role="group"] button:not(:hover) path, time, main [dir="ltr"] span {
-  transition: color 0.2s ease-in-out !important;
-  color: #222 !important;
-
- @media (prefers-color-scheme: dark) {
-  color: #ddd !important;
-}
-}
-
 /* x-layout fixes */
 .r-1gn8etr {
   position: sticky !important;
