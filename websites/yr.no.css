@@ -17,8 +17,7 @@ app,
 #main,
 #content,
 section,
-#__next 
-{
+#__next {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -44,16 +43,16 @@ section,
 .forecast-page__tab-content,
 .card,
 .coast-forecast-daily-item,
-.fluid-table
-{
-    box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, 
-                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
-                rgba(0, 0, 0, 0.06) 0px 2px 1px, 
-                rgba(0, 0, 0, 0.09) 0px 4px 2px !important;
-    background-color: light-dark(#fff8, #1118) !important;
-    border-radius: 0.2em !important;
-    border: none !important;
-    transition: transform 0.2s ease-in-out !important;
+.fluid-table {
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px !important;
+  background-color: light-dark(#fff8, #1118) !important;
+  border-radius: 0.2em !important;
+  border: none !important;
+  transition: transform 0.2s ease-in-out !important;
 }
 
 /* yr-no-glass */
@@ -66,18 +65,16 @@ section,
 .fluid-table *,
 .statistics-page__toolbar,
 .statistics-graphs__graph-container *,
-.overlay-panel__children *
-{
-    background-color: transparent !important;
-    background: none !important;
-    box-shadow: none !important;
+.overlay-panel__children * {
+  background-color: transparent !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
 /* yr-hover-effects */
 .weather-location-list-item:hover,
 .button:hover,
-.daily-weather-list-item:hover
-{
+.daily-weather-list-item:hover {
   background-color: light-dark(#fffa, #222a) !important;
 }
 
@@ -85,23 +82,22 @@ section,
 .hover-panel,
 .search__suggestions,
 .modal-dialog__dialog,
-.overlay-panel__children
-{
-    background-color: light-dark(#e0e0e0, #1e1e1e) !important;
-    border-radius: 0.2em !important;
-    border: none !important;
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1),
-                0px 2px 4px rgba(0, 0, 0, 0.05) !important;
-    padding: 0.7rem !important;
-    transition: all 0.3s ease-in-out !important;
+.overlay-panel__children {
+  background-color: light-dark(#e0e0e0, #1e1e1e) !important;
+  border-radius: 0.2em !important;
+  border: none !important;
+  box-shadow:
+    0px 6px 16px rgba(0, 0, 0, 0.1),
+    0px 2px 4px rgba(0, 0, 0, 0.05) !important;
+  padding: 0.7rem !important;
+  transition: all 0.3s ease-in-out !important;
 }
 
 /* yr-search-background */
 
-.search__input
-{
-    background-color: #e0e0e0 !important;
-    border-radius: 0.2em !important;
+.search__input {
+  background-color: #e0e0e0 !important;
+  border-radius: 0.2em !important;
 }
 
 /* no footer */
