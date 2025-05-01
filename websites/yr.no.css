@@ -37,7 +37,11 @@ section,
 
 /* yr-glass-effect */
 .weather-location-list-item,
-.button
+.button,
+.now-hero__slide,
+.daily-weather-list-item,
+.button-group__content,
+.forecast-page__tab-content
 {
     box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, 
                 rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
@@ -49,14 +53,34 @@ section,
     transition: transform 0.2s ease-in-out !important;
 }
 
-
+/* yr-no-glass */
+.daily-weather-list__headers,
+.forecast-page__tab-content *
+{
+    background-color: transparent !important;
+    background: none !important;
+    box-shadow: none !important;
+}
 
 /* yr-hover-effects */
 .weather-location-list-item:hover,
-.button:hover
+.button:hover,
+.daily-weather-list-item:hover
 {
   transform: translateY(-2px) !important;
   background-color: light-dark(#fffa, #222a) !important;
+}
+
+/* yr-solid-gray */
+.hover-panel
+{
+    background-color: light-dark(#e0e0e0, #1e1e1e) !important;
+    border-radius: 1em !important;
+    border: none !important;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1),
+                0px 2px 4px rgba(0, 0, 0, 0.05) !important;
+    padding: 1.5rem !important;
+    transition: all 0.3s ease-in-out !important;
 }
 
 /* no footer */
