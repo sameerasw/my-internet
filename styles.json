@@ -2021,6 +2021,11 @@
       "yr-solid-gray": ".hover-panel,\n.search__suggestions,\n.modal-dialog__dialog,\n.overlay-panel__children {\n  background-color: light-dark(#e0e0e0, #1e1e1e) !important;\n  border-radius: 0.2em !important;\n  border: none !important;\n  box-shadow:\n    0px 6px 16px rgba(0, 0, 0, 0.1),\n    0px 2px 4px rgba(0, 0, 0, 0.05) !important;\n  padding: 0.7rem !important;\n  transition: all 0.3s ease-in-out !important;\n}",
       "yr-search-background": ".search__input {\n  background-color: #e0e0e0 !important;\n  border-radius: 0.2em !important;\n}",
       "yr-hide-footer": "footer {\n  display: none !important;\n}"
+    },
+    "skknower.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, [data-light] #sidebar, [data-dark] #sidebar, #discover_nav, #index_news, [data-dark] #chat_area, [data-light] #chat_area, .conbuttom, .menuBar{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
