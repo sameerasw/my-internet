@@ -1921,6 +1921,11 @@
       "bottom module background fix": ".cd-timer-footer__body {\n  background-color: rgba(var(--module-color)) !important;\n}",
       "rounded sidebar borders": ".cd-nav {\n  border-radius: 15px !important;\n}",
       "middle module styling": "div.p-3:nth-child(2) {\n  border-color: transparent !important;\n  background-color: rgba(var(--background-color)) !important;\n}"
+    },
+    "echo.uib.no.css": {
+      "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar\nheader,\n#header,\n.header,\napp,\n#app,\n.app, .app-root, #pass-sidebar, #main, #content, section, #__next{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
