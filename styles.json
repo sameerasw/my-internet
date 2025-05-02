@@ -2054,6 +2054,9 @@
     },
     "mail.tutanota.com.css": {
       "transparency": "html,\nbody,\nnav,\n.header-nav,\n.nav-bg,\ndrawer-menu,\n.list-column,\n.list-row.nofocus > div,\n.fill-absolute.col.items-center.justify-center.overflow-hidden {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+    },
+    "0.email.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, body > div, [data-sidebar=\"sidebar\"], [data-panel-id] > div > div > div, [data-panel-group-direction=\"horizontal\"] > div, [data-panel-group-direction=\"horizontal\"] > div > div, [data-panel-id] > div > div > div, [data-panel-group-id] > div > div > div, body > div > div > div, .w-full.flex-1 > div, [dir=\"ltr\"] > div > div > div > div > div{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     }
   }
 }
