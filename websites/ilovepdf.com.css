@@ -1,0 +1,28 @@
+@-moz-document domain("ilovepdf.com") {
+    body, .tool__workarea {
+        background: none;
+    }
+    .home-title, .footer, .tools__item__content {
+        display: none
+    }
+    .tools__item, .tools__item:hover {
+        background: rgba(0,0,0,0.4);
+        text-align: center;
+        margin-top: 1vi
+    }
+    .tools__item__icon {
+        position: relative;
+        left: 40%;
+    }
+    .tools__item h3, .tools__item:hover h3 {
+        color: white
+    }
+    header {
+        background: none !important;
+        opacity: 0;
+        transition: ease-in 100ms;
+    }
+    header:hover {
+        opacity: 100%
+    }
+}
