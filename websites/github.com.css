@@ -1,6 +1,8 @@
 /* gh-transparency */
+.diffbar.details-collapse.js-details-container.Details.flex-1.d-flex.flex-items-center.width-full.flex-wrap.gap-2,
 html,
 body,
+.Box-sc-g0xbh4-0.fFvqfZ,
 header,
 .color-bg-default,
 .feed-background,
@@ -46,6 +48,7 @@ button[role="tab"]{
     border-radius: 0.5em !important;
   }
 }
+
 
 .MarkdownEditor-module__viewSwitchBorder--zeiDB{
   display: none !important;
@@ -117,8 +120,11 @@ div.px-2:nth-child(3) {
 }
 
 /* gh-hover */
+
+
 .feed-left-sidebar,
 .feed-right-sidebar {
+ 
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
   &:hover {
@@ -158,6 +164,7 @@ td {
 
 /* gh-overlay fixes */
 modal-dialog .search-suggestions,
+
 details-dialog.Box,
 .Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top.color-bg-default, .Popover-message {
   background-color: var(--bgColor-inset) !important;
@@ -165,7 +172,16 @@ details-dialog.Box,
 }
 
 /* gh-glass effect */
+#settings-frame .Box,
+.form-select,
+.edit_user button,
+.Box-sc-g0xbh4-0 .gxwXUv,
+#\:r6n\:-list-view-metadata,
+.Box-sc-g0xbh4-0.fXxPgR,
+#file-tree-filter-field,
+.highlight pre,
 .ListItem-module__listItem--kHali:hover,
+.Box-sc-g0xbh4-0 .gpHFJV,
 .Box-row.Box-row--focus-gray.p-0.mt-0.js-navigation-item.js-issue-row.navigation-focus,
 .d-flex.flex-column.border.rounded-2.mb-3.pl-1,
 .form-group .form-control,
@@ -227,9 +243,17 @@ button[aria-label="Search this repository"],
 .btn.btn-block.js-profile-editable-edit-button,
 .btn.js-quick-submit-alternative,
 #your-repos-filter {
- box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important; 
+  box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important; 
   background-color: light-dark(#fff8, #0005) !important;
   border-radius: 0.5em !important;
+}
+
+.avatar-upload div.position-absolute {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important; 
+}
+
+.fLXEGX {
+  gap: 8px;
 }
 
 .CommentBox-container, .CommentBox-comment {
