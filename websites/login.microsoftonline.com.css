@@ -1,0 +1,40 @@
+@-moz-document domain("login.microsoftonline.com") {
+    body, html, .background, .background-image-holder, .background > div, .background-image, .background-image-small, .identityBanner {
+        background: none !important
+    }
+    .inner, .sign-in-box {
+        background: none;
+        color: white;
+        box-shadow: none
+    }
+    #loginHeader, .input.text-box {
+        text-align: center;
+        color: white
+    }
+    #lightbox:nth-child(1), .table-cell.text-left.content div{
+        text-align: center
+    }
+    .placeholderContainer > input.form-control {
+        color: white !important
+    }
+    .table, .promoted-fed-cred-content, .new-session-popup-v2sso {
+        text-align: center !important;
+        background: none;
+        box-shadow: none;
+        border-radius: 16px;
+        color: lightgrey;
+    }
+    .button.primary, .btn.btn-primary, button.btn-primary, input[type="button"].btn-primary, input[type="submit"].btn-primary, input[type="reset"].btn-primary {
+        width: 350px !important;
+        margin-right: 190px;
+        border-radius: 16px !important;
+        background: rgba(24, 25, 33, 0.3) !important
+    }
+    .button.primary:hover, .btn.btn-primary:hover, button.btn-primary:hover, input[type="button"].btn-primary:hover, input[type="submit"].btn-primary:hover, input[type="reset"].btn-primary:hover, .button.primary:focus, .btn.btn-primary:focus, button.btn-primary:focus, input[type="button"].btn-primary:focus, input[type="submit"].btn-primary:focus, input[type="reset"].btn-primary:focus {
+        background: rgba(24, 25, 33, 0.3) !important;
+        border: 1px solid rgba(24, 25, 33, 1) !important
+    }
+    .row.tile:not(.no-pick):hover{
+        border-radius: 16px
+    }
+}
