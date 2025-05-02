@@ -1,6 +1,9 @@
 /* gh-transparency */
 .diffbar.details-collapse.js-details-container.Details.flex-1.d-flex.flex-items-center.width-full.flex-wrap.gap-2,
 html,
+.cm-editor.ͼ1.ͼ2.ͼ5x1.ͼ5xi.hide-help.js-codemirror-editor,
+.Layout-module__viewer--M_UyD,
+.Layout-module__container--ON_wj,
 body,
 .Box-sc-g0xbh4-0.fFvqfZ,
 header,
@@ -150,6 +153,10 @@ td {
   padding-top: 0.5em !important;
 }
 
+.ChatMessage-module__content--MYneF {
+  padding: 0.7em !important;
+}
+
 .dJnomT,
 .jPdcfu,
 .gOHzTT,
@@ -172,6 +179,15 @@ details-dialog.Box,
 }
 
 /* gh-glass effect */
+.ContentPreviewTab-module__tabContent--zNIXv:hover,
+.cm-gutters,
+.cm-editor.ͼ1.ͼ2.ͼ5nc.ͼ5fa.hide-help.js-codemirror-editor,
+.FilePreview-module__toolbar--toYCM,
+.cm-content,
+.FileBlock-module__container--zWu5c,
+.ChatMessage-module__content--MYneF,
+.Layout-module__previewPane--vF1ZO.Layout-module__active--nDCtU,
+.ChatInput-module__container--NFzCy,
 #settings-frame .Box,
 .form-select,
 .edit_user button,
