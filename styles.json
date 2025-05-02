@@ -2031,6 +2031,11 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, li > a{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.nav-container{\n  border-radius: 1em !important;\n  margin: 1em !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "quillbot.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, #root-client > div, #root-client > div > div > div, #root-client > div > div > div > div, .MuiBox-root.css-vfjv7r, #root-client > div > div > section > div, .MuiDrawer-root > div, #pphr-view-page-container, #gc-root-container, .MuiBox-root.css-1w3vdug, section > .MuiBox-root, section > .MuiContainer-root, [data-testid=\"tltr-landing-page\"]{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
