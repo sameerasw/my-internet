@@ -2006,6 +2006,11 @@
       "ino-Translucent Header": "nav,\n._Header-overlay_lfa7m_137[data-show=\"true\"] {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}",
       "ino-Translucent Overlays": ".homepage-overlay {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}",
       "ino-No Footer": "#footer,\n._Footer_mv59m_1 {\n  display: none !important;\n}"
+    },
+    "pcgamingwiki.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, #main-content, .home-container > div{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
