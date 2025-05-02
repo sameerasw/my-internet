@@ -1910,6 +1910,11 @@
       "stackex-transparency": "html,\nbody,\nheader,\n#content,\n.question-container {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "stackex-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "stackex-no footer": "footer {\n  display: none !important;\n}"
+    },
+    "psnprofiles.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, .banner-overlay, #first-banner, #banner, .header-borderm, .box, tr, tr > td{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n#first-banner .img,   .banner:not(.small) .slider > div::after{\n  border-radius: 0 0 1em 1em !important;\n  box-shadow: none !important;\n  &::after{\n    display: none !important;\n  }\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": ".footer{\n  display: none !important;\n}"
     }
   }
 }
