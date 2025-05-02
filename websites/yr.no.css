@@ -1,7 +1,4 @@
-/* yr-transparency
- * Make main containers transparent with transition effects
- * Removes backgrounds, borders and shadows from major elements
- */
+/* yr-transparency */
 html,
 body,
 nav,
@@ -32,17 +29,12 @@ section,
     box-shadow 0.5s ease-in-out !important;
 }
 
-/* yr-darkreader
-  * Support for Dark Reader extension compatibility
-  */
+/* yr-darkreader */
 :root {
   --darkreader-background-ffffff: transparent !important;
 }
 
-/* yr-glass-effect
-  * Apply glass morphism effect to content containers and cards
-  * Creates semi-transparent background with subtle shadow effects
-  */
+/* yr-glass-effect  */
 .weather-location-list-item,
 .button,
 .now-hero__slide,
@@ -62,25 +54,19 @@ section,
   transition: transform 0.2s ease-in-out !important;
 }
 
-/* yr-no-glass
-  * Make child elements transparent (without glass effect)
-  * Ensures inner elements don't duplicate glass effect
-  */
+/* yr-no-glass */
 
 .button-group__content,
- /* Headers and list elements */
  .daily-weather-list__headers,
  .coast-forecast-daily-list__headers,
  .statistics-page__toolbar,
  
- /* Forecast page elements */
  .forecast-page__tab-content,
  .forecast-page__tab-button,
  .forecast-page__tab-panel,
  .forecast-page__tab-content .forecast-details,
  .forecast-page__tab-content .forecast-graph,
  
- /* Modal dialog elements */
  .modal-dialog__title,
  .modal-dialog__content,
  .modal-dialog__header,
@@ -90,7 +76,6 @@ section,
  .modal-dialog__dialog .button,
  .modal-dialog__close-button,
  
- /* Weather dialog elements */
  .hourly-weather-dialog,
  .hourly-weather-dialog__table,
  .hourly-weather-dialog__celestial_events_container,
@@ -98,13 +83,11 @@ section,
  .celestial-events,
  .celestial-events__event,
  
- /* Card elements */
  .card__title,
  .card__header,
  .card__content,
  .card__action,
  
- /* Fluid table elements */
  .fluid-table,
  .fluid-table__scroll-container,
  .fluid-table__table,
@@ -120,17 +103,14 @@ section,
  .hourly-weather-table__time,
  .hourly-weather-table__weather,
  
- /* Statistics and graphs */
  .statistics-graphs__graph,
  .statistics-graphs__chart,
  .statistics-graphs__graph-container,
  
- /* Overlay panel */
  .overlay-panel__title,
  .overlay-panel__content,
  .overlay-panel__children,
  
- /* Graph elements */
  .graph-shell-new,
  .graph-shell-new__y-axis-background {
   background-color: transparent !important;
@@ -138,18 +118,14 @@ section,
   box-shadow: none !important;
 }
 
-/* yr-hover-effects
-  * Add hover highlights for interactive elements
-  */
+/* yr-hover-effects */
 .weather-location-list-item:hover,
 .button:hover,
 .daily-weather-list-item:hover {
   background-color: light-dark(#fffa, #222a) !important;
 }
 
-/* yr-solid-gray
-  * Apply solid background to floating panels and dialogs
-  */
+/* yr-solid-gray */
 .hover-panel,
 .search__suggestions,
 .modal-dialog__dialog,
@@ -164,17 +140,13 @@ section,
   transition: all 0.3s ease-in-out !important;
 }
 
-/* yr-search-background
-  * Apply background to search input
-  */
+/* yr-search-background */
 .search__input {
   background-color: #e0e0e0 !important;
   border-radius: 0.2em !important;
 }
 
-/* yr-hide-footer
-  * Remove footer from display
-  */
+/* yr-hide-footer */
 footer {
   display: none !important;
 }
