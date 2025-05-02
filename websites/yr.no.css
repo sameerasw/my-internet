@@ -80,11 +80,6 @@
  .forecast-page__tab-content .forecast-details,
  .forecast-page__tab-content .forecast-graph,
  
- /* Search expanded elements */
- .search--expanded .search__input,
- .search--expanded .search__button,
- .search--expanded .search__suggestions,
- 
  /* Modal dialog elements */
  .modal-dialog__title,
  .modal-dialog__content,
