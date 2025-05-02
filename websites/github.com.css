@@ -6,7 +6,10 @@ html,
 .Layout-module__container--ON_wj,
 body,
 .Box-sc-g0xbh4-0.fFvqfZ,
+.Sidebar-module__container--s585U .Sidebar-module__sidebar--sn0TN,
+.Sidebar-module__container--s585U:where(.Sidebar-module__pinned--e3Nsi), .Sidebar-module__container--s585U:where(.Sidebar-module__visible--d8dRm),
 header,
+.prc-Button-ButtonBase-c50BI.prc-Button-IconButton-szpyj,
 .color-bg-default,
 .feed-background,
 .notranslate,
@@ -51,7 +54,6 @@ button[role="tab"]{
     border-radius: 0.5em !important;
   }
 }
-
 
 .MarkdownEditor-module__viewSwitchBorder--zeiDB{
   display: none !important;
@@ -171,7 +173,6 @@ td {
 
 /* gh-overlay fixes */
 modal-dialog .search-suggestions,
-
 details-dialog.Box,
 .Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top.color-bg-default, .Popover-message {
   background-color: var(--bgColor-inset) !important;
@@ -179,6 +180,10 @@ details-dialog.Box,
 }
 
 /* gh-glass effect */
+.
+.CodeBlock-module__header--RMUQr,
+.CodeBlock-module__codeContainer--dAEis,
+.ChatMessage-module__actions--Jllb6,
 .ContentPreviewTab-module__tabContent--zNIXv:hover,
 .cm-gutters,
 .cm-editor.ͼ1.ͼ2.ͼ5nc.ͼ5fa.hide-help.js-codemirror-editor,
