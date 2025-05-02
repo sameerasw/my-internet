@@ -1,0 +1,37 @@
+@-moz-document domain("iloveimg.com") {
+    body, .tool__workarea, .block--white {
+        background: none;
+    }
+    .home-title {
+        display: none
+    }
+    .tools__item, .tools__item:hover {
+        background: rgba(0,0,0,0.4);
+        text-align: center;
+        margin-top: 1vi
+    }
+    .tools__item__icon {
+        position: relative;
+        left: 40%;
+    }
+    .tools__item h3, .tools__item:hover h3, .tool__header__title, .infounit__title {
+        color: white
+    }
+    header {
+        background: none !important;
+        opacity: 0;
+        transition: ease-in 100ms;
+    }
+    header:hover {
+        opacity: 100%
+    }
+    .tool__header__subtitle {
+        color: grey;
+    }    
+    .nav-actions > a:not(.btn), .title1, .subtitle1 {
+        color: white
+    }
+    .tool__header {
+        margin-top: 13%
+    }
+}
