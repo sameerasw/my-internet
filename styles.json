@@ -2039,6 +2039,12 @@
     },
     "anilibria.top.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, .v-application{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\nheader{\n  border-radius: 1em !important;\n}"
+    },
+    "store.playstation.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, #jetstream-tertiary-nav > div, #shared-nav-container, .shared-nav__primary-parent, .psw-s-content-break-20, main > div{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}",
+      "I know it's sony": ".sony-bar{\n  display: none !important;\n}"
     }
   }
 }
