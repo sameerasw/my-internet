@@ -335,16 +335,6 @@ ytd-comments {
   background-color: var(--yt-spec-text-primary-inverse) !important;
 }
 
-/* yt-zen comments desc..captions */
-body:has(
-    [data-title-no-tooltip="Subtitles/closed captions"][aria-pressed="true"]
-  ):not(:has([description-collapsed=""]))
-  [theater=""]
-  ytd-comments {
-  opacity: 1 !important;
-  left: 0 !important;
-}
-
 /* yt-transparent overlay chat */
 [theater=""] #chat {
   position: absolute !important;
