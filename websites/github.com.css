@@ -1,20 +1,23 @@
 /* gh-transparency */
-.diffbar.details-collapse.js-details-container.Details.flex-1.d-flex.flex-items-center.width-full.flex-wrap.gap-2,
 html,
+header,
+body,
+nav,
+.TableHeader.prc-DataTable-TableHeader-CRPoj,
+.diffbar.details-collapse.js-details-container.Details.flex-1.d-flex.flex-items-center.width-full.flex-wrap.gap-2,
+.VisibleAndOverflowContainer-module__Box_0--cTFgm button,
 .cm-editor.ͼ1.ͼ2.ͼ5x1.ͼ5xi.hide-help.js-codemirror-editor,
 .Layout-module__viewer--M_UyD,
+#discussions-search-combobox,
 .Layout-module__container--ON_wj,
-body,
 .Box-sc-g0xbh4-0.fFvqfZ,
 .Sidebar-module__container--s585U .Sidebar-module__sidebar--sn0TN,
 .Sidebar-module__container--s585U:where(.Sidebar-module__pinned--e3Nsi), .Sidebar-module__container--s585U:where(.Sidebar-module__visible--d8dRm),
-header,
 .prc-Button-ButtonBase-c50BI.prc-Button-IconButton-szpyj,
 .color-bg-default,
 .feed-background,
 .notranslate,
 [aria-labelledby="folders-and-files"] .bgColor-muted,
-nav,
 .dxnHPp,
 .kcVpNH,
 .discussion-timeline-actions,
@@ -125,11 +128,8 @@ div.px-2:nth-child(3) {
 }
 
 /* gh-hover */
-
-
 .feed-left-sidebar,
 .feed-right-sidebar {
- 
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
   &:hover {
@@ -147,6 +147,7 @@ div.border-bottom,
 .Box-sc-g0xbh4-0 .dJnomT,
 .d-flex.flex-column.border.rounded-2.mb-3.pl-1,
 .tabnav-tab,
+.TableHeader.prc-DataTable-TableHeader-CRPoj,
 td {
   border: none !important;
 }
@@ -167,6 +168,7 @@ td {
 #repos-sticky-header > div,
 .jbBkdO,
 .file-header,
+.Box-sc-g0xbh4-0.crMLA-D.react-issue-comment,
 .TabNav-item {
   border-radius: 0.5em !important;
 }
@@ -174,13 +176,21 @@ td {
 /* gh-overlay fixes */
 modal-dialog .search-suggestions,
 details-dialog.Box,
+.Table.prc-DataTable-Table-qYfrL,
 .Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top.color-bg-default, .Popover-message {
   background-color: var(--bgColor-inset) !important;
   border-radius: 1em !important;
 }
 
 /* gh-glass effect */
-.
+.prc-Button-ButtonBase-c50BI,
+.MergeabilityIcon-module__mergeabilityIcon--GOu7M,
+.range-editor,
+.TableHead.prc-DataTable-TableHead-eOrJU,
+.Table.prc-DataTable-Table-qYfrL,
+.tabnav-tab.selected, .TabNav__TabNavLink-sc-pwdi4r-3.selected,
+.timeline-comment-header,
+.Metadata-module__container--tL6Q3,
 .CodeBlock-module__header--RMUQr,
 .CodeBlock-module__codeContainer--dAEis,
 .ChatMessage-module__actions--Jllb6,
@@ -197,7 +207,6 @@ details-dialog.Box,
 .form-select,
 .edit_user button,
 .Box-sc-g0xbh4-0 .gxwXUv,
-#\:r6n\:-list-view-metadata,
 .Box-sc-g0xbh4-0.fXxPgR,
 #file-tree-filter-field,
 .highlight pre,
@@ -214,7 +223,6 @@ details-dialog.Box,
 .tabnav-tab[aria-selected="true"],
 .snippet-clipboard-content.notranslate.position-relative.overflow-auto,
 .Shared-module__CommentBox--x3rre,
-.prc-Button-ButtonBase-c50BI,
 .Box-sc-g0xbh4-0 .crArEc,
 .copilotPreview,
 .MarkdownEditor-module__inputWrapper--MtV0d,
@@ -273,8 +281,9 @@ button[aria-label="Search this repository"],
   box-shadow: rgba(0, 0, 0, 0.5) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important; 
 }
 
+.tabnav-tabs.d-flex.overflow-auto,
 .fLXEGX {
-  gap: 8px;
+  gap: 8px !important;
 }
 
 .CommentBox-container, .CommentBox-comment {
@@ -316,32 +325,6 @@ button[aria-label="Search this repository"],
   width: 6em !important;
   opacity: 1 !important;
    }
-  }
-}
-
-.tabnav-tab, .TabNav__TabNavLink-sc-pwdi4r-3 {
-&:not(button) {
-  font-size: 0px !important;
-  line-height: 0px !important;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
-}
-}
-.tabnav-tab:hover, .TabNav__TabNavLink-sc-pwdi4r-3:hover {
-&:not(button) {
-  font-size: inherit !important;
-  width: initial !important;
-}
-}
-
-.tabnav-tab.selected, .TabNav__TabNavLink-sc-pwdi4r-3.selected {
-  &:not(button) {
-    background-color: transparent !important;
-    border: none;
-    border-radius: var(--borderRadius-medium) !important;
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
-      rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
-    background-color: light-dark(#fff8, #0005) !important;
   }
 }
 
@@ -390,8 +373,9 @@ body:has(header > .search-expanded) .application-main {
   display: none !important;
 }
 
-/* better vertical timeline icon  bg */
-.TimelineItem-badge {
+/* better vertical timeline icon bg */
+.TimelineItem-badge,
+.prc-Timeline-TimelineBadge-BqMiN {
   background-color: light-dark(#fff8, #00000054) !important;
   border: solid var(--borderWidth-thin) #3d444d !important;
 }
