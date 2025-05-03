@@ -1,29 +1,32 @@
 @-moz-document domain("login.microsoftonline.com") {
+    
+    /* Remove Background from main page*/
     body, html, .background, .background-image-holder, .background > div, .background-image, .background-image-small, .identityBanner {
         background: none !important
     }
+    
+    /* Remove Background from signin box*/
     .inner, .sign-in-box {
         background: none;
-        color: white;
+        color: white !important;
         box-shadow: none
     }
-    #loginHeader, .input.text-box {
-        text-align: center;
-        color: white
-    }
-    #lightbox:nth-child(1), .table-cell.text-left.content div{
-        text-align: center
-    }
-    .placeholderContainer > input.form-control {
+    .placeholderContainer > input.form-control, #loginHeader, .input.text-box {
         color: white !important
     }
     .table, .promoted-fed-cred-content, .new-session-popup-v2sso {
-        text-align: center !important;
-        background: none;
-        box-shadow: none;
-        border-radius: 16px;
+        background: none !important;
+        box-shadow: none !important;
+        border-radius: 16px !important;
         color: lightgrey;
     }
+    
+    /*Center Align*/
+    #loginHeader, .input.text-box, #lightbox:nth-child(1), .table-cell.text-left.content div, .table, .promoted-fed-cred-content, .new-session-popup-v2sso {
+        text-align: center !important;
+    }
+
+    /*Glassed + Rounded buttons*/
     .button.primary, .btn.btn-primary, button.btn-primary, input[type="button"].btn-primary, input[type="submit"].btn-primary, input[type="reset"].btn-primary {
         width: 350px !important;
         margin-right: 190px;
