@@ -1,46 +1,45 @@
-@-moz-document domain("iloveimg.com") {
-    /*Remove Background*/
-    body, .tool__workarea, .block--white {
-        background: none;
-    }
-    header {
-        background: none !important;
-        opacity: 0;
-        transition: ease-in 100ms;
-    }
-    header:hover {
-        opacity: 100%
-    }
-    /*Increase Readability*/
-    .tool__header__subtitle {
-        color: grey;
-    } 
-    .tools__item h3, .tools__item:hover h3, .tool__header__title, .infounit__title {
-        color: white
-    }   
-    .nav-actions > a:not(.btn), .title1, .subtitle1 {
-        color: white
-    }
+/* transparency */
+body, .tool__workarea, .block--white {
+    background: none !important;
+}
+header {
+    background: none !important;
+    opacity: 0 !important;
+    transition: ease-in 100ms !important;
+}
+header:hover {
+    opacity: 100% !important;
+}
 
-    /*Hide Unwanted Elements*/
-    .home-title {
-        display: none
-    }
+/* Increase Readability */
+.tool__header__subtitle {
+    color: grey !important;
+} 
+.tools__item h3, .tools__item:hover h3, .tool__header__title, .infounit__title {
+    color: white !important;
+}   
+.nav-actions > a:not(.btn), .title1, .subtitle1 {
+    color: white !important;
+}
 
-    /*Glass Effect*/
-    .tools__item, .tools__item:hover {
-        background: rgba(0,0,0,0.4);
-        text-align: center;
-        margin-top: 1vi
-    }
+/* Hide Unwanted Elements */
+.home-title {
+    display: none !important;
+}
 
-    /*Hide Other Elements, to center*/
-    .tools__item__icon {
-        position: relative;
-        left: 40%;
-    }
-   
-    .tool__header {
-        margin-top: 13%
-    }
+/* Glass Effect */
+.tools__item, .tools__item:hover {
+    background: rgba(0,0,0,0.4) !important;
+    text-align: center !important;
+    margin-top: 1vi !important;
+}
+
+/* Hide Other Elements, to center */
+.tools__item__icon {
+    position: relative !important;
+    left: 40% !important;
+}
+
+.tool__header {
+    margin-top: 13% !important;
 }
