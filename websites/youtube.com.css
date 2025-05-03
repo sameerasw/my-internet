@@ -141,11 +141,12 @@ body:not(:has([mini-guide-visible=""])) {
   display: none !important;
 }
 
+
+/* yt-Hide filter chips */
 #chips-wrapper {
   top: 0 !important;
 }
 
-/* yt-Hide filter chips */
 .ytd-two-column-browse-results-renderer #header {
   display: none !important;
 }
