@@ -1002,7 +1002,7 @@
       "no footer": "footer{\n  display: none !important;\n}"
     },
     "labs.perplexity.ai.css": {
-      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, #__next > main > div > div, #__next > main > div > div > div, #__next > main > div > div > div > div > div, main > div > div > div > div > div > div{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, #__next > main > div > div, #__next > main > div > div > div, #__next > main > div > div > div > div > div, main > div > div > div > div > div > div, main > div{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     },
     "last.fm.css": {
       "transparency": "html, body, .top-bar, #content, .content-top, .content-top:after, .page-content, .stationlink::after, .chartlist-row, .chartlist-row::after, header, .lab-header, .pixel-grid .pixel-grid-container{\n  background-color: transparent !important;\nborder: none !important;\n}",
