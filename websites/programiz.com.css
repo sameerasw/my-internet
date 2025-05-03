@@ -1,0 +1,6 @@
+@-moz-document domain("programiz.com") {
+    /*Transparent Background*/
+    .dark-mode, .dark-mode .header, .dark-mode .wrapper, .dark-mode .editor-wrapper, .dark-mode .ace_editor, .dark-mode .ace_gutter, .dark-mode .ace_scroller, .dark-mode .ace_gutter-active-line, .dark-mode .ace_gutter-cell, .dark-mode .terminal-wrapper{
+        background: none !important;
+    }
+}
