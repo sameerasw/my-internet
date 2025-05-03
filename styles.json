@@ -1995,6 +1995,13 @@
     },
     "ilovepdf.com.css": {
       "transparency": "body, .tool__workarea {\n    background: none !important;\n}\n.home-title, .footer, .tools__item__content {\n    display: none !important;\n}\n.tools__item, .tools__item:hover {\n    background: rgba(0,0,0,0.4) !important;\n    text-align: center !important;\n    margin-top: 1vi !important;\n}\n.tools__item__icon {\n    position: relative;\n    left: 40% !important;\n}\n.tools__item h3, .tools__item:hover h3 {\n    color: white !important;\n}\nheader {\n    background: none !important;\n    opacity: 0 !important;\n    transition: ease-in 100ms !important;\n}\nheader:hover {\n    opacity: 100% !important;\n}"
+    },
+    "iloveimg.com.css": {
+      "transparency": "body, .tool__workarea, .block--white {\n    background: none !important;\n}\nheader {\n    background: none !important;\n    opacity: 0 !important;\n    transition: ease-in 100ms !important;\n}\nheader:hover {\n    opacity: 100% !important;\n}",
+      "Increase Readability": ".tool__header__subtitle {\n    color: grey !important;\n} \n.tools__item h3, .tools__item:hover h3, .tool__header__title, .infounit__title {\n    color: white !important;\n}   \n.nav-actions > a:not(.btn), .title1, .subtitle1 {\n    color: white !important;\n}",
+      "Hide Unwanted Elements": ".home-title {\n    display: none !important;\n}",
+      "Glass Effect": ".tools__item, .tools__item:hover {\n    background: rgba(0,0,0,0.4) !important;\n    text-align: center !important;\n    margin-top: 1vi !important;\n}",
+      "Hide Other Elements, to center": ".tools__item__icon {\n    position: relative !important;\n    left: 40% !important;\n}\n\n.tool__header {\n    margin-top: 13% !important;\n}"
     }
   }
 }
