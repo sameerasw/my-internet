@@ -147,6 +147,7 @@ div.border-bottom,
 .Box-sc-g0xbh4-0 .dJnomT,
 .d-flex.flex-column.border.rounded-2.mb-3.pl-1,
 .tabnav-tab,
+.TabNav__TabNavLink-sc-pwdi4r-3,
 .TableHeader.prc-DataTable-TableHeader-CRPoj,
 td {
   border: none !important;
@@ -281,6 +282,7 @@ button[aria-label="Search this repository"],
   box-shadow: rgba(0, 0, 0, 0.5) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important; 
 }
 
+.TabNav__TabNavTabList-sc-pwdi4r-1.DvNYj,
 .tabnav-tabs.d-flex.overflow-auto,
 .fLXEGX {
   gap: 8px !important;
