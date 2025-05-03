@@ -1992,6 +1992,9 @@
     },
     "programiz.com.css": {
       "transparency": ".dark-mode, .dark-mode .header, .dark-mode .wrapper, .dark-mode .editor-wrapper, .dark-mode .ace_editor, .dark-mode .ace_gutter, .dark-mode .ace_scroller, .dark-mode .ace_gutter-active-line, .dark-mode .ace_gutter-cell, .dark-mode .terminal-wrapper{\n    background: none !important;\n}"
+    },
+    "ilovepdf.com.css": {
+      "transparency": "body, .tool__workarea {\n    background: none !important;\n}\n.home-title, .footer, .tools__item__content {\n    display: none !important;\n}\n.tools__item, .tools__item:hover {\n    background: rgba(0,0,0,0.4) !important;\n    text-align: center !important;\n    margin-top: 1vi !important;\n}\n.tools__item__icon {\n    position: relative;\n    left: 40% !important;\n}\n.tools__item h3, .tools__item:hover h3 {\n    color: white !important;\n}\nheader {\n    background: none !important;\n    opacity: 0 !important;\n    transition: ease-in 100ms !important;\n}\nheader:hover {\n    opacity: 100% !important;\n}"
     }
   }
 }
