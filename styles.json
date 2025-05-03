@@ -2002,6 +2002,11 @@
       "Hide Unwanted Elements": ".home-title {\n    display: none !important;\n}",
       "Glass Effect": ".tools__item, .tools__item:hover {\n    background: rgba(0,0,0,0.4) !important;\n    text-align: center !important;\n    margin-top: 1vi !important;\n}",
       "Hide Other Elements, to center": ".tools__item__icon {\n    position: relative !important;\n    left: 40% !important;\n}\n\n.tool__header {\n    margin-top: 13% !important;\n}"
+    },
+    "education.github.com.css": {
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, .tan-gradient, header > div, header > .color-bg-emphasis{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
