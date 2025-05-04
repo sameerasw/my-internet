@@ -1,11 +1,11 @@
-@-moz-document domain("login.microsoftonline.com") {
+
     
-    /* Remove Background from main page*/
+    /*Transparency*/
     body, html, .background, .background-image-holder, .background > div, .background-image, .background-image-small, .identityBanner {
         background: none !important
     }
     
-    /* Remove Background from signin box*/
+    /*Transparent box*/
     .inner, .sign-in-box {
         background: none !important;
         color: white !important;
@@ -40,4 +40,3 @@
     .row.tile:not(.no-pick):hover{
         border-radius: 16px !important
     }
-}
