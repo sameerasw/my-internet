@@ -10,8 +10,6 @@ navbar,
 header,
 #header,
 .header,
-.header__main,
-.header__inner,
 app,
 #app,
 .app,
@@ -24,7 +22,7 @@ section,
 #navigation-wrapper,
 #global-navbar,
 .head.notfixed,
-body.dark_mode, body.light_mode, .sidebar-pane{
+.sidebar, colgroup > col, .lightbg, .darkbg{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -38,6 +36,6 @@ body.dark_mode, body.light_mode, .sidebar-pane{
 }
 
 /* no footer */
-footer{
+footer, body > table:nth-last-child(3), body > table:nth-last-child(4){
   display: none !important;
 }

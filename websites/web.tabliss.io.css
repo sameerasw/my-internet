@@ -1,0 +1,39 @@
+/* transparency */
+html,
+body,
+.Dashboard,
+.Background > .fullscreen{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+body:has([title="Toggle widgets (W)"].on-hover) .Background{
+  display: none !important;
+}
+
+/* buttons hover */
+.Overlay, .credit .controls{
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover{
+    opacity: 1 !important;
+  }
+}
+
+/* background fade */
+body:has([title="Toggle widgets (W)"].on-hover) .Background .fullscreen > .fullscreen{
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%) !important;
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%) !important;
+  -webkit-mask-repeat: no-repeat !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-size: cover !important;
+  mask-size: cover !important;
+}
+
+/* keep the background */
+body:has([title="Toggle widgets (W)"].on-hover) .Background{
+  display: initial !important;
+}

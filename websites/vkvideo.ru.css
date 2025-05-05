@@ -10,8 +10,6 @@ navbar,
 header,
 #header,
 .header,
-.header__main,
-.header__inner,
 app,
 #app,
 .app,
@@ -24,7 +22,8 @@ section,
 #navigation-wrapper,
 #global-navbar,
 .head.notfixed,
-body.dark_mode, body.light_mode, .sidebar-pane{
+body.dark_mode, body.light_mode, .VideoLayout  > div,
+body:has(#side_bar.sticky_top) #page_header_cont, #page_header_wrap, #page_header, #video_main_block{
   background-color: transparent !important;
   background: none !important;
   border: none !important;

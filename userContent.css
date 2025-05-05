@@ -3,6 +3,17 @@
   --zen-settings-secondary-background: transparent !important;
 }
 
+.KEYJUMP_hint{
+  border-radius: 100px !important;
+  background-color: #49FCBB !important;
+  color: #000 !important;
+  font-family: 'Product Sans', Sans !important;
+  font-weight: bold !important;
+  box-shadow: #0008 0 0 10px !important;
+  border: #0008 1px solid !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
 @-moz-document url(about:config){
   tr, table{
     background-color: transparent !important;
@@ -81,4 +92,3 @@ footer{
   border: none !important;
   box-shadow: none !important;
 }
- 
