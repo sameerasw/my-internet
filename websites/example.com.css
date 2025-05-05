@@ -22,7 +22,7 @@ section,
 #navigation-wrapper,
 #global-navbar,
 .head.notfixed,
-body.dark_mode, body.light_mode{
+body.dark_mode, body.light_mode, .sidebar-pane{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
