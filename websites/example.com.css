@@ -6,7 +6,7 @@ nav,
 .nav,
 navbar,
 .navbar,
-#navbar,
+#navbar
 header,
 #header,
 .header,
@@ -16,13 +16,13 @@ app,
 .app-root,
 #pass-sidebar,
 #main,
-main,
 #content,
 section,
 #__next,
 #navigation-wrapper,
 #global-navbar,
-.head.notfixed{
+.head.notfixed,
+body.dark_mode, body.light_mode{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
