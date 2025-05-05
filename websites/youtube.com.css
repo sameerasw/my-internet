@@ -360,6 +360,10 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer) {
   margin-left: 100px !important;
 }
 
+#frosted-glass {
+  display: none !important;
+}
+
 /* yt-better captions */
 .caption-window {
   backdrop-filter: blur(10px) !important;
