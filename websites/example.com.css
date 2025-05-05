@@ -16,11 +16,13 @@ app,
 .app-root,
 #pass-sidebar,
 #main,
+main,
 #content,
 section,
 #__next,
 #navigation-wrapper,
-#global-navbar{
+#global-navbar,
+.head.notfixed{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
