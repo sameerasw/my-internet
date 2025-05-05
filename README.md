@@ -21,6 +21,12 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
 ## [How to get transparency in Zen](https://www.sameerasw.com/zen)
 [![web-preview-zen](https://github.com/user-attachments/assets/dae63448-0fa8-44a7-a294-e18561de9389)](https://www.sameerasw.com/zen)
 
+
+## Contributors
+<a href="https://github.com/sameerasw/my-internet/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=sameerasw/my-internet" />
+</a>
+
 ## Contributing styles
 
 > ### Please make sure you go through all the provided instructions before submittinga new theme with a PR.
