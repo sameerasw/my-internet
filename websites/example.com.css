@@ -12,7 +12,15 @@ header,
 .header,
 app,
 #app,
-.app, .app-root, #pass-sidebar, #main, #content, section, #__next{
+.app,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+#__next,
+#navigation-wrapper,
+#global-navbar{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
