@@ -134,6 +134,10 @@ ytd-alert-with-button-renderer{
   justify-content: center !important;
 }
 
+ytd-two-column-browse-results-renderer{
+  width: fit-content !important;
+}
+
 
 /* yt-Transparent header */
 #masthead-container {
