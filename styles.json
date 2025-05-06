@@ -2066,6 +2066,11 @@
       "glass code": ".expressive-code figure{\n  pre{\n    box-shadow:  light-dark(#fff3, #0003) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;\n    background-color: light-dark(#fff8, #0005)  !important;\n    border-radius: 1em !important;\n  }\n    border-radius: 1em !important;\n}\n\nheader{\n  border-radius: 1em !important;\n}",
       "search blur": "[data-search-modal-open] > div > div{\ntransition: filter 0.5s ease-in-out !important;\n}\n\n[data-search-modal-open] > div > div{\n  filter: blur(20px) !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "edclub.com.css": {
+      "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar\nheader,\n#header,\n.header,\napp,\n#app,\n.app,\n.app-root,\n#pass-sidebar,\n#main,\nmain,\n#content,\nsection,\n#__next,\n#navigation-wrapper,\n#global-navbar,\n#instruction,\n.head.notfixed,\n.bottom-nav-bar ,\n.hdrlt,\n.spelling-results-panel,\nbody.dark_mode, body.light_mode,\n.lpviewbox{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.lpbackground{\n  display: none !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
