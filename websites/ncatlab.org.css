@@ -1,0 +1,7 @@
+/* transparency */
+body {
+  background-color: transparent !important;
+}
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
