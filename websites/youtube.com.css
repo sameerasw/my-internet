@@ -54,6 +54,11 @@ ytd-app:not([guide-persistent-and-visible=""])
   background-color: var(--yt-spec-text-primary-inverse) !important;
 }
 
+ytd-alert-with-button-renderer{
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 /* yt-clean side guide */
 ytd-guide-section-renderer:has(
     [title="YouTube Studio"],
@@ -108,7 +113,7 @@ body:not(:has([mini-guide-visible=""])) {
     margin: auto 0 !important;
   }
   #page-manager {
-    margin-left: 60px !important;
+    margin-left: 80px !important;
   }
 
   #tabsContainer.tp-yt-paper-tabs {
@@ -123,6 +128,12 @@ body:not(:has([mini-guide-visible=""])) {
     background: transparent !important;
   }
 }
+
+ytd-alert-with-button-renderer{
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 
 /* yt-Transparent header */
 #masthead-container {
