@@ -3,10 +3,10 @@
   background-color: transparent !important;
   box-shadow: none !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-/* tg-create-goal-dialog */
+/* tg-create goal dialog */
 .css-q219va-Container-raised20-block-blockRounded-EnhancedDialog {
   background-color: light-dark(rgb(255, 255, 255), rgb(31, 15, 41)) !important;
   box-shadow: 0px 2px 6px var(--theme-elevations-shadow_20) !important;
@@ -16,19 +16,19 @@
   padding: var(--theme-spacings-4x) !important;
 }
 
-/* tg-goal-dialog-button */
+/* tg-goal dialog button */
 .css-8z2umx-StyledButton-button-headingBase-h5Subtitle-fonts-setColor-sizes-paddings-focus {
   background-color: var(--theme-colors-accent-hover) !important;
   border-color: transparent !important;
   color: light-dark(#222, var(--theme-colors-ui_000-hover)) !important;
 }
 
-/* tg-current-page-indicator */
+/* tg-current page indicator */
 [aria-current='page'] .css-ttexsm-StyledSectionItem-p1Body {
   background: light-dark(rgba(230, 230, 230, 0.5), rgba(64, 50, 72, 0.5)) !important;
 }
 
-/* tg-current-date-indicator */
+/* tg-current date indicator */
 .css-1617awf-Root-Root .e1m21rws4 {
   font-weight: 500 !important;
   color: light-dark(#222, rgb(252, 127, 239)) !important;
@@ -51,12 +51,12 @@ div.e1iz715u1.e7lj72v4.css-1mxia9b-PopdownRoot-raised50-floating-PopdownStyled-P
   margin-left: calc(30vw - 150px) !important;
 }
 
-/* tg-calendar-event */
+/* tg-calendar event */
 div.rbc-event-content {
   background: light-dark(rgba(240, 240, 240, 0.46), rgba(24, 16, 31, 0.46)) !important;
 }
 
-/* tg-dark-bg-containers */
+/* tg-dark bg containers */
 div.css-1yt6waa-Popup-raised50-floating-TimeEntryContextPopup.e170p7c22,
 div.e1iz715u1.e7lj72v4.css-1mxia9b-PopdownRoot-raised50-floating-PopdownStyled-PopdownCss-EnhancedTimeEntryAutocompletePopdown.e1q6sy3w3,
 div.css-tb7iby-Popup-raised50-floating.e170p7c22,
@@ -78,7 +78,7 @@ div.e1777ai84.css-5li8p1-Grid.e1777ai83 {
   background: light-dark(rgb(255, 255, 255), rgb(20, 13, 26)) !important;
 }
 
-/* tg-pulse-animation */
+/* tg-pulse animation */
 .css-1ph40e9-Pulse {
   position: absolute !important;
   top: 0 !important;
@@ -91,7 +91,7 @@ div.e1777ai84.css-5li8p1-Grid.e1777ai83 {
   background-color: var(--theme-colors-accent-regular) !important;
 }
 
-/* tg-calendar-current-time-indicator */
+/* tg-calendar current time indicator */
 .css-88kx1e-EnhancedCalendar-label-button-label-raised20-raised20-bodyText-tooltipText-rbcSlotSelectionCss-bodyText-rbcEventCss-weekViewCss-weekViewCss-rbcCalendarCss-CalendarContainer
   .rbc-current-time-indicator {
   background-color: light-dark(rgb(209, 114, 199), rgb(209, 114, 199)) !important;
@@ -101,12 +101,12 @@ div.e1777ai84.css-5li8p1-Grid.e1777ai83 {
   z-index: 5 !important;
 }
 
-/* tg-darkreader-fix */
+/* tg-darkreader fix */
 :root {
   --darkreader-background-ffffff: transparent !important;
 }
 
-/* tg-no-footer */
+/* tg-no footer */
 footer {
   display: none !important;
 }
