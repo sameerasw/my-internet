@@ -86,7 +86,7 @@ tab[busy] {
 }
 
 /* empty tab image */
-/* #browser:has([zen-empty-tab="true"][selected="true"]) .deck-selected .browserStack {
+#browser:has([zen-has-empty-tab=""]) .deck-selected .browserStack {
   background-image: var(--bg_img, url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Zen_Browser_logo_%28red_circles%29.svg")) !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -100,7 +100,7 @@ tab[busy] {
   filter: saturate(0) invert(1) !important;
   }
 }
- */
+
 /* hide compact sidebar when no tabs open */
 #zen-main-app-wrapper[zen-compact-mode="true"]:not(
     :has(#urlbar[open][zen-floating-urlbar="true"])
@@ -597,4 +597,5 @@ hbox[zen-split="true"].deck-selected{
 /* permanently transparent compact sidebar - fix for zen bug ================= remove if you sue the compact sidebar */
 #zen-main-app-wrapper[zen-compact-mode="true"] #navigator-toolbox{
   opacity: 0 !important; 
+/*   display: none !important; */
 }
