@@ -23,6 +23,7 @@ section,
 #navigation-wrapper,
 #global-navbar,
 .head.notfixed,
+#app > div,
 body.dark_mode, body.light_mode,
 text-div > textarea{
   background-color: transparent !important;
