@@ -29,6 +29,7 @@ section,
 #__next,
 #navigation-wrapper,
 #global-navbar,
+#nd-sidebar,
 .head.notfixed,
 body.dark_mode, body.light_mode{
   background-color: transparent !important;
