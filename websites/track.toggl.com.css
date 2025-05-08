@@ -1,59 +1,62 @@
-/* Global Styles */
+/* tg-transparency */
 *:not(.css-dxjz5z-Root-bodyText-circle-Root-Root-EnhancedAvatar) {
   background-color: transparent !important;
   box-shadow: none !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
-/* Create Goal  */
+/* tg-create-goal-dialog */
 .css-q219va-Container-raised20-block-blockRounded-EnhancedDialog {
-  background-color: rgb(31, 15, 41);
-  box-shadow: 0px 2px 6px var(--theme-elevations-shadow_20);
-  border-radius: var(--theme-radii-regular);
-  position: relative;
-  width: 448px;
-  padding: var(--theme-spacings-4x);
+  background-color: light-dark(rgb(255, 255, 255), rgb(31, 15, 41)) !important;
+  box-shadow: 0px 2px 6px var(--theme-elevations-shadow_20) !important;
+  border-radius: var(--theme-radii-regular) !important;
+  position: relative !important;
+  width: 448px !important;
+  padding: var(--theme-spacings-4x) !important;
 }
+
+/* tg-goal-dialog-button */
 .css-8z2umx-StyledButton-button-headingBase-h5Subtitle-fonts-setColor-sizes-paddings-focus {
-  background-color: var(--theme-colors-accent-hover);
-  border-color: transparent;
-  color: var(--theme-colors-ui_000-hover);
+  background-color: var(--theme-colors-accent-hover) !important;
+  border-color: transparent !important;
+  color: light-dark(#222, var(--theme-colors-ui_000-hover)) !important;
 }
 
-/* Current page indicator */
+/* tg-current-page-indicator */
 [aria-current='page'] .css-ttexsm-StyledSectionItem-p1Body {
-  background: rgb(64, 50, 72) !important;
-}
-/* Current date indicator */
-.css-1617awf-Root-Root .e1m21rws4 {
-  font-weight: 500;
-  color: rgb(252, 127, 239);
-  background-color: rgb(61, 31, 58);
+  background: light-dark(rgba(230, 230, 230, 0.5), rgba(64, 50, 72, 0.5)) !important;
 }
 
-/* Header styles */
+/* tg-current-date-indicator */
+.css-1617awf-Root-Root .e1m21rws4 {
+  font-weight: 500 !important;
+  color: light-dark(#222, rgb(252, 127, 239)) !important;
+  background-color: light-dark(rgb(240, 240, 240), rgb(61, 31, 58)) !important;
+}
+
+/* tg-header */
 div.rbc-time-header {
-  background: rgb(64, 50, 72) !important;
-  border-radius: 0px 0px 15px 15px;
+  background: light-dark(rgb(230, 230, 230), rgb(64, 50, 72)) !important;
+  border-radius: 0px 0px 15px 15px !important;
 }
 div.e1777ai84.css-3p14j7-Grid-Grid.e1777ai83 {
-  border-radius: 15px 15px 0 0;
+  border-radius: 15px 15px 0 0 !important;
 }
 div.css-1a08mon-TimerFormContent.e9rmxga1 {
-  background: rgba(45, 45, 45, 0.9) !important;
+  background: light-dark(rgba(255, 255, 255, 0.9), rgba(45, 45, 45, 0.9)) !important;
   backdrop-filter: blur(20px) !important;
 }
 div.e1iz715u1.e7lj72v4.css-1mxia9b-PopdownRoot-raised50-floating-PopdownStyled-PopdownCss-EnhancedTimeEntryAutocompletePopdown.e1q6sy3w3 {
-  margin-left: calc(30vw - 150px);
+  margin-left: calc(30vw - 150px) !important;
 }
 
-/* Calendar Events */
+/* tg-calendar-event */
 div.rbc-event-content {
-  background: rgba(24, 16, 31, 0.46) !important;
+  background: light-dark(rgba(240, 240, 240, 0.46), rgba(24, 16, 31, 0.46)) !important;
 }
 
-/* Dark Backgrounds for Containers */
+/* tg-dark-bg-containers */
 div.css-1yt6waa-Popup-raised50-floating-TimeEntryContextPopup.e170p7c22,
 div.e1iz715u1.e7lj72v4.css-1mxia9b-PopdownRoot-raised50-floating-PopdownStyled-PopdownCss-EnhancedTimeEntryAutocompletePopdown.e1q6sy3w3,
 div.css-tb7iby-Popup-raised50-floating.e170p7c22,
@@ -67,39 +70,43 @@ div.css-ahf7z5-PopdownRoot-raised50-floating.e1q6sy3w3,
 div.css-1d2bfqm-Content-raised50-floating.e3049c00,
 .DayPicker_transitionContainer,
 div.css-3rrz6s-PopdownRoot-raised50-floating-popdownStyles-emptyStyles-ContextMenu.e1q6sy3w3,
-.css-7zh651-Content {
-  background: #140d1a !important;
+.css-7zh651-Content,
+div.css-kq33ab-PopupBody.e1tqibvj0,
+div.css-1k2a945-HeaderItem-HeaderItem.e1tqibvj1,
+div.css-vgv8p6-HeaderItem.e1tqibvj1,
+div.e1777ai84.css-5li8p1-Grid.e1777ai83 {
+  background: light-dark(rgb(255, 255, 255), rgb(20, 13, 26)) !important;
 }
 
-/* Pulse Animation */
+/* tg-pulse-animation */
 .css-1ph40e9-Pulse {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  transform-origin: center center 0;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  background-color: var(--theme-colors-accent-regular);
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  transform: translate(-50%, -50%) !important;
+  transform-origin: center center 0 !important;
+  border-radius: 50% !important;
+  width: 8px !important;
+  height: 8px !important;
+  background-color: var(--theme-colors-accent-regular) !important;
 }
 
-/* Calendar Styles */
+/* tg-calendar-current-time-indicator */
 .css-88kx1e-EnhancedCalendar-label-button-label-raised20-raised20-bodyText-tooltipText-rbcSlotSelectionCss-bodyText-rbcEventCss-weekViewCss-weekViewCss-rbcCalendarCss-CalendarContainer
   .rbc-current-time-indicator {
-  background-color: rgb(209, 114, 199);
-  height: 3px;
-  box-shadow: 0px 2px 6px var(--theme-elevations-shadow_20);
-  border-radius: 2px;
-  z-index: 5;
+  background-color: light-dark(rgb(209, 114, 199), rgb(209, 114, 199)) !important;
+  height: 3px !important;
+  box-shadow: 0px 2px 6px var(--theme-elevations-shadow_20) !important;
+  border-radius: 2px !important;
+  z-index: 5 !important;
 }
 
-/* darkreader */
+/* tg-darkreader-fix */
 :root {
   --darkreader-background-ffffff: transparent !important;
 }
 
-/* no footer */
+/* tg-no-footer */
 footer {
   display: none !important;
 }
