@@ -134,7 +134,9 @@ ytd-alert-with-button-renderer{
   justify-content: center !important;
 }
 
-
+ytd-two-column-browse-results-renderer[page-subtype="playlist"]{
+  width: fit-content !important;
+}
 
 /* yt-Transparent header */
 #masthead-container {
@@ -413,6 +415,7 @@ ytd-rich-item-renderer[is-in-first-column=""] {
     var(--ytd-rich-grid-item-margin) / 2 + var(--ytd-rich-grid-gutter-margin)
   ) !important;
 }
+
 
 /* Immersive search */
 #page-manager,
