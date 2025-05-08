@@ -1608,7 +1608,7 @@
       "rutracker-no footer": "footer {\n  display: none !important;\n}"
     },
     "sameerasw.com.css": {
-      "sameerasw-transprecy": "body, #background{\n  background-color: transparent !important;\n  background: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+      "sameerasw-transparency": "body, #background{\n  background-color: transparent !important;\n  background: none !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     },
     "scholar.google.com.css": {
       "gs-transparency": "html,\nbody,\n#gs_hdr_drw_in,\ndiv,\n#gs_hdr,\n.gs_hdr {\n  background-color: transparent !important;\n}\n\n.gs_grn,\na.gs_in_ib .gs_lbl,\nbody {\n  color: #fff !important;\n}",
