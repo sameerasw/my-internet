@@ -2104,6 +2104,11 @@
       "transparency": "html,\nbody,\nnav:not([aria-label=\"Primary Navigation\"]),\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader, tr.bg-brand-white, tr.bg-grey-10,\n#header, .f1-filters-wrapper, details.bg-brand-white,\n.header, .f1-container .f1-inner-wrapper, .f1-container .f1-inner-wrapper > div,\napp, li.bg-carbonBlack,\n#app, #maincontent > section, #maincontent > div,\n.app, .f1-container,\n.app-root,\n#pass-sidebar,\n#main,\nmain, figure, figure::after,\n#content,\n#__next,\n#navigation-wrapper,\n#global-navbar, .f1-utils-inner-padding-y,\n.head.notfixed, #maincontent > div > div > div,#maincontent > div > div > div::before,#maincontent > div > div > ul,\nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\nsection:has([aria-label=\"Primary Navigation\"]){\n  border-radius: 0 0 1em 1em !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "zdnet.com.css": {
+      "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp,\n#app,\n.app, .c-siteHeader, .c-listingLatest_item,\n.app-root,\n#pass-sidebar,\n#main,\nmain,\n#content,\nsection,\n#__next,\n#navigation-wrapper,\n#global-navbar,\n.head.notfixed, \nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
