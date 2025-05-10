@@ -35,3 +35,8 @@ img.bannerImg_f37cb1 {
 .app_a3002d{
   color: transparent !important;
 }
+
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
+}
