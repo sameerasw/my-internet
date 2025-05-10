@@ -2143,6 +2143,9 @@
       "discord-other changes": "img.bannerImg_f37cb1 {\n  border-radius: 0 0 1em 1em !important;\n}",
       "mistreous ;": ".app_a3002d{\n  color: transparent !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
+    },
+    "novelfire.net.css": {
+      "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp,\n#app,\n.app,\n.app-root,\n#pass-sidebar,\n#main,\nmain,\n#content,\nsection, .novel-body,\n#__next, article, section > div,\n#navigation-wrapper, .comment-item,\n#global-navbar, .expand-wrapper::after,\n.head.notfixed, .glass-shade, .show_replies,\nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.glass-background{\n  display: none !important;\n}"
     }
   }
 }
