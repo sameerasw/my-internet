@@ -56,7 +56,8 @@ text-div>textarea {
 .testplans-hub-refresh-portal-component, .hub-pivot-content,
 .ci-yaml-editor-header,
 .tasks-tab-content .task-tab-left-section,
-.sidebar-search .search-input-wrapper {
+.sidebar-search .search-input-wrapper,
+.tree-view > ul.tree-children li.selected > a > div.node-content, .tree-view.focus > ul.tree-children li.selected > a > div.node-content, li.tree-drag-tile > a > div.node-content {
     background-color: transparent !important;
 }
 
@@ -65,7 +66,8 @@ text-div>textarea {
 }
 
 .taskboard-collapsed-row, 
-.taskboard-expanded-cell {
+.taskboard-expanded-cell,
+.tree-view > ul.tree-children li.selected > a > div.node-content, .tree-view.focus > ul.tree-children li.selected > a > div.node-content, li.tree-drag-tile > a > div.node-content {
     border: none !important;
 }
 
