@@ -52,7 +52,8 @@ text-div>textarea {
 .board-actions-menu,
 #root,
 .content-section,
-.fabric-icon, .bolt-textfield > button {
+.fabric-icon, .bolt-textfield > button,
+.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input {
     background-color: transparent !important;
 }
 
@@ -60,7 +61,10 @@ text-div>textarea {
     background-color: transparent !important;
 }
 
-.devops-dashboard-grid .grid-item, .markdown-component, .wit-card {
+.devops-dashboard-grid .grid-item, 
+.markdown-component, 
+.wit-card,
+.repos-file-editor-background {
     background-color: rgba(32, 31, 30, 0.5) !important;
 }
 
