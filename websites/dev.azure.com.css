@@ -53,7 +53,7 @@ text-div>textarea {
 #root,
 .content-section,
 .fabric-icon, .bolt-textfield > button,
-.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input {
+.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input, .monaco-editor .margin {
     background-color: transparent !important;
 }
 
