@@ -44,7 +44,7 @@ text-div>textarea {
 .widget-host,
 .ms-DetailsHeader,
 .kanban-board, .kanban-board-column, .kanban-board-column-header-container,
-.bolt-table, .bolt-table:not(.sticky-table) th, .bolt-tabbar:not(.sticky), .bolt-master-panel, .bolt-page, .bolt-page-grey, .bolt-page-white, .bolt-textfield, .bolt-textfield-input, .bolt-card,
+.bolt-table, .bolt-table:not(.sticky-table) th, .bolt-tabbar:not(.sticky), .bolt-master-panel, .bolt-page, .bolt-page-grey, .bolt-page-white, .bolt-textfield, .bolt-textfield-input, .bolt-card, .bolt-button, .bolt-filterbar-white,
 .work-item-form-subheader, .work-item-form-control-wrapper > * > *, .work-item-form-control-wrapper > *, .work-item-form-control-content, .work-item-form-control, .work-item-form-collapsible-section-content > *,
 .taskboard-collapsed-row,
 .taskboard-expanded-cell,
@@ -53,9 +53,10 @@ text-div>textarea {
 .content-section,
 .fabric-icon, .bolt-textfield > button, .activity-feed-timeline-iteration,
 .monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input, .monaco-editor .margin,
-.testplans-hub-refresh-portal-component,
+.testplans-hub-refresh-portal-component, .hub-pivot-content,
 .ci-yaml-editor-header,
-.tasks-tab-content .task-tab-left-section {
+.tasks-tab-content .task-tab-left-section,
+input[type="text"] {
     background-color: transparent !important;
 }
 
@@ -77,7 +78,8 @@ text-div>textarea {
 .selected,
 .repos-summary-header > div:first-child,
 .task-group-tasks .task-group-tasks-tab-content .overview-container,
-.title_65b34777, .fieldGroup_e7469fb8 {
+.title_65b34777, .fieldGroup_e7469fb8,
+.sidebar-search .search-input-wrapper {
     background-color: rgba(32, 31, 30, 0.5) !important;
 }
 
@@ -131,7 +133,8 @@ div[role="separator"] {
 
 div[role="navigation"], 
 div[role="menubar"],
-.repos-compare-toolbar {
+.repos-compare-toolbar,
+.left-toolbar.toolbar {
     border-color: transparent !important;
     box-shadow: none !important;
 }
