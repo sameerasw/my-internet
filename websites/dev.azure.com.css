@@ -81,7 +81,12 @@ footer {
 }
 
 
-/* comment corner-radius */
-.enter-new-comment > div {
+/* PBI comment corner-radius */
+.enter-new-comment > .rooster-wrapper {
+    border-radius: 10px !important;
+}
+
+/* PBI description corner-radius */
+.work-item-form-control > .rooster-wrapper {
     border-radius: 10px !important;
 }
