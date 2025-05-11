@@ -37,15 +37,21 @@ text-div>textarea {
     transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-:root {
-    --background-color: transparent !important;
-    --callout-background-color: transparent !important;
-    --nav-vertical-background-color: transparent !important;
-    --nav-header-background: transparent !important;
+.bolt-page-grey, 
+.region-header, 
+.region-header-menubar, 
+.bolt-tabbar-grey, 
+.top-level-navigation, 
+.project-navigation,
+.bolt-card-white, 
+.project-overview-tab
+{
+    background-color: transparent !important;
 }
 
-.top-level-navigation {
-    background-color: transparent !important;
+/* darkreader */
+:root {
+    --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
