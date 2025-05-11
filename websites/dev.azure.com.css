@@ -45,7 +45,7 @@ text-div>textarea {
 .ms-DetailsHeader,
 .kanban-board, .kanban-board-column, .kanban-board-column-header-container,
 .bolt-table, .bolt-table th, .bolt-card, .bolt-tabbar, .bolt-page, .bolt-textfield, .bolt-textfield-input,
-.work-item-form-subheader, .work-item-form-control-wrapper > * > *, .work-item-form-control-wrapper > *, .work-item-form-control-content, .work-item-form-collapsible-section-content > *,
+.work-item-form-subheader, .work-item-form-control-wrapper > * > *, .work-item-form-control-wrapper > *, .work-item-form-control-content, .work-item-form-control, .work-item-form-collapsible-section-content > *,
 .taskboard-collapsed-row,
 .taskboard-expanded-cell,
 .feedback-workflow-wrapper, .feedback-columns-container,
