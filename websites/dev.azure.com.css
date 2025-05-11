@@ -37,28 +37,22 @@ text-div>textarea {
     transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-.bolt-page-grey, 
-.region-header, 
-.region-header-menubar, 
-.bolt-tabbar-grey, 
+.region-header, .region-header-menubar, 
 .top-level-navigation, 
-.project-navigation,
-.bolt-card-white, 
-.bolt-tabbar,
-.project-overview-tab,
-.bolt-page-white,
+.project-navigation, .project-overview-tab,
 .wiki-nav-bg,
 .widget-host,
 .ms-DetailsHeader,
-.kanban-board,
-.bolt-table,
+.kanban-board, .kanban-board-column, .kanban-board-column-header-container,
+.bolt-table, .bolt-table th, .bolt-card, .bolt-tabbar, .bolt-page, .bolt-textfield, bolt-textfield-input,
+.work-item-form-subheader, work-item-form-control-wrapper > * > *, work-item-form-control-wrapper > *,
 .taskboard-collapsed-row,
 .taskboard-expanded-cell,
-.feedback-workflow-wrapper,
-.feedback-columns-container,
+.feedback-workflow-wrapper, .feedback-columns-container,
 .board-actions-menu,
 #root,
-.content-section {
+.content-section,
+.fabric-icon {
     background-color: transparent !important;
 }
 
