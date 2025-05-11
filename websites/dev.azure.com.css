@@ -56,7 +56,8 @@ text-div>textarea {
 .testplans-hub-refresh-portal-component, .hub-pivot-content,
 .ci-yaml-editor-header,
 .tasks-tab-content .task-tab-left-section,
-input[type="text"] {
+input[type="text"], textarea[type="text"],
+.combo {
     background-color: transparent !important;
 }
 
@@ -139,3 +140,6 @@ div[role="menubar"],
     box-shadow: none !important;
 }
 
+.toolbar {
+    border-top-color: transparent !important;
+}
