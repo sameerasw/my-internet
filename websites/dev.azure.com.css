@@ -56,8 +56,7 @@ text-div>textarea {
 .testplans-hub-refresh-portal-component, .hub-pivot-content,
 .ci-yaml-editor-header,
 .tasks-tab-content .task-tab-left-section,
-input[type="text"], textarea[type="text"],
-.combo {
+.sidebar-search .search-input-wrapper {
     background-color: transparent !important;
 }
 
@@ -80,7 +79,8 @@ input[type="text"], textarea[type="text"],
 .repos-summary-header > div:first-child,
 .task-group-tasks .task-group-tasks-tab-content .overview-container,
 .title_65b34777, .fieldGroup_e7469fb8,
-.sidebar-search .search-input-wrapper {
+input[type="text"], textarea[type="text"],
+.combo {
     background-color: rgba(32, 31, 30, 0.5) !important;
 }
 
