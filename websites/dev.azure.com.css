@@ -44,6 +44,10 @@ text-div>textarea {
     --nav-header-background: transparent !important;
 }
 
+.top-level-navigation {
+    background-color: transparent !important;
+}
+
 /* no footer */
 footer {
     display: none !important;
