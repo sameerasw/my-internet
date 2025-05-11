@@ -2161,6 +2161,9 @@
       "darkreader": ":root {\n    --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer {\n    display: none !important;\n}",
       "comment corner-radius": ".enter-new-comment > div {\n    border-radius: 10px !important;\n}"
+    },
+    "planning-poker-azure-prod.firebaseapp.com.css": {
+      "transparency": "#root {\n    display: none;\n}"
     }
   }
 }
