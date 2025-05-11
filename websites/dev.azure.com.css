@@ -54,7 +54,8 @@ text-div>textarea {
 .fabric-icon, .bolt-textfield > button, .activity-feed-timeline-iteration,
 .monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input, .monaco-editor .margin,
 .testplans-hub-refresh-portal-component,
-.ci-yaml-editor-header {
+.ci-yaml-editor-header,
+.tasks-tab-content .task-tab-left-section {
     background-color: transparent !important;
 }
 
@@ -74,7 +75,9 @@ text-div>textarea {
 .repos-file-editor-background, .repos-commit-editor-background,
 .ci-yaml-editor-tab,
 .selected,
-.repos-summary-header > div:first-child {
+.repos-summary-header > div:first-child,
+.task-group-tasks .task-group-tasks-tab-content .overview-container,
+.title_65b34777, .fieldGroup_e7469fb8 {
     background-color: rgba(32, 31, 30, 0.5) !important;
 }
 
