@@ -60,8 +60,14 @@ text-div>textarea {
     background-color: rgba(32, 31, 30, 0.5) !important;
 }
 
-.enter-new-comment > div > div:not(:focus-within) {
-    background-color: transparent !important;
+.enter-new-comment > div > div:not(:focus-within),
+.work-item-form-control-content > div > div:not(:focus-within) {
+    background-color: rgba(32, 31, 30, 0.5) !important;
+}
+
+.enter-new-comment > div > div:not(:focus-within) > .rooster-command-bar,
+.work-item-form-control-content > div > div:not(:focus-within) > .rooster-command-bar {
+    opacity: 0 !important;
 }
 
 /* darkreader */
