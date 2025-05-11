@@ -44,10 +44,13 @@ text-div>textarea {
 .top-level-navigation, 
 .project-navigation,
 .bolt-card-white, 
-.project-overview-tab
-{
+.bolt-tabbar,
+.project-overview-tab,
+.bolt-page-white,
+.wiki-nav-bg {
     background-color: transparent !important;
 }
+
 
 /* darkreader */
 :root {
