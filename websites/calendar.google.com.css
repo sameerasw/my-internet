@@ -1,5 +1,6 @@
 /* calendr-transparecy */
 body,
+.xWId8e,
 [jsname="mOIbvc"],
 .R6TFwe,
 .sS0sZd,
@@ -7,6 +8,7 @@ body,
 [jsname="KBzNL"],
 .RAaXne.Wyo4Qe.nfCJAf,
 li.F262Ye,
+.Wl4EPb,
 .gZ8fdb {
   --gm3-sys-color-surface-container-low: transparent !important;
   --gm3-sys-color-surface-container-high: transparent !important;
@@ -24,16 +26,41 @@ li.F262Ye,
 }
 
 /* calendr-remove borders */
+.SXdXAb-BFbNVe::after,
+.SXdXAb-BFbNVe::before,
 .MGaLHf.ChfiMc,
+.SGWAac,
 .FLFkR,
 .w6FdBf.ChfiMc,
 .BiKU4b {
   border: none !important;
+  box-shadow: none !important;
 }
 
 /* calendr-glass */
+.T57Ued-BIzmGd.T57Ued-BIzmGd-OWXEXe-X9G3K.T2watc.aAW7Jd.APIQad,
+.iGiNKd.N9WDaf,
 .mXmivb.ogB5bf.u4s1Oc {
   backdrop-filter: blur(10px) !important;
   background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* transparent settings */
+.MDfQ7 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  margin-block: 1em !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.L78tue.O1gyfd {
+  margin-top: 0px !important;
+}
+
+/* round corners */
+.MDfQ7,
+.iGiNKd.N9WDaf,
+.mXmivb.ogB5bf.u4s1Oc {
   border-radius: 10px !important;
 }
+
