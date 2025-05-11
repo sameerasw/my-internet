@@ -61,7 +61,7 @@ text-div>textarea {
 }
 
 .enter-new-comment > div > .rooster-wrapper:not(:focus-within) > .rooster-editor,
-.work-item-form-control-content > div > .rooster-wrapper:not(:focus-within) > .rooster-editor {
+.work-item-form-control-content > .work-item-form-control > .rooster-wrapper:not(:focus-within) > .rooster-editor {
     background-color: rgba(32, 31, 30, 0.5) !important;
 }
 
