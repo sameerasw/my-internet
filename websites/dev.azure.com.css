@@ -47,8 +47,23 @@ text-div>textarea {
 .bolt-tabbar,
 .project-overview-tab,
 .bolt-page-white,
-.wiki-nav-bg {
+.wiki-nav-bg,
+.widget-host,
+.ms-DetailsHeader,
+.kanban-board,
+.bolt-table,
+.taskboard-collapsed-row,
+.taskboard-expanded-cell,
+.feedback-workflow-wrapper,
+.feedback-columns-container,
+.board-actions-menu,
+#root,
+.content-section {
     background-color: transparent !important;
+}
+
+.devops-dashboard-grid .grid-item {
+    background-color: rgba(32, 31, 30, 0.5) !important;
 }
 
 
