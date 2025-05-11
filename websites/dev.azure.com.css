@@ -44,7 +44,7 @@ text-div>textarea {
 .widget-host,
 .ms-DetailsHeader,
 .kanban-board, .kanban-board-column, .kanban-board-column-header-container,
-.bolt-table, .bolt-table th, .bolt-tabbar, .bolt-master-panel, .bolt-page, .bolt-page-grey, .bolt-page-white, .bolt-textfield, .bolt-textfield-input, .bolt-callout-content, .bolt-card
+.bolt-table, .bolt-table th, .bolt-tabbar, .bolt-master-panel, .bolt-page, .bolt-page-grey, .bolt-page-white, .bolt-textfield, .bolt-textfield-input, .bolt-callout-content, .bolt-card,
 .work-item-form-subheader, .work-item-form-control-wrapper > * > *, .work-item-form-control-wrapper > *, .work-item-form-control-content, .work-item-form-control, .work-item-form-collapsible-section-content > *,
 .taskboard-collapsed-row,
 .taskboard-expanded-cell,
@@ -61,6 +61,7 @@ text-div>textarea {
     background-color: white;
 }
 
+.project-card > .bolt-card-white,
 .devops-dashboard-grid .grid-item, 
 .markdown-component, 
 .wit-card, .bolt-card:hover,
