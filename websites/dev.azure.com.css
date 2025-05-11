@@ -44,7 +44,7 @@ text-div>textarea {
 .widget-host,
 .ms-DetailsHeader,
 .kanban-board, .kanban-board-column, .kanban-board-column-header-container,
-.bolt-table, .bolt-table th, .bolt-tabbar, .bolt-master-panel, .bolt-page, .bolt-page-grey, .bolt-page-white, .bolt-textfield, .bolt-textfield-input, .bolt-card,
+.bolt-table, .bolt-table:not(.sticky-table) .bolt-tabbar, .bolt-master-panel, .bolt-page, .bolt-page-grey, .bolt-page-white, .bolt-textfield, .bolt-textfield-input, .bolt-card,
 .work-item-form-subheader, .work-item-form-control-wrapper > * > *, .work-item-form-control-wrapper > *, .work-item-form-control-content, .work-item-form-control, .work-item-form-collapsible-section-content > *,
 .taskboard-collapsed-row,
 .taskboard-expanded-cell,
@@ -85,24 +85,10 @@ text-div>textarea {
     opacity: 0 !important;
 }
 
-/* azdo-darkreader */
-:root {
-    --darkreader-background-ffffff: transparent !important;
-}
-
-/* azdo-no footer */
-footer {
-    display: none !important;
-}
-
-/* azdo-no borders */
-div[role="separator"] {
-    opacity: 0 !important;
-}
-
-div[role="navigation"], div[role="menubar"] {
-    border-color: transparent !important;
-    box-shadow: none !important;
+/* azdo-No sticky table headers */
+.bolt-table th {
+    position: static !important;
+    background-color: transparent !important;
 }
 
 /* azdo-PBI comment corner-radius */
@@ -114,3 +100,19 @@ div[role="navigation"], div[role="menubar"] {
 .work-item-form-control > .rooster-wrapper {
     border-radius: 10px !important;
 }
+
+/* azdo-darkreader */
+:root {
+    --darkreader-background-ffffff: transparent !important;
+}
+
+/* azdo-no borders */
+div[role="separator"] {
+    opacity: 0 !important;    
+}
+
+div[role="navigation"], div[role="menubar"] {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
