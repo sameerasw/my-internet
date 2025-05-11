@@ -44,7 +44,7 @@ text-div>textarea {
 .widget-host,
 .ms-DetailsHeader,
 .kanban-board, .kanban-board-column, .kanban-board-column-header-container,
-.bolt-table, .bolt-table th, .bolt-card, .bolt-tabbar, .bolt-page, .bolt-page-grey, .bolt-page-white .bolt-textfield, .bolt-textfield-input,
+.bolt-table, .bolt-table th, .bolt-card, .bolt-tabbar, .bolt-page, .bolt-page-grey, .bolt-page-white .bolt-textfield, .bolt-textfield-input, .bolt-callout-content,
 .work-item-form-subheader, .work-item-form-control-wrapper > * > *, .work-item-form-control-wrapper > *, .work-item-form-control-content, .work-item-form-control, .work-item-form-collapsible-section-content > *,
 .taskboard-collapsed-row,
 .taskboard-expanded-cell,
@@ -52,19 +52,21 @@ text-div>textarea {
 .board-actions-menu,
 #root,
 .content-section,
-.fabric-icon, .bolt-textfield > button,
-.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input, .monaco-editor .margin {
+.fabric-icon, .bolt-textfield > button, .activity-feed-timeline-iteration,
+.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input, .monaco-editor .margin,
+.repos-changes-viewer .sticky {
     background-color: transparent !important;
 }
 
-.bolt-callout-content {
-    background-color: transparent !important;
+.activity-feed-timeline-dot {
+    background-color: white;
 }
 
 .devops-dashboard-grid .grid-item, 
 .markdown-component, 
 .wit-card,
-.repos-file-editor-background {
+.repos-file-editor-background,
+.repos-summary-header > div:first-child {
     background-color: rgba(32, 31, 30, 0.5) !important;
 }
 
