@@ -1,4 +1,4 @@
-/* transparency */
+/* azdo-transparency */
 html,
 body,
 nav,
@@ -85,32 +85,32 @@ text-div>textarea {
     opacity: 0 !important;
 }
 
-/* darkreader */
+/* azdo-darkreader */
 :root {
     --darkreader-background-ffffff: transparent !important;
 }
 
-/* no footer */
+/* azdo-no footer */
 footer {
     display: none !important;
 }
 
-/* no borders */
+/* azdo-no borders */
 div[role="separator"] {
     opacity: 0 !important;
 }
 
-div[role="navigation"] {
+div[role="navigation"], div[role="menu-bar"] {
     border-color: transparent !important;
     box-shadow: none !important;
 }
 
-/* PBI comment corner-radius */
+/* azdo-PBI comment corner-radius */
 .enter-new-comment > .rooster-wrapper {
     border-radius: 10px !important;
 }
 
-/* PBI text-field corner-radius */
+/* azdo-PBI text-field corner-radius */
 .work-item-form-control > .rooster-wrapper {
     border-radius: 10px !important;
 }
