@@ -2155,6 +2155,11 @@
       "transparency": ".body,.panelhead, .app, .rightbar, .rightbar > div, .panelblock{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\nbody{\n  background-color: #000b !important;\n  background-image: none !important;\n}",
       "more width": ".flexrow.app > div, .flexrow.app > div > div, .flexrow.app > div .panelblock.mainblock{\n  width: 100vw !important;\n}\n\n.block > div, .panelhead{\n  width: 100% !important;\n  max-width: 100vw !important;\n}",
       "hover": ".cmanager + div > div:nth-child(1){\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}"
+    },
+    "dev.azure.com.css": {
+      "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp,\n#app,\n.app,\n.app-root, \nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\n#pass-sidebar,\n#main,\nmain,\n#content,\nsection,\n#__next,\n#navigation-wrapper,\n#global-navbar,\n.head.notfixed,\n#app > div, .btm-nav > a,\nbody.dark_mode, body.light_mode,\ntext-div > textarea{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer{\n  display: none !important;\n}"
     }
   }
 }
