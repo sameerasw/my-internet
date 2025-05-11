@@ -37,14 +37,14 @@ text-div>textarea {
     transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-.region-header, .region-header-menubar, 
+.region-header, .region-header-menubar, .region-header .search.focus,
 .top-level-navigation, 
-.project-navigation, .project-overview-tab,
+.project-navigation, .project-overview-tab, .project-overview .processTemplateName,
 .wiki-nav-bg, .comment-item, .comment-thread, .markdown-editor-text-input, .markdown-editor-toolbar, .markdown-textarea,
 .widget-host,
 .ms-DetailsHeader,
 .kanban-board, .kanban-board-column, .kanban-board-column-header-container,
-.bolt-table, .bolt-table th, .bolt-tabbar, .bolt-page, .bolt-page-grey, .bolt-page-white .bolt-textfield, .bolt-textfield-input, .bolt-callout-content,
+.bolt-table, .bolt-table th, .bolt-tabbar, .bolt-master-panel, .bolt-page, .bolt-page-grey, .bolt-page-white, .bolt-textfield, .bolt-textfield-input, .bolt-callout-content, .bolt-card
 .work-item-form-subheader, .work-item-form-control-wrapper > * > *, .work-item-form-control-wrapper > *, .work-item-form-control-content, .work-item-form-control, .work-item-form-collapsible-section-content > *,
 .taskboard-collapsed-row,
 .taskboard-expanded-cell,
@@ -64,7 +64,7 @@ text-div>textarea {
 
 .devops-dashboard-grid .grid-item, 
 .markdown-component, 
-.wit-card, .bolt-card,
+.wit-card, .bolt-card:hover,
 .repos-file-editor-background,
 .repos-summary-header > div:first-child {
     background-color: rgba(32, 31, 30, 0.5) !important;
