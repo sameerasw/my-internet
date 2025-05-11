@@ -53,7 +53,8 @@ text-div>textarea {
 .content-section,
 .fabric-icon, .bolt-textfield > button, .activity-feed-timeline-iteration,
 .monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input, .monaco-editor .margin,
-.repos-changes-viewer .sticky {
+.testplans-hub-refresh-portal-component,
+.ci-yaml-editor-header {
     background-color: transparent !important;
 }
 
@@ -70,7 +71,9 @@ text-div>textarea {
 .devops-dashboard-grid .grid-item, 
 .markdown-component, 
 .wit-card:not(.taskboard-card), .bolt-card,
-.repos-file-editor-background,
+.repos-file-editor-background, .repos-commit-editor-background,
+.ci-yaml-editor-tab,
+.selected,
 .repos-summary-header > div:first-child {
     background-color: rgba(32, 31, 30, 0.5) !important;
 }
@@ -97,6 +100,12 @@ text-div>textarea {
     background-color: transparent !important;
 }
 
+/* azdo-No sticky changes viewer */
+.repos-changes-viewer .sticky {
+    position: static !important;
+    background-color: transparent !important;
+}
+
 /* azdo-PBI comment corner-radius */
 .enter-new-comment > .rooster-wrapper {
     border-radius: 10px !important;
@@ -112,12 +121,14 @@ text-div>textarea {
     --darkreader-background-ffffff: transparent !important;
 }
 
-/* azdo-no borders */
+/* azdo-No borders */
 div[role="separator"] {
     opacity: 0 !important;    
 }
 
-div[role="navigation"], div[role="menubar"] {
+div[role="navigation"], 
+div[role="menubar"],
+.repos-compare-toolbar {
     border-color: transparent !important;
     box-shadow: none !important;
 }
