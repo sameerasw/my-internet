@@ -40,11 +40,11 @@ text-div>textarea {
 .region-header, .region-header-menubar, 
 .top-level-navigation, 
 .project-navigation, .project-overview-tab,
-.wiki-nav-bg,
+.wiki-nav-bg, .comment-item, .comment-thread, .markdown-editor-text-input, .markdown-editor-toolbar, .markdown-textarea,
 .widget-host,
 .ms-DetailsHeader,
 .kanban-board, .kanban-board-column, .kanban-board-column-header-container,
-.bolt-table, .bolt-table th, .bolt-card, .bolt-tabbar, .bolt-page, .bolt-textfield, .bolt-textfield-input,
+.bolt-table, .bolt-table th, .bolt-card, .bolt-tabbar, .bolt-page, .bolt-page-grey, .bolt-page-white .bolt-textfield, .bolt-textfield-input,
 .work-item-form-subheader, .work-item-form-control-wrapper > * > *, .work-item-form-control-wrapper > *, .work-item-form-control-content, .work-item-form-control, .work-item-form-collapsible-section-content > *,
 .taskboard-collapsed-row,
 .taskboard-expanded-cell,
@@ -52,11 +52,15 @@ text-div>textarea {
 .board-actions-menu,
 #root,
 .content-section,
-.fabric-icon {
+.fabric-icon, .bolt-textfield > button {
     background-color: transparent !important;
 }
 
-.devops-dashboard-grid .grid-item {
+.bolt-callout-content {
+    background-color: transparent !important;
+}
+
+.devops-dashboard-grid .grid-item, .markdown-component, .wit-card {
     background-color: rgba(32, 31, 30, 0.5) !important;
 }
 
@@ -86,7 +90,7 @@ footer {
     border-radius: 10px !important;
 }
 
-/* PBI description corner-radius */
+/* PBI text-field corner-radius */
 .work-item-form-control > .rooster-wrapper {
     border-radius: 10px !important;
 }
