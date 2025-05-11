@@ -100,7 +100,7 @@ div[role="separator"] {
     opacity: 0 !important;
 }
 
-div[role="navigation"], div[role="menu-bar"] {
+div[role="navigation"], div[role="menubar"] {
     border-color: transparent !important;
     box-shadow: none !important;
 }
