@@ -43,7 +43,7 @@ body, body[data-theme="ms.vss-web.vsts-theme-dark"] {
 }
 
 body[data-theme="ms.vss-web.vsts-theme"] {
-    --opaque-background: rgba(200, 200, 200, 0.5);
+    --opaque-background: rgba(134, 134, 134, 0.5);
     --foreground: black;
 }
 
