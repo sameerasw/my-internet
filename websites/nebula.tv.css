@@ -1,0 +1,82 @@
+/* transparency */
+html,
+body,
+nav,
+#nav,
+.nav,
+navbar,
+.navbar,
+#navbar,
+header,
+#header,
+.header,
+app,
+#app,
+.app,
+.app-root,
+#pass-sidebar,
+#main,
+main,
+#content,
+section,
+#__next,
+#global-navbar,
+.head.notfixed,
+#app-header,
+[aria-label="category menu"],
+[aria-label="video description"],
+nav > div,
+.css-2i128j,
+main > div,
+.css-1ivxsok,
+#home-header,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
+    background-color: transparent !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition:
+        background-color 0.5s ease-in-out,
+        background 0.5s ease-in-out,
+        border 0.5s ease-in-out,
+        box-shadow 0.5s ease-in-out !important;
+}
+
+/* header fixes */
+.css-1csnssi {
+    backdrop-filter: blur(0px) !important;
+    border-radius: 30px 30px 0px 0px !important;
+}
+.css-1ph5pfm {
+    backdrop-filter: blur(0px) !important;
+    border-radius: 0px 0px 30px 30px !important;
+}
+#app-header::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    backdrop-filter: blur(16px) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4)) !important;
+    border-radius: 30px !important;
+}
+#app-header {
+    margin: 0 20px !important;
+    background: none !important;
+    background-color: transparent !important;
+}
+
+/* darkreader */
+:root {
+    --darkreader-background-ffffff: transparent !important;
+}
+
+/* no footer */
+footer {
+    display: none !important;
+}

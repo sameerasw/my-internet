@@ -15,7 +15,7 @@ table,
 tbody,
 tr,
 td,
-body:not(:has([aria-label="Google Maps"])) div:not([role="img"], [style="background:#344DC9"], .immersive-container, [role="dialog"], [role="tablist"]), [role="columnheader"] {
+body:not(:has([aria-label="Google Maps"])) div:not([role="img"], [style="background:#344DC9"], .immersive-container, [role="dialog"], .k4o2Hc, [role="tablist"]), [role="columnheader"] {
   background: transparent !important;
   background-color: transparent !important;
 }
