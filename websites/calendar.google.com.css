@@ -27,6 +27,10 @@ li.F262Ye,
     box-shadow 0.5s ease-in-out !important;
 }
 
+iframe{
+  --gm3-sys-color-surface: transparent !important;
+}
+
 [class="FLFkR"]:last-child {
   border-bottom: none !important;
 }
