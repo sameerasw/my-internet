@@ -37,12 +37,20 @@ li.F262Ye,
   box-shadow: none !important;
 }
 
+.Wl4EPb {
+  border-radius: 0px !important;
+}
+
 /* calendr-glass */
 .T57Ued-BIzmGd.T57Ued-BIzmGd-OWXEXe-X9G3K.T2watc.aAW7Jd.APIQad,
 .iGiNKd.N9WDaf,
 .mXmivb.ogB5bf.u4s1Oc {
   backdrop-filter: blur(10px) !important;
   background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.uW2Fw-P5QLlc {
+  background-color: var(--gm3-sys-color-background) !important;
 }
 
 /* transparent settings */
@@ -63,4 +71,3 @@ li.F262Ye,
 .mXmivb.ogB5bf.u4s1Oc {
   border-radius: 10px !important;
 }
-
