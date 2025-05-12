@@ -15,7 +15,7 @@ li.F262Ye,
 .enOdEe-wZVHld-xMbwt,
 .pljXM,
 .p9lUpf,
-.gZ8fdb, #TasksApp, .N6pmG {
+.gZ8fdb {
   --gm3-sys-color-surface-container-low: transparent !important;
   --gm3-sys-color-surface-container-high: transparent !important;
   background-color: transparent !important;
@@ -25,38 +25,6 @@ li.F262Ye,
     background 0.5s ease-in-out,
     border 0.5s ease-in-out,
     box-shadow 0.5s ease-in-out !important;
-}
-
-iframe{
-  --gm3-sys-color-surface: transparent !important;
-
-  body,
-.mXmivb.NekIXe,
-.xWId8e,
-[jsname="mOIbvc"],
-.R6TFwe,
-.sS0sZd,
-[jsname="vhZMvf"],
-.LXTxRc-AznF2e,
-[jsname="KBzNL"],
-.enOdEe-wZVHld-aOtOmf,
-.RAaXne.Wyo4Qe.nfCJAf,
-li.F262Ye,
-.Wl4EPb,
-.enOdEe-wZVHld-xMbwt,
-.pljXM,
-.p9lUpf,
-.gZ8fdb, #TasksApp, .N6pmG {
-  --gm3-sys-color-surface-container-low: transparent !important;
-  --gm3-sys-color-surface-container-high: transparent !important;
-  background-color: transparent !important;
-  border: none !important;
-  transition:
-    background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
-    border 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out !important;
-}
 }
 
 [class="FLFkR"]:last-child {
