@@ -1,4 +1,4 @@
-/* azdo-planning-poker-transparency */
+/* transparency */
 html,
 body,
 nav,
@@ -35,12 +35,12 @@ text-div > textarea{
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-/* azdo-planning-poker-darkreader */
+/* darkreader */
 :root{
   --darkreader-background-ffffff: transparent !important;
 }
 
-/* azdo-planning-poker-no footer */
+/* no footer */
 footer{
   display: none !important;
 }
