@@ -2165,6 +2165,9 @@
       "azdo-PBI text-field corner-radius": ".work-item-form-control > .rooster-wrapper {\n    border-radius: 10px !important;\n}",
       "azdo-darkreader": ":root {\n    --darkreader-background-ffffff: transparent !important;\n}",
       "azdo-No borders": "div[role=\"separator\"] {\n    opacity: 0 !important;    \n}\n\ndiv[role=\"navigation\"], \ndiv[role=\"menubar\"],\n.repos-compare-toolbar,\n.left-toolbar.toolbar {\n    border-color: transparent !important;\n    box-shadow: none !important;\n}\n\n.toolbar {\n    border-top-color: transparent !important;\n}"
+    },
+    "planning-poker-azure-prod.firebaseapp.com.css": {
+      "transparency": "#root {\n    display: none !important;\n}"
     }
   }
 }
