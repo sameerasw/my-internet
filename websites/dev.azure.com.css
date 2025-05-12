@@ -82,7 +82,8 @@ text-div>textarea {
 .task-group-tasks .task-group-tasks-tab-content .overview-container,
 .title_65b34777, .fieldGroup_e7469fb8,
 input[type="text"], textarea[type="text"],
-.combo {
+.combo,
+.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur {
     background-color: rgba(32, 31, 30, 0.5) !important;
 }
 
