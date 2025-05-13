@@ -1010,7 +1010,7 @@
     },
     "imdb.com.css": {
       "imdb-transparency": "html,\nbody,\nnav,\nheader,\nmain,\n.ipc-page-content-container .ipc-page-grid,\n.ipc-page-grid__item > div,\n.leJvKv,\n.ipc-page-section--baseAlt,\nsection,\n#ipc-wrap-background-id,\n[data-testid=\"symphony-NavigationWidget\"],\n.ipc-tabs--base.ipc-tabs--shade1 {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
-      "imdb-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}\n\n#react-autowhatever-navSuggestionSearch,\n[role=\"presentation\"],\n.ipc-menu [role=\"presentation\"],\n.mdc-menu[role=\"presentation\"],\n.drawer__panel[role=\"presentation\"],\n[role=\"menu\"] {\n  background-color: var(--darkreader-bg--ipt-baseAlt-shade1-bg) !important;\n}",
+      "imdb-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}\n\n#react-autowhatever-navSuggestionSearch,\n[role=\"presentation\"]:not(.ipc-page-content-container, svg),\n.ipc-menu [role=\"presentation\"],\n.mdc-menu[role=\"presentation\"],\n.drawer__panel[role=\"presentation\"],\n[role=\"menu\"] {\n  background-color: var(--darkreader-bg--ipt-baseAlt-shade1-bg) !important;\n}",
       "imdb-no footer": "footer {\n  display: none !important;\n}"
     },
     "imgur.com.css": {
