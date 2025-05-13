@@ -23,7 +23,7 @@ section, .l-root,
 #__next, .landing-hero,
 #navigation-wrapper,
 #global-navbar,
-.head.notfixed,
+.head.notfixed, .main-container,
 #app > div, .btm-nav > a,
 body.dark_mode, body.light_mode,
 text-div > textarea{
