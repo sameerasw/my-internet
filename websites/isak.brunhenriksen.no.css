@@ -1,3 +1,4 @@
+/* transparency */
 body, html, .meny_topp, #logg{
   background-color: transparent !important;
 }
