@@ -26,7 +26,7 @@ section,
 }
 
 #react-autowhatever-navSuggestionSearch,
-[role="presentation"],
+[role="presentation"]:not(.ipc-page-content-container, svg),
 .ipc-menu [role="presentation"],
 .mdc-menu[role="presentation"],
 .drawer__panel[role="presentation"],
