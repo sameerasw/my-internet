@@ -29,7 +29,7 @@ nav,
 #nav-progressive-subnav,
 #nav-subnav,
 .a-expander-content-fade,
-.a-expander-partial-collapse-header {
+.a-expander-partial-collapse-header, .tux-bg-page {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
