@@ -56,18 +56,8 @@
 
 /* extension (zen) button scale for macos */
 #unified-extensions-button {
-  margin-left: 0.25em !important;
   image {
-    border-radius: 100px !important;
-    scale: 1.4;
-    
-    
-  filter: saturate(0) brightness(0.4) !important;
-  
-  
-@media (prefers-color-scheme: dark) {
-  filter: saturate(0) brightness(1.6) !important;
-  }
+    scale: 1.45;
   }
 }
 
@@ -86,7 +76,7 @@ tab[busy] {
 }
 
 /* empty tab image */
-#browser:has([zen-has-empty-tab=""]) .deck-selected .browserStack {
+/* #browser:has([zen-has-empty-tab=""]) .deck-selected .browserStack {
   background-image: var(--bg_img, url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Zen_Browser_logo_%28red_circles%29.svg")) !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -99,7 +89,7 @@ tab[busy] {
 @media (prefers-color-scheme: light) {
   filter: saturate(0) invert(1) !important;
   }
-}
+} */
 
 /* hide compact sidebar when no tabs open */
 #zen-main-app-wrapper[zen-compact-mode="true"]:not(
@@ -550,7 +540,7 @@ body:has(
 } */
 
 /* hover to show workspace dots */
-#zen-main-app-wrapper[zen-compact-mode="true"] #navigator-toolbox {
+/* #zen-main-app-wrapper[zen-compact-mode="true"] #navigator-toolbox {
   opacity: 1 !important;
 }
 
@@ -558,6 +548,29 @@ body:has(
   bottom: -25px !important;
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
+} */
+
+.unified-extensions-item{
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+.zen-current-workspace-indicator{
+  order: 100000 !important;
+  opacity: 1;
+  bottom: 0px !important;
+  min-height: initial !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+body:not(:has(zen-workspace-icons:hover, .zen-current-workspace-indicator:hover)){
+.zen-current-workspace-indicator{
+  opacity: 0 !important;
+  bottom: -50px !important;
+  height: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
 }
 
 #navigator-toolbox:hover {
@@ -568,8 +581,15 @@ body:has(
   }
 }
 
+#zen-sidebar-bottom-buttons:not(:hover){
+  .unified-extensions-item:not(:has([open])){
+    opacity: 0 !important;
+  }
+}
+
 #zen-sidebar-bottom-buttons {
   order: 1 !important;
+  margin-bottom: 1em !important;
 }
 
 #zen-media-controls-toolbar {
@@ -599,3 +619,165 @@ hbox[zen-split="true"].deck-selected{
   opacity: 0 !important; 
 /*   display: none !important; */
 }
+
+
+
+/* animated toolbar icons */
+
+#zen-sidebar-bottom-buttons .toolbarbutton-1 {
+  & > .toolbarbutton-icon, & > .toolbarbutton-text, & > .toolbarbutton-badge-stack {
+        border-radius: 11px !important;
+  }
+}
+#zen-sidebar-top-buttons-customization-target .toolbarbutton-1 {
+  & > .toolbarbutton-icon, & > .toolbarbutton-text, & > .toolbarbutton-badge-stack {
+        border-radius: 9.5px !important;
+  }
+}
+
+/* animation for settings button */
+@keyframes discord-hover {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+/* animated bg and radius declaration for buttons */
+#preferences-button, #downloads-button, #back-button, #forward-button{
+  transition: background-color 0.2s ease-in-out !important;
+  border-radius: 9.5px !important;
+}
+
+
+/* Trigger the animation on hover */
+
+#preferences-button:hover{
+  background-color: var(--toolbarbutton-hover-background) !important;
+  image.toolbarbutton-icon {
+    animation: discord-hover 1s cubic-bezier(0.35, 0.15, 0.12, 1);
+    animation-fill-mode: forwards; /* Optional: keeps it at 360deg */
+    background-color: transparent !important;
+  }
+}
+
+/* animation for tabload button */
+@keyframes rotate-bounce {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(25deg);    /* main overshoot */
+  }
+  60% {
+    transform: rotate(-10deg);   /* bounce back */
+  }
+  100% {
+    transform: rotate(0deg);     /* settle */
+  }
+}
+
+#reload-button:hover {
+  animation: rotate-bounce 0.7s cubic-bezier(0.4, 0.2, 0.55, 1);
+  animation-fill-mode: forwards;
+  transform-origin: center;
+}
+
+/* animate back and forward buttons */
+@keyframes micro-wiggle-left {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-2px); /* slight push left */
+  }
+  60% {
+    transform: translateX(1px);  /* slight overcorrection */
+  }
+  100% {
+    transform: translateX(0);    /* settle back */
+  }
+}
+
+@keyframes micro-wiggle-right {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(2px);  /* slight push right */
+  }
+  60% {
+    transform: translateX(-1px); /* slight overcorrection */
+  }
+  100% {
+    transform: translateX(0);    /* settle back */
+  }
+}
+
+#back-button:hover{
+  background-color: var(--toolbarbutton-hover-background) !important;
+  .toolbarbutton-icon{
+  animation: micro-wiggle-left 0.528s ease-out;
+    background-color: transparent !important;
+  }
+}
+
+#forward-button:hover{
+  background-color: var(--toolbarbutton-hover-background) !important;
+  .toolbarbutton-icon{
+  animation: micro-wiggle-right 0.528s ease-out;
+    background-color: transparent !important;
+  }
+}
+
+/* download button animation */
+@keyframes bounce-hold-down {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(2px);   /* press down */
+  }
+  45% {
+    transform: translateY(2.2px);   /* hold for a moment */
+  }
+  90% {
+    transform: translateY(-1px);  /* bounce up slightly */
+  }
+  100% {
+    transform: translateY(0);     /* return to center */
+  }
+}
+
+#downloads-button:hover{
+  background-color: var(--toolbarbutton-hover-background) !important;
+  .toolbarbutton-badge-stack{
+    animation: bounce-hold-down 0.45s cubic-bezier(0.6, 0.05, 0.3, 1);
+    background-color: transparent !important;
+  }
+}
+
+/* animation for history button */
+@keyframes rotate-bounce {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-25deg);    /* main overshoot */
+  }
+  60% {
+    transform: rotate(10deg);   /* bounce back */
+  }
+  100% {
+    transform: rotate(0deg);     /* settle */
+  }
+}
+
+#history-panelmenu:hover {
+  animation: rotate-bounce 0.7s cubic-bezier(0.4, 0.2, 0.55, 1);
+  animation-fill-mode: forwards;
+  transform-origin: center;
+}
+
