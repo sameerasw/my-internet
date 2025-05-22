@@ -51,3 +51,10 @@ text-div > textarea{
 footer{
   display: none !important;
 }
+
+/* no border around project icons */
+.avatar {
+  background: none !important;
+  border: 0px !important;
+  box-shadow: none !important;
+}
