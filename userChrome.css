@@ -443,6 +443,8 @@ tab-group .tabbrowser-tab::before {
   #context_undoCloseTab,
   menuseparator,
   #context-back,
+  #context-inspect-a11y,
+  #context-take-screenshot,
   #context-forward,
   #context-reload,
   #context-bookmarkpage,
