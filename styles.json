@@ -29,8 +29,7 @@
       "bmac-No Footer": ".pb-70[data-v-27aa2dc8=\"\"] {\n  display: none !important;\n}"
     },
     "+facebook.com.css": {
-      "fb-transparecy": ":root {\n  --web-wash: #00000000 !important;\n  --nav-bar-background: #00000000 !important;\n}\n\nbody,\n.x2bj2ny,\n#mount_0_0_u1\n  > div:nth-child(1)\n  > div:nth-child(1)\n  > div:nth-child(1)\n  > div:nth-child(3),\n._95k9,\n._6luv,\n.html-div,\n.xezm23g,\n.x1n2onr6,\n.xt0b8zv {\n  background-color: #00000000 !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
-      "fb-translucent overlays": ":root {\n  --backdrop-bg: rgba(255, 255, 255, 0.75);\n  --backdrop-filter: blur(16px) saturate(180%) !important;\n}\n@media (prefers-color-scheme: dark) {\n  :root {\n    --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n  }\n}\n.__fb-dark-mode {\n  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;\n}\n.__fb-light-mode {\n  --backdrop-bg: rgba(255, 255, 255, 0.75) !important;\n}\n\n.xuk3077,\n[role=\"dialog\"] > div {\n  backdrop-filter: var(--backdrop-filter) !important;\n  background-color: var(--backdrop-bg) !important;\n}",
+      "fb-transparecy": ":root {\n  --web-wash: #00000000 !important;\n  --nav-bar-background: #00000000 !important;\n}\n\nbody,\n.x2bj2ny,\n.x1n2onr6,\n.xt0b8zv,\n#mount_0_0_u1\n  > div:nth-child(1)\n  > div:nth-child(1)\n  > div:nth-child(1)\n  > div:nth-child(3) {\n  background-color: #00000000 !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n    box-shadow: none !important;\n}",
       "fb-other changes": "div.xnp8db0:nth-child(1),\ndiv.xnp8db0:nth-child(4) {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
     },
     "+github.dev.css": {
