@@ -1,4 +1,5 @@
 /* transparency */
+.navbar-header[_ngcontent-ng-c3179011237],
 html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, ms-app, .banner-and-app-container, ms-applets-gallery > .ng-star-inserted, ms-bidi-chat{
   background-color: transparent !important;
   background: none !important;
@@ -16,6 +17,8 @@ ms-bidi-audio-stream-part audio, ms-bidi-audio-part audio{
 }
 
 /* full transparency */
+.nav-toggle-item-revamp[_ngcontent-ng-c3179011237],
+.syntax-highlighted-code-wrapper footer,
 ms-run-settings, ms-gallery-panel, ms-prompt-input-wrapper > div, ms-library > div, ms-applets-gallery > .ng-star-inserted > div, .token-count-content, .syntax-highlighted-code-wrapper{
     background-color: light-dark(#fff5, #0003)  !important;
   }
