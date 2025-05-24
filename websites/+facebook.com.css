@@ -6,46 +6,20 @@
 
 body,
 .x2bj2ny,
+.x1n2onr6,
+.xt0b8zv,
 #mount_0_0_u1
   > div:nth-child(1)
   > div:nth-child(1)
   > div:nth-child(1)
-  > div:nth-child(3),
-._95k9,
-._6luv,
-.html-div,
-.xezm23g,
-.x1n2onr6,
-.xt0b8zv {
+  > div:nth-child(3) {
   background-color: #00000000 !important;
   transition:
     background-color 0.5s ease-in-out,
     background 0.5s ease-in-out,
     border 0.5s ease-in-out,
     box-shadow 0.5s ease-in-out !important;
-}
-
-/* fb-translucent overlays */
-:root {
-  --backdrop-bg: rgba(255, 255, 255, 0.75);
-  --backdrop-filter: blur(16px) saturate(180%) !important;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
-  }
-}
-.__fb-dark-mode {
-  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
-}
-.__fb-light-mode {
-  --backdrop-bg: rgba(255, 255, 255, 0.75) !important;
-}
-
-.xuk3077,
-[role="dialog"] > div {
-  backdrop-filter: var(--backdrop-filter) !important;
-  background-color: var(--backdrop-bg) !important;
+    box-shadow: none !important;
 }
 
 /* fb-other changes */
