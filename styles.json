@@ -2280,6 +2280,11 @@
       "immersive search": ".application-main{\n  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;\n}\n\nbody:has(header > .search-expanded) .application-main {\n  filter: blur(20px) !important;\n  scale: 1.05 !important;\n}",
       "Hide Separator in toolbar": ".AppHeader .AppHeader-globalBar .AppHeader-actions::before {\n  display: none !important;\n}",
       "better vertical timeline icon bg": ".TimelineItem-badge,\n.prc-Timeline-TimelineBadge-BqMiN {\n  background-color: light-dark(#fff8, #00000054) !important;\n  border: solid var(--borderWidth-thin) #3d444d !important;\n}"
+    },
+    "store.kde.org.css": {
+      "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header, #site-header,\n.header, .pui-sidebar,\napp, .product-browse-list-item,\n#app, #metaheader,\n.app,\n.app-root,\n#pass-sidebar,\n#main,\nmain,\n#content,\nsection,\n#__next,\n#navigation-wrapper,\n#global-navbar,\n.head.notfixed, \nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.sidebar-bg{\n  display: none !important;\n}\n\n.dropdown-menu{\n  background-color: light-dark(#fff, #222) !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": ".footer{\n  display: none !important;\n}"
     }
   }
 }
