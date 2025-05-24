@@ -20,8 +20,16 @@
   --drawer-section-background: #00000000 !important;
 }
 
-._ai01._ai07, .xy4wh6y{
+._ai01._ai07,
+.xy4wh6y,
+.x10l6tqk > ._aigw,
+.x10l6tqk > ._aigw > span > div,
+.x10l6tqk > ._aigw > span > div > div > span > div {
   background-color: transparent !important;
+}
+
+._aigs:has(._aigw > span > div) .x1m6msm {
+  opacity: 0 !important;
 }
 
 /* wa-layout fixes */
