@@ -16,15 +16,16 @@ ms-bidi-audio-stream-part audio, ms-bidi-audio-part audio{
   border-radius: 1em !important;
 }
 
-/* full transparency */
-.nav-toggle-item-revamp[_ngcontent-ng-c3179011237],
-.syntax-highlighted-code-wrapper footer,
-ms-run-settings, ms-gallery-panel, ms-prompt-input-wrapper > div, ms-library > div, ms-applets-gallery > .ng-star-inserted > div, .token-count-content, .syntax-highlighted-code-wrapper{
-    background-color: light-dark(#fff5, #0003)  !important;
-  }
-
-
 /* no footer */
 .disclaimer-container{
   display: none !important;
+}
+
+/* glass effect */
+.nav-toggle-item-revamp[_ngcontent-ng-c3179011237],
+.syntax-highlighted-code-wrapper footer,
+ms-run-settings, ms-gallery-panel, ms-prompt-input-wrapper > div, ms-library > div, ms-applets-gallery > .ng-star-inserted > div, .token-count-content, .syntax-highlighted-code-wrapper {
+  backdrop-filter: blur(10px) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  transition: none !important;
 }
