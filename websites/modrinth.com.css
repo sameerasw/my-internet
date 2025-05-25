@@ -6,13 +6,12 @@ nav,
 .nav,
 navbar,
 .navbar,
-#navbar, 
+#navbar,
 header,
 #header,
 .header,
 app,
 #app,
-.sidebar-wrap,
 section,
 #__next,
 #root,
@@ -38,6 +37,11 @@ text-div > textarea{
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
+/* disable that one ad */
+.ad-parent {
+    display: none !important;
+}
+
 /* darkreader */
 :root{
   --darkreader-background-ffffff: transparent !important;
@@ -46,4 +50,11 @@ text-div > textarea{
 /* no footer */
 footer{
   display: none !important;
+}
+
+/* no border around project icons */
+.avatar {
+  background: none !important;
+  border: 0px !important;
+  box-shadow: none !important;
 }
