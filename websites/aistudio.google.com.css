@@ -40,6 +40,7 @@ ms-bidi-audio-part audio {
 }
 
 /* glass effect */
+.model-prompt-container:not(:has(.thought-panel)),
 .nav-toggle-item-revamp[_ngcontent-ng-c3179011237],
 .syntax-highlighted-code-wrapper footer,
 ms-run-settings,
@@ -49,9 +50,13 @@ ms-library > div,
 ms-applets-gallery > .ng-star-inserted > div,
 .token-count-content,
 .syntax-highlighted-code-wrapper,
-.user-prompt-container[_ngcontent-ng-c4027155759]
-	.text-chunk[_ngcontent-ng-c4027155759] {
+.mat-expansion-panel-animations-enabled .mat-expansion-panel-header,
+.user-prompt-container .text-chunk {
 	backdrop-filter: blur(10px) !important;
 	background-color: rgba(0, 0, 0, 0.5) !important;
 	transition: none !important;
+}
+.model-prompt-container:not(:has(.thought-panel)) {
+  padding: 12px  !important;
+  border-radius: 16px !important;;
 }
