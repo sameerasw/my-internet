@@ -2300,6 +2300,12 @@
       "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp,\n#app,\n.app,\n.app-root,\n#pass-sidebar,\n#main,\nmain,\n#content,\nsection,\n#__next,\n#navigation-wrapper,\n#global-navbar,\n.head.notfixed, \nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.devsite-landing-row-item{\nbackground-color: light-dark(#fff, #222) !important;\nborder-radius: 10px !important;\n}\n\n.dgc-hero-fullscreen-row, .dgc-hero-fullscreen-row::after{\n  height: 100vh !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer , .devsite-footer{\n  display: none !important;\n}"
+    },
+    "+delhivery.com.css": {
+      "delhivery-Transparency": ".bg-white,\n.bg-black,\n.grey-bg,\n.dark-bg,\n.container,\n.card,\n.efficient_logistics_company,\n.suit-solution-wrap,\n.counter-wrap,\n.faq-wrap,\n.rto-testimonials,\n.ir-left-bx,\n.accordion,\n#simple-search,\n.ticket,\n.content-right,\n.marquee-container,\n.brands,\n.offers > div {\n  background-color: transparent !important;\n}",
+      "delhivery-Darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "delhivery-No Banner": ".banner-wrap,\n.rto-activation,\n.full-to-right-bg,\n.texture {\n  background: none !important;\n}",
+      "delhivery-No Footer": ".footer-wrap {\n  display: none !important;\n}"
     }
   }
 }
