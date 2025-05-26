@@ -19,6 +19,14 @@ c-wiz,
     border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
+@media (prefers-color-scheme: dark) {
+[aria-label="Side panel"]{
+  p, span, h1, h2, h3, h4, h5, h6, div, input{
+    color: #fff !important;
+  }
+}
+}
+
 /* meet-darkreader */
 :root {
   --darkreader-background-ffffff: transparent !important;
@@ -42,4 +50,3 @@ h1.r3f7Nb, .MZWksc:has(span), .sIR20d{
   border-radius: 1em !important;
   margin-bottom: 1em !important;
 }
-
