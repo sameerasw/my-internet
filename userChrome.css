@@ -375,6 +375,7 @@ tab-group:not([collapsed]) .tab-group-label {
 /* Label container margins */
 .tab-group-label-container {
   margin-top: 3px !important;
+  margin-left: 0 !important;
   margin-bottom: 0 !important;
 }
 tab-group[collapsed] .tab-group-label-container {
@@ -411,6 +412,23 @@ tab-group .tab-stack:hover {
 tab-group .tabbrowser-tab::before {
   display: none !important;
 }
+
+/* animations */
+
+/* Folder indicator on the tab group label */
+/* tab-group > .tab-group-label-container > label.tab-group-label::before {
+  content: '📁' !important;
+  font-size: 1em !important;
+  margin-right: 6px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  transition: transform 0.25s ease-in-out !important;
+}
+
+tab-group > .tab-group-label-container > label.tab-group-label[aria-expanded="true"]::before {
+  content: '📂' !important;
+}
+ */
 
 /*******************************************************************************
  * CONTEXT MENU CUSTOMIZATION
