@@ -7,8 +7,9 @@
   overflow: hidden !important;
 }
 
-html, body, #main-window, #navigator-toolbox, #nav-bar, #browser, #tabbrowser-tabpanels, .tab-background, #tabbrowser-tabs, #sidebar-main,body:not(:has(toolbarbutton[expanded])) #sidebar-wrapper{
+html, body, #main-window, #navigator-toolbox, #nav-bar, #browser, #tabbrowser-tabpanels, .tab-background:not([selected=""]), #tabbrowser-tabs, #sidebar-main,body:not(:has(toolbarbutton[expanded])) #sidebar-wrapper{
   background-color: transparent !important;
+/*   background-color: #2e3440 !important; */
   background: none !important;
   border: none !important;
 }
@@ -225,7 +226,7 @@ body:has(#urlbar:not([open])):has(#urlbar:not([open]):hover, #nav-bar-customizat
     }
     
     
-    .unified-extensions-item, #unified-extensions-button, #PanelUI-button, #sidebar-button{
+    #unified-extensions-button, #PanelUI-button, #sidebar-button{
       opacity: 1 !important;
     }
   
@@ -235,9 +236,9 @@ body:has(#urlbar:not([open])):has(#urlbar:not([open]):hover, #nav-bar-customizat
   }
   
   #nav-bar{
-    background-color: light-dark(#fff, #000) !important;
+    background-color: var(--toolbar-field-background-color) !important;
     opacity: 1 !important;
-    border-radius: 1em !important;
+    border-radius: 0.75em !important;
   }
   
 }
@@ -473,7 +474,8 @@ tab[soundplaying] .tab-background{
 
 /*  bg tint */
 #main-window{
-  background-color: light-dark(#fff5 , #0005) !important;      
+/*   background-color: light-dark(#fff5 , #0005) !important;       */
+/*   background-color: #2e3440 !important; */
 }
 
 /* urlbar mods */
@@ -506,4 +508,74 @@ tab[soundplaying] .tab-background{
 
 #urlbar{
   padding-left: 10px !important;
+}
+
+#nav-bar{
+  margin-left: 0.25em !important;
+  margin-top: 0.25em !important;
+    max-width: fit-content !important;
+  
+  
+  .unified-extensions-item{
+    width: 0px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    opacity: 0 !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+  
+  &:has(#unified-extensions-button:hover, .unified-extensions-item:hover, [open], #PanelUI-button:hover){
+  .unified-extensions-item{
+    width: 30px !important;
+    padding: inherit !important;
+    margin: initial !important;
+    opacity: 1 !important;
+    }
+  }
+  
+  [widget-id="sidebar-button"]{
+    display: none !important;
+  }
+  
+  #nav-bar-customization-target{
+    max-width: fit-content !important;
+  }
+}
+
+/* =================== context menu ===================== */
+#contentAreaContextMenu, #toolbar-context-menu, #tabContextMenu{
+  #context-savepage,
+  #context-pocket,
+  #context-sendpagetodevice,
+  #context-selectall,
+  menuseparator,
+  #context-viewsource,
+  #context-inspect-a11y,
+  menu.menu-iconic,
+  #context-openlinkintab,
+  #context-openlinkinusercontext-menu,
+  #context-openlink,
+  #context-openlinkprivate,
+  #context-bookmarklink,
+  #context-savelink,
+  #context-savelinktopocket,
+  
+  #toolbar-context-openANewTab,
+  #toolbar-context-reloadSelectedTab,
+  #toolbar-context-bookmarkSelectedTab,
+  #toolbar-context-undoCloseTab,
+  
+  #context_bookmarkTab,
+  #context_moveTabOptions,
+  .share-tab-url-item,
+  #context_reopenInContainer,
+  #context_selectAllTabs,
+  #context_closeTab,
+  #context_closeDuplicateTabs,
+  #context_closeTabOptions,
+  #context_undoCloseTab
+  {
+    display: none !important;
+  }
+  
 }
