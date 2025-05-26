@@ -1249,7 +1249,7 @@
       "medium-darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
     },
     "meet.google.com.css": {
-      "meet-transparency": "html,\nbody,\nnav,\nheader,\n[jsname=\"Jup3Tc\"],\n.c8mVDd,\nc-wiz,\n.Sdwpn.P9KVBf,\n.P9KVBf .dkjMxf,\n.R3Gmyc,\n.WUFI9b,\n[aria-label=\"navigational drawer\"] {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "meet-transparency": "html,\nbody,\nnav,\nheader,\n[jsname=\"Jup3Tc\"],\n.c8mVDd,\nc-wiz,\n.Sdwpn.P9KVBf,\n.P9KVBf .dkjMxf,\n.R3Gmyc,\n.WUFI9b,\n[aria-label=\"navigational drawer\"] {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n@media (prefers-color-scheme: dark) {\n[aria-label=\"Side panel\"]{\n  p, span, h1, h2, h3, h4, h5, h6, div, input{\n    color: #fff !important;\n  }\n}\n}",
       "meet-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "meet-no footer": "footer,\n.xDIlIc,\n.sxAeHb,\n[jsname=\"cDPtp\"] {\n  display: none !important;\n}",
       "meet-hidden": "h1.r3f7Nb, .MZWksc:has(span), .sIR20d{\n  display: none !important;\n}",
