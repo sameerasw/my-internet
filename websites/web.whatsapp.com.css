@@ -1,5 +1,7 @@
 /* wa-transparecy */
-.dark {
+:root {
+  --splashscreen-startup-background: #00000000 !important;
+  --splashscreen-startup-background-rgb: transparent !important;
   --app-background: #00000000 !important;
   --app-background-stripe: #00000000 !important;
   --WDS-app-wash: #00000000 !important;
