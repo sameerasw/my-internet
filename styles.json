@@ -2309,6 +2309,12 @@
       "twtr-layout fixes": ".r-1gn8etr {\n  position: sticky !important;\n  top: -50px !important;\n}",
       "twtr-hover": "div.css-175oi2r.r-vacyoi.r-ttdzmv,\ndiv.css-175oi2r.r-1pi2tsx.r-1wtj0ep.r-1rnoaur.r-o96wvk.r-is05cd {\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}",
       "twtr-no thanks": "[aria-label=\"Subscribe to Premium\"], [aria-label=\"Footer\"]{\n  display: none !important;\n}"
+    },
+    "codepen.io.css": {
+      "Transparency": ":root {\n\t--cp-bg: transparent;\n\t--cp-color-16: transparent\n}\n\nbody.editor {\n\tbackground: none !important\n}\nfooter {\n\tbackground: none !important\n}",
+      "Transparent Navbar": ":root {\n\t--cp-color-20: transparent !important\n}",
+      "Transparent Code Editor": ".box.box.box, .editor .top-boxes, .CodeMirror-gutter-wrapper, body.project .editor-pane, body.project .editor {\n\tbackground: none !important;\n}",
+      "Glass Effect": ":root {\n\t--cp-grid-item-bg: rgba(0,0,0,0.4)\n}"
     }
   }
 }
