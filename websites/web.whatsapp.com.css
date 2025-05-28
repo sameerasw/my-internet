@@ -62,6 +62,11 @@ div.x9f619.x78zum5.x6s0dn4.xl56j7k.xcxhlts.xktsk01.x1fqp7bg.x1d52u69.x889kno.x17
 }
 
 /* wa-overlay fixes  */
-div.xds687c:nth-child(1){
+div.xds687c:nth-child(1) {
   background-color: var(--background-document-with-captions) !important;
+}
+
+/* wa-chat-background */
+div.x10l6tqk.x13vifvy.x17qophe.xh8yej3.x5yr21d.x182nak8.x1wwuglj.x1vs56c6 {
+  background-image: none !important;
 }
