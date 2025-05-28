@@ -2395,6 +2395,11 @@
       "hidden": "[data-testid=\"top-bar\"]{\n  display: none !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "sxng.violets-purgatory.dev.css": {
+      "priv-transparecy": ":root {\n  --color-header-background: #00000000 !important;\n  --color-sidebar-border: #00000000 !important;\n  --color-result-background: #00000000 !important;\n}\n\nhtml,\n#search_header,\narticle {\n  background-color: #00000000 !important;\n  border: none !important;\n}",
+      "priv-no footer": "footer {\n  display: none !important;\n}",
+      "priv-other changes": "#links_on_top {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}\n\narticle {\n  margin: 0 !important;\n\n  img {\n    border-radius: 0.5em !important;\n  }\n}"
     }
   }
 }
