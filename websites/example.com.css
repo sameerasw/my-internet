@@ -44,6 +44,6 @@ text-div > textarea{
 }
 
 /* no footer */
-footer{
+footer, mfe-footer-pharos-footer, .footer, #footer{
   display: none !important;
 }
