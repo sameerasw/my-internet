@@ -20,7 +20,7 @@ c-wiz,
 }
 
 @media (prefers-color-scheme: dark) {
-[aria-label="Side panel"], [role="option"][aria-selected="false"], .ix4A2e, [role="banner"]{
+[aria-label="Side panel"], [role="option"][aria-selected="false"], .ix4A2e, [role="banner"], .pI48Vc, .PQ1s4c {
   p, i, span, h1, h2, h3, h4, h5, h6, div, input{
     color: #fff !important;
   }
@@ -55,7 +55,7 @@ div.uW2Fw-IE5DDf {
   display: none;
 }
 
+/* meet-no permission prompt */
 div.uW2Fw-Sx9Kwc.uW2Fw-Sx9Kwc-OWXEXe-n2to0e.UcM4Rc.YqDQLb.tTaNEd.uW2Fw-Sx9Kwc-OWXEXe-FNFY6c {
-  
   display: none;
 }
