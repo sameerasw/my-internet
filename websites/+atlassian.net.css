@@ -42,3 +42,22 @@ text-div > textarea{
    border-radius: 0.5em !important;
    padding: 5px !important;
  }
+
+/* no tab text */
+[data-testid="navigation-kit-ui-tab.ui.link-tab"]{
+   span:not(:has(svg)){
+  opacity: 0 !important;
+  width: 0em !important;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important
+   }
+  &:hover{
+    span:not(:has(svg)){
+  width: 6em !important;
+  opacity: 1 !important;
+   }
+  }
+}
+
+[aria-label="Project navigation"]::before{
+  display: none !important;
+}
