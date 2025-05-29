@@ -20,8 +20,8 @@ c-wiz,
 }
 
 @media (prefers-color-scheme: dark) {
-[aria-label="Side panel"]{
-  p, span, h1, h2, h3, h4, h5, h6, div, input{
+[aria-label="Side panel"], [role="option"][aria-selected="false"], .ix4A2e, [role="banner"]{
+  p, i, span, h1, h2, h3, h4, h5, h6, div, input{
     color: #fff !important;
   }
 }
@@ -49,4 +49,13 @@ h1.r3f7Nb, .MZWksc:has(span), .sIR20d{
 .mtr0Je{
   border-radius: 1em !important;
   margin-bottom: 1em !important;
+}
+
+div.uW2Fw-IE5DDf {
+  display: none;
+}
+
+div.uW2Fw-Sx9Kwc.uW2Fw-Sx9Kwc-OWXEXe-n2to0e.UcM4Rc.YqDQLb.tTaNEd.uW2Fw-Sx9Kwc-OWXEXe-FNFY6c {
+  
+  display: none;
 }
