@@ -366,42 +366,7 @@ slot:nth-child(1) {
   }
 }
 
-.tab-group-label{
-  border: none !important;
-  outline: none !important;
-  transition: all 0.2s ease-in-out !important;
-}
-
-[expanded=""] .tab-group-label{
-  border-radius: 7px 7px 0 0 !important;
-  width: 100% !important;
-  text-align: left !important;
-  padding-left: 10px !important;
-  
-  &:hover{
-    padding-left: 20px !important;
-  }
-}
-
-[collapsed=""] .tab-group-label{
-  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
-  color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
-  border-radius: 7px !important;
-  
-  &:hover{
-    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
-    color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
-  }
-}
-
-[expanded=""] tab-group:not([collapsed=""]){
-  margin-right: 10px !important;  
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
-  
-}
+/* pinned tabs */
 
  #vertical-pinned-tabs-container{
   background-color:  light-dark(#0001, #fff1) !important;
@@ -551,7 +516,6 @@ tab[soundplaying] .tab-background{
   menuseparator,
   #context-viewsource,
   #context-inspect-a11y,
-  menu.menu-iconic,
   #context-openlinkintab,
   #context-openlinkinusercontext-menu,
   #context-openlink,
@@ -578,4 +542,112 @@ tab[soundplaying] .tab-background{
     display: none !important;
   }
   
+}
+
+#contentAreaContextMenu, #toolbar-context-menu{
+  menu.menu-iconic{
+    display: none !important;
+  }
+}
+
+
+/* ================================ tab groups ==================================== */
+
+.tab-group-label-container{
+  padding: 0 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+
+tab-group tab .tab-background{
+  transition: all 0.2s ease-in-out !important;
+}
+
+tab-group:not(:has([selected])) .tab-group-label{
+/*   border: none !important; */
+  outline: none !important;
+  transition: all 0.2s ease-in-out !important;
+    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+  color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
+}
+
+[expanded=""] .tab-group-label{
+  border-radius: 7px 7px 0 0 !important;
+  width: 100% !important;
+  text-align: left !important;
+  padding-left: 10px !important;
+  
+  &:hover{
+    padding-left: 20px !important;
+  }
+}
+
+[collapsed=""] .tab-group-label{
+  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
+  color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
+  border-radius: 7px !important;
+  
+  &:hover{
+    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+    color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
+  }
+}
+
+[expanded=""] tab-group:not([collapsed=""]){
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  .tab-group-label{
+  border-top: 1px solid var(--tab-group-color-invert) !important;
+  border-left: 1px solid var(--tab-group-color-invert) !important;
+  border-right: 1px solid var(--tab-group-color-invert) !important;
+  }
+  
+}
+
+.tab-group-line{
+  display: none !important;
+}
+
+[expanded=""] tab-group tab{
+  .tab-background{
+  border-left: 1px solid var(--tab-group-color-invert) !important;
+  border-right: 1px solid var(--tab-group-color-invert) !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+    outline: none !important;
+  }
+  .tab-label{
+    color: light-dark(#000, #fff) !important;
+  }
+  
+  &[selected="true"]{
+    .tab-background{
+    background: color-mix(in srgb, var(--tab-group-color-invert) 40%, transparent) !important;
+    }
+  }
+  
+  &:hover{
+    .tab-background{
+    background: color-mix(in srgb, var(--tab-group-color-invert) 50%, transparent) !important;
+    }
+  }
+}
+
+
+
+tab-group tab:nth-last-child(1) .tab-background{
+  border-radius: 0 0 0.75em 0.75em !important;
+  border-bottom: 1px solid var(--tab-group-color-invert) !important;
+}
+
+tab-group .tab-content{
+  padding-left: 0.5em !important;
+}
+
+tab-group tab{
+  padding: 0 !important;
 }
