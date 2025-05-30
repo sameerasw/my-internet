@@ -52,6 +52,28 @@ body.dark_mode, body.light_mode{
   [data-testid="history-item-0"] > div.bg-\[var\(--sidebar-surface-tertiary\)\]{
     background-color: light-dark(#fff5, #1115)  !important;
   }
+form[data-type="unified-composer"] > div, #history .bg-token-bg-elevated-secondary {
+    background: rgba(0,0,0,0.4) !important;
+    border-radius: 16px;
+    backdrop-filter: blur(16px)
+}
+[data-testid="history-item-0"] {
+    margin-top: 5px;
+}
+.bg-\[var\(--sidebar-surface-tertiary\)\] {
+    background: rgba(0,0,0,0.2) !important;
+    border-radius: 16px;
+}
+.bg-token-bg-elevated-secondary {
+    background: none;
+}
+.bg-token-message-surface {
+    background: rgba(0,0,0,0.4)
+}
+section.popover.flex.h-full.w-full.flex-col.bg-token-main-surface-primary {
+  backdrop-filter: blur(16px);
+  background: rgba(0,0,0,0.5) !important;
+}
 
 
 /* cgpt-hidden elements */
