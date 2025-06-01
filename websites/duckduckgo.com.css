@@ -1,4 +1,4 @@
-/* ddg-transparecy */
+/* ddg-transparency */
 html, body, .desktop-homepage_root__Ikj1_, .site-wrapper, .metabar:not(.is-stuck), .tileview--grid .metabar--fixed::before, #zci-images, .zci-wrap, #zci-videos, main{
   background-color: transparent !important;
    transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
