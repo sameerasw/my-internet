@@ -2472,6 +2472,11 @@
       "glass effect": ".qTFz2{\n    box-shadow:  light-dark(#fff3, #0003) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;\n    background-color: light-dark(#fff8, #0005)  !important;\n  }",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer, hr.iUZlrc{\n  display: none !important;\n}"
+    },
+    "ubereats.com.css": {
+      "transparency": "body, html, #root, header, header div, main .rm, [data-testid=\"active-order-sticky-eta\"], .jv > div:nth-child(1) > div:nth-child(1), div.s7:nth-child(1), .ae.bh > div, .st, .jo{\n  background-color: #00000000 !important;\n  background: none !important;\n}\n\n\n#main-content > div:nth-child(1), .b0{\n  border-radius: 1em !important;\n  background-color: light-dark(#fff, #222) !important;\n}",
+      "map transparency": "iframe, canvas{\n  opacity: 0.6 !important;\n  border-radius: 1em !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
     }
   }
 }
