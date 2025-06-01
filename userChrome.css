@@ -1,12 +1,24 @@
+/*******************************************************************************
+ * IMPORTS AND ROOT VARIABLES
+ ******************************************************************************/
 /* @import url("https://github.com/ferrocyante/Tab-groups-for-Arc-H/raw/refs/heads/main/tab-groups.css")  */
 
-/* Hidden buttons */
+:root {
+  --bg_color: "https://github.com/sameerasw/my-internet/blob/main/wave-light.png?raw=true";
+  --bg_img: image-set(var(--bg_color)) !important;
+}
+
+/*******************************************************************************
+ * GENERAL UI ELEMENTS STYLING
+ ******************************************************************************/
+
+/* Hidden elements */
 /* #nav-bar-overflow-button, */
 #zen-current-workspace-indicator {
   display: none;
 }
 
-/* reduce the separaters width */
+/* Separator width reduction */
 #vertical-pinned-tabs-container-separator,
 #tabbrowser-arrowscrollbox-periphery:before,
 #TabsToolbar-customization-target:after,
@@ -14,7 +26,40 @@
   width: 30% !important;
 }
 
-/* Modify new tab entry */
+/* URL bar cleanup - hide unnecessary elements */
+#page-action-buttons,
+#identity-permission-box {
+  display: none !important;
+}
+
+/* No workspace indicator */
+#zen-current-workspace-indicator-container {
+  display: none !important;
+}
+
+/* No window controls - macOS */
+#zen-sidebar-top-buttons {
+  .titlebar-buttonbox-container {
+    display: none !important;
+  }
+}
+
+/* No split borders */
+hbox[zen-split="true"].deck-selected {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Fix find in page opacity */
+findbar * {
+  opacity: 1 !important;
+}
+
+/*******************************************************************************
+ * NEW TAB CUSTOMIZATION
+ ******************************************************************************/
+
+/* Modify new tab entry appearance */
 [label="Super Speedy Dial"] {
   .tab-label-container:after {
     content: "Home" !important;
@@ -31,13 +76,51 @@
   }
 }
 
-/* url bar cleanup */
-#page-action-buttons,
-#identity-permission-box {
-  display: none !important;
+/* Empty tab styling - currently commented out */
+/* #browser:has([zen-has-empty-tab=""]) .deck-selected .browserStack {
+  background-image: var(--bg_img, url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Zen_Browser_logo_%28red_circles%29.svg")) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  
+  background-size: 150px !important;
+  
+  filter: saturate(0) !important;
+  
+  
+@media (prefers-color-scheme: light) {
+  filter: saturate(0) invert(1) !important;
+  }
+} */
+
+/* Hide compact sidebar when no tabs open */
+#zen-main-app-wrapper[zen-compact-mode="true"]:not(
+    :has(#urlbar[open][zen-floating-urlbar="true"])
+  )
+  #browser:has([zen-empty-tab="true"][selected="true"])
+  #navigator-toolbox,
+#zen-main-app-wrapper[zen-compact-mode="true"]
+  #browser:has([zen-empty-tab="true"][selected="true"])
+  #urlbar:not([open]) {
+  opacity: 0 !important;
 }
 
-/* hidden sidebar buttons */
+/* #main-window:has(#zen-main-app-wrapper[zen-compact-mode="true"] hbox#browser:has([zen-empty-tab="true"][selected="true"])) #mainPopupSet > 
+    #tab-preview-panel{
+      display: none !important;
+    } */
+
+/* Dark theme for empty tab image */
+html:not([lwt-sidebar="dark"]) {
+  #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack browser {
+    filter: invert(1) saturate(0);
+  }
+}
+
+/*******************************************************************************
+ * SIDEBAR STYLING AND ANIMATIONS
+ ******************************************************************************/
+
+/* Hidden sidebar buttons with hover reveal */
 #zen-sidebar-icons-wrapper,
 #home-button {
   opacity: 0;
@@ -48,115 +131,7 @@
   }
 }
 
-/* extension (zen) button scale for macos */
-#unified-extensions-button {
-  margin-left: 0.25em !important;
-  image {
-    border-radius: 100px !important;
-    scale: 1.4;
-    
-    
-  filter: saturate(0) brightness(0.4) !important;
-  
-  
-@media (prefers-color-scheme: dark) {
-  filter: saturate(0) brightness(1.6) !important;
-  }
-  }
-}
-
-/* Fix find in page */
-findbar * {
-  opacity: 1 !important;
-}
-
-/* Animations */
-/* Loading tab animation */
-tab[busy] {
-  scale: 0.95 !important;
-  .tab-background {
-    opacity: 0.3 !important;
-  }
-}
-
-/* empty tab image */
-#browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
-  /* 	background-image: url("https://github.com/sameerasw/my-internet/blob/main/cmd-t.png?raw=true") !important; */
-
-  /* zen logo	*/
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Zen_Browser_logo_%28red_circles%29.svg") !important;
-
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: 50px !important;
-  filter: saturate(0) brightness(0.2) !important;
-  /* 	  background-size: cover !important; */
-  
-  
-@media (prefers-color-scheme: dark) {
-  filter: saturate(0) brightness(1.8) !important;
-  }
-}
-
-/* hide compact sidebar when no tabs open */
-#zen-main-app-wrapper[zen-compact-mode="true"]:not(
-    :has(#urlbar[open][zen-floating-urlbar="true"])
-  )
-  #browser:has([zen-empty-tab="true"][selected="true"])
-  #navigator-toolbox,
-#zen-main-app-wrapper[zen-compact-mode="true"]
-  #browser:has([zen-empty-tab="true"][selected="true"])
-  #urlbar:not([open]){
-  opacity: 0 !important;
-    
-}
-
-/* #main-window:has(#zen-main-app-wrapper[zen-compact-mode="true"] hbox#browser:has([zen-empty-tab="true"][selected="true"])) #mainPopupSet > 
-    #tab-preview-panel{
-      display: none !important;
-    } */
-
-/* dark theme for image */
-html:not([lwt-sidebar="dark"]) {
-  #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack browser {
-    filter: invert(1) saturate(0);
-  }
-}
-
-/* custom extension icons */
-/* stylebot */
-[label="Stylebot"] image {
-  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important;
-}
-
-/* dark reader */
-[label="Dark Reader"] image {
-  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/moon-512.png") !important;
-}
-
-/* Zen Internet */
-[label="Zen Internet"] image {
-/*   list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important; */
-}
-
-/* Proton Pass free */
-[label="Proton Pass: Free Password Manager"] image {
-  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/key-128.png") !important;
-}
-
-/* dark theme */
-[devtoolstheme="dark"] {
-  [label="Dark Reader"],
-  [label="Stylebot"],
-/*   [label="Zen Internet"], */
-  [label="Proton Pass: Free Password Manager"]{
-    image {
-      filter: invert(1);
-    }
-  }
-}
-
-/* sidebar mods */
+/* Sidebar background transparency */
 #sidebar-box,
 #bookmarksPanel.sidebar-panel,
 #sidebar-header,
@@ -168,6 +143,7 @@ html,
   box-shadow: none !important;
 }
 
+/* Sidebar styling and border radius */
 /* body > browser:nth-child(2)[disableglobalhistory="true"], */
 #sidebar {
   border-radius: 1em !important;
@@ -175,10 +151,12 @@ html,
   margin: 0 14px 14px 0 !important;
 }
 
+/* Hide GenAI provider selector in sidebar */
 #header:has(select[data-l10n-id="genai-header-provider-menu"]) {
   display: none !important;
 }
 
+/* Sidebar header animation */
 #sidebar-header {
   transition: all 0.3s ease-in-out !important;
   top: 0px !important;
@@ -192,7 +170,7 @@ html,
   }
 }
 
-/* no border split view handle fix */
+/* No border split view handle fix */
 .zen-view-splitter-header {
   transition: margin 0.3s ease-in-out;
   &:hover {
@@ -200,7 +178,129 @@ html,
   }
 }
 
-/*  transparent url bar  */
+/* Sidebar bottom button positioning */
+#zen-sidebar-bottom-buttons {
+  order: 1 !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* Hide workspace dots with hover reveal */
+/* #zen-main-app-wrapper[zen-compact-mode="true"] #navigator-toolbox {
+  opacity: 1 !important;
+}
+
+#zen-sidebar-bottom-buttons:not(:has([open="true"])) {
+  bottom: -25px !important;
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+} */
+
+/* Workspace indicator styling and animation */
+.unified-extensions-item {
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+.zen-current-workspace-indicator {
+  order: 100000 !important;
+  opacity: 1;
+  bottom: 0px !important;
+  min-height: initial !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+body:not(
+    :has(zen-workspace-icons:hover, .zen-current-workspace-indicator:hover)
+  ) {
+  .zen-current-workspace-indicator {
+    opacity: 0 !important;
+    bottom: -50px !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+/* Show controls on hover */
+#navigator-toolbox:hover {
+  #zen-sidebar-bottom-buttons,
+  #zen-media-controls-toolbar {
+    bottom: 0px !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Hide extensions when not hovering sidebar bottom */
+#zen-sidebar-bottom-buttons:not(:hover) {
+  .unified-extensions-item:not(:has([open])) {
+    opacity: 0 !important;
+  }
+}
+
+
+/*******************************************************************************
+ * EXTENSIONS STYLING
+ ******************************************************************************/
+
+/* Extension button scale for macOS */
+#unified-extensions-button {
+  image {
+    scale: 1.45;
+  }
+}
+
+/* Custom extension icons */
+/* Stylebot */
+[label="Stylebot"] image {
+  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important;
+}
+
+/* Dark Reader */
+[label="Dark Reader"] image {
+  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/moon-512.png") !important;
+}
+
+/* Zen Internet */
+[label="Zen Internet"] image {
+  /*   list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important; */
+}
+
+/* Proton Pass */
+[label="Proton Pass: Free Password Manager"] image {
+  list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/key-128.png") !important;
+}
+
+/* Dark theme invert for extension icons */
+[devtoolstheme="dark"] {
+  [label="Dark Reader"],
+  [label="Stylebot"],
+  /*   [label="Zen Internet"], */
+  [label="Proton Pass: Free Password Manager"] {
+    image {
+      filter: invert(1);
+    }
+  }
+}
+
+/*******************************************************************************
+ * ANIMATIONS AND VISUAL EFFECTS
+ ******************************************************************************/
+
+/* Loading tab animation */
+tab[busy] {
+  scale: 0.95 !important;
+  .tab-background {
+    opacity: 0.3 !important;
+  }
+}
+
+/* Scale effect when tab bar is not expanded */
+#tabbrowser-tabs:not([expanded]) tab,
+#tabbrowser-tabs:not([expanded]) tab-group {
+  scale: 1.1 !important;
+}
+
+/* Transparent URL bar styling */
 #urlbar[open][zen-floating-urlbar="true"] {
   #urlbar-background {
     background-color: light-dark(
@@ -210,7 +310,131 @@ html,
   }
 }
 
-/* context menu */
+/* Transparent glance styling */
+.zen-glance-background > vbox {
+  mask-image: linear-gradient(
+    to right,
+    black 0%,
+    black 4%,
+    transparent 7%,
+    transparent 93.5%,
+    black 96%,
+    black 100%
+  );
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+.zen-glance-overlay > vbox {
+  background-color: light-dark(#fff7, #0007) !important;
+  margin-top: 0.5% !important;
+  margin-bottom: 0.5% !important;
+  height: 98% !important;
+}
+
+/*******************************************************************************
+ * TAB GROUPS STYLING
+ ******************************************************************************/
+
+/* Tab group label styling */
+.tab-group-label,
+tab-group .tab-group-label {
+  width: 100% !important;
+  border: none !important;
+  border-radius: 1em !important;
+  outline: none !important;
+  margin-right: 0 !important;
+  text-align: left !important;
+  padding-left: 10px !important;
+  background: color-mix(
+    in srgb,
+    var(--tab-group-color) 20%,
+    transparent
+  ) !important;
+  color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
+  scale: 1 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+tab-group .tab-group-label:hover {
+  padding-left: 15px !important;
+  background: color-mix(
+    in srgb,
+    var(--tab-group-color) 50%,
+    transparent
+  ) !important;
+  color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
+}
+tab-group .tab-group-label:active {
+  scale: 0.9 !important;
+}
+tab-group:not([collapsed]) .tab-group-label {
+  border: 1.5px dashed
+    color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+}
+
+/* Label container margins */
+.tab-group-label-container {
+  margin-top: 3px !important;
+  margin-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+tab-group[collapsed] .tab-group-label-container {
+  margin-bottom: 3px !important;
+}
+
+/* Hide label container's after pseudo */
+.tab-group-label-container::after {
+  display: none !important;
+}
+
+/* Tab stack styles */
+.tab-stack,
+tab-group .tab-stack {
+  transition: all 0.3s ease-in-out !important;
+  border-radius: 1.2em !important;
+  background: color-mix(
+    in srgb,
+    var(--tab-group-color) 20%,
+    transparent
+  ) !important;
+  margin-block: 2px !important;
+}
+.tab-stack:hover,
+tab-group .tab-stack:hover {
+  background: color-mix(
+    in srgb,
+    var(--tab-group-color) 50%,
+    transparent
+  ) !important;
+}
+
+/* Hide tab indicator */
+tab-group .tabbrowser-tab::before {
+  display: none !important;
+}
+
+/* animations */
+
+/* Folder indicator on the tab group label */
+/* tab-group > .tab-group-label-container > label.tab-group-label::before {
+  content: '📁' !important;
+  font-size: 1em !important;
+  margin-right: 6px !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+  transition: transform 0.25s ease-in-out !important;
+}
+
+tab-group > .tab-group-label-container > label.tab-group-label[aria-expanded="true"]::before {
+  content: '📂' !important;
+}
+ */
+
+/*******************************************************************************
+ * CONTEXT MENU CUSTOMIZATION
+ ******************************************************************************/
+
+/* Context menu styling and hidden items */
 #tabContextMenu,
 #contentAreaContextMenu,
 #toolbar-context-menu {
@@ -232,6 +456,8 @@ html,
   #context_undoCloseTab,
   menuseparator,
   #context-back,
+  #context-inspect-a11y,
+  #context-take-screenshot,
   #context-forward,
   #context-reload,
   #context-bookmarkpage,
@@ -258,79 +484,16 @@ html,
   #toolbar-context-openANewTab,
   #context_openANewTab,
   #context-setDesktopBackground,
-  #context-sendimage{
+  #context-sendimage {
     display: none !important;
   }
 }
 
+/*******************************************************************************
+ * CTRL+TAB SWITCHER STYLING
+ ******************************************************************************/
 
-/* Tab group label styling */
-.tab-group-label,
-tab-group .tab-group-label {
-  width: 100% !important;
-  border: none !important;
-  border-radius: 1em !important;
-  outline: none !important;
-  margin-right: 0 !important;
-  text-align: left !important;
-  padding-left: 10px !important;
-  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
-  color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
-  scale: 1 !important;
-  transition: all 0.2s ease-in-out !important;
-}
-tab-group .tab-group-label:hover {
-  padding-left: 15px !important;
-  background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
-  color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
-}
-tab-group .tab-group-label:active {
-  scale: 0.9 !important;
-}
-tab-group:not([collapsed]) .tab-group-label {
-  border: 1.5px dashed color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
-}
-
-/* Label container margins */
-.tab-group-label-container {
-  margin-top: 3px !important;
-  margin-bottom: 0 !important;
-}
-tab-group[collapsed] .tab-group-label-container {
-  margin-bottom: 3px !important;
-}
-
-/* Hide label container's after pseudo */
-.tab-group-label-container::after {
-  display: none !important;
-}
-
-/* Tab stack styles */
-.tab-stack,
-tab-group .tab-stack {
-  transition: all 0.3s ease-in-out !important;
-  border-radius: 1.2em !important;
-  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
-  margin-block: 2px !important;
-}
-.tab-stack:hover,
-tab-group .tab-stack:hover {
-  background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
-}
-
-/* Hide tab indicator */
-tab-group .tabbrowser-tab::before {
-  display: none !important;
-}
-
-/* Scale effect when tab bar is not expanded */
-#tabbrowser-tabs:not([expanded]) tab,
-#tabbrowser-tabs:not([expanded]) tab-group {
-  scale: 1.1 !important;
-}
-
-
-/* ctrl tab is back */
+/* Ctrl+Tab preview panel styling */
 #ctrlTab-previews {
   border-radius: 2em !important;
   margin-bottom: 2em !important;
@@ -343,6 +506,7 @@ tab-group .tabbrowser-tab::before {
   background-color: light-dark(#fff8, #0005) !important;
 }
 
+/* Preview image styling */
 .ctrlTab-canvas img {
   border-radius: 1em !important;
   transition: all 0.5s ease-in-out !important;
@@ -361,7 +525,7 @@ tab-group .tabbrowser-tab::before {
   }
 }
 
-/* ctrl tab visuals and animations */
+/* Panel background and blur effect */
 #ctrlTab-panel {
   background-color: transparent !important;
   --panel-background: transparent !important;
@@ -376,33 +540,13 @@ body:has(
   filter: blur(10px) !important;
 }
 
-/* transparent glance */
-.zen-glance-background > vbox {
-  mask-image: linear-gradient(
-    to right,
-    black 0%,
-    black 4%,
-    transparent 7%,
-    transparent 93.5%,
-    black 96%,
-    black 100%
-  );
-  mask-repeat: no-repeat;
-  mask-size: 100% 100%;
-}
+/*******************************************************************************
+ * MEDIA PLAYER CUSTOMIZATION
+ ******************************************************************************/
 
-.zen-glance-overlay > vbox {
-  background-color: light-dark(#fff7, #0007) !important;
-  margin-top: 0.5% !important;
-  margin-bottom: 0.5% !important;
-  height: 98% !important;
-}
-
-/* ------------------------------------------------------------------ */
-/* media player mods */
-
-/* media player expanded layout */
+/* Media player expanded layout */
 #zen-media-controls-toolbar {
+  order: 9999999 !important;
   & .show-on-hover {
     max-height: unset !important;
     opacity: 1 !important;
@@ -414,6 +558,7 @@ body:has(
   }
 }
 
+/* Media buttons hover effect */
 #zen-media-buttons-hbox > toolbarbutton {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
@@ -423,6 +568,7 @@ body:has(
   }
 }
 
+/* Media controls hover expansion */
 #zen-media-controls-toolbar {
   #zen-media-controls-hbox {
     order: 0 !important;
@@ -442,7 +588,7 @@ body:has(
   order: 1 !important;
 }
 
-/* media controls glow */
+/* Media controls glow effect */
 #zen-media-controls-toolbar::after {
   position: absolute;
   content: "";
@@ -482,6 +628,7 @@ body:has(
   background-size: 200% 200%;
 }
 
+/* Playing media styling */
 #zen-media-controls-toolbar.playing {
   toolbaritem {
     background-color: light-dark(#fffd, #000d) !important;
@@ -502,7 +649,7 @@ body:has(
   }
 }
 
-/* glow animation */
+/* Glow animation keyframes */
 @keyframes animateGlow {
   0% {
     background-position: 0% 20%;
@@ -512,7 +659,7 @@ body:has(
   }
 }
 
-/* compact mode player */
+/* Compact mode player (commented out) */
 /* #zen-main-app-wrapper[zen-compact-mode="true"]:not(:has(toolbox[zen-user-show=""], toolbox[zen-has-hover])) #zen-media-controls-toolbar{
   
   &.playing #zen-media-focus-button{
@@ -546,57 +693,13 @@ body:has(
   }
 } */
 
-/* hover to show workspace dots */
+
+/* ============================================= */
+/* ======== personal pref only, keep off ======== */
+/* ============================================= */
+
+/* Permanently transparent compact sidebar - fix for zen bug */
 #zen-main-app-wrapper[zen-compact-mode="true"] #navigator-toolbox {
-  opacity: 1 !important;
-}
-
-#zen-sidebar-bottom-buttons:not(:has([open="true"])) {
-  bottom: -25px !important;
   opacity: 0 !important;
-  transition: all 0.3s ease-in-out !important;
-}
-
-#navigator-toolbox:hover {
-  #zen-sidebar-bottom-buttons,
-  #zen-media-controls-toolbar {
-    bottom: 0px !important;
-    opacity: 1 !important;
-  }
-}
-
-#zen-sidebar-bottom-buttons {
-  order: 1 !important;
-}
-
-#zen-media-controls-toolbar {
-  order: 2 !important;
-}
-
-/* no workspace indicator */
-#zen-current-workspace-indicator-container {
-  display: none !important;
-}
-
-/* fix urlbar jumping around */
-#urlbar[open] #urlbar-results > :nth-child(n+6) {
-  display: none !important;
-}
-
-/* no window controls - macOS */
-#zen-sidebar-top-buttons {
-  .titlebar-buttonbox-container {
-    display: none !important;
-  }
-}
-
-/* no split borders */
-hbox[zen-split="true"].deck-selected{
-  border: none !important;
-  outline: none !important;
-}
-
-/* permanently transparent compact sidebar - fix for zen bug ================= remove if you sue the compact sidebar */
-#zen-main-app-wrapper[zen-compact-mode="true"] #navigator-toolbox{
-  opacity: 0 !important; 
+  /*   display: none !important; */
 }

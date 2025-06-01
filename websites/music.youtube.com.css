@@ -85,6 +85,10 @@ ytmusic-chip-cloud-renderer.style-scope.ytmusic-section-list-renderer:hover {
   opacity: 1 !important;
 }
 
+#side-panel{
+  min-width: auto !important;
+}
+
 /* Centered player */
 ytmusic-app-layout:not([player-ui-state="FULLSCREEN"]) #main-panel {
   position: absolute !important;
@@ -180,7 +184,7 @@ ytmusic-player[player-ui-state="MINIPLAYER"] {
   display: none !important;
 }
 
-/* Show mini player */
+/* Show mini playyer */
 #player[player-ui-state="MINIPLAYER"]{
   display: initial !important;
 }
@@ -235,7 +239,7 @@ ytmusic-app-layout > #content {
 }
 
 
-/* Addon : timed comments popup */
+/* Addon : timed comments pop-up */
 .__youtube-timestamps__stamp {
   scale: 3 !important;
   border-radius: 1.5px !important;

@@ -1,0 +1,63 @@
+/* transparency */
+html,
+body,
+nav._dm2518uv,
+#nav,
+.nav,
+navbar,
+.navbar,
+#navbar, 
+header,
+#header,
+.header,
+app, 
+#app, [aria-label="Sidebar"] > div > div:nth-last-child(1),[data-onboarding-observer-id="board-wrapper"] + ._bfhkvuon,
+.sidebar-wrap,
+section, [data-testid="software-board.board-container.board.virtual-board.fast-virtual-list.fast-virtual-list-wrapper"],[data-component-selector="platform-board-kit.ui.column.draggable-column"] > div > div,
+#__next, [data-test-id="software-board.board"],
+#root, [data-testid="page-layout.main"] > div, [data-ep-placeholder-id="horizontal-nav-through-entry-point"] + div > div,
+.app, #jira-frontend,
+.app-root, #wrapper,
+body[data-theme="dark"], body[data-theme="light"],
+#pass-sidebar, .side-bar,
+#main, .sidebar,
+main, [data-testid="issue-activity-feed.feed-display-with-intersection-observer"] > span > span > div,[data-testid="issue-activity-feed.feed-display-with-intersection-observer"] > span > span > div > div,
+#content, #cu-identity,
+section, .l-root,
+#__next, .landing-hero,
+#navigation-wrapper,
+#global-navbar,
+.head.notfixed, .main-container,
+#app > div, .btm-nav > a,
+body.dark_mode, body.light_mode,
+text-div > textarea{
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+ [data-testid="issue-view-sticky-header-container.sticky-header"], [data-component-selector="jira-issue-view-layout-templates-pinned-fields-banner-with-grouping-pinned-field-highlight-wrapper"] > div > details > summary{
+   border-radius: 0.5em !important;
+   padding: 5px !important;
+ }
+
+/* no tab text */
+[data-testid="navigation-kit-ui-tab.ui.link-tab"]{
+   span:not(:has(svg)){
+  opacity: 0 !important;
+  width: 0em !important;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important
+   }
+  &:hover{
+    span:not(:has(svg)){
+  width: 6em !important;
+  opacity: 1 !important;
+   }
+  }
+}
+
+[aria-label="Project navigation"]::before{
+  display: none !important;
+}

@@ -1,4 +1,4 @@
-/* google-transparecy */
+/* google-transparency */
 html,
 body,
 section,
@@ -15,7 +15,7 @@ table,
 tbody,
 tr,
 td,
-body:not(:has([aria-label="Google Maps"])) div:not([role="img"], [style="background:#344DC9"], .immersive-container, [role="dialog"], [role="tablist"]), [role="columnheader"] {
+body:not(:has([aria-label="Google Maps"])) div:not([role="img"], [style="background:#344DC9"], .immersive-container, [role="dialog"], .k4o2Hc, [role="tablist"], [role="listitem"] > [role="button"] > div > div, [jscontroller="Dvn7fe"] > div, .kHtcsd div), [role="columnheader"]{
   background: transparent !important;
   background-color: transparent !important;
 }
@@ -38,7 +38,7 @@ body {
 
 .in7vHe.FR7ZSc.FR7ZSc .niO4u,
 div.RNNXgb,
-.aajZCb, div.immersive-container, [role="dialog"], #sports-app > div > div[role="link"], #sports-app [role="link"] [role="heading"] .ofy7ae, #liveresults-sports-immersive__league-fullpage [role="heading"] .ofy7ae {
+.aajZCb, div.immersive-container, [role="dialog"], #sports-app > div > div[role="link"], #sports-app [role="link"] [role="heading"] .ofy7ae, #liveresults-sports-immersive__league-fullpage [role="heading"] .ofy7ae, h2 + [jsname="tiXAab"].iDYYme.OiT5Ue, [jscontroller="Dvn7fe"] {
   background-color: var(--EpFNW) !important;
 }
 

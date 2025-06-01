@@ -21,6 +21,27 @@ html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .ca
   ) !important;
 }
 
+/* collapse sidebar */
+[aria-label="Servers sidebar"] + div:has(nav > #channels),body:has(#channels) [aria-label="User area"]{
+  width: 0px !important;
+  transition: width 0.3s ease-in-out !important;
+
+  .buttons__37e49{
+    display: none !important;
+  }
+
+  &:hover{
+  width: 250px !important;
+  .buttons__37e49{
+    display: flex !important;
+  }
+  }
+}
+
+body:has([aria-label="Servers sidebar"]:hover) [aria-label="Servers sidebar"] + div:has(nav > #channels){
+  width: 250px !important;;
+}
+
 /* discord-no borders */
 html, body, nav, header, .app-root,  #main, #content, section, .callContainer_cb9592, .bg__960e4, .tabBody__133bf, .sidebarList_c48ade, main, .chat_f75fb0, .page_c48ade, .contentRegionScroller__23e6b , .container_f369db, [aria-label="Resize Sidebar"], .visual-refresh .root_bfe55a{  
   border: none !important;
@@ -34,4 +55,9 @@ img.bannerImg_f37cb1 {
 /* mistreous ; */
 .app_a3002d{
   color: transparent !important;
+}
+
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
 }

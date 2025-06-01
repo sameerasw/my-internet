@@ -54,6 +54,11 @@ ytd-app:not([guide-persistent-and-visible=""])
   background-color: var(--yt-spec-text-primary-inverse) !important;
 }
 
+ytd-alert-with-button-renderer{
+  align-items: center !important;
+  justify-content: center !important;
+}
+
 /* yt-clean side guide */
 ytd-guide-section-renderer:has(
     [title="YouTube Studio"],
@@ -108,7 +113,7 @@ body:not(:has([mini-guide-visible=""])) {
     margin: auto 0 !important;
   }
   #page-manager {
-    margin-left: 60px !important;
+    margin-left: 80px !important;
   }
 
   #tabsContainer.tp-yt-paper-tabs {
@@ -122,6 +127,15 @@ body:not(:has([mini-guide-visible=""])) {
     > #contentContainer {
     background: transparent !important;
   }
+}
+
+ytd-alert-with-button-renderer{
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+ytd-two-column-browse-results-renderer[page-subtype="playlist"]{
+  width: fit-content !important;
 }
 
 /* yt-Transparent header */
@@ -141,11 +155,12 @@ body:not(:has([mini-guide-visible=""])) {
   display: none !important;
 }
 
+
+/* yt-Hide filter chips */
 #chips-wrapper {
   top: 0 !important;
 }
 
-/* yt-Hide filter chips */
 .ytd-two-column-browse-results-renderer #header {
   display: none !important;
 }
@@ -182,11 +197,6 @@ ytd-rich-grid-media {
   }
 }
 
-/* yt-circular channels */
-.yt-spec-avatar-shape__image {
-  border-radius: 1em !important;
-}
-
 /* yt-thumbnail hover */
 #inline-preview-player {
   transition: scale 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s !important;
@@ -214,14 +224,14 @@ ytd-app:has(#video-preview-container:hover) #content {
   transition: opacity 4s ease-in-out 1s !important;
 }
 
-/* yt-no feed distractions */
+/* yt-no distractions */
 #contents ytd-rich-section-renderer {
   display: none !important;
 }
 
-#inline-preview-player {
-  border-radius: 1em !important;
-  overflow: hidden !important;
+ytd-merch-shelf-renderer,
+.annotation {
+  display: none !important;
 }
 
 /* yt-Transparent video background */
@@ -250,11 +260,6 @@ ytd-app:has(#video-preview-container:hover) #content {
   display: none !important;
 }
 
-/* yt-clean player page */
-ytd-merch-shelf-renderer,
-.annotation {
-  display: none !important;
-}
 
 /* yt-Theatre: zen view */
 [theater=""] #full-bleed-container {
@@ -335,23 +340,13 @@ ytd-comments {
   background-color: var(--yt-spec-text-primary-inverse) !important;
 }
 
-/* yt-zen comments desc..captions */
-body:has(
-    [data-title-no-tooltip="Subtitles/closed captions"][aria-pressed="true"]
-  ):not(:has([description-collapsed=""]))
-  [theater=""]
-  ytd-comments {
-  opacity: 1 !important;
-  left: 0 !important;
-}
-
 /* yt-transparent overlay chat */
 [theater=""] #chat {
   position: absolute !important;
   height: 800px !important;
   top: 50vh !important;
   transform: translateY(-50%) !important;
-  opacity: 0.9 !important;
+  opacity: 0.8 !important;
 }
 
 [theater=""] yt-live-chat-renderer {
@@ -374,66 +369,8 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer) {
   margin-left: 100px !important;
 }
 
-/* yt-Addon : timed comments pop-up */
-.__youtube-timestamps__stamp {
-  scale: 3 !important;
-  border-radius: 1.5px !important;
-  transition: all 0.3s ease-in-out !important;
-  z-index: 10000000000000 !important;
-
-  &:hover {
-    scale: 5 !important;
-  }
-}
-
-.__youtube-timestamps__preview-wrapper {
-  scale: 1.2 !important;
-  transform: translateX(16%) !important;
-  .__youtube-timestamps__preview {
-    border-radius: 1em !important;
-    backdrop-filter: blur(20px) !important;
-    background-color: #000000bb !important;
-    border: solid 2px gray !important;
-
-    .__youtube-timestamps__preview__avatar {
-      height: 2.5em !important;
-      width: 2.5em !important;
-      border-radius: 0.5em !important;
-    }
-
-    .__youtube-timestamps__preview__text-stamp {
-      background-color: #ffaaaa !important;
-      padding: 0.1em 0.3em !important;
-      border-radius: 0.5em !important;
-      color: #000 !important;
-    }
-
-    .__youtube-timestamps__preview__name,
-    .__youtube-timestamps__preview__text {
-      color: #ffffff !important;
-    }
-  }
-}
-
-.comments-container {
-  div.wrapper {
-    background-color: transparent !important;
-  }
-
-  div.clickable-comment,
-  div.replies {
-    background-color: #00000077 !important;
-    backdrop-filter: blur(20px) !important;
-    padding: 1em !important;
-    margin-bottom: 1em !important;
-    border-radius: 1em !important;
-    max-width: 40em !important;
-    transition: all 0.4s ease-in-out !important;
-
-    .likes-and-replies {
-      opacity: 0.3 !important;
-    }
-  }
+#frosted-glass {
+  display: none !important;
 }
 
 /* yt-better captions */
@@ -473,6 +410,7 @@ ytd-rich-item-renderer[is-in-first-column=""] {
     var(--ytd-rich-grid-item-margin) / 2 + var(--ytd-rich-grid-gutter-margin)
   ) !important;
 }
+
 
 /* Immersive search */
 #page-manager,
@@ -537,7 +475,7 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
   scale: 1.05 !important;
 }
 
-/* Viewstats extension */
+/* yt-Addon : Viewstats */
 .card {
   background: var(--yt-spec-badge-chip-background) !important;
 }
@@ -548,4 +486,66 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
   border-radius: 1em !important;
   padding: 0.5em 1em !important;
   margin: 0.5em !important;
+}
+
+/* yt-Addon : timed comments */
+.__youtube-timestamps__stamp {
+  scale: 3 !important;
+  border-radius: 1.5px !important;
+  transition: all 0.3s ease-in-out !important;
+  z-index: 10000000000000 !important;
+
+  &:hover {
+    scale: 5 !important;
+  }
+}
+
+.__youtube-timestamps__preview-wrapper {
+  scale: 1.2 !important;
+  transform: translateX(16%) !important;
+  .__youtube-timestamps__preview {
+    border-radius: 1em !important;
+    backdrop-filter: blur(20px) !important;
+    background-color: #000000bb !important;
+    border: solid 2px gray !important;
+
+    .__youtube-timestamps__preview__avatar {
+      height: 2.5em !important;
+      width: 2.5em !important;
+      border-radius: 0.5em !important;
+    }
+
+    .__youtube-timestamps__preview__text-stamp {
+      background-color: #ffaaaa !important;
+      padding: 0.1em 0.3em !important;
+      border-radius: 0.5em !important;
+      color: #000 !important;
+    }
+
+    .__youtube-timestamps__preview__name,
+    .__youtube-timestamps__preview__text {
+      color: #ffffff !important;
+    }
+  }
+}
+
+.comments-container {
+  div.wrapper {
+    background-color: transparent !important;
+  }
+
+  div.clickable-comment,
+  div.replies {
+    background-color: #00000077 !important;
+    backdrop-filter: blur(20px) !important;
+    padding: 1em !important;
+    margin-bottom: 1em !important;
+    border-radius: 1em !important;
+    max-width: 40em !important;
+    transition: all 0.4s ease-in-out !important;
+
+    .likes-and-replies {
+      opacity: 0.3 !important;
+    }
+  }
 }

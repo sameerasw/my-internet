@@ -7,8 +7,9 @@
   overflow: hidden !important;
 }
 
-html, body, #main-window, #navigator-toolbox, #nav-bar, #browser, #tabbrowser-tabpanels, .tab-background, #tabbrowser-tabs, #sidebar-main,body:not(:has(toolbarbutton[expanded])) #sidebar-wrapper{
+html, body, #main-window, #navigator-toolbox, #nav-bar, #browser, #tabbrowser-tabpanels, .tab-background:not([selected=""]), #tabbrowser-tabs, #sidebar-main,body:not(:has(toolbarbutton[expanded])) #sidebar-wrapper{
   background-color: transparent !important;
+/*   background-color: #2e3440 !important; */
   background: none !important;
   border: none !important;
 }
@@ -225,7 +226,7 @@ body:has(#urlbar:not([open])):has(#urlbar:not([open]):hover, #nav-bar-customizat
     }
     
     
-    .unified-extensions-item, #unified-extensions-button, #PanelUI-button, #sidebar-button{
+    #unified-extensions-button, #PanelUI-button, #sidebar-button{
       opacity: 1 !important;
     }
   
@@ -235,9 +236,9 @@ body:has(#urlbar:not([open])):has(#urlbar:not([open]):hover, #nav-bar-customizat
   }
   
   #nav-bar{
-    background-color: light-dark(#fff, #000) !important;
+    background-color: var(--toolbar-field-background-color) !important;
     opacity: 1 !important;
-    border-radius: 1em !important;
+    border-radius: 0.75em !important;
   }
   
 }
@@ -365,42 +366,7 @@ slot:nth-child(1) {
   }
 }
 
-.tab-group-label{
-  border: none !important;
-  outline: none !important;
-  transition: all 0.2s ease-in-out !important;
-}
-
-[expanded=""] .tab-group-label{
-  border-radius: 7px 7px 0 0 !important;
-  width: 100% !important;
-  text-align: left !important;
-  padding-left: 10px !important;
-  
-  &:hover{
-    padding-left: 20px !important;
-  }
-}
-
-[collapsed=""] .tab-group-label{
-  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
-  color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
-  border-radius: 7px !important;
-  
-  &:hover{
-    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
-    color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
-  }
-}
-
-[expanded=""] tab-group:not([collapsed=""]){
-  margin-right: 10px !important;  
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
-  
-}
+/* pinned tabs */
 
  #vertical-pinned-tabs-container{
   background-color:  light-dark(#0001, #fff1) !important;
@@ -473,7 +439,8 @@ tab[soundplaying] .tab-background{
 
 /*  bg tint */
 #main-window{
-  background-color: light-dark(#fff5 , #0005) !important;      
+/*   background-color: light-dark(#fff5 , #0005) !important;       */
+/*   background-color: #2e3440 !important; */
 }
 
 /* urlbar mods */
@@ -506,4 +473,181 @@ tab[soundplaying] .tab-background{
 
 #urlbar{
   padding-left: 10px !important;
+}
+
+#nav-bar{
+  margin-left: 0.25em !important;
+  margin-top: 0.25em !important;
+    max-width: fit-content !important;
+  
+  
+  .unified-extensions-item{
+    width: 0px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    opacity: 0 !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+  
+  &:has(#unified-extensions-button:hover, .unified-extensions-item:hover, [open], #PanelUI-button:hover){
+  .unified-extensions-item{
+    width: 30px !important;
+    padding: inherit !important;
+    margin: initial !important;
+    opacity: 1 !important;
+    }
+  }
+  
+  [widget-id="sidebar-button"]{
+    display: none !important;
+  }
+  
+  #nav-bar-customization-target{
+    max-width: fit-content !important;
+  }
+}
+
+/* =================== context menu ===================== */
+#contentAreaContextMenu, #toolbar-context-menu, #tabContextMenu{
+  #context-savepage,
+  #context-pocket,
+  #context-sendpagetodevice,
+  #context-selectall,
+  menuseparator,
+  #context-viewsource,
+  #context-inspect-a11y,
+  #context-openlinkintab,
+  #context-openlinkinusercontext-menu,
+  #context-openlink,
+  #context-openlinkprivate,
+  #context-bookmarklink,
+  #context-savelink,
+  #context-savelinktopocket,
+  
+  #toolbar-context-openANewTab,
+  #toolbar-context-reloadSelectedTab,
+  #toolbar-context-bookmarkSelectedTab,
+  #toolbar-context-undoCloseTab,
+  
+  #context_bookmarkTab,
+  #context_moveTabOptions,
+  .share-tab-url-item,
+  #context_reopenInContainer,
+  #context_selectAllTabs,
+  #context_closeTab,
+  #context_closeDuplicateTabs,
+  #context_closeTabOptions,
+  #context_undoCloseTab
+  {
+    display: none !important;
+  }
+  
+}
+
+#contentAreaContextMenu, #toolbar-context-menu{
+  menu.menu-iconic{
+    display: none !important;
+  }
+}
+
+
+/* ================================ tab groups ==================================== */
+
+.tab-group-label-container{
+  padding: 0 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+
+tab-group tab .tab-background{
+  transition: all 0.2s ease-in-out !important;
+}
+
+tab-group:not(:has([selected])) .tab-group-label{
+/*   border: none !important; */
+  outline: none !important;
+  transition: all 0.2s ease-in-out !important;
+    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+  color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
+}
+
+[expanded=""] .tab-group-label{
+  border-radius: 7px 7px 0 0 !important;
+  width: 100% !important;
+  text-align: left !important;
+  padding-left: 10px !important;
+  
+  &:hover{
+    padding-left: 20px !important;
+  }
+}
+
+[collapsed=""] .tab-group-label{
+  background: color-mix(in srgb, var(--tab-group-color) 20%, transparent) !important;
+  color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
+  border-radius: 7px !important;
+  
+  &:hover{
+    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+    color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
+  }
+}
+
+[expanded=""] tab-group:not([collapsed=""]){
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  .tab-group-label{
+  border-top: 1px solid var(--tab-group-color-invert) !important;
+  border-left: 1px solid var(--tab-group-color-invert) !important;
+  border-right: 1px solid var(--tab-group-color-invert) !important;
+  }
+  
+}
+
+.tab-group-line{
+  display: none !important;
+}
+
+[expanded=""] tab-group tab{
+  .tab-background{
+  border-left: 1px solid var(--tab-group-color-invert) !important;
+  border-right: 1px solid var(--tab-group-color-invert) !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+    outline: none !important;
+  }
+  .tab-label{
+    color: light-dark(#000, #fff) !important;
+  }
+  
+  &[selected="true"]{
+    .tab-background{
+    background: color-mix(in srgb, var(--tab-group-color-invert) 40%, transparent) !important;
+    }
+  }
+  
+  &:hover{
+    .tab-background{
+    background: color-mix(in srgb, var(--tab-group-color-invert) 50%, transparent) !important;
+    }
+  }
+}
+
+
+
+tab-group tab:nth-last-child(1) .tab-background{
+  border-radius: 0 0 0.75em 0.75em !important;
+  border-bottom: 1px solid var(--tab-group-color-invert) !important;
+}
+
+tab-group .tab-content{
+  padding-left: 0.5em !important;
+}
+
+tab-group tab{
+  padding: 0 !important;
 }

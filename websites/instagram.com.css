@@ -6,11 +6,10 @@
   --ig-secondary-background: #00000000 !important;
 }
 
-.xvbhtw8, .x103n6ev, .xzxgvzf {
+.xvbhtw8, .x103n6ev, .xzxgvzf, html {
   background-color: #00000000 !important;
   border: none !important;
   background-image: none !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 
@@ -22,10 +21,6 @@ div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1
 /* ig-other changes */
 .xso031l {
   border-radius: 1.5em !important;
-}
-
-* {
-  background-color: #00000000 !important;
 }
 
 .xopu45v {

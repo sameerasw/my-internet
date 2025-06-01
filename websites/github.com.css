@@ -4,6 +4,8 @@ body,
 header,
 .color-bg-default,
 .feed-background,
+.session-authentication,
+.auth-form-body,
 [aria-labelledby="folders-and-files"] .bgColor-muted,
 nav,
 .dxnHPp,
@@ -45,7 +47,7 @@ button[role="tab"]{
   }
 }
 
-.MarkdownEditor-module__viewSwitchBorder--zeiDB{
+.MarkdownEditor-module__viewSwitchBorder--zeiDB, .js-comment-container::before, .js-comment-container .TimelineItem::before{
   display: none !important;
 }
 

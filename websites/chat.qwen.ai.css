@@ -1,5 +1,5 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #app-container > div, #chat-container > div, .bg-gradient-to-b, .font-primary > .bg-white{
+html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #app-container > div, #chat-container > div, .bg-gradient-to-b, .font-primary > .bg-white, #chat-container{
   background-color: transparent !important;
   background: none !important;
   border: none !important;

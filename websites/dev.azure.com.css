@@ -1,0 +1,159 @@
+/* azdo-transparency */
+html,
+body,
+nav,
+#nav,
+.nav,
+navbar,
+.navbar,
+#navbar,
+header,
+#header,
+.header,
+app,
+#app,
+.app,
+.app-root,
+body[data-theme="dark"],
+body[data-theme="light"],
+#pass-sidebar,
+#main,
+main,
+#content,
+section,
+#__next,
+#navigation-wrapper,
+#global-navbar,
+.head.notfixed,
+#app>div,
+.btm-nav>a,
+body.dark_mode,
+body.light_mode,
+text-div>textarea {
+    background-color: transparent !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+body, body[data-theme="ms.vss-web.vsts-theme-dark"] {
+    --opaque-background: rgba(32, 31, 30, 0.5);
+    --foreground: white;
+}
+
+body[data-theme="ms.vss-web.vsts-theme"] {
+    --opaque-background: rgba(134, 134, 134, 0.5);
+    --foreground: black;
+}
+
+.region-header, .region-header-menubar, .region-header .search.focus,
+.top-level-navigation, 
+.project-navigation, .project-overview-tab, .project-overview .processTemplateName,
+.wiki-nav-bg, .comment-item, .comment-thread, .markdown-editor-text-input, .markdown-editor-toolbar, .markdown-textarea,
+.widget-host,
+.ms-DetailsHeader,
+.kanban-board, .kanban-board-column, .kanban-board-column-header-container,
+.bolt-table, .bolt-table:not(.sticky-table) th, .bolt-tabbar:not(.sticky), .bolt-master-panel, .bolt-page, .bolt-page-grey, .bolt-page-white, .bolt-textfield, .bolt-textfield-input, .bolt-card, .bolt-filterbar-white,
+.work-item-form-subheader, .work-item-form-control-wrapper > * > *, .work-item-form-control-wrapper > *, .work-item-form-control-content, .work-item-form-control, .work-item-form-collapsible-section-content > *,
+.taskboard-collapsed-row,
+.taskboard-expanded-cell,
+.feedback-workflow-wrapper, .feedback-columns-container,
+.board-actions-menu,
+.content-section,
+.fabric-icon, .bolt-textfield > button, .activity-feed-timeline-iteration,
+.monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input, .monaco-editor .margin,
+.testplans-hub-refresh-portal-component, .hub-pivot-content, .testplan-dropdown-button > .bolt-button, 
+.ci-yaml-editor-header,
+.tasks-tab-content .task-tab-left-section,
+.sidebar-search .search-input-wrapper,
+.tree-view > ul.tree-children li.selected > a > div.node-content, .tree-view.focus > ul.tree-children li.selected > a > div.node-content, li.tree-drag-tile > a > div.node-content {
+    background-color: transparent !important;
+}
+
+.activity-feed-timeline-dot {
+    background-color: var(--foreground);
+}
+
+.taskboard-collapsed-row, 
+.taskboard-expanded-cell,
+.tree-view > ul.tree-children li.selected > a > div.node-content, .tree-view.focus > ul.tree-children li.selected > a > div.node-content, li.tree-drag-tile > a > div.node-content {
+    border: none !important;
+}
+
+/*azdo-ms vss web vsts theme*/
+.project-card > .bolt-card-white,
+.devops-dashboard-grid .grid-item, 
+.markdown-component, 
+.wit-card:not(.taskboard-card), .bolt-card,
+.repos-file-editor-background, .repos-commit-editor-background,
+.ci-yaml-editor-tab,
+.selected,
+.repos-summary-header > div:first-child,
+.task-group-tasks .task-group-tasks-tab-content .overview-container,
+.title_65b34777, .fieldGroup_e7469fb8,
+input[type="text"], textarea[type="text"],
+.combo,
+.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur {
+    background-color: var(--opaque-background) !important;
+}
+
+.enter-new-comment > div > .rooster-wrapper:not(:focus-within) > .rooster-editor,
+.work-item-form-control-content > .work-item-form-control > .rooster-wrapper:not(:focus-within) > .rooster-editor {
+    background-color: var(--opaque-background) !important;
+}
+
+.enter-new-comment > div > .rooster-wrapper:not(:focus-within) > .rooster-command-bar,
+.work-item-form-control-content > div > .rooster-wrapper:not(:focus-within) > .rooster-command-bar {
+    opacity: 0 !important;
+}
+
+/* azdo-No sticky table headers */
+.bolt-table.sticky-table th {
+    position: static !important;
+    background-color: transparent !important;
+}
+
+/* azdo-No sticky tabbars */
+.bolt-tabbar.sticky {
+    position: static !important;
+    background-color: transparent !important;
+}
+
+/* azdo-No sticky changes viewer */
+.repos-changes-viewer .sticky {
+    position: static !important;
+    background-color: transparent !important;
+}
+
+/* azdo-comment radius */
+.enter-new-comment > .rooster-wrapper {
+    border-radius: 10px !important;
+}
+
+/* azdo-text field radius */
+.work-item-form-control > .rooster-wrapper {
+    border-radius: 10px !important;
+}
+
+/* azdo-darkreader */
+:root {
+    --darkreader-background-ffffff: transparent !important;
+}
+
+/* azdo-No borders */
+div[role="separator"] {
+    opacity: 0 !important;    
+}
+
+div[role="navigation"], 
+div[role="menubar"],
+.repos-compare-toolbar,
+.left-toolbar.toolbar {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.toolbar {
+    border-top-color: transparent !important;
+}

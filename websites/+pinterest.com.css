@@ -19,6 +19,11 @@
     border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
+[data-test-id="typeaheadResults"]{
+  background-color: light-dark(#fff, #222) !important;
+  border-radius: 2em !important;
+}
+
 /* pin-text color */
 body,
 #VerticalNavContent {

@@ -1,5 +1,7 @@
 /* wa-transparecy */
-.dark {
+:root {
+  --splashscreen-startup-background: #00000000 !important;
+  --splashscreen-startup-background-rgb: transparent !important;
   --app-background: #00000000 !important;
   --app-background-stripe: #00000000 !important;
   --WDS-app-wash: #00000000 !important;
@@ -8,6 +10,7 @@
   --panel-background-lighter: #00000000 !important;
   --intro-background: #00000000 !important;
   --background-default: #00000000 !important;
+  --background-document-with-captions: #00000000 !important;
   --butterbar-default-background: #00000000 !important;
   --filters-container-background: #00000000 !important;
   --search-input-container-background: #00000000 !important;
@@ -20,8 +23,16 @@
   --drawer-section-background: #00000000 !important;
 }
 
-._ai01._ai07, .xy4wh6y{
+._ai01._ai07,
+.xy4wh6y,
+.x10l6tqk > ._aigw,
+.x10l6tqk > ._aigw > span > div,
+.x10l6tqk > ._aigw > span > div > div > span > div {
   background-color: transparent !important;
+}
+
+._aigs:has(._aigw > span > div) .x1m6msm {
+  opacity: 0 !important;
 }
 
 /* wa-layout fixes */
@@ -52,6 +63,11 @@ div.x9f619.x78zum5.x6s0dn4.xl56j7k.xcxhlts.xktsk01.x1fqp7bg.x1d52u69.x889kno.x17
 }
 
 /* wa-overlay fixes  */
-div.xds687c:nth-child(1){
+div.xds687c:nth-child(1) {
   background-color: var(--background-document-with-captions) !important;
+}
+
+/* wa-chat-background */
+div.x10l6tqk.x13vifvy.x17qophe.xh8yej3.x5yr21d.x182nak8.x1wwuglj.x1vs56c6 {
+  background-image: none !important;
 }
