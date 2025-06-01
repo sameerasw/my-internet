@@ -834,7 +834,7 @@
       "feedly-No thanks": ".TZCVJGAQJfvz8bV8MrrA {\n  display: none !important;\n}"
     },
     "figma.com.css": {
-      "figma-transparency": "html,\nbody,\n.sidebar--navDefault--pYuzm,\n.x1n5zjp5,\n#fullscreen-root .gpu-view-content canvas {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n:root,\n[data-preferred-theme=\"dark\"],\n[data-preferred-theme=\"light\"] {\n  --color-bg: transparent !important;\n  --color-border: transparent !important;\n}",
+      "figma-transparency": "html,\nbody, .objects_panel_container--container--jBz9j,\n.sidebar--navDefault--pYuzm, #left-panel-container > div,[data-testid=\"layer-row-with-children\"],\n.x1n5zjp5, [aria-label=\"Right sidebar\"] > div, [aria-label=\"Left sidebar\"] > div, .properties_panel--propertiesPanel--BQ7Lw,\n#fullscreen-root .gpu-view-content canvas {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n:root,\n[data-preferred-theme=\"dark\"],\n[data-preferred-theme=\"light\"] {\n  --color-border: transparent !important;\n}",
       "figma-overlay fix": ".toolbelt--root--jwHGa {\n  background-color: var(--color-bg-secondary) !important;\n}"
     },
     "filecr.com.css": {
