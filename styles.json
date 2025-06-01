@@ -2439,6 +2439,13 @@
       "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp,\n#app, .f8d8d99a17, .a193cf1ed6,\n.app, .d3ef0e3593.c7bdc96a10,\n.app-root, #indexsearch,\n#pass-sidebar,\n#main, body::before,\nmain,\n#content,\nsection, [data-testid=\"hero-banner-solid-bg-desktop\"],\n#__next,\n#navigation-wrapper,\n#global-navbar,\n.head.notfixed, \nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "time.is.css": {
+      "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp,\n#app,\n.app,\n.app-root,\n#pass-sidebar,\n#main,\nmain,\n#content,\nsection,\n#__next,\n#navigation-wrapper,\n#global-navbar,\n.head.notfixed, \nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "hover": "#top{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}\n\n#time_section > div {\n  transition: all 0.5s ease-in-out !important;\n}\n\n#time_section:has(#msgs + div:hover) > div:not(:has(#clock0_bg)){\n  opacity: 0.2 !important;\n}",
+      "other": "#time_section{\n  height: 90dvh !important;\n  align-items: center !important;\n  align-content: center !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer, #menupositioner{\n  display: none !important;\n}"
     }
   }
 }
