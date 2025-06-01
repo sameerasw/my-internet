@@ -750,7 +750,7 @@
       "no thanks": "[data-testid=\"cta:upgrade-plan\"]{\n  display: none !important;\n}"
     },
     "duckduckgo.com.css": {
-      "ddg-transparecy": "html, body, .desktop-homepage_root__Ikj1_, .site-wrapper, .metabar:not(.is-stuck), .tileview--grid .metabar--fixed::before, #zci-images, .zci-wrap, #zci-videos, main{\n  background-color: transparent !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "ddg-transparency": "html, body, .desktop-homepage_root__Ikj1_, .site-wrapper, .metabar:not(.is-stuck), .tileview--grid .metabar--fixed::before, #zci-images, .zci-wrap, #zci-videos, main{\n  background-color: transparent !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "ddg-hidden promo": ".desktop-homepage_heroContent__4HUFA{\n  display: none !important;\n}",
       "ddg-no home scroll": ".homepage-cta-section_scrollCta__Wmixn, #features{\n  display: none !important;\n}",
       "ddg-no footer": ".footer{\n  display: none !important;\n}",
