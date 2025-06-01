@@ -1,8 +1,8 @@
 /* figma-transparency */
 html,
-body,
-.sidebar--navDefault--pYuzm,
-.x1n5zjp5,
+body, .objects_panel_container--container--jBz9j,
+.sidebar--navDefault--pYuzm, #left-panel-container > div,[data-testid="layer-row-with-children"],
+.x1n5zjp5, [aria-label="Right sidebar"] > div, [aria-label="Left sidebar"] > div, .properties_panel--propertiesPanel--BQ7Lw,
 #fullscreen-root .gpu-view-content canvas {
   background-color: transparent !important;
   background: none !important;
@@ -15,7 +15,6 @@ body,
 :root,
 [data-preferred-theme="dark"],
 [data-preferred-theme="light"] {
-  --color-bg: transparent !important;
   --color-border: transparent !important;
 }
 

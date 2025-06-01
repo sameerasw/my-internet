@@ -29,7 +29,7 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
 
 ## Contributing styles
 
-> ### Please make sure you go through all the provided instructions before submittinga new theme with a PR.
+> ### Please make sure you go through all the provided instructions before submitting a new theme with a PR.
 
 1. You can use the [example.com.css](https://github.com/sameerasw/my-internet/raw/refs/heads/main/websites/example.com.css) as a starter for most websites to grab the stylesheet format.
 2. Make sure the file is named in the correct format [website domain].css (google.com.css and docs.google.com.css are 2 styles which are not merged unless you do 9.)
@@ -38,7 +38,7 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
 5. Every property should include `!important` to make sure it gets applied.
 6. Do NOT leave commented out code.
 7. Don't include `www` in the stylesheet file name.
-8. Add propper comments for each section of a feature at the beginning with a clear but compact description.
+8. Add proper comments for each section of a feature at the beginning with a clear but compact description.
 9. For theming similar domains like app.arduino.cc , login.arduino.cc ..... similar urls with `prefixes`, you can add a general style with a leading `+` symbol when creating the stylesheet. ( `+arduino.cc.css` ) [example](https://github.com/sameerasw/my-internet/blob/main/websites/%2Bnixos.org.css)
 10. Similarly, for theming websites with a shared domain but with different `suffixes` (like google.com, google.lk...), you can add the `-` symbol to the start of the stylesheet file name so it will replace the provided domain of the file name's domain. (`-google.com.css`). [example](https://github.com/sameerasw/my-internet/blob/main/websites/-ebay.com.css)
 11. [optional] Each comment of the same file should have a unique domain specific identified prefix (yt- ytm- gh- ...) which will help the browser to separately apply themes.
