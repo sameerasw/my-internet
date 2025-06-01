@@ -8,11 +8,23 @@ body[data-ds-dark-theme] {
   background: none !important;
 }
 
-/* deepseek-other changes */
+
+/* deepseek-remove decoration */
+
 div.fcaa63f8.d9fb9344,
 .fcaa63f8, ._62b4800 {
   display: none !important;
 }
+
+
+/* deepseek-larger margin */
+
+div.aaff8b8f {
+  margin-bottom: 1em !important;
+}
+
+
+/* deepseek-hover show side bar */
 
 .dc04ec1d,
 div.ds-flex {
@@ -22,8 +34,4 @@ div.ds-flex {
   &:hover {
     opacity: 1 !important;
   }
-}
-
-div.aaff8b8f {
-  margin-bottom: 1em !important;
 }
