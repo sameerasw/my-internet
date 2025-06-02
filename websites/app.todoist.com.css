@@ -1,4 +1,4 @@
-/* transparency */
+/* todoist-transparency */
 html,
 body,
 nav,
@@ -36,6 +36,13 @@ text-div > textarea{
   border: none !important;
   box-shadow: none !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+/* todoist-side bar transparency */
+#todoist_app > div:has(> .app-sidebar-container),
+#todoist_app > div > div.app-sidebar-container > div > nav,
+#todoist_app > div > div.app-sidebar-container > div > nav > div {
+  background-color: transparent !important;
 }
 
 /* darkreader */
