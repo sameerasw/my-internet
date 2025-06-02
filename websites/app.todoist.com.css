@@ -68,11 +68,6 @@ div[data-expansion-panel-header="true"] {
   transition: padding .3s !important;
 }
 
-.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) button svg {
-  margin: 2px !important;
-  transition: margin .3s !important;
-}
-
 .app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
   height: 0px !important;
   overflow:hidden !important;
