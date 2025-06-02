@@ -1,73 +1,37 @@
-/* wa-transparecy */
-:root {
-  --splashscreen-startup-background: #00000000 !important;
-  --splashscreen-startup-background-rgb: transparent !important;
-  --app-background: #00000000 !important;
-  --app-background-stripe: #00000000 !important;
-  --WDS-app-wash: #00000000 !important;
-  --panel-header-background: #00000000 !important;
-  --navbar-background: #00000000 !important;
-  --panel-background-lighter: #00000000 !important;
-  --intro-background: #00000000 !important;
-  --background-default: #00000000 !important;
-  --background-document-with-captions: #00000000 !important;
-  --butterbar-default-background: #00000000 !important;
-  --filters-container-background: #00000000 !important;
-  --search-input-container-background: #00000000 !important;
-  --search-container-background: #00000000 !important;
-  --conversation-header-border: #00000000 !important;
-  --border-list: #00000000 !important;
-  --conversation-panel-background: #00000000 !important;
-  --rich-text-panel-background: #00000000 !important;
-  --drawer-background-deep: #00000000 !important;
-  --drawer-section-background: #00000000 !important;
-}
-
-._ai01._ai07,
-.xy4wh6y,
-.x10l6tqk > ._aigw,
-.x10l6tqk > ._aigw > span > div,
-.x10l6tqk > ._aigw > span > div > div > span > div {
+/* transparency */
+html,
+body,
+nav,
+#nav,
+.nav,
+navbar, .x15g3fpr,
+.navbar, ._al_c,
+#navbar, .x1280gxy, .xsm26vf,
+header, [aria-label="Community tab drawer"] > div,
+#header, .x1n2onr6 ._ak72:not(:hover),
+.header,
+app, [aria-label="Channel tab drawer"] > div, .x150wa6m,
+#app, .x13x2ugz,
+.app, .two, .two > div, div.xds687c:nth-child(1),
+.app-root,
+#pass-sidebar,
+#main,
+main, [data-focusid="status-row-item"]:not(:hover),
+#content, [aria-label="Status tab drawer"] > div,
+section, .two::after,
+#__next, #side, #side > div, #side > div > div, .xsknx04,
+#navigation-wrapper,
+#global-navbar,
+.head.notfixed, 
+body[data-theme="dark"], body[data-theme="light"],
+body.dark_mode, body.light_mode{
   background-color: transparent !important;
-}
-
-._aigs:has(._aigw > span > div) .x1m6msm {
-  opacity: 0 !important;
-}
-
-/* wa-layout fixes */
-.two,
-.three {
-  width: 100vw !important;
-  max-width: 100vw !important;
-  height: 100vh !important;
-  margin: 0 !important;
-  top: 0 !important;
-}
-
-/* wa-other changes */
-.xu3j5b3,
-.xvkby78::after,
-.xso031l {
+  background: none !important;
   border: none !important;
-  outline: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-._al_d,
-div.x9f619.x78zum5.x6s0dn4.xl56j7k.xcxhlts.xktsk01.x1fqp7bg.x1d52u69.x889kno.x178xt8z.x13fuv20.xyj1x25.xzwifym {
-  display: none !important;
-}
-
-.x13x2ugz {
-  border-radius: 2em !important;
-}
-
-/* wa-overlay fixes  */
-div.xds687c:nth-child(1) {
-  background-color: var(--background-document-with-captions) !important;
-}
-
-/* wa-chat-background */
-div.x10l6tqk.x13vifvy.x17qophe.xh8yej3.x5yr21d.x182nak8.x1wwuglj.x1vs56c6 {
-  background-image: none !important;
+:root, .dark{
+  --background-document-with-captions: transparent !important;
 }
