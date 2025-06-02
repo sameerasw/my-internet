@@ -81,6 +81,10 @@ div[data-expansion-panel-header="true"] {
   display: none !important;
 }
 
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) div[aria-label="Settings"] div:has(> svg) {
+  display: none !important;
+}
+
 /* darkreader */
 :root{
   --darkreader-background-ffffff: transparent !important;
