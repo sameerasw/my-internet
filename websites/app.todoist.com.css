@@ -81,7 +81,7 @@ div[data-expansion-panel-header="true"] {
   display: none !important;
 }
 
-.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) div[aria-label="Settings"] svg {
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) button[aria-label="Settings"] svg {
   opacity: 0 !important;
   transition: opactiy .3s !important;
 }
