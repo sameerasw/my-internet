@@ -25,6 +25,7 @@ main, .header-top,
 #content, #cu-identity,
 section, .l-root,
 #__next, .landing-hero,
+loading_screen,
 #navigation-wrapper,
 #global-navbar, .layout__content-wrapper,
 .head.notfixed, .main-container,
@@ -41,7 +42,8 @@ header > div,
 .task_list_item .task_list_item__actions__active,
 .theme_dark .task_list_item:hover .task_list_item__actions, 
 .theme_dark .task_list_item__actions__active,
-.section {
+.section,
+div[data-expansion-panel-header="true"] {
   background-color: transparent !important;
 }
 
