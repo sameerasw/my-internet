@@ -53,6 +53,7 @@ div[data-expansion-panel-header="true"] {
   min-width: 24px !important;
   overflow: hidden !important;
   transition: width .3s !important;
+  transition: min-width .3s !important;
   transition: margin .3s !important;
 }
 
@@ -70,8 +71,15 @@ div[data-expansion-panel-header="true"] {
 
 .app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
   height: 0px !important;
-  overflow:hidden !important;
   transition: height .3s !important;
+}
+
+.app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
+  overflow:hidden !important;
+}
+
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) > nav > div > div > div:has(> button[aria-controls="sidebar"]) {
+  display: none !important;
 }
 
 /* darkreader */
