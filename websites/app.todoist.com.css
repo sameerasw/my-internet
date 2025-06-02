@@ -53,12 +53,12 @@ div[data-expansion-panel-header="true"] {
   min-width: 24px !important;
   overflow: hidden !important;
   transition: width .3s !important;
-  transition: padding .3s !important;
+  transition: margin .3s !important;
 }
 
 .app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) {
   width: 24px !important;
-  padding: 5px !important;
+  margin: 5px !important;
 }
 
 .app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) * {
