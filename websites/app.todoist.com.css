@@ -69,12 +69,12 @@ div[data-expansion-panel-header="true"] {
   padding: 0px !important;
 }
 
-.app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] div {
-  transition: font-size .3s !important;
+.app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
+  transition: height .3s !important;
 }
 
-.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] div {
-  font-size: 0 !important;  
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
+  height: 0 !important;  
 }
 
 .app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) > nav > div > div > div:has(> button[aria-controls="sidebar"]) {
