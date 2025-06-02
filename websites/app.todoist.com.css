@@ -45,6 +45,7 @@ header > div,
 .section,
 div[data-expansion-panel-header="true"] {
   background-color: transparent !important;
+  background-image: none !important;
 }
 
 /* darkreader */
