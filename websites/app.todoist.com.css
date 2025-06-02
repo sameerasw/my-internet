@@ -49,13 +49,13 @@ div[data-expansion-panel-header="true"] {
 }
 
 /* todoist-sidebar hover */
-.app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) {
+.app-sidebar-container > nav:has(> div > div > div > button[aria-expanded="true"]) {
   min-width: 50px !important;
   overflow: hidden !important;
   transition: width .3s;
 }
 
-.app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]):not(:hover) {
+.app-sidebar-container > nav:has(> div > div > div > button[aria-expanded="true"]):not(:hover) {
   width: 50px !important;
 }
 
