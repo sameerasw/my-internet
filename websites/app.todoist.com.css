@@ -50,13 +50,25 @@ div[data-expansion-panel-header="true"] {
 
 /* todoist-sidebar hover */
 .app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) {
-  min-width: 50px !important;
+  min-width: 24px !important;
   overflow: hidden !important;
   transition: width .3s;
 }
 
 .app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]):not(:hover) {
-  width: 50px !important;
+  width: 24px !important;
+}
+
+.app-sidebar-container > div:not(:hover) > nav:has(> div > div > div > button[aria-expanded="true"]) * {
+  margin: 0 !important;
+  padding: 0 !important;
+  transition: margin .3s !important;
+  transition: padding .3s !important;
+}
+
+.app-sidebar-container > div:not(:hover) > nav:has(> div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
+  height: 0px !important;
+  transition: height .3s !important;
 }
 
 /* darkreader */
