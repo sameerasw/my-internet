@@ -51,15 +51,15 @@ div[data-expansion-panel-header="true"] {
 /* todoist-sidebar hover */
 .app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) {
   min-width: 24px !important;
-  overflow: hidden !important;
-  transition: width .3s !important;
   transition: min-width .3s !important;
-  transition: margin .3s !important;
+  overflow: hidden !important;
 }
 
 .app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) {
   width: 24px !important;
+  transition: width .3s !important;
   margin: 5px !important;
+  transition: margin .3s !important;
 }
 
 .app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) * {
