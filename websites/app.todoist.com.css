@@ -60,19 +60,19 @@ div[data-expansion-panel-header="true"] {
 }
 
 .app-sidebar-container > div:not(:hover) > nav:has(> div > div > div > button[aria-expanded="true"]) * {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0px !important;
+  padding: 0px !important;
   transition: margin .3s !important;
   transition: padding .3s !important;
 }
 
 .app-sidebar-container > div:not(:hover) > nav:has(> div > div > div > button[aria-expanded="true"]) {
-  padding: 5 !important;
+  padding: 5px !important;
   transition: padding .3s !important;
 }
 
 .app-sidebar-container > div:not(:hover) > nav:has(> div > div > div > button[aria-expanded="true"]) button svg {
-  margin: 2 !important;
+  margin: 2px !important;
   transition: margin .3s !important;
 }
 
