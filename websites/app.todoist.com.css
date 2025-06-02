@@ -66,9 +66,23 @@ div[data-expansion-panel-header="true"] {
   transition: padding .3s !important;
 }
 
+.app-sidebar-container > div:not(:hover) > nav:has(> div > div > div > button[aria-expanded="true"]) {
+  padding: 5 !important;
+  transition: padding .3s !important;
+}
+
+.app-sidebar-container > div:not(:hover) > nav:has(> div > div > div > button[aria-expanded="true"]) button svg {
+  margin: 2 !important;
+  transition: margin .3s !important;
+}
+
 .app-sidebar-container > div:not(:hover) > nav:has(> div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
   height: 0px !important;
   transition: height .3s !important;
+}
+
+div[data-expansion-panel-header="true"] {
+  overflow:hidden !important;
 }
 
 /* darkreader */
