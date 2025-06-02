@@ -71,6 +71,7 @@ div[data-expansion-panel-header="true"] {
 
 .app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
   transition: height .3s !important;
+  overflow: hidden !important;
 }
 
 .app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
