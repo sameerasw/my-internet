@@ -48,6 +48,17 @@ div[data-expansion-panel-header="true"] {
   background-image: none !important;
 }
 
+/* todoist-sidebar hover */
+.app-sidebar-container > div:has(> nav) {
+  min-width: 50px !important;
+  overflow: hidden !important;
+  transition: width .3s;
+}
+
+.app-sidebar-container > div:has(> nav):not(:hover) {
+  width: 50px !important;
+}
+
 /* darkreader */
 :root{
   --darkreader-background-ffffff: transparent !important;
