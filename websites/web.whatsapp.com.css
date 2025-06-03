@@ -24,7 +24,9 @@ section, .two::after,
 #global-navbar,
 .head.notfixed, 
 body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+body.dark_mode, body.light_mode,
+footer > div:first-of-type,
+#app > div:first-of-type::after {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -32,6 +34,16 @@ body.dark_mode, body.light_mode{
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-:root, .dark{
+:root, .dark {
   --background-document-with-captions: transparent !important;
+}
+
+/* wa-layout fixes */
+.two,
+.three {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  top: 0 !important;
 }
