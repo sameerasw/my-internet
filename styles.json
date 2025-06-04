@@ -2474,6 +2474,10 @@
       "transparency": "body, html, #root, header, header div, main .rm, [data-testid=\"active-order-sticky-eta\"], .jv > div:nth-child(1) > div:nth-child(1), div.s7:nth-child(1), .ae.bh > div, .st, .jo{\n  background-color: #00000000 !important;\n  background: none !important;\n}\n\n\n#main-content > div:nth-child(1), .b0{\n  border-radius: 1em !important;\n  background-color: light-dark(#fff, #222) !important;\n}",
       "map transparency": "iframe, canvas{\n  opacity: 0.6 !important;\n  border-radius: 1em !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
+    },
+    "fluidnc.local.css": {
+      "fnclcl-Transparency": "body,\nnav,\n.panel,\n.panel-heading,\n.panel-footer,\n.table tr,\n.list-group li,\n#cmd_content,\n.input-group *,\n.label,\n.tablinks {\n  background-color: transparent !important;\n  background: none !important;\n}\n:root {\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "fnclcl-Translucent Buttons": ".btn-default {\n  background-color: rgba(255, 255, 255, 0.25) !important;\n}\n.btn-primary {\n  background-color: rgba(0, 255, 255, 0.25) !important;\n}\n.btn-danger {\n  background-color: rgba(255, 0, 0, 0.25) !important;\n}"
     }
   }
 }
