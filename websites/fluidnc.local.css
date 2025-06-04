@@ -1,4 +1,4 @@
-/* fnc-lcl-Transparency */
+/* fnclcl-Transparency */
 body,
 nav,
 .panel,
@@ -17,7 +17,7 @@ nav,
   --darkreader-background-ffffff: transparent !important;
 }
 
-/* fnc-lcl-Translucent Buttons */
+/* fnclcl-Translucent Buttons */
 .btn-default {
   background-color: rgba(255, 255, 255, 0.25) !important;
 }
