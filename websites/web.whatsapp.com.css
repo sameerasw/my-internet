@@ -35,7 +35,10 @@ footer > div:first-of-type,
 }
 
 :root, .dark {
+  --background-default-active: transparent !important;
   --background-document-with-captions: transparent !important;
+  --border-list: transparent !important;
+  --conversation-header-border: transparent !important;
 }
 
 /* wa-layout fixes */
