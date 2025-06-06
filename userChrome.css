@@ -245,7 +245,8 @@ body:not(
 /* Extension button scale for macOS */
 #unified-extensions-button {
   image {
-    scale: 1.45;
+    scale: 1.3;
+    border-radius: 0.75em !important;
   }
 }
 
@@ -449,7 +450,7 @@ tab-group > .tab-group-label-container > label.tab-group-label[aria-expanded="tr
   #context_bookmarkTab,
   #context_moveTabOptions,
   #context_sendTabToDevice,
-  #context_reopenInContainer,
+/*   #context_reopenInContainer, */
   #context_selectAllTabs,
   #context_closeDuplicateTabs,
   #context_closeTabOptions,
@@ -487,7 +488,34 @@ tab-group > .tab-group-label-container > label.tab-group-label[aria-expanded="tr
   #context-sendimage {
     display: none !important;
   }
+  
+  --menuitem-padding: 3px !important
 }
+[hasbeenopened="true"]{
+menuitem, menu{
+.menu-text{
+  font-size: 0.93em !important;
+    padding: 2px 5px !important;
+  opacity: 1 !important;
+  transition: all 0.2s ease-in-out !important;
+  
+}
+  
+  &:hover > .menu-text{
+    padding-left: 8px !important;
+    padding-right: 2px !important;
+  }
+}
+  
+  &:has(menu[open="true"]){
+    & > menuitem .menu-text, menu:not([open="true"]) > .menu-text{
+      opacity: 0.3 !important;
+    }
+    
+  }
+}
+
+
 
 /*******************************************************************************
  * CTRL+TAB SWITCHER STYLING
@@ -700,6 +728,59 @@ body:has(
 
 /* Permanently transparent compact sidebar - fix for zen bug */
 #zen-main-app-wrapper[zen-compact-mode="true"] #navigator-toolbox {
+/*   opacity: 0 !important; */
+}
+
+/* auto hide toolbar buttons */
+#zen-sidebar-top-buttons{
+  transition: all 0.3s ease-in-out !important;
+  margin-top: 0 !important;
+  padding-top: 5px !important;
+}
+
+#navigator-toolbox:not(:has(#nav-bar:hover)):not(:has(#urlbar[open=""])){
+#zen-sidebar-top-buttons:not(:hover):not(:has([open="true"])):has(toolbarbutton:not([hidden="true"]):not(#unified-extensions-button)){
+  margin-top: -20px !important;
+  margin-bottom: 0 !important;
   opacity: 0 !important;
-  /*   display: none !important; */
+}
+}
+
+
+/* ======== containers ======= */
+tab{
+.tab-background{
+  flex-direction: unset !important;
+  
+.tab-context-line{
+  width: 22px !important;
+  height: 22px !important;
+  margin: auto 6px !important;
+  border-radius: 0.7rem !important;
+  background-color: transparent !important;
+  
+  border: 1.5px var(--identity-tab-color) solid !important;
+  transition: all 0.3s ease-in-out !important;
+}
+  
+}
+  &:hover .tab-context-line{
+  filter: blur(10px) !important;
+    border: 12px  var(--identity-tab-color) solid !important;
+    
+  }
+}
+
+[uidensity="compact"] tab .tab-background .tab-context-line{
+  margin: auto 5px !important;
+}
+
+
+tab[zen-essential="true"] .tab-background .tab-context-line{
+  margin: auto !important;
+  z-index: 1000 !important;
+}
+
+tab[discarded=""]:hover, tab[pending="true"]:hover{
+  filter: grayscale(0) !important;
 }
