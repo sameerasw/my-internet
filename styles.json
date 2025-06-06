@@ -2549,6 +2549,9 @@
     "tv24.lt.css": {
       "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp,\n#app,\n.app,\n.app-root,\n#pass-sidebar,\n#main,\nmain,\n#content, .schedule\nsection, .main-header__section,\n#__next, body > div,\n#navigation-wrapper,\n#global-navbar,\n.head.notfixed, \nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.daymenu, article, .dropdown-menu, .modal-content{\n  border-radius: 1em !important;\n  margin: 4px !important;\n}\n\narticle.schedule, .daymenu, .modal-content{\n  background-color: light-dark(#fff, #222) !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}"
+    },
+    "ai.google.dev.css": {
+      "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp,\n#app,\n.app,\n.app-root,\n#pass-sidebar,\n#main,\nmain,\n#content,\nsection,\n#__next,\n#navigation-wrapper, devsite-gemini-page,\n#global-navbar, .devsite-top-logo-row-wrapper-wrapper,\n.head.notfixed, .devsite-top-logo-row,\nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     }
   }
 }
