@@ -15,7 +15,7 @@ app, [aria-label="Channel tab drawer"] > div, .x150wa6m,
 .app, .two, .two > div, div.xds687c:nth-child(1),
 .app-root,
 #pass-sidebar,
-#main,
+#main, ._alyo._alyw,
 main, [data-focusid="status-row-item"]:not(:hover),
 #content, [aria-label="Status tab drawer"] > div,
 section, .two::after,
@@ -39,6 +39,12 @@ footer > div:first-of-type,
   --background-document-with-captions: transparent !important;
   --border-list: transparent !important;
   --conversation-header-border: transparent !important;
+}
+
+body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [aria-label="Community tab drawer"], [title="Settings"], [title="Profile"]) ._aigw{ 
+  header:has([aria-label="WhatsApp"]), #side{
+  display: none !important;
+}
 }
 
 /* wa-layout fixes */
