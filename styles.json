@@ -2526,6 +2526,11 @@
     },
     "lunarclient.com.css": {
       "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp,\n#app,\n.app,\n.app-root, .c-kHQyum::before,\n#pass-sidebar,\n#main, nav::before,\nmain, #secondary-navbar,\n#content,\nsection, [data-testid=\"alert\"],\n#__next, #__next > div > div,\n#navigation-wrapper,\n#global-navbar,\n.head.notfixed, \nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n    background: none !important;\n      border: none !important;\n        box-shadow: none !important;\n          transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n          }"
+    },
+    "ainvest.com.css": {
+      "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header, .page,\napp, .bg-foreground-layer1,\n#app, #container_losers > a > div,\n.app, #container_gainers > a > div,\n.app-root, #container_most_volatile_stocks > a > div,\n#pass-sidebar, #container_highest_volume_stocks > a > div,\n#main, [itemtype=\"http://schema.org/NewsArticle\"],\nmain, a > div.cursor-pointer:has([itemtype=\"http://schema.org/NewsArticle\"]),\n#content, [class=\"relative simple-chart\"] > div, [class=\"relative simple-chart\"] > div > div,\nsection, #layout_main_scroll_wrapper > div,\n#__next, main > div, main > div > div,\n#navigation-wrapper,\n#global-navbar,\n.head.notfixed, \nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n    background: none !important;\n      border: none !important;\n        box-shadow: none !important;\n          transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n          }\n\n             .home-nav > img{\n               display: none !important;\n             }",
+      "darkreader": ":root{\n            --darkreader-background-ffffff: transparent !important;\n            }",
+      "no footer": "footer, #layout_main_scroll_wrapper > div:nth-last-child(1){\n              display: none !important;\n              }"
     }
   }
 }
