@@ -2537,6 +2537,9 @@
     "+cloud.microsoft.css": {
       "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp, #root > div > div,\n#app,\n.app, #enterpriseShellHeader + div,\n.app-root,\n#pass-sidebar,\n#main,\nmain,\n#content,\nsection,\n#__next, #load_back,\n#navigation-wrapper,\n#global-navbar,\n.head.notfixed, \nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n    background: none !important;\n      border: none !important;\n        box-shadow: none !important;\n          transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n          }",
       "darkreader": ":root{\n            --darkreader-background-ffffff: transparent !important;\n            }"
+    },
+    "volksverpetzer.de.css": {
+      "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp,\n#app,\n.app,\n.app-root,\n#pass-sidebar,\n#main,\nmain,\n#content, #main-content,\nsection, .et_pb_code_inner, .et_pb_row,\n#__next, article, #main-content .et_pb_row,\n#navigation-wrapper,\n#global-navbar,\n.head.notfixed, .et_builder_inner_content > div,  #main-content .et_pb_section,\nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n    background: none !important;\n      border: none !important;\n        box-shadow: none !important;\n          transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n          }"
     }
   }
 }
