@@ -41,7 +41,7 @@ text-div > textarea{
   border-left: none !important;
   border-right: none !important;
 }
-light .lilo-search .lilo-text-result p.description {
+.theme-light .lilo-search .lilo-text-result p.description {
   color: inherit !important;
 }
 
@@ -53,4 +53,41 @@ light .lilo-search .lilo-text-result p.description {
 /* no footer */
 footer, mfe-footer-pharos-footer, .footer, #footer{
   display: none !important;
+}
+a[href="https://privacy.microsoft.com/privacystatement"] {
+  display: none !important;
+}
+
+/* hide add to firefox button */
+.lilo-install-cta.column.is-2 {
+  display: none !important;
+}
+
+/* transparent search bar */
+.input {
+	background-color: transparent;
+	color: inherit;
+}
+
+/* center content */
+#content .column {
+	margin: auto !important;
+	width: 70% !important;
+}
+.lilo-search .container {
+	margin-left: 0% !important;
+  margin-inline-start: none !important;
+}
+.column.is-11, .column.is-11-tablet {
+	width: 80%;
+	margin: auto !important;
+}
+#content .column {
+	margin: auto !important;
+  width: 70% !important;
+}
+.column.is-11, .column.is-11-tablet {
+  margin-inline-start: none !important;
+	margin: auto !important;
+  width: 60% !important;
 }
