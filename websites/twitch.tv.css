@@ -1,18 +1,18 @@
 /* twitch-transparency */
-:root {
-  --color-background-body: transparent !important;
-  --color-background-base: transparent !important;
-  --shadow-elevation-1: none !important;
-  --color-background-alt: transparent !important;
-}
 
-html, body, nav, header, .chat-room, .channel-root__right-column, .ixiIRM > div:nth-child(1), .stream-display-ad__container_squeezeback, .video-player,
-.video-player__container,
-.channel-root{
+html, body, nav, header, .chat-room, .channel-root__right-column, .ixiIRM > div:nth-child(1), .stream-display-ad__container_squeezeback, .video-player, .channel-root, .top-nav__menu,
+.video-player__container, .channel-root__player > div > div,
+.channel-root, .side-nav, .channel-info-content, .channel-root__info:not(:has(#offline-channel-main-content)){
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+}
+#offline-channel-main-content{
+  background-color: var(--color-background-body) !important;
+}
+main{
+  border-radius: 1em !important;
 }
 
 body:has(.persistent-player--theatre){
@@ -25,8 +25,11 @@ body:has(.persistent-player--theatre){
   background-color: var(--color-background-input-checkbox-checked-background) !important;
 }
 
-
 /* twitch-no footer */
 footer{
   display: none !important;
+}
+
+.channel-root__info{
+  position: relative;
 }
