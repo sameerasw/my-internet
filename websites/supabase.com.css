@@ -20,6 +20,17 @@ html {
   --background-surface-400: transparent !important;
   --background-200: transparent !important;
 }
+.bg,
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.bg-sidebar {
+  transition: background-color 0.1s ease-in-out !important;
+}
+.bg-dash-sidebar.relative,
+[data-state="expanded"] .bg-sidebar {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
 
 /* darkreader */
 :root {
