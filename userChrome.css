@@ -237,7 +237,6 @@ body:not(
   }
 }
 
-
 /*******************************************************************************
  * EXTENSIONS STYLING
  ******************************************************************************/
@@ -444,7 +443,7 @@ tab-group > .tab-group-label-container > label.tab-group-label[aria-expanded="tr
     width: 50px !important;
     background-color: red !important;
   }
-  #context_zen-add-essential,
+  /*   #context_zen-add-essential, */
   #context_unpinTab,
   #context_pinTab,
   #context_bookmarkTab,
@@ -488,34 +487,37 @@ tab-group > .tab-group-label-container > label.tab-group-label[aria-expanded="tr
   #context-sendimage {
     display: none !important;
   }
-  
-  --menuitem-padding: 3px !important
+
+  --menuitem-padding: 3px !important;
 }
-[hasbeenopened="true"]{
-menuitem, menu{
-.menu-text{
-  font-size: 0.93em !important;
-    padding: 2px 5px !important;
-  opacity: 1 !important;
+
+menuitem {
   transition: all 0.2s ease-in-out !important;
-  
 }
-  
-  &:hover > .menu-text{
-    padding-left: 8px !important;
-    padding-right: 2px !important;
+
+[hasbeenopened="true"] {
+  menuitem,
+  menu {
+    .menu-text {
+      font-size: 0.93em !important;
+      padding: 2px 5px !important;
+      opacity: 1 !important;
+      transition: all 0.2s ease-in-out !important;
+    }
+
+    &:hover > .menu-text {
+      padding-left: 8px !important;
+      padding-right: 2px !important;
+    }
   }
-}
-  
-  &:has(menu[open="true"]){
-    & > menuitem .menu-text, menu:not([open="true"]) > .menu-text{
+
+  &:has(menu[open="true"]) {
+    & > menuitem,
+    menu:not([open="true"]) {
       opacity: 0.3 !important;
     }
-    
   }
 }
-
-
 
 /*******************************************************************************
  * CTRL+TAB SWITCHER STYLING
@@ -721,66 +723,72 @@ body:has(
   }
 } */
 
-
 /* ============================================= */
 /* ======== personal pref only, keep off ======== */
 /* ============================================= */
 
 /* Permanently transparent compact sidebar - fix for zen bug */
 #zen-main-app-wrapper[zen-compact-mode="true"] #navigator-toolbox {
-/*   opacity: 0 !important; */
+  opacity: 0 !important;
 }
 
 /* auto hide toolbar buttons */
-#zen-sidebar-top-buttons{
+#zen-sidebar-top-buttons {
   transition: all 0.3s ease-in-out !important;
   margin-top: 0 !important;
   padding-top: 5px !important;
 }
 
-#navigator-toolbox:not(:has(#nav-bar:hover)):not(:has(#urlbar[open=""])){
-#zen-sidebar-top-buttons:not(:hover):not(:has([open="true"])):has(toolbarbutton:not([hidden="true"]):not(#unified-extensions-button)){
-  margin-top: -20px !important;
-  margin-bottom: 0 !important;
-  opacity: 0 !important;
-}
-}
-
-
-/* ======== containers ======= */
-tab{
-.tab-background{
-  flex-direction: unset !important;
-  
-.tab-context-line{
-  width: 22px !important;
-  height: 22px !important;
-  margin: auto 6px !important;
-  border-radius: 0.7rem !important;
-  background-color: transparent !important;
-  
-  border: 1.5px var(--identity-tab-color) solid !important;
-  transition: all 0.3s ease-in-out !important;
-}
-  
-}
-  &:hover .tab-context-line{
-  filter: blur(10px) !important;
-    border: 12px  var(--identity-tab-color) solid !important;
-    
+#navigator-toolbox:not(:has(#nav-bar:hover)):not(:has(#urlbar[open=""])) {
+  #zen-sidebar-top-buttons:not(:hover):not(:has([open="true"])):has(
+      toolbarbutton:not([hidden="true"]):not(#unified-extensions-button)
+    ) {
+    margin-top: -20px !important;
+    margin-bottom: 0 !important;
+    opacity: 0 !important;
   }
 }
 
-[uidensity="compact"] tab .tab-background .tab-context-line{
+/* ======== containers ======= */
+tab {
+  .tab-background {
+    flex-direction: unset !important;
+
+    .tab-context-line {
+      display: flex !important;
+      box-sizing: border-box !important;
+
+      width: 22px !important;
+      height: 22px !important;
+      margin: auto 6px !important;
+      border-radius: 0.7rem !important;
+      /*   background-color: color-mix(in srgb, var(--identity-tab-color) 20%, white), !important; */
+      background: color-mix(
+        in srgb,
+        var(--identity-tab-color) 30%,
+        transparent
+      ) !important;
+
+      border: 1.5px var(--identity-tab-color) solid !important;
+      transition: all 0.3s ease-in-out !important;
+    }
+  }
+  &:hover .tab-context-line {
+    filter: blur(10px) !important;
+    border: 12px var(--identity-tab-color) solid !important;
+  }
+}
+
+[uidensity="compact"] tab .tab-background .tab-context-line {
   margin: auto 5px !important;
 }
 
-
-tab[zen-essential="true"] .tab-background .tab-context-line{
+tab[zen-essential="true"] .tab-background .tab-context-line {
   margin: auto !important;
   z-index: 1000 !important;
 }
 
-tab[discarded=""]:hover, tab[pending="true"]:hover{
+tab[discarded=""]:hover,
+tab[pending="true"]:hover {
   filter: grayscale(0) !important;
 }
