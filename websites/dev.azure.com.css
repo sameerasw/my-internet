@@ -67,7 +67,9 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .ci-yaml-editor-header,
 .tasks-tab-content .task-tab-left-section,
 .sidebar-search .search-input-wrapper,
-.tree-view > ul.tree-children li.selected > a > div.node-content, .tree-view.focus > ul.tree-children li.selected > a > div.node-content, li.tree-drag-tile > a > div.node-content {
+.tree-view > ul.tree-children li.selected > a > div.node-content, .tree-view.focus > ul.tree-children li.selected > a > div.node-content, li.tree-drag-tile > a > div.node-content,
+.bolt-messagecard .bolt-messagebar.severity-info,
+.bolt-table-container {
     background-color: transparent !important;
 }
 
