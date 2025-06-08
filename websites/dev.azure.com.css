@@ -99,7 +99,8 @@ input[type="text"], textarea[type="text"],
 .combo,
 .grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur,
 .report-cards-view .analytics-cardmetrics-area,
-.delivery-plans-board .month-header {
+.delivery-plans-board .month-header,
+.change-summary-card-content {
     background-color: var(--opaque-background) !important;
 }
 
