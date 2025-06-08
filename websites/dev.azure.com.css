@@ -73,7 +73,10 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .delivery-plans-board .team-background-header, .delivery-plans-board .iteration-background, .collapse-teams-button,
 .report-cards-view .analytics-cardmetrics-area,
 .repos-commit-editor-background,
-.repos-file-editor-background {
+.repos-file-editor-background,
+.release-progress-container .cd-canvas-tab-content,
+.vss-PivotBar .vss-PivotBar--bar-two-line.sticky,
+.bolt-header-command-item-button {
     background-color: transparent !important;
 }
 
@@ -102,7 +105,8 @@ input[type="text"], textarea[type="text"],
 .grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur,
 .report-cards-view > .analytics-cardmetrics-area,
 .delivery-plans-board .month-header,
-.repos-changes-viewer .change-summary-card-content {
+.repos-changes-viewer .change-summary-card-content,
+.pl-reader {
     background-color: var(--opaque-background) !important;
 }
 
