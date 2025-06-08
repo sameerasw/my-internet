@@ -89,7 +89,7 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .project-card > .bolt-card-white,
 .devops-dashboard-grid .grid-item, 
 .markdown-component, 
-.wit-card:not(.taskboard-card):not(:has(.iteration-header)), .bolt-card:not(.bolt-card-with-header),
+.boards-card, .bolt-card:not(.bolt-card-with-header),
 .repos-file-editor-background, .repos-commit-editor-background,
 .ci-yaml-editor-tab,
 .selected,
