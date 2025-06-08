@@ -70,7 +70,8 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .tree-view > ul.tree-children li.selected > a > div.node-content, .tree-view.focus > ul.tree-children li.selected > a > div.node-content, li.tree-drag-tile > a > div.node-content,
 .bolt-messagecard .bolt-messagebar.severity-info,
 .bolt-table-container,
-.delivery-plans-board .team-background-header, .delivery-plans-board .iteration-background, .collapse-teams-button {
+.delivery-plans-board .team-background-header, .delivery-plans-board .iteration-background, .collapse-teams-button,
+.report-cards-view .analytics-cardmetrics-area {
     background-color: transparent !important;
 }
 
@@ -98,7 +99,7 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 input[type="text"], textarea[type="text"],
 .combo,
 .grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur,
-.report-cards-view .analytics-cardmetrics-area,
+.report-cards-view > .analytics-cardmetrics-area,
 .delivery-plans-board .month-header,
 .repos-changes-viewer .change-summary-card-content {
     background-color: var(--opaque-background) !important;
