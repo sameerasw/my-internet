@@ -70,8 +70,7 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .tree-view > ul.tree-children li.selected > a > div.node-content, .tree-view.focus > ul.tree-children li.selected > a > div.node-content, li.tree-drag-tile > a > div.node-content,
 .bolt-messagecard .bolt-messagebar.severity-info,
 .bolt-table-container,
-.delivery-plans-board .team-background-header,
-.delivery-plans-board .iteration-background {
+.delivery-plans-board .team-background-header, .delivery-plans-board .iteration-background, .collapse-teams-button {
     background-color: transparent !important;
 }
 
