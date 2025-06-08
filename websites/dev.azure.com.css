@@ -71,7 +71,8 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .bolt-messagecard .bolt-messagebar.severity-info,
 .bolt-table-container,
 .delivery-plans-board .team-background-header, .delivery-plans-board .iteration-background, .collapse-teams-button,
-.report-cards-view .analytics-cardmetrics-area {
+.report-cards-view .analytics-cardmetrics-area,
+.repos-file-editor-background {
     background-color: transparent !important;
 }
 
@@ -90,7 +91,7 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .devops-dashboard-grid .grid-item, 
 .markdown-component, 
 .boards-card, .bolt-card:not(.bolt-card-with-header),
-.repos-file-editor-background, .repos-commit-editor-background,
+.repos-commit-editor-background,
 .ci-yaml-editor-tab,
 .selected,
 .repos-summary-header > div:first-child,
