@@ -69,7 +69,9 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .sidebar-search .search-input-wrapper,
 .tree-view > ul.tree-children li.selected > a > div.node-content, .tree-view.focus > ul.tree-children li.selected > a > div.node-content, li.tree-drag-tile > a > div.node-content,
 .bolt-messagecard .bolt-messagebar.severity-info,
-.bolt-table-container {
+.bolt-table-container,
+.delivery-plans-board .team-background-header,
+.delivery-plans-board .iteration-background {
     background-color: transparent !important;
 }
 
@@ -87,7 +89,7 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .project-card > .bolt-card-white,
 .devops-dashboard-grid .grid-item, 
 .markdown-component, 
-.wit-card:not(.taskboard-card), .bolt-card,
+.wit-card:not(.taskboard-card):not(:has(.iteration-header)), .bolt-card,
 .repos-file-editor-background, .repos-commit-editor-background,
 .ci-yaml-editor-tab,
 .selected,
@@ -96,7 +98,9 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .title_65b34777, .fieldGroup_e7469fb8,
 input[type="text"], textarea[type="text"],
 .combo,
-.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur {
+.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur,
+.report-cards-view .analytics-cardmetrics-area,
+.delivery-plans-board .month-header {
     background-color: var(--opaque-background) !important;
 }
 
