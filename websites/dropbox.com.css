@@ -2,16 +2,23 @@
 html,
 body,
 .dig-Theme-vis2023--bright,
-.dig-Theme-vis2023--dark {
+.dig-Theme-vis2023--dark,
+._sidebar_x74gj_1 {
   --dig-color__background__subtle: transparent !important;
   --dig-color__background__base: transparent !important;
-
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
     border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+.dig-Mode--dark,
+.dig-Theme--dark {
+  --color__standard__background: transparent !important;
+}
+.dig-5lbgm3o_22-1-0 {
+  background-color: var(--dig-color__background__raised) !important;
 }
 /* darkreader */
 :root {
