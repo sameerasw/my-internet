@@ -54,7 +54,7 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .widget-host,
 .ms-DetailsHeader,
 .kanban-board, .kanban-board-column, .kanban-board-column-header-container,
-.bolt-table, .bolt-table:not(.sticky-table) th, .bolt-tabbar:not(.sticky), .bolt-master-panel, .bolt-page, .bolt-page-grey, .bolt-page-white, .bolt-textfield, .bolt-textfield-input, .bolt-card:not(.bolt-card-with-header), .bolt-filterbar-white,
+.bolt-table, .bolt-table:not(.sticky-table) th, .bolt-tabbar:not(.sticky), .bolt-master-panel, .bolt-page, .bolt-page-grey, .bolt-page-white, .bolt-textfield, .bolt-textfield-input, .bolt-card, .bolt-filterbar-white,
 .work-item-form-subheader, .work-item-form-control-wrapper > * > *, .work-item-form-control-wrapper > *, .work-item-form-control-content, .work-item-form-control, .work-item-form-collapsible-section-content > *,
 .taskboard-collapsed-row,
 .taskboard-expanded-cell,
