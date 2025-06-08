@@ -76,7 +76,8 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .repos-file-editor-background,
 .release-progress-container .cd-canvas-tab-content,
 .vss-PivotBar .vss-PivotBar--bar-two-line.sticky,
-.bolt-header-command-item-button {
+.bolt-header-command-item-button,
+.vertical-tablist-splitter .vertical-tablist-right-pane {
     background-color: transparent !important;
 }
 
@@ -106,7 +107,8 @@ input[type="text"], textarea[type="text"],
 .report-cards-view > .analytics-cardmetrics-area,
 .delivery-plans-board .month-header,
 .repos-changes-viewer .change-summary-card-content,
-.pl-reader {
+.pl-reader,
+.step-log-view-container .step-log-content {
     background-color: var(--opaque-background) !important;
 }
 
