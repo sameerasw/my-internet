@@ -67,7 +67,17 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .ci-yaml-editor-header,
 .tasks-tab-content .task-tab-left-section,
 .sidebar-search .search-input-wrapper,
-.tree-view > ul.tree-children li.selected > a > div.node-content, .tree-view.focus > ul.tree-children li.selected > a > div.node-content, li.tree-drag-tile > a > div.node-content {
+.tree-view > ul.tree-children li.selected > a > div.node-content, .tree-view.focus > ul.tree-children li.selected > a > div.node-content, li.tree-drag-tile > a > div.node-content,
+.bolt-messagecard .bolt-messagebar.severity-info,
+.bolt-table-container,
+.delivery-plans-board .team-background-header, .delivery-plans-board .iteration-background, .collapse-teams-button,
+.report-cards-view .analytics-cardmetrics-area,
+.repos-commit-editor-background,
+.repos-file-editor-background,
+.release-progress-container .cd-canvas-tab-content,
+.vss-PivotBar .vss-PivotBar--bar-two-line.sticky,
+.bolt-header-command-item-button,
+.vertical-tablist-splitter .vertical-tablist-right-pane {
     background-color: transparent !important;
 }
 
@@ -85,8 +95,7 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .project-card > .bolt-card-white,
 .devops-dashboard-grid .grid-item, 
 .markdown-component, 
-.wit-card:not(.taskboard-card), .bolt-card,
-.repos-file-editor-background, .repos-commit-editor-background,
+.boards-card, .bolt-card:not(.bolt-card-with-header),
 .ci-yaml-editor-tab,
 .selected,
 .repos-summary-header > div:first-child,
@@ -94,7 +103,12 @@ body[data-theme="ms.vss-web.vsts-theme"] {
 .title_65b34777, .fieldGroup_e7469fb8,
 input[type="text"], textarea[type="text"],
 .combo,
-.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur {
+.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur,
+.report-cards-view > .analytics-cardmetrics-area,
+.delivery-plans-board .month-header,
+.repos-changes-viewer .change-summary-card-content,
+.pl-reader,
+.step-log-view-container .step-log-content {
     background-color: var(--opaque-background) !important;
 }
 
