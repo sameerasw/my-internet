@@ -1,62 +1,35 @@
-/* transparency */
-html,
-body,
-nav,
-#nav,
-.nav,
-navbar, .x15g3fpr,
-.navbar, ._al_c,
-#navbar, .xsm26vf,
-header, [aria-label="Community tab drawer"] > div,
-#header, .x1n2onr6 ._ak72:not(:hover),
-.header,
-app, [aria-label="Channel tab drawer"] > div, .x150wa6m,
-#app, .x13x2ugz,
-.app, .two, .two > div, div.xds687c:nth-child(1),
-.app-root,
-#pass-sidebar,
-#main, ._alyo._alyw,
-main, [data-focusid="status-row-item"]:not(:hover),
-#content, [aria-label="Status tab drawer"] > div,
-section, .two::after,
-#__next, #side, #side > div, #side > div > div, .xsknx04,
-#navigation-wrapper,
-#global-navbar,
-.head.notfixed,
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode,
-footer > div:first-of-type,
-#app > div:first-of-type::after,
-._alzb, ._ak73 *, ._ak73::after, ._alzb::before
-header, .three , .x1bmpntp,
-.x1280gxy span > div:not([aria-label="Image"]) {
-  background-color: transparent !important;
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
-}
-
-.x1280gxy, ._ak73:hover, ._alzb:hover {
-  background: rgba(0, 0,0 , .1) !important;
-  background-color: rgba(0, 0,0 , .1) !important;
-}
-
-.x1setqd9::after {
-  display: none;
-}
-
-:root, .dark {
-  --background-default-active: transparent !important;
+/* wa-transparency */
+:root,
+.dark {
+  --background-default: transparent !important;
+  --background-default-active: rgba(32, 44, 51, 0.6) !important;
   --background-document-with-captions: transparent !important;
   --border-list: transparent !important;
   --conversation-header-border: transparent !important;
+  --conversation-panel-background: transparent !important;
+  --intro-background: transparent !important;
+  --filters-container-background: transparent !important;
+  --filters-item-background: transparent !important;
+  --navbar-background: transparent !important;
+  --panel-background-deeper: transparent !important;
+  --panel-background-hover: transparent !important;
+  --panel-background-lighter: transparent !important;
+  --panel-header-background: transparent !important;
+  --WDS-app-wash: transparent !important;
+  --rich-text-panel-background: transparent !important;
+  --search-container-background: transparent !important;
+  --search-input-container-background: transparent !important;
+  --startup-background: transparent !important;
+  --unread-bar-background: transparent !important;
 }
-
-body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [aria-label="Community tab drawer"], [title="Settings"], [title="Profile"]) ._aigw{
-  header:has([aria-label="WhatsApp"]), #side {
-    display: none !important;
-  }
+.xu306ak {
+  box-shadow: none !important;
+}
+.x18b5jzi {
+  border: none !important;
+}
+.x1setqd9::after {
+  display: none;
 }
 
 /* wa-layout fixes */
