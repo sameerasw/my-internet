@@ -1,5 +1,5 @@
 /* transparecy */
-html.theme--dim, html.theme--dark, html.theme--light, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), [data-testid="homeScreenFeedTabs"], div.css-175oi2r:has([data-testid="homeScreenFeedTabs"]), div.css-175oi2r:has([href="/feeds"]), [aria-label="View your feeds and explore more"], [placeholder="Search"] + div, .css-175oi2r.r-bnwqim.r-13qz1uu:has([placeholder="Search"]), div:has(div > button[aria-label="Go back"]), [aria-label="Compose reply"], [role="tablist"], [data-testid="profileView"] div.css-175oi2r.r-12vffkv{
+html.theme--dim, html.theme--dark, html.theme--light, .r-kemksi, .r-1d5kdc7, .r-1d5kdc7 > div:nth-child(1) > div:nth-child(1), [data-testid="homeScreenFeedTabs"], div.css-175oi2r:has([data-testid="homeScreenFeedTabs"]), div.css-175oi2r:has([href="/feeds"]), [aria-label="View your feeds and explore more"], [placeholder="Search"] + div, .css-175oi2r.r-bnwqim.r-13qz1uu:has([placeholder="Search"]), div:has(div > button[aria-label="Go back"]), [aria-label="Compose reply"], [role="tablist"], [data-testid="profileView"] div.css-175oi2r.r-12vffkv, #root > div > div > div > div > div, .r-12vffkv{
     --background: transparent !important;
     background-color: transparent !important;
 }
