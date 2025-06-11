@@ -14,7 +14,7 @@ button,
 table,
 tbody,
 tr,
-td,
+td, #imp > div > div,
 body:not(:has([aria-label="Google Maps"])) div:not([role="img"], [style="background:#344DC9"], .immersive-container, [role="dialog"], .k4o2Hc, [role="tablist"], [role="listitem"] > [role="button"] > div > div, [jscontroller="Dvn7fe"] > div, .kHtcsd div), [role="columnheader"]{
   background: transparent !important;
   background-color: transparent !important;
