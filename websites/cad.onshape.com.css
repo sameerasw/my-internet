@@ -47,8 +47,8 @@ nav * {
   fill: white !important;
 }
 
-/* rounds the main toolbar and changes its transparency */
-#osToolbar {
+/* rounds the main toolbar and bottom tabs, changes its transparency as well*/
+#osToolbar, .os-tab-bar-content {
    background-color: rgb(0, 0, 0, 0.4) !important;
    border-radius: 200px;
    *:not(label, .command-search, .os-tool-dropdown) {
@@ -95,7 +95,7 @@ nav * {
 }
 
 /* add transparency to a few more elements */
-.canvas-container *, .ns-dialog-frame, .split-toggle-container *, .ns-dialog-header, .os-flyout-notifications *, #custom-feature-dialog *, .tooltip *,  .os-tab-bar-content {
+.canvas-container *, .ns-dialog-frame, .split-toggle-container *, .ns-dialog-header, .os-flyout-notifications *, #custom-feature-dialog *, .tooltip * {
    background-color: transparent !important;
 }
 
