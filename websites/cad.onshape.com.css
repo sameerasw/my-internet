@@ -40,15 +40,13 @@ text-div > textarea,
   color: rgb(230, 230, 230) !important;
 }
 
-/* this changes text and other icon colors in the top navbar */
-nav * {
+nav * { /* this changes text and other icon colors in the top navbar */
   color: rgb(230, 230, 230) !important;
   --os-icon-fill-tertiary: white !important;
   fill: white !important;
 }
 
-/* rounds the main toolbar and bottom tabs, changes its transparency as well*/
-#osToolbar, .os-tab-bar-content {
+#osToolbar, .os-tab-bar-content { /* rounds the main toolbar and bottom tabs, changes its transparency as well*/
    background-color: rgb(0, 0, 0, 0.4) !important;
    border-radius: 200px;
    *:not(label, .command-search, .os-tool-dropdown) {
@@ -57,15 +55,13 @@ nav * {
    }
 }
 
-/* changes the transparency of the left toolbar */
-.os-panel-select-bar {
+.os-panel-select-bar { /* rounds the main toolbar and bottom tabs, changes its transparency as well*/
       background-color: rgb(0, 0, 0, 0.4) !important;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
 }
 
-/* makes the left and right container toggles transparent, rounded, and removes border. */
-.right-split-toggle-container {
+.right-split-toggle-container { /* makes the left and right container toggles transparent, rounded, and removes border. */
    background-color: rgb(0, 0, 0, 0.4) !important;
    border-top-left-radius: 15px;
    border-bottom-left-radius: 15px;
@@ -82,25 +78,26 @@ nav * {
    filter: drop-shadow(0 0 0.5rem rgb(255, 255, 255));
 }
 
-/* much darker transparency for context menus, includes a blur behind as well */
-.os-flex-table-header, .element-thumbnail, .tab-search-controls, .network-warning, .loading-progress-background, .context-menu-list, .os-tab-bar-tab, .ns-dialog-panel, .zero-state-card, .os-flyout-notifications, .tooltip, .os-tool-dropdown, .modal-content, .dropdown-menu, .ns-dialog, .command-search {
+.os-flex-table-header, .element-thumbnail, .tab-search-controls,
+.network-warning, .loading-progress-background, .context-menu-list,
+.os-tab-bar-tab, .ns-dialog-panel, .zero-state-card,
+.os-flyout-notifications, .tooltip, .os-tool-dropdown,
+.modal-content, .dropdown-menu, .ns-dialog, .command-search { /* much darker transparency for context menus, includes a blur behind as well */
       background-color: rgb(0, 0, 0, 0.7) !important;
       backdrop-filter: blur(2px) !important;
       border-radius: 10px !important;
    }
 
-/* rounds all of the bottom tab buttons */
-.os-tab-bar-tab {
+.os-tab-bar-tab { /* rounds all of the bottom tab buttons */
    border-radius: 200px !important;
 }
 
-/* add transparency to a few more elements */
-.canvas-container *, .ns-dialog-frame, .split-toggle-container *, .ns-dialog-header, .os-flyout-notifications *, #custom-feature-dialog *, .tooltip * {
+.canvas-container *, .ns-dialog-frame, .split-toggle-container *,
+.ns-dialog-header, .os-flyout-notifications *, #custom-feature-dialog *, .tooltip * {  /* add transparency to a few more elements */
    background-color: transparent !important;
 }
 
-/* adds slight transparency and rounding to content panels, ex: file list */
-.document-panel, .os-document-filters, .os-detail-panel, .panel-content-pane {
+.document-panel, .os-document-filters, .os-detail-panel, .panel-content-pane { /* adds slight transparency and rounding to content panels, ex: file list */
       background-color: rgb(0, 0, 0, 0.1) !important;
       border: none !important;
       border-radius: 15px;
