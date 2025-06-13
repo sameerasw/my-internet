@@ -7,6 +7,8 @@
   --home-background: #00000000 !important;
   --bg-base-primary: #00000000 !important;
   --background-base-lowest: transparent !important;
+  --background-base-lower: transparent !important;
+  --background-modifier-accent: transparent !important;
 }
 
 html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .callContainer_cb9592, .bg__960e4, .tabBody__133bf, .sidebarList_c48ade, main, .chat_f75fb0, .page_c48ade, .children__9293f::after, .header__34c2c, .contentRegionScroller__23e6b , .container_f369db, [aria-label="Resize Sidebar"], .visual-refresh .root_bfe55a{   background-color: transparent !important;   background: none !important;   box-shadow: none !important;   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important; }
