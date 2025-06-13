@@ -1,23 +1,13 @@
 /* gh-transparency */
 html,
-header,
 body,
-nav,
-.TableHeader.prc-DataTable-TableHeader-CRPoj, [data-testid="chat-layout"] > div > div > div,
-.diffbar.details-collapse.js-details-container.Details.flex-1.d-flex.flex-items-center.width-full.flex-wrap.gap-2, [data-testid="chat-layout"], aside > div,
-.VisibleAndOverflowContainer-module__Box_0--cTFgm button,
-.cm-editor.ͼ1.ͼ2.ͼ5x1.ͼ5xi.hide-help.js-codemirror-editor,
-.Layout-module__viewer--M_UyD,
-#discussions-search-combobox,
-.Layout-module__container--ON_wj,
-.Box-sc-g0xbh4-0.fFvqfZ,
-.Sidebar-module__container--s585U .Sidebar-module__sidebar--sn0TN,
-.Sidebar-module__container--s585U:where(.Sidebar-module__pinned--e3Nsi), .Sidebar-module__container--s585U:where(.Sidebar-module__visible--d8dRm),
-.prc-Button-ButtonBase-c50BI.prc-Button-IconButton-szpyj,
+header,
 .color-bg-default,
 .feed-background,
-.notranslate,
+.session-authentication,
+.auth-form-body,
 [aria-labelledby="folders-and-files"] .bgColor-muted,
+nav,
 .dxnHPp,
 .kcVpNH,
 .discussion-timeline-actions,
@@ -31,10 +21,9 @@ nav,
 .empty-cell,
 .FleZw,
 .MarkdownInput-module__textArea--QjIwG,
-.notifications-list-item,
+.notifications-list-item, 
 .notifications-list-item.notification-read,
 .search-results-page,
-.Box-sc-g0xbh4-0 .erfCwp th,
 .application-main > div > div,
 #memex-root,
 [aria-label="Project"],
@@ -43,7 +32,7 @@ nav,
 .jyoUVC,
 .Box-sc-g0xbh4-0[role="grid"],
 [role="row"],
-.eqCHeb {
+.eqCHeb, [data-testid="chat-layout"], aside > div,[data-testid="chat-layout"] > div > div > div {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -58,12 +47,12 @@ button[role="tab"]{
   }
 }
 
-.MarkdownEditor-module__viewSwitchBorder--zeiDB{
+.MarkdownEditor-module__viewSwitchBorder--zeiDB, .js-comment-container::before, .js-comment-container .TimelineItem::before{
   display: none !important;
 }
 
 /* gh-transparent lists */
-.PageLayout-content .Box:not(.Popover-message), 
+.PageLayout-content .Box:not(.Popover-message),
 .PageLayout-content .Box-row,
 #repo-content-turbo-frame .Box.Box:not(.Popover-message) {
   background-color: transparent !important;
@@ -72,15 +61,6 @@ button[role="tab"]{
   box-shadow: none !important;
 }
 
-.CommentBox-container {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 0px 0px 0px 0px !important;
-  margin: 0px;
-  overflow: hidden;
-  border: none;
-}
 
 /* gh-bordered boxes */
 [data-selector="repos-split-pane-content"] {
@@ -93,10 +73,6 @@ button[role="tab"]{
     background: none !important;
     box-shadow: none !important;
   }
-}
-
-#new_comment_field {
-  margin: 0px !important;
 }
 
 #user-profile-frame .Box,
@@ -141,24 +117,8 @@ div.px-2:nth-child(3) {
 table,
 .eIKYQa,
 div.border-bottom,
-.tabnav,
-.discussion-sidebar-item,
-.Box-sc-g0xbh4-0 .crArEc,
-.Box-sc-g0xbh4-0 .dJnomT,
-.d-flex.flex-column.border.rounded-2.mb-3.pl-1,
-.tabnav-tab,
-.TabNav__TabNavLink-sc-pwdi4r-3,
-.TableHeader.prc-DataTable-TableHeader-CRPoj,
 td {
   border: none !important;
-}
-
-.discussion-sidebar-item {
-  padding-top: 0.5em !important;
-}
-
-.ChatMessage-module__content--MYneF {
-  padding: 0.7em !important;
 }
 
 .dJnomT,
@@ -169,7 +129,6 @@ td {
 #repos-sticky-header > div,
 .jbBkdO,
 .file-header,
-.Box-sc-g0xbh4-0.crMLA-D.react-issue-comment,
 .TabNav-item {
   border-radius: 0.5em !important;
 }
@@ -177,7 +136,6 @@ td {
 /* gh-overlay fixes */
 modal-dialog .search-suggestions,
 details-dialog.Box,
-.Table.prc-DataTable-Table-qYfrL,
 .Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top.color-bg-default, .Popover-message {
   background-color: var(--bgColor-inset) !important;
   border-radius: 1em !important;
