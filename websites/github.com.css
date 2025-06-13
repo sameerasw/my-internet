@@ -32,7 +32,7 @@ nav,
 .jyoUVC,
 .Box-sc-g0xbh4-0[role="grid"],
 [role="row"],
-.eqCHeb, [data-testid="chat-layout"], aside > div,[data-testid="chat-layout"] > div > div > div {
+.eqCHeb, [data-testid="chat-layout"], aside > div,[data-testid="chat-layout"] > div > div > div, [data-testid="chat-layout"] > div > aside, .ContentPreview-module__tabsContainer--bNywg::after {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -49,6 +49,10 @@ button[role="tab"]{
 
 .MarkdownEditor-module__viewSwitchBorder--zeiDB, .js-comment-container::before, .js-comment-container .TimelineItem::before{
   display: none !important;
+}
+
+[aria-label="Copilot badge"] + div > .js-snippet-clipboard-copy-unpositioned:has(h3){
+  padding: 1em !important;
 }
 
 /* gh-transparent lists */
