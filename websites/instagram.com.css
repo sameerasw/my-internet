@@ -39,7 +39,7 @@ div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1
 }
 
 /* ig-overlay fix */
-div.x6s0dn4.xvbhtw8.x1lq5wgf.xgqcy7u.x30kzoy.x9jhf4c.x1xcus5i.xrvj5dj.x1dh5ka.xyamay9.x1l90r2v.x1n2onr6.xgpatz3.x1mu97ne, [role="dialog"], .x3zg9eu, .x1u3tz30{
+div.x6s0dn4.xvbhtw8.x1lq5wgf.xgqcy7u.x30kzoy.x9jhf4c.x1xcus5i.xrvj5dj.x1dh5ka.xyamay9.x1l90r2v.x1n2onr6.xgpatz3.x1mu97ne, [role="dialog"], .x3zg9eu, .x1u3tz30, div[data-visualcompletion="ignore-dynamic"] > div[style="transform: translateX(0%);"], [role="presentation"] > div.x1c1uobl, [role="presentation"] > div._at8n{
   background-color: var(--fds-highlight-cell-background) !important;
   border-radius: 1em !important;
 }

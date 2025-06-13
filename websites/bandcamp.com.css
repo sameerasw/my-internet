@@ -7,13 +7,13 @@ nav,
 navbar,
 .navbar,
 #navbar, 
-header,
-#header,
+header, #discover > div,
+#header, #menubar-wrapper.header-rework-2018,
 .header, header::before,
-app, #root > div > div > .w-full,
-#app, footer,
-.sidebar-wrap, .p-sectionLinks,
-section, .main,
+app, #menubar-vm, #menubar-vm > div,
+#app, footer, .after-carousel > div,
+.sidebar-wrap,
+section, .main, .discover-tags-container,
 #__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before,
 #root, .min-h-screen.bg-white,
 .app, .AppContainer,
@@ -38,12 +38,16 @@ text-div > textarea{
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
+.corp-banners{
+  display: none !important;
+}
+
 /* darkreader */
 :root{
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer, mfe-footer-pharos-footer, .footer, #footer{
+page-footer, mfe-footer-pharos-footer, .footer, #footer{
   display: none !important;
 }

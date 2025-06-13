@@ -10,14 +10,14 @@ navbar,
 header,
 #header,
 .header, header::before,
-app, #root > div > div > .w-full,
+app, #page > div > div >div,
 #app, footer,
-.sidebar-wrap, .p-sectionLinks,
-section, .main,
+.sidebar-wrap,
+section, .main, [data-testid="assistant"],
 #__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before,
 #root, .min-h-screen.bg-white,
 .app, .AppContainer,
-.app-root, #wrapper,
+.app-root, #wrapper, header + div > aside,
 body[data-theme="dark"], body[data-theme="light"],
 #pass-sidebar, .side-bar,
 #main, .sidebar, .global-content__content,
@@ -36,6 +36,10 @@ text-div > textarea{
   border: none !important;
   box-shadow: none !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+aside > nav:nth-child(1):not([aria-hidden="true"]){
+  background-color: light-dark(#fff, #222) !important ;
 }
 
 /* darkreader */
