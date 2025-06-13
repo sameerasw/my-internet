@@ -2659,6 +2659,11 @@
       "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp,\n#app, .css-7v35jk > div,\n.app, .live-blog-above-main-content,\n.app-root,\n#pass-sidebar,\n#main,\nmain,\n#content,\nsection,\n#__next, [data-testid=\"desktop-nested-nav\"] button, hr,\n#navigation-wrapper,\n#global-navbar,\n.head.notfixed, \nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n:root{\n  --color-stroke-quaternary: transparent !important;\n  --color-stroke-tertiary: transparent !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer{\n  display: none !important;\n}"
+    },
+    "apnews.com.css": {
+      "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar,\nheader,\n#header,\n.header,\napp,\n#app, .Page-content,\n.app, .Page-body::before,\n.app-root,\n#pass-sidebar,\n#main, .LiveBlogPage-headline-sticky,\nmain, bsp-listcarousel,\n#content, .PageListRightRailA,\nsection, .PageListTrending,\n#__next, body > div,\n#navigation-wrapper,\n#global-navbar, bsp-header,\n.head.notfixed, .Page-header-stickyWrap > div, main > div, .PageListStandardE,\nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\nbody.dark_mode, body.light_mode{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "no footer": "footer,{\n  display: none !important;\n}"
     }
   }
 }
