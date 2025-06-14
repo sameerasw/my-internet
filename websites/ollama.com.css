@@ -1,0 +1,71 @@
+/* ollama.com */
+html, body, nav, #nav, .nav, header, #header, .header, app, #app, .app {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+:root { --darkreader-background-ffffff: transparent !important; }
+footer, #footer, .footer { display: none !important; }
+
+/* Common Text & Background */
+h2, h3, p { background-color: transparent !important; }
+h2, h3, p, div.hidden, .text-xl, svg.mr-1.h-4.w-4, a.flex.text-sm.font-medium, div.truncate, span.text-neutral-400, a[href="https://ollama.com/download"], p strong, h4, table, tr td a, thead tr th {
+  color: white !important;
+}
+.w-8, .w-16, .h-16 { filter: brightness(0) invert(1) !important; }
+
+/* Links */
+a[href="/download"], a[href="/signin"] {
+  background-color: white !important;
+  color: black !important;
+}
+a[href="/download"]:hover, a[href="/signin"]:hover { background-color: gray !important; }
+a[href="/signin"]:hover { border: none !important; }
+
+/* Search Preview */
+#searchpreview { background-color: transparent !important; }
+#search-preview-container {
+  background-color: black !important;
+  border: 1px solid black !important;
+}
+#search-preview-container a:hover { background-color: rgba(255, 255, 255, 0.1) !important; }
+
+/* Buttons */
+button {
+  color: white !important;
+  background-color: transparent !important;
+}
+button:hover, button:focus {
+  color: black !important;
+  background-color: white !important;
+  border: 1px solid black !important;
+}
+button.active {
+  color: black !important;
+  background-color: white !important;
+  border: 1px solid white !important;
+}
+button[name="tag"]:hover, button.flex.relative.w-48.items-center.justify-between { background-color: transparent !important; }
+
+/* Miscellaneous Layouts */
+div.flex.items-center.justify-between.bg-neutral-50.px-4.py-3.text-xs.text-neutral-900, 
+div.px-4.py-3.bg-neutral-50.flex.text-xs.text-neutral-900, 
+div.px-4 {
+  background-color: transparent !important;
+}
+
+/* Group Hover Effects */
+a.group:hover, a.group:hover * { color: black !important; }
+#tags-nav a.group:hover, #tags-nav a.group:hover * {
+  background-color: white !important;
+  color: black !important;
+}
+a.group.flex.w-full.items-center.justify-between.space-x-2.px-4.py-2.text-sm.text-neutral-700 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Specific Element Colors */
+span.text-xs.text-neutral-400, span.inline-flex.items-center.rounded-md { color: black !important; }
+div.break-all.font-medium.text-gray-900, span.font-mono { color: white !important; }
+span.group-hover:underline { color: black !important; }
