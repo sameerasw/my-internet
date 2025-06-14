@@ -2,7 +2,6 @@
 html,
 body,
 nav,
-header,
 .search_bar,
 .search_bar section,
 main,
@@ -15,14 +14,218 @@ section,
 .custom_bg,
 .header_large,
 .white_column,
-p,
 .no_cast,
+.k-grid,
+div.sidebar,
+.bg-poster-grey,
 #media_scroller::after,
-#recommendation_scroller::after {
+#recommendation_scroller::after,
+div.scroller_wrap.should_fade::after {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+#dropdown_list_sort_by,
+#dropdown_list_show_me,
+.k-tooltip.tmdb_theme_white,
+.tmdb_theme_white .k-tooltip {
+  background-color: #282c2d !important;
+}
+div.settings_content div.group p:hover {
+  background-color: #282c2d !important;
+}
+.k-table-footer,
+.k-table-group-row,
+.k-table-group-sticky-header,
+.k-table-header,
+.k-table-tfoot,
+.k-table-thead {
+  background-color: transparent !important;
+}
+.k-grid-footer,
+.k-grid-header,
+.k-group-cell,
+.k-grouping-header,
+.k-grouping-row,
+.k-selection-aggregates {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
+.k-input-solid {
+  background-color: transparent !important;
+}
+.media.discover .k-input-solid:has(> input) {
+  border-color: var(--darkreader-border--kendo-color-primary-emphasis, var(--darkreader-border-01b3e460, rgba(1, 146, 185, 0.38))) !important;
+}
+.k-grid .k-table-tbody,
+.k-grid .k-table-tfoot,
+.k-grid .k-table-thead,
+.k-grid-toolbar {
+  border-color: var(--darkreader-border--kendo-color-border, var(--darkreader-border-21252933, rgba(128, 119, 105, 0.2))) !important;
+}
+section.inner_content div.selector {
+  border: 2px solid rgba(var(--darkreader-border--tmdbLightGreen), 1) !important;
+}
+section.inner_content div.selector div.background {
+  background: linear-gradient(
+    to right,
+    rgba(var(--darkreader-bg--tmdbLighterGreen), 1) 0%,
+    rgba(var(--darkreader-bg--tmdbLightGreen), 1) 100%
+  ) !important;
+}
+section.inner_content div.selected h3 a {
+  -webkit-text-fill-color: #e8e6e3 !important;
+}
+section.inner_content div.column_content div.card.style_1 div.content,
+section.inner_content div.column_content div.card.style_2 div.content {
+  padding-bottom: 10px !important;
+}
+.read_more a {
+  border-radius: 5px !important;
+  padding: 10px !important;
+  background-color: #282c2d !important;
+}
+.hidden_text {
+  visibility: hidden !important;
+}
+section.inner_content div.biography div.text.should_fade::after {
+  background-image: unset !important;
+}
+button.kendo,
+input[type="submit"] {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border: unset !important;
+}
+button.kendo:hover,
+input[type="submit"]:hover {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border: unset !important;
+}
+table tbody tr:nth-child(2n + 1) {
+  background-color: unset !important;
+}
+table tbody tr:nth-child(2n + 2) {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
+div.column_wrapper ul.panel.with_counts li.selected a,
+h3.category {
+  color: var(--darkreader-text-01b4e4, #2dd2fe);
+}
+div.column_wrapper ul.panel li a.selected,
+div.column_wrapper ul.panel li.selected,
+ul.panel li a.selected,
+ul.panel.kendo.k-panelbar ul > .k-item.selected {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* themoviedb-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-eaeaea: transparent !important;
+  --darkreader-background-dbdbdb: transparent !important;
+  --darkreader-background-f8fafc: transparent !important;
+  --darkreader-background-dfe1e2: rgba(0, 0, 0, 0.2) !important;
+  --darkreader-bg--kendo-color-app-surface: #282c2d !important;
+  --darkreader-bg--kendo-color-surface: rgba(0, 0, 0, 0.15) !important;
+}
+.glyphicons_v2.bold,
+.glyphicons_v2.italic,
+.glyphicons_v2.list,
+.glyphicons_v2.list-numbers,
+.glyphicons_v2.code,
+.glyphicons_v2.chat-message,
+.glyphicons_v2.eye,
+.glyphicons_v2.calendar,
+.glyphicons_v2.locked,
+.glyphicons_v2.unlocked,
+.glyphicons_v2.square-edit,
+.glyphicons_v2.trending,
+.glyphicons_v2.circle-empty {
+  filter: invert(1) !important;
+}
+.glyphicons_v2.circle-question,
+.glyphicons_v2.locked_status,
+.glyphicons_v2.circle-minus,
+.glyphicons_v2.circle-remove,
+.glyphicons_v2.circle-check,
+.glyphicons_v2.check,
+.glyphicons_v2.inbox-plus,
+.glyphicons_v2.inbox,
+.glyphicons_v2.cogwheel,
+.glyphicons_v2.user-no,
+.glyphicons_v2.lock,
+.glyphicons_v2.unlock,
+.glyphicons_v2.hand-like,
+.glyphicons_v2.hand-dislike,
+.glyphicons_v2.search:not(.blue),
+.glyphicons_v2.square-new-window,
+.glyphicons_v2.verify-check,
+.glyphicons_v2.verify-empty,
+.glyphicons_v2.no-symbol,
+.glyphicons_v2.menu-close,
+.glyphicons_v2.thumbnails-list,
+.glyphicons_v2.heart,
+.glyphicons_v2.bookmark,
+.glyphicons_v2.chat-conversation,
+.glyphicons_v2.circle-empty-plus,
+.glyphicons_v2.circle-info,
+.glyphicons_v2.building,
+.glyphicons_v2.menu,
+.glyphicons_v2.chevron-down,
+.glyphicons_v2.star {
+  filter: invert(1) brightness(0.5) !important;
+}
+.info .glyphicons_v2.locked_status,
+.info .glyphicons_v2.circle-minus {
+  filter: invert(1) brightness(2) !important;
+}
+.glyphicons_v2.white {
+  filter: unset !important;
+}
+.settings_panel {
+  .glyphicons_v2.circle-minus,
+  .glyphicons_v2.circle-question,
+  .glyphicons_v2.lock,
+  .glyphicons_v2.circle-empty-plus {
+    filter: invert(1) !important;
+  }
+}
+.md-editor > .md-header span.glyphicons_v2:hover,
+div.carton div.post_actions a.true span.glyphicons_v2,
+div.carton div.post_actions a:hover span.glyphicons_v2 {
+  filter: invert(68%) sepia(62%) saturate(5715%) hue-rotate(158deg) brightness(101%) contrast(99%) !important;
+}
+
+/* themoviedb-no footer */
+footer {
+  display: none !important;
+}
+
+/* themoviedb-remove list cards blue tint */
+div.card.v4.list div.details {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* themoviedb-hide primary color */
+div.header.small.first {
+  background-image: unset !important;
+}
+
+/* themoviedb-beautiful movie front page */
+section.inner_content.backdrop.poster div.header.large.first {
+  border-bottom: unset !important;
+  background-position: center !important;
+}
+section.inner_content.backdrop.poster div.custom_bg {
+  height: calc(100vh - 110px) !important;
+  background-image: unset !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+section.inner_content.backdrop.poster div.header.first div.single_column {
+  max-width: unset !important;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  padding-top: unset !important;
+  padding-bottom: unset !important;
 }
