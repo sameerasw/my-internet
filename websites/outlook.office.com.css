@@ -1,4 +1,11 @@
 /* outlook-transparency */
+:root,
+.dark {
+  --neutralSecondarySurface: transparent !important;
+  --colorNeutralBackground1: transparent !important;
+  --headerTextIcons: white !important;
+}
+
 html,
 body,
 nav,
@@ -28,4 +35,14 @@ header,
   box-shadow: none !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
     border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+.fui-Button {
+  background-color: transparent !important;
+}
+.fui-MenuPopover {
+  background-color: #292929 !important;
+}
+.o365cs-base.o365sx-appName {
+  color: white !important;
 }
