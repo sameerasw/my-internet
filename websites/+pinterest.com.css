@@ -24,14 +24,7 @@
   border-radius: 2em !important;
 }
 
-/* pin-text color */
-body,
-#VerticalNavContent {
-  color: #fff !important;
-  fill: #fff !important;
-}
-
-#VerticalNavContent {
-  filter: invert() !important;
-  border: none !important;
+/* darkreader */
+:root{
+  --darkreader-background-ffffff: transparent !important;
 }
