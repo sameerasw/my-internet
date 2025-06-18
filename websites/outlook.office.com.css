@@ -30,7 +30,7 @@ header,
 .customScrollBar,
 .X4w2q {
   background-color: transparent !important;
-  background: none !important;
+  background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
@@ -40,9 +40,13 @@ header,
 .fui-Button {
   background-color: transparent !important;
 }
-.fui-MenuPopover {
-  background-color: #292929 !important;
+.o365sx-button {
+  transition: none !important;
+  background-color: transparent !important;
 }
-.o365cs-base.o365sx-appName {
+.fui-MenuPopover {
+  background-color: light-dark(white, #292929) !important;
+}
+.o365sx-appBrandLink {
   color: white !important;
 }
