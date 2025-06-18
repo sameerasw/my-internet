@@ -2703,6 +2703,10 @@
     "+kotlinlang.org.css": {
       "klang-Transparency": "html, body, .app-container, .ktl-header-module_header-menu_wh71L, .toolbar,\n.playground, .executable-fragment, .code-area, .CodeMirror,\n.output-wrapper, .toc, .wt-section, .starting-page-card, .keep-in-touch_wrapper__us7aS, .teach-subscription-form  {\n  background-color: transparent !important;\n  background: none !important;\n}\n\n:root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "klang-No Footer": "footer {\n  display: none !important;\n}"
+    },
+    "hachyderm.io.css": {
+      "hacyderm-transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .tabs-bar__wrapper{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n#tabs-bar__portal{\n  background: var(--background-color) !important;\n  border-radius: 0.5em !important;\n}",
+      "hacyderm-hover": ".columns-area__panels__pane__inner{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}"
     }
   }
 }
