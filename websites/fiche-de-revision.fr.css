@@ -1,0 +1,9 @@
+/* transparency */
+:root {
+  --wp--preset--color--background: transparent !important;
+}
+
+/* center content */
+.is-vertically-aligned-bottom {
+  margin: auto !important;
+}
