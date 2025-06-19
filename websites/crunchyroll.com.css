@@ -1,0 +1,17 @@
+/* transparency */
+body,
+html,
+.erc-large-header .header-content,
+.erc-sticky-header {
+  background-color: transparent !important;
+}
+
+/* darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* no footer */
+.app-layout__footer--jgOfu {
+  display: none;
+}
