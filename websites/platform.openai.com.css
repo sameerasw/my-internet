@@ -1,0 +1,10 @@
+/* transparency */
+:root {
+  --bg-color: transparent !important;
+  --deep-bg-color: transparent !important;
+}
+
+/* darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
