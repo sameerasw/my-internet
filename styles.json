@@ -1565,8 +1565,9 @@
     },
     "music.apple.com.css": {
       "applem-no borders": "@media (prefers-color-scheme: dark), @media (prefers-color-scheme: light)  {\n  :root{\n  --labelDivider: none !important;\n  --playerDropShadow2: none !important;\n  --playerInnerShadow: none !important;\n}\n}",
-      "applem-transparency": "body, .navigation, amp-chrome-player::before{\n  background-color: transparent !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
-      "applem-no thanks": "[slot=\"native-cta\"]{\n  display: none !important;;\n}"
+      "applem-transparency": "body, .navigation, amp-chrome-player::before{\n  background-color: transparent !important;\n}",
+      "applem-no thanks": "[slot=\"native-cta\"]{\n  display: none !important;\n}",
+      "applem-hover sidebar": "[data-testid=\"header\"]{\n  left: -200px !important;\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n  left: 0 !important;\n    opacity: 1 !important;\n  }\n}\n\n[data-testid=\"player-bar\"], #scrollable-pag{\n  transition: all 0.3s ease-in-out !important;\n}\n\n.body-container:not(:has([data-testid=\"header\"]:hover)){ [data-testid=\"player-bar\"]{\n  \n  width: 100vw !important;\n}\n\n#scrollable-page{\n margin-left: -100px !important;\n}\n}"
     },
     "music.youtube.com.css": {
       "transparency": ":root {\n  --ts-body-color: #00000000 !important;\n}\n\nbody {\n  background-color: transparent !important;\n  transition: background-color 0.5s ease-in-out !important;\n}",
