@@ -2734,6 +2734,9 @@
       "applem-transparency": "body, .navigation, amp-chrome-player::before{\n  background-color: transparent !important;\n}",
       "applem-no thanks": "[slot=\"native-cta\"]{\n  display: none !important;\n}",
       "applem-hover sidebar": "[data-testid=\"header\"]{\n  left: -200px !important;\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n  left: 0 !important;\n    opacity: 1 !important;\n  }\n}\n\n[data-testid=\"player-bar\"], #scrollable-pag{\n  transition: all 0.3s ease-in-out !important;\n}\n\n.body-container:not(:has([data-testid=\"header\"]:hover)){ [data-testid=\"player-bar\"]{\n  \n  width: 100vw !important;\n}\n\n#scrollable-page{\n margin-left: -100px !important;\n}\n}"
+    },
+    "desktop.telegram.org.css": {
+      "tg-transparecy": ":root {\n  --color-background: #00000000 !important;\n  --theme-background-color: #00000000 !important;\n  --color-borders: #00000000 !important;\n  --color-light-shadow: #00000000 !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\nbody,\nhtml,\nhtml.theme-dark,\n#root,\nhtml.theme-dark .ThfRMqwq::before,\nhtml.theme-dark .C6IaXYew:not(.K1xhz7U5):not(.CwoXMwaR)::after {\n  background-image: none !important;\n}\n\n.C6IaXYew,\n.ThfRMqwq {\n  background-color: #00000000 !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.menu-container {\n  background-color: #000000 !important;\n   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n.settings-main-menu {\n  border: none !important;\n  box-shadow: none !important;\n}"
     }
   }
 }
