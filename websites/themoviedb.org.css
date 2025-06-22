@@ -1,231 +1,1106 @@
 /* themoviedb-transparency */
 html,
-body,
-nav,
-.search_bar,
-.search_bar section,
-main,
-section,
-.page_wrap::after,
-.column_wrapper,
-.column_content::after,
-#shortcut_bar_scroller,
-#new_shortcut_bar,
-.custom_bg,
-.header_large,
-.white_column,
-.no_cast,
-.k-grid,
-div.sidebar,
-.bg-poster-grey,
-#media_scroller::after,
-#recommendation_scroller::after,
-div.scroller_wrap.should_fade::after {
+#main,
+div.header:not(.background_image, .large.first, .collection), /* profile page bg image, title page pg image, title page collection card bg image */
+body:has(.page_wrap.person_wrap) div.header, /* people page header */
+section.inner_content div.custom_bg, /* title page with no backdrop */
+div.sidebar, /* discussion page sidebar */
+div.page_wrap::after, /* misc background logo */
+.inner_content, /* home page green background image */
+section.inner_content.bg_image.video div.column_wrapper, /* home page latest trailers section */
+div.scroller_wrap.should_fade::after, /* home page sections right side fade */
+div.shortcut_bar_wrapper, /* title page top bar */
+ul#new_shortcut_bar, /* title page top bar inside */
+div.media.award_v4, /* title page content section */
+div.media.collection_v4, /* title page content section */
+div.media.movie_v4, /* title page content section */
+div.media.person_v4, /* title page content section */
+div.media.tv_v4, /* title page content section */
+div.white_column, /* title page inner content section */
+.bg-poster-grey, /* images page cards */
+section.inner_content ul.images.logos li.card div.image_content, /* images page logo cards */
+section.inner_content ul.images li.card div.image_content.black:hover, /* images page logo cards hover */
+section.logo.images div.card.flex div.image_content.black:hover, /* images page logo cards hover */
+section.inner_content ul.images li.card div.info, /* images page cards info */
+.k-table-footer, /* edit page alternative titles "Title" "Type"	"Country" inside */
+.k-table-group-row, /* edit page alternative titles "Title" "Type" "Country" inside */
+.k-table-group-sticky-header, /* edit page alternative titles "Title" "Type" "Country" inside */
+.k-table-header, /* edit page alternative titles "Title" "Type"	"Country" inside */
+.k-table-tfoot, /* edit page alternative titles "Title" "Type" "Country" inside */
+.k-table-thead, /* edit page alternative titles "Title" "Type" Country" inside */
+td.k-table-td > .k-input, /* edit page taglines (on editing a tagline) (custom) */
+.bg-white, /* translations page content */
+ol.credits li, ul.credits li, /* cast and crew page */
+div.content.column, /* review page content */
+section.inner_content.person_content section.header ul.actions li:hover, table.card.releases tr.sub, /* release dates page "Date", "Certification", "Type", "Language", "Note" row */
+table, /* title discuss page "Subject" "Status" "Replies" background */
+.flexbox-item.footer, /* messages page footer */
+.flexbox-item.footer form input[type="text"], .flexbox-item.footer form textarea, /* messages page footer message text box */
+section.search, /* home page top search bar */
+#search_form .k-input, /* home page top search bar input (custom) */
+table.credits tbody, /* people page table content */
+div.inner_block, /* dmca takedown page */
+div.new .carton, /* new title page inner content (A few notes about adding a new movie to TMDB) */
+header ul.navigation .k-animation-container, /* home page top bar menu 99% hidden background (TV Shows menu) */
+.k-loading-color, /* home page top bar notification loading bg */
+main div.content, /* bible page -1 */
+div.white_bg, /* bible page -2 */
+section.tall_bibles, /* bible page category bg */
+.bg-light-blue-100, /* new admin page blocked words content */
+body:has(> div.header > h2 > a[href^="/admin"]) div#nav a, /* admin page header tabs (modified) */
+div.content_wrapper.full_width.bottom_border, /* episode page header */
+.bg-slate-50, /* subscription page */
+header ul li.translate div, /* home page top bar language box hover bg */
+#vibes_form .bg-zinc-100, /* title page "What's your Vibe?" popup (modified) */
+section.inner_content div.media.discover div.column_content div.card.style_1 div.image, /* home page cards while loading */
+body {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
-#dropdown_list_sort_by,
-#dropdown_list_show_me,
-.k-tooltip.tmdb_theme_white,
-.tmdb_theme_white .k-tooltip {
-  background-color: #282c2d !important;
+
+/* light mode */
+@media (prefers-color-scheme: light) {
+  :root {
+    --zen-trans-theme-primary-text: 15, 15, 15 !important;
+    --zen-trans-theme-link-text: 45, 210, 254 !important;
+    --zen-trans-theme-primary-bg: 255, 255, 255 !important;
+    --zen-trans-theme-secondary-bg: 240, 240, 240 !important;
+    --zen-trans-theme-solid-bg: 180, 180, 180 !important;
+    --zen-trans-theme-transparency-lvl: 0.05 !important;
+    --zen-trans-theme-svg-color: 96, 96, 96 !important;
+    --zen-trans-theme-section-selector-text: 0, 153, 102 !important;
+
+    --zen-trans-theme-orange: 255, 165, 0 !important;
+    --zen-trans-theme-pink: 239, 71, 182 !important;
+    --zen-trans-theme-red: 255, 0, 0 !important;
+    --zen-trans-theme-green: 0, 255, 0 !important;
+
+    /* modify kendo variables */
+    --kendo-disabled-opacity: 0.45 !important; /* Slightly lower opacity for disabled elements */
+  }
 }
-div.settings_content div.group p:hover {
-  background-color: #282c2d !important;
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --zen-trans-theme-primary-text: 208, 208, 208 !important;
+    --zen-trans-theme-link-text: 45, 210, 254 !important;
+    --zen-trans-theme-primary-bg: 255, 255, 255 !important;
+    --zen-trans-theme-secondary-bg: 0, 0, 0 !important;
+    --zen-trans-theme-solid-bg: 40, 40, 40 !important;
+    --zen-trans-theme-transparency-lvl: 0.05 !important;
+    --zen-trans-theme-svg-color: 128, 128, 128 !important;
+    --zen-trans-theme-section-selector-text: 30, 213, 169 !important;
+
+    --zen-trans-theme-orange: 255, 165, 0 !important;
+    --zen-trans-theme-pink: 239, 71, 182 !important;
+    --zen-trans-theme-red: 255, 0, 0 !important;
+    --zen-trans-theme-green: 0, 255, 0 !important;
+
+    /* modify kendo variables */
+    --kendo-disabled-opacity: 0.45 !important; /* images page image card locked language */
+  }
 }
-.k-table-footer,
-.k-table-group-row,
-.k-table-group-sticky-header,
-.k-table-header,
-.k-table-tfoot,
-.k-table-thead {
+
+/* primary text color */
+div.media.discover div.card.style_1 div.content a,
+ol.leaderboard li a, /* home page leaderboard username */
+ol.leaderboard li h3, /* home page leaderboard username */
+ol.leaderboard li h4, /* home page leaderboard userscore */
+.k-menu-vertical .k-item > .k-link, /* title page top bar */
+.k-menu:not(.k-context-menu) > .k-item, /* title page top bar */
+section.inner_content a, /* title page content */
+section.media_panel div.menu ul li.active a, /* title page content */
+section.inner_content div.header div.single_column *, /* title page title text */
+section.inner_content div.header div.single_column a, /* title page title text */
+section.recommendations div.scroller div.item p, /* title page recomended titles card's texts */
+section.content_score p, /* content score's texts  */
+.k-input-solid, /* edit page input */
+.k-form-field, /* edit page labels */
+.k-form, /* edit page External IDs labels */
+.k-form-inline,
+div.column_wrapper ul.panel li a, /* edit page left side panel text */
+div.keyboard_shortcut_text p a, /* edit page keyboard shortcuts */
+div.report_issue p a, /* edit page keyboard shortcuts */
+.k-data-table, /* edit page alternative titles */
+.k-table, /* edit page alternative titles */
+.k-grid-footer, /* edit page alternative titles "Title" "Type"	"Country" */
+.k-grid-header, /* edit page alternative titles "Title" "Type"	"Country" */
+.k-group-cell, /* edit page alternative titles "Title" "Type"	"Country" */
+.k-grouping-header, /* edit page alternative titles "Title" "Type"	"Country" */
+.k-grouping-row, /* edit page alternative titles "Title" "Type"	"Country" */
+.k-selection-aggregates, /* edit page alternative titles "Title" "Type"	"Country" */
+.k-table-footer, /* edit page alternative titles "Title" "Type"	"Country" inside */
+.k-table-group-row, /* edit page alternative titles "Title" "Type"	"Country" inside */
+.k-table-group-sticky-header, /* edit page alternative titles "Title" "Type"	"Country" inside */
+.k-table-header, /* edit page alternative titles "Title" "Type"	"Country" inside */
+.k-table-tfoot, /* edit page alternative titles "Title" "Type"	"Country" inside */
+.k-table-thead, /* edit page alternative titles "Title" "Type"	"Country" inside */
+div.item a, div.item p a, /* edit page cast people name */
+.k-grid, /* changes page n Changes and other labels */
+p.new_button.rounded, /* changes page contributors graph */
+section.content_score div.content_score div, /* changes page contributors graph */
+div.leaderboard div.histogram div.bar span, /* changes page contributors graph */
+h2 a, /* review page title text */
+a, mark, /* title discuss page "Discuss", "Movies", "Movie name", "General" etc... texts */
+div.inner_block div.inner_content div.content div.stats_blocks div.stat_block h3, /* profile page heading "Total Edits", "Total Ratings", etc... */
+.text-slate-900, /* list page text "show comments", "sort by", "show me" text */
+div#message_list .timestamp, /* messages page date */
+div.sidebar, /* discussion page left sidebar "Actions" text */
+div.column_wrapper div.settings_panel h3, /* images page left side panel header "Posters", "Backdrops", "Logos" texts */
+ul.tabs li a, ul[role="tablist"] li a, /* new title page left sidebar text */
+div#new_movie_wizard div.content h2, div#new_tv_wizard div.content h2, /* new title page "Add a New Movie" text */
+.movie, .person, .tv, /* movie bible page heading text */
+.green, .pink, .yellow, /* settings page blocked users "Username", "Action" text */
+div.block div.inner_content div.content section.episode_selector, /* episode edit page */
+div.card.v4 div.action_bar ul li.selected a span.rating.wrapper, /* user ratings page "Your Rating" score */
+.text-black, /* subscription page "Manage API Service" text */
+#vibes_form .text-tmdb-dark-blue, /* title page "What's your Vibe?" popup headings (modified) */
+#vibes_form .text-white, /* title page "What's your Vibe?" popup "I'm Done" text (modified) */
+body {
+  color: rgb(var(--zen-trans-theme-primary-text)) !important;
+}
+
+/* secondary text color */
+ol.people li p a, /* title page person card people name */
+ol.people li p.episode_count_crew, /* cast and crew page right side crew's department */
+section.inner_content div.title h2 a, /* title page person card people name */
+p.character, /* title page person card character name */
+.teaser p, /* title page review card text */
+section.review div.review_container div.inner_content h3 a, /* title page review card "a review by" text */
+section.review div.review_container div.inner_content h5, /* title page review card "written by" text */
+section.review div.review_container div.inner_content h5 a, /* title page review card "written by" user link */
+section.inner_content a.underline, /* title page review card "read the rest" text */
+section.split_column section.genres ul li a, section.split_column section.keywords ul li a, /* title page keywords color */
+div#lightbox_popup div.info form label, /* images page image card "Added By" text */
+ul.images div.info form label, /* images page image card "Added By" text */
+div.header.collection h2, /* title page collection card */
+div.header.collection p, /* title page collection card */
+.k-button-solid-primary, /* edit page alternative titles, edit button */
+.k-button-solid-base:not([aria-label="select"]:has(> .k-svg-i-caret-alt-down)), /* edit page alternative titles, delete button */
+span.youtube_search, /* edit page videos "Search YouTube" */
+section.new_index form input[type="text"], /* home page "Search for a movie, tv show, person..." */
+div.discussion_container tr, /* title page discussions tab "Want to be notified when someone makes the first post?" text */
+div.video.card div.info, /* videos page video card */
+p, /* review page content text */
+div.episode_title span.episode_type, div.season.card span.episode_type, /* tv page "Season Finale" */
+ol.people.credits li div.info p span, /* tv page cast and crew "1 Episodes" text */
+div.card.v4.mini div.details div.sub_title, /* profile page "Recent Activity" cards "n days ago", "n edits" text */
+div.you div.message, /* messages page messages */
+table.credit_group tbody td.role span.character, table.credit_group tbody td.role span.role, /* people page character name */
+table.credit_group tbody td.role span, table.credit_group tbody td.role span a, /* people page "as" text before character name */
+div.new ol, div.new p, div.new table.new p, div.new ul, /* new title page content text */
+section.main_content section ol li, section.main_content section p, section.main_content section ul li, /* movie bible text video section sorted/unsorted list */
+div.rating, section.inner_content div.my_rating, /* episodes page rating percentage */
+div.episode div.info div.date, /* episodes page date */
+div.episode_list div.episode_number span, /* episodes page 1x1 text */
+section.inner_content a, section.media_panel div.menu ul li.active a, /* episodes page episode card expanded header text eg: "Videos", "Images" etc... */
+div.media.discover div.card.style_1 div.content p /* home page cards dates */ {
+  color: rgba(var(--zen-trans-theme-primary-text), 0.8) !important;
+}
+
+/* cards */
+.mini_card div.no_image_holder, /* title page recomended titles card */
+section.split_column section.genres ul li a, /* title page keywords container */
+section.split_column section.keywords ul li a, /* title page keywords container */
+section.content_score div.content_score_wrapper, /* title page content score card */
+section.content_score div.content_score, /* title page content score */
+div.header.collection, /* title page title page collection card */
+div.rating, /* title page user review rating */
+.k-input-solid, /* edit page input */
+.k-grid, /* edit page alternative titles */
+.k-toolbar-solid, /* edit page alternative titles */
+.k-grid-footer, /* edit page alternative titles "Title" "Type"	"Country" */
+.k-grid-header, /* edit page alternative titles "Title" "Type"	"Country" */
+.k-group-cell, /* edit page alternative titles "Title" "Type"	"Country" */
+.k-grouping-header, /* edit page alternative titles "Title" "Type"	"Country" */
+.k-grouping-row, /* edit page alternative titles "Title" "Type"	"Country" */
+.k-selection-aggregates, /* edit page alternative titles "Title" "Type"	"Country" */
+.k-button-solid-primary, /* edit page alternative titles, edit button */
+.k-button-solid-base:not([aria-label="select"]:has(> .k-svg-i-caret-alt-down)), /* edit page alternative titles, delete button */
+.pagy a:not(.gap).current, /* changes page current page number */
+p.new_button.rounded, /* changes page contributors graph */
+section.content_score div.content_score div, /* changes page contributors graph */
+div.leaderboard div.histogram div.bar span, /* changes page contributors graph */
+.media-nav-panel, table.media-translations, /* translations page left side panel (modified) */
+.media-nav-panel ul.media-nav-content > li span, /* translations page left side panel language code (custom) */
+table.media-translations tr th, /* translations page content cards title */
+div.episode_title span.episode_type, div.season.card span.episode_type, /* tv page "Season Finale" */
+.group_dropdown > div > ul > li > ul, /* tv page "Original Air Date" hover dropdown */
+.media-nav-panel > h3, /* edit page left side panel header (custom) */
+.settings_panel > h3, /* translations pagee left side panel header (custom) */
+.group:hover a[class*="group-hover:"], /* translations pagee left side panel hover (modified) */
+div.discussion_container tr, /* title page discussion tab cards */
+.list_wrap ol.list_items > span > li, /* list page grid view posters bg (custom) */
+.list_wrap ol.list_items > span > li, /* list page list view card bg (custom) */
+div.inner_block div.inner_content div.content div.title_header div.group_wrapper div.group_dropdown ul, /* my ratings filter by popup */
+div.carton > div.post_info, /* discussion page card header (modified) */
+div.carton > div.content, /* discussion page card content (modified) */
+div.carton > div.toolbar, /* discussion page card toolbar (modified) */
+div.you div.message, /* messages page messages */
+.pagination.background_color.light_blue, .apply.background_color.light_blue, .k-button.background_color.light_blue, /* popular movies page search (modified), load more button */
+div.media.discover ul.multi_select.text li, /* popular movies page genres boxes */
+div.media.discover ul.multi_select.text a:hover, div.media.discover ul.multi_select.text li.selected, div.media.discover ul.multi_select.text li.selected a, div.media.discover ul.multi_select.text li:hover, div.media.discover ul.multi_select.text li:hover a, /* popular movies page genres boxes hover */
+.k-form-field-wrap > .k-input.k-textbox.k-valid, /* title edit page release information popup "note" input */
+div#container, /* new title page */
+ul.tabs li.current, ul[role="tablist"] li.current, /* new title page left sidebar current tab */
+footer nav a.rounded, /* home page footer "Hi User!" */
+textarea.pre, /* settings page api tab textarea */
+div.episode_list div.episode_number span, section.inner_content section.header div.episode_number span, /* episodes page 1x1 */
+section.inner_content a.edit, /* title page "Add a Video", "Add Backdrop", "Add Poster" button */
+#vibes_form .bg-gradient-to-r, /* title page "What's your Vibe?" popup "I'm Done" button (modified) */
+a.button, section.inner_content a.button, /* person page (.glyphicons_v2.circle-empty click tooltip): like, watchlist, fav */
+div.media_tooltip_popup div.content div.rating_block, /* person page (.glyphicons_v2.circle-empty click tooltip): rating */
+.rm-Guides_loading:not(.rm-Guides-SuperHub)::before, /* /docs page loading */
+.card /* all cards */ {
+  background-color: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* fix reference page */
+[data-color-mode="dark"] {
+  --gray10: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
+  --gray15: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
+  --gray20: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
+}
+
+/* fix user ratings page */
+div.card.v4 div.action_bar ul li span.wrapper, /* card action button */
+div.card.v4 div.action_bar ul li a:hover span.wrapper /* card action button hover */ {
+  border: unset !important;
+  background-color: rgba(var(--zen-trans-theme-primary-bg), 0.1) !important;
+  border-color: transparent !important;
+}
+div.card.v4 div.action_bar ul li a:hover span.wrapper .glyphicons_v2 /* card action button icon hover */ {
+  filter: invert(1) !important;
+}
+/* favorite button */
+div.card.v4 div.action_bar ul li a.selected span.favourite.wrapper,
+div.card.v4 div.action_bar ul li a:hover span.favourite.wrapper,
+div.card.v4 div.action_bar ul li.selected a span.favourite.wrapper {
+  background-color: rgb(var(--zen-trans-theme-pink)) !important;
+
+  .glyphicons_v2.heart {
+    filter: invert(1) !important;
+  }
+}
+
+/* fix episodes page */
+/* rating container */
+div.rating_border {
+  border-color: transparent !important;
+}
+/* star just before percentage */
+.glyphicons_v2.star.white:not(.selected) {
+  filter: brightness(0.5) !important;
+}
+/* Rate it! text */
+section.inner_content div.my_rating {
+  background-color: rgba(var(--tmdbLightBlue), 0.5) !important;
+}
+/* episode card border */
+div.episode div.expand, /* expand div */
+div.episode ul.episode_shortcut_bar, /* header */
+div.episode div.expanded_info /* card content */ {
+  border-top: 1px solid rgba(var(--zen-trans-theme-primary-text), 0.2) !important;
+}
+
+/* fix admin page */
+body:has(> div.header > h2 > a[href^="/admin"]) table th.k-sorted, /* bible table sorted header */
+body:has(> div.header > h2 > a[href^="/admin"]) table td /* content texts */ {
+  color: rgb(var(--zen-trans-theme-primary-text)) !important;
+}
+body:has(> div.header > h2 > a[href^="/admin"]) table th /* bible table header text shadow */ {
+  text-shadow: unset !important;
+}
+/* user admin page links */
+body:has(> div.header > h2 > a[href^="/admin"]) #container > h3 > a,
+body:has(> div.header > h2 > a[href^="/admin"]) td a[href$="/other-accounts"],
+body:has(> div.header > h2 > a[href^="/admin"]) td a[href$="/tracked-ips"],
+body:has(> div.header > h2 > a[href^="/admin"]) td a[href$="&ban=true"],
+body:has(> div.header > h2 > a[href^="/admin"]) td a#ban, /* unban */
+body:has(> div.header > h2 > a[href^="/admin"]) td a[href$="/edits"],
+body:has(> div.header > h2 > a[href^="/admin"]) td a[href$="/open"],
+body:has(> div.header > h2 > a[href^="/admin"]) td a[href$="/closed"],
+body:has(> div.header > h2 > a[href^="/admin"]) td a[href^="/messages/conversations/"],
+body:has(> div.header > h2 > a[href^="/admin"]) td a[href^="/messages/new?to_account_id="] {
+  color: rgba(var(--zen-trans-theme-link-text), 0.85) !important;
+}
+
+/* fix bible page */
+/* https://www.themoviedb.org/bible/collection/59f7511b9251416e71000056 (links) (modified) */
+section.main_content section a,
+section.main_content section div.note * {
+  color: rgb(var(--zen-trans-theme-link-text)) !important;
+}
+
+/* fix popular peoples page */
+/* card bottom rounded corner */
+div.item.profile.card {
+  border-bottom-left-radius: var(--imageBorderRadius) !important;
+  border-bottom-right-radius: var(--imageBorderRadius) !important;
+}
+
+/* fix new title page */
+/* new title page left sidebar current tab */
+ul.tabs li.current,
+ul[role="tablist"] li.current {
+  background-image: unset !important;
+  -moz-box-shadow: unset !important;
+  -webkit-box-shadow: unset !important;
+  box-shadow: unset !important;
+  text-shadow: unset !important;
+}
+/* new title page left sidebar text */
+ul.tabs li,
+ul[role="tablist"] li {
+  text-shadow: unset !important;
+}
+/* new title page left sidebar bottom border */
+ul.tabs li,
+ul[role="tablist"] li {
+  border-bottom: unset !important;
+  box-shadow: unset !important;
+}
+/* new title page Movie Details tab content */
+div.new input[type="password"],
+div.new input[type="text"],
+div.new textarea {
+  border: unset !important;
+  background: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
+  box-shadow: unset !important;
+  color: rgb(var(--zen-trans-theme-primary-text)) !important;
+}
+/* new title page Movie Details tab label */
+div.new form label {
+  color: rgb(var(--zen-trans-theme-primary-text)) !important;
+}
+
+/* fix popups */
+.k-upload, .k-upload .k-dropzone, .k-upload .k-file, .k-upload .k-upload-dropzone, .k-upload .k-upload-files, /* images page add images popup upload box */
+.k-window /* images page add images popup */ {
+  background-color: rgb(var(--zen-trans-theme-solid-bg)) !important;
+  border-color: transparent !important;
+}
+.k-upload, .k-upload .k-dropzone, .k-upload .k-file, .k-upload .k-upload-dropzone, .k-upload .k-upload-files, /* images page add images popup upload box */
+.k-prompt-container p, .k-window-content p, /* images page add images popup content (modified) */
+.k-window /* images page add images popup "Upload a Backdrop" title text */ {
+  color: rgb(var(--zen-trans-theme-primary-text)) !important;
+}
+section.window_content a, section.window_content ul /* images page add images popup "A maximum resolution" text */ {
+  color: rgba(var(--zen-trans-theme-primary-text), 0.6) !important;
+}
+
+/* fix context menu */
+.k-list, /* images page image card menu */
+.k-popup, /* images page menu */
+#dropdown_list_sort_by, /* list page sort by dropdown */
+#dropdown_list_show_me, /* list page show me dropdown */
+.k-tooltip.tmdb_theme_white, .tmdb_theme_white .k-tooltip /* home page top bar profile menu */ {
+  background-color: rgb(var(--zen-trans-theme-solid-bg)) !important;
+}
+#dropdown_list_sort_by > div > a:hover, /* list page sort by dropdown hover */
+#dropdown_list_show_me > div > a:hover, /* list page show me dropdown hover */
+.k-list-item.k-focus, .k-list-item:focus, /* images page image card menu selected */
+.k-hover.k-list-custom-value, .k-hover.k-list-optionlabel, .k-list-custom-value:hover, .k-list-item.k-hover, .k-list-item:hover, .k-list-optionlabel:hover, /* images page image card menu hover */
+.k-menu-group .k-item > .k-link.k-hover, .k-menu-group .k-item > .k-link:hover, .k-menu.k-context-menu .k-item > .k-link.k-hover, .k-menu.k-context-menu .k-item > .k-link:hover, /* images page menu hover */
+.k-menu-group .k-item > .k-link.k-active, .k-menu-group .k-item > .k-link.k-selected, .k-menu-group .k-item > .k-link:active, .k-menu.k-context-menu .k-item > .k-link.k-active, .k-menu.k-context-menu .k-item > .k-link.k-selected, .k-menu.k-context-menu .k-item > .k-link:active, /* collections page sort menu (when hover on submenu) */
+section.search .k-list-item.k-focus, /* home page top search (keyboard navigation) */
+div.settings_content div.group p:hover /* home page top bar profile menu hover */ {
+  background-color: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
+}
+/* home page top bar profile menu hover "view profile" text */
+.k-handle div,
+.k-selection-bg,
+div.settings_content div.group h2 + p:hover,
+header ul li.glyph a span,
+table.changes_v4 tbody tr td.content div.wrap code,
+ul.panel.kendo.k-panelbar > .k-item > .k-link {
   background-color: transparent !important;
 }
-.k-grid-footer,
-.k-grid-header,
-.k-group-cell,
-.k-grouping-header,
-.k-grouping-row,
-.k-selection-aggregates {
-  background-color: rgba(0, 0, 0, 0.15) !important;
+.k-list, /* images page image card menu */
+.k-list-item.k-focus, .k-list-item:focus, /* images page image card menu selected */
+.k-hover.k-list-custom-value, .k-hover.k-list-optionlabel, .k-list-custom-value:hover, .k-list-item.k-hover, .k-list-item:hover, .k-list-optionlabel:hover, /* images page image card menu hover */
+ul.number_group a span.count, /* images page menu: => media number color */
+.k-menu-group .k-item > .k-link, .k-menu-vertical .k-item > .k-link, .k-menu:not(.k-context-menu) > .k-item, /* images page menu: media => videos text */
+section.search .k-list-item.k-focus, /* home page top search (keyboard navigation) */
+.k-menu-group, .k-menu.k-context-menu /* images page menu text color */ {
+  color: rgb(var(--zen-trans-theme-primary-text)) !important;
 }
-.k-input-solid {
+/* home page top bar profile menu triangle */
+.tmdb_theme_white .k-callout-n {
+  border-bottom-color: rgb(var(--zen-trans-theme-solid-bg)) !important;
+}
+
+/* fix people edit page */
+/* edit page move credits */
+.k-input-inner > .k-input-solid {
   background-color: transparent !important;
 }
-.media.discover .k-input-solid:has(> input) {
-  border-color: var(--darkreader-border--kendo-color-primary-emphasis, var(--darkreader-border-01b3e460, rgba(1, 146, 185, 0.38))) !important;
+
+/* fix people page */
+/* bottom white gradient for long biography */
+section.inner_content div.biography div.text.should_fade::after {
+  background-image: unset !important;
 }
-.k-grid .k-table-tbody,
-.k-grid .k-table-tfoot,
-.k-grid .k-table-thead,
-.k-grid-toolbar {
-  border-color: var(--darkreader-border--kendo-color-border, var(--darkreader-border-21252933, rgba(128, 119, 105, 0.2))) !important;
+/* hide the duplicate biography */
+.hidden_text {
+  visibility: hidden !important;
 }
-section.inner_content div.selector {
-  border: 2px solid rgba(var(--darkreader-border--tmdbLightGreen), 1) !important;
-}
-section.inner_content div.selector div.background {
-  background: linear-gradient(
-    to right,
-    rgba(var(--darkreader-bg--tmdbLighterGreen), 1) 0%,
-    rgba(var(--darkreader-bg--tmdbLightGreen), 1) 100%
-  ) !important;
-}
-section.inner_content div.selected h3 a {
-  -webkit-text-fill-color: #e8e6e3 !important;
-}
-section.inner_content div.column_content div.card.style_1 div.content,
-section.inner_content div.column_content div.card.style_2 div.content {
-  padding-bottom: 10px !important;
-}
-.read_more a {
+/* read more button */
+section.inner_content div.biography div.read_more a {
   border-radius: 5px !important;
   padding: 10px !important;
   background-color: #282c2d !important;
 }
-.hidden_text {
+
+/* fix popular movies page */
+/* generes button hover */
+div.media.discover ul.multi_select.text li:hover a {
+  background-color: transparent !important;
+}
+/* left sidebar user score slider (unfilled) */
+.k-slider .k-slider-track {
+  background-color: rgba(var(--zen-trans-theme-primary-text), 0.2) !important;
+}
+/* left sidebar user score slider */
+.k-slider .k-draghandle,
+.k-slider .k-slider-selection {
+  background-color: rgba(var(--zen-trans-theme-primary-text), 0.8) !important;
+}
+/* left sidebar user score slider ball's border */
+.k-slider .k-draghandle {
+  border-color: transparent !important;
+}
+.k-slider .k-draghandle.k-focus,
+.k-slider .k-draghandle:focus {
+  box-shadow: unset !important;
+}
+/* long search button that appears after adjusting any value in left sidebar */
+.background_color.light_blue.full:has(> .load_more) {
+  background-color: rgba(var(--zen-trans-theme-solid-bg), 0.7) !important;
+  backdrop-filter: blur(5px) !important;
+}
+/* left sidebar */
+div.media.discover div.filter_panel div.filter {
+  border-top: 1px solid rgba(var(--zen-trans-theme-primary-text), 0.2) !important;
+}
+/* popular movies page search button disabled */
+div.media.discover div.apply.disabled,
+div.media.discover div.apply.disabled:hover {
+  opacity: var(--kendo-disabled-opacity) !important;
+}
+
+/* fix messages page */
+/* fix borders */
+div.fill-area .flex_wrap /* sticky header */ {
+  border-top: 1px solid rgba(var(--zen-trans-theme-primary-text), 0.2) !important;
+}
+.flexbox-item .left_column /* left sidebar */ {
+  border-right: 1px solid rgba(var(--zen-trans-theme-primary-text), 0.2) !important;
+}
+ul.compact_message_list li /* chats */ {
+  border-bottom: 1px solid rgba(var(--zen-trans-theme-primary-text), 0.2) !important;
+}
+.flexbox-item.footer .right_column /* footer right side */ {
+  background-color: rgb(var(--zen-trans-theme-solid-bg)) !important;
+}
+#message_textarea /* hide message box resize icon */ {
+  resize: none !important;
+}
+/* messages page messages */
+div.you div.message a {
+  color: rgb(var(--zen-trans-theme-link-text)) !important;
+}
+
+/* fix discussion page */
+/* rounded card corners */
+div.carton > div.post_info {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgba(var(--zen-trans-theme-primary-bg), 0.08) !important;
+}
+div.carton > div.toolbar {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 1px solid rgba(var(--zen-trans-theme-primary-text), 0.2) !important;
+}
+/* links */
+.atwho-view strong,
+div.carton div.content a,
+div.k-window-content section.content a {
+  color: rgb(var(--zen-trans-theme-link-text)) !important;
+}
+/* Previous page • Next page • Last page */
+p a {
+  color: rgb(var(--zen-trans-theme-link-text)) !important;
+}
+/* moderator symbol */
+div.subject div.tag span {
+  color: rgba(var(--zen-trans-theme-solid-bg)) !important;
+  font-weight: bold;
+}
+
+/* fix list page */
+/* "show comments", "sort by", "show me" border */
+.border-slate-500 {
+  border: 2px solid rgba(var(--zen-trans-theme-primary-text), 0.6) !important;
+}
+/* list view border */
+.list_wrap div.list_items > div > div.flex > div:nth-child(2n) * {
+  border-color: transparent !important;
+}
+
+/* fix profile page */
+/* activity graph horizontal lines */
+.k-chart[data-role="chart"] > svg > g > g > g:nth-child(2) > path {
+  stroke: rgba(var(--zen-trans-theme-primary-text), 0.2) !important;
+}
+/* Most Watched Genres texts */
+div.account_page_data div#genre_chart.k-chart svg g text {
+  fill: rgb(var(--zen-trans-theme-primary-text)) !important;
+}
+
+/* fix tv page */
+/* tv page "Original Air Date" hover fix */
+.group_dropdown > div > ul:hover > li.selected {
   visibility: hidden !important;
 }
-section.inner_content div.biography div.text.should_fade::after {
+/* seasons page */
+div.season_wrapper {
+  border-bottom: unset !important;
+}
+
+/* fix videos page */
+/* video card info */
+div.video.card div.info,
+div.video.card div.info div:last-of-type {
+  border: unset !important;
+}
+
+/* fix changes page */
+/* n Changes */
+.changes_with_aggregates {
+  background-color: transparent !important;
+}
+/* image json hover (image popup) */
+.tmdb_theme.image_popup img {
+  border-radius: var(--kendo-spacing-1\.5, 0.375rem) !important;
+}
+/* date section */
+table.changes_with_aggregates.k-grid tbody tr td > table {
+  border: 1px solid rgba(var(--zen-trans-theme-primary-text), 0.2) !important;
+}
+/* edit field (images, release_dates, genres) */
+.d2h-file-header {
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+table.changes_with_aggregates span.language /* changes page right side language */ {
+  background-color: rgba(var(--zen-trans-theme-primary-bg), 0.1) !important;
+}
+/* difference field */
+table.changes_with_aggregates td.diff_data {
+  border-top: unset !important;
+}
+/* changes page right side language */
+table.changes_with_aggregates span.language {
+  background-color: transparent !important;
+  border: unset !important;
+}
+/* deleted */
+.d2h-del {
+  background-color: rgba(var(--zen-trans-theme-red), 0.15) !important;
+}
+/* deleted specific string */
+.d2h-code-line del,
+.d2h-code-side-line del {
+  background-color: rgba(var(--zen-trans-theme-red), 0.2) !important;
+}
+/* inserted */
+.d2h-ins {
+  background-color: rgba(var(--zen-trans-theme-green), 0.15) !important;
+}
+/* inserted specific string */
+.d2h-code-line ins,
+.d2h-code-side-line ins {
+  background-color: rgba(var(--zen-trans-theme-green), 0.2) !important;
+  text-align: left;
+}
+
+/* tooltip fix */
+.k-tooltip /* images page left side panel header icons tooltip */ {
+  background-color: rgb(var(--zen-trans-theme-solid-bg)) !important;
+}
+.k-tooltip * /* tooltip color (custom) */ {
+  color: rgb(var(--zen-trans-theme-primary-text)) !important;
+}
+.tmdb_theme .k-callout-s /* images page left side panel header icons tooltip small triangle */ {
+  border-top-color: rgb(var(--zen-trans-theme-solid-bg)) !important;
+}
+
+/* fix title page */
+section.media_panel div.menu ul li.active /* title page thick underline under "Reviews", "Most Popular" */ {
+  border-bottom-color: rgba(var(--zen-trans-theme-primary-text), 0.4) !important;
+}
+/* title page recommended titles cards bottom overlay bg */
+div.image_content a div.meta {
+  background: rgba(var(--zen-trans-theme-secondary-bg), 0.2) !important;
+  backdrop-filter: blur(5px) !important;
+}
+/* title page no image people card */
+div.no_image_holder {
+  background-color: transparent !important;
+}
+/* popularity graph */
+#popularity_chart svg path[stroke^="#"] {
+  stroke: rgb(var(--zen-trans-theme-primary-text)) !important;
+}
+/* censor certification just below the title */
+section.inner_content div.header div.single_column div.facts span.certification {
+  border: 2px solid rgba(var(--zen-trans-theme-primary-text), 0.6) !important;
+  border-radius: 5px !important;
+}
+/* ott under poster */
+div.ott_offer,
+/* "your vibe n%" */
+.bg-tmdb-dark-blue,
+/* Add to list, mark as fav, add to watchist buttons */
+section.inner_content section.header ul.actions li.tooltip a {
+  background: rgba(var(--zen-trans-theme-primary-bg), 0.15) !important;
+  backdrop-filter: blur(10px);
+}
+/* average rating */
+div.consensus div.outer_ring {
+  background: rgba(var(--zen-trans-theme-secondary-bg), 0.3) !important;
+  backdrop-filter: blur(10px);
+}
+/* award card */
+.bg-award-banner {
+  background-image: url(/assets/2/awards-preview/banner-stars-f3d8dd620e03ae0ddb6c0cd14e0a31e6bfc233b45898569f940237027db16ea3.svg) !important;
+  background-color: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
+}
+/* title page "What's your Vibe?" popup */
+#vibes_form {
+  /* popup top and bottom gradient on scroll */
+  .vertical_scroller_wrap.should_fade.hide_after::after,
+  .vertical_scroller_wrap.should_fade.hide_before::before {
+    opacity: 0 !important;
+  }
+  /* I'm done button background */
+  .bg-gradient-to-r {
+    background-image: unset !important;
+  }
+  /* slider dot */
+  .rating_slider.k-slider .k-draghandle {
+    background-color: rgba(var(--zen-trans-theme-primary-text), 0.8) !important;
+  }
+  /* emoji hover */
+  .hover\:bg-white:hover {
+    background-color: transparent !important;
+  }
+}
+
+/* fix home page */
+/* section selector fix */
+section.inner_content div.selector h3 a /* home page section selector */ {
+  color: rgb(var(--zen-trans-theme-section-selector-text)) !important;
+}
+section.inner_content div.selector /* home page section selector border */ {
+  border: 2px solid rgb(var(--zen-trans-theme-section-selector-text)) !important;
+}
+section.inner_content div.selected h3 a /* home page section selector selected text color */ {
+  -webkit-text-fill-color: rgb(var(--tmdbDarkBlue)) !important;
+}
+section.inner_content div.selector div.background /* home page section selector selected background */ {
+  background: linear-gradient(to right, rgba(var(--tmdbLighterGreen), 1) 0%, rgba(var(--tmdbLightGreen), 1) 100%) !important;
+}
+/* top search bar */
+div.search_bar,
+section.search div.k-animation-container {
+  border-top: unset !important;
+  border-bottom: unset !important;
+}
+/* search button in below search bar */
+.inner_search_wrapper + input {
+  background: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
+}
+/* cards bottom padding */
+section.inner_content div.column_content div.card.style_1 div.content,
+section.inner_content div.column_content div.card.style_2 div.content {
+  padding-bottom: 10px !important;
+}
+/* top search drop down */
+div.slim_search_results,
+div.slim_search_results_header {
+  border-bottom: unset !important;
+}
+/* top search drop down trending */
+div.slim_search_results_header {
+  background: transparent !important;
+}
+/* cards menu button hover */
+div.media.discover div.card div.image div.options:hover {
+  filter: unset !important;
+}
+/* transparent footer */
+footer {
   background-image: unset !important;
+  background-color: rgba(var(--tmdbDarkBlue), 0.4) !important;
 }
-button.kendo,
-input[type="submit"] {
-  background-color: rgba(0, 0, 0, 0.2) !important;
-  border: unset !important;
+
+/* fix table */
+table.media-translations tr td, /* translations page content cards */
+table tbody tr.pagination, /* title discuss page bottom border */
+.k-grid .k-table-row /* edit page alternative titles "Title" "Type" "Country" */ {
+  border-color: transparent !important;
 }
-button.kendo:hover,
-input[type="submit"]:hover {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-  border: unset !important;
+.k-grid .k-table /* edit page cast */ {
+  background-color: transparent !important;
 }
-table tbody tr:nth-child(2n + 1) {
-  background-color: unset !important;
+table thead, /* title discuss page "Subject" "Status" "Replies" heading */
+table.card.releases tr.sub th /* release dates page heading */ {
+  border-color: rgba(var(--zen-trans-theme-primary-text), 0.2);
 }
-table tbody tr:nth-child(2n + 2) {
-  background-color: rgba(0, 0, 0, 0.15) !important;
+/* alternate bg */
+#main:not(.edit):not(:has(.media_panel .discussion_container, .account_page_data)), /* no alt for 'title page discussion tab', 'profile page' */
+#main.edit:has(ul.panel > li> a.selected:not([href$="release_information"])), /* edit page no alt for release information */
+.changes_with_aggregates, /* changes page */
+#discussions /* title discuss page */ {
+  /* odd num transparent */
+  table:not(.changes_with_aggregates) tbody tr:nth-child(2n + 1) {
+    background-color: unset !important;
+  }
 }
-div.column_wrapper ul.panel.with_counts li.selected a,
-h3.category {
-  color: var(--darkreader-text-01b4e4, #2dd2fe);
+#main.edit:has(ul.panel > li> a.selected:not([href$="release_information"])), /* edit page no alt for release information */
+.changes_with_aggregates, /* changes page */
+#discussions /* title discuss page */ {
+  /* even num darker */
+  table:not(.changes_with_aggregates) tbody tr:nth-child(2n) {
+    background-color: rgba(var(--zen-trans-theme-secondary-bg), 0.15) !important;
+  }
 }
-div.column_wrapper ul.panel li a.selected,
-div.column_wrapper ul.panel li.selected,
-ul.panel li a.selected,
-ul.panel.kendo.k-panelbar ul > .k-item.selected {
-  background-color: rgba(0, 0, 0, 0.2);
+
+/* fix misc */
+.k-button-solid-primary.k-focus, /* edit page alternative titles, edit button */
+.k-button-solid-primary:focus /* edit page alternative titles, edit button */ {
+  box-shadow: unset !important;
+}
+/* home page top bar language box */
+header ul li.translate div {
+  border: 2px solid rgba(var(--zen-trans-theme-primary-text), 0.8) !important;
+  color: rgba(var(--zen-trans-theme-primary-text), 0.8) !important;
+}
+/* svgs */
+.k-svg-icon > svg /* edit page crew (filter icon) */ {
+  fill: rgb(var(--zen-trans-theme-svg-color)) !important;
+}
+/* tone in keywords edit page */
+.border-tmdb-light-blue {
+  border: none !important;
+  background-color: rgba(var(--zen-trans-theme-primary-bg), 0.1) !important;
+}
+/* title page Report an Issue popup text box placeholder */
+.k-input-inner::placeholder {
+  color: rgba(var(--zen-trans-theme-primary-text), 0.4) !important;
+}
+/* text selection */
+::selection {
+  background-color: #287acb !important;
+  color: #fff !important;
+}
+/* checkbox and radio found in edit page taglines */
+input[type="checkbox"],
+input[type="radio"] {
+  background-color: rgba(var(--zen-trans-theme-primary-bg), 0.15) !important;
+}
+input[type="checkbox"]:checked,
+.k-checkbox.k-checked,
+.k-checkbox:checked {
+  border-color: transparent !important;
+  color: rgba(var(--zen-trans-theme-primary-text), 0.8) !important;
+  background-color: rgba(var(--zen-trans-theme-primary-bg), 0.15) !important;
+}
+.k-checkbox.k-focus,
+.k-radio.k-focus,
+.k-checkbox:focus,
+.k-radio:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+.k-radio.k-checked,
+.k-radio:checked {
+  border-color: transparent !important;
+  color: rgba(var(--zen-trans-theme-primary-text), 0.8) !important;
+}
+/* scrollbar */
+html,
+body,
+div,
+section,
+article,
+aside,
+main,
+nav,
+textarea,
+pre,
+code,
+ul,
+ol,
+li,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th,
+iframe {
+  scrollbar-color: rgba(var(--zen-trans-theme-primary-bg), 0.3) transparent !important;
+}
+
+/* fix leaderboard page bg */
+#histogram svg > g > rect[fill^="#"] {
+  fill: transparent !important;
+}
+/* fix leaderboard page graph bar */
+#histogram svg > g > path[fill^="#"] {
+  fill: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
+}
+
+/* fix images page */
+div.column_wrapper ul.panel.kendo li.sub span, /* images page left side panel image count */
+div.column_wrapper ul.panel.with_counts li span, /* images page left side panel image count */
+div.column_wrapper ul.panel.with_counts li.selected span, /* images page left side panel image count (hover) */
+div.column_wrapper ul.panel.with_counts li:hover span, /* images page left side panel image count (hover) */
+ul.panel.kendo.k-panelbar ul > .k-item.selected span, /* images page left side panel image count (hover) */
+ul.panel.kendo.k-panelbar ul > .k-item:hover span /* images page left side panel image count (hover) */ {
+  background-color: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
+  color: unset !important;
+}
+div.column_wrapper ul.panel.with_counts li.selected a, /* images page left side panel selected */
+div.column_wrapper ul.panel.with_counts h3.category, /* images page left side panel selected (modified) */
+div.column_wrapper ul.panel li a.selected /* edit page left side panel selected */ {
+  color: rgb(var(--zen-trans-theme-link-text)) !important;
+}
+.k-chip-solid-base, /* edit page "Origin Country" countries */
+.k-picker-solid /* images page image card language selector */ {
+  border-color: transparent !important;
+  color: rgb(var(--zen-trans-theme-primary-text)) !important;
+  background-color: rgba(var(--zen-trans-theme-primary-bg), 0.1) !important;
+}
+div#lightbox_popup div.info div.meta h3, /* images page image card border below "info" text */
+section.inner_content ul.images div.info div.meta h3 /* images page image card border below "info" text */ {
+  border-bottom: transparent !important;
+}
+/* processing image card */
+section.inner_content ul.images li.card.processing::before {
+  background: repeating-linear-gradient(
+    transparent 0,
+    transparent 7.5px,
+    rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) 7.5px,
+    rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) 15px,
+    transparent 15px,
+    transparent 22.5px,
+    rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) 22.5px,
+    rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) 30px
+  ); /* using !important won't work */
+}
+section.inner_content ul.images li.card.processing {
+  padding: 0 !important;
+}
+/* image cards bottom overlay bg (like and dislike) */
+section.inner_content ul.images.compact li.card div.image_content div.rating_info {
+  background: rgba(var(--zen-trans-theme-secondary-bg), 0.2) !important;
+  backdrop-filter: blur(5px) !important;
+}
+/* logo cards bottom overlay bg (like and dislike) */
+section.inner_content ul.images.compact.logos li.card.ok div.image_content:hover div.rating_info {
+  background: unset !important;
+  backdrop-filter: unset !important;
+}
+/* waiting for review cards */
+section.inner_content ul.images li.card.needs_review {
+  border: 2px solid rgba(var(--zen-trans-theme-orange), 0.5) !important;
+}
+/* find duplciate images red image cards */
+section.inner_content ul.images li.card div.info.find-dups-red-card {
+  background-color: rgba(var(--zen-trans-theme-red), 0.15) !important;
+}
+
+/* themoviedb-fix icons */
+@media (prefers-color-scheme: dark) {
+  section.facts div.social_links a.social_link /* title page right sidebar icons */ {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+  }
+  .glyphicons_v2.bold,
+  .glyphicons_v2.italic,
+  .glyphicons_v2.list-numbers,
+  .glyphicons_v2.code,
+  .glyphicons_v2.chat-message,
+  .glyphicons_v2.eye,
+  .glyphicons_v2.locked,
+  .glyphicons_v2.unlocked,
+  .glyphicons_v2.square-edit,
+  .glyphicons_v2.trending,
+  .glyphicons_v2.circle-more.grey,
+  .glyphicons_v2.circle-empty {
+    /* bright white icons */
+    filter: invert(1) !important;
+  }
+  .glyphicons_v2.circle-question,
+  .glyphicons_v2.locked_status,
+  .glyphicons_v2.circle-minus,
+  .glyphicons_v2.circle-remove,
+  .glyphicons_v2.circle-check,
+  .glyphicons_v2.check,
+  .glyphicons_v2.inbox-plus,
+  .glyphicons_v2.inbox,
+  .glyphicons_v2.cogwheel,
+  .glyphicons_v2.user-no,
+  .glyphicons_v2.lock,
+  .glyphicons_v2.unlock,
+  .glyphicons_v2.hand-like,
+  .glyphicons_v2.hand-dislike,
+  .glyphicons_v2.search:not(.blue),
+  .glyphicons_v2.square-new-window,
+  .glyphicons_v2.verify-check,
+  .glyphicons_v2.verify-empty,
+  .glyphicons_v2.no-symbol,
+  .glyphicons_v2.menu-close,
+  .glyphicons_v2.thumbnails-list,
+  .glyphicons_v2.heart:not(.selected),
+  .glyphicons_v2.bookmark:not(.selected),
+  .glyphicons_v2.chat-conversation,
+  .glyphicons_v2.circle-empty-plus,
+  .glyphicons_v2.circle-info,
+  .glyphicons_v2.building,
+  .glyphicons_v2.menu,
+  .glyphicons_v2.chevron-down,
+  .glyphicons_v2.chevron-right,
+  .glyphicons_v2.arrow-thin-left,
+  .glyphicons_v2.arrow-thin-right,
+  .glyphicons_v2.keyboard,
+  .glyphicons_v2.speech-bubble-alert,
+  .glyphicons_v2.sort-numerically,
+  .glyphicons_v2.twitter_id,
+  .glyphicons_v2.instagram_id,
+  .glyphicons_v2.facebook_id,
+  .glyphicons_v2.crown,
+  .glyphicons_v2.pause,
+  .glyphicons_v2.plus,
+  .glyphicons_v2.film,
+  .glyphicons_v2.tv,
+  .glyphicons_v2.circle-more,
+  .glyphicons_v2.flag-triangle,
+  .glyphicons_v2.facebook,
+  .glyphicons_v2.instagram,
+  .glyphicons_v2.mastodon,
+  .glyphicons_v2.twitter,
+  .glyphicons_v2.tiktok,
+  .glyphicons_v2.vimeo,
+  .glyphicons_v2.youtube,
+  .glyphicons_v2.justwatch,
+  .glyphicons_v2.times,
+  .glyphicons_v2.user,
+  .glyphicons_v2.list,
+  .glyphicons_v2.calendar,
+  .glyphicons_v2.link,
+  img[src="https://media.themoviedb.org/t/p/original/e2XGMhHKR9QKE8huwuP0xqqZ9zs.svg"], /* edit page videos youtube icon */
+  .glyphicons_v2.star:not(.selected) {
+    /* invert and decrease brightness (general fix) */
+    filter: invert(1) brightness(0.5) !important;
+  }
+  .info .glyphicons_v2.locked_status,
+  .info .glyphicons_v2.circle-minus {
+    /* invert and increase brightness 2x */
+    filter: invert(1) brightness(2) !important;
+  }
+  section.inner_content section.header ul.actions li.tooltip, /* Add to list, mark as fav, add to watchist buttons */
+  .settings_panel /* images page left side panel header icons */ {
+    .glyphicons_v2.circle-minus,
+    .glyphicons_v2.circle-question,
+    .glyphicons_v2.lock,
+    .glyphicons_v2.circle-empty-plus {
+      filter: invert(1) brightness(0.7) !important;
+    }
+    .glyphicons_v2.white  /* collections page edit page & Add to list, mark as fav, add to watchist buttons */ {
+      filter: brightness(0.7) !important;
+    }
+  }
+  /* dont invert white icons */
+  .glyphicons_v2.white {
+    filter: brightness(0.5) !important;
+  }
+  /* reduce brightness for already inverted icons, eg: home page top bar bell icon */
+  .svg.invert:not(.play) /* home page latest trailer card play button */ {
+    filter: invert(1) brightness(0.5) !important;
+  }
+  /* home page card menu option */
+  .glyphicons_v2.circle-more.white {
+    filter: unset !important;
+  }
+  /* blue icons */
+  .md-editor > .md-header span.glyphicons_v2:hover,
+  div.carton div.post_actions a.true span.glyphicons_v2,
+  div.carton div.post_actions a:hover span.glyphicons_v2 {
+    filter: invert(68%) sepia(62%) saturate(5715%) hue-rotate(158deg) brightness(101%) contrast(99%) !important;
+  }
+  /* discussions page private discussion lock */
+  #discussions .flex_wrapper .avatar_wrapper + div .glyphicons_v2.lock {
+    filter: invert(1) !important;
+    opacity: 0.3 !important;
+  }
+}
+
+/* themoviedb-no footer */
+#footer, /* review page */
+footer {
+  display: none !important;
 }
 
 /* themoviedb-darkreader */
 :root {
   --darkreader-background-ffffff: transparent !important;
-  --darkreader-background-eaeaea: transparent !important;
-  --darkreader-background-dbdbdb: transparent !important;
-  --darkreader-background-f8fafc: transparent !important;
-  --darkreader-background-dfe1e2: rgba(0, 0, 0, 0.2) !important;
-  --darkreader-bg--kendo-color-app-surface: #282c2d !important;
-  --darkreader-bg--kendo-color-surface: rgba(0, 0, 0, 0.15) !important;
-}
-.glyphicons_v2.bold,
-.glyphicons_v2.italic,
-.glyphicons_v2.list,
-.glyphicons_v2.list-numbers,
-.glyphicons_v2.code,
-.glyphicons_v2.chat-message,
-.glyphicons_v2.eye,
-.glyphicons_v2.calendar,
-.glyphicons_v2.locked,
-.glyphicons_v2.unlocked,
-.glyphicons_v2.square-edit,
-.glyphicons_v2.trending,
-.glyphicons_v2.circle-empty {
-  filter: invert(1) !important;
-}
-.glyphicons_v2.circle-question,
-.glyphicons_v2.locked_status,
-.glyphicons_v2.circle-minus,
-.glyphicons_v2.circle-remove,
-.glyphicons_v2.circle-check,
-.glyphicons_v2.check,
-.glyphicons_v2.inbox-plus,
-.glyphicons_v2.inbox,
-.glyphicons_v2.cogwheel,
-.glyphicons_v2.user-no,
-.glyphicons_v2.lock,
-.glyphicons_v2.unlock,
-.glyphicons_v2.hand-like,
-.glyphicons_v2.hand-dislike,
-.glyphicons_v2.search:not(.blue),
-.glyphicons_v2.square-new-window,
-.glyphicons_v2.verify-check,
-.glyphicons_v2.verify-empty,
-.glyphicons_v2.no-symbol,
-.glyphicons_v2.menu-close,
-.glyphicons_v2.thumbnails-list,
-.glyphicons_v2.heart,
-.glyphicons_v2.bookmark,
-.glyphicons_v2.chat-conversation,
-.glyphicons_v2.circle-empty-plus,
-.glyphicons_v2.circle-info,
-.glyphicons_v2.building,
-.glyphicons_v2.menu,
-.glyphicons_v2.chevron-down,
-.glyphicons_v2.star {
-  filter: invert(1) brightness(0.5) !important;
-}
-.info .glyphicons_v2.locked_status,
-.info .glyphicons_v2.circle-minus {
-  filter: invert(1) brightness(2) !important;
-}
-.glyphicons_v2.white {
-  filter: unset !important;
-}
-.settings_panel {
-  .glyphicons_v2.circle-minus,
-  .glyphicons_v2.circle-question,
-  .glyphicons_v2.lock,
-  .glyphicons_v2.circle-empty-plus {
-    filter: invert(1) !important;
-  }
-}
-.md-editor > .md-header span.glyphicons_v2:hover,
-div.carton div.post_actions a.true span.glyphicons_v2,
-div.carton div.post_actions a:hover span.glyphicons_v2 {
-  filter: invert(68%) sepia(62%) saturate(5715%) hue-rotate(158deg) brightness(101%) contrast(99%) !important;
 }
 
-/* themoviedb-no footer */
-footer {
-  display: none !important;
+/* themoviedb-remove blue tint */
+div.header.collection /* title page collection card */ {
+  --tmdbDarkBlue: 30, 30, 30 !important;
 }
-
-/* themoviedb-remove list cards blue tint */
-div.card.v4.list div.details {
-  background-color: rgba(0, 0, 0, 0.6) !important;
+div.card.v4.list div.details /* list page cards */ {
+  background-color: rgba(var(--zen-trans-theme-secondary-bg), 0.6) !important;
 }
 
 /* themoviedb-hide primary color */
-div.header.small.first {
+/* profile page with no background image */
+div.header.gradient:not(.background_image) {
   background-image: unset !important;
+  background-color: transparent !important;
 }
 
 /* themoviedb-beautiful movie front page */
-section.inner_content.backdrop.poster div.header.large.first {
-  border-bottom: unset !important;
-  background-position: center !important;
-}
-section.inner_content.backdrop.poster div.custom_bg {
-  height: calc(100vh - 110px) !important;
-  background-image: unset !important;
-  background-color: rgba(0, 0, 0, 0.6) !important;
-}
-section.inner_content.backdrop.poster div.header.first div.single_column {
-  max-width: unset !important;
-  margin-top: auto !important;
-  margin-bottom: auto !important;
-  padding-top: unset !important;
-  padding-bottom: unset !important;
+body:not(:has(> .person_wrap)) {
+  section.inner_content div.header.large.first {
+    border-bottom: unset !important;
+    background-position: center !important;
+  }
+  section.inner_content div.custom_bg {
+    height: calc(100vh - 110px) !important;
+    background-image: unset !important;
+  }
+  section.inner_content.backdrop.poster div.custom_bg {
+    background-color: rgba(var(--zen-trans-theme-secondary-bg), 0.6) !important;
+  }
+  section.inner_content div.header.first div.single_column {
+    max-width: unset !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    padding-top: unset !important;
+    padding-bottom: unset !important;
+  }
 }
