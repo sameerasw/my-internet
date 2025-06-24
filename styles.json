@@ -2765,6 +2765,11 @@
       "overlay fixes": "[role=\"menu\"] .css-175oi2r, [role=\"dialog\"] .css-175oi2r{\n    background-color: var(--backgroundLight) !important;\n}",
       "hover right sidebar": ".r-kemksi > div:nth-child(3){\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}",
       "hover nav": "nav{\n  opacity: 0 !important;\n  transition: all 0.3s ease-in-out !important;\n  &:hover{\n    opacity: 1 !important;\n  }\n}"
+    },
+    "hotstar.com.css": {
+      "hotstar-Transparency": "html, body, .hzfka7mKV_YFG5efeUkGI, .MYSPACE_BACKGROUND_GRADIENT, .b2lN0IEinUg1_47-BjDFE, ._3gvm5JKNCMnbHSjIIR8XUs, [data-testid=\"player-space-container\"] video {\n  background-color: transparent !important;\n  background: none !important;\n}",
+      "hotstar-No Banner": "._2MFNynJEsV9mmJ9voIaohQ {\n  display: none !important;\n}",
+      "hotstar-No Footer": "footer {\n  display: none !important;\n}"
     }
   }
 }
