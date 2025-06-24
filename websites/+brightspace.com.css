@@ -105,8 +105,8 @@ div.d2l_1_87_45.d2l_1_88_888 {
   --darkreader-background-ffffff: transparent !important;
   --darkreader-text--d2l-color-galena: white !important;
   --d2l-color-tungsten: white !important;
-  --darkreader-background-0060d4: transparent;
-  --d2l-menu-background-color: transparent;
+  --darkreader-background-0060d4: transparent !important;
+  --d2l-menu-background-color: transparent !important;
 }
 
 div.d2l-navigation-s-main-wrapper * {
