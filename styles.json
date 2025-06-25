@@ -2561,7 +2561,7 @@
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}"
     },
     "ya.ru.css": {
-      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .informers3-weather__text, .HeaderDesktop, #search-result li, .NativeScroll-Inner, .AppAdvancedSearch, .HeaderNav-TabCover{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .informers3-weather__text, .HeaderDesktop, #search-result li, .NativeScroll-Inner, .AppAdvancedSearch, .HeaderNav-TabCover, [data-statlog=\"2informers.weather\"] > div:not([style]){\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}"
     },
     "you.com.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, [data-testid=\"chat-layout-sidebar\"]{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
