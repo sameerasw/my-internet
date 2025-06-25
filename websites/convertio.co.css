@@ -6,14 +6,14 @@ nav,
 .nav,
 navbar,
 .navbar,
-#navbar, header > .global-head-cont,
-header, .toc-sidebar,
-#header, #temp_banner, .ranavnode,
+#navbar, 
+header,
+#header,
 .header, header::before,
-app, #root > div > div > .w-full,
-#app, footer, .sc-tvx700-7.egPRoP,
-.sidebar-wrap, .p-sectionLinks,
-section, .main, main::before,
+app,
+#app, footer,
+.sidebar-wrap,
+section, .main, .converter-wrapper,
 #__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before,
 #root, .min-h-screen.bg-white,
 .app, .AppContainer,
@@ -25,7 +25,7 @@ main, .header-top,
 #content, #cu-identity,
 section, .l-root,
 #__next, .landing-hero,
-#navigation-wrapper,
+#navigation-wrapper, .header-main,
 #global-navbar, .layout__content-wrapper,
 .head.notfixed, .main-container,
 #app > div, .btm-nav > a, .oc-content--main,
@@ -44,6 +44,6 @@ text-div > textarea{
 }
 
 /* no footer */
-footer, mfe-footer-pharos-footer, .footer, #footer{
+footer, mfe-footer-pharos-footer, .footer, #footer, .api-cta, .advantages{
   display: none !important;
 }

@@ -21,6 +21,10 @@ devsite-language-selector{
 --devsite-background-1: #00000000 !important;
 }
 
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
 /* no footer */
 footer, devsite-footer-promos, devsite-footer-linkboxes, devsite-footer-utility, devsite-content-footer{
   display: none !important;

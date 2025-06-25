@@ -6,14 +6,14 @@ nav,
 .nav,
 navbar,
 .navbar,
-#navbar, header > .global-head-cont,
-header, .toc-sidebar,
-#header, #temp_banner, .ranavnode,
+#navbar, 
+header,
+#header,
 .header, header::before,
-app, #root > div > div > .w-full,
-#app, footer, .sc-tvx700-7.egPRoP,
-.sidebar-wrap, .p-sectionLinks,
-section, .main, main::before,
+app, ._r3z7u_c7y0x5t,
+#app, footer, ._dw50sd_rv6nk52,
+.sidebar-wrap, ._dr4k5_fidhu7,
+section, .main,
 #__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before,
 #root, .min-h-screen.bg-white,
 .app, .AppContainer,
@@ -36,11 +36,6 @@ text-div > textarea{
   border: none !important;
   box-shadow: none !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
-}
-
-/* darkreader */
-:root{
-  --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */

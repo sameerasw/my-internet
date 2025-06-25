@@ -6,14 +6,14 @@ nav,
 .nav,
 navbar,
 .navbar,
-#navbar, header > .global-head-cont,
-header, .toc-sidebar,
-#header, #temp_banner, .ranavnode,
+#navbar, 
+header, .product_page-test_results,
+#header, .nav_scrolling_bar,
 .header, header::before,
-app, #root > div > div > .w-full,
-#app, footer, .sc-tvx700-7.egPRoP,
-.sidebar-wrap, .p-sectionLinks,
-section, .main, main::before,
+app, .landing_page-silos,
+#app, footer,
+.sidebar-wrap,
+section, .main, .full_nav-block ,
 #__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before,
 #root, .min-h-screen.bg-white,
 .app, .AppContainer,
@@ -25,7 +25,7 @@ main, .header-top,
 #content, #cu-identity,
 section, .l-root,
 #__next, .landing-hero,
-#navigation-wrapper,
+#navigation-wrapper, .landing_page-banner-background::before,
 #global-navbar, .layout__content-wrapper,
 .head.notfixed, .main-container,
 #app > div, .btm-nav > a, .oc-content--main,
@@ -36,6 +36,15 @@ text-div > textarea{
   border: none !important;
   box-shadow: none !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+.landing_page-banner, .landing_page-about{
+  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%) !important;
+  mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%) !important;
+  -webkit-mask-repeat: no-repeat !important;
+  mask-repeat: no-repeat !important;
+  -webkit-mask-size: cover !important;
+  mask-size: cover !important;
 }
 
 /* darkreader */

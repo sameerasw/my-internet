@@ -58,6 +58,6 @@ body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [a
 }
 
 /* wa-chat background */
-div.x10l6tqk.x13vifvy.x17qophe.xh8yej3.x5yr21d.x182nak8.x1wwuglj.x1vs56c6 {
+[data-asset-chat-background-dark="true"] {
   background-image: none !important;
 }

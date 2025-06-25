@@ -234,6 +234,10 @@ ytd-merch-shelf-renderer,
   display: none !important;
 }
 
+*::-webkit-scrollbar {
+      display: none !important;
+}
+
 /* yt-Transparent video background */
 .html5-main-video,
 .html5-video-container,
