@@ -54,6 +54,8 @@ header ul li.translate div, /* home page top bar language box hover bg */
 #vibes_form .bg-zinc-100, /* title page "What's your Vibe?" popup (modified) */
 section.inner_content div.media.discover div.column_content div.card.style_1 div.image, /* home page cards while loading */
 div.discussion_container tr.none, /* title page discussions tab "Want to be notified when someone makes the first post? Yes, notify me!" */
+.md-editor > textarea:focus, /* discussion page reply box textarea (custom) */
+.md-editor > .md-preview, /* discussion page reply box preview bg */
 body {
   background-color: transparent !important;
   background: none !important;
@@ -201,6 +203,7 @@ div.rating, section.inner_content div.my_rating, /* episodes page rating percent
 div.episode div.info div.date, /* episodes page date */
 div.episode_list div.episode_number span, /* episodes page 1x1 text */
 section.inner_content a, section.media_panel div.menu ul li.active a, /* episodes page episode card expanded header text eg: "Videos", "Images" etc... */
+.md-editor > .md-header button, /* discussion page reply box preview button text */
 div.media.discover div.card.style_1 div.content p /* home page cards dates */ {
   color: rgba(var(--zen-trans-theme-primary-text), 0.8) !important;
 }
@@ -261,6 +264,10 @@ div.media_tooltip_popup div.content div.rating_block, /* person page (.glyphicon
 div.error_status.info h2, /* title edit page cast "A few notes about editing the cast" heading */
 div.column_wrapper div.settings_panel, /* search results page left side panel */
 span.activity, /* discussion page "View Activity" popup "created", "closed", "replied" span */
+.md-editor > .md-header .btn-group, /* discussion page reply box bold and italic buttons */
+.md-editor, /* discussion page reply box (custom) */
+.md-editor .md-footer, .md-editor > .md-header, /* discussion page reply box header (custom) */
+div.carton div.content pre, div.md-preview pre, /* discussion page card code snippet */
 .card /* all cards */ {
   background-color: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
   border-color: transparent !important;
@@ -352,38 +359,40 @@ div.item.profile.card {
 }
 
 /* fix new title page */
-/* new title page left sidebar current tab */
-ul.tabs li.current,
-ul[role="tablist"] li.current {
-  background-image: unset !important;
-  -moz-box-shadow: unset !important;
-  -webkit-box-shadow: unset !important;
-  box-shadow: unset !important;
-  text-shadow: unset !important;
-}
-/* new title page left sidebar text */
-ul.tabs li,
-ul[role="tablist"] li {
-  text-shadow: unset !important;
-}
-/* new title page left sidebar bottom border */
-ul.tabs li,
-ul[role="tablist"] li {
-  border-bottom: unset !important;
-  box-shadow: unset !important;
-}
-/* new title page Movie Details tab content */
-div.new input[type="password"],
-div.new input[type="text"],
-div.new textarea {
-  border: unset !important;
-  background: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
-  box-shadow: unset !important;
-  color: rgb(var(--zen-trans-theme-primary-text)) !important;
-}
-/* new title page Movie Details tab label */
-div.new form label {
-  color: rgb(var(--zen-trans-theme-primary-text)) !important;
+#container:has(> #header > a > img[src^="/assets/2/legacy/tmdb-logo"]) {
+  /* new title page left sidebar current tab */
+  ul.tabs li.current,
+  ul[role="tablist"] li.current {
+    background-image: unset !important;
+    -moz-box-shadow: unset !important;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+    text-shadow: unset !important;
+  }
+  /* new title page left sidebar text */
+  ul.tabs li,
+  ul[role="tablist"] li {
+    text-shadow: unset !important;
+  }
+  /* new title page left sidebar bottom border */
+  ul.tabs li,
+  ul[role="tablist"] li {
+    border-bottom: unset !important;
+    box-shadow: unset !important;
+  }
+  /* new title page Movie Details tab content */
+  div.new input[type="password"],
+  div.new input[type="text"],
+  div.new textarea {
+    border: unset !important;
+    background: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
+    box-shadow: unset !important;
+    color: rgb(var(--zen-trans-theme-primary-text)) !important;
+  }
+  /* new title page Movie Details tab label */
+  div.new form label {
+    color: rgb(var(--zen-trans-theme-primary-text)) !important;
+  }
 }
 
 /* fix popups */
@@ -557,6 +566,29 @@ p a {
 div.subject div.tag span {
   color: rgba(var(--zen-trans-theme-solid-bg)) !important;
   font-weight: bold;
+}
+/* reply box textarea */
+.md-editor > textarea {
+  border-top: none !important;
+}
+/* reply box divider between bold and italic button */
+.md-editor > .md-header button {
+  border-left: none !important;
+}
+/* reply box */
+.md-editor {
+  border-radius: 10px !important;
+}
+/* discussion page reply box header */
+.md-editor .md-footer,
+.md-editor > .md-header {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+/* block quote */
+div.content blockquote,
+section.content blockquote {
+  background-color: rgba(var(--zen-trans-theme-secondary-bg), 0.1) !important;
 }
 
 /* fix list page */
@@ -965,12 +997,6 @@ div.column_wrapper ul.panel.with_counts li[style="font-size: 0.8em;"] a {
   section.facts div.social_links a.social_link /* title page right sidebar icons */ {
     filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
   }
-  .glyphicons_v2.bold,
-  .glyphicons_v2.italic,
-  .glyphicons_v2.list-numbers,
-  .glyphicons_v2.code,
-  .glyphicons_v2.chat-message,
-  .glyphicons_v2.eye,
   .glyphicons_v2.locked,
   .glyphicons_v2.unlocked,
   .glyphicons_v2.square-edit,
@@ -1038,6 +1064,13 @@ div.column_wrapper ul.panel.with_counts li[style="font-size: 0.8em;"] a {
   .glyphicons_v2.list,
   .glyphicons_v2.calendar,
   .glyphicons_v2.link,
+  .glyphicons_v2.fullscreen,
+  .glyphicons_v2.bold,
+  .glyphicons_v2.italic,
+  .glyphicons_v2.list-numbers,
+  .glyphicons_v2.code,
+  .glyphicons_v2.chat-message,
+  .glyphicons_v2.eye,
   img[src="https://media.themoviedb.org/t/p/original/e2XGMhHKR9QKE8huwuP0xqqZ9zs.svg"], /* edit page videos youtube icon */
   .glyphicons_v2.star:not(.selected) {
     /* invert and decrease brightness (general fix) */
@@ -1073,7 +1106,6 @@ div.column_wrapper ul.panel.with_counts li[style="font-size: 0.8em;"] a {
     filter: unset !important;
   }
   /* blue icons */
-  .md-editor > .md-header span.glyphicons_v2:hover,
   div.carton div.post_actions a.true span.glyphicons_v2,
   div.carton div.post_actions a:hover span.glyphicons_v2 {
     filter: invert(68%) sepia(62%) saturate(5715%) hue-rotate(158deg) brightness(101%) contrast(99%) !important;
