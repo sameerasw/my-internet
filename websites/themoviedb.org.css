@@ -53,6 +53,7 @@ div.content_wrapper.full_width.bottom_border, /* episode page header */
 header ul li.translate div, /* home page top bar language box hover bg */
 #vibes_form .bg-zinc-100, /* title page "What's your Vibe?" popup (modified) */
 section.inner_content div.media.discover div.column_content div.card.style_1 div.image, /* home page cards while loading */
+div.discussion_container tr.none, /* title page discussions tab "Want to be notified when someone makes the first post? Yes, notify me!" */
 body {
   background-color: transparent !important;
   background: none !important;
@@ -160,6 +161,8 @@ div.card.v4 div.action_bar ul li.selected a span.rating.wrapper, /* user ratings
 .text-black, /* subscription page "Manage API Service" text */
 #vibes_form .text-tmdb-dark-blue, /* title page "What's your Vibe?" popup headings (modified) */
 #vibes_form .text-white, /* title page "What's your Vibe?" popup "I'm Done" text (modified) */
+section.main_content.search_results h2, /* search results page card heading */
+div.pagination.infinite p a, /* profile discussions page load more button */
 body {
   color: rgb(var(--zen-trans-theme-primary-text)) !important;
 }
@@ -237,14 +240,14 @@ div.discussion_container tr, /* title page discussion tab cards */
 .list_wrap ol.list_items > span > li, /* list page grid view posters bg (custom) */
 .list_wrap ol.list_items > span > li, /* list page list view card bg (custom) */
 div.inner_block div.inner_content div.content div.title_header div.group_wrapper div.group_dropdown ul, /* my ratings filter by popup */
-div.carton > div.post_info, /* discussion page card header (modified) */
-div.carton > div.content, /* discussion page card content (modified) */
-div.carton > div.toolbar, /* discussion page card toolbar (modified) */
+#discussions div.carton > div.post_info, /* discussion page card header (modified) */
+#discussions div.carton > div.content, /* discussion page card content (modified) */
+#discussions div.carton > div.toolbar, /* discussion page card toolbar (modified) */
 div.you div.message, /* messages page messages */
 .pagination.background_color.light_blue, .apply.background_color.light_blue, .k-button.background_color.light_blue, /* popular movies page search (modified), load more button */
 div.media.discover ul.multi_select.text li, /* popular movies page genres boxes */
 div.media.discover ul.multi_select.text a:hover, div.media.discover ul.multi_select.text li.selected, div.media.discover ul.multi_select.text li.selected a, div.media.discover ul.multi_select.text li:hover, div.media.discover ul.multi_select.text li:hover a, /* popular movies page genres boxes hover */
-.k-form-field-wrap > .k-input.k-textbox.k-valid, /* title edit page release information popup "note" input */
+.k-form-field-wrap > .k-input.k-textbox, /* title edit page release information popup "note" input (custom) */
 div#container, /* new title page */
 ul.tabs li.current, ul[role="tablist"] li.current, /* new title page left sidebar current tab */
 footer nav a.rounded, /* home page footer "Hi User!" */
@@ -255,6 +258,9 @@ section.inner_content a.edit, /* title page "Add a Video", "Add Backdrop", "Add 
 a.button, section.inner_content a.button, /* person page (.glyphicons_v2.circle-empty click tooltip): like, watchlist, fav */
 div.media_tooltip_popup div.content div.rating_block, /* person page (.glyphicons_v2.circle-empty click tooltip): rating */
 .rm-Guides_loading:not(.rm-Guides-SuperHub)::before, /* /docs page loading */
+div.error_status.info h2, /* title edit page cast "A few notes about editing the cast" heading */
+div.column_wrapper div.settings_panel, /* search results page left side panel */
+span.activity, /* discussion page "View Activity" popup "created", "closed", "replied" span */
 .card /* all cards */ {
   background-color: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
   border-color: transparent !important;
@@ -394,6 +400,14 @@ div.new form label {
 section.window_content a, section.window_content ul /* images page add images popup "A maximum resolution" text */ {
   color: rgba(var(--zen-trans-theme-primary-text), 0.6) !important;
 }
+/* title edit page release information popup "note" input (custom) */
+.k-form-field-wrap > .k-input.k-textbox {
+  border-radius: var(--kendo-border-radius-md, 0.375rem) !important;
+}
+/* title edit page release information popup "note" input disabled (custom) */
+.k-form-field-wrap > .k-input.k-textbox[disabled="disabled"] {
+  opacity: var(--kendo-disabled-opacity) !important;
+}
 
 /* fix context menu */
 .k-list, /* images page image card menu */
@@ -519,12 +533,12 @@ div.you div.message a {
 
 /* fix discussion page */
 /* rounded card corners */
-div.carton > div.post_info {
+#discussions div.carton > div.post_info {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: rgba(var(--zen-trans-theme-primary-bg), 0.08) !important;
 }
-div.carton > div.toolbar {
+#discussions div.carton > div.toolbar {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top: 1px solid rgba(var(--zen-trans-theme-primary-text), 0.2) !important;
@@ -684,9 +698,19 @@ div.consensus div.outer_ring {
   background-image: url(/assets/2/awards-preview/banner-stars-f3d8dd620e03ae0ddb6c0cd14e0a31e6bfc233b45898569f940237027db16ea3.svg) !important;
   background-color: rgba(var(--zen-trans-theme-primary-bg), var(--zen-trans-theme-transparency-lvl)) !important;
 }
+/* content divider */
+section.panel {
+  border-top: 1px solid rgba(var(--zen-trans-theme-primary-text), 0.4); /* don't use important */
+}
+/* border under keywords section */
+section.split_column section.keywords {
+  border-bottom: 1px solid rgba(var(--zen-trans-theme-primary-text), 0.4) !important;
+}
 /* title page "What's your Vibe?" popup */
 #vibes_form {
   /* popup top and bottom gradient on scroll */
+  .vertical_scroller_wrap.should_fade.is_fading_after::after,
+  .vertical_scroller_wrap.should_fade.is_fading_before::before,
   .vertical_scroller_wrap.should_fade.hide_after::after,
   .vertical_scroller_wrap.should_fade.hide_before::before {
     opacity: 0 !important;
@@ -930,6 +954,10 @@ section.inner_content ul.images li.card.needs_review {
 /* find duplciate images red image cards */
 section.inner_content ul.images li.card div.info.find-dups-red-card {
   background-color: rgba(var(--zen-trans-theme-red), 0.15) !important;
+}
+/* Images page TheMovieDB Image Translations script left side panel */
+div.column_wrapper ul.panel.with_counts li[style="font-size: 0.8em;"] a {
+  color: rgba(var(--zen-trans-theme-primary-text), 0.55) !important;
 }
 
 /* themoviedb-fix icons */
