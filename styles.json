@@ -2796,6 +2796,12 @@
       "transparency": "html,\nbody,\nnav,\n#nav,\n.nav,\nnavbar,\n.navbar,\n#navbar, \nheader,\n#header,\n.header, header::before,\napp, #sticky-toolbar > .grid, [aria-label=\"Font Card\"],\n#app, footer,\n.sidebar-wrap,\nsection, .main,\n#__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before,\n#root, .min-h-screen.bg-white,\n.app, .AppContainer,\n.app-root, #wrapper,\nbody[data-theme=\"dark\"], body[data-theme=\"light\"],\n#pass-sidebar, .side-bar,\n#main, .sidebar, .global-content__content,\nmain, .header-top,\n#content, #cu-identity,\nsection, .l-root,\n#__next, .landing-hero,\n#navigation-wrapper,\n#global-navbar, .layout__content-wrapper,\n.head.notfixed, .main-container,\n#app > div, .btm-nav > a, .oc-content--main,\nbody.dark_mode, body.light_mode,\ntext-div > textarea{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n\n#sticky-toolbar > .sticky > div{\n  border-radius: 0.5em !important;\n}",
       "darkreader": ":root{\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer, mfe-footer-pharos-footer, .footer, #footer, body > div > div:nth-last-child(1):not([role=\"menu\"]){\n  display: none !important;\n}"
+    },
+    "+bilibili.com.css": {
+      "bilibili-transparency": "html,\nbody, #bili-header-container,\n#i_cecream, .bili-header,\n.large-header, .mini-header,\n.bili-header .bili-header__banner,\n.bili-header .bili-header__channel {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n  --darkreader-bg--bg3: transparent !important;\n}",
+      "bilibili-rounded": ".bili-video-card__wrap {\n  border-radius: 0.5em !important;\n}",
+      "no footer": "footer, .bili-footer{\n  display: none !important;\n}"
     }
   }
 }
