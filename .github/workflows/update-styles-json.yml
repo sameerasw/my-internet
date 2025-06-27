@@ -25,6 +25,10 @@ jobs:
       - name: Run script to update styles.json
         run: node update-styles-json.js
 
+      - name: Validate styles.json
+        run: |
+          jq empty styles.json
+
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -34,3 +38,4 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
