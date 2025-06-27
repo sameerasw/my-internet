@@ -18,24 +18,21 @@ function extractFeatures(cssContent) {
   let buffer = [];
 
   root.nodes.forEach(node => {
-    if (node.type === 'comment') {
-      // When encountering a new comment:
-      // Save the previously buffered nodes to the last feature if any
-      if (currentFeature && buffer.length > 0) {
-        features[currentFeature] = buffer.map(n => n.toString()).join('\n').trim();
-        buffer = [];
-      }
-      // Skip comments that start with @ (like @import or @charset)
-      if (/^@/.test(node.text.trim())) {
-        currentFeature = null; // no feature here
-      } else {
-        currentFeature = node.text.trim();
-      }
-    } else if (currentFeature) {
-      // Accumulate nodes under the current feature
-      buffer.push(node);
+  if (node.type === 'comment') {
+    if (/^@/.test(node.text.trim())) {
+      // Skip @ comments but keep the current feature context intact
+      return;
     }
-  });
+    // When encountering a new comment (non-@), save old feature buffer and start a new feature
+    if (currentFeature && buffer.length > 0) {
+      features[currentFeature] = buffer.map(n => n.toString()).join('\n').trim();
+      buffer = [];
+    }
+    currentFeature = node.text.trim();
+  } else if (currentFeature) {
+    buffer.push(node);
+  }
+});
 
   // Add the last buffered feature
   if (currentFeature && buffer.length > 0) {
