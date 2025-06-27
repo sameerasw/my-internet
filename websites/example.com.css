@@ -22,7 +22,7 @@ section, .main, main::before,
 body[data-theme="dark"], body[data-theme="light"],
 #pass-sidebar, .side-bar,
 #main, .sidebar, .global-content__content,
-main, .header-top,
+main, .header-top,  /* any comment */
 #content, #cu-identity,
 section, .l-root,
 #__next, .landing-hero,
@@ -35,9 +35,11 @@ text-div > textarea{
   background-color: transparent !important;
   /* @Testing inline comments */
   background: none !important;
-  border: none !important;
+  border: none !important; /* any comment */
   box-shadow: none !important;
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+   /* any comment */
+   /* any comment */
 }
 
 /* @ this comment will also get skipped */
