@@ -36,7 +36,7 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
 3. Please respect auto theming for day and night themes. If the website does not have a dark theme, account for dark reader.
 4. Do not use wildcards such as applying transparency for all div elements since that is handled with force theming in the addon.
 5. Every property should include `!important` to make sure it gets applied.
-6. Do NOT leave commented out code.
+6. ~Do NOT leave commented out code.~ Now you can, but still DO NOT! But you can add descriptive comments... Check rule 15
 7. Don't include `www` in the stylesheet file name.
 8. Add proper comments for each section of a feature at the beginning with a clear but compact description.
 9. For theming similar domains like app.arduino.cc , login.arduino.cc ..... similar urls with `prefixes`, you can add a general style with a leading `+` symbol when creating the stylesheet. ( `+arduino.cc.css` ) [example](https://github.com/sameerasw/my-internet/blob/main/websites/%2Bnixos.org.css)
@@ -58,7 +58,7 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
 12. Always make sure the first feature is `transparency` and also use the exact feature name without a difference allowing the global transparency toggle to work. Prefixes with `-` are acceptable. 
 13. Don't keep the firefox selectors if you are coying over from the userContent.css (remove `@-moz-document domain(" ")` )
 14. Once comitted to the repository, github actions will parse the css file and update/ generate the [styles.js](https://github.com/sameerasw/my-internet/blob/main/styles.json) and then will be deployed to the github pages allowing the add-on to fetch from it.
-15. _**[NEW!]**_ Now you can add descriptive comments to the css file which will be skipped during parsing and generating the styles.json file. BUT, make sure to start those css comment text with the `@` symbol as below examples.
+15. _**[NEW!]**_ Now you can add descriptive comments to the css file which will be skipped during parsing and generating the styles.json file. BUT, make sure to start those css comment text with the `@` symbol as below examples. BUT, Any comment inside a feature in the css selectors or in properties will be skipped anyways.
     
     ```
       /* yt-transparency */
@@ -66,11 +66,13 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
       :root{
         --colorBgApp: transparent !important;
         /* @ this comment will be skipped, but leaving it will cause no harm */
+        /* This will be skipped */
       }
   
       /* @ this comment will be skipped */
       /*  yt-no footer */
-      footer.app-footer {
+      footer.app-footer, /* This will be skipped */
+      footer {
         display: none !important;
       }
     ```
