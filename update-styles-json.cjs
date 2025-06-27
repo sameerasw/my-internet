@@ -1,44 +1,45 @@
 const fs = require('fs');
 const path = require('path');
-const { parse } = require('@adobe/css-tools');
+const postcss = require('postcss');
 
 const rootDir = path.join(__dirname, 'websites');
 const outputFile = path.join(__dirname, 'styles.json');
 const excludeFile = 'userChrome.css';
 
-// Check if the output file exists and create it if it doesn't
+// Create output file if doesn't exist
 if (!fs.existsSync(outputFile)) {
   fs.writeFileSync(outputFile, JSON.stringify({ website: {} }, null, 2));
 }
 
 function extractFeatures(cssContent) {
-  const ast = parse(cssContent);
+  const root = postcss.parse(cssContent);
   const features = {};
   let currentFeature = null;
-  let buffer = '';
+  let buffer = [];
 
-  ast.stylesheet.rules.forEach(rule => {
-    if (rule.type === 'comment') {
-      const commentText = rule.comment.trim();
-      if (/^@/i.test(commentText)) {
-        // Skip descriptive comment
-        return;
+  root.nodes.forEach(node => {
+    if (node.type === 'comment') {
+      // When encountering a new comment:
+      // Save the previously buffered nodes to the last feature if any
+      if (currentFeature && buffer.length > 0) {
+        features[currentFeature] = buffer.map(n => n.toString()).join('\n').trim();
+        buffer = [];
       }
-      // If we had a previous feature and buffered code, save it
-      if (currentFeature && buffer.trim()) {
-        features[currentFeature] = buffer.trim();
-        buffer = '';
+      // Skip comments that start with @ (like @import or @charset)
+      if (/^@/.test(node.text.trim())) {
+        currentFeature = null; // no feature here
+      } else {
+        currentFeature = node.text.trim();
       }
-      currentFeature = commentText;
     } else if (currentFeature) {
-      const ruleStr = cssContent.slice(rule.position.start.offset, rule.position.end.offset);
-      buffer += ruleStr + '\n';
+      // Accumulate nodes under the current feature
+      buffer.push(node);
     }
   });
 
   // Add the last buffered feature
-  if (currentFeature && buffer.trim()) {
-    features[currentFeature] = buffer.trim();
+  if (currentFeature && buffer.length > 0) {
+    features[currentFeature] = buffer.map(n => n.toString()).join('\n').trim();
   }
 
   return features;
