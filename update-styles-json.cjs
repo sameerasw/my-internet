@@ -48,28 +48,36 @@ function extractFeatures(cssContent) {
   return features;
 }
 
-// Helper to stringify a node while removing inline @ comments
+// Helper to stringify a node while removing inline comments
 function nodeToCleanString(node) {
   if (node.type === 'rule' || node.type === 'atrule') {
     const clone = node.clone();
 
-    // Remove @ inline comments inside declarations
+    // 🔹 Remove ALL inline comments inside declarations
     if (clone.nodes) {
-      clone.nodes = clone.nodes.filter(n => {
-        return !(n.type === 'comment' && /^@/.test(n.text.trim()));
-      });
+      clone.nodes = clone.nodes.filter(n => n.type !== 'comment');
+    }
+
+    // 🔹 Remove ALL inline comments in selector string
+    if (clone.selector) {
+      clone.selector = clone.selector
+        .replace(/\/\*[^*]*\*\//g, '')     // Remove all /* ... */ comments
+        .replace(/\s*,\s*,/g, ',')         // Avoid duplicate commas
+        .replace(/\s+/g, ' ')              // Normalize whitespace
+        .trim();
     }
 
     return clone.toString();
   }
 
-  // If it's a comment starting with @, skip it entirely
-  if (node.type === 'comment' && /^@/.test(node.text.trim())) {
+  // 🔹 Remove standalone comment nodes entirely
+  if (node.type === 'comment') {
     return '';
   }
 
   return node.toString();
 }
+
 
 function updateStylesJson() {
   const styles = JSON.parse(fs.readFileSync(outputFile, 'utf-8')) || { website: {} };
