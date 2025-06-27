@@ -39,7 +39,7 @@ text-div > textarea{
 }
 
 /* thumbnail hover */
-a.p137Zd, .d5NbRd-EScbFb-JIbuQc-hSRGPd > div > [jscontroller="ooYxFe"]{
+a.p137Zd,  div > [jscontroller="ooYxFe"], [jsname="NwW5ce"]{
   transition: all 0.3s ease-in-out !important;
   border-radius: 0.5em !important;
 }
