@@ -2824,6 +2824,12 @@
     },
     "planetminecraft.com.css": {
       "transparency": "html, body, nav, #nav, .nav, navbar, .navbar, #navbar, header, #header, .header, header::before, app, #app, footer, .sidebar-wrap, section, .main, .resource_list, #__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before, #root, .min-h-screen.bg-white, .app, .AppContainer, .app-root, #wrapper, body[data-theme=\"dark\"], body[data-theme=\"light\"], #pass-sidebar, .side-bar, #main, .sidebar, .global-content__content, main, .header-top, #content, #cu-identity, section, .l-root, #nav-bar, #__next, .landing-hero, #navigation-wrapper, #global-navbar, .layout__content-wrapper, .head.notfixed, .main-container, #app > div, .btm-nav > a, .oc-content--main, body.dark_mode, body.light_mode, text-div > textarea{\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}\n#container{\n    box-shadow:  light-dark(#fff3, #0003) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;\n    background-color: light-dark(#fff8, #0005)  !important;\n    border-radius: 1em !important;\n\n    @media (prefers-color-scheme: dark) {\n    box-shadow:  #0003 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;\n    background-color:  #0005  !important;\n}\n  }"
+    },
+    "instructables.com.css": {
+      "instructables-Transparency": "body, .full-wrapper, .instructables-header, ._footerWrapper_1g310_1, ._commentEditorWrapper_cfxvj_8, ._comment_83cm4_11, ._searchInput_3i53d_19, .author-promo, ._wrapper_ez9w2_12, ._button_156n2_17 {\n  background-color: transparent !important;\n  background: none !important;\n}\n:root {\n  --darkreader-background-ffffff: transparent !important;\n}",
+      "instructables-No Signup Background": "._signupBackground_ez9w2_4 {\n  background: none !important;\n}",
+      "instructables-No Recomendations": "._recommendations_fjzu6_4 {\n  display: none !important;\n}",
+      "instructables-No Footer": "footer {\n  display: none !important;\n}"
     }
   }
 }
