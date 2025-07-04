@@ -48,10 +48,6 @@ body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [a
 }
 }
 
-._aigw:has(#side) {
-  opacity: 0 !important;;
-}
-
 /* wa-layout fixes */
 .two,
 .three {
