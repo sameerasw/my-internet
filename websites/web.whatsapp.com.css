@@ -16,7 +16,7 @@ app, [aria-label="Channel tab drawer"] > div, .x150wa6m,
 .three, .three .xnpuxes, .x1c1uobl > div,
 .app-root,
 #pass-sidebar,
-#main, ._alyo._alyw,
+#main, ._alyo._alyw, ._aigw .x78zum5,
 main, [data-focusid="status-row-item"]:not(:hover),
 #content, [aria-label="Status tab drawer"] > div,
 section, .two::after, .three::after,
@@ -46,6 +46,10 @@ body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [a
   header:has([aria-label="WhatsApp"]), #side{
   display: none !important;
 }
+}
+
+._aigw:has(#side) {
+  opacity: 0 !important;;
 }
 
 /* wa-layout fixes */
