@@ -2834,6 +2834,11 @@
     "+mediawiki.org.css": {
       "transparency": ":root {\n  --background-color-interactive-subtle: transparent !important;\n}\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n}",
       "no footer": "footer {\n  display: none !important;\n}"
+    },
+    "+bing.com.css": {
+      "bing-transparency": "html, body, .hp_body, .hp_top_cover_container::before, header, #b_content, .b_algo, .dg_b, #rfPane {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,\n    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;\n  background-image: none !important;\n}",
+      "bing-hidden": ".bottom_row, #hp_top_cover, .shaders, .hp_top_cover_container, .hp_media_container {\n  display: none !important;\n}",
+      "bing-no footer": "footer {\n  display: none !important;\n}"
     }
   }
 }
