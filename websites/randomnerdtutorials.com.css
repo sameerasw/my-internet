@@ -1,0 +1,20 @@
+/* rnt-Transparency */
+body,
+#site-navigation,
+.inside-article,
+.widget,
+.rntbox,
+.comments-area, .elementor-post__card, .rntn-top-menu {
+  background-color: transparent !important;
+  background: none !important;
+}
+
+/* rnt-Darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* rnt-No Footer */
+footer {
+  display: none !important;
+}

@@ -4,6 +4,8 @@ html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .de
 .devsite-breadcrumb-list,
 devsite-search .devsite-searchbox::before,
 .devsite-searchbox,
+.devsite-playlist--header, 
+[expanded],
 [aria-controls="language-menu"]
     {
   background-color: transparent !important;
