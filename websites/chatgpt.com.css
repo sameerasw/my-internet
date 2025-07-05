@@ -1,15 +1,15 @@
 /* cgpt-transparency */
-:root {
+:root{
   --main-surface-background: #00000000 !important;
   --main-surface-primary: #00000000 !important;
   --sidebar-surface-primary: #00000000 !important;
 }
 
-#thread-bottom + .text-token-text-secondary > div {
+#thread-bottom + .text-token-text-secondary > div{
   opacity: 0 !important;
 }
 
-html,
+html, html.light, html.dark,
 body,
 nav,
 #nav,
@@ -28,71 +28,80 @@ app,
 #main,
 main,
 #content,
-section,
-#stage-slideover-sidebar,
-#__next,
-.bg-linear-to-l,
+section, #stage-slideover-sidebar,
+#__next, .bg-linear-to-l,
 #navigation-wrapper,
 #global-navbar,
 .head.notfixed,
-body[data-theme="dark"],
-body,
-#sidebar > div,
-[data-theme="light"],
-a[title="ChatGPT"],
-body.dark_mode,
-body.light_mode,
-.content-fade::after {
+body[data-theme="dark"], body, #sidebar > div,[data-theme="light"], a[title="ChatGPT"],
+body.dark_mode, body.light_mode{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-main > div > div > .bg-token-bg-primary {
+main > div > div > .bg-token-bg-primary{
   gap: 0 !important;
 }
 
-/* cgpt-glass */
-#history .bg-token-bg-elevated-secondary,
-main > div > div > .bg-token-bg-primary,
-[aria-label="Chat history"] > div:nth-child(1),
-[data-testid="history-item-0"] > div.bg-\[var\(--sidebar-surface-tertiary\)\] {
-  box-shadow: light-dark(#fff3, #0003) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
-  background-color: light-dark(#fff, #111) !important;
-  border-radius: 1em !important;
-}
 
-[data-testid="history-item-0"] > div.bg-\[var\(--sidebar-surface-tertiary\)\] {
-  background-color: light-dark(#fff5, #1115) !important;
-}
+/* cgpt-glass */
+#history .bg-token-bg-elevated-secondary, main > div > div > .bg-token-bg-primary, [aria-label="Chat history"] > div:nth-child(1), [data-testid="history-item-0"] > div.bg-\[var\(--sidebar-surface-tertiary\)\], [aria-label="Chat history"] > aside:nth-child(2), [aria-label="Chat history"] > div:nth-last-child(1),
+form[aria-label="Message Composer"] > div{
+    box-shadow:  light-dark(#fff3, #0003) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+    background-color: light-dark(#fff, #111)  !important;
+    border-radius: 1em !important;
+  }
+
+  [data-testid="history-item-0"] > div.bg-\[var\(--sidebar-surface-tertiary\)\]{
+    background-color: light-dark(#fff5, #1115)  !important;
+  }
 
 [data-testid="history-item-0"] {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 .bg-\[var\(--sidebar-surface-tertiary\)\] {
-  background: rgba(0, 0, 0, 0.2) !important;
-  border-radius: 16px;
+    background: rgba(0,0,0,0.2) !important;
+    border-radius: 16px;
 }
 .bg-token-bg-elevated-secondary {
-  background: none;
+    background: none;
 }
 .bg-token-message-surface {
-  background: rgba(0, 0, 0, 0.4);
+    background: rgba(0,0,0,0.4)
 }
 section.popover.flex.h-full.w-full.flex-col.bg-token-main-surface-primary {
   backdrop-filter: blur(16px);
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0,0,0,0.5) !important;
+}
+
+/* chat bubble */
+[data-message-author-role="assistant"], .bg-token-message-surface{
+  box-shadow: #0003 0 0 10px !important;
+  width: fit-content !important;
+  padding: 0.25em 1em !important;
+}
+
+.bg-token-message-surface{
+  border-radius: 1.25em 1.25em 0.3em 1.25em !important;
+  background-color: light-dark(#fff4, #0004) !important;
+}
+[data-message-author-role="assistant"]{
+  border-radius: 1.25em 1.25em 1.25em 0.3em !important;
+  background-color: light-dark(#fff7, #0007) !important;
+}
+
+.group\/conversation-turn > div > div.justify-start{
+  transition: all 0.3s ease-in-out !important;
+}
+
+.group\/conversation-turn:not(:hover) > div > div.justify-start{
+  opacity: 0 !important;
 }
 
 /* cgpt-hidden elements */
-button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light.text-xs.text-token-text-secondary,
-div.w-full:nth-child(6),
-.grow + .bg-token-bg-elevated-secondary.sticky {
+button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light.text-xs.text-token-text-secondary, div.w-full:nth-child(6), .grow + .bg-token-bg-elevated-secondary.sticky, #page-header > .absolute {
   display: none !important;
 }
