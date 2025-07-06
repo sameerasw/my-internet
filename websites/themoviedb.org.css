@@ -42,7 +42,7 @@ table.credits tbody, /* @ people page table content */
 .k-input-inner > .k-input-solid, /* @ people edit page move credits input box */
 
 /* @ changes page */
-.changes_with_aggregates, /* @ changes page n Changes */
+table.changes_with_aggregates, /* @ changes page n Changes */
 table.changes_with_aggregates span.language, /* @ changes page right side language code */
 
 /* @ episode page */
@@ -367,6 +367,7 @@ div.you div.message, /* @ messages page messages */
 div.inner_block div.inner_content div.content div.title_header div.group_wrapper div.group_dropdown ul, /* @ user ratings page Filter by dropdown hover */
 
 /* @ popular movies page */
+div.media.discover div.filter_panel div.name h2 span, /* @ popular movies page left sidebar Where To Watch section ott number count */
 .pagination.background_color.light_blue, .apply.background_color.light_blue, .k-button.background_color.light_blue, /* @ popular movies page search (modified), load more button */
 div.media.discover ul.multi_select.text li, /* @ popular movies page genres boxes */
 
@@ -420,7 +421,8 @@ header ul li.translate div {
 }
 
 /* @ top search bar */
-div.search_bar, section.search div.k-animation-container /* @*/ {
+div.search_bar,
+section.search div.k-animation-container {
   border-top: unset !important;
   border-bottom: unset !important;
 }
@@ -431,12 +433,14 @@ div.search_bar, section.search div.k-animation-container /* @*/ {
 }
 
 /* @ cards bottom padding */
-section.inner_content div.column_content div.card.style_1 div.content, section.inner_content div.column_content div.card.style_2 div.content /* @*/ {
+section.inner_content div.column_content div.card.style_1 div.content,
+section.inner_content div.column_content div.card.style_2 div.content {
   padding-bottom: 10px !important;
 }
 
 /* @ top search drop down */
-div.slim_search_results, div.slim_search_results_header /* @*/ {
+div.slim_search_results,
+div.slim_search_results_header {
   border-bottom: unset !important;
 }
 
@@ -685,6 +689,12 @@ div.video.card div.info div:last-of-type {
   border: unset !important;
 }
 
+/* @ restricted regions */
+div.video.card div.info div span.restricted_region {
+  color: rgba(var(--trans-theme-primary-text), 0.7) !important;
+  border: 2px solid rgba(var(--trans-theme-primary-text), 0.2) !important;
+}
+
 /* @ ------------------------- fix people page ------------------------- */
 
 /* @ bottom white gradient for long biography */
@@ -838,6 +848,19 @@ section.content blockquote {
 }
 
 /* @ ------------------------- fix popular movies page ------------------------- */
+
+/* @ left sidebar Where To Watch section ott icons hover */
+.include ul.ott_providers li.subscribed div,
+ul.ott_providers li.selected div,
+ul.ott_providers li.subscribed.include div,
+ul.ott_providers li:hover div {
+  background: rgba(var(--trans-theme-secondary-bg), 0.5);
+
+  /* @ check icon */
+  > .glyphicons_v2.check.white {
+    filter: unset !important;
+  }
+}
 
 /* @ left sidebar user score slider (unfilled) */
 .k-slider .k-slider-track {
@@ -1235,7 +1258,6 @@ table.card.releases tr.sub th /* @ release dates page heading */ {
   /* @ bright white icons */
   .glyphicons_v2.locked,
   .glyphicons_v2.unlocked,
-  .glyphicons_v2.square-edit,
   .glyphicons_v2.trending,
   .glyphicons_v2.circle-more.grey,
   .glyphicons_v2.circle-empty {
@@ -1249,6 +1271,7 @@ table.card.releases tr.sub th /* @ release dates page heading */ {
     .glyphicons_v2.circle-remove,
     .glyphicons_v2.circle-check,
     .glyphicons_v2.check,
+    .glyphicons_v2.square-edit,
     .glyphicons_v2.inbox-plus,
     .glyphicons_v2.inbox,
     .glyphicons_v2.cogwheel,
@@ -1436,7 +1459,7 @@ iframe {
   border: none !important;
 
   /* @ .k-button.save[type="submit"] messages page send button */
-  & > .glyphicons_v2.invert {
+  > .glyphicons_v2.invert {
     filter: invert(1) brightness(0.8) !important;
   }
 }
@@ -1495,16 +1518,4 @@ section.inner_content section.images > div.poster_wrapper.true div.poster,
 section.inner_content section.images > div.poster_wrapper.true div.zoom {
   border-bottom-left-radius: var(--imageBorderRadius) !important;
   border-bottom-right-radius: var(--imageBorderRadius) !important;
-}
-
-/* @ ------------------------- custom ------------------------- */
-
-/* @ home page events */
-section.pride /* @ pride event */ {
-  display: none !important;
-}
-
-/* @ messages page other's message color */
-div.you.gfegcgdeebKfgbddgNiedjKP div.message {
-  background-color: rgba(var(--tmdbLightBlue), 0.15) !important;
 }
