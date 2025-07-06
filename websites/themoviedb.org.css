@@ -18,6 +18,7 @@ div.shortcut_bar_wrapper, /* @ title page top bar */
 ul#new_shortcut_bar, /* @ title page top bar inside */
 div.media.award_v4, div.media.collection_v4, div.media.movie_v4, div.media.person_v4, div.media.tv_v4, /* @ title page content section */
 div.white_column, /* @ title page inner content section */
+ol.people li, /* @ title page no cast "We don't have any cast added to this movie." bg */
 #vibes_form .bg-zinc-100, /* @ title page "What's your Vibe?" popup (modified) */
 div.discussion_container tr.none, /* @ title page discussions tab "Want to be notified when someone makes the first post? Yes, notify me!" */
 
@@ -473,7 +474,7 @@ div.no_image_holder {
   background-color: transparent !important;
 }
 
-/* @ popularity graph */
+/* @ popularity graph line */
 #popularity_chart svg path[stroke^="#"] {
   stroke: rgb(var(--trans-theme-primary-text)) !important;
 }
