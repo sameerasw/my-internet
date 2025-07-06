@@ -34,7 +34,8 @@ section, #stage-slideover-sidebar,
 #global-navbar,
 .head.notfixed,
 body[data-theme="dark"], body, #sidebar > div,[data-theme="light"], a[title="ChatGPT"],
-body.dark_mode, body.light_mode{
+body.dark_mode, body.light_mode,
+.content-fade::after{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
