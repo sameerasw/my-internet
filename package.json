@@ -1,0 +1,8 @@
+{
+  "name": "style-generator",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "postcss": "^8.4.21"
+  }
+}

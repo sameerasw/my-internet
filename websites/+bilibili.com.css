@@ -1,8 +1,8 @@
 /* bilibili-transparency */
 html,
-body,
-#i_cecream,
-.large-header,
+body, #bili-header-container,
+#i_cecream, .bili-header,
+.large-header, .mini-header,
 .bili-header .bili-header__banner,
 .bili-header .bili-header__channel {
   background-color: transparent !important;
@@ -22,4 +22,10 @@ body,
 /* bilibili-rounded */
 .bili-video-card__wrap {
   border-radius: 0.5em !important;
+}
+
+
+/* no footer */
+footer, .bili-footer{
+  display: none !important;
 }

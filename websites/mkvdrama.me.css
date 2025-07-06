@@ -7,11 +7,11 @@ nav,
 navbar,
 .navbar,
 #navbar, 
-header, c-wiz[role="main"],
-#header, c-wiz.iK0UKe.mCyoK > div.h8plyb,
+header,
+#header,
 .header, header::before,
-app, [role="menubar"], [role="navigation"],
-#app, footer, a.p137Zd, a.p137Zd > div > div[aria-hidden="true"],
+app, .bixbox,
+#app, footer,
 .sidebar-wrap,
 section, .main,
 #__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before,
@@ -23,7 +23,7 @@ body[data-theme="dark"], body[data-theme="light"],
 #main, .sidebar, .global-content__content,
 main, .header-top,
 #content, #cu-identity,
-section, .l-root, .KJca8b[jsname="Khrgeb"],
+section, .l-root, .th,
 #__next, .landing-hero,
 #navigation-wrapper,
 #global-navbar, .layout__content-wrapper,
@@ -38,31 +38,13 @@ text-div > textarea{
   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-/* thumbnail hover */
-a.p137Zd,  div > [jscontroller="ooYxFe"], [jsname="NwW5ce"]{
-  transition: all 0.3s ease-in-out !important;
-  border-radius: 0.5em !important;
-}
-
-a.p137Zd:hover, .d5NbRd-EScbFb-JIbuQc-hSRGPd:hover > div > [jscontroller="ooYxFe"]{
-  scale: 1.1 !important;
-}
-
-/* search zoom */
-c-wiz.iK0UKe.mCyoK > div.h8plyb{
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
-}
-
-body:has(.Aul2T.m6aMje.qs41qe.RcYHQe){
-  .h8plyb.HnzzId{
-    scale: 1.05 !important;
-filter: blur(15px) !important;
-  pointer-events: none !important;
-  }
-}
-
-#nngdp8, #nngdp6, .Aul2T.m6aMje.qs41qe.RcYHQe{
+.section{
     box-shadow:  light-dark(#fff3, #0003) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
-    background-color: light-dark(#fff8, #000a)  !important;
+    background-color: light-dark(#fff8, #0005)  !important;
     border-radius: 1em !important;
+
+    @media (prefers-color-scheme: dark) {
+    box-shadow:  #0003 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+    background-color: #0005  !important;
+}
   }
