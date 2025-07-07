@@ -98,7 +98,7 @@ nav * {
 .os-flyout-notifications, .tooltip, .os-tool-dropdown,
 .modal-content, .dropdown-menu, .ns-dialog, .command-search {
       background-color: rgb(0, 0, 0, 0.7) !important;
-      backdrop-filter: blur(2px) !important;
+      backdrop-filter: blur(11px) !important;
       border-radius: 10px !important;
    }
 
