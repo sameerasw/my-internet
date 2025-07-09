@@ -21,6 +21,7 @@ div.white_column, /* @ title page inner content section */
 ol.people li, /* @ title page no cast "We don't have any cast added to this movie." bg */
 #vibes_form .bg-zinc-100, /* @ title page "What's your Vibe?" popup (modified) */
 div.discussion_container tr.none, /* @ title page discussions tab "Want to be notified when someone makes the first post? Yes, notify me!" */
+div#lightbox_popup div.info, /* @ poster expand popup bg */
 
 /* @ edit page */
 .k-table-footer, .k-table-group-row, .k-table-group-sticky-header, .k-table-header, .k-table-tfoot, .k-table-thead, /* @ edit page alternative titles "Title" "Type" "Country" inside */
@@ -64,7 +65,7 @@ div.media.discover ul.multi_select.text a:hover, div.media.discover ul.multi_sel
 div.inner_block, /* @ dmca takedown page */
 
 /* @ profile page */
-div.header:not(.background_image, .large.first, .collection), /* @ profile page bg image, title page pg image, title page collection card bg image */
+div.header:not(.background_image, .large.first, .collection), /* @ profile page bg image, title page bg image, title page collection card bg image */
 
 /* @ messages page */
 .flexbox-item.footer, /* @ messages page footer */
@@ -403,10 +404,10 @@ div.column_wrapper div.settings_panel, /* @ search results page left side panel 
 
 /* @ section selector fix */
 section.inner_content div.selector h3 a /* @ section selector */ {
-  color: rgb(var(30, 213, 169)) !important;
+  color: rgb(30, 213, 169) !important;
 }
 section.inner_content div.selector /* @ section selector border */ {
-  border: 2px solid rgb(var(30, 213, 169)) !important;
+  border: 2px solid rgb(30, 213, 169) !important;
 }
 section.inner_content div.selected h3 a /* @ section selector selected text color */ {
   -webkit-text-fill-color: rgb(var(--tmdbDarkBlue)) !important;
@@ -457,6 +458,11 @@ footer {
 }
 
 /* @ ------------------------- fix title page ------------------------- */
+
+/* @ title page with no background image */
+div.header {
+  background: none; /* @ don't use important */
+}
 
 /* @ thick underline under "Reviews", "Most Popular" */
 section.media_panel div.menu ul li.active {
@@ -1101,8 +1107,14 @@ section.main_content section div.note * {
 .k-popup, /* @ images page menu */
 #dropdown_list_sort_by, /* @ list page sort by dropdown */
 #dropdown_list_show_me, /* @ list page show me dropdown */
+span.youtube_search div.sub_menu, /* @ edit page videos "Search YouTube" hover menu */
 .k-tooltip.tmdb_theme_white, .tmdb_theme_white .k-tooltip /* @ home page top bar profile menu */ {
   background-color: rgb(var(--trans-theme-solid-bg)) !important;
+}
+
+/* @ fix border */
+span.youtube_search div.sub_menu /* @ edit page videos "Search YouTube" hover menu */ {
+  border: none !important;
 }
 
 /* @ fix background hover */
@@ -1334,6 +1346,7 @@ table.card.releases tr.sub th /* @ release dates page heading */ {
     .glyphicons_v2.eye,
     .glyphicons_v2.play,
     img[src$="/t/p/original/e2XGMhHKR9QKE8huwuP0xqqZ9zs.svg"], /* @ edit page videos youtube icon */
+    img[src$="/t/p/original/flerIzLJEvm4l98TYf3gOy639bb.svg"], /* @ edit page videos vimeo icon */
     .glyphicons_v2.star:not(.selected, .white) {
     filter: invert(1) brightness(0.6) !important;
   }
@@ -1451,6 +1464,14 @@ iframe {
   color: #fff !important;
 }
 
+/* @ white input element while page load (don't use important) */
+input,
+select {
+  background-color: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
 /* @ blue buttons */
 .k-dialog-actions > .k-button.k-button-solid-primary, /* @ images page remove image popup "yes" button */
 .k-button:has(> .k-svg-i-save), /* @ edit page Alternative Titles popup save button */
@@ -1498,7 +1519,8 @@ body:not(:has(> .person_wrap)) {
     height: calc(100vh - 110px) !important;
     background-image: unset !important;
   }
-  section.inner_content.backdrop.poster div.custom_bg {
+  section.inner_content.no_backdrop.poster div.custom_bg, /* @ default blurry gradient bg image */
+    section.inner_content.backdrop.poster div.custom_bg {
     background-color: rgba(var(--trans-theme-secondary-bg), 0.6) !important;
   }
   section.inner_content div.header.first div.single_column {
