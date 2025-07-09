@@ -1,0 +1,58 @@
+/* transparency */
+html, body, nav, #nav, .nav, .sticky-category-bar-container, navbar, body > .root-l-content, .p-archiveBody__container, .navbar, .page_wrapper.without-image, #navbar, header > .global-head-cont, header, .toc-sidebar, #header, #temp_banner, .ranavnode, .header, header::before, body > article, app, #root > div > div > .w-full, #app, footer, .sc-tvx700-7.egPRoP, .sidebar-wrap, .p-sectionLinks, section, .main, main::before, #__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before, #root, .min-h-screen.bg-white, .app, .AppContainer, .app-root, #wrapper, body[data-theme="dark"], body[data-theme="light"], #pass-sidebar, .side-bar, #main, .sidebar, .global-content__content, main, .header-top, #content, #cu-identity, section, .l-root, #__next, .landing-hero, #navigation-wrapper, #global-navbar, .layout__content-wrapper, .head.notfixed, .main-container, #app > div, .btm-nav > a, .oc-content--main, body.dark_mode, body.light_mode, text-div > textarea, 
+/* @main elements */ .prxiv40, .prxiv41, .prxiv41s, .prxiv41t, ._1ho1fyw0, .t4fedt8, ._1bv8u1wh, ._13tt0gb6 {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+/* @It's necessary to add some borders because it goes into mess*/
+/* @button borders */
+.brs7cei, ._1bv8u1w6 {
+  background-color: transparent !important;
+  background: none !important;
+  border: var(--_164xfge25) solid var(--oq6d073);
+  margin-right: 4px !important;
+  box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+/* @Making them transparent makes it unusable. Should work on light themes too (needs testing) */
+/* @Search box, message input box, message event box, dev tools, settings */
+._1rrvnjm8, .coabsl0, ._1fptcza3, ._1fptcza2, ._1fc5sz53, ._1fc5sz52, ._5z5e2h3 {
+  background-color: #404040c0 !important;
+  border: var(--_164xfge25) solid var(--oq6d073);
+  margin-right: 4px !important;
+  box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+/* collapse sidebar */
+._1xki9of1 {
+  width: 1rem !important;
+  transition: width 0.3s ease-in-out !important;
+
+  &:hover {
+    width: 16rem !important;
+  }
+}
+
+._1xki9of1 button {
+  visibility: hidden !important;
+}
+
+._1xki9of1:hover button {
+  visibility: visible !important;
+}
+
+/* darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* no footer */
+footer, mfe-footer-pharos-footer, .footer, #footer {
+  display: none !important;
+}
