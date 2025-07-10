@@ -31,11 +31,6 @@ body.darkpagetheme #subtopnav {
     border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-/* w3-Darkreader */
-:root {
-  --darkreader-background-ffffff: transparent !important;
-}
-
 .topnavbackground {
   display: none;
 }
