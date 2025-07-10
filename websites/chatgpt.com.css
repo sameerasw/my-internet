@@ -59,8 +59,10 @@ main > div > div > .bg-token-bg-primary {
 /* cgpt-glass */
 #history .bg-token-bg-elevated-secondary,
 main > div > div > .bg-token-bg-primary,
-c > div:nth-child(1),
+[aria-label="Chat history"] > div:nth-child(1),
 [data-testid="history-item-0"] > div.bg-\[var\(--sidebar-surface-tertiary\)\],
+[aria-label="Chat history"] > aside:nth-child(2),
+[aria-label="Chat history"] > div:nth-last-child(1),
 form[aria-label="Message Composer"] > div {
   box-shadow: light-dark(#fff3, #0003) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
@@ -71,13 +73,7 @@ form[aria-label="Message Composer"] > div {
 [data-testid="history-item-0"] > div.bg-\[var\(--sidebar-surface-tertiary\)\] {
   background-color: light-dark(#fff5, #1115) !important;
 }
-/* @ left sidebar headers */
-[aria-label="Chat history"] > .bg-token-bg-elevated-secondary.sticky {
-  position: unset !important;
-}
-[aria-label="Chat history"] > .tall\:sticky {
-  position: unset !important;
-}
+
 [data-testid="history-item-0"] {
   margin-top: 5px;
 }
@@ -96,7 +92,21 @@ section.popover.flex.h-full.w-full.flex-col.bg-token-main-surface-primary {
   background: rgba(0, 0, 0, 0.5) !important;
 }
 
-/* chat bubble */
+/* cgpt-transparent sidebar */
+[aria-label="Chat history"] > div:nth-child(1),
+[aria-label="Chat history"] > aside:nth-child(2),
+[aria-label="Chat history"] > div:nth-last-child(1) {
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+[aria-label="Chat history"] > .bg-token-bg-elevated-secondary.sticky {
+  position: unset !important;
+}
+[aria-label="Chat history"] > .tall\:sticky {
+  position: unset !important;
+}
+
+/* cgpt-chat bubble */
 [data-message-author-role="assistant"],
 .bg-token-message-surface {
   box-shadow: #0003 0 0 10px !important;
