@@ -4,11 +4,6 @@
   --color-background-container: transparent !important;
 }
 
-/* in-Darkreader */
-:root {
-  --darkreader-background-ffffff: transparent !important;
-}
-
 /* in-no borders */
 :root{
   --color-border-faint: transparent !important;
