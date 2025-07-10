@@ -52,8 +52,9 @@ text-div > textarea,
 }
 
 @layer{
-  :root{
+  :root, html, body{
     --darkreader-background-ffffff: transparent !important;
+  background-color: transparent !important;
   }
 }
 
