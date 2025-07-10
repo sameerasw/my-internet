@@ -1,28 +1,1544 @@
 /* themoviedb-transparency */
+
+/* @ home page */
+.inner_content, /* @ home page green background image */
+section.inner_content.bg_image.video div.column_wrapper, /* @ home page latest trailers section */
+div.scroller_wrap.should_fade::after, /* @ home page sections right side fade */
+section.search, /* @ home page top search bar */
+#search_form .k-input, /* @ home page top search bar input (custom) */
+div.slim_search_results_header, /* @ home page top search bar drop down trending */
+header ul.navigation .k-animation-container, /* @ home page top bar menu 99% hidden background (TV Shows menu) */
+.k-loading-color, /* @ home page top bar notification loading bg */
+header ul li.translate div, /* @ home page top bar language box hover bg */
+section.inner_content div.media.discover div.column_content div.card.style_1 div.image, /* @ home page cards while loading */
+
+/* @ title page */
+section.inner_content div.custom_bg, /* @ title page with no backdrop */
+div.shortcut_bar_wrapper, /* @ title page top bar */
+ul#new_shortcut_bar, /* @ title page top bar inside */
+div.media.award_v4, div.media.collection_v4, div.media.movie_v4, div.media.person_v4, div.media.tv_v4, /* @ title page content section */
+div.white_column, /* @ title page inner content section */
+ol.people li, /* @ title page no cast "We don't have any cast added to this movie." bg */
+#vibes_form .bg-zinc-100, /* @ title page "What's your Vibe?" popup (modified) */
+div.discussion_container tr.none, /* @ title page discussions tab "Want to be notified when someone makes the first post? Yes, notify me!" */
+div#lightbox_popup div.info, /* @ poster expand popup bg */
+
+/* @ edit page */
+.k-table-footer, .k-table-group-row, .k-table-group-sticky-header, .k-table-header, .k-table-tfoot, .k-table-thead, /* @ edit page alternative titles "Title" "Type" "Country" inside */
+td.k-table-td > .k-input, /* @ edit page taglines (on editing a tagline) (custom) */
+
+/* @ images page */
+.bg-poster-grey, /* @ images page cards */
+section.inner_content ul.images.logos li.card div.image_content, /* @ images page logo cards */
+section.inner_content ul.images li.card div.image_content.black:hover, section.logo.images div.card.flex div.image_content.black:hover, /* @ images page logo cards hover */
+section.inner_content ul.images li.card div.info, /* @ images page cards info */
+
+/* @ network page */
+section.logo.images div.card.flex div.image_content, /* @ network page logo cards */
+
+/* @ people page */
+body:has(.page_wrap.person_wrap) div.header, /* @ people page header */
+table.credits tbody, /* @ people page table content */
+
+/* @ people edit page */
+.k-input-inner > .k-input-solid, /* @ people edit page move credits input box */
+
+/* @ changes page */
+table.changes_with_aggregates, /* @ changes page n Changes */
+table.changes_with_aggregates span.language, /* @ changes page right side language code */
+
+/* @ episode page */
+div.content_wrapper.full_width.bottom_border, /* @ episode page header */
+
+/* @ title discuss page */
+table, /* @ title discuss page "Subject" "Status" "Replies" background */
+
+/* @ discussion page */
+div.sidebar, /* @ discussion page sidebar */
+.md-editor > textarea:focus, /* @ discussion page reply box textarea (custom) */
+.md-editor > .md-preview, /* @ discussion page reply box preview bg */
+
+/* @ popular movies page */
+div.media.discover ul.multi_select.text a:hover, div.media.discover ul.multi_select.text li.selected, div.media.discover ul.multi_select.text li.selected a, div.media.discover ul.multi_select.text li:hover, div.media.discover ul.multi_select.text li:hover a, /* @ popular movies page genres boxes hover bg */
+
+/* @ dmca takedown page */
+div.inner_block, /* @ dmca takedown page */
+
+/* @ profile page */
+div.header:not(.background_image, .large.first, .collection), /* @ profile page bg image, title page bg image, title page collection card bg image */
+
+/* @ messages page */
+.flexbox-item.footer, /* @ messages page footer */
+.flexbox-item.footer form input[type="text"], .flexbox-item.footer form textarea, /* @ messages page footer message text box */
+
+/* @ cast and crew page */
+ol.credits li, ul.credits li, /* @ cast and crew page */
+
+/* @ release dates page */
+section.inner_content.person_content section.header ul.actions li:hover, table.card.releases tr.sub, /* @ release dates page "Date", "Certification", "Type", "Language", "Note" row */
+
+/* @ translations page */
+.bg-white, /* @ translations page content */
+
+/* @ new title page */
+div.new .carton, /* @ new title page inner content (A few notes about adding a new movie to TMDB) */
+
+/* @ admin page */
+body:has(> div.header > h2 > a[href^="/admin"]) div#nav a, /* @ admin page header tabs (modified) */
+
+/* @ new admin page */
+.bg-light-blue-100, /* @ new admin page blocked words content */
+
+/* @ bible page */
+main div.content, /* @ bible page */
+div.white_bg, /* @ bible page */
+section.tall_bibles, /* @ bible page category bg */
+
+/* @ review page */
+div.content.column, /* @ review page content */
+
+/* @ subscription page */
+.bg-slate-50, /* @ subscription page */
+
+/* @ misc */
+div.page_wrap::after, /* @ misc background logo */
 html,
 body,
-nav,
-header,
-.search_bar,
-.search_bar section,
-main,
-section,
-.page_wrap::after,
-.column_wrapper,
-.column_content::after,
-#shortcut_bar_scroller,
-#new_shortcut_bar,
-.custom_bg,
-.header_large,
-.white_column,
-p,
-.no_cast,
-#media_scroller::after,
-#recommendation_scroller::after {
+#main {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+}
+
+/* @ ------------------------- light mode ------------------------- */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --trans-theme-primary-text: 15, 15, 15 !important;
+    --trans-theme-link-text: 45, 210, 254 !important;
+    --trans-theme-primary-bg: 255, 255, 255 !important;
+    --trans-theme-secondary-bg: 240, 240, 240 !important;
+    --trans-theme-solid-bg: 180, 180, 180 !important;
+    --trans-theme-transparency-lvl: 0.05 !important;
+  }
+}
+
+/* @ ------------------------- dark mode ------------------------- */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --trans-theme-primary-text: 208, 208, 208 !important;
+    --trans-theme-link-text: 45, 210, 254 !important;
+    --trans-theme-primary-bg: 255, 255, 255 !important;
+    --trans-theme-secondary-bg: 0, 0, 0 !important;
+    --trans-theme-solid-bg: 40, 40, 40 !important;
+    --trans-theme-transparency-lvl: 0.05 !important;
+  }
+}
+
+/* @ ------------------------- variables ------------------------- */
+
+:root {
+  --trans-theme-orange: 255, 165, 0 !important;
+  --trans-theme-pink: 239, 71, 182 !important;
+  --trans-theme-red: 255, 0, 0 !important;
+  --trans-theme-green: 0, 255, 0 !important;
+  --trans-theme-blue: 1, 180, 228 !important;
+
+  /* @ modify kendo variables */
+  --kendo-disabled-opacity: 0.45 !important;
+}
+
+/* @ ------------------------- primary text color ------------------------- */
+
+/* @ home page */
+div.media.discover div.card.style_1 div.content a, /* @ home page cards title text */
+ol.leaderboard li a, ol.leaderboard li h3, /* @ home page leaderboard username */
+ol.leaderboard li h4, /* @ home page leaderboard userscore */
+
+/* @ search results page */
+section.main_content.search_results h2, /* @ search results page card heading */
+
+/* @ title page */
+.k-menu-vertical .k-item > .k-link, .k-menu:not(.k-context-menu) > .k-item, /* @ title page top bar */
+section.inner_content a, section.media_panel div.menu ul li.active a, /* @ title page content */
+section.inner_content div.header div.single_column *, section.inner_content div.header div.single_column a, /* @ title page title text */
+section.recommendations div.scroller div.item p, /* @ title page recomended titles card's texts */
+section.content_score p, /* @ title page right side content score's texts  */
+#vibes_form .text-tmdb-dark-blue, /* @ title page "What's your Vibe?" popup headings (modified) */
+#vibes_form .text-white, /* @ title page "What's your Vibe?" popup "I'm Done" text (modified) */
+
+/* @ edit page */
+.k-input-solid, /* @ edit page input */
+.k-form-field, /* @ edit page labels */
+.k-form, .k-form-inline, /* @ edit page External IDs labels */
+div.column_wrapper ul.panel li a, /* @ edit page left side panel text */
+div.keyboard_shortcut_text p a, div.report_issue p a, /* @ edit page keyboard shortcuts */
+.k-data-table, .k-table, /* @ edit page alternative titles */
+.k-grid-footer, .k-grid-header, .k-group-cell, .k-grouping-header, .k-grouping-row, .k-selection-aggregates, .k-table-footer, .k-table-group-row, .k-table-group-sticky-header, .k-table-header, .k-table-tfoot, .k-table-thead, /* @ edit page alternative titles "Title" "Type" "Country" */
+div.item a, div.item p a, /* @ edit page cast people name */
+
+/* @ changes page */
+.k-grid, /* @ changes page n Changes and other labels */
+p.new_button.rounded, /* @ changes page contributors graph */
+section.content_score div.content_score div, div.leaderboard div.histogram div.bar span, /* @ changes page contributors graph */
+
+/* @ images page */
+div.column_wrapper div.settings_panel h3, /* @ images page left side panel header "Posters", "Backdrops", "Logos" texts */
+
+/* @ people page */
+table.credit_group tbody td.role a,
+
+/* @ episode edit page */
+div.block div.inner_content div.content section.episode_selector, /* @ episode edit page */
+
+/* @ title discuss page */
+a, mark, /* @ title discuss page "Discuss", "Movies", "Movie name", "General" etc... texts */
+
+/* @ discussion page */
+div.sidebar, /* @ discussion page left sidebar "Actions" text */
+
+/* @ profile page */
+div.inner_block div.inner_content div.content div.stats_blocks div.stat_block h3, /* @ profile page heading "Total Edits", "Total Ratings", etc... */
+
+/* @ profile discussions page */
+div.pagination.infinite p a, /* @ profile discussions page load more button */
+
+/* @ messages page */
+div#message_list .timestamp, /* @ messages page date */
+
+/* @ list page */
+.text-slate-900, /* @ list page text "show comments", "sort by", "show me" text */
+
+/* @ settings page */
+.green, .pink, .yellow, /* @ settings page blocked users "Username", "Action" text */
+
+/* @ user ratings page */
+div.card.v4 div.action_bar ul li.selected a span.rating.wrapper, /* @ user ratings page "Your Rating" score */
+
+/* @ new title page */
+ul.tabs li a, ul[role="tablist"] li a, /* @ new title page left sidebar text */
+div#new_movie_wizard div.content h2, div#new_tv_wizard div.content h2, /* @ new title page "Add a New Movie" text */
+
+/* @ bible page */
+.movie, .person, .tv, /* @ movie bible page heading text */
+
+/* @ review page */
+h2 a, /* @ review page title text */
+
+/* @ subscription page */
+.text-black, /* @ subscription page "Manage API Service" text */
+
+/* @ misc */
+body {
+  color: rgb(var(--trans-theme-primary-text)) !important;
+}
+
+/* @ ------------------------- secondary text color ------------------------- */
+
+/* @ home page */
+section.new_index form input[type="text"], /* @ home page "Search for a movie, tv show, person..." */
+div.media.discover div.card.style_1 div.content p, /* @ home page cards dates */
+
+/* @ title page */
+ol.people li p a, section.inner_content div.title h2 a, /* @ title page person card people name */
+p.character, /* @ title page person card character name */
+.teaser p, /* @ title page review card text */
+section.review div.review_container div.inner_content h3 a, /* @ title page review card "a review by" text */
+section.review div.review_container div.inner_content h5, /* @ title page review card "written by" text */
+section.review div.review_container div.inner_content h5 a, /* @ title page review card "written by" user link */
+section.inner_content a.underline, /* @ title page review card "read the rest" text */
+section.split_column section.genres ul li a, section.split_column section.keywords ul li a, /* @ title page keywords color */
+div.header.collection h2, div.header.collection p, /* @ title page collection card */
+div.discussion_container tr, /* @ title page discussions tab "Want to be notified when someone makes the first post?" text */
+
+/* @ edit page */
+.k-button-solid-primary, /* @ edit page alternative titles, edit button */
+.k-button-solid-base:not([aria-label="select"]:has(> .k-svg-i-caret-alt-down)), /* @ edit page alternative titles, delete button */
+span.youtube_search, /* @ edit page videos "Search YouTube" */
+
+/* @ images page */
+div#lightbox_popup div.info form label, ul.images div.info form label, /* @ images page image card "Added By" text */
+
+/* @ people page */
+table.credit_group tbody td.role span.character, table.credit_group tbody td.role span.role, /* @ people page character name */
+table.credit_group tbody td.role span, table.credit_group tbody td.role span a, /* @ people page "as" text before character name */
+
+/* @ tv page */
+div.episode_title span.episode_type, div.season.card span.episode_type, /* @ tv page "Season Finale" */
+ol.people.credits li div.info p span, /* @ tv page cast and crew "1 Episodes" text */
+
+
+/* @ episodes page */
+section.inner_content a, section.media_panel div.menu ul li.active a, /* @ episodes page episode card expanded header text eg: "Videos", "Images" etc... */
+div.episode div.info div.date, /* @ episodes page date */
+div.episode_list div.episode_number span, /* @ episodes page 1x1 text */
+div.rating, section.inner_content div.my_rating, /* @ episodes page rating percentage */
+
+/* @ cast and crew page */
+ol.people li p.episode_count_crew, /* @ cast and crew page right side crew's department */
+
+/* @ profile page */
+div.card.v4.mini div.details div.sub_title, /* @ profile page "Recent Activity" cards "n days ago", "n edits" text */
+
+/* @ messages page */
+div.you div.message, /* @ messages page messages */
+
+/* @ new title page */
+div.new ol, div.new p, div.new table.new p, div.new ul, /* @ new title page content text */
+
+/* @ bible page */
+section.main_content section ol li, section.main_content section p, section.main_content section ul li, /* @ movie bible text video section sorted/unsorted list */
+
+/* @ review page */
+p, /* @ review page content text */
+
+/* @ discussion page */
+.md-editor > .md-header button, /* @ discussion page reply box preview button text */
+
+/* @ videos page */
+div.video.card div.info /* @ videos page video card */ {
+  color: rgba(var(--trans-theme-primary-text), 0.8) !important;
+}
+
+/* @ ------------------------- translucent cards ------------------------- */
+
+/* @ home page */
+footer nav a.rounded, /* @ home page footer "Hi User!" */
+
+/* @ title page */
+.mini_card div.no_image_holder, /* @ title page recomended titles card */
+section.split_column section.genres ul li a, section.split_column section.keywords ul li a, /* @ title page keywords container */
+section.content_score div.content_score_wrapper, /* @ title page content score card */
+section.content_score div.content_score, /* @ title page content score */
+div.header.collection, /* @ title page collection card */
+div.rating, /* @ title page user review rating */
+div.discussion_container tr, /* @ title page discussion tab cards */
+section.inner_content a.edit, /* @ title page "Add a Video", "Add Backdrop", "Add Poster" button */
+#vibes_form .bg-gradient-to-r, /* @ title page "What's your Vibe?" popup "I'm Done" button (modified) */
+
+/* @ edit page */
+.k-input-solid, /* @ edit page input */
+.k-grid, /* @ edit page alternative titles */
+.k-toolbar-solid, /* @ edit page alternative titles */
+.k-grid-footer, .k-grid-header, .k-group-cell, .k-grouping-header, .k-grouping-row, .k-selection-aggregates, /* @ edit page alternative titles "Title" "Type" "Country" */
+.k-button-solid-primary, /* @ edit page Alternative Titles, edit button */
+.k-button-solid-base:not([aria-label="select"]:has(> .k-svg-i-caret-alt-down)), /* @ edit page alternative titles, delete button */
+.media-nav-panel > h3, /* @ edit page left side panel header (custom) */
+div.error_status.info h2, /* @ edit page cast "A few notes about editing the cast" heading */
+.k-form-field-wrap > .k-input.k-textbox, /* @ edit page release information popup "note" input (custom) */
+
+/* @ translations page */
+.media-nav-panel, table.media-translations, /* @ translations page left side panel (modified) */
+.media-nav-panel ul.media-nav-content > li span, /* @ translations page left side panel language code (custom) */
+table.media-translations tr th, /* @ translations page content cards title */
+.settings_panel > h3, /* @ translations pagee left side panel header (custom) */
+.group:hover a[class*="group-hover:"], /* @ translations pagee left side panel hover (modified) */
+
+/* @ tv page */
+div.episode_title span.episode_type, div.season.card span.episode_type, /* @ tv page "Season Finale" */
+.group_dropdown > div > ul > li > ul, /* @ tv page "Original Air Date" hover dropdown */
+
+/* @ episodes page */
+div.episode_list div.episode_number span, section.inner_content section.header div.episode_number span, /* @ episodes page 1x1 */
+
+/* @ changes page */
+.pagy a:not(.gap).current, /* @ changes page current page number */
+p.new_button.rounded, section.content_score div.content_score div, div.leaderboard div.histogram div.bar span, /* @ changes page contributors graph */
+
+/* @ list page */
+.list_wrap ol.list_items > span > li, /* @ list page grid view posters bg (custom) */
+.list_wrap ol.list_items > span > li, /* @ list page list view card bg (custom) */
+
+/* @ discussion page */
+#discussions div.carton > div.post_info, /* @ discussion page card header (modified) */
+#discussions div.carton > div.content, /* @ discussion page card content (modified) */
+#discussions div.carton > div.toolbar, /* @ discussion page card toolbar (modified) */
+span.activity, /* @ discussion page "View Activity" popup "created", "closed", "replied" span */
+.md-editor > .md-header .btn-group, /* @ discussion page reply box bold and italic buttons */
+.md-editor, /* @ discussion page reply box (custom) */
+.md-editor .md-footer, .md-editor > .md-header, /* @ discussion page reply box header (custom) */
+div.carton div.content pre, div.md-preview pre, /* @ discussion page card code snippet */
+
+/* @ messages page */
+div.you div.message, /* @ messages page messages */
+
+/* @ user ratings page */
+div.inner_block div.inner_content div.content div.title_header div.group_wrapper div.group_dropdown ul, /* @ user ratings page Filter by dropdown hover */
+
+/* @ popular movies page */
+div.media.discover div.filter_panel div.name h2 span, /* @ popular movies page left sidebar Where To Watch section ott number count */
+.pagination.background_color.light_blue, .apply.background_color.light_blue, .k-button.background_color.light_blue, /* @ popular movies page search (modified), load more button */
+div.media.discover ul.multi_select.text li, /* @ popular movies page genres boxes */
+
+/* @ new title page */
+div#container, /* @ new title page */
+ul.tabs li.current, ul[role="tablist"] li.current, /* @ new title page left sidebar current tab */
+
+/* @ settings page */
+textarea.pre, /* @ settings page api tab textarea */
+
+/* @ person page */
+a.button, section.inner_content a.button, /* @ person page (.glyphicons_v2.circle-empty click tooltip): like, watchlist, fav */
+div.media_tooltip_popup div.content div.rating_block, /* @ person page (.glyphicons_v2.circle-empty click tooltip): rating */
+
+/* @ network page */
+div.header div.inner_content.tight div.meta, /* @ network page header */
+
+/* @ docs page */
+.rm-Guides_loading:not(.rm-Guides-SuperHub)::before, /* @ docs page loading */
+
+/* @ search results page */
+div.column_wrapper div.settings_panel, /* @ search results page left side panel */
+
+/* @ misc */
+.card /* @ all cards */ {
+  background-color: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* @ ------------------------- fix home page ------------------------- */
+
+/* @ section selector fix */
+section.inner_content div.selector h3 a /* @ section selector */ {
+  color: rgb(30, 213, 169) !important;
+}
+section.inner_content div.selector /* @ section selector border */ {
+  border: 2px solid rgb(30, 213, 169) !important;
+}
+section.inner_content div.selected h3 a /* @ section selector selected text color */ {
+  -webkit-text-fill-color: rgb(var(--tmdbDarkBlue)) !important;
+}
+section.inner_content div.selector div.background /* @ section selector selected background */ {
+  background: linear-gradient(to right, rgba(var(--tmdbLighterGreen), 1) 0%, rgba(var(--tmdbLightGreen), 1) 100%) !important;
+}
+
+/* @ top bar language box */
+header ul li.translate div {
+  border: 2px solid rgba(var(--trans-theme-primary-text), 0.8) !important;
+  color: rgba(var(--trans-theme-primary-text), 0.8) !important;
+}
+
+/* @ top search bar */
+div.search_bar,
+section.search div.k-animation-container {
+  border-top: unset !important;
+  border-bottom: unset !important;
+}
+
+/* @ search button in below search bar */
+.inner_search_wrapper + input {
+  background: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+}
+
+/* @ cards bottom padding */
+section.inner_content div.column_content div.card.style_1 div.content,
+section.inner_content div.column_content div.card.style_2 div.content {
+  padding-bottom: 10px !important;
+}
+
+/* @ top search drop down */
+div.slim_search_results,
+div.slim_search_results_header {
+  border-bottom: unset !important;
+}
+
+/* @ cards menu button hover */
+div.media.discover div.card div.image div.options:hover {
+  filter: unset !important;
+}
+
+/* @ transparent footer */
+footer {
+  background-image: unset !important;
+  background-color: rgba(var(--tmdbDarkBlue), 0.4) !important;
+}
+
+/* @ ------------------------- fix title page ------------------------- */
+
+/* @ title page with no background image */
+div.header {
+  background: none; /* @ don't use important */
+}
+
+/* @ thick underline under "Reviews", "Most Popular" */
+section.media_panel div.menu ul li.active {
+  border-bottom-color: rgba(var(--trans-theme-primary-text), 0.4) !important;
+}
+
+/* @ recommended titles cards bottom overlay bg */
+div.image_content a div.meta {
+  background: rgba(var(--trans-theme-secondary-bg), 0.2) !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+/* @ no image people card */
+div.no_image_holder {
+  background-color: transparent !important;
+}
+
+/* @ popularity graph line */
+#popularity_chart svg path[stroke^="#"] {
+  stroke: rgb(var(--trans-theme-primary-text)) !important;
+}
+
+/* @ censor certification just below the title */
+section.inner_content div.header div.single_column div.facts span.certification {
+  border: 2px solid rgba(var(--trans-theme-primary-text), 0.6) !important;
+  border-radius: 5px !important;
+}
+
+/* @ ott under poster */
+div.ott_offer,
+/* @ "your vibe n%" */
+.bg-tmdb-dark-blue,
+/* @ Add to list, mark as fav, add to watchist buttons */
+section.inner_content section.header ul.actions li.tooltip a {
+  background: rgba(var(--trans-theme-primary-bg), 0.15) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* @ average rating */
+div.consensus div.outer_ring {
+  background: rgba(var(--trans-theme-secondary-bg), 0.3) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* @ award card */
+.bg-award-banner {
+  background-image: url(/assets/2/awards-preview/banner-stars-f3d8dd620e03ae0ddb6c0cd14e0a31e6bfc233b45898569f940237027db16ea3.svg) !important;
+  background-color: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+}
+
+/* @ content divider */
+section.panel {
+  border-top: 1px solid rgba(var(--trans-theme-primary-text), 0.4); /* @ don't use important */
+}
+
+/* @ border under keywords section */
+section.split_column section.keywords {
+  border-bottom: 1px solid rgba(var(--trans-theme-primary-text), 0.4) !important;
+}
+
+/* @ "What's your Vibe?" popup */
+#vibes_form {
+  /* @ popup top and bottom gradient on scroll */
+  .vertical_scroller_wrap.should_fade.is_fading_after::after,
+  .vertical_scroller_wrap.should_fade.is_fading_before::before,
+  .vertical_scroller_wrap.should_fade.hide_after::after,
+  .vertical_scroller_wrap.should_fade.hide_before::before {
+    opacity: 0 !important;
+  }
+  /* @ I'm done button background */
+  .bg-gradient-to-r {
+    background-image: unset !important;
+  }
+  /* @ slider dot */
+  .rating_slider.k-slider .k-draghandle {
+    background-color: rgba(var(--trans-theme-primary-text), 0.8) !important;
+  }
+  /* @ emoji hover */
+  .hover\:bg-white:hover {
+    background-color: transparent !important;
+  }
+}
+
+/* @ ------------------------- fix tv page ------------------------- */
+
+/* @ "Original Air Date" hover fix */
+.group_dropdown > div > ul:hover > li.selected {
+  visibility: hidden !important;
+}
+
+/* @ all seasons page */
+div.season_wrapper {
+  border-bottom: unset !important;
+}
+
+/* @ ------------------------- fix episodes page ------------------------- */
+
+/* @ rating container */
+div.rating_border {
+  border-color: transparent !important;
+}
+
+/* @ star icon near percentage */
+.episode_title .glyphicons_v2.star.white:not(.selected) {
+  filter: brightness(0.6) !important;
+}
+
+/* @ Rate it! text */
+section.inner_content div.my_rating {
+  background-color: rgba(var(--tmdbLightBlue), 0.35) !important;
+}
+
+/* @ episode card border */
+div.episode div.expand, /* @ expand div */
+div.episode ul.episode_shortcut_bar, /* @ header */
+div.episode div.expanded_info /* @ card content */ {
+  border-top: 1px solid rgba(var(--trans-theme-primary-text), 0.2) !important;
+}
+
+/* @ ------------------------- fix edit page ------------------------- */
+
+/* @ tone in keywords edit page */
+.border-tmdb-light-blue {
+  border: none !important;
+  background-color: rgba(var(--trans-theme-primary-bg), 0.1) !important;
+}
+
+/* @ left side panel hover */
+.color.light_blue,
+.color_hover.light_blue:hover {
+  color: rgb(var(--trans-theme-link-text)) !important;
+}
+
+/* @ left side panel selected text */
+div.column_wrapper ul.panel li a.selected {
+  color: rgb(var(--trans-theme-link-text)) !important;
+}
+
+/* @ "Origin Country" countries */
+.k-chip-solid-base {
+  border-color: transparent !important;
+  color: rgb(var(--trans-theme-primary-text)) !important;
+  background-color: rgba(var(--trans-theme-primary-bg), 0.1) !important;
+}
+
+/* @ ------------------------- fix images page ------------------------- */
+
+div.column_wrapper ul.panel.kendo li.sub span, div.column_wrapper ul.panel.with_counts li span, /* @ left side panel image count */
+div.column_wrapper ul.panel.with_counts li.selected span, div.column_wrapper ul.panel.with_counts li:hover span, ul.panel.kendo.k-panelbar ul > .k-item.selected span, ul.panel.kendo.k-panelbar ul > .k-item:hover span /* @ left side panel image count (hover) */ {
+  background-color: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+  color: unset !important;
+}
+
+div.column_wrapper ul.panel.with_counts li.selected a, /* @ left side panel selected */
+div.column_wrapper ul.panel.with_counts h3.category /* @ left side panel selected (modified) */ {
+  color: rgb(var(--trans-theme-link-text)) !important;
+}
+
+/* @ image card language selector */
+.k-picker-solid {
+  border-color: transparent !important;
+  color: rgb(var(--trans-theme-primary-text)) !important;
+  background-color: rgba(var(--trans-theme-primary-bg), 0.1) !important;
+}
+
+div#lightbox_popup div.info div.meta h3, section.inner_content ul.images div.info div.meta h3 /* @ image card border below "info" text */ {
+  border-bottom: transparent !important;
+}
+
+/* @ processing image card */
+section.inner_content ul.images li.card.processing::before {
+  background: repeating-linear-gradient(
+    transparent 0,
+    transparent 7.5px,
+    rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) 7.5px,
+    rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) 15px,
+    transparent 15px,
+    transparent 22.5px,
+    rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) 22.5px,
+    rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) 30px
+  ); /* @ using !important won't work */
+}
+/* @ processing image card image padding */
+section.inner_content ul.images li.card.processing {
+  padding: 0 !important;
+}
+
+/* @ image card bottom overlay bg (like and dislike) */
+section.inner_content ul.images.compact li.card div.image_content div.rating_info {
+  background: rgba(var(--trans-theme-secondary-bg), 0.2) !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+/* @ logo card bottom overlay bg (like and dislike) */
+section.inner_content ul.images.compact.logos li.card.ok div.image_content:hover div.rating_info {
+  background: unset !important;
+  backdrop-filter: unset !important;
+}
+
+/* @ waiting for review card */
+section.inner_content ul.images li.card.needs_review {
+  border: 2px solid rgba(var(--trans-theme-orange), 0.5) !important;
+}
+
+/* @ image card lock and remove icon */
+a.lock_all span,
+section.inner_content h3 span.glyphicons_v2 {
+  opacity: unset !important;
+}
+
+/* @ [extension] find duplciate images red image card */
+section.inner_content ul.images li.card div.info.find-dups-red-card {
+  background-color: rgba(var(--trans-theme-red), 0.15) !important;
+}
+
+/* @ [extension] TheMovieDB Image Translations script left side panel text */
+div.column_wrapper ul.panel.with_counts li[style="font-size: 0.8em;"] a {
+  color: rgba(var(--trans-theme-primary-text), 0.55) !important;
+}
+
+/* @ [bug] image card language selector nested dropdown (a bug in TMDB) */
+.kendo_image_language_dropdown .kendo_image_language_dropdown {
+  background-color: transparent !important;
+}
+
+/* @ ------------------------- fix videos page ------------------------- */
+
+/* @ video card info border */
+div.video.card div.info,
+div.video.card div.info div:last-of-type {
+  border: unset !important;
+}
+
+/* @ restricted regions */
+div.video.card div.info div span.restricted_region {
+  color: rgba(var(--trans-theme-primary-text), 0.7) !important;
+  border: 2px solid rgba(var(--trans-theme-primary-text), 0.2) !important;
+}
+
+/* @ ------------------------- fix people page ------------------------- */
+
+/* @ bottom white gradient for long biography */
+section.inner_content div.biography div.text.should_fade::after {
+  background-image: unset !important;
+}
+
+/* @ hide the duplicate biography */
+.hidden_text {
+  visibility: hidden !important;
+}
+
+/* @ read more button */
+section.inner_content div.biography div.read_more a {
+  background-color: rgb(var(--trans-theme-solid-bg)) !important;
+  color: rgb(var(--trans-theme-link-text)) !important;
+  border-radius: 5px !important;
+  padding: 10px !important;
+}
+
+/* @ job card */
+.credits_list table.card {
+  border-radius: 10px !important;
+}
+
+/* @ "as" or "n episode as" text before character name */
+table.credit_group tbody td.role span,
+table.credit_group tbody td.role span a {
+  color: rgba(var(--trans-theme-primary-text), 0.4) !important;
+}
+
+/* @ "n episode as" text hover before character name (modified) */
+table.credit_group tbody td.role a:hover {
+  color: rgb(var(--trans-theme-link-text)) !important;
+}
+
+/* @ ------------------------- fix network page ------------------------- */
+
+.network_wrap {
+  .k-upload, .k-upload .k-dropzone, .k-upload .k-file, .k-upload .k-upload-dropzone, .k-upload .k-upload-files, .k-window /* @ edit page logos upload box */ {
+    background-color: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+    border-color: transparent !important;
+  }
+}
+
+/* @ ------------------------- fix changes page ------------------------- */
+
+/* @ image json hover (image popup) */
+.tmdb_theme.image_popup img {
+  border-radius: var(--kendo-spacing-1\.5, 0.375rem) !important;
+}
+
+/* @ section by date */
+table.changes_with_aggregates.k-grid tbody tr td > table {
+  border: 1px solid rgba(var(--trans-theme-primary-text), 0.2) !important;
+}
+
+/* @ edit field (images, release_dates, genres) */
+.d2h-file-header {
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+/* @ difference field */
+table.changes_with_aggregates td.diff_data {
+  border-top: unset !important;
+}
+
+/* @ deleted */
+.d2h-del {
+  background-color: rgba(var(--trans-theme-red), 0.15) !important;
+}
+
+/* @ deleted specific string */
+.d2h-code-line del,
+.d2h-code-side-line del {
+  background-color: rgba(var(--trans-theme-red), 0.2) !important;
+}
+
+/* @ inserted */
+.d2h-ins {
+  background-color: rgba(var(--trans-theme-green), 0.15) !important;
+}
+
+/* @ inserted specific string */
+.d2h-code-line ins,
+.d2h-code-side-line ins {
+  background-color: rgba(var(--trans-theme-green), 0.2) !important;
+}
+
+/* @ ------------------------- fix discussion page ------------------------- */
+
+/* @ card header */
+#discussions div.carton > div.post_info {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgba(var(--trans-theme-primary-bg), 0.08) !important;
+}
+
+/* @ card toolbar */
+#discussions div.carton > div.toolbar {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 1px solid rgba(var(--trans-theme-primary-text), 0.2) !important;
+}
+
+/* @ links */
+.atwho-view strong,
+div.carton div.content a,
+div.k-window-content section.content a {
+  color: rgb(var(--trans-theme-link-text)) !important;
+}
+
+/* @ Previous page • Next page • Last page */
+p a {
+  color: rgb(var(--trans-theme-link-text)) !important;
+}
+
+/* @ moderator symbol (MOD) near the name */
+div.subject div.tag span {
+  color: rgba(var(--trans-theme-solid-bg)) !important;
+  font-weight: bold;
+}
+
+/* @ reply box textarea */
+.md-editor > textarea {
+  border-top: none !important;
+}
+
+/* @ reply box divider between bold and italic button */
+.md-editor > .md-header button {
+  border-left: none !important;
+}
+
+/* @ reply box */
+.md-editor {
+  border-radius: 10px !important;
+}
+
+/* @ reply box header */
+.md-editor .md-footer,
+.md-editor > .md-header {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+/* @ block quote */
+div.content blockquote,
+section.content blockquote {
+  background-color: rgba(var(--trans-theme-secondary-bg), 0.1) !important;
+}
+
+/* @ ------------------------- fix popular movies page ------------------------- */
+
+/* @ left sidebar Where To Watch section ott icons hover */
+.include ul.ott_providers li.subscribed div,
+ul.ott_providers li.selected div,
+ul.ott_providers li.subscribed.include div,
+ul.ott_providers li:hover div {
+  background: rgba(var(--trans-theme-secondary-bg), 0.5);
+
+  /* @ check icon */
+  > .glyphicons_v2.check.white {
+    filter: unset !important;
+  }
+}
+
+/* @ left sidebar user score slider (unfilled) */
+.k-slider .k-slider-track {
+  background-color: rgba(var(--trans-theme-primary-text), 0.2) !important;
+}
+
+/* @ left sidebar user score slider (filled) */
+.k-slider .k-draghandle,
+.k-slider .k-slider-selection {
+  background-color: rgba(var(--trans-theme-primary-text), 0.8) !important;
+}
+
+/* @ left sidebar user score slider ball */
+.k-slider .k-draghandle {
+  border-color: transparent !important;
+}
+.k-slider .k-draghandle.k-focus,
+.k-slider .k-draghandle:focus {
+  box-shadow: unset !important;
+}
+
+/* @ long search button that appears after adjusting any value in left sidebar */
+.background_color.light_blue.full:has(> .load_more) {
+  background-color: rgba(var(--trans-theme-solid-bg), 0.7) !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+/* @ left sidebar separators */
+div.media.discover div.filter_panel div.filter {
+  border-top: 1px solid rgba(var(--trans-theme-primary-text), 0.2) !important;
+}
+
+/* @ search button disabled */
+div.media.discover div.apply.disabled,
+div.media.discover div.apply.disabled:hover {
+  opacity: var(--kendo-disabled-opacity) !important;
+}
+
+/* @ ------------------------- fix popular peoples page ------------------------- */
+
+/* @ card bottom rounded corner */
+div.item.profile.card {
+  border-bottom-left-radius: var(--imageBorderRadius) !important;
+  border-bottom-right-radius: var(--imageBorderRadius) !important;
+}
+
+/* @ ------------------------- fix profile page ------------------------- */
+
+/* @ activity graph horizontal lines */
+.k-chart[data-role="chart"] > svg > g > g > g:nth-child(2) > path {
+  stroke: rgba(var(--trans-theme-primary-text), 0.2) !important;
+}
+
+/* @ Most Watched Genres texts */
+div.account_page_data div#genre_chart.k-chart svg g text {
+  fill: rgb(var(--trans-theme-primary-text)) !important;
+}
+
+/* @ ------------------------- fix list page ------------------------- */
+
+/* @ "show comments", "sort by", "show me" border */
+.border-slate-500 {
+  border: 2px solid rgba(var(--trans-theme-primary-text), 0.6) !important;
+}
+
+/* @ list view border */
+.list_wrap div.list_items > div > div.flex > div:nth-child(2n) * {
+  border-color: transparent !important;
+}
+
+/* @ ------------------------- fix user ratings page ------------------------- */
+
+div.card.v4 div.action_bar ul li span.wrapper, /* @ card action button */
+div.card.v4 div.action_bar ul li a:hover span.wrapper /* @ card action button hover */ {
+  border: unset !important;
+  background-color: rgba(var(--trans-theme-primary-bg), 0.1) !important;
+  border-color: transparent !important;
+}
+
+/* @ card action button icon hover */
+div.card.v4 div.action_bar ul li a:hover span.wrapper .glyphicons_v2 {
+  filter: invert(1) !important;
+}
+
+/* @ favorite button */
+div.card.v4 div.action_bar ul li a.selected span.favourite.wrapper,
+div.card.v4 div.action_bar ul li a:hover span.favourite.wrapper,
+div.card.v4 div.action_bar ul li.selected a span.favourite.wrapper {
+  background-color: rgb(var(--trans-theme-pink)) !important;
+
+  .glyphicons_v2.heart {
+    filter: invert(1) !important;
+  }
+}
+
+/* @ ------------------------- fix admin page ------------------------- */
+
+body:has(> div.header > h2 > a[href^="/admin"]) {
+  table th.k-sorted, /* @ bible page table sorted header */
+    table td /* @ content texts */ {
+    color: rgb(var(--trans-theme-primary-text)) !important;
+  }
+
+  /* @ bible page table header text shadow */
+  table th {
+    text-shadow: unset !important;
+  }
+
+  /* @ tracked ips page table */
+  table.new {
+    border: 1px solid rgb(var(--trans-theme-primary-text)) !important;
+  }
+
+  table td {
+    border-bottom: 1px solid rgba(var(--trans-theme-primary-text), 0.2) !important;
+    border-right: 1px solid rgba(var(--trans-theme-primary-text), 0.2) !important;
+  }
+
+  /* @ user admin page links */
+  #container > h3 > a,
+    td a[href$="/other-accounts"],
+    td a[href$="/tracked-ips"],
+    td a[href$="&ban=true"],
+    td a#ban, /* @ unban */
+    td a[href$="/edits"],
+    td a[href$="/open"],
+    td a[href$="/closed"],
+    td a[href^="/messages/conversations/"],
+    td a[href^="/messages/new?to_account_id="] {
+    color: rgba(var(--trans-theme-link-text), 0.85) !important;
+  }
+}
+
+/* @ ------------------------- fix new title page ------------------------- */
+
+#container:has(> #header > a > img[src^="/assets/2/legacy/tmdb-logo"]) {
+  /* @ left sidebar current tab */
+  ul.tabs li.current,
+  ul[role="tablist"] li.current {
+    background-image: unset !important;
+    -moz-box-shadow: unset !important;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+    text-shadow: unset !important;
+  }
+
+  /* @ left sidebar text */
+  ul.tabs li,
+  ul[role="tablist"] li {
+    text-shadow: unset !important;
+  }
+
+  /* @ left sidebar bottom border */
+  ul.tabs li,
+  ul[role="tablist"] li {
+    border-bottom: unset !important;
+    box-shadow: unset !important;
+  }
+
+  /* @ Movie Details tab content */
+  div.new input[type="password"],
+  div.new input[type="text"],
+  div.new textarea {
+    border: unset !important;
+    background: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+    box-shadow: unset !important;
+    color: rgb(var(--trans-theme-primary-text)) !important;
+  }
+
+  /* @ Movie Details tab label */
+  div.new form label {
+    color: rgb(var(--trans-theme-primary-text)) !important;
+  }
+}
+
+/* @ ------------------------- fix messages page ------------------------- */
+
+/* @ fix borders */
+div.fill-area .flex_wrap /* @ sticky header */ {
+  border-top: 1px solid rgba(var(--trans-theme-primary-text), 0.2) !important;
+}
+.flexbox-item .left_column /* @ left sidebar */ {
+  border-right: 1px solid rgba(var(--trans-theme-primary-text), 0.2) !important;
+}
+ul.compact_message_list li /* @ chats */ {
+  border-bottom: 1px solid rgba(var(--trans-theme-primary-text), 0.2) !important;
+}
+
+/* @ footer right side (messaging place) */
+.flexbox-item.footer .right_column {
+  background-color: rgb(var(--trans-theme-solid-bg)) !important;
+}
+
+/* @ hide message box resize icon */
+#message_textarea {
+  resize: none !important;
+}
+
+/* @ messages page messages */
+div.you div.message a {
+  color: rgb(var(--trans-theme-link-text)) !important;
+}
+
+/* @ ------------------------- fix leaderboard page ------------------------- */
+
+/* @ leaderboard page bg */
+#histogram svg > g > rect[fill^="#"] {
+  fill: transparent !important;
+}
+
+/* @ graph bar */
+#histogram svg > g > path[fill^="#"] {
+  fill: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+}
+
+/* @ ------------------------- fix bible page ------------------------- */
+
+/* @ https://www.themoviedb.org/bible/collection/59f7511b9251416e71000056 (links) (modified) */
+section.main_content section a,
+section.main_content section div.note * {
+  color: rgb(var(--trans-theme-link-text)) !important;
+}
+
+/* @ ------------------------- fix api reference page ------------------------- */
+
+/* @ alter the variables */
+[data-color-mode="dark"] {
+  --gray10: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+  --gray15: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+  --gray20: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+}
+
+/* @ ------------------------- fix context menu ------------------------- */
+
+/* @ fix background */
+.k-list, /* @ images page image card menu */
+.k-popup, /* @ images page menu */
+#dropdown_list_sort_by, /* @ list page sort by dropdown */
+#dropdown_list_show_me, /* @ list page show me dropdown */
+span.youtube_search div.sub_menu, /* @ edit page videos "Search YouTube" hover menu */
+.k-tooltip.tmdb_theme_white, .tmdb_theme_white .k-tooltip /* @ home page top bar profile menu */ {
+  background-color: rgb(var(--trans-theme-solid-bg)) !important;
+}
+
+/* @ fix border */
+span.youtube_search div.sub_menu /* @ edit page videos "Search YouTube" hover menu */ {
+  border: none !important;
+}
+
+/* @ fix background hover */
+#dropdown_list_sort_by > div > a:hover, /* @ list page sort by dropdown hover */
+#dropdown_list_show_me > div > a:hover, /* @ list page show me dropdown hover */
+.k-list-item.k-focus, .k-list-item:focus, /* @ images page image card menu selected */
+.k-hover.k-list-custom-value, .k-hover.k-list-optionlabel, .k-list-custom-value:hover, .k-list-item.k-hover, .k-list-item:hover, .k-list-optionlabel:hover, /* @ images page image card menu hover */
+.k-menu-group .k-item > .k-link.k-hover, .k-menu-group .k-item > .k-link:hover, .k-menu.k-context-menu .k-item > .k-link.k-hover, .k-menu.k-context-menu .k-item > .k-link:hover, /* @ images page menu hover */
+.k-menu-group .k-item > .k-link.k-active, .k-menu-group .k-item > .k-link.k-selected, .k-menu-group .k-item > .k-link:active, .k-menu.k-context-menu .k-item > .k-link.k-active, .k-menu.k-context-menu .k-item > .k-link.k-selected, .k-menu.k-context-menu .k-item > .k-link:active, /* @ collections page sort menu (when hover on submenu) */
+section.search .k-list-item.k-focus, /* @ home page top search (keyboard navigation) */
+div.settings_content div.group p:hover /* @ home page top bar profile menu hover */ {
+  background-color: rgba(var(--trans-theme-primary-bg), var(--trans-theme-transparency-lvl)) !important;
+}
+
+/* @ home page top bar profile menu hover "view profile" text */
+.k-handle div,
+.k-selection-bg,
+div.settings_content div.group h2 + p:hover,
+header ul li.glyph a span,
+table.changes_v4 tbody tr td.content div.wrap code,
+ul.panel.kendo.k-panelbar > .k-item > .k-link {
+  background-color: transparent !important;
+}
+
+/* @ fix texts */
+.k-list, /* @ images page image card menu */
+.k-list-item.k-focus, .k-list-item:focus, /* @ images page image card menu selected */
+.k-hover.k-list-custom-value, .k-hover.k-list-optionlabel, .k-list-custom-value:hover, .k-list-item.k-hover, .k-list-item:hover, .k-list-optionlabel:hover, /* @ images page image card menu hover */
+ul.number_group a span.count, /* @ images page menu: => media number color */
+.k-menu-group .k-item > .k-link, .k-menu-vertical .k-item > .k-link, .k-menu:not(.k-context-menu) > .k-item, /* @ images page menu: media => videos text */
+section.search .k-list-item.k-focus, /* @ home page top search (keyboard navigation) */
+.k-menu-group, .k-menu.k-context-menu /* @ images page menu text color */ {
+  color: rgb(var(--trans-theme-primary-text)) !important;
+}
+
+/* @ home page top bar profile menu small triangle */
+.tmdb_theme_white .k-callout-n {
+  border-bottom-color: rgb(var(--trans-theme-solid-bg)) !important;
+}
+
+/* @ home page top bar profile menu dividers */
+div.settings_content div.group,
+div.settings_content div.group.no_pad {
+  border-top: unset !important;
+}
+
+/* @ ------------------------- fix tooltip ------------------------- */
+
+/* @ images page left side panel header icons tooltip */
+.k-tooltip {
+  background-color: rgb(var(--trans-theme-solid-bg)) !important;
+}
+
+/* @ tooltip color (custom) */
+.k-tooltip * {
+  color: rgb(var(--trans-theme-primary-text)) !important;
+}
+
+/* @ images page left side panel header icons tooltip small triangle */
+.tmdb_theme .k-callout-s {
+  border-top-color: rgb(var(--trans-theme-solid-bg)) !important;
+}
+
+/* @ discussion page left side panel notification tooltip small triangle */
+.tmdb_theme_white .k-callout-w {
+  border-right-color: rgb(var(--trans-theme-solid-bg)) !important;
+}
+
+/* @ ------------------------- fix popups ------------------------- */
+
+/* @ fix background */
+.k-upload, .k-upload .k-dropzone, .k-upload .k-file, .k-upload .k-upload-dropzone, .k-upload .k-upload-files, /* @ images page add images popup upload box */
+.k-window /* @ images page add images popup */ {
+  background-color: rgb(var(--trans-theme-solid-bg)) !important;
+  border-color: transparent !important;
+}
+
+/* @ fix texts */
+.k-upload, .k-upload .k-dropzone, .k-upload .k-file, .k-upload .k-upload-dropzone, .k-upload .k-upload-files, /* @ images page add images popup upload box */
+.k-prompt-container p, .k-window-content p, /* @ images page add images popup content (modified) */
+.k-window /* @ images page add images popup "Upload a Backdrop" title text */ {
+  color: rgb(var(--trans-theme-primary-text)) !important;
+}
+
+/* @ title page Report an Issue popup text box placeholder */
+.k-input-inner::placeholder {
+  color: rgba(var(--trans-theme-primary-text), 0.4) !important;
+}
+
+/* @ images page add images popup links "image contribution guidelines" */
+section.window_content a {
+  color: rgb(var(--trans-theme-link-text)) !important;
+}
+
+.k-upload .k-dropzone .k-dropzone-hint, .k-upload .k-upload-dropzone .k-dropzone-hint, /* @ images page add images popup upload box "Drop files here to upload" text */
+section.window_content ul /* @ images page add images popup "A maximum resolution" text (disclaimer texts) */ {
+  color: rgba(var(--trans-theme-primary-text), 0.6) !important;
+}
+
+/* @ edit page release information popup "note" input (custom) */
+.k-form-field-wrap > .k-input.k-textbox {
+  border-radius: var(--kendo-border-radius-md, 0.375rem) !important;
+}
+
+/* @ edit page release information popup "note" input disabled (custom) */
+.k-form-field-wrap > .k-input.k-textbox[disabled="disabled"] {
+  opacity: var(--kendo-disabled-opacity) !important;
+}
+
+/* @ ------------------------- fix tables ------------------------- */
+
+table.media-translations tr td, /* @ translations page content cards */
+table tbody tr.pagination, /* @ title discuss page bottom border */
+.k-grid .k-table-row /* @ edit page alternative titles "Title" "Type" "Country" */ {
+  border-color: transparent !important;
+}
+
+/* @ edit page cast */
+.k-grid .k-table {
+  background-color: transparent !important;
+}
+
+table thead, /* @ title discuss page "Subject" "Status" "Replies" heading */
+table.card.releases tr.sub th /* @ release dates page heading */ {
+  border-color: rgba(var(--trans-theme-primary-text), 0.2);
+}
+
+/* @ alternate bg */
+/* @ odd num transparent */
+#main:not(.edit):not(:has(.media_panel .discussion_container, .account_page_data)), /* @ no alt for 'title page discussion tab', 'profile page' */
+#main.edit:has(ul.panel > li> a.selected:not([href$="release_information"])), /* @ edit page no alt for release information */
+.changes_with_aggregates, /* @ changes page */
+#discussions /* @ title discuss page */ {
+  table:not(.changes_with_aggregates) tbody tr:nth-child(2n + 1) {
+    background-color: unset !important;
+  }
+}
+/* @ even num darker */
+#main.edit:has(ul.panel > li> a.selected:not([href$="release_information"])), /* @ edit page no alt for release information */
+.changes_with_aggregates, /* @ changes page */
+#discussions /* @ title discuss page */ {
+  table:not(.changes_with_aggregates) tbody tr:nth-child(2n) {
+    background-color: rgba(var(--trans-theme-secondary-bg), 0.15) !important;
+  }
+}
+
+/* @ ------------------------- fix icons ------------------------- */
+
+@media (prefers-color-scheme: dark) {
+  section.facts div.social_links a.social_link /* @ title page right sidebar icons */ {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+  }
+
+  /* @ bright white icons */
+  .glyphicons_v2.locked,
+  .glyphicons_v2.unlocked,
+  .glyphicons_v2.trending,
+  .glyphicons_v2.circle-more.grey,
+  .glyphicons_v2.circle-empty {
+    filter: invert(1) !important;
+  }
+
+  /* @ invert and decrease brightness (general fix) */
+  .glyphicons_v2.circle-question,
+    .glyphicons_v2.locked_status,
+    .glyphicons_v2.circle-minus,
+    .glyphicons_v2.circle-remove,
+    .glyphicons_v2.circle-check,
+    .glyphicons_v2.check,
+    .glyphicons_v2.square-edit,
+    .glyphicons_v2.inbox-plus,
+    .glyphicons_v2.inbox,
+    .glyphicons_v2.cogwheel,
+    .glyphicons_v2.user-no,
+    .glyphicons_v2.lock,
+    .glyphicons_v2.unlock,
+    .glyphicons_v2.hand-like,
+    .glyphicons_v2.hand-dislike,
+    .glyphicons_v2.search:not(.blue),
+    .glyphicons_v2.square-new-window,
+    .glyphicons_v2.verify-check,
+    .glyphicons_v2.verify-empty,
+    .glyphicons_v2.no-symbol,
+    .glyphicons_v2.menu-close,
+    .glyphicons_v2.thumbnails-list,
+    .glyphicons_v2.heart:not(.selected),
+    .glyphicons_v2.bookmark:not(.selected),
+    .glyphicons_v2.chat-conversation,
+    .glyphicons_v2.circle-empty-plus,
+    .glyphicons_v2.circle-info,
+    .glyphicons_v2.building,
+    .glyphicons_v2.menu,
+    .glyphicons_v2.chevron-down,
+    .glyphicons_v2.chevron-right,
+    .glyphicons_v2.arrow-thin-left,
+    .glyphicons_v2.arrow-thin-right,
+    .glyphicons_v2.keyboard,
+    .glyphicons_v2.speech-bubble-alert,
+    .glyphicons_v2.sort-numerically,
+    .glyphicons_v2.twitter_id,
+    .glyphicons_v2.instagram_id,
+    .glyphicons_v2.facebook_id,
+    .glyphicons_v2.crown,
+    .glyphicons_v2.pause,
+    .glyphicons_v2.plus,
+    .glyphicons_v2.film,
+    .glyphicons_v2.tv,
+    .glyphicons_v2.circle-more,
+    .glyphicons_v2.flag-triangle,
+    .glyphicons_v2.facebook,
+    .glyphicons_v2.instagram,
+    .glyphicons_v2.mastodon,
+    .glyphicons_v2.twitter,
+    .glyphicons_v2.tiktok,
+    .glyphicons_v2.vimeo,
+    .glyphicons_v2.youtube,
+    .glyphicons_v2.justwatch,
+    .glyphicons_v2.times,
+    .glyphicons_v2.user,
+    .glyphicons_v2.list,
+    .glyphicons_v2.calendar,
+    .glyphicons_v2.link,
+    .glyphicons_v2.fullscreen,
+    .glyphicons_v2.bold,
+    .glyphicons_v2.italic,
+    .glyphicons_v2.list-numbers,
+    .glyphicons_v2.code,
+    .glyphicons_v2.chat-message,
+    .glyphicons_v2.eye,
+    .glyphicons_v2.play,
+    img[src$="/t/p/original/e2XGMhHKR9QKE8huwuP0xqqZ9zs.svg"], /* @ edit page videos youtube icon */
+    img[src$="/t/p/original/flerIzLJEvm4l98TYf3gOy639bb.svg"], /* @ edit page videos vimeo icon */
+    .glyphicons_v2.star:not(.selected, .white) {
+    filter: invert(1) brightness(0.6) !important;
+  }
+
+  .settings_panel .glyphicons_v2 {
+    /* @ images page left side panel header icons */
+    filter: invert(1) brightness(0.7) !important;
+
+    /* @ title page edit page left side panel header icons */
+    &.white {
+      filter: brightness(0.7) !important;
+    }
+  }
+
+  /* @ Add to list, mark as fav, add to watchist buttons */
+  section.inner_content section.header ul.actions li.tooltip {
+    .glyphicons_v2.white {
+      filter: brightness(0.7) !important;
+    }
+  }
+
+  /* @ dont invert white icons */
+  .glyphicons_v2.white {
+    filter: brightness(0.6) !important;
+  }
+
+  /* @ reduce brightness for already inverted icons, eg: home page top bar bell icon */
+  .svg.invert:not(.play) /* @ dont invert home page latest trailer card play button */ {
+    filter: invert(1) brightness(0.6) !important;
+  }
+
+  /* @ home page card menu option */
+  .glyphicons_v2.circle-more.white {
+    filter: unset !important;
+  }
+
+  /* @ blue icons */
+  div.carton div.post_actions a.true span.glyphicons_v2,
+  div.carton div.post_actions a:hover span.glyphicons_v2 {
+    filter: invert(68%) sepia(62%) saturate(5715%) hue-rotate(158deg) brightness(101%) contrast(99%) !important;
+  }
+
+  /* @ discussions page private discussion lock */
+  #discussions .flex_wrapper .avatar_wrapper + div .glyphicons_v2.lock {
+    filter: invert(1) !important;
+    opacity: 0.6 !important;
+  }
+}
+
+/* @ ------------------------- fix checkboxs and radio buttons ------------------------- */
+
+/* @ checkbox and radio */
+input[type="checkbox"],
+input[type="radio"] {
+  background-color: rgba(var(--trans-theme-primary-bg), 0.15) !important;
+}
+
+/* @ checkbox checked */
+input[type="checkbox"]:checked,
+.k-checkbox.k-checked,
+.k-checkbox:checked {
+  border-color: transparent !important;
+  color: rgba(var(--trans-theme-primary-text), 0.8) !important;
+  background-color: rgba(var(--trans-theme-primary-bg), 0.15) !important;
+}
+
+/* @ radio checked */
+.k-radio.k-checked,
+.k-radio:checked {
+  border-color: transparent !important;
+  color: rgba(var(--trans-theme-primary-text), 0.8) !important;
+}
+
+/* @ checkbox and radio on focus */
+.k-checkbox.k-focus,
+.k-radio.k-focus,
+.k-checkbox:focus,
+.k-radio:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* @ ------------------------- fix scrollbar ------------------------- */
+
+html,
+body,
+div,
+section,
+article,
+aside,
+main,
+nav,
+textarea,
+pre,
+code,
+ul,
+ol,
+li,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th,
+iframe {
+  scrollbar-color: rgba(var(--trans-theme-primary-bg), 0.3) transparent !important;
+}
+
+/* @ ------------------------- fix miscs ------------------------- */
+
+/* @ text selection */
+::selection {
+  background-color: #287acb !important;
+  color: #fff !important;
+}
+
+/* @ white input element while page load (don't use important) */
+input,
+select {
+  background-color: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* @ blue buttons */
+.k-dialog-actions > .k-button.k-button-solid-primary, /* @ images page remove image popup "yes" button */
+.k-button:has(> .k-svg-i-save), /* @ edit page Alternative Titles popup save button */
+.k-button.save[type="submit"] /* @ edit page Primary Facts save button */ {
+  background-color: rgba(var(--trans-theme-blue), 0.5) !important;
+  color: white !important;
+  border: none !important;
+
+  /* @ .k-button.save[type="submit"] messages page send button */
+  > .glyphicons_v2.invert {
+    filter: invert(1) brightness(0.8) !important;
+  }
+}
+
+/* @ ------------------------- features ------------------------- */
+
+/* themoviedb-no footer */
+#footer, /* @ review page */
+footer {
+  display: none !important;
+}
+
+/* themoviedb-remove blue tint */
+div.header.collection /* @ title page collection card */ {
+  --tmdbDarkBlue: 30, 30, 30 !important;
+}
+div.card.v4.list div.details /* @ list page cards */ {
+  background-color: rgba(var(--trans-theme-secondary-bg), 0.6) !important;
+}
+
+/* themoviedb-hide primary color */
+/* @ profile page with no background image */
+div.header.gradient:not(.background_image) {
+  background-image: unset !important;
+  background-color: transparent !important;
+}
+
+/* themoviedb-beautiful movie page */
+body:not(:has(> .person_wrap)) {
+  section.inner_content div.header.large.first {
+    border-bottom: unset !important;
+    background-position: center !important;
+  }
+  section.inner_content div.custom_bg {
+    height: calc(100vh - 110px) !important;
+    background-image: unset !important;
+  }
+  section.inner_content.no_backdrop.poster div.custom_bg, /* @ default blurry gradient bg image */
+    section.inner_content.backdrop.poster div.custom_bg {
+    background-color: rgba(var(--trans-theme-secondary-bg), 0.6) !important;
+  }
+  section.inner_content div.header.first div.single_column {
+    max-width: unset !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    padding-top: unset !important;
+    padding-bottom: unset !important;
+  }
+}
+
+/* themoviedb-remove ott under movie poster */
+.ott_offer {
+  display: none !important;
+}
+/* @ rounded poster */
+section.inner_content section.images > div.poster_wrapper.true div.poster,
+section.inner_content section.images > div.poster_wrapper.true div.zoom {
+  border-bottom-left-radius: var(--imageBorderRadius) !important;
+  border-bottom-right-radius: var(--imageBorderRadius) !important;
 }
