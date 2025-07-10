@@ -18,11 +18,6 @@ header,
     border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-/* darkreader */
-:root {
-  --darkreader-background-ffffff: transparent !important;
-}
-
 /* no footer */
 footer {
   display: none !important;
