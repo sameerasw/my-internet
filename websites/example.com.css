@@ -31,7 +31,9 @@ section, .l-root,
 .head.notfixed, .main-container,
 #app > div, .btm-nav > a, .oc-content--main,
 body.dark_mode, body.light_mode,
-text-div > textarea{
+text-div > textarea,
+
+[data-color-theme] body{
   background-color: transparent !important;
   /* @Testing inline comments */
   background: none !important;
