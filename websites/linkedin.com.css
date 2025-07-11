@@ -4,6 +4,10 @@
   --color-background-container: transparent !important;
 }
 
+#app__container, .form__input--floating {
+  background-color: transparent !important;
+}
+
 /* in-no borders */
 :root{
   --color-border-faint: transparent !important;
