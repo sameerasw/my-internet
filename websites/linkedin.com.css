@@ -1,5 +1,6 @@
 /* in-transparency */
 :root{
+  --color-background: transparent !important;
   --color-background-canvas: transparent !important;
   --color-background-container: transparent !important;
 }
