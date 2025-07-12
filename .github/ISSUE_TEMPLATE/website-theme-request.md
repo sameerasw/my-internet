@@ -4,7 +4,6 @@ about: Request your favorite site to be themed and added to the repository so th
 title: "[THEME]"
 labels: Theme
 assignees: sameerasw
-
 ---
 
 Provide the website URL
