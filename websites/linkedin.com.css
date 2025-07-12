@@ -28,3 +28,8 @@ header{
 .theme--dark {
   --color-background:  #0005 !important;
 }
+
+/* in-no footer */
+footer {
+  display: none !important;
+}
