@@ -7,7 +7,11 @@
   overflow: hidden !important;
 }
 
-html, body, #main-window, #navigator-toolbox, #nav-bar, #browser, #tabbrowser-tabpanels, .tab-background:not([selected=""]), #tabbrowser-tabs, #sidebar-main,body:not(:has(toolbarbutton[expanded])) #sidebar-wrapper{
+#main-window{
+  background-color: #00000099 !important;
+}
+
+body, #navigator-toolbox, #nav-bar, #browser, #tabbrowser-tabpanels, .tab-background:not([selected=""]), #tabbrowser-tabs, #sidebar-main,body:not(:has(toolbarbutton[expanded])) #sidebar-wrapper{
   background-color: transparent !important;
 /*   background-color: #2e3440 !important; */
   background: none !important;
@@ -236,7 +240,8 @@ body:has(#urlbar:not([open])):has(#urlbar:not([open]):hover, #nav-bar-customizat
   }
   
   #nav-bar{
-    background-color: var(--toolbar-field-background-color) !important;
+/*     background-color: var(--toolbar-field-background-color) !important; */
+    background-color: light-dark(#fff, #000) !important;
     opacity: 1 !important;
     border-radius: 0.75em !important;
   }
@@ -376,6 +381,11 @@ slot:nth-child(1) {
 
 [expanded=""] #vertical-pinned-tabs-container{
   margin: 0 4px !important;
+}
+
+
+#sidebar-main:not([sidebar-launcher-expanded=""]){
+  display: none !important;
 }
 
 #tabbrowser-tabs:not([expanded]){
