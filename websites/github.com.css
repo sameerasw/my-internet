@@ -38,7 +38,7 @@ nav,
 aside > div,
 [data-testid="chat-layout"] > div > div > div,
 [data-testid="chat-layout"] > div > aside,
-.ContentPreview-module__tabsContainer--bNywg::after {
+.ContentPreview-module__tabsContainer--bNywg::after, .snippet-clipboard-content > .notranslate {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -362,8 +362,7 @@ body:has(header > .search-expanded) .application-main {
 }
 
 /* better vertical timeline icon bg */
-[data-testid="issue-viewer-container"],
-#repo-content-turbo-frame {
+[data-testid="issue-viewer-container"], #repo-content-turbo-frame{
   .TimelineItem-badge,
   .prc-Timeline-TimelineBadge-BqMiN {
     background-color: light-dark(#fff8, #00000054) !important;
