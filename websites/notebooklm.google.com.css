@@ -4,7 +4,8 @@ body,
 nav,
 header,
 welcome-page,
-notebook, notebook > * {
+notebook,
+notebook > * {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -42,6 +43,6 @@ section {
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }
