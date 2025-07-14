@@ -39,7 +39,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run script to update styles.json
-        run: node update-styles-json.cjs
+        run: node update-styles-json.mjs
 
       - name: Validate styles.json
         run: jq empty styles.json
