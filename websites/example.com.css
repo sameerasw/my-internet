@@ -65,7 +65,9 @@ text-div > textarea,
 }
 
 /* no footer */
-footer, #Footer, .Footer,
+footer,
+#Footer,
+.Footer,
 mfe-footer-pharos-footer,
 .footer,
 #footer {
