@@ -3,7 +3,7 @@ name: Deployment
 
 on:
   workflow_run:
-    workflows: ["Update styles.json"] # Match this to the name of your first workflow
+    workflows: ["Format and Update styles.json"]
     types:
       - completed
 
