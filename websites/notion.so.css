@@ -4,7 +4,7 @@ body,
 .notion-collection_view-block [style="position: relative;"] > div,
 .notion-menu-list-focused > div,
 div.notion-table-view-add-row,
-div.pseudoSelection {
+div.pseudoSelection, [style="flex: 0 0 auto; position: relative; background-color: rgb(25, 25, 25); padding: 0px;"], .pseudoSelection > [aria-orientation="horizontal"] > div  {
   background-color: #00000000 !important;
   background: #00000000 !important;
   transition:
