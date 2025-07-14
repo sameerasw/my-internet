@@ -72,7 +72,7 @@ footer > div:first-of-type,
   --conversation-header-border: transparent !important;
 }
 
-body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [aria-label="Community tab drawer"], [title="Settings"], [title="Profile"]) ._aigw {
+body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [aria-label="Community tab drawer"], [title="Archived"], [title="Settings"], [title="Profile"]) ._aigw {
   header:has([aria-label="WhatsApp"]),
   #side {
     display: none !important;
