@@ -362,8 +362,10 @@ body:has(header > .search-expanded) .application-main {
 }
 
 /* better vertical timeline icon bg */
-.TimelineItem-badge,
-.prc-Timeline-TimelineBadge-BqMiN {
-  background-color: light-dark(#fff8, #00000054) !important;
-  border: solid var(--borderWidth-thin) #3d444d !important;
+[data-testid="issue-viewer-container"], #repo-content-turbo-frame{
+  .TimelineItem-badge,
+  .prc-Timeline-TimelineBadge-BqMiN {
+    background-color: light-dark(#fff8, #00000054) !important;
+    border: solid var(--borderWidth-thin) #3d444d !important;
+  }
 }
