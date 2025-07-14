@@ -2,7 +2,7 @@
   "name": "style-generator",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "update": "node update-styles-json.cjs"
   },
