@@ -13,7 +13,6 @@ on:
 
 jobs:
   format-and-update:
-    name: Format and Update JSON
     runs-on: ubuntu-latest
 
     steps:
@@ -28,7 +27,7 @@ jobs:
         with:
           node-version: "14"
 
-      - name: Install dependencies
+      - name: Install dependencies (initial)
         run: npm install
 
       - name: Run Prettier
@@ -37,6 +36,9 @@ jobs:
           prettier_options: '--write .'
           commit_message: "gh-actions: format code"
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Reinstall dependencies after Prettier
+        run: npm install
 
       - name: Run script to update styles.json
         run: node update-styles-json.mjs
