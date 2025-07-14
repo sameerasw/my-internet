@@ -3,7 +3,7 @@ name: Check New Commits and Assign Issues
 on:
   push:
     paths:
-      - '**.css'
+      - "**.css"
 
 jobs:
   check-commits:

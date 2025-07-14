@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: "16"
 
       - name: Install GitHub CLI
         run: |
@@ -45,7 +45,7 @@ jobs:
         run: |
           # Extract project ID from the URL
           PROJECT_ID=$(echo "${PROJECT_URL}" | grep -oE "projects/[0-9]+" | cut -d'/' -f2)
-          
+
           # Iterate through all issues and add them to the project
           for issue_number in $(jq -r '.[].number' all_issues.json); do
             issue_data=$(jq ".[] | select(.number == ${issue_number})" all_issues.json)
