@@ -9,9 +9,9 @@ main,
 aside,
 nav,
 form,
-input,
+input, block-component > [data-hveid] > div,
 button, #appbar, #rso > div > div > div,
-table, [data-hveid], 
+table, [data-hveid], [data-rpos] > [data-hveid] > div,
 tbody, [aria-label="Short videos"],
 tr, .cIlcle .fHE6De,#imp > div > div > div .k4o2Hc, g-popup > [role="button"], g-popup > [role="button"] > div, g-popup > [role="button"] + div,
 td, #imp > div > div,#imp > div > div > div
@@ -19,6 +19,7 @@ td, #imp > div > div,#imp > div > div > div
 , [role="columnheader"] {
   background: transparent !important;
   background-color: transparent !important;
+  transition: background-color 0.3s ease-in-out !important;
 }
 
 .F9Idpe {
@@ -67,11 +68,11 @@ g-popup > div {
 
 /* @AI overview glow */
 #rcnt .RDmXvc {
-  border-radius: 0 0 2em 2em !important;
+  border-radius: 0 0 1em 1em !important;
 }
 
 #rcnt .hdzaWe {
-  border-radius: 2em !important;
+  border-radius: 1em !important;
   overflow: hidden !important;
   transition: background-color 0.5s ease-in-out !important;
   background-color: color-mix(in srgb, var(--EpFNW) 50%, transparent) !important;
