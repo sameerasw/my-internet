@@ -1,4 +1,4 @@
-/* Unity-Asset-Store-Transparency */
+/* Transparency */
 
 /* @Nav Bar */
 .z-header,
