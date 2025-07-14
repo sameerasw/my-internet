@@ -1,5 +1,5 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, header > div, body.ltr.rsp.v3, .lower-content, .c-card:not(:hover){
+html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, header > div, body.ltr.rsp.v3, .lower-content, .c-card:not(:hover), .banded-wrapper-reversed, .banded-wrapper{
   background-color: transparent !important;
   background: none !important;
   border: none !important;
