@@ -2,9 +2,9 @@
   "name": "style-generator",
   "version": "1.0.0",
   "private": true,
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
-    "update": "node update-styles-json.cjs"
+    "update": "node update-styles-json.mjs"
   },
   "dependencies": {
     "postcss": "^8.4.21"
