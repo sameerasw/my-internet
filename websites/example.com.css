@@ -31,7 +31,7 @@ section, .l-root,
 .head.notfixed, .main-container,
 #app > div, .btm-nav > a, .oc-content--main,
 body.dark_mode, body.light_mode,
-text-div > textarea,
+text-div > textarea, #starlight__sidebar, .sidebar-pane,
 
 [data-color-theme] body, #__next > div, .hero-right {
   background-color: transparent !important;
