@@ -33,7 +33,7 @@ section, .l-root,
 body.dark_mode, body.light_mode,
 text-div > textarea,
 
-[data-color-theme] body, #__next > div {
+[data-color-theme] body, #__next > div, .hero-right {
   background-color: transparent !important;
   /* @Testing inline comments */
   background: none !important;
