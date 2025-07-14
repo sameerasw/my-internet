@@ -1,13 +1,36 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .border-r, .group\/sidebar-wrapper > div, .dark\:bg-sidebar > div, main > div, .to-transparent, .bg-noise, .bg-gradient-noise-top {
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.border-r,
+.group\/sidebar-wrapper > div,
+.dark\:bg-sidebar > div,
+main > div,
+.to-transparent,
+.bg-noise,
+.bg-gradient-noise-top {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* hidden */
-footer, span:has(a[href="/terms-of-service"]), .prose:has(a[href="/terms-of-service"]), [style="clip-path: inset(0px 12px 0px 0px);"], .fixed.right-0.top-0 .ease-snappy svg{
+footer,
+span:has(a[href="/terms-of-service"]),
+.prose:has(a[href="/terms-of-service"]),
+[style="clip-path: inset(0px 12px 0px 0px);"],
+.fixed.right-0.top-0 .ease-snappy svg {
   display: none !important;
 }

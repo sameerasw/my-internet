@@ -10,29 +10,51 @@ navbar,
 header,
 #header,
 .header,
-app, .header + .ng-star-inserted,
-#app, .title.ng-star-inserted:has(.summary),
-.app, swebot-code-panel,
-.app-root, .code-header, .code-container,
-#pass-sidebar, .wavy-line-container,
-#main, swebot-chat, .chat-header,
-main, .buttons-container:has(.rate-limit-container), swebot-navbar,
-#content, .mat-mdc-tooltip-trigger,
-section, .source-header,
-#__next, swebot-root,
-#navigation-wrapper, swebot-start-panel,
-#global-navbar, #start-panel,
-.head.notfixed, 
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+app,
+.header + .ng-star-inserted,
+#app,
+.title.ng-star-inserted:has(.summary),
+.app,
+swebot-code-panel,
+.app-root,
+.code-header,
+.code-container,
+#pass-sidebar,
+.wavy-line-container,
+#main,
+swebot-chat,
+.chat-header,
+main,
+.buttons-container:has(.rate-limit-container),
+swebot-navbar,
+#content,
+.mat-mdc-tooltip-trigger,
+section,
+.source-header,
+#__next,
+swebot-root,
+#navigation-wrapper,
+swebot-start-panel,
+#global-navbar,
+#start-panel,
+.head.notfixed,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* no footer */
-.footer, .disclaimer{
+.footer,
+.disclaimer {
   display: none !important;
 }

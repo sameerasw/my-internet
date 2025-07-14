@@ -22,23 +22,35 @@ section,
 #__next,
 #navigation-wrapper,
 #global-navbar,
-.head.notfixed, 
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+.head.notfixed,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.panel{
-    box-shadow:  light-dark(#fff3, #0003) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
-    background-color: light-dark(#fff8, #0005)  !important;
-    border-radius: 1em !important;
-  }
+.panel {
+  box-shadow:
+    light-dark(#fff3, #0003) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+  background-color: light-dark(#fff8, #0005) !important;
+  border-radius: 1em !important;
+}
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }

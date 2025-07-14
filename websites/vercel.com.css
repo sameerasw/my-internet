@@ -1,15 +1,22 @@
 /* vercel-transparecy */
-:root{
+:root {
   --geist-background: transparent !important;
   --ds-background-200-value: transparent !important;
 }
 
-html, header, [data-testid="navbar/submenu"], footer{
+html,
+header,
+[data-testid="navbar/submenu"],
+footer {
   background-color: transparent !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* vercel-overlay fix */
-[role="menu"]{
+[role="menu"] {
   background-color: var(--accents-2) !important;
 }

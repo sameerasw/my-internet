@@ -1,9 +1,16 @@
 /* transparency */
-:root{
+:root {
   --background-color-interactive-subtle: transparent !important;
 }
 
-html, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox, body.skin--responsive{
+html,
+body,
+header,
+.mw-page-container,
+.vector-pinned-container,
+.vector-sticky-pinned-container::after,
+.infobox,
+body.skin--responsive {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -11,11 +18,11 @@ html, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

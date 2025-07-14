@@ -1,8 +1,25 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .Layout_page_vTMAHjdl > div, .ant-upload-drag-container, .ant-upload, .SelectFileDesktop_upload_iWqG2wFF, #rc-tabs-0-panel-upload > div{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.Layout_page_vTMAHjdl > div,
+.ant-upload-drag-container,
+.ant-upload,
+.SelectFileDesktop_upload_iWqG2wFF,
+#rc-tabs-0-panel-upload > div {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }

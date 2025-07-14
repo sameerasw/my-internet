@@ -11,36 +11,46 @@ header,
 #header,
 .header,
 app,
-#app, #mainHeader,
+#app,
+#mainHeader,
 .app,
 .app-root,
 #pass-sidebar,
 #main,
-main, #wimp > div > div,
+main,
+#wimp > div > div,
 #content,
 section,
 #__next,
 #navigation-wrapper,
 #global-navbar,
-.head.notfixed, 
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+.head.notfixed,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
- .is-root{
-   transition: all 0.5s ease-in-out !important;
- }
+.is-root {
+  transition: all 0.5s ease-in-out !important;
+}
 
-#wimp:has(.is-now-playing) .is-root{
+#wimp:has(.is-now-playing) .is-root {
   filter: blur(20px) !important;
 }
 
 /* no footer */
-footer, ._bottomGradient_104d99b, ._bottomGradient_5c344de{
+footer,
+._bottomGradient_104d99b,
+._bottomGradient_5c344de {
   display: none !important;
 }

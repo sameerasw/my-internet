@@ -1,10 +1,10 @@
 /* transparent pepper.pl */
-:root{
+:root {
   --bgBasePrimary: transparent !important;
   --bgBaseSecondary: transparent !important;
   --bgBaseTertiary: transparent !important;
   --bgNeutralPrimary: transparent !important;
 }
-.footer{
+.footer {
   background-color: transparent !important;
 }

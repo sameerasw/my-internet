@@ -1,28 +1,49 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .listWidget, .appRow, article > div, article > div > div > div, .card-with-tabs > div, .appspec-row, .show-more{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.listWidget,
+.appRow,
+article > div,
+article > div > div > div,
+.card-with-tabs > div,
+.appspec-row,
+.show-more {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.header-nav{
+.header-nav {
   border-radius: 1em !important;
   margin: 1em !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* no thanks */
-[data-ai]:has(span.advertisement-text), #bottom-slider, .pushbullet-subscribe-widget{
+[data-ai]:has(span.advertisement-text),
+#bottom-slider,
+.pushbullet-subscribe-widget {
   display: none !important;
 }

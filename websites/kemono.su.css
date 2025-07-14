@@ -19,20 +19,28 @@ app,
 main,
 #content,
 section,
-#__next, .jumbo-welcome,
+#__next,
+.jumbo-welcome,
 #navigation-wrapper,
 #global-navbar,
-.head.notfixed, .global-sidebar.expanded,
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+.head.notfixed,
+.global-sidebar.expanded,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.jumbo-welcome-background{
+.jumbo-welcome-background {
   opacity: 0.1 !important;
   border-radius: 1em !important;
 }

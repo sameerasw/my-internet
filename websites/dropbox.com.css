@@ -4,8 +4,7 @@ body,
 .dig-Theme-vis2023--bright,
 .dig-Theme-vis2023--dark,
 ._sidebar-background_1cajl_17,
-._sc-comment-stream-editor_12v0k_171
-  ._sc-comment-editor-focus-container_12v0k_199,
+._sc-comment-stream-editor_12v0k_171 ._sc-comment-editor-focus-container_12v0k_199,
 ._crop-details-light_12mja_8,
 ._toolbar-holder_4tpnk_4,
 ._upscale-light_160y1_10,
@@ -19,8 +18,11 @@ body,
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 .dig-Mode--dark,
 .dig-Theme--dark {

@@ -1,27 +1,32 @@
 /* transparency */
-body, .tool__workarea {
-    background: none !important;
+body,
+.tool__workarea {
+  background: none !important;
 }
-.home-title, .footer, .tools__item__content {
-    display: none !important;
+.home-title,
+.footer,
+.tools__item__content {
+  display: none !important;
 }
-.tools__item, .tools__item:hover {
-    background: rgba(0,0,0,0.4) !important;
-    text-align: center !important;
-    margin-top: 1vi !important;
+.tools__item,
+.tools__item:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+  text-align: center !important;
+  margin-top: 1vi !important;
 }
 .tools__item__icon {
-    position: relative;
-    left: 40% !important;
+  position: relative;
+  left: 40% !important;
 }
-.tools__item h3, .tools__item:hover h3 {
-    color: white !important;
+.tools__item h3,
+.tools__item:hover h3 {
+  color: white !important;
 }
 header {
-    background: none !important;
-    opacity: 0 !important;
-    transition: ease-in 100ms !important;
+  background: none !important;
+  opacity: 0 !important;
+  transition: ease-in 100ms !important;
 }
 header:hover {
-    opacity: 100% !important;
+  opacity: 100% !important;
 }

@@ -1,32 +1,32 @@
 /* in-transparency */
-:root{
+:root {
   --color-background: transparent !important;
   --color-background-canvas: transparent !important;
   --color-background-container: transparent !important;
 }
 
-#app__container, .form__input--floating {
+#app__container,
+.form__input--floating {
   background-color: transparent !important;
 }
 
 /* in-no borders */
-:root{
+:root {
   --color-border-faint: transparent !important;
 }
 
 /* in-navbar blur */
-header{
+header {
   backdrop-filter: blur(20px) !important;
 }
 
-
 /* in-glass effect */
 :root {
-  --color-background:  #fff8 !important;
+  --color-background: #fff8 !important;
 }
 
 .theme--dark {
-  --color-background:  #0005 !important;
+  --color-background: #0005 !important;
 }
 
 /* in-no footer */

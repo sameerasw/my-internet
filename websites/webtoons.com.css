@@ -1,19 +1,40 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #mainBannerList, #weekdayList, .daily_tab_wrap, #content > div, .main_challenge, #container, .detail_body.banner, .detail_body.banner > div, #_listUl > li{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+#mainBannerList,
+#weekdayList,
+.daily_tab_wrap,
+#content > div,
+.main_challenge,
+#container,
+.detail_body.banner,
+.detail_body.banner > div,
+#_listUl > li {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-#content > #_bottomDisplay{
+#content > #_bottomDisplay {
   background-color: light-dark(#fff, #000) !important;
   border-radius: 1em !important;
   padding: 0 3em !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }

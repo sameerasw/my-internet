@@ -6,28 +6,47 @@ html, body, nav, #nav, .nav, .sticky-category-bar-container, navbar, body > .roo
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* @It's necessary to add some borders because it goes into mess*/
 /* @button borders */
-.brs7cei, ._1bv8u1w6 {
+.brs7cei,
+._1bv8u1w6 {
   background-color: transparent !important;
   background: none !important;
   border: var(--_164xfge25) solid var(--oq6d073);
   margin-right: 4px !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* @Making them transparent makes it unusable. Should work on light themes too (needs testing) */
 /* @Search box, message input box, message event box, dev tools, settings */
-._1rrvnjm8, .coabsl0, ._1fptcza3, ._1fptcza2, ._1fc5sz53, ._1fc5sz52, ._5z5e2h3 {
+._1rrvnjm8,
+.coabsl0,
+._1fptcza3,
+._1fptcza2,
+._1fc5sz53,
+._1fc5sz52,
+._5z5e2h3 {
   background-color: #404040c0 !important;
   border: var(--_164xfge25) solid var(--oq6d073);
   margin-right: 4px !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* collapse sidebar */
@@ -54,6 +73,9 @@ html, body, nav, #nav, .nav, .sticky-category-bar-container, navbar, body > .roo
 }
 
 /* no footer */
-footer, mfe-footer-pharos-footer, .footer, #footer {
+footer,
+mfe-footer-pharos-footer,
+.footer,
+#footer {
   display: none !important;
 }

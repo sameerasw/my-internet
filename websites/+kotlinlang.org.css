@@ -1,7 +1,19 @@
-/* klang-Transparency */ 
-html, body, .app-container, .ktl-header-module_header-menu_wh71L, .toolbar,
-.playground, .executable-fragment, .code-area, .CodeMirror,
-.output-wrapper, .toc, .wt-section, .starting-page-card, .keep-in-touch_wrapper__us7aS, .teach-subscription-form  {
+/* klang-Transparency */
+html,
+body,
+.app-container,
+.ktl-header-module_header-menu_wh71L,
+.toolbar,
+.playground,
+.executable-fragment,
+.code-area,
+.CodeMirror,
+.output-wrapper,
+.toc,
+.wt-section,
+.starting-page-card,
+.keep-in-touch_wrapper__us7aS,
+.teach-subscription-form {
   background-color: transparent !important;
   background: none !important;
 }

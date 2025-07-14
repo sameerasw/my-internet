@@ -12,6 +12,6 @@
 }
 
 /* chat bubble color */
-[aria-label="Thread composer"]{
+[aria-label="Thread composer"] {
   background-color: var(--mwp-message-row-background) !important;
 }

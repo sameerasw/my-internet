@@ -1,11 +1,18 @@
 /* perplexity-transparency */
-body,#__next > main:nth-child(1) > div:nth-child(1),  .erp-tab\:rounded-none, div.sticky:nth-child(2), .pb-\[144px\] > div:nth-child(1), .pb-32 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1), .mt-xs > div:nth-child(1) > div:nth-child(1),
-.bg-background-100:has([data-testid="answer-mode-tabs"]){
+body,
+#__next > main:nth-child(1) > div:nth-child(1),
+.erp-tab\:rounded-none,
+div.sticky:nth-child(2),
+.pb-\[144px\] > div:nth-child(1),
+.pb-32 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),
+.mt-xs > div:nth-child(1) > div:nth-child(1),
+.bg-background-100:has([data-testid="answer-mode-tabs"]) {
   background-color: transparent !important;
   border: none !important;
 }
 
-.table.w-full > .will-change-opacity + .ring-borderMain\/50, [data-testid="answer-mode-tabs"] > div > div.font-display{
+.table.w-full > .will-change-opacity + .ring-borderMain\/50,
+[data-testid="answer-mode-tabs"] > div > div.font-display {
   border-radius: 0.5em !important;
   overflow: hidden !important;
   padding: 0 2em !important;
@@ -15,15 +22,15 @@ body,#__next > main:nth-child(1) > div:nth-child(1),  .erp-tab\:rounded-none, di
 }
 
 /* perplexity-hover */
-.grid-cols-6{
+.grid-cols-6 {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }
 
 /* perplexity-hidden */
-div.pb-md:nth-child(3){
+div.pb-md:nth-child(3) {
   display: none !important;
 }

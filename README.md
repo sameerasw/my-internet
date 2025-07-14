@@ -11,7 +11,6 @@
 >
 > <img width="220" height="138" alt="image" src="https://media.tenor.com/kq7GyBPPIj0AAAAM/sweaty-speedrunner.gif" />
 
-
 ![GitHub issue custom search in repo](https://img.shields.io/github/issues-search/sameerasw/my-internet?query=is%3Aissue%20state%3Aopen%20label%3A%22bug%22%20sort%3Aupdated-desc%20&style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAGOElEQVR4nO1XbUyTVxQ%2BBIGgQkA%2BxuCHICywmGzDEBYE5h%2FHWDcdRjBAgi5luBm3MH%2F4MTUQ3UaGi0bJIon8YCzRCCHiJgmjQnBRPoSBDOwKiPWDoq2ASKGFtpSznLPed%2B3bkmn8t%2BwkJ7nv%2BbrPvefcc%2B8L8D%2B9ICFiCCIeR8RBRDQj4iwidiDiF4jo%2F7LB%2FRyBLjlYiYjeTvo0RNTjMmSxWIafPXsW62Tvg4ifI%2BKviNiMiPsRceVyk%2FsiYquHuD8johcixiOikQQPHz7E7du3Y0BAAPO2bdtwaGiIjc1ms%2B7s2bPhBBwRVfJgc3Nz3R0dHe47hYgFwuj06dMctLu7W4iyEPEXMfmaNWuQXJyZZGNjY2zc19f3k8ViyaXxnTt3ONbevXvRZrOxXqVSHQcALzmAGlI%2BePAAvby8OGh6eroAcA4RF2lAK5dPLjgnJ4eNTSaTYWxsrIrGRUVFkv7KlSusHx4ebgGAKDkA3v6WlhbJYevWrQJAnxjQlgt9QUEBs%2FgODAyUtlqr1fL2Hz58WNKfPHmSdY8fPx4AgDflANhBpVJJDvv3U838Q7Q7y61e8KNHj1x8qqurJd2pU6dYptPpegEgRQ7gR5Ez4bBnzx4p0O3btz3mXs7h4eE4MDCAzvUkdI2NjSzTaDQqAHhbDqCIlEtLSxgXF8cOMTExuLCwwLINGzZIgYKDgzErKwt3797NnJaWhr6%2BvpKe%2FK1WK%2Ftt2rSJZZS6ubk5BlBTU1PuKQVBdrvdRAaVlZVSsF27duGtW7ek70OHDlGRuZ3V2dlZPHjwoGTX3NyMR48elb5LSkrYbmFhwRgTE5PtVoRENpvtazKy2%2B1c0cJZFF5SUhKOjIxIx8mZyEer1WJKSoqLD%2FHmzZupSbFdQ0PDDwDwHgCs4EkFISKVfI8IuLi4iOXl5RgUFOSWZx8fHwwJCcF169YxU979%2FPzc7FatWoUHDhzgNAqanJwc6erq%2BlQ%2BeTal321Z1I8vXeJgGzduxKtXr3Ih1dXVuXF9fT3rial%2FkM%2FFixc9heRSGxoa%2BsQZwB8kffLkCXet1NRUzMvLY%2FSFhYUcjIrueSk7O5t9du7cifv27ePmlZyczIvo7%2B9nm6dPn2oBIEIAmCchNYrljpccgMFgwC1btjDr9XqPADyxUkn3G9IpmQeAdAGAD%2B6NGzdcckm5Xbt2rUcAzmBPnDjhEUBCQgIfSRHT29sbL1y4INUCALwvAOSIGqA0aDQautXYkPo3mSgUCpdJKioq3DqcINoVklNdCKIOOTExwWO73W6vqKgolXaAqLe3Vzk5Ofn3neqgnp4eTExM5GDR0dEuk9TW1koAzp8%2F76KjBkbyyMhILlBn0ul0v5eVlX0FAB8AwCsup6G%2Fv79QGFI1%2B%2Fv7u%2BSvoaFBCnTt2jVJTheYoMuXL7v40M165swZSV9dXf2d4x4Ic5nckQqNSIPo%2B7QK6mI0Dg0NxZs3b3IgSpOYZHCQXmfI74ewsDCWHTt2jCtf5F68LYxG47hU%2Fc6EiIkCJd2C8gskNzeXv6nnHzlyhAMKm87OTm67otioYKkz3r17l5sWyTIzM6VdKCkpKfIEoFgYxMbGslNERARfKETUfulM%2F9ttWFxc7NKqRWsmINPT0yxrbGysBIBAOYDvxaUigq1fv54dzGbzlN1uZySUgvz8fE6H811BjUukx2azLczMzOhovGPHDsmuq6tLFHc9AETLAZSRklAKh6ioKHZQq9VNZWVlXxoMhj%2BdK9poNHJDou12HK%2Bl%2B%2FfvdymVys9GR0fbSJaRkSHFa29vZ7vOzs5aAHhdDoDuA97y%2BPh4l7Pf2tpaDQBvAEBoaWmpsq2trUar1bYbDAa1Xq8fHB0d%2Fa2pqelcfn4%2B5fZDemzMzMx84%2Fwko6IWKaiqqvoWABLkAFZYLBZeIa2KGhA9IEwm00RiYmIuAMQ5mQcDQDwAJDuaSSoAJAEA%2FRMEOOKFWq1WPS3o%2BvXrOD4%2BzpNPTU2Nrl69%2BiMAeNWtEE0mU%2BS9e%2FdarFbrnM1mmx8ZGWlTKBQfA8C7AOALL0hqtfo1rVbbOj8%2FP202mycGBwebkpOT8wDgHbdnuRP5O1ajcDCNPf%2FNPB%2BtdMTIBIAMAHgLAPxeIh78t%2Bgv9Dhv7cPQYIEAAAAASUVORK5CYII%3D&label=Bugs&labelColor=%23933&color=%23933)
 ![GitHub contributors](https://img.shields.io/github/contributors-anon/sameerasw/my-internet?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAChUlEQVR4nO2ZP4jUUBDGoyAIFmKj4j9OwU4bCxGxsBfF7k5OOxFB7xQLba3FxlL802lxYKPI2Rw2grg3s8lMVli4wkIUG0FvV1TcvU%2BSDfHWzWaTbLJJIANfE8K83%2Fdm8njvxTCqqKKKKgofoMY%2BsM6B9RVYmyBtg%2BUnSD%2BBdBEsN2GaU5HzWdZ%2BsN7q5ZPPXq62m7s3xlXU7L3jg4vsAckjsHbAihFy3nkSNrA7EaRPI%2BcjeQjT3J0MnvQsSFoRBvpPsgq2pwfy1eVc8nxyJia8XANJN%2F5gnkjWQHLdz8d6w32WPF8XpPNxZj45%2FHoTbE%2BDrZmx4HmdiVGV8Ho%2BQZlDy7%2Babj7eFdY6j9MbLDM9CFsqo6wOeavjdEpQ788XAA6RRHIlyMBi7mAcVfIyqP9X8gfTqGoGGWiVqIVagwZYvucOxpH1LagC78tTAW0EVEAXcgfjyFoIWoVmS1SB2QADtLUkH%2FIPqG4bMOC10Z0CACJccjcQ3jVgWdvT3Xyl3jptvGvsHGrAq8Ll3EF5qOZC4V0DwAawLhWwdd4A2DjSgGvire4A6ccCwX%2BJfcjHsnnUvS3IG57kN8g6EQveN8HWabD%2ByRG%2B6xxJE8H%2FM6HnUzkjx4dfA%2BulseD7DvqTbacOSC6mAu%2BbWLZPOrvA7Gde2yA9lSq8b6JmHcp2dZKvqNvHM4H3TZjmFEgkAwNN1OsHM4X3Tbz%2BsBks91L8YJ85m8mJwPcZYfuCd6ucFPyXc405cfA%2BEySHnRNSopYhOWIUIUC0CSy3I12M9db3%2B7CsLUbRAiTHvJ8Uw%2BBXEm8LJlqN3vV8q28%2F43z0RZz10N9IpM%2FB8gI1PTD0xSqqqKIKo8zxF446dIwDFfxzAAAAAElFTkSuQmCC&logoColor=%23fff&labelColor=%23936&color=%23936)
 ![GitHub Discussions](https://img.shields.io/github/discussions/sameerasw/my-internet?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM%2FrhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA3UlEQVR4nO2YsQ6CMBCG%2B85W4yDKom8g0TgQXOsjOFWMCTDAI7jd1EkWlzOoNQwYB4hU83%2FJDeRC%2BXK5XhuEAAB8RgYxuxiiLqiJnQoJQUIFGT2osUkIY%2BYBBjV94SRRuWEvTHgSJqwK03letxWsFraHuBemnef13wuqwtw%2FUi2%2By03neY3bDOE%2ByL3eXjR6kFBB7r3vdJtBDUH69QrKhqi%2FsD9f2d9mZS%2B%2FPpqoC1Zysyi9jDenuXAF%2BRR0Us4KOitnBadRVg5Xx4VwERnEPFo7WDnLYHnwXw9AvOUG4xjm0Nm7Ww8AAAAASUVORK5CYII%3D&label=Discussions&labelColor=%23333&color=%23333)
@@ -20,17 +19,16 @@
 ![Mozilla Add-on Rating](https://img.shields.io/amo/rating/zen-internet?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEjklEQVR4nO1Z70tkVRh%2BdK2VrDQtdcLU1BR%2FMCqoRENGSvoP5D%2BQ4HwaTAr8stBXYfyknyQItdwscUUr5kvNRlNEsUQrySCupgz%2BHBghYVadcd54D%2BfI9XqdGe1e9xr7wIFhzjnP%2Bzzn3LnnvO8AT%2FH%2FRD6AKACSLSq%2FuzG4pxGv2ixuCF4EEGfRCwsLokkDJzdlF75mwU1NTZRIJIjR0tKiTHwFm%2BN5ADEWOzc3Rwr8WRqIyx2yLb5kofX19XRycnJqgHeisbFRmbgLm%2BI5tfozMzOkB38nDcTkTtkOn7PAurq6M6uv3QWn06lMTMKuqz89PU0XgfvsugvjLKy2ttZw9RW4r6GhQZn4DDbBswCOWdTU1BSlAo%2BRBnhONmyAT1lQVVUVxWKxlAbi8TjV1NQoE2PXKZRX610AdwDMAHgIIAwgwWImJiYoXUxOTioDCcnxUHLekTGuvDOZAJwAPgTwBYDfAWwBeGxwtzltzc3Naa2%2BAo%2FlOUjCKR8xZe6eNPc2gGcuEv%2B%2BWk2jlpGRQaWlpdTR0UFut5uGh4dpfn6egsGgeCwuC54TDAYFB3MxJ3NzDI6VxFhCaj0HdkoFBQXU3t5Ovb29NDQ0RLOzs7S4uEjRaJSuC9FoVMTk2KyBtbAm1iZN%2FGlkQNwgA4EA2RWBQEB7pzqD22qL2traKBKJkN0QiUSENs2jdNvQgLoKh8NhspP41tZW%2FW%2FhjAHGsnYAn6pbW1tPWjvt7u5q71CqsdZzeA3AinYgHzibm5tPTPzOzo726qHa3wBev%2BhVWgzgL%2B2E6upqCoVC1y5%2Be3tb3GwNVr4EKVAEYFE7saysjFZXV69N%2FMbGhria6MQHAbyKNPGKfNeeEvABs7KyYrn49fV1qqio0ItfAuDAJfESgN%2B0RMXFxbS0tGSZ%2BOXlZSopKdGL%2FwPAy7gicgH8qiV0OBwikBXiHQ6HXvwDM0oxnDnd1xJ7PB7TDXg8Hr34n82sYOQA%2BF6Re71e0w14vV6t%2BJ8AvAAL8l5xrfb5fKYb8Pl8SvxjGcsScHnQknMhFAppS5CWoIED5ObmnpYMzUZeXp4yUWeFgY%2BZ3OVykVVwuVzKwEeWlcw5c7IKbrfb0lI8H%2BU0MjJyqVOVW7oYHR3VXhtMxz9M7vf70%2FpB9vX1UVZWFmVmZlJPTw%2Btra2lnOf3%2B5UBjmUqMlXCv7e3d6EA7hsYGKDs7OxzyTh%2Fx33J5ofDYW3izjFNw1tMXFRUZBj44OBAJN%2F8hkpRKqGcnBwaHByk%2Ff19Qy6OIce%2BaaaBT5i0s7PzTLCjoyMaGxvTBjWq7Yiyo77l5%2BcL0%2FpqB8eQYzimafiOSfv7%2B0WQ4%2BNjUYkrLy9PVrvhv5reAFAmS4ii6qFvhYWFwsjh4aHg5hiy71szDYh8uaurSwg3SDa07RtZ3dPDKfsM51VWVtL4%2BDh1d3cnzXuvih9TPdsAfgHwThpc%2FGz%2FkAbffTMN3E0SiO%2Fs3Vfg5DkPkvCa%2Bl9alzoHdDkq1ygz%2FgNvhuQQh6Smcaz3YDKqZJLxCMAHAG6ZyH1Lcq4CCMhYT4GbgH8B6OxHWs51iP4AAAAASUVORK5CYII%3D&label=Zen%20Internet%20ratings&labelColor=%23963&color=%23963)
 ![Mozilla Add-on Users](https://img.shields.io/amo/users/zen-internet?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKU0lEQVR4nO2YaXBV5R3Gr%2F3e6sfaTttPbaed%2BsmZTqfTD1ZFZA3IFkEFBBWBIiAWAYMiKCib7A4iiImAGAQECSa5CblJCFsWspD13P2efXvPec96g0%2FnnHu1fqUiYTo8M%2F%2BZO2fuJL%2Fnef935n1OJHJP93RPt00A7hPz%2BfE55%2BbptJMXGCvv91t5v9fy%2BW7qn%2Bqi%2BfHBdyJ3o3gffxO84XjGvQnGvYkeaxjtNI9LNI8mw0eT4aHF8NFKPabd8v8auZuU9YZnZ1wMJ5ybGLBvotsaxmWaRz3xcU5zcVJxcEK1cVKxUaU7aCLe8GXqzY7cDUo7%2BdGMnf%2B2zx4OU%2B%2B08rhi5lGn%2BziluqiQbOwXLOzhLewTLRwWLVQqDmp159sW6o4dUXgGuL%2Bf%2BvZ1mkcrzeOKkccl00cjyeNr1cMRycU%2B3sbGHMUbGYKyjIGNrIk9AsXnsoV6w6ZNEn4%2BYgb6rfzWdstHs%2BGjnniI6n4451QPX8guDooOPuAsrMuaWJ4iWJDQ8a%2BkjnVZA%2FskA6d0EzHD3DxiBjqor8aIj%2FO6F67LCdlFpeziqOTikOhgN2%2BF6a9OGyH43LiGmYyCpWkZ7%2FEqKlQdtYahjgh8l%2BH%2B6YrhoUpzcVxxcEiwcaA4H%2FI2dnAWNuVouDbLUgQvJnTMYlRMZ0TMS3FYy0rYL8uoMgiaCPnjHTfQRvNjY4aHE4qNA6KNbSzFluIE4OuzZpj8suLqzGY0zBiSMS3OYWYqjX%2BzOeySBXxlqIhR%2Fck7bqDV9EqjxMUR2cYO3kJZ1sCaTGFeTxt4NUWwJKnjpe%2FhFUxjBDyVSGN6ZgjL%2BRQ%2BUHI4aUqI2UrpHTdwyXQerdFdHJYp3mdpCBzs%2BeKkjkWJAvjzcQ3PMGoheUbAlEQWk1JDmJ7rxasigx1aBqdNAY2O9sgdN9BkWb%2Bq1V2US4EBA68kCeYwWpj2c4wW7nvpkILpjIRpcR5TEpkQfkK2B89yPVgtDWAfSeNrS0ADFR%2BMjIQuEDt%2BVKHYxht4NaPj2biCGYwUQgc%2F1hA8nsPkZBIl6UGMz3ZjEteBBVIPNqiDOGSmUGOLg5GRUgN15p3VTeyXCN5mVSxOC3g6wYWrEuz65GQiTH1iphfjcp2YyLVhrngdr6s3sJMw%2BNLOocET5oyYAQA%2Fu2CaQ19oBLslGWtZHotzGczKMpiSGUBJphcTc12YwLVjqtCK%2BXIHVmrd2EL6UWElUWOzg8HfiIykmm31d1Fq0GOait0Kj%2FVSBivEBBYKA3iB78E8sQsvyp1YqnZhrdaDbUY%2FPrXiqLJztMHO%2FiZyN%2BiCS35fa6pcpSnhgM5iu5bCu0oc69QBrNP6sEHvx1ajDx%2FSIRyzU6h2s0LMZf8cuZtUo6r3R21lT5UpDJ%2BwcvjMzOAwTeGwlUC5nUSlncZZJztc4%2BZ2n4P8i8jdqnpoD9R50qw6V%2FisxuWba1y2OeqzFVGPn1mPxAMjzXdPd50A3Md43kNDrr%2B0z%2FZP9Fr5G72WTzqp73ZaPq5bPtpN322nHmkzvRvXTK%2By3fSXXjO9h0a04A9Z%2FsODdv5An5M3u6w8OqiPq6aHS7RQcGLEQz1xEVz4qjUP53UX1cWJEgcNxEOj4RktxD1wyfIfvmPgfbb%2Fjz47fy2okdfMfPimIbhW1%2BkeajQXVbqLs6qL00HBURwclx0ckWyUyzY%2BFW2USxbKZQtHZAfHFRunVQc1uoMYcbouWu6Enwz8BsWD3ZZX2xZWSA9R4qFKdfCV6uDLAFRxcOw7WNHGJ2JQbix8KFjYxVNs50xsZoOLn4n3WBObucKzvYKJT2QDlRrFeWKhgdBYo23%2F9rbCd1n5KW2m6zWGDcwJ3ypUyAXAfUXAnZyFnXxxOCvswluL5ebtrIk3MgZeSxEsDa7dKR1LUjqWp3Wsyal4h9ewXdBwSNZwQtOCmuk1WMaU2wLfZuY3tBgevtFdfC4VoLfxZti4yjIEqzIkLDFvZQrP3skVZkPWDMt8UClXFptZ0BVeiBeu26VDKmbGJcxJ8liY4bCSZbFB4LBLEVCuyzhnqmiwyFs%2FDp76rwepn1QdHJSs8NjXZIsgCS0sLcHnpUmCFSmClWkStrFV6UIrCxJfXmxmLyd0zP8BfKEncOGtdUqKwazsABbwQ1gtMtisJnFQz%2BEslVFvaev%2BJ%2FhrND86ZvjhuuwVKN7MESxOKXiGkcKGNXNIDcvLvHjByMKimSXFCdrZoiJ4kPrcYjsrlJygK3DFksMUr9vXUcK34jmxHcuVbmzSBnHASOOszaPBkZ%2B4ZQMXDbf9pGZjL2%2FijayKl9I8piUzmBpnMY3hwwQDmMBIkGoAGJiZX5zgc1ApA5MFcBUzGBnTGQFTv4ePY2KmD%2BOzXRjDXcUosRGj5ChK1Ua8ol%2FDJqMXFVYaNbbQessGGg1XOarY2MLrWJZjMTW436cHw3YVFJYgwQBmevFEAsCng73%2BwQTPApMF8EJDmxrP4alkqph8XxH%2BGp4QmvGYHMUj2tcYpZ%2FF80YMbxkdOGgxqLY55dYNELf1C8XCLlHHKk7A%2FFwSk7J9KEn3h%2F88gAiMBGkWTiQwIxanUClDaEYIzQYnF6QetLQgiAnFljbme%2Fg6PKKew6P6GUwlNVhsNGMj7Qq7Q9Thrt6ygYum83i17qBCMbBdULCK4zGfjWNKti%2Fc2ZL0QGgkOJHwhxiayYWg303QhwPowOx%2F62VfWOzH5TrwJHcFTwhNRfjzGKWfwwxSi0VGC9bTDuy3BnDGyaLO4R%2B7ZQPFU1jxDbFQrhDsEGWs5Tgs4hKYmevHpGwPJmRuYGK6P0w0MBPs9OQfTOHZUGg2MF0A78QYthWj%2BUsYJcbwmFyLx9XzKNFr8RyJYZlxBRtoZwh%2F2skg6vJlkR%2BjJkrXVBPr22Nq0HsVvCNyWMFn8BI3iFL2BiblejAh2x3CBYaC1Qhhw883wjcR43OdYeJjuFY8yV8OUx8l1WO0EkWJWodZWgwLSQtWG63YQntwyGJwxs58G3VzqyK3Qxcta0KUUPeEZuCQqmK7JGK9mMNrQhIL%2BUHM4XpRynVjMtuJEvY6xrMdGMe2YSzbirHcVYzhr2Cs0IIx4kWMkxoxWWlCqdKMuVoLFutXsYp0YJPRg310AEftFKps1mlwxXGR26nLlP6ywaRfnScmjms6PlYlfCDzeFfOokxO4jUxjiXCABaIfZgn9mCu0Ik54nXMljowW2rHbLkN8%2BVWLFDa8YragZV6J94k3Xjf6MU%2BOojPrCTO2DlEXaG%2B1pJ%2FHfmp1EzI3y%2BYtPm8aaKSaCjXFHykCtipstiiZPGuksLbShxrFQZlyiDKlAGUqf14U%2BvHBm0AG0k%2FtpIh7KVDOGgmccxK44zDIuqI1y840j8jd0oXTfOhBtPcU0dNtcrUcYqo%2BJxIqCAiPiEsDhAWH5EM9pMMPjYKc9jM4CjNoJIG1wQOtY6o1NnSrnpP%2BUtkJBW8349Zxst1lByps%2FT2GqpKtVS1q6kyXE3l4VpbtWttWYxacnu9o1Q0OMqCmCv%2BYUSh7%2Bme%2Fk%2F0Hx0t%2FqyC2E%2FqAAAAAElFTkSuQmCC&label=Zen%20Internet%20Users&labelColor=%23952&color=%23952)
 
-
-
 Custom CSS for websites to make the internet beautiful. Transparency being the main feature, these themes also include removal of distractions and further useful features for each website.
 
 ![Screenshot](https://github.com/user-attachments/assets/a938e6b8-b120-4ba9-bc39-0ec932856dda)
 
 ## [How to get transparency in Zen](https://www.sameerasw.com/zen)
+
 [![web-preview-zen](https://github.com/user-attachments/assets/dae63448-0fa8-44a7-a294-e18561de9389)](https://www.sameerasw.com/zen)
 
-
 ## Contributors
+
 <a href="https://github.com/sameerasw/my-internet/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=sameerasw/my-internet" />
 </a>
@@ -50,24 +48,24 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
 9. For theming similar domains like app.arduino.cc , login.arduino.cc ..... similar urls with `prefixes`, you can add a general style with a leading `+` symbol when creating the stylesheet. ( `+arduino.cc.css` ) [example](https://github.com/sameerasw/my-internet/blob/main/websites/%2Bnixos.org.css)
 10. Similarly, for theming websites with a shared domain but with different `suffixes` (like google.com, google.lk...), you can add the `-` symbol to the start of the stylesheet file name so it will replace the provided domain of the file name's domain. (`-google.com.css`). [example](https://github.com/sameerasw/my-internet/blob/main/websites/-ebay.com.css)
 11. [optional] Each comment of the same file should have a unique domain specific identified prefix (yt- ytm- gh- ...) which will help the browser to separately apply themes.
-  
+
     ```
       /* yt-transparency */
       :root{
         --colorBgApp: transparent !important;
       }
-  
+
       /*  yt-no footer */
       footer.app-footer {
         display: none !important;
       }
     ```
 
-12. Always make sure the first feature is `transparency` and also use the exact feature name without a difference allowing the global transparency toggle to work. Prefixes with `-` are acceptable. 
+12. Always make sure the first feature is `transparency` and also use the exact feature name without a difference allowing the global transparency toggle to work. Prefixes with `-` are acceptable.
 13. Don't keep the firefox selectors if you are coying over from the userContent.css (remove `@-moz-document domain(" ")` )
 14. Once comitted to the repository, github actions will parse the css file and update/ generate the [styles.js](https://github.com/sameerasw/my-internet/blob/main/styles.json) and then will be deployed to the github pages allowing the add-on to fetch from it.
 15. _**[NEW!]**_ Now you can add descriptive comments to the css file which will be skipped during parsing and generating the styles.json file. BUT, make sure to start those css comment text with the `@` symbol as below examples. BUT, Any comment inside a feature in the css selectors or in properties will be skipped anyways.
-    
+
     ```
       /* yt-transparency */
       /* @this comment will be skipped */
@@ -76,7 +74,7 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
         /* @ this comment will be skipped, but leaving it will cause no harm */
         /* This will be skipped */
       }
-  
+
       /* @ this comment will be skipped */
       /*  yt-no footer */
       footer.app-footer, /* This will be skipped */
@@ -84,8 +82,8 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
         display: none !important;
       }
     ```
-    
-> 
+
+>
 
 ### Thank you <3
 

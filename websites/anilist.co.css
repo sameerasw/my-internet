@@ -52,21 +52,24 @@ body,
 .about .content-wrap[data-v-5c30286e],
 .overview[data-v-5c30286e] .content-wrap,
 .hohTable,
-.hohNotification{
+.hohNotification {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
-
 /* no footer */
-.footer[data-v-0165744a]{
+.footer[data-v-0165744a] {
   display: none !important;
-} 
+}

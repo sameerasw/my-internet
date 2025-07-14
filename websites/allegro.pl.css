@@ -1,19 +1,38 @@
 /* allegro-transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, [data-role="header-secondary-bar"], .opbox-sheet, .opbox-sheet, [role="presentation"], [data-role="app-container"] > div, [itemprop="description"], [data-item="true"]{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+[data-role="header-secondary-bar"],
+.opbox-sheet,
+.opbox-sheet,
+[role="presentation"],
+[data-role="app-container"] > div,
+[itemprop="description"],
+[data-item="true"] {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.carousel-item[data-role="offer-tile"]{
+.carousel-item[data-role="offer-tile"] {
   border-radius: 1em;
   padding: 10px !important;
 }
 
-
 /* allegro-no footer */
-footer, [data-box-name="metrum-footer-partial"]{
+footer,
+[data-box-name="metrum-footer-partial"] {
   display: none !important;
 }

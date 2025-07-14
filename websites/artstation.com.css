@@ -1,12 +1,28 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #main-nav > ul, channels-list, active-channel, .project-sidebar{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+#main-nav > ul,
+channels-list,
+active-channel,
+.project-sidebar {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
- .modal-layout{
-   border-radius: 1em !important;
- }
+.modal-layout {
+  border-radius: 1em !important;
+}

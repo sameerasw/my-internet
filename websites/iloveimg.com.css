@@ -1,45 +1,53 @@
 /* transparency */
-body, .tool__workarea, .block--white {
-    background: none !important;
+body,
+.tool__workarea,
+.block--white {
+  background: none !important;
 }
 header {
-    background: none !important;
-    opacity: 0 !important;
-    transition: ease-in 100ms !important;
+  background: none !important;
+  opacity: 0 !important;
+  transition: ease-in 100ms !important;
 }
 header:hover {
-    opacity: 100% !important;
+  opacity: 100% !important;
 }
 
 /* Increase Readability */
 .tool__header__subtitle {
-    color: grey !important;
-} 
-.tools__item h3, .tools__item:hover h3, .tool__header__title, .infounit__title {
-    color: white !important;
-}   
-.nav-actions > a:not(.btn), .title1, .subtitle1 {
-    color: white !important;
+  color: grey !important;
+}
+.tools__item h3,
+.tools__item:hover h3,
+.tool__header__title,
+.infounit__title {
+  color: white !important;
+}
+.nav-actions > a:not(.btn),
+.title1,
+.subtitle1 {
+  color: white !important;
 }
 
 /* Hide Unwanted Elements */
 .home-title {
-    display: none !important;
+  display: none !important;
 }
 
 /* Glass Effect */
-.tools__item, .tools__item:hover {
-    background: rgba(0,0,0,0.4) !important;
-    text-align: center !important;
-    margin-top: 1vi !important;
+.tools__item,
+.tools__item:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+  text-align: center !important;
+  margin-top: 1vi !important;
 }
 
 /* Hide Other Elements, to center */
 .tools__item__icon {
-    position: relative !important;
-    left: 40% !important;
+  position: relative !important;
+  left: 40% !important;
 }
 
 .tool__header {
-    margin-top: 13% !important;
+  margin-top: 13% !important;
 }

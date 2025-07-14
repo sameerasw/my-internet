@@ -4,7 +4,11 @@
   --theme-background-color: #00000000 !important;
   --color-borders: #00000000 !important;
   --color-light-shadow: #00000000 !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 body,
@@ -19,12 +23,20 @@ html.theme-dark .C6IaXYew:not(.K1xhz7U5):not(.CwoXMwaR)::after {
 .C6IaXYew,
 .ThfRMqwq {
   background-color: #00000000 !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 .menu-container {
   background-color: #000000 !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 .settings-main-menu {

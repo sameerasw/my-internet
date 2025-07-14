@@ -6,36 +6,62 @@ nav,
 .nav,
 navbar,
 .navbar,
-#navbar, 
+#navbar,
 header,
 #header,
-.header, header::before,
+.header,
+header::before,
 app,
-#app, footer,
+#app,
+footer,
 .sidebar-wrap,
-section, .main,
-#__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before,
-#root, .min-h-screen.bg-white,
-.app, .AppContainer,
-.app-root, #wrapper,
-body[data-theme="dark"], body[data-theme="light"],
-#pass-sidebar, .side-bar,
-#main, .sidebar, .global-content__content,
-main, .header-top,
-#content, #cu-identity,
-section, .l-root,
-#__next, .landing-hero,
+section,
+.main,
+#__next,
+.sidebar-wrapper,
+.sidebar-footer-wrapper,
+.sidebar-footer-container::before,
+#root,
+.min-h-screen.bg-white,
+.app,
+.AppContainer,
+.app-root,
+#wrapper,
+body[data-theme="dark"],
+body[data-theme="light"],
+#pass-sidebar,
+.side-bar,
+#main,
+.sidebar,
+.global-content__content,
+main,
+.header-top,
+#content,
+#cu-identity,
+section,
+.l-root,
+#__next,
+.landing-hero,
 #navigation-wrapper,
-#global-navbar, .layout__content-wrapper,
-.head.notfixed, .main-container,
-#app > div, .btm-nav > a, .oc-content--main,
-body.dark_mode, body.light_mode,
-text-div > textarea{
+#global-navbar,
+.layout__content-wrapper,
+.head.notfixed,
+.main-container,
+#app > div,
+.btm-nav > a,
+.oc-content--main,
+body.dark_mode,
+body.light_mode,
+text-div > textarea {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 .theme-light .navbar #tabs a {
   border-left: none !important;
@@ -46,15 +72,19 @@ text-div > textarea{
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer, mfe-footer-pharos-footer, .footer, #footer{
+footer,
+mfe-footer-pharos-footer,
+.footer,
+#footer {
   display: none !important;
 }
-a[href="https://privacy.microsoft.com/privacystatement"] {
+a[href="https://privacy.microsoft.com/privacystatement"]
+{
   display: none !important;
 }
 
@@ -65,29 +95,31 @@ a[href="https://privacy.microsoft.com/privacystatement"] {
 
 /* transparent search bar */
 .input {
-	background-color: transparent;
-	color: inherit;
+  background-color: transparent;
+  color: inherit;
 }
 
 /* center content */
 #content .column {
-	margin: auto !important;
-	width: 70% !important;
-}
-.lilo-search .container {
-	margin-left: 0% !important;
-  margin-inline-start: none !important;
-}
-.column.is-11, .column.is-11-tablet {
-	width: 80%;
-	margin: auto !important;
-}
-#content .column {
-	margin: auto !important;
+  margin: auto !important;
   width: 70% !important;
 }
-.column.is-11, .column.is-11-tablet {
+.lilo-search .container {
+  margin-left: 0% !important;
   margin-inline-start: none !important;
-	margin: auto !important;
+}
+.column.is-11,
+.column.is-11-tablet {
+  width: 80%;
+  margin: auto !important;
+}
+#content .column {
+  margin: auto !important;
+  width: 70% !important;
+}
+.column.is-11,
+.column.is-11-tablet {
+  margin-inline-start: none !important;
+  margin: auto !important;
   width: 60% !important;
 }

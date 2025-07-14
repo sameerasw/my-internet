@@ -19,33 +19,54 @@ app,
 main,
 #content,
 section,
-#__next, footer,
+#__next,
+footer,
 #navigation-wrapper,
 #global-navbar,
-.head.notfixed, .bg-embed-highlight,
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+.head.notfixed,
+.bg-embed-highlight,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-article, aside, nav > .container > div{
-    box-shadow:  light-dark(#fff3, #0003) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
-    background: none !important;
-    background-color: light-dark(#fff8, #0005)  !important;
-    border-radius: 1em !important;
+article,
+aside,
+nav > .container > div {
+  box-shadow:
+    light-dark(#fff3, #0003) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+  background: none !important;
+  background-color: light-dark(#fff8, #0005) !important;
+  border-radius: 1em !important;
 
-    @media (prefers-color-scheme: dark) {
-    box-shadow:  #0003 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
-    background-color:  #0005  !important;
-
-}
+  @media (prefers-color-scheme: dark) {
+    box-shadow:
+      #0003 0px -36px 30px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px,
+      rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px,
+      rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+    background-color: #0005 !important;
   }
+}
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

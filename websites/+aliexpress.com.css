@@ -1,35 +1,50 @@
 /* aliexpress-transparency */
-html, body, nav, header, .faas-home-page #_global_header_23_, .header-dir-ltr, [data-tticheck="main"], .comet-v2-anchor, .structure-label--item--mgqe_zb, .action--wrap--BWrENF4, .action--stickyWrap--RtlPq66{
+html,
+body,
+nav,
+header,
+.faas-home-page #_global_header_23_,
+.header-dir-ltr,
+[data-tticheck="main"],
+.comet-v2-anchor,
+.structure-label--item--mgqe_zb,
+.action--wrap--BWrENF4,
+.action--stickyWrap--RtlPq66 {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* aliexpress-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* aliexpress-no footer */
-.footer-wrap, .bgImageWrapper_3110068d{
+.footer-wrap,
+.bgImageWrapper_3110068d {
   display: none !important;
 }
 
 /* aliexpress-sticky header */
-#_full_container_header_23_{
+#_full_container_header_23_ {
   border-radius: 1em !important;
 }
 
 /* aliexpress-borders */
-[data-spm="sale_banner"]{
+[data-spm="sale_banner"] {
   border-radius: 1em !important;
   overflow: hidden !important;
   margin: 1em !important;
 }
 
-a._1UZxx{
+a._1UZxx {
   border-radius: 2em !important;
   padding: 1em !important;
 }

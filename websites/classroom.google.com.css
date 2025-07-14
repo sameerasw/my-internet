@@ -1,18 +1,31 @@
 /* class-overlay fix */
-[role="menu"]{
+[role="menu"] {
   background-color: var(--darkreader-background-fffffff2) !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* class-transparency */
-.OX4Vcb, nav, .Tabkde, .Aopndd, .RIDjNe, .mwJvDe .KEDCCd{
+.OX4Vcb,
+nav,
+.Tabkde,
+.Aopndd,
+.RIDjNe,
+.mwJvDe .KEDCCd {
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* class-darkreader */
-:root{
---darkreader-background-ffffff: transparent !important;
+:root {
+  --darkreader-background-ffffff: transparent !important;
 }

@@ -4,7 +4,9 @@ body,
 .inside-article,
 .widget,
 .rntbox,
-.comments-area, .elementor-post__card, .rntn-top-menu {
+.comments-area,
+.elementor-post__card,
+.rntn-top-menu {
   background-color: transparent !important;
   background: none !important;
 }

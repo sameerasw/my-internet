@@ -1,23 +1,38 @@
 /* medium-transparency */
-.c, a, h1, h2, h3, h4, h5, h6, span, p{
+.c,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p {
   background-color: transparent;
   color: #fff !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 
-  &:hover{
+  &:hover {
     color: #bbb !important;
   }
 }
 
-.ex, .ae{
+.ex,
+.ae {
   border: none !important;
 }
 
-svg, .bk path{
+svg,
+.bk path {
   fill: light-dark(#fff, #000) !important;
 }
 
 /* medium-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }

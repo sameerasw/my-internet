@@ -1,8 +1,38 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, ytcp-navigation-drawer, ytcp-header, .header, #header, ytcp-table-header, .floating-column, .cell-header, ytcp-filter-bar, #row-container, #footer-container, #background, ytcp-primary-action-bar, ytcp-sticky-header, ytcp-ve, #sticky-header, ytpp-signup-overview, ytmus-library-table, ytmus-library-row{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+ytcp-navigation-drawer,
+ytcp-header,
+.header,
+#header,
+ytcp-table-header,
+.floating-column,
+.cell-header,
+ytcp-filter-bar,
+#row-container,
+#footer-container,
+#background,
+ytcp-primary-action-bar,
+ytcp-sticky-header,
+ytcp-ve,
+#sticky-header,
+ytpp-signup-overview,
+ytmus-library-table,
+ytmus-library-row {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }

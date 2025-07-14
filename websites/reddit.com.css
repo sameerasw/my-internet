@@ -1,10 +1,17 @@
 /* reddit-transparency */
-#subreddit-right-rail__partial aside, header, .grid-container, comment-body-header, shreddit-comment-tree, #left-sidebar, #flex-left-nav-container {
+#subreddit-right-rail__partial aside,
+header,
+.grid-container,
+comment-body-header,
+shreddit-comment-tree,
+#left-sidebar,
+#flex-left-nav-container {
   background-color: #00000000 !important;
   border: none !important;
 }
 
-shreddit-comments-sort-dropdown, shreddit-comment-tree{
+shreddit-comments-sort-dropdown,
+shreddit-comment-tree {
   --color-neutral-background: transparent !important;
   --color-neutral-background: transparent !important;
 }
@@ -16,17 +23,17 @@ html {
 }
 
 /* reddit-no chat feed */
-[source="chat_module_home"]{
+[source="chat_module_home"] {
   display: none !important;
 }
 
 /* no recent posts */
-div aside recent-posts{
+div aside recent-posts {
   display: none !important;
 }
 
 /* reddit-hide elements */
-hr{
+hr {
   display: none !important;
 }
 
@@ -45,18 +52,20 @@ faceplate-dropdown-menu {
   border-radius: 1em 1em 0 0 !important;
 }
 
-shreddit-comment{
+shreddit-comment {
   --color-tone-4: light-dark(#000, #fff) !important;
 }
 
 /* reddit-hover */
-[expanded="0"] #flex-left-nav-container, #flex-nav-buttons, #left-nav-drawer.rpl-dialog * {
+[expanded="0"] #flex-left-nav-container,
+#flex-nav-buttons,
+#left-nav-drawer.rpl-dialog * {
   background-color: light-dark(#fff, #000) !important;
   border-radius: 1em !important;
 }
 
 #flex-left-nav-container,
-#right-sidebar-container{
+#right-sidebar-container {
   transition: opacity 0.3s ease-in-out !important;
   opacity: 0 !important;
   &:hover {
@@ -65,22 +74,31 @@ shreddit-comment{
 }
 
 /* glass effect */
-shreddit-post{
+shreddit-post {
   padding: 1em !important;
   margin-bottom: 1em;
 }
 
-shreddit-comment{
+shreddit-comment {
   border-radius: 1em !important;
   padding: 0.5em !important;
 }
 
-article shreddit-post, shreddit-post, [source="comment_composer"] button, shreddit-comment[depth="0"]{
-    box-shadow:  rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px;
-    background-color: light-dark(#fff8, #0005) !important
-  }
+article shreddit-post,
+shreddit-post,
+[source="comment_composer"] button,
+shreddit-comment[depth="0"] {
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px;
+  background-color: light-dark(#fff8, #0005) !important;
+}
 
-  /* no ads */
-  shreddit-ad-post{
-    display: none !important;
-  }
+/* no ads */
+shreddit-ad-post {
+  display: none !important;
+}

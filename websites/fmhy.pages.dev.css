@@ -1,12 +1,12 @@
 /* fmhy-transparency */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
   --vp-sidebar-bg-color: transparent;
   --vp-nav-bg-color: transparent;
   --vp-c-divider: transparent;
 }
 
-body{
+body {
   background-color: #00000000;
 }
 

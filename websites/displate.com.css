@@ -15,37 +15,45 @@ app,
 .app-root,
 #pass-sidebar,
 #main,
-main, [data-testid="brand-of-the-week--feed"],
+main,
+[data-testid="brand-of-the-week--feed"],
 #content,
 section,
 #__next,
 #navigation-wrapper,
 #global-navbar,
-.head.notfixed, #sticky-bar,
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+.head.notfixed,
+#sticky-bar,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-header{
+header {
   border-radius: 1em !important;
 }
 
 /* hidden */
-[data-testid="top-bar"]{
+[data-testid="top-bar"] {
   display: none !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

@@ -1,5 +1,6 @@
 /* discord-transparecy */
-:root, .theme-light,
+:root,
+.theme-light,
 .theme-dark {
   --background-secondary: #00000000 !important;
   --background-primary: #00000000 !important;
@@ -11,45 +12,93 @@
   --background-modifier-accent: transparent !important;
 }
 
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .callContainer_cb9592, .bg__960e4, .tabBody__133bf, .sidebarList_c48ade, main, .chat_f75fb0, .page_c48ade, .children__9293f::after, .header__34c2c, .contentRegionScroller__23e6b , .container_f369db, [aria-label="Resize Sidebar"], .visual-refresh .root_bfe55a, main + div, main + div > aside > div, #online-tab + div > aside{
-background-color: transparent !important;
-background: none !important;   box-shadow: none !important;   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important; }
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.callContainer_cb9592,
+.bg__960e4,
+.tabBody__133bf,
+.sidebarList_c48ade,
+main,
+.chat_f75fb0,
+.page_c48ade,
+.children__9293f::after,
+.header__34c2c,
+.contentRegionScroller__23e6b,
+.container_f369db,
+[aria-label="Resize Sidebar"],
+.visual-refresh .root_bfe55a,
+main + div,
+main + div > aside > div,
+#online-tab + div > aside {
+  background-color: transparent !important;
+  background: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
 
-.mainCard_f369db{
+.mainCard_f369db {
   background: none !important;
 }
 
 .floating__01ae2 {
-  background-color: var(
-    --panel-bg
-  ) !important;
+  background-color: var(--panel-bg) !important;
 }
 
 /* collapse sidebar */
-[aria-label="Servers sidebar"] + div:has(nav > #channels),body:has(#channels) [aria-label="User area"]{
+[aria-label="Servers sidebar"] + div:has(nav > #channels),
+body:has(#channels) [aria-label="User area"] {
   width: 0px !important;
   transition: width 0.3s ease-in-out !important;
 
-  .buttons__37e49{
+  .buttons__37e49 {
     display: none !important;
   }
 
-  &:hover{
-  width: 250px !important;
-  .buttons__37e49{
-    display: flex !important;
-  }
+  &:hover {
+    width: 250px !important;
+    .buttons__37e49 {
+      display: flex !important;
+    }
   }
 }
 
-body:has([aria-label="Servers sidebar"]:hover) [aria-label="Servers sidebar"] + div:has(nav > #channels){
-  width: 250px !important;;
+body:has([aria-label="Servers sidebar"]:hover) [aria-label="Servers sidebar"] + div:has(nav > #channels) {
+  width: 250px !important;
 }
 
 /* discord-no borders */
-html, body, nav, header, .app-root,  #main, #content, section, .callContainer_cb9592, .bg__960e4, .tabBody__133bf, .sidebarList_c48ade, main, .chat_f75fb0, .page_c48ade, .contentRegionScroller__23e6b , .container_f369db, [aria-label="Resize Sidebar"], .visual-refresh .root_bfe55a{  
+html,
+body,
+nav,
+header,
+.app-root,
+#main,
+#content,
+section,
+.callContainer_cb9592,
+.bg__960e4,
+.tabBody__133bf,
+.sidebarList_c48ade,
+main,
+.chat_f75fb0,
+.page_c48ade,
+.contentRegionScroller__23e6b,
+.container_f369db,
+[aria-label="Resize Sidebar"],
+.visual-refresh .root_bfe55a {
   border: none !important;
- }
+}
 
 /* discord-other changes */
 img.bannerImg_f37cb1 {
@@ -57,11 +106,11 @@ img.bannerImg_f37cb1 {
 }
 
 /* mistreous ; */
-.app_a3002d{
+.app_a3002d {
   color: transparent !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }

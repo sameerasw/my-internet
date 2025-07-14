@@ -7,112 +7,112 @@ body,
 nav,
 navbar,
 header {
-	background: none !important;
-	border: none !important;
-	box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 button {
-	background: #00000050 !important;
-	border: none !important;
-	box-shadow: none !important;
+  background: #00000050 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 table {
-	background: #00000030 !important;
-	border: none !important;
-	border-radius: 10px;
-	box-shadow: none !important;
+  background: #00000030 !important;
+  border: none !important;
+  border-radius: 10px;
+  box-shadow: none !important;
 }
 
 table tr,
 table th,
 table tbody,
 table td {
-	background: none !important;
-	border: none !important;
+  background: none !important;
+  border: none !important;
 }
 
 /* @Separate table columns */
 table td {
-	border-top: 1px solid #ffffff10 !important;
+  border-top: 1px solid #ffffff10 !important;
 }
 
 /* @Scrolling NavBar(order is important) */
 .VPNavBar {
-	background: #00000050 !important;
-	border: none !important;
-	box-shadow: none !important;
+  background: #00000050 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* @NavBar */
 .top {
-	background: none !important;
-	box-shadow: none !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
 /* @NavBar Translate Button */
 .VPNavBarTranslations button,
 /* @NavBar Configuration Button */
 .VPNavBarMenu a {
-	background: #00000030 !important;
-	border: none !important;
-	box-shadow: none !important;
-	border-radius: 10px;
+  background: #00000030 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 10px;
 }
 
 /* @Code Block */
 [class^="language-"] {
-	background: #00000050 !important;
+  background: #00000050 !important;
 }
 
 /* @Info Box */
 .VPLink {
-	background: #00000030 !important;
-	border: none !important;
-	box-shadow: none !important;
-	padding: 5px;
-	border-radius: 10px;
+  background: #00000030 !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /* @GUIDE */
 
 .VPSidebar,
 .VPSidebar .curtain {
-	background: none !important;
-	border: none !important;
-	box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* @Sidebar Navigation */
 .VPSidebarItem .items {
-	background: #00000030 !important;
-	border: none !important;
-	box-shadow: none !important;
-	padding-left: 10px;
-	border-radius: 10px;
+  background: #00000030 !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding-left: 10px;
+  border-radius: 10px;
 }
 
 .VPSidebarItem .item a {
-	background: none !important;
-	border: none !important;
-	box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* @Bottom Right Shadow */
 .aside-curtain {
-	background: none !important;
+  background: none !important;
 }
 
 .VPNavBar .content,
 .VPNavBar .content-body {
-	background: none !important;
-	border: none !important;
-	box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* Round Images */
 
 .content img {
-	border-radius: 5px;
+  border-radius: 5px;
 }

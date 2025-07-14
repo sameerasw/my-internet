@@ -1,30 +1,45 @@
 /* ddg-transparecy */
-html, body, .desktop-homepage_root__Ikj1_, .site-wrapper, .metabar:not(.is-stuck), .tileview--grid .metabar--fixed::before, #zci-images, .zci-wrap, #zci-videos, main, main > div, main > section{
+html,
+body,
+.desktop-homepage_root__Ikj1_,
+.site-wrapper,
+.metabar:not(.is-stuck),
+.tileview--grid .metabar--fixed::before,
+#zci-images,
+.zci-wrap,
+#zci-videos,
+main,
+main > div,
+main > section {
   background-color: transparent !important;
 }
 
 /* ddg-hidden promo */
-.desktop-homepage_heroContent__4HUFA{
+.desktop-homepage_heroContent__4HUFA {
   display: none;
 }
 
 /* ddg-no home scroll */
-.homepage-cta-section_scrollCta__Wmixn, #features, main > section > div::after, main > section > div > form::before{
+.homepage-cta-section_scrollCta__Wmixn,
+#features,
+main > section > div::after,
+main > section > div > form::before {
   display: none;
 }
 
-
 /* ddg-no footer */
-.footer{
+.footer {
   display: none !important;
 }
 
 /* ddg-transparent header */
-#header_wrapper{
+#header_wrapper {
   background-color: transparent !important;
   position: sticky !important;
 }
 
-nav::before, nav::after, .XvPRmQVeIoCP5lQhICTv.ofDl_1VxUG_EKc3b9E3x::before{
+nav::before,
+nav::after,
+.XvPRmQVeIoCP5lQhICTv.ofDl_1VxUG_EKc3b9E3x::before {
   display: none !important;
 }

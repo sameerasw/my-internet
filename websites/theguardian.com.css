@@ -1,22 +1,40 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .dcr-kohrs2, nav a, nav li::before, nav li::after, header > section, header > nav{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.dcr-kohrs2,
+nav a,
+nav li::before,
+nav li::after,
+header > section,
+header > nav {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-:root{
+:root {
   --section-border: #0000 !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

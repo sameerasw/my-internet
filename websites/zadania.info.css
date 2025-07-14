@@ -1,18 +1,39 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .main, .l-wrap__left--inner, nav *, .u-l-wrap-hidden::after, .u-r-wrap-hidden::after, .l-wrap__right--inner, .l-wrap__right--inner aside, .l-wrap__right--inner li{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.main,
+.l-wrap__left--inner,
+nav *,
+.u-l-wrap-hidden::after,
+.u-r-wrap-hidden::after,
+.l-wrap__right--inner,
+.l-wrap__right--inner aside,
+.l-wrap__right--inner li {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* hidden */
-footer, .header__banner{
+footer,
+.header__banner {
   display: none !important;
 }

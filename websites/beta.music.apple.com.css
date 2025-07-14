@@ -1,43 +1,46 @@
 /* applem-no borders */
-@media (prefers-color-scheme: dark), @media (prefers-color-scheme: light)  {
-  :root{
-  --labelDivider: none !important;
-  --playerDropShadow2: none !important;
-  --playerInnerShadow: none !important;
-}
+@media (prefers-color-scheme: dark), @media (prefers-color-scheme: light) {
+  :root {
+    --labelDivider: none !important;
+    --playerDropShadow2: none !important;
+    --playerInnerShadow: none !important;
+  }
 }
 
 /* applem-transparency */
-body, .navigation, amp-chrome-player::before{
+body,
+.navigation,
+amp-chrome-player::before {
   background-color: transparent !important;
 }
 
 /* applem-no thanks */
-[slot="native-cta"]{
+[slot="native-cta"] {
   display: none !important;
 }
 
 /* applem-hover sidebar */
-[data-testid="header"]{
+[data-testid="header"] {
   left: -200px !important;
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
-  left: 0 !important;
+  &:hover {
+    left: 0 !important;
     opacity: 1 !important;
   }
 }
 
-[data-testid="player-bar"], #scrollable-pag{
+[data-testid="player-bar"],
+#scrollable-pag {
   transition: all 0.3s ease-in-out !important;
 }
 
-.body-container:not(:has([data-testid="header"]:hover)){ [data-testid="player-bar"]{
-  
-  width: 100vw !important;
-}
+.body-container:not(:has([data-testid="header"]:hover)) {
+  [data-testid="player-bar"] {
+    width: 100vw !important;
+  }
 
-#scrollable-page{
- margin-left: -100px !important;
-}
+  #scrollable-page {
+    margin-left: -100px !important;
+  }
 }

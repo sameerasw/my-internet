@@ -1,8 +1,27 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #root > div, #root > div > div, #root > div > div > div > div > div, [data-testid="home-container"], [data-testid="home-container"] > div, [data-testid="home-container"] > div > div > div, [data-test-id="table-view-row-wrapper"]{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+#root > div,
+#root > div > div,
+#root > div > div > div > div > div,
+[data-testid="home-container"],
+[data-testid="home-container"] > div,
+[data-testid="home-container"] > div > div > div,
+[data-test-id="table-view-row-wrapper"] {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }

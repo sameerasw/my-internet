@@ -1,18 +1,44 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .page-header, .page-header-menu, .container, .portlet, [for="showMore"], table, th, td, tr, .container, .chapter-page, .chapter-page-body .chapter-page{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.page-header,
+.page-header-menu,
+.container,
+.portlet,
+[for="showMore"],
+table,
+th,
+td,
+tr,
+.container,
+.chapter-page,
+.chapter-page-body .chapter-page {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer, .page-prefooter, .footer{
+footer,
+.page-prefooter,
+.footer {
   display: none !important;
-} 
+}

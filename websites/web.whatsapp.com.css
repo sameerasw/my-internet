@@ -4,48 +4,79 @@ body,
 nav,
 #nav,
 .nav,
-navbar, .x15g3fpr,
-.navbar, ._al_c,
-#navbar, .x1280gxy, .xsm26vf,
-header, [aria-label="Community tab drawer"] > div,
-#header, .x1n2onr6 ._ak72:not(:hover),
+navbar,
+.x15g3fpr,
+.navbar,
+._al_c,
+#navbar,
+.x1280gxy,
+.xsm26vf,
+header,
+[aria-label="Community tab drawer"] > div,
+#header,
+.x1n2onr6 ._ak72:not(:hover),
 .header,
-app, [aria-label="Channel tab drawer"] > div, .x150wa6m,
-#app, .x13x2ugz,
-.app, .two, .two > div, div.xds687c:nth-child(1),
-.three, .three .xnpuxes, .x1c1uobl > div,
+app,
+[aria-label="Channel tab drawer"] > div,
+.x150wa6m,
+#app,
+.x13x2ugz,
+.app,
+.two,
+.two > div,
+div.xds687c:nth-child(1),
+.three,
+.three .xnpuxes,
+.x1c1uobl > div,
 .app-root,
 #pass-sidebar,
-#main, ._alyo._alyw,
-main, [data-focusid="status-row-item"]:not(:hover),
-#content, [aria-label="Status tab drawer"] > div,
-section, .two::after, .three::after,
-#__next, #side, #side > div, #side > div > div, .xsknx04,
+#main,
+._alyo._alyw,
+main,
+[data-focusid="status-row-item"]:not(:hover),
+#content,
+[aria-label="Status tab drawer"] > div,
+section,
+.two::after,
+.three::after,
+#__next,
+#side,
+#side > div,
+#side > div > div,
+.xsknx04,
 #navigation-wrapper,
 #global-navbar,
-.head.notfixed, 
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode,
+.head.notfixed,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode,
 footer > div:first-of-type,
 #app > div:first-of-type::after {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-:root, .dark {
+:root,
+.dark {
   --background-default-active: transparent !important;
   --background-document-with-captions: transparent !important;
   --border-list: transparent !important;
   --conversation-header-border: transparent !important;
 }
 
-body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [aria-label="Community tab drawer"], [title="Settings"], [title="Profile"]) ._aigw{ 
-  header:has([aria-label="WhatsApp"]), #side{
-  display: none !important;
-}
+body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [aria-label="Community tab drawer"], [title="Settings"], [title="Profile"]) ._aigw {
+  header:has([aria-label="WhatsApp"]),
+  #side {
+    display: none !important;
+  }
 }
 
 /* wa-layout fixes */

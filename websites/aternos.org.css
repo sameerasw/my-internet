@@ -8,60 +8,74 @@ div.splash-footer,
 div.row,
 div.row.dark,
 .main,
-section.content, .navigation {
-    background-color: transparent !important;
-    border: none !important;
-    transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out !important;
+section.content,
+.navigation {
+  background-color: transparent !important;
+  border: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    border 0.5s ease-in-out !important;
 }
 
 /*Hide Ads & Tutorial Videos*/
-aside.sidebar, #placement-top-leaderboard, #ad, .server-b-tutorials, .header-link-exaroton-link, .boost-cta-box.new, .help-center-articles, .ad-label-wrapper, #placement-bottom-leaderboard {
-    display: none !important;
+aside.sidebar,
+#placement-top-leaderboard,
+#ad,
+.server-b-tutorials,
+.header-link-exaroton-link,
+.boost-cta-box.new,
+.help-center-articles,
+.ad-label-wrapper,
+#placement-bottom-leaderboard {
+  display: none !important;
 }
 body > span {
-    display: none !important;
+  display: none !important;
 }
 
 /*Rounded Server Details*/
 .server-ip {
-    border-top-right-radius: 16px !important;
-    border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+  border-top-left-radius: 16px !important;
 }
 .server-status .status {
-    border-bottom-left-radius: 16px !important;
-    border-bottom-right-radius: 16px !important;
+  border-bottom-left-radius: 16px !important;
+  border-bottom-right-radius: 16px !important;
 }
 
 .server-info-box .server-info-box-title {
-    border-top-right-radius: 16px !important;
-    border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+  border-top-left-radius: 16px !important;
 }
 .btn.btn-huge {
-    border-radius: 16px !important
+  border-radius: 16px !important;
 }
 
 /* aternos-no borders */
 div.icontext-icon,
 div.tetris-row-element {
-    border: none !important;
+  border: none !important;
 }
 
 /*Navigation Bar Tweaks*/
 .navigation .navigation-server {
-    margin: 0.5vi !important;
-    width: 16vi !important;
-    border-radius: 16px !important
+  margin: 0.5vi !important;
+  width: 16vi !important;
+  border-radius: 16px !important;
 }
 
 /*Glass Effect*/
 :root {
-    --color-dark: rgba(0,0,0,0.2) !important;
-    --color-main: rgba(0,0,0,0.2) !important
-} .navigation .navigation-server {
-    background: rgba(0,0,0,0.2) !important
-} .btn.btn-white.btn-small{
-    background: rgba(255, 255, 255,0.2) !important;
-    color: white !important
+  --color-dark: rgba(0, 0, 0, 0.2) !important;
+  --color-main: rgba(0, 0, 0, 0.2) !important
+;
+}
+.navigation .navigation-server {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+.btn.btn-white.btn-small {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
 }
 
 /* aternos-no footer */

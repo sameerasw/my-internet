@@ -1,17 +1,38 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, #mount_0_0_kl > div > div > div > div, #barcelona-page-layout, #barcelona-page-layout > div > div > div > div, #barcelona-page-layout > div > div > div > div > div, #barcelona-page-layout > div > div > div, [aria-label="Column body"][role="region"] > div > div > div > div, [aria-label="Column body"][role="region"] > div > div > div{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+#__next,
+#mount_0_0_kl > div > div > div > div,
+#barcelona-page-layout,
+#barcelona-page-layout > div > div > div > div,
+#barcelona-page-layout > div > div > div > div > div,
+#barcelona-page-layout > div > div > div,
+[aria-label="Column body"][role="region"] > div > div > div > div,
+[aria-label="Column body"][role="region"] > div > div > div {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* no border*/
-footer, hr{
+footer,
+hr {
   display: none !important;
 }
 
-.x78zum5.xdt5ytf > div > div > div{
+.x78zum5.xdt5ytf > div > div > div {
   border: none !important;
 }

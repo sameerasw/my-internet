@@ -18,17 +18,20 @@ header,
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.a-expander-partial-collapse-header:has([aria-expanded="false"]){
+.a-expander-partial-collapse-header:has([aria-expanded="false"]) {
   margin-bottom: 0.5em;
-  a{
-  background-color: var(--darkreader-background-222222, #fff) !important;
-  padding: 0.5em;
-  border-radius: 1em;
-}
+  a {
+    background-color: var(--darkreader-background-222222, #fff) !important;
+    padding: 0.5em;
+    border-radius: 1em;
+  }
 }
 
 /* amazon-darkreader */

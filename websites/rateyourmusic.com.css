@@ -1,8 +1,28 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .ui_featured_content_review, .page_feature_main_inner, .header_item, #column_container_right, .page_release_art_frame, .release_left_column, #content_wrapper_outer, #content_wrapper{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.ui_featured_content_review,
+.page_feature_main_inner,
+.header_item,
+#column_container_right,
+.page_release_art_frame,
+.release_left_column,
+#content_wrapper_outer,
+#content_wrapper {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }

@@ -1,29 +1,41 @@
 /* ddg-transparecy */
-html, body, .desktop-homepage_root__Ikj1_, .site-wrapper, .metabar:not(.is-stuck), .tileview--grid .metabar--fixed::before, #zci-images, .zci-wrap, #zci-videos, main{
+html,
+body,
+.desktop-homepage_root__Ikj1_,
+.site-wrapper,
+.metabar:not(.is-stuck),
+.tileview--grid .metabar--fixed::before,
+#zci-images,
+.zci-wrap,
+#zci-videos,
+main {
   background-color: transparent !important;
 }
 
 /* ddg-hidden promo */
-.desktop-homepage_heroContent__4HUFA{
+.desktop-homepage_heroContent__4HUFA {
   display: none !important;
 }
 
 /* ddg-no home scroll */
-.homepage-cta-section_scrollCta__Wmixn, #features{
+.homepage-cta-section_scrollCta__Wmixn,
+#features {
   display: none !important;
 }
 
 /* ddg-no footer */
-.footer{
+.footer {
   display: none !important;
 }
 
 /* ddg-transparent header */
-#header_wrapper{
+#header_wrapper {
   background-color: transparent !important;
   position: sticky !important;
 }
 
-nav::before, nav::after, .XvPRmQVeIoCP5lQhICTv.ofDl_1VxUG_EKc3b9E3x::before{
+nav::before,
+nav::after,
+.XvPRmQVeIoCP5lQhICTv.ofDl_1VxUG_EKc3b9E3x::before {
   display: none !important;
 }

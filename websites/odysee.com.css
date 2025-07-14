@@ -1,99 +1,111 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.background-image, .main-wrapper > .theme{
+.background-image,
+.main-wrapper > .theme {
   display: none !important;
 }
 
 /* zen view */
-.content__viewer--theater-mode{
-width: 100vw !important;
-height: 100vh !important;
-position: fixed !important;
-left: 0 !important;
-top: 0 !important;
-z-index: 0 !important;
+.content__viewer--theater-mode {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important;
+  left: 0 !important;
+  top: 0 !important;
+  z-index: 0 !important;
 
-.content__wrapper, .file-render, #vjs_video_3, video{
-background-color: transparent;
+  .content__wrapper,
+  .file-render,
+  #vjs_video_3,
+  video {
+    background-color: transparent;
+  }
 }
-}
-
 
 /* zen view comments */
-#app:has(.content__viewer--theater-mode){
+#app:has(.content__viewer--theater-mode) {
+  .header {
+    position: relative !important;
+    top: -40px !important;
+    opacity: 0 !important;
+    transition: all 0.3s ease-in-out !important;
 
-.header{
-  position: relative !important;
-  top: -40px !important;
-  opacity: 0 !important;
-  transition: all 0.3s ease-in-out !important;
-
-  &:hover{
-    opacity: 1 !important;
-    top: 0 !important;
-  }
-}
-
-
-#main-content{
-  position: fixed !important;
-  background-color: var(--color-header-background) !important;
-  border-radius: 0 1em 1em 0 !important;
-  z-index: 100000 !important;
-  left: -15vw !important;
-  width: 17vw !important;
-  top: 50dvh !important;
-  margin-left: 0 !important;
-  transform: translateY(-50%) !important;
-  transition: all 0.3s ease-in-out !important;
-  opacity: 0 !important;
-
-  &:hover{
-    left: 0 !important;
-  opacity: 1 !important;
-  }
-
-  .card__header--between{
-    display: none !important;
-  }
-
-  .comment-create__auth{
-    display: flex !important;
-    height: fit-content !important;
-    padding: 0 !important;
-
-    fieldset-section{
-      flex-grow: 1 !important;
+    &:hover {
+      opacity: 1 !important;
+      top: 0 !important;
     }
   }
 
-  .card__main-actions{
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+  #main-content {
+    position: fixed !important;
+    background-color: var(--color-header-background) !important;
+    border-radius: 0 1em 1em 0 !important;
+    z-index: 100000 !important;
+    left: -15vw !important;
+    width: 17vw !important;
+    top: 50dvh !important;
+    margin-left: 0 !important;
+    transform: translateY(-50%) !important;
+    transition: all 0.3s ease-in-out !important;
+    opacity: 0 !important;
 
-  .comments{
-    margin: 0 !important;
-  overflow: scroll !important;
-  height: 75vh !important;
+    &:hover {
+      left: 0 !important;
+      opacity: 1 !important;
+    }
 
-  }
+    .card__header--between {
+      display: none !important;
+    }
 
-  & div.file-page__video{
-width: 16vw !important;
-  }
+    .comment-create__auth {
+      display: flex !important;
+      height: fit-content !important;
+      padding: 0 !important;
 
-  .card-stack--spacing-m, .file-page__video-container, .file-page__media-actions > section:nth-child(1){
-    display: none !important;
+      fieldset-section {
+        flex-grow: 1 !important;
+      }
+    }
+
+    .card__main-actions {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .comments {
+      margin: 0 !important;
+      overflow: scroll !important;
+      height: 75vh !important;
+    }
+
+    & div.file-page__video {
+      width: 16vw !important;
+    }
+
+    .card-stack--spacing-m,
+    .file-page__video-container,
+    .file-page__media-actions > section:nth-child(1) {
+      display: none !important;
+    }
   }
 }
-
-}
-

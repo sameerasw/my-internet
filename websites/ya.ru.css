@@ -1,8 +1,27 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .informers3-weather__text, .HeaderDesktop, #search-result li, .NativeScroll-Inner, .AppAdvancedSearch, .HeaderNav-TabCover, [data-statlog="2informers.weather"] > div:not([style]){
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.informers3-weather__text,
+.HeaderDesktop,
+#search-result li,
+.NativeScroll-Inner,
+.AppAdvancedSearch,
+.HeaderNav-TabCover,
+[data-statlog="2informers.weather"] > div:not([style]) {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }

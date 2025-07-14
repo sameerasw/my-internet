@@ -1,34 +1,36 @@
 /* graphite-transparency */
 [class^="AppLayout_appLayoutNavContainer__"] {
-    background: transparent !important;
-    border-right: 1px solid var(--border-color-default);
+  background: transparent !important;
+  border-right: 1px solid var(--border-color-default);
 }
 
 [class^="PullRequestTitleBar_container__"] {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 [class^="InfoSidebar_infoSidebar__"] {
-    background: transparent !important;
+  background: transparent !important;
 }
-
-
 
 /* graphite-hover */
 [class^="FilesSidebar_filesSidebarContents__"] {
-    opacity: 0 !important;
+  opacity: 0 !important;
 
-    &:hover {
-        opacity: 1 !important;
-        transition: opacity 0.3s ease-in-out, visibility 0s linear 0s !important;
-    }
+  &:hover {
+    opacity: 1 !important;
+    transition:
+      opacity 0.3s ease-in-out,
+      visibility 0s linear 0s !important;
+  }
 }
 
 [class^="InfoSidebar_infoSidebar__"] {
-    opacity: 0 !important;
+  opacity: 0 !important;
 
-    &:hover {
-        opacity: 1 !important;
-        transition: opacity 0.3s ease-in-out, visibility 0s linear 0s !important;
-    }
+  &:hover {
+    opacity: 1 !important;
+    transition:
+      opacity 0.3s ease-in-out,
+      visibility 0s linear 0s !important;
+  }
 }

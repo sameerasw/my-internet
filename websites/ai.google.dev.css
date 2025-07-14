@@ -20,15 +20,23 @@ main,
 #content,
 section,
 #__next,
-#navigation-wrapper, devsite-gemini-page,
-#global-navbar, .devsite-top-logo-row-wrapper-wrapper,
-.head.notfixed, .devsite-top-logo-row,
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+#navigation-wrapper,
+devsite-gemini-page,
+#global-navbar,
+.devsite-top-logo-row-wrapper-wrapper,
+.head.notfixed,
+.devsite-top-logo-row,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
-

@@ -23,15 +23,21 @@ section,
 #navigation-wrapper,
 #global-navbar,
 .head.notfixed,
-body.dark_mode, body.light_mode, .is-dark-mode .dark\:bg-black{
+body.dark_mode,
+body.light_mode,
+.is-dark-mode .dark\:bg-black {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* no vignette */
-.vortex-vignette{
+.vortex-vignette {
   display: none !important;
 }

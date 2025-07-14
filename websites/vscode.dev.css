@@ -1,8 +1,40 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .enable-motion, .monaco-web, #workbench.parts.titlebar, .titlebar, .activitybar, .sidebar, .composite, .pane-header, .content, .title, .editor-container,  .monaco-list-rows, #workbench\.parts\.panel, .terminal-outer-container, .xterm-scrollable-element, .editor-group-container, .monaco-editor, .monaco-editor .margin, .monaco-editor-background, #workbench\.parts\.auxiliarybar{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.enable-motion,
+.monaco-web,
+#workbench.parts.titlebar,
+.titlebar,
+.activitybar,
+.sidebar,
+.composite,
+.pane-header,
+.content,
+.title,
+.editor-container,
+.monaco-list-rows,
+#workbench\.parts\.panel,
+.terminal-outer-container,
+.xterm-scrollable-element,
+.editor-group-container,
+.monaco-editor,
+.monaco-editor .margin,
+.monaco-editor-background,
+#workbench\.parts\.auxiliarybar {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }

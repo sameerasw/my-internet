@@ -1,18 +1,32 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, main > div > div{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+main > div > div {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer and banner */
-footer, main > div:has(a[href="https://twitter.com/ArtificialAnlys"]){
+footer, main > div:has(a[href="https://twitter.com/ArtificialAnlys"])
+{
   display: none !important;
 }

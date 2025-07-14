@@ -6,50 +6,84 @@ nav,
 .nav,
 navbar,
 .navbar,
-#navbar, 
+#navbar,
 header,
 #header,
-.header, header::before,
+.header,
+header::before,
 app,
-#app, footer,
+#app,
+footer,
 .sidebar-wrap,
-section, .main,
-#__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before,
-#root, .min-h-screen.bg-white,
-.app, .AppContainer,
-.app-root, #wrapper,
-body[data-theme="dark"], body[data-theme="light"],
-#pass-sidebar, .side-bar,
-#main, .sidebar, .global-content__content,
-main, .header-top,
-#content, #cu-identity,
-section, .l-root,
-#__next, .landing-hero,
+section,
+.main,
+#__next,
+.sidebar-wrapper,
+.sidebar-footer-wrapper,
+.sidebar-footer-container::before,
+#root,
+.min-h-screen.bg-white,
+.app,
+.AppContainer,
+.app-root,
+#wrapper,
+body[data-theme="dark"],
+body[data-theme="light"],
+#pass-sidebar,
+.side-bar,
+#main,
+.sidebar,
+.global-content__content,
+main,
+.header-top,
+#content,
+#cu-identity,
+section,
+.l-root,
+#__next,
+.landing-hero,
 #navigation-wrapper,
-#global-navbar, .layout__content-wrapper,
-.head.notfixed, .main-container,
-#app > div, .btm-nav > a, .oc-content--main,
-body.dark_mode, body.light_mode,
+#global-navbar,
+.layout__content-wrapper,
+.head.notfixed,
+.main-container,
+#app > div,
+.btm-nav > a,
+.oc-content--main,
+body.dark_mode,
+body.light_mode,
 text-div > textarea,
 .content-footer,
 .document-panel-footer {
   background-color: transparent !important;
   box-shadow: none !important;
   border-color: rgb(150, 150, 150) !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
   color: rgb(230, 230, 230) !important;
 }
 
-.canvas-container *, .ns-dialog-frame, .split-toggle-container *,
-.ns-dialog-header, .os-flyout-notifications *, #custom-feature-dialog *, .tooltip * {
-   background-color: transparent !important;
+.canvas-container *,
+.ns-dialog-frame,
+.split-toggle-container *,
+.ns-dialog-header,
+.os-flyout-notifications *,
+#custom-feature-dialog *,
+.tooltip * {
+  background-color: transparent !important;
 }
 
-.document-panel, .os-document-filters, .os-detail-panel, .panel-content-pane {
-      background-color: rgb(0, 0, 0, 0.1) !important;
-      border: none !important;
-      border-radius: 15px;
-   }
+.document-panel,
+.os-document-filters,
+.os-detail-panel,
+.panel-content-pane {
+  background-color: rgb(0, 0, 0, 0.1) !important;
+  border: none !important;
+  border-radius: 15px;
+}
 
 /* navbar */
 nav * {
@@ -59,61 +93,75 @@ nav * {
 }
 
 /* toolbars */
-#osToolbar, .os-tab-bar-content { 
-   background-color: rgb(0, 0, 0, 0.4) !important;
-   border-radius: 200px;
-   *:not(label, .command-search, .os-tool-dropdown) {
-      background-color: transparent !important;
-      color: rgb(230, 230, 230) !important;
-   }
+#osToolbar,
+.os-tab-bar-content {
+  background-color: rgb(0, 0, 0, 0.4) !important;
+  border-radius: 200px;
+  *:not(label, .command-search, .os-tool-dropdown) {
+    background-color: transparent !important;
+    color: rgb(230, 230, 230) !important;
+  }
 }
 
-.os-panel-select-bar { 
-      background-color: rgb(0, 0, 0, 0.4) !important;
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
+.os-panel-select-bar {
+  background-color: rgb(0, 0, 0, 0.4) !important;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .right-split-toggle-container {
-   background-color: rgb(0, 0, 0, 0.4) !important;
-   border-top-left-radius: 15px;
-   border-bottom-left-radius: 15px;
+  background-color: rgb(0, 0, 0, 0.4) !important;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .left-split-toggle-container {
-   background-color: rgb(0, 0, 0, 0.4) !important;
-   border-top-right-radius: 15px;
-   border-bottom-right-radius: 15px;
+  background-color: rgb(0, 0, 0, 0.4) !important;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .split-toggle-container * {
-   border: none !important;
+  border: none !important;
 }
 .split-toggle-button-active {
-   filter: drop-shadow(0 0 0.5rem rgb(255, 255, 255));
+  filter: drop-shadow(0 0 0.5rem rgb(255, 255, 255));
 }
 
 /* context menus */
-.os-flex-table-header, .element-thumbnail, .tab-search-controls,
-.network-warning, .loading-progress-background, .context-menu-list,
-.os-tab-bar-tab, .ns-dialog-panel, .zero-state-card,
-.os-flyout-notifications, .tooltip, .os-tool-dropdown,
-.modal-content, .dropdown-menu, .ns-dialog, .command-search {
-      background-color: rgb(0, 0, 0, 0.7) !important;
-      backdrop-filter: blur(11px) !important;
-      border-radius: 10px !important;
-   }
+.os-flex-table-header,
+.element-thumbnail,
+.tab-search-controls,
+.network-warning,
+.loading-progress-background,
+.context-menu-list,
+.os-tab-bar-tab,
+.ns-dialog-panel,
+.zero-state-card,
+.os-flyout-notifications,
+.tooltip,
+.os-tool-dropdown,
+.modal-content,
+.dropdown-menu,
+.ns-dialog,
+.command-search {
+  background-color: rgb(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(11px) !important;
+  border-radius: 10px !important;
+}
 
 /* round tabs */
 .os-tab-bar-tab {
-   border-radius: 200px !important;
+  border-radius: 200px !important;
 }
 
-
 /* ns-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* ns-no footer */
-footer, mfe-footer-pharos-footer, .footer, #footer{
+footer,
+mfe-footer-pharos-footer,
+.footer,
+#footer {
   display: none !important;
 }

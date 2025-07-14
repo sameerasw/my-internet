@@ -24,10 +24,14 @@ section, .et_pb_code_inner, .et_pb_row,
 #global-navbar,
 .head.notfixed, .et_builder_inner_content > div,  #main-content .et_pb_section,
 body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+body.dark_mode, body.light_mode {
   background-color: transparent !important;
-    background: none !important;
-      border: none !important;
-        box-shadow: none !important;
-          transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
-          }
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}

@@ -1,8 +1,17 @@
 /* notion-transparecy */
-body, .home-content, .notion-collection_view-block [style="position: relative;"] > div, .notion-menu-list-focused > div, div.notion-table-view-add-row, div.pseudoSelection  {
+body,
+.home-content,
+.notion-collection_view-block [style="position: relative;"] > div,
+.notion-menu-list-focused > div,
+div.notion-table-view-add-row,
+div.pseudoSelection {
   background-color: #00000000 !important;
   background: #00000000 !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 .notion-app-inner,
@@ -13,10 +22,14 @@ header {
   background-color: #00000000 !important;
   background: #00000000 !important;
   box-shadow: none !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.layout-full img{
+.layout-full img {
   border-radius: 1em !important;
 }
 
@@ -26,16 +39,17 @@ div.autolayout-row.autolayout-fill-width.autolayout-center.autolayout-space {
 }
 
 /* notion-clean home */
-.home-content{
+.home-content {
   align-items: center !important;
   align-content: center !important;
 }
 
 /* notion-hover */
-[aria-label="Open menu"], .notion-assistant-corner-origin-container{
+[aria-label="Open menu"],
+.notion-assistant-corner-origin-container {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }

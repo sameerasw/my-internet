@@ -2,8 +2,11 @@
 body {
   background-color: #00000000 !important;
   background: #00000000 !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 .notion-app-inner,
@@ -14,8 +17,11 @@ header {
   background-color: #00000000 !important;
   background: #00000000 !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* notion-hide elements */
@@ -24,6 +30,6 @@ div.autolayout-row.autolayout-fill-width.autolayout-center.autolayout-space {
 }
 
 /* notion-rounded banner */
-.layout-full img{
+.layout-full img {
   border-radius: 1em !important;
 }

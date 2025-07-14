@@ -1,26 +1,43 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .devsite-top-logo-row, devsite-header:not([bottom-row--hidden]) .devsite-top-logo-row-wrapper-wrapper, .devsite-collapsible-section, .devsite-book-nav-bg, .devsite-book-nav-filter, .devsite-book-nav-blur,
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.devsite-top-logo-row,
+devsite-header:not([bottom-row--hidden]) .devsite-top-logo-row-wrapper-wrapper,
+.devsite-collapsible-section,
+.devsite-book-nav-bg,
+.devsite-book-nav-filter,
+.devsite-book-nav-blur,
 .devsite-sidebar-content,
 .devsite-breadcrumb-list,
 devsite-search .devsite-searchbox::before,
 .devsite-searchbox,
-.devsite-playlist--header, 
+.devsite-playlist--header,
 [expanded],
-[aria-controls="language-menu"]
-    {
+[aria-controls="language-menu"] {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.devsite-nav-item{
+.devsite-nav-item {
   border-radius: 20px !important;
 }
 
-devsite-language-selector{
---devsite-background-1: #00000000 !important;
+devsite-language-selector {
+  --devsite-background-1: #00000000 !important;
 }
 
 :root {
@@ -28,20 +45,31 @@ devsite-language-selector{
 }
 
 /* no footer */
-footer, devsite-footer-promos, devsite-footer-linkboxes, devsite-footer-utility, devsite-content-footer{
+footer,
+devsite-footer-promos,
+devsite-footer-linkboxes,
+devsite-footer-utility,
+devsite-content-footer {
   display: none !important;
 }
 
 /* glass effect */
-article, .devsite-search-field{
-    box-shadow:  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+article,
+.devsite-search-field {
+  box-shadow:
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
 
-    @media (prefers-color-scheme: light) {
-  background-color: #fff8  !important;
-}
-
-    @media (prefers-color-scheme: dark) {
-  background-color: #0005  !important;
-}
-    
+  @media (prefers-color-scheme: light) {
+    background-color: #fff8 !important;
   }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: #0005 !important;
+  }
+}

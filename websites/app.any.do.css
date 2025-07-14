@@ -1,22 +1,29 @@
 /* anydo-no sidebar bg */
-.AppImage__hasImage.u-anydo-dark-theme .AppSidebar, .AppImage__hasImage .MyDayRoute--theme{
-   --app-sidebar-bg-color: transparent !important;
-   --myday-sidebar-bg-color: transparent !important;
-} 
+.AppImage__hasImage.u-anydo-dark-theme .AppSidebar,
+.AppImage__hasImage .MyDayRoute--theme {
+  --app-sidebar-bg-color: transparent !important;
+  --myday-sidebar-bg-color: transparent !important;
+}
 
 /* anydo-transparency */
- html, body{
-   background-color: transparent !important;
-   background: none !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
- }
+html,
+body {
+  background-color: transparent !important;
+  background: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
 
 /* anydo-no wallpaper */
-body > div:nth-child(4) > picture:nth-child(1), [aria-label="Choose your background"]{
-   display: none !important;
- }
+body > div:nth-child(4) > picture:nth-child(1),
+[aria-label="Choose your background"] {
+  display: none !important;
+}
 
 /* anydo-no thank you */
- .c_RYlk5GSCd6SYMYEgWI{
-   display: none !important;;
- }
+.c_RYlk5GSCd6SYMYEgWI {
+  display: none !important;
+}

@@ -2,9 +2,18 @@
 * {
   background-color: transparent !important;
   border: none !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
-[class*="styles__HolderButton"], [class*="styles__Container"], [class*="styles__HolderDiv"], [class*="Card-sc"], [class*="styles__CanvasHolder"], [class*="ListContentPlayer__Holder"] {
+[class*="styles__HolderButton"],
+[class*="styles__Container"],
+[class*="styles__HolderDiv"],
+[class*="Card-sc"],
+[class*="styles__CanvasHolder"],
+[class*="ListContentPlayer__Holder"] {
   background-color: rgba(0, 0, 0, 0.2) !important;
   border: none !important;
 }

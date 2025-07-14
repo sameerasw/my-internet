@@ -1,27 +1,49 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, ms-app, .banner-and-app-container, ms-applets-gallery > .ng-star-inserted, ms-bidi-chat{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+ms-app,
+.banner-and-app-container,
+ms-applets-gallery > .ng-star-inserted,
+ms-bidi-chat {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.toolbar-container{
+.toolbar-container {
   border: none !important;
 }
 
-ms-bidi-audio-stream-part audio, ms-bidi-audio-part audio{
+ms-bidi-audio-stream-part audio,
+ms-bidi-audio-part audio {
   border-radius: 1em !important;
 }
 
 /* full transparency */
-ms-run-settings, ms-gallery-panel, ms-prompt-input-wrapper > div, ms-library > div, ms-applets-gallery > .ng-star-inserted > div, .token-count-content, .syntax-highlighted-code-wrapper{
-    background-color: light-dark(#fff5, #0003)  !important;
-  }
-
+ms-run-settings,
+ms-gallery-panel,
+ms-prompt-input-wrapper > div,
+ms-library > div,
+ms-applets-gallery > .ng-star-inserted > div,
+.token-count-content,
+.syntax-highlighted-code-wrapper {
+  background-color: light-dark(#fff5, #0003) !important;
+}
 
 /* no footer */
-.disclaimer-container{
+.disclaimer-container {
   display: none !important;
 }

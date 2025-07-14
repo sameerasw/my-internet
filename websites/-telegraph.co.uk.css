@@ -17,35 +17,50 @@ app,
 #pass-sidebar,
 #main,
 main,
-#content, .grid-col::before,
-section, section::before, section::after, article::before, article::after,
-#__next, .site-header__primary-navigation-wrapper::before, .site-header__primary-navigation-wrapper::after,
+#content,
+.grid-col::before,
+section,
+section::before,
+section::after,
+article::before,
+article::after,
+#__next,
+.site-header__primary-navigation-wrapper::before,
+.site-header__primary-navigation-wrapper::after,
 #navigation-wrapper,
 #global-navbar,
-.head.notfixed, .site-header__primary-wrapper,
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+.head.notfixed,
+.site-header__primary-wrapper,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.site-header__masthead::after{
+.site-header__masthead::after {
   display: none !important;
 }
 
-[role="dialog"], .all-sections-modal{
+[role="dialog"],
+.all-sections-modal {
   background-color: light-dark(#fff, #222) !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

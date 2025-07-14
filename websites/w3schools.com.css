@@ -7,7 +7,10 @@ body.darkpagetheme .topnavcontainer,
 body.darkpagetheme #subtopnav,
 #scroll_right_btn,
 body.darkpagetheme .contentcontainer,
-.w3-sidebar, .w3-example, .w3-panel, .w3-code,
+.w3-sidebar,
+.w3-example,
+.w3-panel,
+.w3-code,
 #belowtopnav,
 #leftmenuinnerinner,
 body.darkpagetheme .w3-white,
@@ -27,8 +30,11 @@ body.darkpagetheme #subtopnav {
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 .topnavbackground {

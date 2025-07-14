@@ -6,18 +6,17 @@ header,
 #headernew,
 #adclick,
 .mainwrapper,
-div.pure-u-1:nth-child(1)
-  > div:nth-child(1)
-  > div:nth-child(2)
-  > div:nth-child(2)
-  > div,
+div.pure-u-1:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div,
 #itempagewrapper {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* listal-darkreader */

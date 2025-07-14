@@ -13,28 +13,44 @@ header,
 app,
 #app,
 .app,
-
 .hpjStZ,
-
 .app-root,
 #pass-sidebar,
 #main,
 main,
-#content, .guRJSO, .kKvuvb,  .buwced, .cOpkUq,
-section, .kQamew, .bdAmuj, .lgaLvo,
-#__next, #main > div, #main > div > div > div:not(.sc-ytnrf3-0.dLXsUK),
+#content,
+.guRJSO,
+.kKvuvb,
+.buwced,
+.cOpkUq,
+section,
+.kQamew,
+.bdAmuj,
+.lgaLvo,
+#__next,
+#main > div,
+#main > div > div > div:not(.sc-ytnrf3-0.dLXsUK),
 #navigation-wrapper,
 #global-navbar,
-.head.notfixed, 
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+.head.notfixed,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.dmLZQu,.gQqlRv,  .wjzZQ, .hEwaeM{
+.dmLZQu,
+.gQqlRv,
+.wjzZQ,
+.hEwaeM {
   background-color: transparent !important;
   border: none !important;
 }

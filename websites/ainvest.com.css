@@ -24,25 +24,29 @@ section, #layout_main_scroll_wrapper > div,
 #global-navbar,
 .head.notfixed, 
 body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+body.dark_mode, body.light_mode {
   background-color: transparent !important;
-    background: none !important;
-      border: none !important;
-        box-shadow: none !important;
-          transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
-          }
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
 
-             .home-nav > img{
-               display: none !important;
-             }
+.home-nav > img {
+  display: none !important;
+}
 
-          /* darkreader */
-          :root{
-            --darkreader-background-ffffff: transparent !important;
-            }
+/* darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
 
-
-            /* no footer */
-            footer, #layout_main_scroll_wrapper > div:nth-last-child(1){
-              display: none !important;
-              }
+/* no footer */
+footer,
+#layout_main_scroll_wrapper > div:nth-last-child(1) {
+  display: none !important;
+}

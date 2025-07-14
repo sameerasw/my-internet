@@ -1,5 +1,11 @@
 /* hotstar-Transparency */
-html, body, .hzfka7mKV_YFG5efeUkGI, .MYSPACE_BACKGROUND_GRADIENT, .b2lN0IEinUg1_47-BjDFE, ._3gvm5JKNCMnbHSjIIR8XUs, [data-testid="player-space-container"] video {
+html,
+body,
+.hzfka7mKV_YFG5efeUkGI,
+.MYSPACE_BACKGROUND_GRADIENT,
+.b2lN0IEinUg1_47-BjDFE,
+._3gvm5JKNCMnbHSjIIR8XUs,
+[data-testid="player-space-container"] video {
   background-color: transparent !important;
   background: none !important;
 }

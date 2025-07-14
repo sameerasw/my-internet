@@ -19,33 +19,43 @@ app,
 main,
 #content,
 section,
-#__next, #toolbar-item-dropdown-share-15,
+#__next,
+#toolbar-item-dropdown-share-15,
 #navigation-wrapper,
 #global-navbar,
-.head.notfixed, .refinitiv-promo-bar__container__3YPMt,
-body[data-theme="dark"], body[data-theme="light"], [data-testid="RefinitivPromoBar"],
-body.dark_mode, body.light_mode{
+.head.notfixed,
+.refinitiv-promo-bar__container__3YPMt,
+body[data-theme="dark"],
+body[data-theme="light"],
+[data-testid="RefinitivPromoBar"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-header > div > div > div{
+header > div > div > div {
   border-radius: 1em !important;
 }
 
-[data-testid="StoryCard"]::before, hr{
+[data-testid="StoryCard"]::before,
+hr {
   display: none !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

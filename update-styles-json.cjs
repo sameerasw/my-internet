@@ -1,10 +1,10 @@
-const fs = require('fs');
-const path = require('path');
-const postcss = require('postcss');
+const fs = require("fs");
+const path = require("path");
+const postcss = require("postcss");
 
-const rootDir = path.join(__dirname, 'websites');
-const outputFile = path.join(__dirname, 'styles.json');
-const excludeFile = 'userChrome.css';
+const rootDir = path.join(__dirname, "websites");
+const outputFile = path.join(__dirname, "styles.json");
+const excludeFile = "userChrome.css";
 
 // Create output file if it doesn't exist
 if (!fs.existsSync(outputFile)) {
@@ -17,8 +17,8 @@ function extractFeatures(cssContent) {
   let currentFeature = null;
   let buffer = [];
 
-  root.nodes.forEach(node => {
-    if (node.type === 'comment') {
+  root.nodes.forEach((node) => {
+    if (node.type === "comment") {
       if (/^@/.test(node.text.trim())) {
         // Skip @ comments but keep collecting under current feature
         return;
@@ -26,8 +26,8 @@ function extractFeatures(cssContent) {
       // Save previous feature if exists
       if (currentFeature && buffer.length > 0) {
         features[currentFeature] = buffer
-          .map(n => nodeToCleanString(n))
-          .join('\n')
+          .map((n) => nodeToCleanString(n))
+          .join("\n")
           .trim();
         buffer = [];
       }
@@ -40,8 +40,8 @@ function extractFeatures(cssContent) {
   // Final flush
   if (currentFeature && buffer.length > 0) {
     features[currentFeature] = buffer
-      .map(n => nodeToCleanString(n))
-      .join('\n')
+      .map((n) => nodeToCleanString(n))
+      .join("\n")
       .trim();
   }
 
@@ -50,20 +50,20 @@ function extractFeatures(cssContent) {
 
 // Helper to stringify a node while removing inline comments
 function nodeToCleanString(node) {
-  if (node.type === 'rule' || node.type === 'atrule') {
+  if (node.type === "rule" || node.type === "atrule") {
     const clone = node.clone();
 
     // 🔹 Remove ALL inline comments inside declarations
     if (clone.nodes) {
-      clone.nodes = clone.nodes.filter(n => n.type !== 'comment');
+      clone.nodes = clone.nodes.filter((n) => n.type !== "comment");
     }
 
     // 🔹 Remove ALL inline comments in selector string
     if (clone.selector) {
       clone.selector = clone.selector
-        .replace(/\/\*[^*]*\*\//g, '')     // Remove all /* ... */ comments
-        .replace(/\s*,\s*,/g, ',')         // Avoid duplicate commas
-        .replace(/\s+/g, ' ')              // Normalize whitespace
+        .replace(/\/\*[^*]*\*\//g, "") // Remove all /* ... */ comments
+        .replace(/\s*,\s*,/g, ",") // Avoid duplicate commas
+        .replace(/\s+/g, " ") // Normalize whitespace
         .trim();
     }
 
@@ -71,20 +71,19 @@ function nodeToCleanString(node) {
   }
 
   // 🔹 Remove standalone comment nodes entirely
-  if (node.type === 'comment') {
-    return '';
+  if (node.type === "comment") {
+    return "";
   }
 
   return node.toString();
 }
 
-
 function updateStylesJson() {
-  const styles = JSON.parse(fs.readFileSync(outputFile, 'utf-8')) || { website: {} };
+  const styles = JSON.parse(fs.readFileSync(outputFile, "utf-8")) || { website: {} };
 
-  fs.readdirSync(rootDir).forEach(file => {
-    if (file.endsWith('.css') && file !== excludeFile) {
-      const content = fs.readFileSync(path.join(rootDir, file), 'utf-8');
+  fs.readdirSync(rootDir).forEach((file) => {
+    if (file.endsWith(".css") && file !== excludeFile) {
+      const content = fs.readFileSync(path.join(rootDir, file), "utf-8");
       try {
         const features = extractFeatures(content);
         if (Object.keys(features).length > 0) {

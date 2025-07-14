@@ -1,26 +1,39 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-#header-main-wrapper{
+#header-main-wrapper {
   border-radius: 1em !important;
 }
 
-hr{
+hr {
   display: none !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer, div{
+footer,
+div {
   display: none !important;
 }

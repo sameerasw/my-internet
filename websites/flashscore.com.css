@@ -12,31 +12,43 @@ header,
 .header,
 app,
 #app,
-.app, .menuTop__content::after,
-.app-root, .header__item--active,
+.app,
+.menuTop__content::after,
+.app-root,
+.header__item--active,
 #pass-sidebar,
 #main,
 main,
-#content, .menuTop__content, .container__content,
-section, .header__bg, .header__content,
+#content,
+.menuTop__content,
+.container__content,
+section,
+.header__bg,
+.header__content,
 #__next,
 #navigation-wrapper,
 #global-navbar,
-.head.notfixed, 
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+.head.notfixed,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.header__bg{
+.header__bg {
   display: none !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

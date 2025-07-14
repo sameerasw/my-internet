@@ -19,25 +19,37 @@ app,
 main,
 #content,
 section,
-#__next, .collection-hero, .shopify-section.section > div,
-#navigation-wrapper, .slideshow__media.banner__media,
-#global-navbar, section .color-scheme-1.gradient,
-.head.notfixed, sticky-header, .utility-bar,
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+#__next,
+.collection-hero,
+.shopify-section.section > div,
+#navigation-wrapper,
+.slideshow__media.banner__media,
+#global-navbar,
+section .color-scheme-1.gradient,
+.head.notfixed,
+sticky-header,
+.utility-bar,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

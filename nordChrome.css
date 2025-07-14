@@ -54,14 +54,12 @@
   image {
     border-radius: 100px !important;
     scale: 1.4;
-    
-    
-  filter: saturate(0) brightness(0.4) !important;
-  
-  
-@media (prefers-color-scheme: dark) {
-  filter: saturate(0) brightness(1.6) !important;
-  }
+
+    filter: saturate(0) brightness(0.4) !important;
+
+    @media (prefers-color-scheme: dark) {
+      filter: saturate(0) brightness(1.6) !important;
+    }
   }
 }
 
@@ -81,35 +79,27 @@ tab[busy] {
 
 /* empty tab image */
 #browser:has([zen-empty-tab="true"][selected="true"]) .browserStack {
-  	background-image: url("https://github.com/sameerasw/my-internet/blob/main/wave.png?raw=true") !important;
+  background-image: url("https://github.com/sameerasw/my-internet/blob/main/wave.png?raw=true") !important;
 
   /* zen logo	*/
-/*   background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Zen_Browser_logo_%28red_circles%29.svg") !important; */
+  /*   background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Zen_Browser_logo_%28red_circles%29.svg") !important; */
 
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: 250px !important;
   filter: saturate(0) brightness(0.2) !important;
   /* 	  background-size: cover !important; */
-  
-  
-@media (prefers-color-scheme: dark) {
-  filter: saturate(0) brightness(1.8) invert(1) !important;
-  opacity: 0.5 !important;
+
+  @media (prefers-color-scheme: dark) {
+    filter: saturate(0) brightness(1.8) invert(1) !important;
+    opacity: 0.5 !important;
   }
 }
 
 /* hide compact sidebar when no tabs open */
-#zen-main-app-wrapper[zen-compact-mode="true"]:not(
-    :has(#urlbar[open][zen-floating-urlbar="true"])
-  )
-  #browser:has([zen-empty-tab="true"][selected="true"])
-  #navigator-toolbox,
-#zen-main-app-wrapper[zen-compact-mode="true"]
-  #browser:has([zen-empty-tab="true"][selected="true"])
-  #urlbar:not([open]){
+#zen-main-app-wrapper[zen-compact-mode="true"]:not(:has(#urlbar[open][zen-floating-urlbar="true"])) #browser:has([zen-empty-tab="true"][selected="true"]) #navigator-toolbox,
+#zen-main-app-wrapper[zen-compact-mode="true"] #browser:has([zen-empty-tab="true"][selected="true"]) #urlbar:not([open]) {
   opacity: 0 !important;
-    
 }
 
 /* #main-window:has(#zen-main-app-wrapper[zen-compact-mode="true"] hbox#browser:has([zen-empty-tab="true"][selected="true"])) #mainPopupSet > 
@@ -137,7 +127,7 @@ html:not([lwt-sidebar="dark"]) {
 
 /* Zen Internet */
 [label="Zen Internet"] image {
-/*   list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important; */
+  /*   list-style-image: url("https://cdn3.iconfinder.com/data/icons/feather-5/24/command-128.png") !important; */
 }
 
 /* Proton Pass free */
@@ -150,7 +140,7 @@ html:not([lwt-sidebar="dark"]) {
   [label="Dark Reader"],
   [label="Stylebot"],
 /*   [label="Zen Internet"], */
-  [label="Proton Pass: Free Password Manager"]{
+  [label="Proton Pass: Free Password Manager"] {
     image {
       filter: invert(1);
     }
@@ -193,7 +183,7 @@ html,
   }
 }
 
-tab[visuallyselected] .tab-background{
+tab[visuallyselected] .tab-background {
   border: solid #8aadf4 1px !important;
 }
 
@@ -208,10 +198,10 @@ tab[visuallyselected] .tab-background{
 /*  transparent url bar  */
 #urlbar[open][zen-floating-urlbar="true"] {
   #urlbar-background {
-/*     background-color: light-dark( */
-/*       color-mix(in srgb, #fdfdfd 80%, transparent), */
-/*       color-mix(in srgb, #0e0e0e 80%, transparent) */
-/*     ) !important; */
+    /*     background-color: light-dark( */
+    /*       color-mix(in srgb, #fdfdfd 80%, transparent), */
+    /*       color-mix(in srgb, #0e0e0e 80%, transparent) */
+    /*     ) !important; */
     outline: solid #8aadf4 2px !important;
   }
 }
@@ -264,11 +254,10 @@ tab[visuallyselected] .tab-background{
   #toolbar-context-openANewTab,
   #context_openANewTab,
   #context-setDesktopBackground,
-  #context-sendimage{
+  #context-sendimage {
     display: none !important;
   }
 }
-
 
 /* Tab group label styling */
 .tab-group-label,
@@ -335,17 +324,20 @@ tab-group .tabbrowser-tab::before {
   scale: 1.1 !important;
 }
 
-
 /* ctrl tab is back */
 #ctrlTab-previews {
   border-radius: 2em !important;
   margin-bottom: 2em !important;
   padding: 1.5em !important;
 
-  box-shadow: rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+  box-shadow:
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
   background-color: light-dark(#fff8, #0005) !important;
 }
 
@@ -375,24 +367,13 @@ tab-group .tabbrowser-tab::before {
   border: none !important;
 }
 
-body:has(
-    #ctrlTab-panel[hasbeenopened="true"] .ctrlTab-preview:not([hidden="true"])
-  )
-  #tabbrowser-tabpanels {
+body:has(#ctrlTab-panel[hasbeenopened="true"] .ctrlTab-preview:not([hidden="true"])) #tabbrowser-tabpanels {
   filter: blur(10px) !important;
 }
 
 /* transparent glance */
 .zen-glance-background > vbox {
-  mask-image: linear-gradient(
-    to right,
-    black 0%,
-    black 4%,
-    transparent 7%,
-    transparent 93.5%,
-    black 96%,
-    black 100%
-  );
+  mask-image: linear-gradient(to right, black 0%, black 4%, transparent 7%, transparent 93.5%, black 96%, black 100%);
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
 }
@@ -415,7 +396,10 @@ body:has(
     transform: translateY(0) !important;
     padding-right: 6px;
     pointer-events: none;
-    transition: max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease,
+    transition:
+      max-height 0.2s ease,
+      opacity 0.2s ease,
+      transform 0.2s ease,
       padding 0.2s ease;
   }
 }
@@ -491,7 +475,6 @@ body:has(
 #zen-media-controls-toolbar.playing {
   toolbaritem {
     background-color: light-dark(#fffd, #24273afa) !important;
-    
   }
 
   padding: 16px 24px;
@@ -558,7 +541,6 @@ body:has(
   opacity: 1 !important;
 }
 
-
 #zen-sidebar-bottom-buttons:not(:has([open="true"])) {
   bottom: -25px !important;
   opacity: 0 !important;
@@ -587,7 +569,7 @@ body:has(
 }
 
 /* fix urlbar jumping around */
-#urlbar[open] #urlbar-results > :nth-child(n+6) {
+#urlbar[open] #urlbar-results > :nth-child(n + 6) {
   display: none !important;
 }
 
@@ -599,11 +581,11 @@ body:has(
 }
 
 /* permanently transparent compact sidebar - fix for zen bug ================= remove if you sue the compact sidebar */
-#zen-main-app-wrapper[zen-compact-mode="true"] #navigator-toolbox{
-  opacity: 0 !important; 
+#zen-main-app-wrapper[zen-compact-mode="true"] #navigator-toolbox {
+  opacity: 0 !important;
 }
 
-hbox[zen-split="true"].deck-selected{
+hbox[zen-split="true"].deck-selected {
   border: none !important;
   outline: none !important;
 }
@@ -611,7 +593,6 @@ hbox[zen-split="true"].deck-selected{
 /* Catppuccin Macchiato Blue userChrome.css*/
 
 @media (prefers-color-scheme: dark) {
-
   :root {
     --zen-colors-primary: #363a4f !important;
     --zen-primary-color: #8aadf4 !important;
@@ -661,7 +642,7 @@ hbox[zen-split="true"].deck-selected{
 
   toolbar .toolbarbutton-1 {
     &:not([disabled]) {
-      &:is([open], [checked]) > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack){
+      &:is([open], [checked]) > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack) {
         fill: #181926;
       }
     }

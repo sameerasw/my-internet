@@ -1,16 +1,29 @@
 /* nexusmods-transparency */
-html, body, nav, header, header > div, ::before, .home-intro, .collections-banner-wrapper, .static .wrap, .modtabs, .to-surface-base, section > div, .info-details, .tabcontent{
+html,
+body,
+nav,
+header,
+header > div,
+::before,
+.home-intro,
+.collections-banner-wrapper,
+.static .wrap,
+.modtabs,
+.to-surface-base,
+section > div,
+.info-details,
+.tabcontent {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
 }
 
-#mainContent > .relative > div img.w-screen{
+#mainContent > .relative > div img.w-screen {
   display: none !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

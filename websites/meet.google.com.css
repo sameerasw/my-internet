@@ -15,16 +15,34 @@ c-wiz,
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 @media (prefers-color-scheme: dark) {
-[aria-label="Side panel"], [role="option"][aria-selected="false"], .ix4A2e, [role="banner"], .pI48Vc, .PQ1s4c {
-  p, i, span, h1, h2, h3, h4, h5, h6, div, input{
-    color: #fff !important;
+  [aria-label="Side panel"],
+  [role="option"][aria-selected="false"],
+  .ix4A2e,
+  [role="banner"],
+  .pI48Vc,
+  .PQ1s4c {
+    p,
+    i,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    div,
+    input {
+      color: #fff !important;
+    }
   }
-}
 }
 
 /* meet-darkreader */
@@ -41,12 +59,14 @@ footer,
 }
 
 /* meet-hidden */
-h1.r3f7Nb, .MZWksc:has(span), .sIR20d{
+h1.r3f7Nb,
+.MZWksc:has(span),
+.sIR20d {
   display: none !important;
 }
 
 /* meet-meet card */
-.mtr0Je{
+.mtr0Je {
   border-radius: 1em !important;
   margin-bottom: 1em !important;
 }

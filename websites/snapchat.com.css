@@ -1,12 +1,26 @@
 /* transparency */
-html, body, #root > div > div, #root > div > div > div, [role="listitem"] > .O4POs:not(:hover), .G3Z4U.Xg7U0, .aXEpU[role="presentation"] > div, .NvRM8.vhccd > .IBqK8 .ejVI4, .NvRM8 > .sT7ta, .S4e9r{
+html,
+body,
+#root > div > div,
+#root > div > div > div,
+[role="listitem"] > .O4POs:not(:hover),
+.G3Z4U.Xg7U0,
+.aXEpU[role="presentation"] > div,
+.NvRM8.vhccd > .IBqK8 .ejVI4,
+.NvRM8 > .sT7ta,
+.S4e9r {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.G3Z4U.Xg7U0 > img, .S4e9r.yXrVU > img{
+.G3Z4U.Xg7U0 > img,
+.S4e9r.yXrVU > img {
   display: none !important;
 }
