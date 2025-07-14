@@ -11,7 +11,7 @@
       "aliexpress-borders": "[data-spm=\"sale_banner\"] {\n  border-radius: 1em !important;\n  overflow: hidden !important;\n  margin: 1em !important;\n}\na._1UZxx {\n  border-radius: 2em !important;\n  padding: 1em !important;\n}"
     },
     "+archlinux.org.css": {
-      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #archnavbar, #pkglist-search, #pkglist-results, tr, th, .results, #pkglist-about, #punindex, .punwrap, #brdmenu, #brdmenu a, .box:has(.inbox), td, #intro, .styled-table, #arch-downloads {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #archnavbar, #pkglist-search, #pkglist-results, tr, th, .results, #pkglist-about, #punindex, .punwrap, #brdmenu, #brdmenu a, .box:has(.inbox), td, #intro, .styled-table, #arch-downloads, body > div, #vector-toc-pinned-container, #vector-appearance-pinned-container {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer {\n  display: none !important;\n}"
     },
