@@ -1,6 +1,10 @@
-const fs = require("fs");
-const path = require("path");
-const postcss = require("postcss");
+import fs from "fs";
+import path from "path";
+import postcss from "postcss";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const rootDir = path.join(__dirname, "websites");
 const outputFile = path.join(__dirname, "styles.json");
@@ -19,11 +23,7 @@ function extractFeatures(cssContent) {
 
   root.nodes.forEach((node) => {
     if (node.type === "comment") {
-      if (/^@/.test(node.text.trim())) {
-        // Skip @ comments but keep collecting under current feature
-        return;
-      }
-      // Save previous feature if exists
+      if (/^@/.test(node.text.trim())) return;
       if (currentFeature && buffer.length > 0) {
         features[currentFeature] = buffer
           .map((n) => nodeToCleanString(n))
@@ -37,7 +37,6 @@ function extractFeatures(cssContent) {
     }
   });
 
-  // Final flush
   if (currentFeature && buffer.length > 0) {
     features[currentFeature] = buffer
       .map((n) => nodeToCleanString(n))
@@ -48,29 +47,22 @@ function extractFeatures(cssContent) {
   return features;
 }
 
-// Helper to stringify a node while removing inline comments
 function nodeToCleanString(node) {
   if (node.type === "rule" || node.type === "atrule") {
     const clone = node.clone();
-
-    // 🔹 Remove ALL inline comments inside declarations
     if (clone.nodes) {
       clone.nodes = clone.nodes.filter((n) => n.type !== "comment");
     }
-
-    // 🔹 Remove ALL inline comments in selector string
     if (clone.selector) {
       clone.selector = clone.selector
-        .replace(/\/\*[^*]*\*\//g, "") // Remove all /* ... */ comments
-        .replace(/\s*,\s*,/g, ",") // Avoid duplicate commas
-        .replace(/\s+/g, " ") // Normalize whitespace
+        .replace(/\/\*[^*]*\*\//g, "")
+        .replace(/\s*,\s*,/g, ",")
+        .replace(/\s+/g, " ")
         .trim();
     }
-
     return clone.toString();
   }
 
-  // 🔹 Remove standalone comment nodes entirely
   if (node.type === "comment") {
     return "";
   }
