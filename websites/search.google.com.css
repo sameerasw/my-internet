@@ -2,7 +2,14 @@
 html,
 body,
 nav,
-header {
+header,
+body > div > c-wiz > div > div,
+body > div > c-wiz > div > div > div > div,
+body > div > div,
+[aria-label="navigational drawer"],
+.a9v4Mc::after,
+#resource-selector-container, #resource-selector-container > c-wiz > div,
+#gb {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -14,12 +21,16 @@ header {
     box-shadow 0.5s ease-in-out !important;
 }
 
+[role="listbox"][data-expanded="true"][data-childcount]{
+  background-color: light-dark(#fff, #222);
+}
+
 /* searchg-darkreader */
 :root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* searchg-no footer */
-footer {
+footer, .RiJJIe.j2F0y {
   display: none !important;
 }
