@@ -8,7 +8,8 @@ body > div > c-wiz > div > div > div > div,
 body > div > div,
 [aria-label="navigational drawer"],
 .a9v4Mc::after,
-#resource-selector-container, #resource-selector-container > c-wiz > div,
+#resource-selector-container,
+#resource-selector-container > c-wiz > div,
 #gb {
   background-color: transparent !important;
   background: none !important;
@@ -21,7 +22,7 @@ body > div > div,
     box-shadow 0.5s ease-in-out !important;
 }
 
-[role="listbox"][data-expanded="true"][data-childcount]{
+[role="listbox"][data-expanded="true"][data-childcount] {
   background-color: light-dark(#fff, #222);
 }
 
@@ -31,6 +32,7 @@ body > div > div,
 }
 
 /* searchg-no footer */
-footer, .RiJJIe.j2F0y {
+footer,
+.RiJJIe.j2F0y {
   display: none !important;
 }
