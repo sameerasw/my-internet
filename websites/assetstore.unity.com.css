@@ -21,9 +21,9 @@ atomic-search-box::part(submit-button),
 ._3o6eV, ._2sesk,
 /* @Profile */
 .bg-grey-100 {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* @Staff Picks Items */
@@ -32,30 +32,30 @@ atomic-search-box::part(submit-button),
 atomic-search-box::part(wrapper),
 /* @My Assets Input Field */
 #auto-complete-input {
-    background: #00000030 !important;
-    border: 2px solid #FFFFFF80 !important;
-    border-radius: 20px !important;
-    box-shadow: none !important;
+  background: #00000030 !important;
+  border: 2px solid #ffffff80 !important;
+  border-radius: 20px !important;
+  box-shadow: none !important;
 }
 
 /* @Search Box Dropdown */
 atomic-search-box::part(suggestions-wrapper) {
-    background: #000000F0 !important;
-    border: 2px solid #FFFFFF80 !important;
-    border-radius: 20px !important;
-    box-shadow: none !important;
-    overflow: hidden !important;
+  background: #000000f0 !important;
+  border: 2px solid #ffffff80 !important;
+  border-radius: 20px !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
 }
 
 /* @Active Search Box Item */
 atomic-search-box::part(active-suggestion) {
-    background: #FFFFFF20 !important;
-    border-radius: 0 !important;
+  background: #ffffff20 !important;
+  border-radius: 0 !important;
 }
 
 /* @Login */
 .py-14 img {
-    display: none !important;
+  display: none !important;
 }
 
 /* @Asset Page */
@@ -82,16 +82,16 @@ div[data-darkreader-inline-bgcolor],
 ._2hhoI,
 /* @Cart Footer */
 ._28Q3X {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* @Player */
 ._3hIWG {
-    overflow: hidden !important;
-    background: none !important;
-    border-radius: 10px !important;
+  overflow: hidden !important;
+  background: none !important;
+  border-radius: 10px !important;
 }
 
 /* @Buy Button */
@@ -118,59 +118,59 @@ div[data-darkreader-inline-bgcolor],
 ._1pH5r,
 /* @Page Buttons */
 .size-10, atomic-popover::part(popover-button), atomic-breadbox::part(breadcrumb-button) {
-    background: #00000050 !important;
-    border: none !important;
-    box-shadow: none !important;
+  background: #00000050 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* @You might also like See More Button */
 ._3w0DH ._3ra4I {
-    padding: 10px !important;
-    border-radius: 5px !important;
+  padding: 10px !important;
+  border-radius: 5px !important;
 }
 
 /* @Asset Preview Selector */
 .XnbFH {
-    padding: 10px !important;
-    border-radius: 5px !important;
-    height: fit-content;
+  padding: 10px !important;
+  border-radius: 5px !important;
+  height: fit-content;
 }
 
 /* @Asset Summary Top Bar */
 ._4D1j6,
 /* @Get Asset Store News Language Dropdown */
 .GB-qX {
-    background: #00000080 !important;
-    border: none !important;
-    box-shadow: none !important;
+  background: #00000080 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* @Buttons */
 ._3UE3J {
-    padding: 5px !important;
+  padding: 5px !important;
 }
 
 /* @Rating Slider */
 .fmCxD {
-    background: #FFFFFF !important;
+  background: #ffffff !important;
 }
 
 /* @Sort Reviews Buttons */
 ._32EEm button {
-    background: #00000050 !important;
-    border: none !important;
-    box-shadow: none !important;
+  background: #00000050 !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* @Review Buttons */
 ._2Y06J button {
-    background: #00000030 !important;
-    border: none !important;
-    box-shadow: none !important;
-    border-radius: 5px !important;
-    padding: 5px !important;
-    width: fit-content !important;
-    height: fit-content !important;
+  background: #00000030 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 5px !important;
+  padding: 5px !important;
+  width: fit-content !important;
+  height: fit-content !important;
 }
 
 /* @Quick Look */
@@ -180,68 +180,67 @@ div[data-darkreader-inline-bgcolor],
 ._16O5w,
 /* @Profile Dropdown */
 ._3MCKW, .z-modal {
-    background: #000000C8 !important;
-    border: none !important;
-    box-shadow: none !important;
-    border-radius: 20px !important;
-    overflow: hidden !important;
+  background: #000000c8 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
 }
 
 /* @Quick Look Buttons */
 #quick-look-add-to-cart-button-v2 button,
 ._3om09 a {
-    background: #FFFFFF20 !important;
-    border-radius: 5px !important;
+  background: #ffffff20 !important;
+  border-radius: 5px !important;
 }
 
 /* @OneTrust Banner */
 .ot-optout-signal {
-    background: #00FF0050 !important;
-    border: 2px solid #00FF0050 !important;
+  background: #00ff0050 !important;
+  border: 2px solid #00ff0050 !important;
 }
 
 /* @OneTrust Menu Button */
 .category-menu-switch-handler {
-    border: none !important;
+  border: none !important;
 }
 
 /* @OneTrust Active Menu Button */
 .ot-active-menu {
-    background: none !important;
-    border: none !important;
-    border-left: 5px solid #FFFFFF50 !important;
+  background: none !important;
+  border: none !important;
+  border-left: 5px solid #ffffff50 !important;
 }
-
 
 /* @OneTrust Borders */
 .ot-pc-header {
-    border: none !important;
+  border: none !important;
 }
 
 /* @OneTrust Buttons */
 .ot-btn-container button {
-    background: #FFFFFF20 !important;
-    border-radius: 5px !important;
-    padding: 10px !important;
-    width: 150px !important;
-    height: 50px !important;
+  background: #ffffff20 !important;
+  border-radius: 5px !important;
+  padding: 10px !important;
+  width: 150px !important;
+  height: 50px !important;
 }
 
 /* @OneTrust Button Containers */
 .ot-btn-container,
 .ot-btn-container div {
-    background: none !important;
-    width: fit-content !important;
-    height: fit-content !important;
+  background: none !important;
+  width: fit-content !important;
+  height: fit-content !important;
 }
 
 /* @Cart Dropdown Buttons */
 .Y1yB6,
 ._3UE3J {
-    background: #FFFFFF20 !important;
-    border: none !important;
-    border-radius: 5px !important;
-    padding: 10px !important;
+  background: #ffffff20 !important;
+  border: none !important;
+  border-radius: 5px !important;
+  padding: 10px !important;
 }
 
 /* @Cart Page */
@@ -250,29 +249,31 @@ div[data-darkreader-inline-bgcolor],
 ._2N-D5,
 /* @You might also like */
 ._3NQQk {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* @Toggle Buttons */
 .dV1j7 {
-    background: #00000050 !important;
-    border: 2px solid #FFFFFF80 !important;
-    border-radius: 5px !important;
-    box-shadow: none !important;
-    padding: 2px !important;
+  background: #00000050 !important;
+  border: 2px solid #ffffff80 !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  padding: 2px !important;
 }
 
 /* @Saved Assets Page */
-._3XMKz, ._1ar_y, ._2XqM5 {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
+._3XMKz,
+._1ar_y,
+._2XqM5 {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* DarkReader */
 :root {
-    --darkreader-background-ffffff: transparent !important;
-    --darkreader-background-181a1b: transparent !important;
+  --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-181a1b: transparent !important;
 }
