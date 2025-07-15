@@ -2211,9 +2211,9 @@
       "brave-no, thank you": "div.download-cta.svelte-1avqjm8 {\n  display: none !important;\n}"
     },
     "search.google.com.css": {
-      "searchg-transparency": "html, body, nav, header {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "searchg-transparency": "html, body, nav, header, body > div > c-wiz > div > div, body > div > c-wiz > div > div > div > div, body > div > div, [aria-label=\"navigational drawer\"], .a9v4Mc::after, #resource-selector-container, #resource-selector-container > c-wiz > div, #gb {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}\n[role=\"listbox\"][data-expanded=\"true\"][data-childcount] {\n  background-color: light-dark(#fff, #222);\n}",
       "searchg-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
-      "searchg-no footer": "footer {\n  display: none !important;\n}"
+      "searchg-no footer": "footer, .RiJJIe.j2F0y {\n  display: none !important;\n}"
     },
     "search.inetol.net.css": {
       "priv-transparecy": ":root {\n  --color-header-background: #00000000 !important;\n  --color-sidebar-border: #00000000 !important;\n  --color-result-background: #00000000 !important;\n}\nhtml, #search_header, article {\n  background-color: #00000000 !important;\n  border: none !important;\n}",
