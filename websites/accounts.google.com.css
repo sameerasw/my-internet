@@ -1,7 +1,5 @@
 /* gacc-transparency */
-html,
-body,
-.S7xv8 {
+html, body {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -11,4 +9,22 @@ body,
     background 0.5s ease-in-out,
     border 0.5s ease-in-out,
     box-shadow 0.5s ease-in-out !important;
+}
+
+:root {
+   --gm3-sys-color-background: transparent !important;
+   --gm3-sys-color-surface-container: transparent !important;
+   --gm3-sys-color-surface-container-lowest: transparent !important;
+}
+
+/* gacc-glass effect */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gm3-sys-color-surface-container-lowest: #0005 !important;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --gm3-sys-color-surface-container-lowest: #fff8 !important;
+  }
 }
