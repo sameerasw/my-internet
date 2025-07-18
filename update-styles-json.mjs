@@ -13,7 +13,7 @@ const excludeFile = "userChrome.css";
 
 // Create output file if it doesn't exist
 if (!fs.existsSync(outputFile)) {
-  fs.writeFileSync(outputFile, JSON.stringify({ websites: {}, mapping: {} }, null, 2));
+  fs.writeFileSync(outputFile, JSON.stringify({ website: {}, mapping: {} }, null, 2));
 }
 
 function extractFeatures(cssContent) {
@@ -83,15 +83,15 @@ function updateStylesJson() {
     }
   }
 
-  // Prepare websites data
-  const websites = {};
+  // Prepare website data
+  const website = {};
   fs.readdirSync(rootDir).forEach((file) => {
     if (file.endsWith(".css") && file !== excludeFile) {
       const content = fs.readFileSync(path.join(rootDir, file), "utf-8");
       try {
         const features = extractFeatures(content);
         if (Object.keys(features).length > 0) {
-          websites[file] = features;
+          website[file] = features;
         }
       } catch (err) {
         console.error(`Failed to parse ${file}:`, err.message);
@@ -100,11 +100,4 @@ function updateStylesJson() {
   });
 
   // Write combined output
-  const output = {
-    websites,
-    mapping,
-  };
-  fs.writeFileSync(outputFile, JSON.stringify(output, null, 2));
-}
-
-updateStylesJson();
+ 
