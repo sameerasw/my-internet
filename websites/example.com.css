@@ -33,7 +33,7 @@ section, .l-root,
 body.dark_mode, body.light_mode,
 text-div > textarea, #starlight__sidebar, .sidebar-pane, .page--article, #xf-guide,
 
-[data-color-theme] body, #__next > div, .hero-right {
+[data-color-theme] body, #__next > div, .hero-right, #middle {
   background-color: transparent !important;
   /* @Testing inline comments */
   background: none !important;
