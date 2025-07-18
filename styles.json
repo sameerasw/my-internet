@@ -318,7 +318,8 @@
       "proton-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}"
     },
     "accounts.google.com.css": {
-      "gacc-transparency": "html, body, .S7xv8 {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}"
+      "transparency": "html, body, nav, #nav, .nav, body > div {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "glass effect": "body > div > div:has([role=\"progressbar\"]) {\n  box-shadow:\n    light-dark(#fff3, #0003) 0px -36px 30px 0px inset,\n    rgba(0, 0, 0, 0.06) 0px 2px 1px,\n    rgba(0, 0, 0, 0.09) 0px 4px 2px,\n    rgba(0, 0, 0, 0.09) 0px 8px 4px,\n    rgba(0, 0, 0, 0.09) 0px 16px 8px,\n    rgba(0, 0, 0, 0.09) 0px 32px 16px !important;\n  background-color: light-dark(#fff8, #0005) !important;\n  border-radius: 1em !important;\n}"
     },
     "aescripts.com.css": {
       "aescripts-transparency": "html, body, nav, header, .main, .main-container, #browse-main-categories, .top-header {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
