@@ -39,7 +39,7 @@ aside > div,
 [data-testid="chat-layout"] > div > div > div,
 [data-testid="chat-layout"] > div > aside,
 .ContentPreview-module__tabsContainer--bNywg::after,
-.snippet-clipboard-content > .notranslate {
+.snippet-clipboard-content > .notranslate, .IssueViewer-module__contentArea--mHr61, .SubscriptionSection-module__button--WSUPv {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -151,8 +151,9 @@ td {
 modal-dialog .search-suggestions,
 details-dialog.Box,
 .Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top.color-bg-default,
-.Popover-message {
+.Popover-message, .HeaderMetadata-module__stickyContainer--xk69x {
   background-color: var(--bgColor-inset) !important;
+  transition: background-color 0.3s ease-in-out !important;
   border-radius: 1em !important;
 }
 
