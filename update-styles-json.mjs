@@ -102,7 +102,7 @@ function updateStylesJson() {
   // Write combined output
   const output = {
     website,
-    mapping
+    mapping,
   };
   fs.writeFileSync(outputFile, JSON.stringify(output, null, 2));
 }
