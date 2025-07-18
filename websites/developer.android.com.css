@@ -74,3 +74,8 @@ article,
     background-color: #0005 !important;
   }
 }
+
+/* no nav */
+.devsite-nav {
+    display: none !important;
+}
