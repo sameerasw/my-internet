@@ -75,7 +75,7 @@ article,
   }
 }
 
-/* no nav */
-.devsite-nav {
-    display: none !important;
+/* miscellaneous */
+[template="codelab"] .devsite-toc-embedded {
+  display: none !important;
 }
