@@ -1,38 +1,54 @@
-/* medium-transparency */
-.c,
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-p {
-  background-color: transparent;
-  color: #fff !important;
-  transition:
-    background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
-    border 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out !important;
-
-  &:hover {
-    color: #bbb !important;
-  }
-}
-
-.ex,
-.ae {
+/* transparency */
+html,
+body,
+nav,
+#nav,
+.nav,
+navbar,
+.navbar,
+#navbar, 
+header,
+#header,
+.header, header::before,
+app,
+#app, footer,
+.sidebar-wrap,
+section, .main,
+#__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before,
+#root, .min-h-screen.bg-white,
+.app, .AppContainer,
+.app-root, #wrapper,
+body[data-theme="dark"], body[data-theme="light"],
+#pass-sidebar, .side-bar,
+#main, .sidebar, .global-content__content,
+main, .header-top,
+#content, #cu-identity,
+section, .l-root,
+#__next, .landing-hero,
+#navigation-wrapper,
+#global-navbar, .layout__content-wrapper,
+.head.notfixed, .main-container,
+#app > div, .btm-nav > a, .oc-content--main,
+body.dark_mode, body.light_mode,
+text-div > textarea, #root > div, #root > div > div, #root > div > div > div, #root > div > div > div > div, .ac > .ca.bh > .m > .ue.uf.ug.uh.ui.m.bw{
+  background-color: transparent !important;
+  background: none !important;
   border: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-svg,
-.bk path {
-  fill: light-dark(#fff, #000) !important;
+code, pre, [data-popper-placement="bottom-end"]{
+  border-radius: 0.5em !important;
+  background-color: light-dark(#fff, #222) !important;
 }
 
-/* medium-darkreader */
-:root {
+/* darkreader */
+:root{
   --darkreader-background-ffffff: transparent !important;
+}
+
+/* no footer */
+footer, mfe-footer-pharos-footer, .footer, #footer, .i.l.k{
+  display: none !important;
 }
