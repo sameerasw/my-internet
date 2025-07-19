@@ -303,7 +303,7 @@ ytd-comments {
   backdrop-filter: blur(20px) !important;
 
   padding: 0 3em !important;
-  border-radius: 0 2em 2em 0 !important;
+  border-radius: 2em 0 0 2em !important;
 
   &:hover {
     opacity: 1 !important;
@@ -313,6 +313,7 @@ ytd-comments {
 
 /* yt-zen view comments on left */
 [theater=""] ytd-comments {
+  border-radius: 0 2em 2em 0 !important;
   left: -35em !important;
   &:hover {
     left: 0 !important;
