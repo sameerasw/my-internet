@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "websites/**/*.css"
+      - "css-mapping.json"
     branches:
       - main
   pull_request:
