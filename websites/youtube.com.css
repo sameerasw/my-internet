@@ -57,7 +57,7 @@ ytd-alert-with-button-renderer {
   justify-content: center !important;
 }
 
-/* yt-clean side guide */
+/* yt-clean side guide $ Remove YouTube Studio, Sports, Settings and the gfooter from the guide */
 ytd-guide-section-renderer:has([title="YouTube Studio"], [title="Sport"], [title="Settings"]),
 ytd-guide-renderer #footer {
   display: none !important;
