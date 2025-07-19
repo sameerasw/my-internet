@@ -75,7 +75,7 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
         display: none !important;
       }
     ```
-    
+
 16. Website mapping. Use the `css-mapping.json` to map existing css styles to other websites. Also can be used for websites that works well with forcing.
 
 >
