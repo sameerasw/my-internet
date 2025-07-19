@@ -68,7 +68,7 @@ ytd-guide-collapsible-section-entry-renderer {
   border: none !important;
 }
 
-/* yt-mini guide */
+/* yt-mini guide $ A minimal guide with an icon only sidebar similar to the tablet view but more entries */
 body:not(:has([mini-guide-visible=""])) {
   #endpoint.ytd-guide-entry-renderer yt-formatted-string,
   h3.ytd-guide-section-renderer,
