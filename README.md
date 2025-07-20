@@ -77,6 +77,16 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
     ```
 
 16. Website mapping. Use the `css-mapping.json` to map existing css styles to other websites. Also can be used for websites that works well with forcing.
+17. You can add feature descriptions by separating the title and the rest of the text inside a feature comment by separating it with `$`. Check example.com.css for the samples.
+    ```
+      /* darkreader $ This is a example description */
+      :root {
+        --darkreader-background-ffffff: transparent !important;
+      }
+    ```
+    This will show up like below while hovering the feature title.
+    <img width="934" height="646" alt="CleanShot 2025-07-20 at 4  54 37@2x" src="https://github.com/user-attachments/assets/7bac8e98-c0d0-4c42-9c8b-b672fae65df8" />
+
 
 >
 
