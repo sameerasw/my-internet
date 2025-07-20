@@ -33,7 +33,7 @@ section, .l-root,
 body.dark_mode, body.light_mode,
 text-div > textarea, #starlight__sidebar, .sidebar-pane, .page--article, #xf-guide,
 
-[data-color-theme] body, #__next > div, .hero-right, #middle, .HeaderLinks_header__Ia2QY {
+[data-color-theme] body, #__next > div, .hero-right, #middle, .HeaderLinks_header__Ia2QY, #page-content, section[data-role] {
   background-color: transparent !important;
   /* @Testing inline comments */
   background: none !important;
