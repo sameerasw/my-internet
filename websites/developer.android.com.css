@@ -74,3 +74,21 @@ article,
     background-color: #0005 !important;
   }
 }
+
+/* fix overlapping header */
+body {
+  overflow: hidden !important;
+}
+
+devsite-header {
+  position: relative !important;
+}
+
+#gc-wrapper {
+  margin-top: 0 !important; 
+}
+
+main {
+  height: calc(100vh - 49px) !important;
+  overflow-y: scroll !important;
+}
