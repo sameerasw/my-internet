@@ -69,7 +69,7 @@ button[role="tab"] {
   padding: 1em !important;
 }
 
-/* gh-transparent lists */
+/* gh-transparent lists $ Make the files, issues and other lists transparent */
 .PageLayout-content .Box:not(.Popover-message),
 .PageLayout-content .Box-row,
 #repo-content-turbo-frame .Box.Box:not(.Popover-message) {
@@ -79,7 +79,42 @@ button[role="tab"] {
   box-shadow: none !important;
 }
 
-/* gh-bordered boxes */
+/* gh-no footer */
+footer:has(h2),
+div.px-2:nth-child(3) {
+  opacity: 0 !important;
+}
+
+/* gh-hover $ Make the left and right sidebars show on hover */
+.feed-left-sidebar,
+.feed-right-sidebar {
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover {
+    opacity: 1 !important;
+  }
+}
+
+/* gh-border mods */
+table,
+.eIKYQa,
+div.border-bottom,
+td {
+  border: none !important;
+}
+
+.dJnomT,
+.jPdcfu,
+.gOHzTT,
+.eBevHz,
+.Box-header,
+#repos-sticky-header > div,
+.jbBkdO,
+.file-header,
+.TabNav-item {
+  border-radius: 0.5em !important;
+}
+
 [data-selector="repos-split-pane-content"] {
   section,
   .NWhVB,
@@ -113,43 +148,7 @@ action-graph .color-bg-inset,
   box-shadow: none !important;
 }
 
-/* gh-no footer */
-footer:has(h2),
-div.px-2:nth-child(3) {
-  opacity: 0 !important;
-}
-
-/* gh-hover */
-.feed-left-sidebar,
-.feed-right-sidebar {
-  opacity: 0 !important;
-  transition: all 0.3s ease-in-out !important;
-  &:hover {
-    opacity: 1 !important;
-  }
-}
-
-/* gh-border mods */
-table,
-.eIKYQa,
-div.border-bottom,
-td {
-  border: none !important;
-}
-
-.dJnomT,
-.jPdcfu,
-.gOHzTT,
-.eBevHz,
-.Box-header,
-#repos-sticky-header > div,
-.jbBkdO,
-.file-header,
-.TabNav-item {
-  border-radius: 0.5em !important;
-}
-
-/* gh-overlay fixes */
+/* gh-overlay fixes $ Fix some transparent overlays and menus */
 modal-dialog .search-suggestions,
 details-dialog.Box,
 .Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top.color-bg-default,
@@ -302,7 +301,7 @@ button[aria-label="Search this repository"],
   padding: 0.5em !important;
 }
 
-/* no tab text */
+/* no tab text $ Make repository tabs only got icons and show text only on hover */
 .UnderlineNav-item {
   span:not([class="Counter"]) {
     opacity: 0 !important;
@@ -326,7 +325,7 @@ button[aria-label="Search this repository"],
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
 }
 
-/* repo sidebar hover */
+/* repo sidebar hover $ Revel more info on repository description and below sidebar content on hover */
 .Layout-sidebar {
   .BorderGrid-cell {
     .mt-2,
@@ -351,7 +350,7 @@ button[aria-label="Search this repository"],
   }
 }
 
-/* immersive search */
+/* immersive search $ Blur and zoom in with search */
 .application-main {
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
 }
