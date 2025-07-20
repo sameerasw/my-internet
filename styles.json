@@ -2968,7 +2968,8 @@
     ],
     "example.com.css": [
       "alternativeto.net",
-      "kbin.earth"
+      "kbin.earth",
+      "mp.weixin.qq.com"
     ]
   }
 }
