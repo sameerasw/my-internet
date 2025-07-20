@@ -81,7 +81,7 @@ body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [a
 
 @media screen and (max-width: 1300px) {
   .three ._ajx_ {
-     display: none !important; 
+    display: none !important;
   }
 }
 
