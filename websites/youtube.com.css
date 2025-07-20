@@ -33,7 +33,7 @@ ytd-mini-guide-entry-renderer {
   background: none !important;
 }
 
-/* yt-Toggle side guide */
+/* yt-Toggle side guide $ Completely remove the side guide */
 ytd-mini-guide-renderer {
   display: none !important;
 }
@@ -147,7 +147,7 @@ ytd-two-column-browse-results-renderer[page-subtype="playlist"] {
   display: none !important;
 }
 
-/* yt-Hide filter chips */
+/* yt-Hide filter chips $ Hide the chips at the top of the feed homepage if unused */
 #chips-wrapper {
   top: 0 !important;
 }
@@ -156,7 +156,7 @@ ytd-two-column-browse-results-renderer[page-subtype="playlist"] {
   display: none !important;
 }
 
-/* yt-Compact feed */
+/* yt-Compact feed $ Reduce spacing, Show menu button on hover, inline details */
 ytd-rich-item-renderer {
   margin-bottom: 15px !important;
   [rendered-from-rich-grid] {
@@ -186,7 +186,7 @@ ytd-rich-grid-media {
   }
 }
 
-/* yt-thumbnail hover */
+/* yt-thumbnail hover $ Zoom in the inline thumbnail previews while hovering */
 #inline-preview-player {
   transition: scale 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s !important;
   scale: 1 !important;
@@ -213,7 +213,7 @@ ytd-app:has(#video-preview-container:hover) #content {
   transition: opacity 4s ease-in-out 1s !important;
 }
 
-/* yt-no distractions */
+/* yt-no distractions $ No shorts and other obsolete sections in the feed */
 #contents ytd-rich-section-renderer {
   display: none !important;
 }
@@ -249,7 +249,7 @@ ytd-merch-shelf-renderer,
   display: none !important;
 }
 
-/* yt-Theatre: zen view */
+/* yt-theater: zen view $ Make the theater view video fit the full window size */
 [theater=""] #full-bleed-container {
   height: 100vh !important;
   max-height: 100vh !important;
@@ -279,7 +279,7 @@ ytd-app:has([fullscreen=""], [theater=""]):not(:has(ytd-watch-flexy[hidden=""]))
   }
 }
 
-/* yt-zen view comments */
+/* yt-zen view comments $ In theater mode, move comments to the edge of the video on left or right and show on hover */
 [theater=""] #columns #secondary {
   scale: 0 !important;
   display: none !important;
@@ -320,13 +320,13 @@ ytd-comments {
   }
 }
 
-/* yt-zen comments solid */
+/* yt-zen comments solid $ Make above Zen View comments background solid instead of blur */
 [theater=""] ytd-comments {
   backdrop-filter: none !important;
   background-color: var(--yt-spec-text-primary-inverse) !important;
 }
 
-/* yt-transparent overlay chat */
+/* yt-transparent overlay chat $ Make the live chat appear as an overlay in theater mode right side edge. */
 [theater=""] #chat {
   position: absolute !important;
   height: 800px !important;
@@ -359,7 +359,7 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer) {
   display: none !important;
 }
 
-/* yt-better captions */
+/* yt-better captions $ Caption background has blur */
 .caption-window {
   backdrop-filter: blur(10px) !important;
   border-radius: 1em !important;
@@ -367,12 +367,12 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer) {
   box-shadow: #0008 0 0 20px !important;
 }
 
-/* yt-Keep player shadow */
+/* yt-Keep player shadow $ Remove the shadow around the player when disabled */
 .ytp-gradient-bottom {
   display: initial !important;
 }
 
-/* yt-fix new feed layout */
+/* yt-fix new feed layout $ Revert the new ugly feed layout that barely fits 3 columns of videos */
 ytd-rich-item-renderer[rendered-from-rich-grid] {
   @media only screen and (min-width: 1400px) {
     --ytd-rich-grid-items-per-row: 4 !important;
@@ -395,7 +395,7 @@ ytd-rich-item-renderer[is-in-first-column=""] {
   padding-left: calc(var(--ytd-rich-grid-item-margin) / 2 + var(--ytd-rich-grid-gutter-margin)) !important;
 }
 
-/* Immersive search */
+/* yt-Immersive search $ Smooth blur and zoom effect for searhbar */
 #page-manager,
 yt-searchbox {
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
