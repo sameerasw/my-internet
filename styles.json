@@ -2974,6 +2974,9 @@
       "gnome-look.org",
       "appimagehub.com",
       "linux-apps.com"
+    ],
+    "gitlab.com.css": [
+      "gitlab.freedesktop.org"
     ]
   }
 }
