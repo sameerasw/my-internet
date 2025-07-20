@@ -50,7 +50,7 @@ text-div > textarea, #starlight__sidebar, .sidebar-pane, .page--article, #xf-gui
 
 /* @ this comment will also get skipped */
 /* @ this too */
-/* darkreader */
+/* darkreader $ This is a example description */
 :root {
   --darkreader-background-ffffff: transparent !important;
 }
