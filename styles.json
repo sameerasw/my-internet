@@ -121,6 +121,13 @@
       "klang-Transparency": "html, body, .app-container, .ktl-header-module_header-menu_wh71L, .toolbar, .playground, .executable-fragment, .code-area, .CodeMirror, .output-wrapper, .toc, .wt-section, .starting-page-card, .keep-in-touch_wrapper__us7aS, .teach-subscription-form {\n  background-color: transparent !important;\n  background: none !important;\n}\n:root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "klang-No Footer": "footer {\n  display: none !important;\n}"
     },
+    "+linkedin.com.css": {
+      "in-transparency": ":root {\n  --color-background: transparent !important;\n  --color-background-canvas: transparent !important;\n  --color-background-container: transparent !important;\n}\n#app__container, .form__input--floating {\n  background-color: transparent !important;\n}",
+      "in-no borders": ":root {\n  --color-border-faint: transparent !important;\n}",
+      "in-navbar blur": "header {\n  backdrop-filter: blur(20px) !important;\n}",
+      "in-glass effect": ":root {\n  --color-background: #fff8 !important;\n}\n.theme--dark {\n  --color-background: #0005 !important;\n}",
+      "in-no footer": "footer {\n  display: none !important;\n}"
+    },
     "+mediawiki.org.css": {
       "transparency": ":root {\n  --background-color-interactive-subtle: transparent !important;\n}\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "no footer": "footer {\n  display: none !important;\n}"
@@ -1589,13 +1596,6 @@
       "novel-hidden": ".glass-background, .DlIdmrby {\n  display: none !important;\n}",
       "novel-transparent paper": "#chapter-container {\n  background-color: transparent !important;\n}",
       "novel-floating reader": "#chapter-container {\n  background-color: transparent !important;\n  border: solid 1px var(--bg-nav-header) !important;\n  border-radius: 1em !important;\n  box-shadow: #00000066 0px 0px 300px;\n}"
-    },
-    "linkedin.com.css": {
-      "in-transparency": ":root {\n  --color-background: transparent !important;\n  --color-background-canvas: transparent !important;\n  --color-background-container: transparent !important;\n}\n#app__container, .form__input--floating {\n  background-color: transparent !important;\n}",
-      "in-no borders": ":root {\n  --color-border-faint: transparent !important;\n}",
-      "in-navbar blur": "header {\n  backdrop-filter: blur(20px) !important;\n}",
-      "in-glass effect": ":root {\n  --color-background: #fff8 !important;\n}\n.theme--dark {\n  --color-background: #0005 !important;\n}",
-      "in-no footer": "footer {\n  display: none !important;\n}"
     },
     "linux.do.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
