@@ -2459,11 +2459,6 @@
       "epic-others": "*::before, *::after {\n  background: transparent !important;\n}",
       "epic-no footer": "footer {\n  display: none !important;\n}"
     },
-    "store.kde.org.css": {
-      "transparency": "html, body, nav, #nav, .nav, navbar, .navbar, #navbar, header, #header, #site-header, .header, .pui-sidebar, app, .product-browse-list-item, #app, #metaheader, .app, .app-root, #pass-sidebar, #main, main, #content, section, #__next, #navigation-wrapper, #global-navbar, .head.notfixed, body[data-theme=\"dark\"], body[data-theme=\"light\"], body.dark_mode, body.light_mode {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}\n.sidebar-bg {\n  display: none !important;\n}\n.dropdown-menu {\n  background-color: light-dark(#fff, #222) !important;\n}",
-      "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
-      "no footer": ".footer {\n  display: none !important;\n}"
-    },
     "store.playstation.com.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, #jetstream-tertiary-nav > div, #shared-nav-container, .shared-nav__primary-parent, .psw-s-content-break-20, main > div {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
