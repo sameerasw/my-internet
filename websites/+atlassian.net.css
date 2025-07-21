@@ -50,7 +50,7 @@ section,
 .btm-nav > a,
 body.dark_mode,
 body.light_mode,
-text-div > textarea {
+text-div > textarea, body > div, [data-testid="object-header-container"], #content-body {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
