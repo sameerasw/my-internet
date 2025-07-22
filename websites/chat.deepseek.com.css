@@ -1,4 +1,4 @@
-/* deepseek-transparecy */
+/* deepseek-transparency */
 body[data-ds-dark-theme] {
   --dsr-bg: transparent !important;
   --dsr-side-bg: transparent !important;
