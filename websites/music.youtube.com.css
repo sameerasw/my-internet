@@ -150,7 +150,7 @@ ytmusic-player-bar,
 }
 
 /* Mini player tweaks */
-#main-panel:has(ytmusic-player[player-ui-state="MINIPLAYER"]){
+#main-panel:has(ytmusic-player[player-ui-state="MINIPLAYER"]) {
   position: fixed !important;
   width: 100vw !important;
   height: 100vh !important;
@@ -162,9 +162,7 @@ ytmusic-player-bar,
   max-width: 100vw !important;
 }
 
-
-ytmusic-player[player-ui-state="MINIPLAYER"]
-{
+ytmusic-player[player-ui-state="MINIPLAYER"] {
   position: fixed !important;
   bottom: calc(100vh + 120px) !important;
   right: 30px !important;
