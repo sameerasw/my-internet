@@ -88,6 +88,10 @@ body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [a
   }
 }
 
+._aigs:has(.xevlxbw > span > div) .x18pi947 {
+  opacity: 0 !important;
+}
+
 /* wa-layout fixes */
 .two,
 .three {
