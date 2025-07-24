@@ -83,6 +83,9 @@ body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [a
   .three ._ajx_ {
     display: none !important;
   }
+  ._aiwn:has(.overlay) ._aig- {
+    display: none !important;
+  }
 }
 
 /* wa-layout fixes */
