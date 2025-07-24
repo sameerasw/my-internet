@@ -21,13 +21,13 @@ app,
 .x150wa6m,
 #app,
 .x13x2ugz,
+.x15xk1te,
 .app,
 .two,
 .two > div,
 div.xds687c:nth-child(1),
 .three,
 .three .xnpuxes,
-.x1c1uobl > div,
 .app-root,
 #pass-sidebar,
 #main,
@@ -83,6 +83,13 @@ body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [a
   .three ._ajx_ {
     display: none !important;
   }
+  ._aiwn:has(.overlay) ._aig- {
+    display: none !important;
+  }
+}
+
+._aigs:has(.xevlxbw > span > div) .x18pi947 {
+  opacity: 0 !important;
 }
 
 /* wa-layout fixes */
