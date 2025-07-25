@@ -1,9 +1,10 @@
 /* transparency */
-:root{
+:root {
   --tw-bg-opacity: 0 !important;
 }
 
-body, main, .bg-\[\#0A0A0A\]\/80{
+body,
+main,
+.bg-\[\#0A0A0A\]\/80 {
   background-color: #00000000 !important;
-
 }
