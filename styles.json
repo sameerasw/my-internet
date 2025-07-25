@@ -2995,7 +2995,8 @@
     "example.com.css": [
       "alternativeto.net",
       "kbin.earth",
-      "mp.weixin.qq.com"
+      "mp.weixin.qq.com",
+      "-cifraclub.com.br"
     ],
     "pling.com.css": [
       "store.kde.org",
