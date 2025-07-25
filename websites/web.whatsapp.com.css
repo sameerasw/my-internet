@@ -1,82 +1,18 @@
-/* transparency */
-html,
-body,
-nav,
-#nav,
-.nav,
-navbar,
-.x15g3fpr,
-.navbar,
-._al_c,
-#navbar,
-.x1280gxy,
-.xsm26vf,
-header,
-[aria-label="Community tab drawer"] > div,
-#header,
-.x1n2onr6 ._ak72:not(:hover),
-.header,
-app,
-[aria-label="Channel tab drawer"] > div,
-.x150wa6m,
-#app,
-.x13x2ugz,
-.x15xk1te,
-.app,
-.two,
-.two > div,
-div.xds687c:nth-child(1),
-.three,
-.three .xnpuxes,
-.app-root,
-#pass-sidebar,
-#main,
-._alyo._alyw,
-main,
-[data-focusid="status-row-item"]:not(:hover),
-#content,
-[aria-label="Status tab drawer"] > div,
-section,
-.two::after,
-.three::after,
-#__next,
-#side,
-#side > div,
-#side > div > div,
-.xsknx04,
-#navigation-wrapper,
-#global-navbar,
-.head.notfixed,
-body[data-theme="dark"],
-body[data-theme="light"],
-body.dark_mode,
-body.light_mode,
-footer > div:first-of-type,
-#app > div:first-of-type::after {
+/* wa-transparency */
+html, body, .x1iek97a {
   background-color: transparent !important;
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  transition:
-    background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
-    border 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out !important;
 }
 
-:root,
-.dark {
-  --background-default-active: transparent !important;
-  --background-document-with-captions: transparent !important;
-  --border-list: transparent !important;
-  --conversation-header-border: transparent !important;
-}
-
-body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [aria-label="Community tab drawer"], [title="Archived"], [title="Settings"], [title="Profile"]) ._aigw {
-  header:has([aria-label="WhatsApp"]),
-  #side {
-    display: none !important;
-  }
+.color-refresh, .x1280gxy {
+  --WDS-surface-default: transparent !important;
+  --WDS-background-wash-inset: transparent !important;
+  --WDS-surface-emphasized: transparent !important;
+  --WDS-systems-chat-background-wallpaper: transparent !important; 
+  --compose-input-background: var(--WDS-surface-highlight) !important;
+  --background-default-hover: var(--WDS-surface-highlight) !important;
+  --background-lightest-hover: var(--WDS-surface-highlight) !important;
+  --reactions-panel-background-color: transparent !important;
+  --reactions-panel-search-background-color: var(--WDS-surface-highlight) !important;
 }
 
 @media screen and (max-width: 1300px) {
@@ -92,17 +28,12 @@ body:has([aria-label="Status tab drawer"], [aria-label="Channel tab drawer"], [a
   opacity: 0 !important;
 }
 
-/* wa-layout fixes */
-.two,
-.three {
-  width: 100vw !important;
-  max-width: 100vw !important;
-  height: 100vh !important;
-  margin: 0 !important;
-  top: 0 !important;
+/* wa-immersive popups */
+.color-refresh {
+  --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
 }
 
-/* wa-chat background */
-[data-asset-chat-background-dark="true"] {
-  background-image: none !important;
+#app:has(._ak4w, [role="dialog"]) ._aigs {
+  filter: blur(20px) !important;
+  pointer-events: none !important;
 }
