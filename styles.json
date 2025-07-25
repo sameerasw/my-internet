@@ -2653,6 +2653,10 @@
       "tg-darkreader fix": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "tg-no footer": "footer {\n  display: none !important;\n}"
     },
+    "tracker.gg.css": {
+      "transparency": "html, body, nav, #nav, .nav, navbar, .navbar, #navbar, header, #header, .header, header::before, app, #app, footer, .sidebar-wrap, section, .main, #__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before, #root, .min-h-screen.bg-white, .app, .AppContainer, .app-root, #wrapper, body[data-theme=\"dark\"], body[data-theme=\"light\"], #pass-sidebar, .side-bar, #main, .sidebar, .global-content__content, main, .header-top, #content, #cu-identity, section, .l-root, #__next, .landing-hero, #navigation-wrapper, #global-navbar, .layout__content-wrapper, .head.notfixed, .main-container, #app > div, .btm-nav > a, .oc-content--main, body.dark_mode, body.light_mode, text-div > textarea, .landing, .trn-container, .landing__sidebar, .summary, .cover {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "no footer": "footer, mfe-footer-pharos-footer, .footer, #footer, .mobile-promo {\n  display: none !important;\n}"
+    },
     "tradutorgaio.xunta.gal.css": {
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer {\n  display: none !important;\n}"
