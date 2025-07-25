@@ -1,4 +1,4 @@
-/* wa-transparency */
+/* wa-Transparency */
 html, body, .x1iek97a {
   background-color: transparent !important;
   background-image: none !important;
@@ -34,7 +34,7 @@ html, body, .x1iek97a {
   opacity: 0 !important;
 }
 
-/* wa-immersive popups */
+/* wa-Immersive Popup */
 .color-refresh {
   --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
 }
