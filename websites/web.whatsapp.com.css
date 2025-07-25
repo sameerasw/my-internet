@@ -1,6 +1,12 @@
 /* wa-transparency */
 html, body, .x1iek97a {
   background-color: transparent !important;
+  background-image: none !important;
+}
+
+:root {
+  --splashscreen-startup-background: transparent !important;
+  --splashscreen-startup-background-rgb: transparent !important;
 }
 
 .color-refresh, .x1280gxy {
