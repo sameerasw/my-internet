@@ -39,7 +39,11 @@ html, body, .x1iek97a {
   --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
 }
 
-#app:has(._ak4w, [role="dialog"]) ._aigs {
-  filter: blur(20px) !important;
-  pointer-events: none !important;
+#app:has(._ak4w, [role="dialog"]) {
+  ._aigs {
+    filter: blur(20px) !important;
+  }
+  ._ak72, ._ak72 [role="button"], [type="button"], [data-navbar-item="true"] {
+    pointer-events: none !important;
+  }
 }
