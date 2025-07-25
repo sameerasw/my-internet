@@ -64,6 +64,11 @@ footer > div:first-of-type,
     box-shadow 0.5s ease-in-out !important;
 }
 
+.color-refresh {
+  --compose-input-background: var(--WDS-surface-highlight) !important;
+  --background-default-hover: var(--WDS-surface-highlight) !important;
+}
+
 :root,
 .dark {
   --background-default-active: transparent !important;
