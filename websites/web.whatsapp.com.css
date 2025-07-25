@@ -67,6 +67,7 @@ footer > div:first-of-type,
 .color-refresh {
   --compose-input-background: var(--WDS-surface-highlight) !important;
   --background-default-hover: var(--WDS-surface-highlight) !important;
+  --background-lightest-hover: var(--WDS-surface-highlight) !important;
 }
 
 :root,
