@@ -2804,6 +2804,9 @@
       "no footer": ".region-footer-1 {\n  display: none !important;\n}",
       "misc": "section.sidebar-placement.block.block-favish-ads.block-block-favish-ads-placeholder.clearfix {\n  display: none;\n}"
     },
+    "wallwidgy.me.css": {
+      "transparency": ":root {\n  --tw-bg-opacity: 0 !important;\n}\nbody, main, .bg-\\[\\#0A0A0A\\]\\/80 {\n  background-color: #00000000 !important;\n}"
+    },
     "warcraft3.info.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .container-fluid, .layout-master, .navbar, .layout-section, .section-header {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}"
     },
