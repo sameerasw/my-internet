@@ -20,6 +20,7 @@ html, body, .x1iek97a {
   --background-lightest-hover: var(--WDS-surface-highlight) !important;
   --reactions-panel-background-color: transparent !important;
   --reactions-panel-search-background-color: var(--WDS-surface-highlight) !important;
+  --poll-modal-footer-background-color: transparent !important;
 }
 
 @media screen and (max-width: 1300px) {
