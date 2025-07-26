@@ -9,7 +9,7 @@ html, body, .x1iek97a {
   --splashscreen-startup-background-rgb: transparent !important;
 }
 
-.color-refresh, .x1280gxy, .x1l0ey4t {
+.color-refresh, .x1280gxy, .x1l0ey4t, .x1h3rtpe {
   --WDS-surface-default: transparent !important;
   --WDS-background-wash-inset: transparent !important;
   --WDS-surface-emphasized: transparent !important;
@@ -44,7 +44,7 @@ html, body, .x1iek97a {
   ._aigs {
     filter: blur(20px) !important;
   }
-  ._ak72, ._ak72 [role="button"], [type="button"], [data-navbar-item="true"] {
+  ._ak72, [role="button"]:not(._ak4w [role="button"]), [data-navbar-item="true"] {
     pointer-events: none !important;
   }
 }
