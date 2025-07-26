@@ -44,7 +44,7 @@ html, body, .x1iek97a {
   ._aigs {
     filter: blur(20px) !important;
   }
-  ._ak72, [role="button"]:not(._ak4w [role="button"]), [data-navbar-item="true"] {
+  ._ak72, [role="button"]:not(._ak4w [role="button"]), [type="button"], [data-navbar-item="true"] {
     pointer-events: none !important;
   }
 }
