@@ -1,7 +1,6 @@
 /* wa-Transparency */
 html, body, .x1iek97a {
-  background-color: transparent !important;
-  background-image: none !important;
+  background: none !important;
 }
 
 :root {
@@ -37,19 +36,23 @@ html, body, .x1iek97a {
 }
 
 /* wa-Immersive Popup */
+.x1akjpcp {
+  background: none !important;
+}
+
 .color-refresh, .x1honnu5 {
   --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
   --WDS-background-dimmer: transparent !important;
 }
 
-#app:has(._ak4w, [role="dialog"]:not(._aig- [role="dialog"])) {
+#app:has(._ak4w, [role="dialog"]:not(._aig- [role="dialog"]), .overlay) {
   ._aigs {
     filter: blur(20px) !important;
   }
   [type="button"],
   [data-navbar-item="true"],
-  ._ak72:not([data-animate-modal-backdrop="true"] ._ak72),
-  [role="button"]:not(._ak4w [role="button"], [role="dialog"] [role="button"]){
+  ._ak72:not([role="dialog"] ._ak72),
+  [role="button"]:not(._ak4w [role="button"], [role="dialog"] [role="button"], .overlay [role="button"]){
     pointer-events: none !important;
   }
 }
