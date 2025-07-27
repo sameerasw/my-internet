@@ -1,6 +1,7 @@
 /* yt-Transparency */
 html[dark],
-html, body,
+html,
+body,
 #container.ytd-searchbox,
 ytd-app,
 #page-header-container,
@@ -10,7 +11,9 @@ ytd-app,
 #chips-wrapper,
 .navigation-container,
 #cinematic-shorts-scrim,
-#shorts-container, .ytLrGuideResponseMask, .ytLrPromoShelfRendererContainer {
+#shorts-container,
+.ytLrGuideResponseMask,
+.ytLrPromoShelfRendererContainer {
   background-color: #00000000 !important;
   background: none !important;
 }
@@ -33,9 +36,9 @@ ytd-mini-guide-entry-renderer {
   background: none !important;
 }
 
-.ytLrPromoShelfRendererPreviewBackground{
-  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%) !important;
-  mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%) !important;
+.ytLrPromoShelfRendererPreviewBackground {
+  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%) !important;
+  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%) !important;
   -webkit-mask-repeat: no-repeat !important;
   mask-repeat: no-repeat !important;
   -webkit-mask-size: cover !important;
@@ -43,7 +46,8 @@ ytd-mini-guide-entry-renderer {
 }
 
 /* yt-Toggle side guide $ Completely remove the side guide */
-ytd-mini-guide-renderer, #contentContainer:has(#guide-wrapper) {
+ytd-mini-guide-renderer,
+#contentContainer:has(#guide-wrapper) {
   display: none !important;
 }
 tp-yt-app-drawer > #contentContainer:not([opened=""]),
@@ -240,7 +244,8 @@ ytd-merch-shelf-renderer,
 #ytd-player,
 #player-container,
 #player-full-bleed-container,
-#full-bleed-container, ytlr-player {
+#full-bleed-container,
+ytlr-player {
   background-color: #00000000 !important;
   background: transparent !important;
 }
@@ -544,23 +549,28 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
 }
 
 /* yt-YT TV $ YouTube TV player modifications */
-.ytLrWatchDefaultControlsBackground, ytlr-watch-metadata,  .ytVirtualListItem:not(.ytVirtualListItemSelected) ytlr-comment-renderer, .ytLrChannelHeaderRendererMetadata, ytlr-surface-page::before{
+.ytLrWatchDefaultControlsBackground,
+ytlr-watch-metadata,
+.ytVirtualListItem:not(.ytVirtualListItemSelected) ytlr-comment-renderer,
+.ytLrChannelHeaderRendererMetadata,
+ytlr-surface-page::before {
   background-color: #fff7 !important;
   backdrop-filter: blur(15px) !important;
 
   @media (prefers-color-scheme: dark) {
-  background-color: #0007 !important;
-}
+    background-color: #0007 !important;
+  }
 }
 
-.ytLrWatchDefaultControlsBackground{
+.ytLrWatchDefaultControlsBackground {
   width: 80rem !important;
   transform: translateX(-50%) !important;
   left: 50% !important;
   border-radius: 1em 1em 0 0 !important;
 }
 
-.ytLrAnimatedOverlayContainer, ytlr-compact-link-renderer{
+.ytLrAnimatedOverlayContainer,
+ytlr-compact-link-renderer {
   background-color: transparent !important;
   font-size: 0.7em !important;
 }
