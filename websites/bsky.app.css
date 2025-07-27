@@ -16,7 +16,9 @@ div:has(div > button[aria-label="Go back"]),
 [role="tablist"],
 [data-testid="profileView"] div.css-175oi2r.r-12vffkv,
 #root > div > div > div > div > div,
-.r-12vffkv {
+.r-12vffkv,
+main > div > div > div > div,
+main > div > div {
   --background: transparent !important;
   background-color: transparent !important;
 }
