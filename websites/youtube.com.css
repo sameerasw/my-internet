@@ -47,7 +47,7 @@ ytd-mini-guide-entry-renderer {
 
 /* yt-Toggle side guide $ Completely remove the side guide */
 ytd-mini-guide-renderer,
-#contentContainer:has(#guide-wrapper) {
+[theater=""]  #contentContainer:has(#guide-wrapper) {
   display: none !important;
 }
 tp-yt-app-drawer > #contentContainer:not([opened=""]),
