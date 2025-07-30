@@ -47,7 +47,7 @@ ytd-mini-guide-entry-renderer {
 
 /* yt-Toggle side guide $ Completely remove the side guide */
 ytd-mini-guide-renderer,
-[theater=""] #contentContainer:has(#guide-wrapper) {
+[theater=""] #contentContainer::after {
   display: none !important;
 }
 tp-yt-app-drawer > #contentContainer:not([opened=""]),
@@ -329,7 +329,7 @@ ytd-comments {
 /* yt-zen view comments on left */
 [theater=""] ytd-comments {
   border-radius: 0 2em 2em 0 !important;
-  left: -42em !important;
+  left: -40em !important;
   &:hover {
     left: 0 !important;
   }
