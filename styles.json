@@ -182,6 +182,9 @@
       "no footer": "footer {\n  display: none !important;\n}",
       "no game banner": ".content__bg, .content__wrapper {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}"
     },
+    "+pcpartpicker.com.css": {
+      "transparency": "html, body, nav, #nav, .nav, navbar, .navbar, #navbar, header, #header, .header, app, #app, .app, .app-root, #pass-sidebar, #main, main, #content, .offCanvas__sidebar, section, #homepage > div, .main-wrapper > div > div, #__next, .navDesktop > div, #navigation-wrapper, #global-navbar, .head.notfixed, body[data-theme=\"dark\"], body[data-theme=\"light\"], body.dark_mode, body.light_mode {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}"
+    },
     "+pinterest.com.css": {
       "pin-transparency": ":root {\n  --color-background-box-light: transparent !important;\n  --color-background-box-default: transparent !important;\n}\n.qiB > div {\n  background-color: transparent !important;\n}\n.mainContainer > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1), [data-root-margin=\"more-ideas-tabs\"] > div > div, .Jea.XiG.imm.wsz.zI7, [data-test-id=\"header-background\"], nav {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}\n[data-test-id=\"typeaheadResults\"], #SuggestionsMenu {\n  background-color: light-dark(#fff, #222) !important;\n  border-radius: 2em !important;\n}",
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}"
@@ -2035,9 +2038,6 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, #main-content, .home-container > div {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer {\n  display: none !important;\n}"
-    },
-    "pcpartpicker.com.css": {
-      "transparency": "html, body, nav, #nav, .nav, navbar, .navbar, #navbar, header, #header, .header, app, #app, .app, .app-root, #pass-sidebar, #main, main, #content, .offCanvas__sidebar, section, #homepage > div, .main-wrapper > div > div, #__next, .navDesktop > div, #navigation-wrapper, #global-navbar, .head.notfixed, body[data-theme=\"dark\"], body[data-theme=\"light\"], body.dark_mode, body.light_mode {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}"
     },
     "pepper.pl.css": {
       "transparent pepper.pl": ":root {\n  --bgBasePrimary: transparent !important;\n  --bgBaseSecondary: transparent !important;\n  --bgBaseTertiary: transparent !important;\n  --bgNeutralPrimary: transparent !important;\n}\n.footer {\n  background-color: transparent !important;\n}"
