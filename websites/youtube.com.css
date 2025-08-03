@@ -408,7 +408,7 @@ body {
 .ytd-page-manager {
   overflow-x: hidden !important;
   overflow-y: scroll !important;
-  height: calc(100vh - var(--ytd-masthead-height)) !important;
+  height: calc(100vh - 56px) !important;
 }
 .ytSearchboxComponentInputBox {
   background-color: rgba(255,255,255,0.1) !important;
