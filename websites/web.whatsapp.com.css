@@ -1,5 +1,7 @@
 /* wa-Transparency */
-html, body, .x1iek97a {
+html,
+body,
+.x1iek97a {
   background: none !important;
 }
 
@@ -8,12 +10,15 @@ html, body, .x1iek97a {
   --splashscreen-startup-background-rgb: transparent !important;
 }
 
-.color-refresh, .x1280gxy, .x1l0ey4t, .x1h3rtpe {
+.color-refresh,
+.x1280gxy,
+.x1l0ey4t,
+.x1h3rtpe {
   --WDS-surface-default: transparent !important;
   --WDS-background-wash-inset: transparent !important;
   --WDS-surface-emphasized: transparent !important;
   --WDS-surface-elevated-emphasized: transparent !important;
-  --WDS-systems-chat-background-wallpaper: transparent !important; 
+  --WDS-systems-chat-background-wallpaper: transparent !important;
   --compose-input-background: var(--WDS-surface-highlight) !important;
   --background-default-hover: var(--WDS-surface-highlight) !important;
   --background-lightest-hover: var(--WDS-surface-highlight) !important;
@@ -23,7 +28,6 @@ html, body, .x1iek97a {
   --WDS-systems-bubble-surface-system: #24262666 !important;
   --WDS-systems-bubble-surface-incoming: #24262666 !important;
   --WDS-systems-bubble-surface-outgoing: #144d3766 !important;
-
 }
 
 @media screen and (max-width: 1300px) {
@@ -44,7 +48,8 @@ html, body, .x1iek97a {
   background: none !important;
 }
 
-.color-refresh, .x1honnu5 {
+.color-refresh,
+.x1honnu5 {
   --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
   --WDS-background-dimmer: transparent !important;
 }
@@ -56,7 +61,7 @@ html, body, .x1iek97a {
   [type="button"],
   [data-navbar-item="true"],
   ._ak72:not([role="dialog"] ._ak72),
-  [role="button"]:not(._ak4w [role="button"], [role="dialog"] [role="button"], .overlay [role="button"]){
+  [role="button"]:not(._ak4w [role="button"], [role="dialog"] [role="button"], .overlay [role="button"]) {
     pointer-events: none !important;
   }
 }
