@@ -20,6 +20,10 @@ html, body, .x1iek97a {
   --reactions-panel-background-color: transparent !important;
   --reactions-panel-search-background-color: var(--WDS-surface-highlight) !important;
   --poll-modal-footer-background-color: transparent !important;
+  --WDS-systems-bubble-surface-system: #24262666 !important;
+  --WDS-systems-bubble-surface-incoming: #24262666 !important;
+  --WDS-systems-bubble-surface-outgoing: #144d3766 !important;
+
 }
 
 @media screen and (max-width: 1300px) {
