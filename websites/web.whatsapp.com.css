@@ -65,3 +65,8 @@ body,
     pointer-events: none !important;
   }
 }
+
+/* wa-Background */
+div[data-asset-chat-background-dark] {
+  background-image: none !important;
+}
