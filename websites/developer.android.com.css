@@ -93,7 +93,7 @@ devsite-header {
 }
 
 main {
-  height: calc(100vh - 49px) !important;
+  height: calc(100dvh - 49px) !important;
   overflow-y: scroll !important;
 }
 
