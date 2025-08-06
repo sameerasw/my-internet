@@ -16,7 +16,7 @@ html[dark],
   background-color: hsla(0, 0%, 100%, 0.08) !important;
 }
 #frosted-glass {
-  display: none;
+  display: none !important;
 }
 
 /* yt-Fix Overlapping Header */
@@ -62,7 +62,7 @@ body:has(
     tp-yt-iron-dropdown:not([aria-hidden="true"]),
     tp-yt-iron-dropdown[aria-disabled="true"],
     .ytSearchboxComponentInputBoxHasFocus,
-    tp-yt-paper-dialog[aria-hidden="false"],/*tp-yt-paper-dialog:not([aria-hidden])*/
+    tp-yt-paper-dialog[aria-hidden="false"],
     .tp-yt-app-drawer.visible, tp-yt-paper-dialog:not([aria-hidden]) > yt-report-form-modal-renderer
   ) #page-manager {
   filter: blur(20px) !important;
