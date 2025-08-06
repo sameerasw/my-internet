@@ -1,0 +1,131 @@
+/* transparency */
+html,
+body,
+nav,
+header,
+.app-root,
+#primary,
+#secondary,
+#pass-sidebar,
+#content,
+section,
+.border-r,
+.changetable,
+.group\/sidebar-wrapper > div,
+.dark\:bg-sidebar > div,
+main > div,
+.to-transparent,
+.bg-noise,
+.bg-gradient-noise-top {
+  color: #ffffffee;
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+#main {
+  background-color: #444444aa !important;
+}
+
+/* tables and code blocks */
+tr,
+td,
+tbody,
+code,
+th,
+.cpp-lightgraybackground,
+.cpp-note,
+.lessontable,
+.lessontable-header-title {
+  color: #ffffffae !important;
+  background-color: #1a1a1aaa !important;
+  box-shadow: none !important;
+  border: #44444444 !important;
+}
+
+.changetable-row,
+.lessontable-row {
+  color: #ffffffee;
+  background-color: transparent !important;
+}
+
+.changetable-row:hover,
+.lessontable-row:hover {
+  background-color: transparent !important;
+}
+
+.changetable-widget-row {
+  background-color: transparent !important;
+}
+
+/* text */
+h1 {
+  color: #ffffffee !important;
+}
+
+span {
+  filter: brightness(200%) opacity(0.937) !important;
+  color: ffffffee !important;
+}
+
+/* navbar */
+#site-header-main {
+  opacity: 1 !important;
+  transition: all 0.3s ease-in-out !important;
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#site-header-main:hover {
+  opacity: 1 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.sub-menu,
+span,
+ul {
+  background-color: transparent !important;
+}
+
+/* hidden elements */
+#ezPrivacyCenter,
+#colophon-inside,
+#wpd-threads,
+.entry-meta,
+hr,
+#wpdcom,
+#header-image-main-inside,
+.menu-item-6313,
+#site-description,
+.menu-item-11707,
+.menu-item-12082 {
+  display: none !important;
+}
+
+/* images */
+.custom-logo,
+span {
+  filter: none !important;
+}
+img,
+.searchform {
+  filter: invert(1) !important;
+  opacity: 40% !important;
+}
+.menu-item-1009876 {
+  filter: invert(1) !important;
+  opacity: 60%;
+}
+
+/* darkreader fix */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
