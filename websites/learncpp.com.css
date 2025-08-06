@@ -17,7 +17,6 @@ main > div,
 .to-transparent,
 .bg-noise,
 .bg-gradient-noise-top {
-  color: #ffffffee;
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -33,7 +32,73 @@ main > div,
   background-color: #444444aa !important;
 }
 
-/* tables and code blocks */
+/* code blocks */
+pre,
+code:not([class*="language-"]),
+.code-toolbar,
+.code-toolbar pre {
+  color: #ffffffee !important;
+  background-color: #1a1a1aaa !important;
+  border: 1px solid #333333 !important;
+  border-radius: 4px !important;
+}
+pre {
+  padding: 1em !important;
+}
+code:not([class*="language-"]) {
+  padding: 0.2em 0.4em !important;
+  border-radius: 3px !important;
+}
+.language-cpp .token {
+  color: #d4d4d4 !important;
+  background: transparent !important;
+}
+.language-cpp .token.keyword { color: #569cd6 !important; }
+.language-cpp .token.string { color: #ce9178 !important; }
+.language-cpp .token.number { color: #b5cea8 !important; }
+.language-cpp .token.comment { color: #6a9955 !important; }
+.language-cpp .token.function { color: #dcdcaa !important; }
+.language-cpp .token.class-name { color: #4ec9b0 !important; }
+
+/* note backgrounds */
+.cpp-note,
+.cpp-lightgraybackground,
+.cpp-lightgreenbackground,
+.cpp-lightbluebackground {
+  border-radius: 5px !important;
+  padding: 0.8em !important;
+}
+.cpp-note,
+.cpp-lightgraybackground {
+  background-color: #2a2a2a66 !important;
+  border: 1px solid #3a3a3a !important;
+}
+.cpp-lightgreenbackground {
+  background-color: #0dcc8222 !important;
+  border: 1px solid #0dcc82 !important;
+}
+.cpp-lightbluebackground {
+  background-color: #5ab0f266 !important;
+  border: 1px solid #7dc4ff !important;
+}
+
+p,
+li,
+h2,
+blockquote::before,
+blockquote::after,
+a {
+  color: #ffffffee !important;
+}
+
+a.index,
+.index a,
+a.changetable-row-link, 
+.changetable-row-link a {
+  color: #7aa2f7 !important;
+  text-decoration: none !important;
+}
+
 tr,
 td,
 tbody,
@@ -41,40 +106,42 @@ code,
 th,
 .cpp-lightgraybackground,
 .cpp-note,
-.lessontable,
+.lessontable {
+  color: #ffffffae !important;
+  box-shadow: none !important;
+  border: #44444444 !important;
+}
+
+.lessontable-header-title,
+.changetable-row,
+.lessontable-row,
+.changetable-row:hover,
+.lessontable-row:hover,
+.changetable-widget-row {
+  background-color: transparent !important;
+}
+
 .lessontable-header-title {
   color: #ffffffae !important;
-  background-color: #1a1a1aaa !important;
   box-shadow: none !important;
   border: #44444444 !important;
 }
 
 .changetable-row,
 .lessontable-row {
-  color: #ffffffee;
-  background-color: transparent !important;
+  color: #ffffffee !important;
 }
 
-.changetable-row:hover,
-.lessontable-row:hover {
-  background-color: transparent !important;
-}
-
-.changetable-widget-row {
-  background-color: transparent !important;
-}
-
-/* text */
-h1 {
+h1,
+span {
   color: #ffffffee !important;
 }
 
 span {
   filter: brightness(200%) opacity(0.937) !important;
-  color: ffffffee !important;
 }
 
-/* navbar */
+/* improved header */
 #site-header-main {
   opacity: 1 !important;
   transition: all 0.3s ease-in-out !important;
@@ -84,23 +151,35 @@ span {
   box-shadow: none !important;
 }
 
-#site-header-main:hover {
-  opacity: 1 !important;
-  transition: all 0.3s ease-in-out !important;
-}
-
 .sub-menu,
 span,
 ul {
   background-color: transparent !important;
 }
 
-/* hidden elements */
+.menu-item-1009876,
+.menu-item-1009876 a {
+  filter: invert(1) !important;
+  opacity: 0.6 !important;
+}
+
+.menu-item,
+.menu-item a,
+.menu-item-object,
+.menu-item-object a {
+  color: #ffffffee !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* remove footer and comments */
+#colophon,
 #ezPrivacyCenter,
-#colophon-inside,
 #wpd-threads,
 .entry-meta,
 hr,
+#comments,
 #wpdcom,
 #header-image-main-inside,
 .menu-item-6313,
@@ -110,22 +189,31 @@ hr,
   display: none !important;
 }
 
-/* images */
+/* images and search */
 .custom-logo,
 span {
   filter: none !important;
 }
+
 img,
 .searchform {
   filter: invert(1) !important;
   opacity: 40% !important;
 }
-.menu-item-1009876 {
-  filter: invert(1) !important;
-  opacity: 60%;
+
+blockquote {
+  position: relative !important;
+}
+blockquote::before,
+blockquote::after {
+  content: "" !important;
+  position: absolute !important;
+  color: #ffffffee !important;
+  font-size: 3em !important;
+  line-height: 1 !important;
 }
 
-/* darkreader fix */
+/* fix darkreader */
 :root {
   --darkreader-background-ffffff: transparent !important;
 }
