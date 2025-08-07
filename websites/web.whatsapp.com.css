@@ -44,7 +44,7 @@ body,
 }
 
 /* wa-Immersive Popup */
-.x1akjpcp {
+.x1akjpcp, .xbyyjgo {
   background: none !important;
 }
 
@@ -54,7 +54,7 @@ body,
   --WDS-background-dimmer: transparent !important;
 }
 
-#app:has(._ak4w, [role="dialog"]:not(._aig- [role="dialog"]), .overlay) {
+#app:has(._ak4w, [role="dialog"]:not(._aig- [role="dialog"]), .overlay, [data-animate-status-viewer]) {
   ._aigs {
     filter: blur(20px) !important;
   }
