@@ -16,7 +16,7 @@ html[dark],
   background-color: hsla(0, 0%, 100%, 0.08) !important;
 }
 #frosted-glass {
-  display: none !important;
+  display: none;
 }
 
 /* yt-Fix Overlapping Header */
@@ -29,11 +29,11 @@ body {
 #page-manager {
   margin-top: 0 !important;
 }
-.ytd-page-manager {
+.ytd-page-manager[page-subtype=home] #contents {
   overflow-y: scroll !important;
   height: calc(100dvh - 56px) !important;
 }
-ytd-page-manager:not(ytd-browse #contents) .ytd-page-manager {
+.ytd-page-manager:not([page-subtype="home"]) {
   overflow-y: scroll !important;
   height: calc(100dvh - 56px) !important;
 }
@@ -62,7 +62,7 @@ body:has(
     tp-yt-iron-dropdown:not([aria-hidden="true"]),
     tp-yt-iron-dropdown[aria-disabled="true"],
     .ytSearchboxComponentInputBoxHasFocus,
-    tp-yt-paper-dialog[aria-hidden="false"],
+    tp-yt-paper-dialog[aria-hidden="false"],/*tp-yt-paper-dialog:not([aria-hidden])*/
     .tp-yt-app-drawer.visible, tp-yt-paper-dialog:not([aria-hidden]) > yt-report-form-modal-renderer
   ) #page-manager {
   filter: blur(20px) !important;
