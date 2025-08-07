@@ -58,10 +58,10 @@ body,
   ._aigs {
     filter: blur(20px) !important;
   }
-  [type="button"],
+  [type="button"]:not([data-animate-status-viewer] [role="button]),
   [data-navbar-item="true"],
   ._ak72:not([role="dialog"] ._ak72),
-  [role="button"]:not(._ak4w [role="button"], [role="dialog"] [role="button"], .overlay [role="button"]) {
+  [role="button"]:not(._ak4w [role="button"], [role="dialog"] [role="button"], .overlay [role="button"], [data-animate-status-viewer]) {
     pointer-events: none !important;
   }
 }
