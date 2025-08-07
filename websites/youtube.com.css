@@ -169,7 +169,6 @@ ytd-two-column-browse-results-renderer[page-subtype="playlist"] {
   display: none !important;
 }
 
-
 /* yt-early New To You chip */
 #chips {
   display: flex !important;
@@ -187,7 +186,6 @@ ytd-two-column-browse-results-renderer[page-subtype="playlist"] {
 #chips > yt-chip-cloud-chip-renderer:nth-child(1) {
   order: 1 !important;
 }
-
 
 /* yt-Compact feed $ Reduce spacing, Show menu button on hover, inline details */
 ytd-rich-item-renderer {
