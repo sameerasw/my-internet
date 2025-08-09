@@ -1,0 +1,11 @@
+html,
+body,
+.phabricator-main-menu-background,
+.phui-box,
+.phabricator-side-menu,
+.phui-oi,
+.phui-oi-tail,
+.phui-header-shell,
+.phui-list-item-selected .phui-list-item-href {
+  background: none !important;
+}
