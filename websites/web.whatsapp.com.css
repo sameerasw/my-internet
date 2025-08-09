@@ -23,9 +23,7 @@ body,
   --background-default-hover: var(--WDS-surface-highlight) !important;
   --background-lightest-hover: var(--WDS-surface-highlight) !important;
   --reactions-panel-background-color: transparent !important;
-  --reactions-panel-search-background-color: var(
-    --WDS-surface-highlight
-  ) !important;
+  --reactions-panel-search-background-color: var(--WDS-surface-highlight) !important;
   --poll-modal-footer-background-color: transparent !important;
   --WDS-systems-bubble-surface-system: #24262666 !important;
   --WDS-systems-bubble-surface-incoming: #24262666 !important;
