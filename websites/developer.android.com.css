@@ -19,7 +19,9 @@ devsite-header:not([bottom-row--hidden]) .devsite-top-logo-row-wrapper-wrapper,
 .devsite-breadcrumb-list,
 devsite-search .devsite-searchbox::before,
 .devsite-searchbox,
+.devsite-search-field,
 .devsite-playlist--header,
+.android-dropdown,
 [expanded],
 [aria-controls="language-menu"] {
   background-color: transparent !important;
@@ -55,8 +57,10 @@ devsite-content-footer {
 }
 
 /* glass effect */
-article,
-.devsite-search-field {
+.button-primary,
+.devsite-search-field,
+.android-quick-link,
+.android-fully-clickable {
   box-shadow:
     rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
@@ -73,4 +77,27 @@ article,
   @media (prefers-color-scheme: dark) {
     background-color: #0005 !important;
   }
+}
+
+/* fix overlapping header */
+body {
+  overflow: hidden !important;
+}
+
+devsite-header {
+  position: relative !important;
+}
+
+#gc-wrapper {
+  margin-top: 0 !important; 
+}
+
+main {
+  height: calc(100dvh - 49px) !important;
+  overflow-y: scroll !important;
+}
+
+html:has(.devsite-dropdown--open, [devsite-book-nav--open=""], [search-active=""], devsite-header [open=""]) main {
+  filter: blur(20px) !important;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
 }
