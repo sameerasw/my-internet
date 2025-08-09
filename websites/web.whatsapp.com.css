@@ -78,7 +78,7 @@ body,
   }
 }
 
-#app:has([role="dialog"], ._aiwn > span > ._ak4-, ._aiwn > span > ._ak4_):not(:has(._ajx_)) {
+#app:has([role="dialog"]:not([data-animate-status-viewer]), ._aiwn > span > ._ak4-, ._aiwn > span > ._ak4_):not(:has(._ajx_, [data-animate-status-viewer])) {
   ._aiwn > span > [tabindex] > div {
     filter: blur(20px) !important;
   }
