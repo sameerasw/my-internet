@@ -428,6 +428,26 @@ ytd-rich-item-renderer[is-in-first-column=""] {
   padding-left: calc(var(--ytd-rich-grid-item-margin) / 2 + var(--ytd-rich-grid-gutter-margin)) !important;
 }
 
+/* yt-fix overlapping header */
+body {
+  overflow: hidden !important;
+}
+#masthead-container {
+  position: relative !important;
+}
+#page-manager {
+  margin-top: 0 !important;
+}
+.ytd-page-manager {
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+  height: calc(100vh - 56px) !important;
+}
+.ytSearchboxComponentInputBox {
+  background-color: rgba(255,255,255,0.1) !important;
+  border: unset !important;
+}
+
 /* yt-Immersive search $ Smooth blur and zoom effect for searhbar */
 #page-manager,
 yt-searchbox {
