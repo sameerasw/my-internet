@@ -46,7 +46,7 @@ body,
 }
 
 /* wa-Immersive Popup */
-.x1akjpcp, .xbyyjgo, .x42x0ya, .x1bmpntp {
+.x1akjpcp, .xbyyjgo, .x42x0ya, .x1bmpntp, ._ahyo {
   background: none !important;
 }
 
@@ -57,31 +57,35 @@ body,
 }
 
 [data-animate-status-viewer] .x1h2kqdt {
-    background-color: var(--WDS-surface-highlight) !important;
-  }
+  background-color: var(--WDS-surface-highlight) !important;
+}
 
-#app:has(._ak4w, [role="dialog"]:not(._aig- [role="dialog"]), .overlay, [data-animate-status-viewer]) {
+#app:has(._ak4w, [role="dialog"]:not(._aig- [role="dialog"]), .overlay, ._aiwn > span > div) {
   ._aigs {
     filter: blur(20px) !important;
   }
-  [type="button"]:not([data-animate-status-viewer] [type="button"]),
+  [type="button"]:not(._aiwn > span > div [type="button"], [role="dialog"] [type="button"], [role="application"] [type="button"]),
   [data-navbar-item="true"],
   ._ak72:not([role="dialog"] ._ak72),
-  [role="button"]:not(._ak4w [role="button"], [role="dialog"] [role="button"], .overlay [role="button"], [data-animate-status-viewer] [role="button"]) {
+  [role="button"]:not(._ak4w [role="button"], [role="dialog"] [role="button"], .overlay [role="button"], ._aiwn > span > div [role="button"]) {
     pointer-events: none !important;
   }
 }
 
-#app:has([data-animate-modal-backdrop], [role="application"]) [data-animate-status-viewer] {
-  filter: blur(20px) !important;
+#app:has([data-animate-modal-backdrop], [role="application"]) {
+  [data-animate-status-viewer] {
+    filter: blur(20px) !important;
+  }
 }
 
-[data-animate-status-viewer]:has(.x1h2kqdt) {
-  [tabindex] > div:nth-child(2),
-  [tabindex] > div:nth-child(5),
-  [tabindex] > div:nth-child(7),
-  [tabindex] > div:nth-child(8),
-  [tabindex] > div:nth-child(9) {
+#app:has([role="dialog"], ._aiwn > span > ._ak4-, ._aiwn > span > ._ak4_):not(:has(._ajx_)) {
+  ._aiwn > span > [tabindex] > div {
+    filter: blur(20px) !important;
+  }
+}
+
+._aiwn:has(.x1h2kqdt) {
+  [data-animate-status-viewer] > span > div > div > [tabindex] > div:not(:last-child) {
     filter: blur(20px) !important;
   }
 }
