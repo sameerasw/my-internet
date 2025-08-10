@@ -1,0 +1,18 @@
+/* transparency */
+body,
+#content {
+  background: transparent !important;
+}
+
+#content {
+  border-color: transparent !important;
+}
+
+#left-navigation nav.vector-menu-tabs li:first-child::before {
+  height: 100% !important;
+}
+
+/* no footer */
+#footer {
+  display: none !important;
+}

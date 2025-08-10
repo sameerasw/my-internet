@@ -1,8 +1,4 @@
 /* transparency */
-:root {
-  --background-color-interactive-subtle: transparent !important;
-}
-
 html,
 body,
 header,
@@ -22,6 +18,6 @@ header,
 }
 
 /* no footer */
-footer {
+.mw-footer-container {
   display: none !important;
 }

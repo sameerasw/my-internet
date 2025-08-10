@@ -9,7 +9,8 @@ header,
 .mw-page-container,
 .vector-pinned-container,
 .vector-sticky-pinned-container::after,
-.infobox {
+.wikibase-entitytermsforlanguagelistview,
+.wikibase-statementlistview {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -22,6 +23,6 @@ header,
 }
 
 /* no footer */
-footer {
+.mw-footer-container {
   display: none !important;
 }
