@@ -134,13 +134,17 @@
       "in-no footer": "footer {\n  display: none !important;\n}"
     },
     "+mediawiki.org.css": {
-      "transparency": ":root {\n  --background-color-interactive-subtle: transparent !important;\n}\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
-      "no footer": "footer {\n  display: none !important;\n}"
+      "transparency": "html, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "no footer": ".mw-footer-container {\n  display: none !important;\n}"
     },
     "+medium.com.css": {
       "transparency": "html, body, nav, #nav, .nav, navbar, .navbar, #navbar, header, #header, .header, header::before, app, #app, footer, .sidebar-wrap, section, .main, #__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before, #root, .min-h-screen.bg-white, .app, .AppContainer, .app-root, #wrapper, body[data-theme=\"dark\"], body[data-theme=\"light\"], #pass-sidebar, .side-bar, #main, .sidebar, .global-content__content, main, .header-top, #content, #cu-identity, section, .l-root, #__next, .landing-hero, #navigation-wrapper, #global-navbar, .layout__content-wrapper, .head.notfixed, .main-container, #app > div, .btm-nav > a, .oc-content--main, body.dark_mode, body.light_mode, text-div > textarea, #root > div, #root > div > div, #root > div > div > div, #root > div > div > div > div, .ac > .ca.bh > .m > .ue.uf.ug.uh.ui.m.bw {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}\ncode, pre, [data-popper-placement=\"bottom-end\"] {\n  border-radius: 0.5em !important;\n  background-color: light-dark(#fff, #222) !important;\n}",
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer, mfe-footer-pharos-footer, .footer, #footer, .i.l.k {\n  display: none !important;\n}"
+    },
+    "+minecraft.wiki.css": {
+      "transparency": "body, #content {\n  background: transparent !important;\n}\n#content {\n  border-color: transparent !important;\n}\n#left-navigation nav.vector-menu-tabs li:first-child::before {\n  height: 100% !important;\n}",
+      "no footer": "#footer {\n  display: none !important;\n}"
     },
     "+mozilla.org.css": {
       "transparency": "html, body, nav, #nav, .nav, navbar, .navbar, #navbar header, #header, .header, app, #app, .app, .app-root, #pass-sidebar, #main, main, #content, section, #__next, #navigation-wrapper, #global-navbar, .head.notfixed, body.dark_mode, body.light_mode, main > div, main > div::before {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
@@ -222,12 +226,12 @@
       "no footer": "footer, mfe-footer-pharos-footer, .footer, #footer {\n  display: none !important;\n}"
     },
     "+wikipedia.org.css": {
-      "transparency": ":root {\n  --background-color-interactive-subtle: transparent !important;\n}\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
-      "no footer": "footer {\n  display: none !important;\n}"
+      "transparency": "html, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox, .cdx-tabs:not(.cdx-tabs--framed) > .cdx-tabs__header {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "no footer": ".mw-footer-container {\n  display: none !important;\n}"
     },
     "+wiktionary.org.css": {
-      "transparency": ":root {\n  --background-color-interactive-subtle: transparent !important;\n}\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
-      "no footer": "footer {\n  display: none !important;\n}"
+      "transparency": "html, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "no footer": ".mw-footer-container {\n  display: none !important;\n}"
     },
     "+z-lib.gd.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #container {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}"
@@ -809,8 +813,8 @@
       "no footer": "footer, mfe-footer-pharos-footer, .footer, #footer {\n  display: none !important;\n}"
     },
     "commons.wikimedia.org.css": {
-      "transparency": ":root {\n  --background-color-interactive-subtle: transparent !important;\n}\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
-      "no footer": "footer {\n  display: none !important;\n}"
+      "transparency": "html, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "no footer": ".mw-footer-container {\n  display: none !important;\n}"
     },
     "community.oneplus.com.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .ob-nav, .promotion, main {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
@@ -1766,8 +1770,8 @@
       "appinn-no footer": "footer {\n  display: none !important;\n}"
     },
     "meta.wikimedia.org.css": {
-      "transparency": ":root {\n  --background-color-interactive-subtle: transparent !important;\n}\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
-      "no footer": "footer {\n  display: none !important;\n}"
+      "transparency": "html, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "no footer": ".mw-footer-container {\n  display: none !important;\n}"
     },
     "metacritic.com.css": {
       "transparency": "html, body, nav, #nav, .nav, navbar, .navbar, #navbar, header, #header, .header, app, #app, .app, .app-root, #pass-sidebar, #main, main, #content, .c-gameDetails_sectionContainer, section, .c-productionDetailsGame_summary, #__next, .c-heroVariant_containerColor, #navigation-wrapper, #global-navbar, .head.notfixed, body[data-theme=\"dark\"], body[data-theme=\"light\"], body.dark_mode, body.light_mode {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
@@ -2061,6 +2065,9 @@
     "pexels.com.css": {
       "pexels-text color": "body, h4, h3, h2, h1, h5, h6, span, a {\n  color: #ffffff !important;\n}",
       "pexels-navbar": ".Navbar_container__PS9oP {\n  background-color: #00000000 !important;\n  backdrop-filter: blur(60px) !important;\n  border: none !important;\n  background: #00000000 !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}"
+    },
+    "phabricator.wikimedia.org.css": {
+      "transparency": "html, body, .phabricator-main-menu-background, .phui-box, .phabricator-side-menu, .phui-oi, .phui-oi-tail, .phui-header-shell, .phui-list-item-selected .phui-list-item-href {\n  background: none !important;\n}"
     },
     "phanpy.social.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #home-page, #modal-container > div, #account-statuses-page, #catchup-page, .timeline-deck, #app > div, #app > #columns > div, .timeline-header, .links-bar {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out,\n    filter 0.5s ease-in-out !important;\n}\n.timeline li, #compose-container-outer {\n  background-color: light-dark(#fff8, #0005) !important;\n  transition:\n    filter 0.5s ease-in-out,\n    border-radius 0.5s ease-in-out,\n    scale 0.2s ease-in-out !important;\n}",
@@ -2872,12 +2879,12 @@
       "no footer": "footer {\n  display: none !important;\n}"
     },
     "wikidata.org.css": {
-      "transparency": ":root {\n  --background-color-interactive-subtle: transparent !important;\n}\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
-      "no footer": "footer {\n  display: none !important;\n}"
+      "transparency": ":root {\n  --background-color-interactive-subtle: transparent !important;\n}\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .wikibase-entitytermsforlanguagelistview, .wikibase-statementlistview {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "no footer": ".mw-footer-container {\n  display: none !important;\n}"
     },
     "wikifunctions.org.css": {
-      "transparency": ":root {\n  --background-color-interactive-subtle: transparent !important;\n}\nhtml, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
-      "no footer": "footer {\n  display: none !important;\n}"
+      "transparency": "html, body, header, .mw-page-container, .vector-pinned-container, .vector-sticky-pinned-container::after, .infobox {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "no footer": ".mw-footer-container {\n  display: none !important;\n}"
     },
     "wikihow.com.css": {
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}"
