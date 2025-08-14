@@ -74,3 +74,8 @@ article,
     background-color: #0005 !important;
   }
 }
+
+/* miscellaneous */
+[template="codelab"] .devsite-toc-embedded {
+  display: none !important;
+}
