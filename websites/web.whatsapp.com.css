@@ -111,3 +111,9 @@ body,
     filter: blur(20px) !important;
   }
 }
+
+._aigs:has(> div > div:not(._aigw) > span > div) {
+  #main > div, #main > footer {
+    opacity: 0 !important;
+  }
+}
