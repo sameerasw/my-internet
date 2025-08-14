@@ -1,0 +1,39 @@
+/* transparency */
+@layer {
+  html, body {
+    background-color: transparent!important;
+  }  
+}
+
+:root {
+  --nav-color: #000a !important;
+  --card-background: #0006;
+}
+
+:root.bright-theme {
+   --nav-color: #fffa !important;
+  --card-background: #fff7;
+}
+
+.global-wrapper {
+  background: transparent !important;
+}
+
+.feed-item {
+  background: var(--card-background) !important;
+  border-radius: 10px !important;
+}
+
+.feed-item-meta-wrapper > :first-child {
+  margin: 0.5em 0 0em 0.5em !important;
+}
+
+/* hide sidebar */
+app-side-bar-right {
+  display: none !important;
+}
+
+/* hide For you */
+app-media-offer-suggestions-timeline-post {
+  display: none !important;
+}
