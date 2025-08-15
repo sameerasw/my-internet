@@ -1,26 +1,39 @@
-/* fb-transparency */
-:root {
-  --web-wash: #00000000 !important;
-  --nav-bar-background: #00000000 !important;
+/* fb-Transparency */
+body, ._95k9, ._4t2a, ._4-i2, [role="link"] > div {
+  background-color: transparent !important;
 }
 
-body,
-#mount_0_0_u1 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) {
-  background-color: #00000000 !important;
-  transition:
-    background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
-    border 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out !important;
+:root, .x2bj2ny, .x1jx94hy, .x1h0vfkc, .xezm23g, .__fb-dark-mode {
+  --surface-background: transparent !important;
+  --card-background: rgba(255,255,255,0.1) !important;
+  --overlay-alpha-80: transparent !important;
+  --comment-background: rgba(255,255,255,0.1) !important;
+  --nav-bar-background: transparent !important;
+  --card-background-flat: transparent !important;
+  --messenger-card-background: rgba(255,255,255,0.1) !important;
 }
 
-/* fb-other changes */
+._1gaz, ._6luv, ._55r1, ._1gax, ._59s7 {
+  background-color: rgba(255,255,255,0.1) !important;
+}
 
-div.xnp8db0:nth-child(1),
-div.xnp8db0:nth-child(4) {
-  opacity: 0 !important;
-  transition: all 0.3s ease-in-out !important;
-  &:hover {
-    opacity: 1 !important;
+/* fb-Fix Overlapping Header */
+abody {
+  overflow-y: hidden !important;
+}
+a.xixxii4 {
+  position: relative !important;
+}
+
+/* fb-Immersive Popup */
+body:has([role="dialog"], [role="none"][tabindex]) {
+  #globalContainer, #scrollview, [role="main"], [role="complementary"] {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
   }
+}
+
+/* fb-No Footer */
+._95ke {
+  display: none !important;
 }
