@@ -29,7 +29,7 @@ main > div,
 }
 
 #main {
-  background-color: #444444aa !important;
+  background-color: rgba(68, 68, 68, 0.67) !important;
 }
 
 /* code blocks */
@@ -37,8 +37,8 @@ pre,
 code:not([class*="language-"]),
 .code-toolbar,
 .code-toolbar pre {
-  color: #ffffffee !important;
-  background-color: #1a1a1aaa !important;
+  color: rgba(255, 255, 255, 0.93) !important;
+  background-color: rgba(26, 26, 26, 0.67) !important;
   border: 1px solid #333333 !important;
   border-radius: 4px !important;
 }
@@ -70,15 +70,15 @@ code:not([class*="language-"]) {
 }
 .cpp-note,
 .cpp-lightgraybackground {
-  background-color: #2a2a2a66 !important;
+  background-color: rgba(42, 42, 42, 0.4) !important;
   border: 1px solid #3a3a3a !important;
 }
 .cpp-lightgreenbackground {
-  background-color: #0dcc8222 !important;
+  background-color: rgba(13, 204, 130, 0.13) !important;
   border: 1px solid #0dcc82 !important;
 }
 .cpp-lightbluebackground {
-  background-color: #5ab0f266 !important;
+  background-color: rgba(90, 176, 242, 0.4) !important;
   border: 1px solid #7dc4ff !important;
 }
 
@@ -88,7 +88,7 @@ h2,
 blockquote::before,
 blockquote::after,
 a {
-  color: #ffffffee !important;
+  color: rgba(255, 255, 255, 0.93) !important;
 }
 
 a.index,
@@ -107,9 +107,9 @@ th,
 .cpp-lightgraybackground,
 .cpp-note,
 .lessontable {
-  color: #ffffffae !important;
+  color: rgba(255, 255, 255, 0.68) !important;
   box-shadow: none !important;
-  border: #44444444 !important;
+  border: rgba(68, 68, 68, 0.27) !important;
 }
 
 .lessontable-header-title,
@@ -122,19 +122,19 @@ th,
 }
 
 .lessontable-header-title {
-  color: #ffffffae !important;
+  color: rgba(255, 255, 255, 0.68) !important;
   box-shadow: none !important;
-  border: #44444444 !important;
+  border: rgba(68, 68, 68, 0.27) !important;
 }
 
 .changetable-row,
 .lessontable-row {
-  color: #ffffffee !important;
+  color: rgba(255, 255, 255, 0.93) !important;
 }
 
 h1,
 span {
-  color: #ffffffee !important;
+  color: rgba(255, 255, 255, 0.93) !important;
 }
 
 span {
@@ -167,7 +167,7 @@ ul {
 .menu-item a,
 .menu-item-object,
 .menu-item-object a {
-  color: #ffffffee !important;
+  color: rgba(255, 255, 255, 0.93) !important;
   background-color: transparent !important;
   opacity: 1 !important;
   filter: none !important;
@@ -208,7 +208,7 @@ blockquote::before,
 blockquote::after {
   content: "" !important;
   position: absolute !important;
-  color: #ffffffee !important;
+  color: rgba(255, 255, 255, 0.93) !important;
   font-size: 3em !important;
   line-height: 1 !important;
 }
@@ -216,4 +216,77 @@ blockquote::after {
 /* fix darkreader */
 :root {
   --darkreader-background-ffffff: transparent !important;
+}
+
+@media (prefers-color-scheme: light) {
+  #main {
+    background-color: rgba(238, 238, 238, 0.67) !important;
+  }
+  
+  pre,
+  code:not([class*="language-"]),
+  .code-toolbar,
+  .code-toolbar pre {
+    color: rgba(0, 0, 0, 0.93) !important;
+    background-color: rgba(241, 241, 241, 0.93) !important;
+    border: 1px solid #dddddd !important;
+  }
+  
+  .cpp-note,
+  .cpp-lightgraybackground {
+    background-color: rgba(221, 221, 221, 0.67) !important;
+    border: 1px solid #cccccc !important;
+  }
+  
+  p,
+  li,
+  h2,
+  blockquote::before,
+  blockquote::after,
+  a,
+  .changetable-row,
+  .lessontable-row,
+  h1,
+  span,
+  .menu-item,
+  .menu-item a,
+  .menu-item-object,
+  .menu-item-object a {
+    color: rgba(0, 0, 0, 0.93) !important;
+  }
+  
+  tr,
+  td,
+  tbody,
+  code,
+  th,
+  .cpp-lightgraybackground,
+  .cpp-note,
+  .lessontable,
+  .lessontable-header-title {
+    color: rgba(0, 0, 0, 0.68) !important;
+    border: rgba(221, 221, 221, 0.67) !important;
+  }
+  
+  a.index,
+  .index a,
+  a.changetable-row-link, 
+  .changetable-row-link a {
+    color: #1a5fb4 !important;
+  }
+  
+  blockquote::before,
+  blockquote::after {
+    color: rgba(0, 0, 0, 0.93) !important;
+  }
+  
+  .menu-item-1009876,
+  .menu-item-1009876 a {
+    filter: invert(0) !important;
+  }
+  
+  img,
+  .searchform {
+    filter: invert(0) !important;
+  }
 }
