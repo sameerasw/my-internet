@@ -1,9 +1,9 @@
 /* fb-Transparency */
-body, ._95k9, ._4t2a, ._4-i2, [role="link"] > div, .html-div > div .x1jx94hy, input {
+body, ._95k9, ._4t2a, ._4-i2, [role="link"] > div, .html-div > div .x1jx94hy, input, .xcrg951[role="presentation"] {
   background-color: transparent !important;
 }
 
-:root, .x2bj2ny, .x1jx94hy, .x1h0vfkc, .xezm23g, .__fb-dark-mode {
+:root, .x2bj2ny, .x1jx94hy, .x1h0vfkc, .xezm23g, .__fb-dark-mode, .__fb-light-mode {
   --surface-background: transparent !important;
   --overlay-alpha-80: transparent !important;
   --nav-bar-background: transparent !important;
@@ -11,6 +11,7 @@ body, ._95k9, ._4t2a, ._4-i2, [role="link"] > div, .html-div > div .x1jx94hy, in
   --card-background: transparent !important;
   --comment-background: transparent !important;
   --messenger-card-background: transparent !important;
+  --web-wash:  transparent !important;
 }
 
 /* fb-Glass Effect */ 
@@ -18,26 +19,24 @@ body, ._95k9, ._4t2a, ._4-i2, [role="link"] > div, .html-div > div .x1jx94hy, in
   background-color: rgba(255,255,255,0.1) !important;
 }
 
-:root, .x2bj2ny, .x1jx94hy, .x1h0vfkc, .xezm23g, .__fb-dark-mode {
+:root, .x2bj2ny, .x1jx94hy, .x1h0vfkc, .xezm23g, .__fb-dark-mode, .__fb-light-mode {
   --card-background: rgba(255,255,255,0.1) !important;
   --comment-background: rgba(255,255,255,0.1) !important;
   --messenger-card-background: rgba(255,255,255,0.1) !important;
-}
-
-/* fb-Fix Overlapping Header */
-abody {
-  overflow-y: hidden !important;
-}
-a.xixxii4 {
-  position: relative !important;
+  --secondary-button-background: rgba(255,255,255,0.1) !important;
 }
 
 /* fb-Immersive Popup */
-body:has([role="dialog"], [role="none"][tabindex]) {
+body:has([role="dialog"], [role="menu"], [role="none"][tabindex]) {
   #globalContainer, #scrollview, [role="main"], [role="complementary"] {
     filter: blur(20px) !important;
     pointer-events: none !important;
   }
+}
+
+/* fb-Misc */
+span[aria-hidden="true"] {
+  opacity: 0 !important;
 }
 
 /* fb-No Footer */
