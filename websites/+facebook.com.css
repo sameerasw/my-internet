@@ -1,20 +1,27 @@
 /* fb-Transparency */
-body, ._95k9, ._4t2a, ._4-i2, [role="link"] > div {
+body, ._95k9, ._4t2a, ._4-i2, [role="link"] > div, .html-div > div .x1jx94hy, input {
   background-color: transparent !important;
 }
 
 :root, .x2bj2ny, .x1jx94hy, .x1h0vfkc, .xezm23g, .__fb-dark-mode {
   --surface-background: transparent !important;
-  --card-background: rgba(255,255,255,0.1) !important;
   --overlay-alpha-80: transparent !important;
-  --comment-background: rgba(255,255,255,0.1) !important;
   --nav-bar-background: transparent !important;
   --card-background-flat: transparent !important;
-  --messenger-card-background: rgba(255,255,255,0.1) !important;
+  --card-background: transparent !important;
+  --comment-background: transparent !important;
+  --messenger-card-background: transparent !important;
 }
 
+/* fb-Glass Effect */ 
 ._1gaz, ._6luv, ._55r1, ._1gax, ._59s7 {
   background-color: rgba(255,255,255,0.1) !important;
+}
+
+:root, .x2bj2ny, .x1jx94hy, .x1h0vfkc, .xezm23g, .__fb-dark-mode {
+  --card-background: rgba(255,255,255,0.1) !important;
+  --comment-background: rgba(255,255,255,0.1) !important;
+  --messenger-card-background: rgba(255,255,255,0.1) !important;
 }
 
 /* fb-Fix Overlapping Header */
