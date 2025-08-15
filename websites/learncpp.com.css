@@ -28,8 +28,40 @@ main > div,
     box-shadow 0.5s ease-in-out !important;
 }
 
+/* main content area - using theme variables */
 #main {
-  background-color: rgba(68, 68, 68, 0.67) !important;
+  background-color: rgba(var(--theme-bg-color), 0.67) !important;
+}
+
+/* text colors - using theme variables */
+p,
+li,
+h2,
+blockquote::before,
+blockquote::after,
+a {
+  color: var(--theme-text-color) !important;
+}
+
+a.index,
+.index a,
+a.changetable-row-link, 
+.changetable-row-link a {
+  color: var(--theme-link-color) !important;
+  text-decoration: none !important;
+}
+
+/* tables and code blocks */
+tr,
+td,
+tbody,
+th,
+.cpp-lightgraybackground,
+.cpp-note,
+.lessontable {
+  color: var(--theme-text-secondary) !important;
+  box-shadow: none !important;
+  border-color: var(--theme-border-color) !important;
 }
 
 /* code blocks */
@@ -37,9 +69,9 @@ pre,
 code:not([class*="language-"]),
 .code-toolbar,
 .code-toolbar pre {
-  color: rgba(255, 255, 255, 0.93) !important;
-  background-color: rgba(26, 26, 26, 0.67) !important;
-  border: 1px solid #333333 !important;
+  color: var(--code-text-color) !important;
+  background-color: var(--code-bg-color) !important;
+  border: 1px solid var(--code-border-color) !important;
   border-radius: 4px !important;
 }
 pre {
@@ -49,16 +81,18 @@ code:not([class*="language-"]) {
   padding: 0.2em 0.4em !important;
   border-radius: 3px !important;
 }
+
+/* syntax highlighting - using theme variables */
 .language-cpp .token {
-  color: #d4d4d4 !important;
+  color: var(--code-token-color) !important;
   background: transparent !important;
 }
-.language-cpp .token.keyword { color: #569cd6 !important; }
-.language-cpp .token.string { color: #ce9178 !important; }
-.language-cpp .token.number { color: #b5cea8 !important; }
-.language-cpp .token.comment { color: #6a9955 !important; }
-.language-cpp .token.function { color: #dcdcaa !important; }
-.language-cpp .token.class-name { color: #4ec9b0 !important; }
+.language-cpp .token.keyword { color: var(--code-keyword-color) !important; }
+.language-cpp .token.string { color: var(--code-string-color) !important; }
+.language-cpp .token.number { color: var(--code-number-color) !important; }
+.language-cpp .token.comment { color: var(--code-comment-color) !important; }
+.language-cpp .token.function { color: var(--code-function-color) !important; }
+.language-cpp .token.class-name { color: var(--code-class-color) !important; }
 
 /* note backgrounds */
 .cpp-note,
@@ -70,48 +104,19 @@ code:not([class*="language-"]) {
 }
 .cpp-note,
 .cpp-lightgraybackground {
-  background-color: rgba(42, 42, 42, 0.4) !important;
-  border: 1px solid #3a3a3a !important;
+  background-color: var(--note-gray-bg) !important;
+  border: 1px solid var(--note-gray-border) !important;
 }
 .cpp-lightgreenbackground {
-  background-color: rgba(13, 204, 130, 0.13) !important;
-  border: 1px solid #0dcc82 !important;
+  background-color: var(--note-green-bg) !important;
+  border: 1px solid var(--note-green-border) !important;
 }
 .cpp-lightbluebackground {
-  background-color: rgba(90, 176, 242, 0.4) !important;
-  border: 1px solid #7dc4ff !important;
+  background-color: var(--note-blue-bg) !important;
+  border: 1px solid var(--note-blue-border) !important;
 }
 
-p,
-li,
-h2,
-blockquote::before,
-blockquote::after,
-a {
-  color: rgba(255, 255, 255, 0.93) !important;
-}
-
-a.index,
-.index a,
-a.changetable-row-link, 
-.changetable-row-link a {
-  color: #7aa2f7 !important;
-  text-decoration: none !important;
-}
-
-tr,
-td,
-tbody,
-code,
-th,
-.cpp-lightgraybackground,
-.cpp-note,
-.lessontable {
-  color: rgba(255, 255, 255, 0.68) !important;
-  box-shadow: none !important;
-  border: rgba(68, 68, 68, 0.27) !important;
-}
-
+/* tables */
 .lessontable-header-title,
 .changetable-row,
 .lessontable-row,
@@ -122,19 +127,20 @@ th,
 }
 
 .lessontable-header-title {
-  color: rgba(255, 255, 255, 0.68) !important;
+  color: var(--theme-text-secondary) !important;
   box-shadow: none !important;
-  border: rgba(68, 68, 68, 0.27) !important;
+  border-color: var(--theme-border-color) !important;
 }
 
 .changetable-row,
 .lessontable-row {
-  color: rgba(255, 255, 255, 0.93) !important;
+  color: var(--theme-text-color) !important;
 }
 
+/* headings and spans */
 h1,
 span {
-  color: rgba(255, 255, 255, 0.93) !important;
+  color: var(--theme-text-color) !important;
 }
 
 span {
@@ -167,7 +173,7 @@ ul {
 .menu-item a,
 .menu-item-object,
 .menu-item-object a {
-  color: rgba(255, 255, 255, 0.93) !important;
+  color: var(--theme-text-color) !important;
   background-color: transparent !important;
   opacity: 1 !important;
   filter: none !important;
@@ -197,7 +203,7 @@ span {
 
 img,
 .searchform {
-  filter: invert(1) !important;
+  filter: var(--image-filter) !important;
   opacity: 40% !important;
 }
 
@@ -208,85 +214,64 @@ blockquote::before,
 blockquote::after {
   content: "" !important;
   position: absolute !important;
-  color: rgba(255, 255, 255, 0.93) !important;
+  color: var(--theme-text-color) !important;
   font-size: 3em !important;
   line-height: 1 !important;
 }
 
-/* fix darkreader */
+/* theme variables - these should be set by the site's theme */
 :root {
-  --darkreader-background-ffffff: transparent !important;
+  --theme-bg-color: 68, 68, 68; /* Default dark theme */
+  --theme-text-color: rgba(255, 255, 255, 0.93);
+  --theme-text-secondary: rgba(255, 255, 255, 0.68);
+  --theme-link-color: #7aa2f7;
+  --theme-border-color: rgba(68, 68, 68, 0.27);
+  
+  /* Code block colors */
+  --code-bg-color: rgba(26, 26, 26, 0.67);
+  --code-text-color: rgba(255, 255, 255, 0.93);
+  --code-border-color: #333333;
+  --code-token-color: #d4d4d4;
+  --code-keyword-color: #569cd6;
+  --code-string-color: #ce9178;
+  --code-number-color: #b5cea8;
+  --code-comment-color: #6a9955;
+  --code-function-color: #dcdcaa;
+  --code-class-color: #4ec9b0;
+  
+  /* Note colors */
+  --note-gray-bg: rgba(42, 42, 42, 0.4);
+  --note-gray-border: #3a3a3a;
+  --note-green-bg: rgba(13, 204, 130, 0.13);
+  --note-green-border: #0dcc82;
+  --note-blue-bg: rgba(90, 176, 242, 0.4);
+  --note-blue-border: #7dc4ff;
+  
+  /* Image filter */
+  --image-filter: invert(1);
 }
 
+/* Light theme override */
 @media (prefers-color-scheme: light) {
-  #main {
-    background-color: rgba(238, 238, 238, 0.67) !important;
-  }
-  
-  pre,
-  code:not([class*="language-"]),
-  .code-toolbar,
-  .code-toolbar pre {
-    color: rgba(0, 0, 0, 0.93) !important;
-    background-color: rgba(241, 241, 241, 0.93) !important;
-    border: 1px solid #dddddd !important;
-  }
-  
-  .cpp-note,
-  .cpp-lightgraybackground {
-    background-color: rgba(221, 221, 221, 0.67) !important;
-    border: 1px solid #cccccc !important;
-  }
-  
-  p,
-  li,
-  h2,
-  blockquote::before,
-  blockquote::after,
-  a,
-  .changetable-row,
-  .lessontable-row,
-  h1,
-  span,
-  .menu-item,
-  .menu-item a,
-  .menu-item-object,
-  .menu-item-object a {
-    color: rgba(0, 0, 0, 0.93) !important;
-  }
-  
-  tr,
-  td,
-  tbody,
-  code,
-  th,
-  .cpp-lightgraybackground,
-  .cpp-note,
-  .lessontable,
-  .lessontable-header-title {
-    color: rgba(0, 0, 0, 0.68) !important;
-    border: rgba(221, 221, 221, 0.67) !important;
-  }
-  
-  a.index,
-  .index a,
-  a.changetable-row-link, 
-  .changetable-row-link a {
-    color: #1a5fb4 !important;
-  }
-  
-  blockquote::before,
-  blockquote::after {
-    color: rgba(0, 0, 0, 0.93) !important;
+  :root {
+    --theme-bg-color: 238, 238, 238;
+    --theme-text-color: rgba(0, 0, 0, 0.93);
+    --theme-text-secondary: rgba(0, 0, 0, 0.68);
+    --theme-link-color: #1a5fb4;
+    --theme-border-color: rgba(221, 221, 221, 0.67);
+    
+    --code-bg-color: rgba(241, 241, 241, 0.93);
+    --code-text-color: rgba(0, 0, 0, 0.93);
+    --code-border-color: #dddddd;
+    
+    --note-gray-bg: rgba(221, 221, 221, 0.67);
+    --note-gray-border: #cccccc;
+    
+    --image-filter: invert(0);
   }
   
   .menu-item-1009876,
   .menu-item-1009876 a {
-    filter: invert(0) !important;
-  }
-  
-  img,
-  .searchform {
     filter: invert(0) !important;
   }
 }
