@@ -169,6 +169,24 @@ ytd-two-column-browse-results-renderer[page-subtype="playlist"] {
   display: none !important;
 }
 
+/* yt-early New To You chip */
+#chips {
+  display: flex !important;
+}
+
+#chips > yt-chip-cloud-chip-renderer:nth-last-child(1) {
+  order: 1 !important;
+  margin-right: 12px !important;
+}
+
+#chips > yt-chip-cloud-chip-renderer:not(:nth-last-child(1)) {
+  order: 2 !important;
+}
+
+#chips > yt-chip-cloud-chip-renderer:nth-child(1) {
+  order: 1 !important;
+}
+
 /* yt-Compact feed $ Reduce spacing, Show menu button on hover, inline details */
 ytd-rich-item-renderer {
   margin-bottom: 15px !important;
