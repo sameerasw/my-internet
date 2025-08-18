@@ -37,7 +37,8 @@ body:has(.persistent-player--theatre) {
   }
 }
 
-/* darkreader $ This is a example description */
+/* chat-transparency */
+body,
 .Layout-sc-1xcs6mc-0,
 .stream-chat,
 .chat-shell,
