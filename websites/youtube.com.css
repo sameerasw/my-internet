@@ -2,7 +2,7 @@
 html,
 html[dark],
 #full-bleed-container,
-.html5-video-player,
+#movie_player,
 yt-report-form-modal-renderer,
 ytd-engagement-panel-section-list-renderer[dialog] #content.ytd-engagement-panel-section-list-renderer {
   background-color: transparent !important;
@@ -33,26 +33,9 @@ body {
   position: relative !important;
 }
 
-x.ytd-page-manager {
+.ytd-page-manager {
   overflow-y: scroll !important;
   height: calc(100dvh - 56px) !important;
-}
-
-ytd-page-manager:not(ytd-browse #contents) {
-  .ytd-page-manager {
-    overflow-y: scroll !important;
-    height: calc(100dvh - 56px) !important;
-  }
-}
-
-aytd-app:has([fullscreen]) {
-  #masthead {
-  position: fixed !important;
-}
-  
-.ytd-page-manager {
-  height: 100dvh !important;
- }
 }
 
 #page-manager {
@@ -80,7 +63,8 @@ tp-yt-iron-overlay-backdrop {
 body:has(
     tp-yt-iron-dropdown:not([aria-hidden="true"]),
     tp-yt-iron-dropdown[aria-disabled="true"],
-    .ytSearchboxComponentInputBoxHasFocus
+    .ytSearchboxComponentInputBoxHasFocus,
+    a#guide[opened]
   ) #page-manager {
   filter: blur(20px) !important;
   pointer-events: none !important;
@@ -97,7 +81,7 @@ body:has(ytd-voice-search-dialog-renderer #microphone[state], tp-yt-paper-dialog
   backdrop-filter: blur(20px) !important;
 }
 
-/* yt-clean side guide $ Remove YouTube Studio, Sports, Settings and the gfooter from the guide */ 
+/* yt-clean side guide $ Remove YouTube Studio, Sports, Settings and the gfooter from the guide */
 ytd-guide-section-renderer:has([title="YouTube Studio"], [title="Sport"], [title="Settings"]),
 ytd-guide-renderer #footer {
   display: none !important;
@@ -125,12 +109,6 @@ ytd-mini-guide-renderer {
 
 a.ytd-mini-guide-entry-renderer {
   padding: 10px 0 10px !important;
-}
-
-ytd-mini-guide-renderer[hidden] {
-  display: inline-block !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
 }
 
 #items.ytd-mini-guide-renderer {
@@ -590,6 +568,18 @@ ytlr-compact-link-renderer {
 }
 
 /*yt-Animations*/
+ytd-mini-guide-renderer[hidden] {
+  display: inline-block !important;
+  aopacity: 0 !important;
+  aleft: -100% !important;
+  transform: translate3d(-100%,0,0) !important;;
+  pointer-events: none !important;
+}
+
+#guide[persistent] #header {
+  display: none !important;
+}
+
 #guide > #contentContainer,
 #masthead-container,
 #page-manager,
