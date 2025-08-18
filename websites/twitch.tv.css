@@ -6,28 +6,6 @@ nav,
 header,
 .chat-room,
 .channel-root__right-column,
-.channel-root__right-column.channel-root__right-column--expanded,
-.Layout-sc-1xcs6mc-0.cCSAoN,
-.Layout-sc-1xcs6mc-0.LJevC,
-.Layout-sc-1xcs6mc-0.gDDWxy,
-.Layout-sc-1xcs6mc-0.gyMdFQ,
-.Layout-sc-1xcs6mc-0.bXENUW,
-.Layout-sc-1xcs6mc-0.jmERFg,
-.Layout-sc-1xcs6mc-0.dRMwTz,
-.Layout-sc-1xcs6mc-0.cMeiZH,
-.Layout-sc-1xcs6mc-0.gGBpkX,
-.Layout-sc-1xcs6mc-0.iSIERH,
-.Layout-sc-1xcs6mc-0.dewBQX,
-.Layout-sc-1xcs6mc-0.eOHCrm,
-.Layout-sc-1xcs6mc-0.bXENUW.chat-room__content,
-.Layout-sc-1xcs6mc-0.gQAGKi.bits-leaderboard-expanded-top-three-entry,
-.Layout-sc-1xcs6mc-0.JxIvc.marquee-animation__original,
-.Layout-sc-1xcs6mc-0.jmERFg.stream-chat-header,
-.stream-chat-header,
-.chat-room__content,
-.stream-chat,
-.chat-shell,
-.chat-shell__expanded,
 .ixiIRM > div:nth-child(1),
 .stream-display-ad__container_squeezeback,
 .video-player,
@@ -63,6 +41,21 @@ body:has(.persistent-player--theatre) {
 .chat-input-tray__open,
 .Layout-sc-1xcs6mc-0.kelbCv {
   background-color: var(--color-background-input-checkbox-checked-background) !important;
+}
+
+/* twitch-chat bg */
+.channel-root__right-column--expanded,
+.bits-leaderboard-expanded-top-three-entry,
+.marquee-animation__original,
+.stream-chat-header,
+.chat-room__content,
+.stream-chat,
+.chat-shell,
+.chat-shell__expanded {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 /* twitch-no footer */
