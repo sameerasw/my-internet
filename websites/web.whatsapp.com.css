@@ -54,7 +54,7 @@ body,
   --WDS-background-dimmer: transparent !important;
 }
 
-#app:has(._ak4w, [role="dialog"]:not(._aig- [role="dialog"]), .overlay) {
+.app-wrapper-web:has(> span:not(:empty)) {
   ._aigs {
     filter: blur(20px) !important;
   }
