@@ -38,13 +38,10 @@ body:has(.persistent-player--theatre) {
 }
 
 /* chat-transparency */
-body,
-.Layout-sc-1xcs6mc-0,
-.stream-chat,
 .chat-shell,
-.chat-shell__expanded,
-.channel-root__right-column,
-.channel-root__right-column--expanded {
+.stream-chat,
+.channel-root__right-column.channel-root__right-column--expanded,
+.Layout-sc-1xcs6mc-0.cCSAoN {
   background-color: transparent !important;
   background: none !important;
 }
