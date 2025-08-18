@@ -97,23 +97,6 @@ body:has(ytd-voice-search-dialog-renderer #microphone[state], tp-yt-paper-dialog
   backdrop-filter: blur(20px) !important;
 }
 
-/* yt-No side guide $ Completely remove the side guide */ 
-ytd-mini-guide-renderer,
-[theater=""] #contentContainer::after {
-  display: none !important;
-}
-
-#content:not(:has(#guide[opened=""])) {
-  #page-manager {
-    margin-left: 0 !important;
-  }
-}
-
-ytd-alert-with-button-renderer {
-  align-items: center !important;
-  justify-content: center !important;
-}
-
 /* yt-clean side guide $ Remove YouTube Studio, Sports, Settings and the gfooter from the guide */ 
 ytd-guide-section-renderer:has([title="YouTube Studio"], [title="Sport"], [title="Settings"]),
 ytd-guide-renderer #footer {
@@ -134,9 +117,20 @@ ytd-mini-guide-entry-renderer .title {
 }
 
 ytd-mini-guide-renderer {
+  display: inline-block !important;
   width: calc(var(--ytd-mini-guide-width) - 4px) !important;
   padding: 12px !important;
   margin-right: 4px !important;
+}
+
+a.ytd-mini-guide-entry-renderer {
+  padding: 10px 0 10px !important;
+}
+
+ytd-mini-guide-renderer[hidden] {
+  display: inline-block !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 #items.ytd-mini-guide-renderer {
@@ -145,6 +139,23 @@ ytd-mini-guide-renderer {
 
 .guide-icon.ytd-mini-guide-entry-renderer {
   margin-bottom: 0 !important;
+}
+
+/* yt-No side guide $ Completely remove the side guide */ 
+ytd-mini-guide-renderer,
+[theater=""] #contentContainer::after {
+  display: none !important;
+}
+
+#content:not(:has(#guide[opened=""])) {
+  #page-manager {
+    margin-left: 0 !important;
+  }
+}
+
+ytd-alert-with-button-renderer {
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 /* yt-mini guide $ A minimal guide with an icon only sidebar similar to the tablet view but more entries */ 
@@ -581,7 +592,8 @@ ytlr-compact-link-renderer {
 /*yt-Animations*/
 #guide > #contentContainer,
 #masthead-container,
-#page-manager {
+#page-manager,
+ytd-mini-guide-renderer {
   transition-property: filter, margin, transform !important;
   transition: 0.6s cubic-bezier(0.85, 0, 0.15, 1) !important;
 }
