@@ -29,13 +29,19 @@ main {
   border-radius: 1em !important;
 }
 
+body,
+.Layout-sc-1xcs6mc-0,
+.LJevC,
+.chat-shell,
+.chat-shell__expanded {
+  background-color: transparent !important;
+}
+
 body:has(.persistent-player--theatre) {
   .channel-root,
-  .chat-shell,
   nav,
   [aria-label="Expand Side Nav"] {
     display: none !important;
-    background-color: transparent !important;
   }
 }
 
