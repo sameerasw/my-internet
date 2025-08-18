@@ -56,13 +56,18 @@ body:has(.persistent-player--theatre) {
 .Layout-sc-1xcs6mc-0.iSIERH,
 .Layout-sc-1xcs6mc-0.dewBQX,
 .Layout-sc-1xcs6mc-0.eOHCrm,
+.Layout-sc-1xcs6mc-0.bXENUW.chat-room__content,
 .Layout-sc-1xcs6mc-0.gQAGKi.bits-leaderboard-expanded-top-three-entry,
 .Layout-sc-1xcs6mc-0.JxIvc.marquee-animation__original,
 .Layout-sc-1xcs6mc-0.jmERFg.stream-chat-header,
-.Layout-sc-1xcs6mc-0.bXENUW.chat-room__content,
-.Layout-sc-1xcs6mc-0.gyMdFQ.stream-chat,
-.Layout-sc-1xcs6mc-0.LJevC.chat-shell.chat-shell__expanded,
-.channel-root__right-column.channel-root__right-column--expanded {
+.channel-root__right-column.channel-root__right-column--expanded,
+.bits-leaderboard-expanded-top-three-entry,
+.marquee-animation__original,
+.stream-chat-header,
+.chat-room__content,
+.stream-chat,
+.chat-shell,
+.chat-shell__expanded {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
