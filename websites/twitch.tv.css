@@ -16,10 +16,6 @@ header,
 .channel-root,
 .side-nav,
 .channel-info-content,
-.Layout-sc-1xcs6mc-0,
-.LJevC,
-.chat-shell,
-.chat-shell__expanded,
 .channel-root__info:not(:has(#offline-channel-main-content)) {
   background-color: transparent !important;
   background: none !important;
@@ -27,7 +23,7 @@ header,
   box-shadow: none !important;
 }
 #offline-channel-main-content {
-  background-color: transparent !important;
+  background-color: var(--color-background-body) !important;
 }
 main {
   border-radius: 1em !important;
@@ -41,10 +37,21 @@ body:has(.persistent-player--theatre) {
   }
 }
 
+/* darkreader $ This is a example description */
+.Layout-sc-1xcs6mc-0,
+.stream-chat,
+.chat-shell,
+.chat-shell__expanded 
+.channel-root__right-column,
+.channel-root__right-column--expanded {
+  background-color: transparent !important;
+  background: none !important;
+}
+
 .highlight,
 .chat-input-tray__open,
 .Layout-sc-1xcs6mc-0.kelbCv {
-  background-color: transparent !important;
+  background-color: var(--color-background-input-checkbox-checked-background) !important;
 }
 
 /* twitch-no footer */
