@@ -44,13 +44,25 @@ body:has(.persistent-player--theatre) {
 }
 
 /* twitch-chat bg */
-.channel-root__right-column.channel-root__right-column--expanded,
+.Layout-sc-1xcs6mc-0.cCSAoN,
+.Layout-sc-1xcs6mc-0.LJevC,
+.Layout-sc-1xcs6mc-0.gDDWxy,
+.Layout-sc-1xcs6mc-0.gyMdFQ,
+.Layout-sc-1xcs6mc-0.bXENUW,
+.Layout-sc-1xcs6mc-0.jmERFg,
+.Layout-sc-1xcs6mc-0.dRMwTz,
+.Layout-sc-1xcs6mc-0.cMeiZH,
+.Layout-sc-1xcs6mc-0.gGBpkX,
+.Layout-sc-1xcs6mc-0.iSIERH,
+.Layout-sc-1xcs6mc-0.dewBQX,
+.Layout-sc-1xcs6mc-0.eOHCrm,
 .Layout-sc-1xcs6mc-0.gQAGKi.bits-leaderboard-expanded-top-three-entry,
 .Layout-sc-1xcs6mc-0.JxIvc.marquee-animation__original,
 .Layout-sc-1xcs6mc-0.jmERFg.stream-chat-header,
 .Layout-sc-1xcs6mc-0.bXENUW.chat-room__content,
 .Layout-sc-1xcs6mc-0.gyMdFQ.stream-chat,
-.Layout-sc-1xcs6mc-0.LJevC.chat-shell.chat-shell__expanded {
+.Layout-sc-1xcs6mc-0.LJevC.chat-shell.chat-shell__expanded,
+.channel-root__right-column.channel-root__right-column--expanded {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
