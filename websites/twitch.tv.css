@@ -6,6 +6,7 @@ nav,
 header,
 .chat-room,
 .channel-root__right-column,
+.channel-root__right-column.channel-root__right-column--expanded,
 .ixiIRM > div:nth-child(1),
 .stream-display-ad__container_squeezeback,
 .video-player,
@@ -35,15 +36,6 @@ body:has(.persistent-player--theatre) {
   [aria-label="Expand Side Nav"] {
     display: none !important;
   }
-}
-
-/* chat-transparency */
-.chat-shell,
-.stream-chat,
-.channel-root__right-column.channel-root__right-column--expanded,
-.Layout-sc-1xcs6mc-0.cCSAoN {
-  background-color: transparent !important;
-  background: none !important;
 }
 
 .highlight,
