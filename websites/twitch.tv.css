@@ -23,7 +23,7 @@ header,
   box-shadow: none !important;
 }
 #offline-channel-main-content {
-  background-color: var(--color-background-body) !important;
+  background-color: transparent !important;
 }
 main {
   border-radius: 1em !important;
@@ -48,7 +48,7 @@ body:has(.persistent-player--theatre) {
 .highlight,
 .chat-input-tray__open,
 .Layout-sc-1xcs6mc-0.kelbCv {
-  background-color: var(--color-background-input-checkbox-checked-background) !important;
+  background-color: transparent !important;
 }
 
 /* twitch-no footer */
