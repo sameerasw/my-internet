@@ -16,7 +16,6 @@ header,
 .channel-root,
 .side-nav,
 .channel-info-content,
-.channel-root__right-column,
 .channel-root__info:not(:has(#offline-channel-main-content)) {
   background-color: transparent !important;
   background: none !important;
@@ -32,9 +31,11 @@ main {
 
 body:has(.persistent-player--theatre) {
   .channel-root,
+  .chat-shell,
   nav,
   [aria-label="Expand Side Nav"] {
     display: none !important;
+    background-color: transparent !important;
   }
 }
 
