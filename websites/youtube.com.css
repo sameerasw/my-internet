@@ -27,15 +27,17 @@ ytd-masthead {
 /* yt-Fix Overlapping Header */ 
 body {
   overflow-y: hidden !important;
-}
+} 
 
-#masthead-container {
-  position: relative !important;
-}
+ytd-app:not([fullscreen]) {
+  #masthead-container {
+    position: relative !important;
+  }
 
-.ytd-page-manager {
-  overflow-y: scroll !important;
-  height: calc(100dvh - 56px) !important;
+  .ytd-page-manager {
+    overflow-y: scroll !important;
+    height: calc(100dvh - 56px) !important;
+  }
 }
 
 #page-manager {
@@ -47,7 +49,7 @@ body {
   top: 0 !important;
 }
 
-/* yt-Immersive Popup */ 
+/* yt-Immersive Popup */
 #guide.visible,
 tp-yt-iron-overlay-backdrop {
   background-color: transparent !important;
