@@ -16,6 +16,10 @@ header,
 .channel-root,
 .side-nav,
 .channel-info-content,
+.Layout-sc-1xcs6mc-0,
+.LJevC,
+.chat-shell,
+.chat-shell__expanded,
 .channel-root__info:not(:has(#offline-channel-main-content)) {
   background-color: transparent !important;
   background: none !important;
@@ -27,14 +31,6 @@ header,
 }
 main {
   border-radius: 1em !important;
-}
-
-body,
-.Layout-sc-1xcs6mc-0,
-.LJevC,
-.chat-shell,
-.chat-shell__expanded {
-  background-color: transparent !important;
 }
 
 body:has(.persistent-player--theatre) {
