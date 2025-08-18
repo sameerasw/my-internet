@@ -65,8 +65,7 @@ tp-yt-iron-overlay-backdrop {
 body:has(
     tp-yt-iron-dropdown:not([aria-hidden="true"]),
     tp-yt-iron-dropdown[aria-disabled="true"],
-    .ytSearchboxComponentInputBoxHasFocus,
-    a#guide[opened]
+    .ytSearchboxComponentInputBoxHasFocus
   ) #page-manager {
   filter: blur(20px) !important;
   pointer-events: none !important;
