@@ -13,7 +13,7 @@ ytd-app,
 #cinematic-shorts-scrim,
 #shorts-container,
 .ytLrGuideResponseMask,
-.ytLrPromoShelfRendererContainer {
+.ytLrPromoShelfRendererContainer, ytd-item-section-renderer[page-subtype="playlist"] #header.ytd-item-section-renderer {
   background-color: #00000000 !important;
   background: none !important;
 }
