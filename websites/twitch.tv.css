@@ -16,6 +16,7 @@ header,
 .channel-root,
 .side-nav,
 .channel-info-content,
+.chat-shell,
 .channel-root__info:not(:has(#offline-channel-main-content)) {
   background-color: transparent !important;
   background: none !important;
