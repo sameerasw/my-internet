@@ -423,7 +423,7 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer) {
 }
 
 /* yt-fix new feed layout $ Revert the new ugly feed layout that barely fits 3 columns of videos */
-ytd-rich-item-renderer[rendered-from-rich-grid] {
+ytd-rich-item-renderer[rendered-from-rich-grid], ytd-ghost-grid-renderer {
   @media only screen and (min-width: 1400px) {
     --ytd-rich-grid-items-per-row: 4 !important;
 
