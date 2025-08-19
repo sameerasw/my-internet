@@ -10,7 +10,7 @@ ytd-engagement-panel-section-list-renderer[dialog] #content.ytd-engagement-panel
 
 :root,
 ytd-masthead,
-[use-color-palette] {
+ytd-playlist-panel-video-renderer[use-color-palette] {
   --yt-spec-base-background: transparent !important;
   --yt-spec-menu-background: transparent !important;
   --yt-spec-brand-background-solid: transparent !important;
@@ -25,6 +25,10 @@ ytd-masthead,
 .ytSearchboxComponentInputBox,
 .ytContextualSheetLayoutHost {
   background-color: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+ytd-playlist-panel-video-renderer[selected][use-color-palette] {
+  --yt-active-playlist-panel-background-color: hsla(0, 0%, 100%, 0.08) !important;
 }
 
 /* yt-Fix Overlapping Header */ 
