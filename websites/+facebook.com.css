@@ -1,9 +1,22 @@
 /* fb-Transparency */
-body, ._95k9, ._4t2a, ._4-i2, [role="link"] > div, .html-div > div .x1jx94hy, input, .xcrg951[role="presentation"] {
+body,
+input,
+._95k9,
+._4t2a,
+._4-i2,
+[role="link"] > div,
+.html-div > div .x1jx94hy,
+.xcrg951[role="presentation"] {
   background-color: transparent !important;
 }
 
-:root, .x2bj2ny, .x1jx94hy, .x1h0vfkc, .xezm23g, .__fb-dark-mode, .__fb-light-mode {
+:root,
+.x2bj2ny,
+.x1jx94hy,
+.x1h0vfkc,
+.xezm23g,
+.__fb-dark-mode,
+.__fb-light-mode {
   --surface-background: transparent !important;
   --overlay-alpha-80: transparent !important;
   --nav-bar-background: transparent !important;
@@ -14,12 +27,22 @@ body, ._95k9, ._4t2a, ._4-i2, [role="link"] > div, .html-div > div .x1jx94hy, in
   --web-wash:  transparent !important;
 }
 
-/* fb-Glass Effect */ 
-._1gaz, ._6luv, ._55r1, ._1gax, ._59s7 {
+/* fb-Glass Effect */
+._1gaz,
+._6luv,
+._55r1,
+._1gax,
+._59s7 {
   background-color: rgba(255,255,255,0.1) !important;
 }
 
-:root, .x2bj2ny, .x1jx94hy, .x1h0vfkc, .xezm23g, .__fb-dark-mode, .__fb-light-mode {
+:root,
+.x2bj2ny,
+.x1jx94hy,
+.x1h0vfkc,
+.xezm23g,
+.__fb-dark-mode,
+.__fb-light-mode {
   --card-background: rgba(255,255,255,0.1) !important;
   --comment-background: rgba(255,255,255,0.1) !important;
   --messenger-card-background: rgba(255,255,255,0.1) !important;
@@ -27,8 +50,16 @@ body, ._95k9, ._4t2a, ._4-i2, [role="link"] > div, .html-div > div .x1jx94hy, in
 }
 
 /* fb-Immersive Popup */
-body:has([role="dialog"], [role="menu"], [role="none"][tabindex]) {
-  #globalContainer, #scrollview, [role="main"], [role="complementary"] {
+body:has(
+  [role="dialog"],
+  [role="menu"],
+  [role="none"][tabindex]
+) {
+  #globalContainer,
+  #scrollview,
+  [role="main"],
+  [role="complementary"],
+  [role="navigation"]:not([role="banner"] [role="navigation"]) {
     filter: blur(20px) !important;
     pointer-events: none !important;
   }
