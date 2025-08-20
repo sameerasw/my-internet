@@ -103,7 +103,7 @@
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer, mfe-footer-pharos-footer, .footer, #footer {\n  display: none !important;\n}"
     },
-    "+hyprland.org.css": {
+    "+hypr.land.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, aside > div, nav > div > div {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}"
     },
     "+iherb.com.css": {
