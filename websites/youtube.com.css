@@ -90,7 +90,7 @@ body:has(ytd-voice-search-dialog-renderer #microphone[state], tp-yt-paper-dialog
   backdrop-filter: blur(20px) !important;
 }
 
-/* yt-clean side guide $ Remove YouTube Studio, Sports, Settings and the gfooter from the guide */
+/* yt-clean side guide $ Remove YouTube Studio, Sports, Settings and the gfooter from the guide */ 
 ytd-guide-section-renderer:has([title="YouTube Studio"], [title="Sport"], [title="Settings"]),
 ytd-guide-renderer #footer {
   display: none !important;
@@ -145,7 +145,7 @@ ytd-alert-with-button-renderer {
   justify-content: center !important;
 }
 
-/* yt-mini guide $ A minimal guide with an icon only sidebar similar to the tablet view but more entries */ 
+/* yt-mini guide $ A minimal guide with an icon only sidebar similar to the tablet view but more entries */   
 ytd-app {
   --app-drawer-width: var(--ytd-mini-guide-width) !important;
   --ytd-persistent-guide-width: var(--ytd-mini-guide-width) !important;
@@ -570,11 +570,9 @@ ytlr-compact-link-renderer {
   font-size: 0.7em !important;
 }
 
-/*yt-Animations*/
+/*yt-Animations*/ 
 ytd-mini-guide-renderer[hidden] {
   display: inline-block !important;
-  aopacity: 0 !important;
-  aleft: -100% !important;
   transform: translate3d(-100%,0,0) !important;;
   pointer-events: none !important;
 }
@@ -586,7 +584,17 @@ ytd-mini-guide-renderer[hidden] {
 #guide > #contentContainer,
 #masthead-container,
 #page-manager,
-ytd-mini-guide-renderer {
-  transition-property: filter, margin, transform !important;
+ytd-mini-guide-renderer,
+ytd-menu-renderer #button,
+#inline-preview-player, 
+#video-preview-container,
+ytd-app #content,
+#columns #secondary,
+ytd-comments,
+yt-searchbox,
+.__youtube-timestamps__stamp,
+div.clickable-comment,
+div.replies {
+  transition-property: filter, margin, transform, opacity, scale !important;
   transition: 0.6s cubic-bezier(0.85, 0, 0.15, 1) !important;
 }
