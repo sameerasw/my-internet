@@ -68,19 +68,10 @@ body,
   ._aigs {
     filter: blur(20px) !important;
   }
-  [type="button"]:not(
-    ._aiwn > span > div [type="button"],
-    [data-animate-modal-backdrop] [type="button"],
-    [role="application"] [type="button"]
-  ),
+  [type="button"]:not(._aiwn > span > div [type="button"], [data-animate-modal-backdrop] [type="button"], [role="application"] [type="button"]),
   [data-navbar-item="true"],
   ._ak72:not([data-animate-modal-backdrop] ._ak72),
-  [role="button"]:not(
-    ._ak4w [role="button"],
-    [data-animate-modal-backdrop] [role="button"],
-    .overlay [role="button"],
-    ._aiwn > span > div [role="button"]
-  ) {
+  [role="button"]:not(._ak4w [role="button"], [data-animate-modal-backdrop] [role="button"], .overlay [role="button"], ._aiwn > span > div [role="button"]) {
     pointer-events: none !important;
   }
 }
@@ -91,29 +82,21 @@ body,
   }
 }
 
-#app:has(
-    [data-animate-modal-backdrop]:not([data-animate-status-viewer]),
-    ._aiwn > span > ._ak4-,
-    ._aiwn > span > ._ak4_
-  ):not(:has(._ajx_, [data-animate-status-viewer])) {
+#app:has([data-animate-modal-backdrop]:not([data-animate-status-viewer]), ._aiwn > span > ._ak4-, ._aiwn > span > ._ak4_):not(:has(._ajx_, [data-animate-status-viewer])) {
   ._aiwn > span > [tabindex] > div {
     filter: blur(20px) !important;
   }
 }
 
 ._aiwn:has(.x1h2kqdt) {
-  [data-animate-status-viewer]
-    > span
-    > div
-    > div
-    > [tabindex]
-    > div:not(:last-child) {
+  [data-animate-status-viewer] > span > div > div > [tabindex] > div:not(:last-child) {
     filter: blur(20px) !important;
   }
 }
 
 ._aigs:has(> div > div:not(._aigw) > span > div) {
-  #main > div, #main > footer {
+  #main > div,
+  #main > footer {
     opacity: 0 !important;
   }
 }
