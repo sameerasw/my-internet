@@ -58,11 +58,11 @@ body:has(.nav-items.shown) {
   overflow-y: auto !important;
   margin-top: 0 !important;
   margin-inline: unset !important;
-  padding-inline: .618rem !important;
+  padding-inline: 0.618rem !important;
 }
 @media (min-width: 85rem) {
   .nav-wrapper {
-    max-height: unset !important;;
+    max-height: unset !important;
   }
 }
 
