@@ -1,8 +1,9 @@
 /* transparency */
 @layer {
-  html, body {
-    background-color: transparent!important;
-  }  
+  html,
+  body {
+    background-color: transparent !important;
+  }
 }
 
 :root {
@@ -11,7 +12,7 @@
 }
 
 :root.bright-theme {
-   --nav-color: #fffa !important;
+  --nav-color: #fffa !important;
   --card-background: #fff7;
 }
 
