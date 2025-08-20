@@ -6,7 +6,8 @@
 }
 
 #app__container,
-.form__input--floating, body {
+.form__input--floating,
+body {
   background-color: transparent !important;
 }
 
