@@ -1,85 +1,53 @@
-/* transparency */
-html,
+/* Transparency */
 body,
-nav,
-header,
-.app-root,
-#pass-sidebar,
-#main,
-#content,
-section,
-.devsite-top-logo-row,
-devsite-expandable,
-devsite-header:not([bottom-row--hidden]) .devsite-top-logo-row-wrapper-wrapper,
-.devsite-collapsible-section,
-.devsite-book-nav-bg,
-.devsite-book-nav-filter,
-.devsite-book-nav-blur,
-.devsite-sidebar-content,
-.devsite-breadcrumb-list,
-devsite-search .devsite-searchbox::before,
-.devsite-searchbox,
-.devsite-search-field,
-.devsite-playlist--header,
-.android-dropdown,
-[expanded],
-[aria-controls="language-menu"] {
-  background-color: transparent !important;
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  transition:
-    background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
-    border 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out !important;
-}
-
-.devsite-nav-item {
-  border-radius: 20px !important;
-}
-
-devsite-language-selector {
-  --devsite-background-1: #00000000 !important;
-}
-
-:root {
-  --darkreader-background-ffffff: transparent !important;
-}
-
-/* no footer */
-footer,
-devsite-footer-promos,
-devsite-footer-linkboxes,
-devsite-footer-utility,
-devsite-content-footer {
-  display: none !important;
-}
-
-/* glass effect */
+.devsite-article-body > section,
 .button-primary,
 .devsite-search-field,
 .android-quick-link,
-.android-fully-clickable {
-  box-shadow:
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
-    rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
-
-  @media (prefers-color-scheme: light) {
-    background-color: #fff8 !important;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    background-color: #0005 !important;
-  }
+.android-fully-clickable,
+.android-item-dark-background-grey-1000,
+.devsite-landing-row-item-description::after,
+.devsite-landing-row-item-description::before,
+.devsite-landing-row-item::after {
+  background: none !important;
 }
 
-/* fix overlapping header */
+:root,
+body,
+devsite-header,
+devsite-search,
+.devsite-tabs-dropdown-column,
+.android-grouped-resources-contained--primary {
+  --devsite-background-color: transparent !important;
+  --devsite-background-1: transparent !important;
+  --devsite-button-primary-background: rgba(255, 255, 255, 0.1) !important;
+  --devsite-button-background-hover: rgba(255, 255, 255, 0.1) !important;
+  --devsite-dropdown-column-background: transparent !important; 
+  --devsite-background-3: transparent !important;
+  --devsite-popout-background: transparent !important;
+  --devsite-header-color-lower: transparent !important;
+  --group-background: rgba(255, 255, 255, 0.1) !important;
+  --devsite-body-background: transparent !important;
+}
+
+/* Darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-f8f9fa: transparent !important;
+}
+
+/* Glass Effect */ 
+.button-primary,
+.devsite-search-field,
+.android-quick-link,
+.android-fully-clickable,
+.android-item-dark-background-grey-1000,
+#drawer,
+body[codelabs-content-type="paginated"] google-codelab-step pre {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Fix Overlapping Header */
 body {
   overflow: hidden !important;
 }
@@ -93,11 +61,51 @@ devsite-header {
 }
 
 main {
-  height: calc(100dvh - 49px) !important;
+  height: calc(100dvh - var(--devsite-js-header-height)) !important;
   overflow-y: scroll !important;
 }
 
-html:has(.devsite-dropdown--open, [devsite-book-nav--open=""], [search-active=""], devsite-header [open=""]) main {
-  filter: blur(20px) !important;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
+html:has(
+    .devsite-dropdown--open, 
+    [devsite-book-nav--open=""], 
+    [search-active=""], 
+    devsite-header [open=""]
+  ) {
+  main {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+  
+  .devsite-collapsible-section {
+    display: none !important;
+  }
+}
+
+google-codelab[drawer--open] {
+  #codelab-title, #main {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+}
+
+
+google-codelab:has(devsite-language-selector[open]) {
+  #main {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+}
+
+/* Misc */
+[template="codelab"] .devsite-toc-embedded {
+  display: none !important;
+}
+
+/* No Footer */
+footer,
+devsite-footer-promos,
+devsite-footer-linkboxes,
+devsite-footer-utility,
+devsite-content-footer {
+  display: none !important;
 }
