@@ -1144,6 +1144,11 @@
     "faceit.com.css": {
       "faceit-transparency": "* {\n  background-color: transparent !important;\n  border: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}\n[class*=\"styles__HolderButton\"], [class*=\"styles__Container\"], [class*=\"styles__HolderDiv\"], [class*=\"Card-sc\"], [class*=\"styles__CanvasHolder\"], [class*=\"ListContentPlayer__Holder\"] {\n  background-color: rgba(0, 0, 0, 0.2) !important;\n  border: none !important;\n}\n[class*=\"modal-\"], #radix-:rq: {\n  background-color: rgba(0, 0, 0, 0.5) !important;\n  border: none !important;\n}"
     },
+    "fansly.com.css": {
+      "transparency": "@layer {\n  html,\n  body {\n    background-color: transparent !important;\n  }\n}\n:root {\n  --nav-color: #000a !important;\n  --card-background: #0006;\n}\n:root.bright-theme {\n  --nav-color: #fffa !important;\n  --card-background: #fff7;\n}\n.global-wrapper {\n  background: transparent !important;\n}\n.feed-item {\n  background: var(--card-background) !important;\n  border-radius: 10px !important;\n}\n.feed-item-meta-wrapper > :first-child {\n  margin: 0.5em 0 0em 0.5em !important;\n}",
+      "hide sidebar": "app-side-bar-right {\n  display: none !important;\n}",
+      "hide For you": "app-media-offer-suggestions-timeline-post {\n  display: none !important;\n}"
+    },
     "fast.com.css": {
       "fast-transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}\n.speed-container {\n  color: light-dark(#000, #fff) !important;\n}",
       "fast-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}"
