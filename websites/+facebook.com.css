@@ -52,7 +52,7 @@ input,
 
 /* fb-Fix Overlapping Header */
 body:not(:has([role="dialog"] [role="main"])) {
-  [role="main"] {
+  [role="main"]:not([role="main"] [role="main"]) {
     height: calc(100dvh - 56px) !important;
     overflow-y: scroll !important;
   }
