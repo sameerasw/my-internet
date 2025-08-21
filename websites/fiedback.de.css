@@ -1,0 +1,49 @@
+/* transparency */
+html, body, 
+.app-navigation, /* @ sidebar in files */
+.content-list__search, .text-menubar, .text-menubar--ready, 
+.app-content.no-snapper, /* @ body of tasks app*/
+.header /* @ header of tasks app*/ {
+  background: none !important;
+  --color-main-background: transparent !important;
+
+  /* @ sidebar for music app */
+  --color-main-background-blur: transparent !important;
+}
+
+/* @ popup menus, right-click, contacts, notifications, settings */
+.v-popper__popper,
+.modal-container,
+.account-menu__list,
+.notification-container,
+.contactsmenu__menu {
+  background: rgba(23, 23, 23, 0.8) !important;
+  background-color: rgba(23, 23, 23, 0.8) !important;
+  border-radius: 12px !important;
+}
+
+/* @ darker area of calender,  */
+.fc-day, /* @ darker calender area */
+.sm2-bar-ui, /* @ music app header*/
+.frontmatter /* @ markdown properties header in notes*/ {
+  --color-main-background: rgba(23, 23, 23, 0.5) !important;
+  --color-background-dark: rgba(23, 23, 23, 0.15) !important;
+}
+
+/* @ volume slider for music app */
+.volume-slider {
+  background: rgba(23, 23, 23, 0.2) !important;
+  border-radius: 100px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+/* @ volume slider knob */
+.volume-slider::-moz-range-thumb {
+  background: rgba(32, 32, 32, 0.9) !important;
+}
+
+/* @ memories app sidebar solid color */
+aside#app-sidebar-vue.app-sidebar.app-sidebar--full {
+  --color-main-background: rgb(23, 23, 23);
+}
