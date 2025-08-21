@@ -6,7 +6,8 @@ input,
 ._4-i2,
 [role="link"] > div,
 .html-div > div .x1jx94hy,
-.xcrg951[role="presentation"] {
+.xcrg951[role="presentation"],
+[role="dialog"] .x1jx94hy {
   background-color: transparent !important;
 }
 
