@@ -17,6 +17,7 @@ input,
 .xezm23g,
 .__fb-dark-mode,
 .__fb-light-mode {
+  --always-black: transparent !important;
   --surface-background: transparent !important;
   --overlay-alpha-80: transparent !important;
   --nav-bar-background: transparent !important;
@@ -49,9 +50,23 @@ input,
   --secondary-button-background: rgba(255,255,255,0.1) !important;
 }
 
+/* fb-Fix Overlapping Header */
+body:not(:has([role="dialog"] [role="main"])) {
+  [role="main"] {
+    height: calc(100dvh - 56px) !important;
+    overflow-y: scroll !important;
+  }
+}
+
+[role="banner"] [aria-hidden="true"] {
+  [aria-label="Facebook"][role="navigation"] {
+    display: none !important;
+  }
+}
+
 /* fb-Immersive Popup */
 body:has(
-  [role="dialog"],
+  [role="dialog"]:not([aria-label="Photo viewer"]),
   [role="menu"],
   [role="none"][tabindex]
 ) {
