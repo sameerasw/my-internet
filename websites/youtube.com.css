@@ -310,7 +310,7 @@ ytd-merch-shelf-renderer,
 }
 
 /* yt-theater: zen view $ Make the theater view video fit the full window size */ 
-ytd-app:has(.ytd-page-manager[theater]) {
+ytd-app:has(.ytd-page-manager[theater]:not([hidden])) {
   #masthead-container {
     position: fixed !important;
     top: -40px !important;
