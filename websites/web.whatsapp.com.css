@@ -28,6 +28,8 @@ body,
   --WDS-systems-bubble-surface-system: #24262666 !important;
   --WDS-systems-bubble-surface-incoming: #24262666 !important;
   --WDS-systems-bubble-surface-outgoing: #144d3766 !important;
+  --rich-text-panel-background: var(--WDS-surface-highlight) !important;
+  --panel-input-background: var(--WDS-surface-highlight) !important;
 }
 
 @media screen and (max-width: 1300px) {
@@ -44,7 +46,11 @@ body,
 }
 
 /* wa-Immersive Popup */
-.x1akjpcp {
+.x1akjpcp,
+.xbyyjgo,
+.x42x0ya,
+.x1bmpntp,
+._ahyo {
   background: none !important;
 }
 
@@ -54,14 +60,43 @@ body,
   --WDS-background-dimmer: transparent !important;
 }
 
-.app-wrapper-web:has(> span:not(:empty)) {
+[data-animate-status-viewer] .x1h2kqdt {
+  background-color: var(--WDS-surface-highlight) !important;
+}
+
+.app-wrapper-web:has(._ak4w, > span:not(:empty)) {
   ._aigs {
     filter: blur(20px) !important;
   }
-  [type="button"],
+  [type="button"]:not(._aiwn > span > div [type="button"], [data-animate-modal-backdrop] [type="button"], [role="application"] [type="button"]),
   [data-navbar-item="true"],
-  ._ak72:not([role="dialog"] ._ak72),
-  [role="button"]:not(._ak4w [role="button"], [role="dialog"] [role="button"], .overlay [role="button"]) {
+  ._ak72:not([data-animate-modal-backdrop] ._ak72),
+  [role="button"]:not(._ak4w [role="button"], [data-animate-modal-backdrop] [role="button"], .overlay [role="button"], ._aiwn > span > div [role="button"]) {
     pointer-events: none !important;
+  }
+}
+
+#app:has([data-animate-modal-backdrop], [role="application"]) {
+  [data-animate-status-viewer] {
+    filter: blur(20px) !important;
+  }
+}
+
+#app:has([data-animate-modal-backdrop]:not([data-animate-status-viewer]), ._aiwn > span > ._ak4-, ._aiwn > span > ._ak4_):not(:has(._ajx_, [data-animate-status-viewer])) {
+  ._aiwn > span > [tabindex] > div {
+    filter: blur(20px) !important;
+  }
+}
+
+._aiwn:has(.x1h2kqdt) {
+  [data-animate-status-viewer] > span > div > div > [tabindex] > div:not(:last-child) {
+    filter: blur(20px) !important;
+  }
+}
+
+._aigs:has(> div > div:not(._aigw) > span > div) {
+  #main > div,
+  #main > footer {
+    opacity: 0 !important;
   }
 }

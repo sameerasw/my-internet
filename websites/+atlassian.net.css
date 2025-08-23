@@ -53,7 +53,8 @@ body.light_mode,
 text-div > textarea,
 body > div,
 [data-testid="object-header-container"],
-#content-body {
+#content-body,
+[data-testid="platform-board-kit.ui.swimlane.swimlane-wrapper"] > div {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -69,6 +70,15 @@ body > div,
 [data-component-selector="jira-issue-view-layout-templates-pinned-fields-banner-with-grouping-pinned-field-highlight-wrapper"] > div > details > summary {
   border-radius: 0.5em !important;
   padding: 5px !important;
+}
+
+[data-testid="platform-board-kit.ui.swimlane.swimlane-wrapper"] > div > div {
+  border-radius: 0.5em !important;
+  border: none !important;
+
+  &._1e0c1ule._bfhkdhxl._4t3iyh40._kqswh2mm._154i1ylp._1pbycs5v._lcxvglyw._19pk1i6y._2hwxidpf._otyridpf._18u0idpf {
+    display: none !important;
+  }
 }
 
 /* no tab text */

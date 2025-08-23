@@ -1,0 +1,72 @@
+/*qs-Transparency*/
+body,
+dialog::backdrop,
+.shiki span,
+footer,
+#qs_search .pagefind-ui__result-title:not(:where(.pagefind-ui__result-nested *)),
+#qs_search .pagefind-ui__result-inner > .pagefind-ui__result-excerpt,
+#qs_search .pagefind-ui__result-nested {
+  background-color: transparent !important;
+}
+:root {
+  --bg-400: transparent !important;
+  --secondary-900: transparent !important;
+}
+dialog {
+  background-color: hsla(0, 0%, 100%, 0.08) !important;
+}
+@media (min-width: 40rem) {
+  button[data-open-modal] {
+    background-color: hsla(0, 0%, 100%, 0.08) !important;
+  }
+}
+
+/*qs-Immersive Popup*/
+:root,
+.pagefind-ui__search-input.svelte-e9gkc3,
+.pagefind-ui__button.svelte-e9gkc3,
+.shiki {
+  --pagefind-ui-background: hsla(0, 0%, 100%, 0.08) !important;
+  --overlay-bkg: hsla(0, 0%, 100%, 0.08) !important;
+  --shiki-dark-bg: hsla(0, 0%, 100%, 0.08) !important;
+  --shiki-light-bg: hsla(0, 0%, 100%, 0.08) !important;
+  --nav-selected-bkg: hsla(0, 0%, 100%, 0.08) !important;
+  --nav-hovered-bkg: hsla(0, 0%, 100%, 0.08) !important;
+  --nav-selected-hovered-bkg: hsla(0, 0%, 100%, 0.08) !important;
+}
+body:has(dialog[open]) {
+  .header,
+  .docslayout-root {
+    filter: blur(20px) !important;
+  }
+}
+body:has(.nav-items.shown) {
+  .docslayout-root {
+    filter: blur(20px) !important;
+  }
+}
+
+/*qs-Fix Overlapping Header*/
+.docslayout {
+  overflow-y: hidden !important;
+}
+.header {
+  position: relative !important;
+}
+.docslayout-root {
+  height: calc(100svh - 3.5rem) !important;
+  overflow-y: auto !important;
+  margin-top: 0 !important;
+  margin-inline: unset !important;
+  padding-inline: 0.618rem !important;
+}
+@media (min-width: 85rem) {
+  .nav-wrapper {
+    max-height: unset !important;
+  }
+}
+
+/*qs-No Footer*/
+footer {
+  display: none !important;
+}
