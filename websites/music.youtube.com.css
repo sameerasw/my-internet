@@ -8,7 +8,7 @@ body {
   transition: background-color 0.5s ease-in-out !important;
 }
 
-ytmusic-player-expanding-menu{
+ytmusic-player-expanding-menu {
   background-color: #000 !important;
   border-radius: 1em !important;
 }
