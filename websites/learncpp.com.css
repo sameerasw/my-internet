@@ -28,12 +28,12 @@ main > div,
     box-shadow 0.5s ease-in-out !important;
 }
 
-/* main content area - using theme variables */
+/* main content area */
 #main {
   background-color: rgba(var(--theme-bg-color), 0.67) !important;
 }
 
-/* text colors - using theme variables */
+/* text colors */
 p,
 li,
 h2,
@@ -82,7 +82,7 @@ code:not([class*="language-"]) {
   border-radius: 3px !important;
 }
 
-/* syntax highlighting - using theme variables */
+/* syntax highlighting */
 .language-cpp .token {
   color: var(--code-token-color) !important;
   background: transparent !important;
@@ -165,7 +165,7 @@ ul {
 
 .menu-item-1009876,
 .menu-item-1009876 a {
-  filter: invert(1) !important;
+  filter: var(--menu-item-filter) !important;
   opacity: 0.6 !important;
 }
 
@@ -219,59 +219,80 @@ blockquote::after {
   line-height: 1 !important;
 }
 
-/* theme variables - these should be set by the site's theme */
+/* theme variables */
 :root {
-  --theme-bg-color: 68, 68, 68; /* Default dark theme */
-  --theme-text-color: rgba(255, 255, 255, 0.93);
-  --theme-text-secondary: rgba(255, 255, 255, 0.68);
-  --theme-link-color: #7aa2f7;
+  --theme-bg-color: 68, 68, 68;
+  --theme-text-color: rgba(var(--text-color-rgb), 0.93);
+  --theme-text-secondary: rgba(var(--text-color-rgb), 0.68);
+  --theme-link-color: var(--link-color);
   --theme-border-color: rgba(68, 68, 68, 0.27);
   
   /* Code block colors */
-  --code-bg-color: rgba(26, 26, 26, 0.67);
-  --code-text-color: rgba(255, 255, 255, 0.93);
-  --code-border-color: #333333;
-  --code-token-color: #d4d4d4;
-  --code-keyword-color: #569cd6;
-  --code-string-color: #ce9178;
-  --code-number-color: #b5cea8;
-  --code-comment-color: #6a9955;
-  --code-function-color: #dcdcaa;
-  --code-class-color: #4ec9b0;
+  --code-bg-color: var(--code-background);
+  --code-text-color: var(--code-foreground);
+  --code-border-color: var(--code-border);
+  --code-token-color: var(--code-token);
+  --code-keyword-color: var(--code-keyword);
+  --code-string-color: var(--code-string);
+  --code-number-color: var(--code-number);
+  --code-comment-color: var(--code-comment);
+  --code-function-color: var(--code-function);
+  --code-class-color: var(--code-class);
   
   /* Note colors */
-  --note-gray-bg: rgba(42, 42, 42, 0.4);
-  --note-gray-border: #3a3a3a;
-  --note-green-bg: rgba(13, 204, 130, 0.13);
-  --note-green-border: #0dcc82;
-  --note-blue-bg: rgba(90, 176, 242, 0.4);
-  --note-blue-border: #7dc4ff;
+  --note-gray-bg: var(--note-gray-background);
+  --note-gray-border: var(--note-gray-border-color);
+  --note-green-bg: var(--note-green-background);
+  --note-green-border: var(--note-green-border-color);
+  --note-blue-bg: var(--note-blue-background);
+  --note-blue-border: var(--note-blue-border-color);
   
   /* Image filter */
-  --image-filter: invert(1);
+  --image-filter: var(--image-invert);
+  --menu-item-filter: invert(1);
+  --text-color-rgb: 255, 255, 255;
+  --link-color: #7aa2f7;
+  
+  /* Code colors */
+  --code-background: rgba(26, 26, 26, 0.67);
+  --code-foreground: rgba(255, 255, 255, 0.93);
+  --code-border: #333333;
+  --code-token: #d4d4d4;
+  --code-keyword: #569cd6;
+  --code-string: #ce9178;
+  --code-number: #b5cea8;
+  --code-comment: #6a9955;
+  --code-function: #dcdcaa;
+  --code-class: #4ec9b0;
+  
+  /* Note colors */
+  --note-gray-background: rgba(42, 42, 42, 0.4);
+  --note-gray-border-color: #3a3a3a;
+  --note-green-background: rgba(13, 204, 130, 0.13);
+  --note-green-border-color: #0dcc82;
+  --note-blue-background: rgba(90, 176, 242, 0.4);
+  --note-blue-border-color: #7dc4ff;
+  
+  /* Image filter */
+  --image-invert: invert(1);
 }
 
 /* Light theme override */
 @media (prefers-color-scheme: light) {
   :root {
     --theme-bg-color: 238, 238, 238;
-    --theme-text-color: rgba(0, 0, 0, 0.93);
-    --theme-text-secondary: rgba(0, 0, 0, 0.68);
-    --theme-link-color: #1a5fb4;
+    --text-color-rgb: 0, 0, 0;
     --theme-border-color: rgba(221, 221, 221, 0.67);
+    --link-color: #1a5fb4;
     
-    --code-bg-color: rgba(241, 241, 241, 0.93);
-    --code-text-color: rgba(0, 0, 0, 0.93);
-    --code-border-color: #dddddd;
+    --code-background: rgba(241, 241, 241, 0.93);
+    --code-foreground: rgba(0, 0, 0, 0.93);
+    --code-border: #dddddd;
     
-    --note-gray-bg: rgba(221, 221, 221, 0.67);
-    --note-gray-border: #cccccc;
+    --note-gray-background: rgba(221, 221, 221, 0.67);
+    --note-gray-border-color: #cccccc;
     
-    --image-filter: invert(0);
-  }
-  
-  .menu-item-1009876,
-  .menu-item-1009876 a {
-    filter: invert(0) !important;
+    --image-invert: invert(0);
+    --menu-item-filter: invert(0);
   }
 }
