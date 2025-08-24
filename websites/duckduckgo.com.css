@@ -86,7 +86,7 @@ body {
       pointer-events: none !important;
     }
   }
-  &:has(#searchbox_homepage > [data-expanded]) {
+  &:has(#searchbox_homepage > .searchbox_hasQuery__QuxUy[data-expanded]) {
     .desktop-homepage_heroContent__4HUFA,
     .homepage-cta-section_scrollCta__Wmixn,
     #features {
