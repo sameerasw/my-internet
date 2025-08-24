@@ -1,46 +1,141 @@
-/* ddg-transparency */
+/* ddg-Transparency */
 html,
 body,
-.desktop-homepage_root__Ikj1_,
 .site-wrapper,
-.metabar:not(.is-stuck),
-.tileview--grid .metabar--fixed::before,
-#zci-images,
-.zci-wrap,
-#zci-videos,
-main {
+.search--header,
+.related-searches__item, 
+.set-head__menu > .set-tab:not(.is-active),
+.frm__select, .frm__select select,
+.btn,
+.cloudsave,
+.set-bookmarklet,
+.set-reset,
+.badge-link,
+.frm__input {
   background-color: transparent !important;
-  transition:
-    background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
-    border 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out !important;
 }
 
-/* ddg-hidden promo */
-.desktop-homepage_heroContent__4HUFA {
-  display: none !important;
+:root {
+  --sds-color-background-01: transparent !important;
+  --theme-col-bg-card: transparent !important;
+  --theme-col-bg-expandcollapse: transparent !important;
+  --theme-col-bg-button-secondary: transparent !important;
+  --sds-color-background-container-01: transparent !important;
 }
 
-/* ddg-no home scroll */
-.homepage-cta-section_scrollCta__Wmixn,
-#features {
-  display: none !important;
-}
-
-/* ddg-no footer */
-.footer {
-  display: none !important;
-}
-
-/* ddg-transparent header */
+/* ddg-Transparent Header */
 #header_wrapper {
+  position: relative !important;
   background-color: transparent !important;
-  position: sticky !important;
 }
 
-nav::before,
-nav::after,
-.XvPRmQVeIoCP5lQhICTv.ofDl_1VxUG_EKc3b9E3x::before {
+body {
+  padding-top: 0 !important;
+}
+
+/* ddg-Immersive Popup */
+:root {
+  --theme-col-bg-page-alt-2: transparent !important;
+}
+
+.modal__box,
+.modal__header,
+.nav-menu--slideout {
+  background-color: transparent !important;
+}
+
+.S344rnw9ISpO7vPLUpsK {
+  position: relative !important;
+}
+.IrVYRCUvYQ98h_9Xp7aN {
+  height: 100% !important;
+}
+
+body {
+  &:has(.modal.is-showing) {
+    .site-wrapper {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+  &:has(.nav-menu--slideout.is-open) {
+    #header_wrapper,
+    #content_wrapper,
+    #web_content_wrapper {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+  &:has([data-testid="dropdown-options"].eRQYVfFPOfM6ezz54H_V) {
+    #react-layout .FMPme3X940xAt4SKPFuw {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+}
+
+article[data-testid="result"]:has(.OHr0VX9IuNcv6iakvT6A.IBL7rESCoklmJ_3nDLDz) {
+  > div:not(.OHr0VX9IuNcv6iakvT6A.IBL7rESCoklmJ_3nDLDz),
+    .OHr0VX9IuNcv6iakvT6A.IBL7rESCoklmJ_3nDLDz > button {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+}
+
+/* ddg-Glass Effect */ 
+:root, 
+.fCp5GIWYTsUwPglO0ME2,
+.O9Ipab51rBntYb0pwOQn,
+.T265XEcezvjUhK71U8pN {
+  --sds-color-background-01: hsla(0, 0%, 100%, 0.08) !important;
+  --theme-col-bg-card: hsla(0, 0%, 100%, 0.08) !important;
+  --theme-col-bg-button-secondary: hsla(0, 0%, 100%, 0.08) !important;
+  --theme-col-bg-page-alt-2: hsla(0, 0%, 100%, 0.08) !important;
+  --sds-color-background-container-01: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+.related-searches__item,
+.modal__box,
+.nav-menu--slideout,
+.search--header,
+.set-head__menu > .set-tab:not(.is-active),
+.frm__select,
+.btn,
+.cloudsave,
+.set-bookmarklet,
+.set-reset,
+.badge-link,
+.frm__input {
+  background-color: hsla(0, 0%, 100%, 0.08) !important;
+}
+  
+.settings-page-wrapper .is-checked .frm__switch__label,
+.settings-page-wrapper .btn--primary {
+  background-color: #7295f666 !important;
+}
+
+/* ddg-Animations */
+.site-wrapper,
+#header_wrapper,
+#content_wrapper,
+#web_content_wrapper,
+.FMPme3X940xAt4SKPFuw,
+article[data-testid="result"] > div {
+  transition-property: filter !important;
+  transition: 0.6s cubic-bezier(0.85, 0, 0.15, 1) !important;
+}
+
+article[data-testid="result"] > .OHr0VX9IuNcv6iakvT6A.IBL7rESCoklmJ_3nDLDz > div {
+  transition-property: transform !important;
+  transition: 0.6s cubic-bezier(0.85, 0, 0.15, 1) !important;
+}
+
+/* Misc */
+nav::before, nav > ul::before {
+  display: none !important;
+}
+  
+/* ddg-No Footer */
+.footer {
   display: none !important;
 }
