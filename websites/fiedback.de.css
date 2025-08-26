@@ -24,8 +24,9 @@ html, body,
 }
 
 /* @ popup menu carret */
-.header-menu__carret, .v-popper__arrow-container {
-    border-bottom-color: rgba(23,23,23, 0.9) !important;
+.header-menu__carret,
+.v-popper__arrow-container {
+  border-bottom-color: rgba(23, 23, 23, 0.9) !important;
 }
 
 /* @ darker area of calender,  */
