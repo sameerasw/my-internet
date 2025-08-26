@@ -12,7 +12,7 @@ html, body,
 }
 
 /* @ popup menus, right-click, contacts, notifications, settings */
-.v-popper__popper,
+.v-popper__inner, /* @ memories app */
 .modal-container,
 .account-menu__list,
 .notification-container,
@@ -20,7 +20,12 @@ html, body,
 .input-field__label {
   background: rgba(23, 23, 23, 0.9) !important;
   background-color: rgba(23, 23, 23, 0.9) !important;
-  border-radius: 12px !important;
+  /* border-radius: 12px !important; */
+}
+
+/* @ popup menu carret */
+.header-menu__carret, .v-popper__arrow-container {
+    border-bottom-color: rgba(23,23,23, 0.9) !important;
 }
 
 /* @ darker area of calender,  */
