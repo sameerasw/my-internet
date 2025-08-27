@@ -13,7 +13,8 @@ body,
 .badge-link,
 .frm__input,
 .nKc6YUBojXXvgstPGALT::after,
-.YejuTyTJeJ_rpBUTUpcl {
+.YejuTyTJeJ_rpBUTUpcl, 
+.HHJGgzrZRmw9obWw1QS1 > :first-child {
   background-color: transparent !important;
 }
 
@@ -156,7 +157,8 @@ article[data-testid="result"]:has(.OHr0VX9IuNcv6iakvT6A.IBL7rESCoklmJ_3nDLDz) {
 .set-reset,
 .badge-link,
 .frm__input,
-.YejuTyTJeJ_rpBUTUpcl {
+.YejuTyTJeJ_rpBUTUpcl,
+.HHJGgzrZRmw9obWw1QS1 > :first-child {
   background-color: hsla(0, 0%, 100%, 0.08) !important;
 }
   
