@@ -14,7 +14,9 @@ body,
 .frm__input,
 .nKc6YUBojXXvgstPGALT::after,
 .YejuTyTJeJ_rpBUTUpcl, 
-.HHJGgzrZRmw9obWw1QS1 > :first-child {
+.HHJGgzrZRmw9obWw1QS1 > :first-child,
+.module,
+code {
   background-color: transparent !important;
 }
 
@@ -158,7 +160,9 @@ article[data-testid="result"]:has(.OHr0VX9IuNcv6iakvT6A.IBL7rESCoklmJ_3nDLDz) {
 .badge-link,
 .frm__input,
 .YejuTyTJeJ_rpBUTUpcl,
-.HHJGgzrZRmw9obWw1QS1 > :first-child {
+.HHJGgzrZRmw9obWw1QS1 > :first-child,
+.module,
+code {
   background-color: hsla(0, 0%, 100%, 0.08) !important;
 }
   
