@@ -82,8 +82,8 @@ body,
   }
 }
 
-#app:has([data-animate-modal-backdrop]:not([data-animate-status-viewer]), ._aiwn > span > ._ak4-, ._aiwn > span > ._ak4_):not(:has(._ajx_, [data-animate-status-viewer])) {
-  ._aiwn > span > [tabindex] > div {
+._aiwn:has(> span:nth-child(3):not(:empty)) {
+   > span:nth-child(4) > div {
     filter: blur(20px) !important;
   }
 }
