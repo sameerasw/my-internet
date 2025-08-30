@@ -23,18 +23,17 @@ td, #imp > div > div,#imp > div > div > div
 }
 
 .vzEsdb {
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%) !important;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%) !important;
   mask-repeat: no-repeat !important;
   mask-size: cover !important;
   border-radius: 1em !important;
 }
 
-
 .exZRme {
   border-color: transparent !important;
 }
 
-.Fgyi2e.rZj61.caNvfd{
+.Fgyi2e.rZj61.caNvfd {
   border-radius: 1em !important;
 }
 
