@@ -16,7 +16,8 @@ body,
 .YejuTyTJeJ_rpBUTUpcl, 
 .HHJGgzrZRmw9obWw1QS1 > :first-child,
 .module,
-code {
+code,
+.module__toggle {
   background-color: transparent !important;
 }
 
@@ -196,7 +197,9 @@ article[data-testid="result"] > .OHr0VX9IuNcv6iakvT6A.IBL7rESCoklmJ_3nDLDz > div
 
 /* Misc */
 nav::before,
-nav > ul::before {
+nav::after,
+nav > ul::before,
+.js-ask-ai-chat-wrapper > form::after {
   display: none !important;
 }
 
