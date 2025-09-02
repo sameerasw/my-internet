@@ -1,3 +1,4 @@
+/* transparency */
 .ic-Dashboard-header, 
 .ic-Dashboard-header__layout, 
 #dashboard-planner-header,
@@ -21,94 +22,8 @@ html, body, nav, header{
     box-shadow 0.5s ease-in-out !important;
 }
 
-:root{
-  --zen-colors-tertiary: transparent !important;
-  --zen-settings-secondary-background: transparent !important; 
-}
-
-/* Fixes the transparent dialogs. */
-.dialogFrame {
-  background: var(--zen-dialog-background);
-  border-radius: 8px;
-}
-
-/* high contrast mode*/
-:root {
---ic-brand-primary-darkened-5: #0A5697;
---ic-brand-primary-darkened-10: #09518F;
---ic-brand-primary-darkened-15: #094D87;
---ic-brand-primary-lightened-5: #1662A2;
---ic-brand-primary-lightened-10: #226AA7;
---ic-brand-primary-lightened-15: #2E72AC;
---ic-brand-button--primary-bgd-darkened-5: #0A5697;
---ic-brand-button--primary-bgd-darkened-15: #094D87;
---ic-brand-button--secondary-bgd-darkened-5: #26333D;
---ic-brand-button--secondary-bgd-darkened-15: #222E37;
---ic-brand-font-color-dark-lightened-15: #47535C;
---ic-brand-font-color-dark-lightened-28: #636D75;
--ic-link-color-darkened-10: #09487E; 
---ic-link-color-lightened-10: #216197;
---ic-brand-primary: #0A5A9E;
---ic-brand-font-color-dark: #273540;
---ic-link-color: #09508C;
---ic-brand-button--primary-bgd: var(--ic-brand-primary);
---ic-brand-button--primary-text: #ffffff;
---ic-brand-button--secondary-bgd: #273540;
---ic-brand-button--secondary-text: #ffffff;
---ic-brand-global-nav-bgd: #334451;
---ic-brand-global-nav-ic-icon-svg-fill: #ffffff;
---ic-brand-global-nav-ic-icon-svg-fill--active: var(--ic-brand-primary);
- --ic-brand-global-nav-menu-item__text-color: #ffffff;
---ic-brand-global-nav-menu-item__text-color--active: var(--ic-link-color);
---ic-brand-global-nav-avatar-border: #ffffff;
- --ic-brand-global-nav-menu-item__badge-bgd: #ffffff;
---ic-brand-global-nav-menu-item__badge-bgd--active: var(--ic-brand-primary);
---ic-brand-global-nav-menu-item__badge-text: #000000;
---ic-brand-global-nav-menu-item__badge-text--active: #ffffff;
---ic-brand-global-nav-logo-bgd: #334451;
---ic-brand-header-image: url('/dist/images/canvas_logomark_only@2x-e197434829.png');
---ic-brand-mobile-global-nav-logo: url('/dist/images/mobile-global-nav-logo-aff8453309.svg');
---ic-brand-watermark: ;
---ic-brand-watermark-opacity: 1.0;
---ic-brand-favicon: url('/dist/images/favicon-e10d657a73.ico');
---ic-brand-apple-touch-icon: url('/dist/images/apple-touch-icon-585e5d997d.png');
---ic-brand-msapplication-tile-color: var(--ic-brand-primary);
---ic-brand-msapplication-tile-square: url('/dist/images/windows-tile-eda8889e7b.png');
---ic-brand-msapplication-tile-wide: url('/dist/images/windows-tile-wide-44d3cc1060.png');
---ic-brand-right-sidebar-logo: ;
---ic-brand-Login-body-bgd-color: #334451;
---ic-brand-Login-body-bgd-image: ;
---ic-brand-Login-body-bgd-shadow-color: #273540;
---ic-brand-Login-logo: url('/dist/images/login/canvas-logo-5617606953.svg');
---ic-brand-Login-Content-bgd-color: none;
---ic-brand-Login-Content-border-color: none;
---ic-brand-Login-Content-inner-bgd: none;
---ic-brand-Login-Content-inner-border: none;
---ic-brand-Login-Content-inner-body-bgd: none;
---ic-brand-Login-Content-inner-body-border: none;
---ic-brand-Login-Content-label-text-color: #ffffff;
---ic-brand-Login-Content-password-text-color: #ffffff;
---ic-brand-Login-footer-link-color: #ffffff;
---ic-brand-Login-footer-link-color-hover: #ffffff;
---ic-brand-Login-instructure-logo: #ffffff;
-}
-
-groupbox:not(#sineInstallationGroup:popover-open){
-  background: var(--zen-colors-tertiary) !important;
-  background: var(--zen-colors-border-contrast) !important;
-  border: none
-}
-/* darkreader */
-body, span, div {
-  color: var(--darkreader-text-000000, #e8e6e3);
-
-}
-/* no footer */
-footer{
-  display: none !important;
-}
- 
-.tray-with-space-for-global-nav {
+/* sidebar legibility */
+.navigation-tray-container {
     background: var(--natsumi-glass-background) !important;
     border-radius: 16px !important;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
