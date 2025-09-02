@@ -1,0 +1,99 @@
+/* gio-Transparency */
+body,
+#headerbar,
+.list-group-item:not(:hover, .active),
+.well,
+.btn-default, 
+.breadcrumb-row,
+.breadcrumb-container,
+.breadcrumb,
+.form-control {
+  background-color: transparent !important;
+}
+
+:root {
+  --dark-mode-primary-color: transparent !important;
+  --light-mode-primary-color: transparent !important;
+}
+
+/* gio-Fix Overlapping Header */
+body {
+  padding-top: 0 !important;
+  overflow: hidden !important;
+}
+
+#headerbar {
+  position: relative !important;
+  margin-bottom: 0 !important;
+}
+
+#maincontent {
+  position: relative !important;
+  top: 0 !important;
+}
+
+#maincontent-column {
+  height: calc(100dvh - 50px) !important;
+  padding-top: 20px !important;
+  overflow-y: scroll !important;
+  padding-bottom: 0 !important;
+  
+  @media screen and (max-width: 992px) {
+    height: calc(100dvh - 50px - 100px) !important;
+  }
+}
+
+.navbar {
+  position: relative !important;
+}
+
+/* gio-Immersive Popup */
+.dropdown-menu,
+.drawer-overlay,
+.modal-backdrop {
+  background-color: transparent !important;
+}
+
+:root {
+  body.modal-open, 
+  body:has(#drawer-name.is-active) {
+    #headerbar, #maincontent-column, .navbar {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+  
+  &:has(.dropdown.open) {
+    #content {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+    
+  &:has(.btn-group.open) {
+    .wikidisplay, .well {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+}
+
+/* gio-Glass Effect */
+:root {
+  --dark-mode-highlight-color: hsla(0, 0%, 100%, 0.08) !important;
+  --light-mode-highlight-color: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+.dropdown-menu,
+.btn-default,
+.form-control,
+.drawer-wrapper,
+.modal-content {
+  background-color: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+/* gio-No Footer */
+footer,
+.footer-links {
+  display: none !important;
+}
