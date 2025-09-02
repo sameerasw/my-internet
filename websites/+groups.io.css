@@ -3,13 +3,17 @@ body,
 #headerbar,
 .list-group-item:not(:hover, .active),
 .well,
-.btn-default {
+.btn-default, 
+.breadcrumb-row,
+.breadcrumb-container,
+.breadcrumb,
+.form-control {
   background-color: transparent !important;
 }
 
 :root {
-  --dark-mode-input-color: transparent !important;
   --dark-mode-primary-color: transparent !important;
+  --light-mode-primary-color: transparent !important;
 }
 
 /* gio-Fix Overlapping Header */
@@ -53,11 +57,12 @@ body {
 /* gio-Glass Effect */
 :root {
   --dark-mode-highlight-color: hsla(0, 0%, 100%, 0.08) !important;
-  --dark-mode-input-color: hsla(0, 0%, 100%, 0.08) !important;
+  --light-mode-highlight-color: hsla(0, 0%, 100%, 0.08) !important;
 }
 
 .dropdown-menu,
-.btn-default {
+.btn-default,
+.form-control {
   background-color: hsla(0, 0%, 100%, 0.08) !important;
 }
 
