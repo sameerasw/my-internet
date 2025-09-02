@@ -19,7 +19,7 @@ body,
 /* gio-Fix Overlapping Header */
 body {
   padding-top: 0 !important;
-  overflow-y: hidden !important;
+  overflow: hidden !important;
 }
 
 #headerbar {
@@ -27,18 +27,42 @@ body {
   margin-bottom: 0 !important;
 }
 
-#content {
-  height: calc(100dvh - 60px) !important;
+#maincontent {
+  position: relative !important;
+  top: 0 !important;
+}
+
+#maincontent-column {
+  height: calc(100dvh - 50px) !important;
   padding-top: 20px !important;
   overflow-y: scroll !important;
+  padding-bottom: 0 !important;
+  
+  @media screen and (max-width: 992px) {
+    height: calc(100dvh - 50px - 100px) !important;
+  }
+}
+
+.navbar {
+  position: relative !important;
 }
 
 /* gio-Immersive Popup */
-.dropdown-menu {
+.dropdown-menu,
+.drawer-overlay,
+.modal-backdrop {
   background-color: transparent !important;
 }
 
-body {
+:root {
+  body.modal-open, 
+  body:has(#drawer-name.is-active) {
+    #headerbar, #maincontent-column, .navbar {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+  
   &:has(.dropdown.open) {
     #content {
       filter: blur(20px) !important;
@@ -47,7 +71,7 @@ body {
   }
     
   &:has(.btn-group.open) {
-    .wikidisplay {
+    .wikidisplay, .well {
       filter: blur(20px) !important;
       pointer-events: none !important;
     }
@@ -62,7 +86,9 @@ body {
 
 .dropdown-menu,
 .btn-default,
-.form-control {
+.form-control,
+.drawer-wrapper,
+.modal-content {
   background-color: hsla(0, 0%, 100%, 0.08) !important;
 }
 
