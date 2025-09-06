@@ -2103,10 +2103,10 @@
       "no footer": "footer, mfe-footer-pharos-footer, .footer, #footer {\n  display: none !important;\n}"
     },
     "play.google.com.css": {
-      "gplay-transparency": "html, body, nav, header, .Usd1Ac:has([jscontroller=\"tKHFxf\"]) {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
-      "gplay-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
-      "gplay-no footer": "footer {\n  display: none !important;\n}",
-      "gplay-app rounded banner": ".dzkqwc:has(c-wiz) {\n  border-radius: 2em !important;\n}"
+      "gplay-transparency": "html, body, nav, header, .Usd1Ac:has([jscontroller=\"tKHFxf\"]), .console-content _ngcontent-agn-0, console-splash, console-chrome > div, .header.sticky-part:not(.stuck-to-top) {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n.header.sticky-part.stuck-to-top {\n  border-radius: 1em !important;\n}",
+      "gplay-darkreader": ":root, .bottom-bar-container, bottom-bar-base {\n  --darkreader-background-ffffff: transparent !important;\n  --darkreader-background-f8fafd: transparent !important;\n  box-shadow: none !important;\n}\n.pane.popup, .material-content, .popup, .menu-popup, .dropdown-popup {\n  --darkreader-background-ffffff: #000 !important;\n  --darkreader-background-f8fafd: #000 !important;\n}",
+      "gplay-no footer": "#main-content > [debug-id=\"chrome-footer-container\"] {\n  display: none !important;\n}",
+      "gplay-app rounded banner": ".dzkqwc:has(c-wiz) {\n  border-radius: 2em !important;\n}\n.material-content {\n  box-shadow:\n    light-dark(#fff3, #0003) 0px -36px 30px 0px inset,\n    rgba(0, 0, 0, 0.06) 0px 2px 1px,\n    rgba(0, 0, 0, 0.09) 0px 4px 2px,\n    rgba(0, 0, 0, 0.09) 0px 8px 4px,\n    rgba(0, 0, 0, 0.09) 0px 16px 8px,\n    rgba(0, 0, 0, 0.09) 0px 32px 16px !important;\n  background-color: light-dark(#fff8, #0005) !important;\n  border-radius: 1em !important;\n}"
     },
     "play.pocketcasts.com.css": {
       "transparency": "html, body, nav, #nav, .nav, navbar, .navbar, #navbar, header, #header, .header, app, #app, .app, .app-root, #pass-sidebar, #main, main, .episode-search-input, #content, a.logo-link + div, section, #__next, #navigation-wrapper, #global-navbar, .head.notfixed, body[data-theme=\"dark\"], body[data-theme=\"light\"], body.dark_mode, body.light_mode {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}"
