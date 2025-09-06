@@ -1,31 +1,39 @@
 /* gplay-transparency */
-html,
-body,
-nav,
-header,
-.Usd1Ac:has([jscontroller="tKHFxf"]) {
+html, body, nav, header, .Usd1Ac:has([jscontroller="tKHFxf"]), .console-content _ngcontent-agn-0, console-splash, console-chrome > div, .header.sticky-part:not(.stuck-to-top){
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition:
-    background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
-    border 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out !important;
+}
+
+.header.sticky-part.stuck-to-top{
+  border-radius: 1em !important;
 }
 
 /* gplay-darkreader */
-:root {
+:root, .bottom-bar-container, bottom-bar-base{
   --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-f8fafd: transparent !important;
+  box-shadow: none !important;
+}
+
+.pane.popup, .material-content, .popup, .menu-popup, .dropdown-popup{
+  --darkreader-background-ffffff: #000 !important;
+  --darkreader-background-f8fafd: #000 !important;
 }
 
 /* gplay-no footer */
-footer {
+#main-content > [debug-id="chrome-footer-container"]{
   display: none !important;
 }
 
 /* gplay-app rounded banner */
-.dzkqwc:has(c-wiz) {
+.dzkqwc:has(c-wiz){
   border-radius: 2em !important;
 }
+
+.material-content{
+    box-shadow:  light-dark(#fff3, #0003) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+    background-color: light-dark(#fff8, #0005)  !important;
+    border-radius: 1em !important;
+  }
