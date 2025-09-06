@@ -2245,7 +2245,7 @@
       "redditwrapped-hidden": "footer {\n  display: none !important;\n}\ndiv.py-5.flex.justify-center.items-center {\n  display: none !important;\n}"
     },
     "reddit.com.css": {
-      "reddit-transparency": "#subreddit-right-rail__partial aside, header, .grid-container, comment-body-header, shreddit-comment-tree, #left-sidebar, #flex-left-nav-container, .toolbar-container, .threadline {\n  background-color: #00000000 !important;\n  border: none !important;\n}\nshreddit-comments-sort-dropdown, shreddit-comment {\n  --color-neutral-background: transparent !important;\n}\nshreddit-comment > div {\n  --color-neutral-background: light-dark(#ffffff, #0b1416) !important;\n}\nshreddit-app, body, html {\n  background-color: #00000000 !important;\n}",
+      "reddit-transparency": "#subreddit-right-rail__partial aside, header, .grid-container, comment-body-header, shreddit-comment-tree, #left-sidebar, #flex-left-nav-container, .toolbar-container, .threadline, #pdp-credit-bar {\n  background-color: #00000000 !important;\n  border: none !important;\n}\nshreddit-comments-sort-dropdown, shreddit-comment {\n  --color-neutral-background: transparent !important;\n}\nshreddit-comment > div {\n  --color-neutral-background: light-dark(#ffffff, #0b1416) !important;\n}\nshreddit-app, body, html {\n  background-color: #00000000 !important;\n}",
       "reddit-no chat feed": "[source=\"chat_module_home\"] {\n  display: none !important;\n}",
       "no recent posts": "div aside recent-posts {\n  display: none !important;\n}",
       "reddit-hide elements": "hr {\n  display: none !important;\n}\nnav.z-\\[2\\] > nav:nth-child(18), div.visible {\n  display: none !important;\n}\nhr.w-100.my-sm.border-neutral-border-weak {\n  display: none !important;\n}",
