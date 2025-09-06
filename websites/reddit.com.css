@@ -7,7 +7,8 @@ shreddit-comment-tree,
 #left-sidebar,
 #flex-left-nav-container,
 .toolbar-container,
-.threadline, #pdp-credit-bar {
+.threadline,
+#pdp-credit-bar {
   background-color: #00000000 !important;
   border: none !important;
 }
