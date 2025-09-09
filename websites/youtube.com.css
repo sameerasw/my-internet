@@ -395,7 +395,7 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer) {
 
 /* yt-better captions $ Caption background has blur */
 .caption-window {
-  backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(10px) brightness(70%) !important;
   border-radius: 1em !important;
   padding: 1em !important;
   box-shadow: #0008 0 0 20px !important;
