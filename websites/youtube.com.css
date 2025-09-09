@@ -4,13 +4,15 @@ html[dark],
 #full-bleed-container,
 #movie_player,
 yt-report-form-modal-renderer,
-ytd-engagement-panel-section-list-renderer[dialog] #content.ytd-engagement-panel-section-list-renderer {
+ytd-engagement-panel-section-list-renderer[dialog] #content.ytd-engagement-panel-section-list-renderer,
+.ytGridShelfViewModelGridShelfBottomButtonContainer {
   background-color: transparent !important;
 }
 
 :root,
 ytd-masthead,
-[use-color-palette] {
+[use-color-palette],
+[use-custom-colors] {
   --yt-spec-base-background: transparent !important;
   --yt-spec-menu-background: transparent !important;
   --yt-spec-brand-background-solid: transparent !important;
@@ -22,6 +24,7 @@ ytd-masthead,
   --yt-active-playlist-panel-background-color: transparent !important;
   --yt-spec-text-primary-inverse: transparent !important;
   --yt-spec-static-black: transparent !important;
+  --yt-lightsource-section2-color: transparent !important;
 }
 
 .skeleton-bg-color,
@@ -57,6 +60,15 @@ ytd-app:not([fullscreen]) {
 #chips-wrapper {
   position: relative !important;
   top: 0 !important;
+}
+
+tp-yt-app-header {
+  position: relative !important;
+  margin-top: 0 !important;
+}
+
+#contentContainer {
+  padding-top: 0 !important;
 }
 
 /* yt-Immersive Popup */
@@ -447,6 +459,10 @@ ytd-mini-guide-renderer[hidden] {
 
 #guide[persistent] #header {
   display: none !important;
+}
+
+.ytGridShelfViewModelHostHasBottomButton {
+  border-color: transparent !important;
 }
 
 /* yt-better captions $ Caption background has blur */
