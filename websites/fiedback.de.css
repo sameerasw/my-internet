@@ -24,7 +24,6 @@ html, body,
 .memories-top-bar {
   background: rgba(23, 23, 23, 0.9) !important;
   background-color: rgba(23, 23, 23, 0.9) !important;
-  /* border-radius: 12px !important; */
 }
 
 /* @ popup menu carret */
@@ -39,12 +38,12 @@ html, body,
 }
 
 /* @ darker area of calender,  */
-.fc-day, /* @ darker calender area */
+.fc-day,
 .frontmatter /* @ markdown properties header in notes*/ {
   --color-main-background: rgba(23, 23, 23, 0.5) !important;
   --color-background-dark: rgba(23, 23, 23, 0.15) !important;
   
-  /* @ background for calendar yearly view days outside of month
+  /* @ background for calendar yearly view days outside of month */
   --fc-neutral-bg-color: transparent !important;
 }
 
