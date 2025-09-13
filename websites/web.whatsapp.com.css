@@ -65,11 +65,7 @@ body,
   background-color: var(--WDS-surface-highlight) !important;
 }
 
-.app-wrapper-web:has(
-._ak4w,
-> span:nth-child(3):not(:empty),
-> span:nth-child(4):not(:empty)
-) {
+.app-wrapper-web:has(._ak4w, > span:nth-child(3):not(:empty), > span:nth-child(4):not(:empty)) {
   ._aigs {
     filter: blur(20px) !important;
   }
@@ -82,28 +78,25 @@ body,
 }
 
 ._aiwn {
-  &:has(
-  > span:nth-child(3):not(:empty),
-  > span:nth-child(8):not(:empty)
-    ):not(:has(._ajx_, [data-animate-status-viewer])) {
-      > span:nth-child(4) > [tabindex] > div {
+  &:has(> span:nth-child(3):not(:empty), > span:nth-child(8):not(:empty)):not(:has(._ajx_, [data-animate-status-viewer])) {
+    > span:nth-child(4) > [tabindex] > div {
       filter: blur(20px) !important;
-      }
+    }
   }
-  
+
   &:has(.x1h2kqdt) {
     [data-animate-status-viewer] > span > div > div > [tabindex] > div:not(:last-child) {
       filter: blur(20px) !important;
     }
   }
-  
+
   &:has(> div > div:not(._aigw) > span > div) {
     #main > div,
     #main > footer {
       opacity: 0 !important;
     }
   }
-  
+
   &:has([data-animate-modal-backdrop], [role="application"]) {
     [data-animate-status-viewer] {
       filter: blur(20px) !important;
