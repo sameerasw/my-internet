@@ -103,6 +103,13 @@
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer, mfe-footer-pharos-footer, .footer, #footer {\n  display: none !important;\n}"
     },
+    "+groups.io.css": {
+      "gio-Transparency": "body, #headerbar, .list-group-item:not(:hover, .active), .well, .btn-default, .breadcrumb-row, .breadcrumb-container, .breadcrumb, .form-control {\n  background-color: transparent !important;\n}\n:root {\n  --dark-mode-primary-color: transparent !important;\n  --light-mode-primary-color: transparent !important;\n}",
+      "gio-Fix Overlapping Header": "body {\n  padding-top: 0 !important;\n  overflow: hidden !important;\n}\n#headerbar {\n  position: relative !important;\n  margin-bottom: 0 !important;\n}\n#maincontent {\n  position: relative !important;\n  top: 0 !important;\n}\n#maincontent-column {\n  height: calc(100dvh - 50px) !important;\n  padding-top: 20px !important;\n  overflow-y: scroll !important;\n  padding-bottom: 0 !important;\n\n  @media screen and (max-width: 992px) {\n    height: calc(100dvh - 50px - 100px) !important;\n  }\n}\n.navbar {\n  position: relative !important;\n}",
+      "gio-Immersive Popup": ".dropdown-menu, .drawer-overlay, .modal-backdrop {\n  background-color: transparent !important;\n}\n:root {\n  body.modal-open,\n  body:has(#drawer-name.is-active) {\n    #headerbar,\n    #maincontent-column,\n    .navbar {\n      filter: blur(20px) !important;\n      pointer-events: none !important;\n    }\n  }\n\n  &:has(.dropdown.open) {\n    #content {\n      filter: blur(20px) !important;\n      pointer-events: none !important;\n    }\n  }\n\n  &:has(.btn-group.open) {\n    .wikidisplay,\n    .well {\n      filter: blur(20px) !important;\n      pointer-events: none !important;\n    }\n  }\n}",
+      "gio-Glass Effect": ":root {\n  --dark-mode-highlight-color: hsla(0, 0%, 100%, 0.08) !important;\n  --light-mode-highlight-color: hsla(0, 0%, 100%, 0.08) !important;\n}\n.dropdown-menu, .btn-default, .form-control, .drawer-wrapper, .modal-content {\n  background-color: hsla(0, 0%, 100%, 0.08) !important;\n}",
+      "gio-No Footer": "footer, .footer-links {\n  display: none !important;\n}"
+    },
     "+hypr.land.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, aside > div, nav > div > div {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}"
     },
