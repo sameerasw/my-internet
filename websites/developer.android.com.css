@@ -1,4 +1,4 @@
-/* Transparency */ 
+/* Transparency */
 body,
 .devsite-article-body > section,
 devsite-playlist .devsite-playlist--header,
@@ -25,7 +25,7 @@ devsite-search,
   --devsite-background-2: transparent !important;
   --devsite-button-primary-background: transparent !important;
   --devsite-button-background-hover: transparent !important;
-  --devsite-dropdown-column-background: transparent !important; 
+  --devsite-dropdown-column-background: transparent !important;
   --devsite-background-3: transparent !important;
   --devsite-popout-background: transparent !important;
   --devsite-header-color-lower: transparent !important;
@@ -39,7 +39,7 @@ devsite-search,
   --darkreader-background-f8f9fa: transparent !important;
 }
 
-/* Glass Effect */ 
+/* Glass Effect */
 :root,
 devsite-tabs .devsite-tabs-dropdown-content,
 devsite-language-selector {
@@ -56,15 +56,15 @@ devsite-language-selector {
 .devsite-search-field,
 .android-quick-link,
 .android-fully-clickable,
-.android-item-dark-background-grey-1000, 
+.android-item-dark-background-grey-1000,
 .devsite-popout-result {
-    background-color: hsla(0, 0%, 100%, 0.08) !important;
+  background-color: hsla(0, 0%, 100%, 0.08) !important;
 }
 
 @media only screen and (max-width: 768px) {
-    google-codelab #drawer {
-      background-color: hsla(0, 0%, 100%, 0.08) !important;
-    }
+  google-codelab #drawer {
+    background-color: hsla(0, 0%, 100%, 0.08) !important;
+  }
 }
 
 /* Fix Overlapping Header */
@@ -79,7 +79,7 @@ devsite-book-nav .devsite-mobile-header {
 }
 
 #gc-wrapper {
-  margin-top: 0 !important; 
+  margin-top: 0 !important;
 }
 
 main {
@@ -93,12 +93,7 @@ main {
 }
 
 /* Immersive Popup */
-html:has(
-.devsite-dropdown--open, 
-[devsite-book-nav--open=""], 
-[search-active=""], 
-devsite-header [open=""]
-) {
+html:has(.devsite-dropdown--open, [devsite-book-nav--open=""], [search-active=""], devsite-header [open=""]) {
   main,
   .devsite-collapsible-section {
     filter: blur(20px) !important;
@@ -114,7 +109,8 @@ body[devsite-book-nav--open] {
 }
 
 google-codelab[drawer--open] {
-  #codelab-title, #main {
+  #codelab-title,
+  #main {
     filter: blur(20px) !important;
     pointer-events: none !important;
   }
