@@ -3,7 +3,7 @@ body,
 #headerbar,
 .list-group-item:not(:hover, .active),
 .well,
-.btn-default, 
+.btn-default,
 .breadcrumb-row,
 .breadcrumb-container,
 .breadcrumb,
@@ -37,7 +37,7 @@ body {
   padding-top: 20px !important;
   overflow-y: scroll !important;
   padding-bottom: 0 !important;
-  
+
   @media screen and (max-width: 992px) {
     height: calc(100dvh - 50px - 100px) !important;
   }
@@ -55,23 +55,26 @@ body {
 }
 
 :root {
-  body.modal-open, 
+  body.modal-open,
   body:has(#drawer-name.is-active) {
-    #headerbar, #maincontent-column, .navbar {
+    #headerbar,
+    #maincontent-column,
+    .navbar {
       filter: blur(20px) !important;
       pointer-events: none !important;
     }
   }
-  
+
   &:has(.dropdown.open) {
     #content {
       filter: blur(20px) !important;
       pointer-events: none !important;
     }
   }
-    
+
   &:has(.btn-group.open) {
-    .wikidisplay, .well {
+    .wikidisplay,
+    .well {
       filter: blur(20px) !important;
       pointer-events: none !important;
     }
