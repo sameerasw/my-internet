@@ -1500,6 +1500,10 @@
       "instructables-No Recomendations": "._recommendations_fjzu6_4 {\n  display: none !important;\n}",
       "instructables-No Footer": "footer {\n  display: none !important;\n}"
     },
+    "instructure.com.css": {
+      "transparency": ".ic-Dashboard-header, .ic-Dashboard-header__layout, #dashboard-planner-header, #nav-tray-portal > span > span, .PlannerHeader-styles__root, .PlannerHeader, .CanvasPlanner__HeaderContainer, .profile-tray, .ic-app-header__main-navigation, .Grouping-styles__title, .Grouping-styles__title::after, html, body, nav, header {\n  background: none !important;\n  background-color: transparent !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "sidebar legibility": ".navigation-tray-container {\n  background: var(--natsumi-glass-background) !important;\n  border-radius: 16px !important;\n  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;\n  backdrop-filter: blur(var(--glass-blur-radius, 10px));\n  border: 1px solid rgba(200, 200, 200, 0.1) !important;\n}"
+    },
     "inverse.com.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, .NHR, .cCV > .sWr, .iju .Orv, article, article > div > div > div {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
