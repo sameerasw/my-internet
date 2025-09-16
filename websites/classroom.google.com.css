@@ -1,11 +1,75 @@
-/* class-overlay fix */
-[role="menu"] {
-  background-color: var(--darkreader-background-fffffff2) !important;
-  transition:
-    background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
-    border 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out !important;
+/*  class-glass effect */
+.xHPsid, .lXuxY, .jWCzBe:hover, .gHz6xd, .d4Fe0d, .n4xnA, .hgjBDc, .MHxtic:hover, .GWZ7yf {
+   background-color: #18181875 !important;
+   border-color: #90909080 !important;
+}
+
+.oh9CFb, .vwNuXe, .VfPpkd-P5QLlc, .ysU8Le, .rHGeGc-O1htCb {
+   background-color: #08080875 !important;
+}
+
+.vwNuXe, .xHPsid {
+   border-radius: 10px !important;
+}
+
+.qhnNic * {
+   border-color: #90909080 !important;
+}
+
+/*  class-sidebar $ Adds rounding, a darker blurred background, and moves the scroll bar to the left side. */
+.tCcYY[role="menu"] { /* @ dark reader sometimes makes the sidebar grey, so remove it */
+   background-color: transparent !important;
+}
+
+.rknsod {
+   background-color: #08080890 !important;
+   backdrop-filter: blur(10px) !important;
+   border-top-right-radius: 35px !important;
+   border-bottom-right-radius: 35px !important;
+}
+
+.uTwgne[aria-current="page"] {
+   background-color: #ffffff30 !important;
+   * {
+      background-color: transparent !important;
+   }
+}
+
+.rknsod {
+   direction: rtl !important;
+}
+
+.uTwgne, .ug8OTc {
+   :hover {
+      background-color: #ffffff06 !important;
+   }
+   direction: ltr !important;
+}
+
+/* class-top fade $ Fades the top of the page to avoid it clipping with the top bar. */
+.SSPGKf:not([hidden]) {
+  height: 100vh !important;
+  overflow-y: auto !important;
+  &:not([data-course-visibility-settings="1"]) {
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 75px,         /* Top: faded */
+      black 175px,          /* Fade in fully opaque after 20px */
+      black
+    ) !important;
+  }
+  &[data-course-visibility-settings="1"] {
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 25px,         /* Top: faded */
+      black 125px,          /* Fade in fully opaque after 20px */
+      black
+    ) !important;
+  }
+  mask-size: 100% 100% !important;
+  mask-repeat: no-repeat !important;
 }
 
 /* class-transparency */
