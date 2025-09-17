@@ -1,29 +1,34 @@
 /*  class-glass effect */
-.xHPsid, .lXuxY, .jWCzBe:hover, .gHz6xd, .d4Fe0d, .n4xnA, .hgjBDc, .MHxtic:hover, .GWZ7yf {
+.lXuxY, .jWCzBe:hover, .gHz6xd, .d4Fe0d, .n4xnA, .hgjBDc, .MHxtic:hover, .GWZ7yf {
    background-color: #18181875 !important;
-   border-color: #90909080 !important;
+   border-color: #90909080;
 }
 
-.oh9CFb, .vwNuXe, .VfPpkd-P5QLlc, .ysU8Le, .rHGeGc-O1htCb {
+.s2g3Xd, .vwNuXe, .VfPpkd-P5QLlc, .ysU8Le, .rHGeGc-O1htCb {
    background-color: #08080875 !important;
 }
 
-.vwNuXe, .xHPsid {
+.vwNuXe, .xHPsid, .YJHsie {
    border-radius: 10px !important;
 }
 
 .qhnNic * {
-   border-color: #90909080 !important;
+   border-color: #90909080;
+}
+
+.xHPsid, .YJHsie {
+   background-color: #08080890 !important;
+   backdrop-filter: blur(10px);
 }
 
 /*  class-sidebar $ Adds rounding, a darker blurred background, and moves the scroll bar to the left side. */
-.tCcYY[role="menu"] { /* @ dark reader sometimes makes the sidebar grey, so remove it */
+.tCcYY[role="menu"] {
    background-color: transparent !important;
 }
 
 .rknsod {
    background-color: #08080890 !important;
-   backdrop-filter: blur(10px) !important;
+   backdrop-filter: blur(10px);
    border-top-right-radius: 35px !important;
    border-bottom-right-radius: 35px !important;
 }
@@ -36,40 +41,33 @@
 }
 
 .rknsod {
-   direction: rtl !important;
+   direction: rtl;
 }
 
 .uTwgne, .ug8OTc {
    :hover {
       background-color: #ffffff06 !important;
    }
-   direction: ltr !important;
+   direction: ltr;
 }
 
-/* class-top fade $ Fades the top of the page to avoid it clipping with the top bar. */
-.SSPGKf:not([hidden]) {
-  height: 100vh !important;
-  overflow-y: auto !important;
-  &:not([data-course-visibility-settings="1"]) {
-    mask-image: linear-gradient(
-      to bottom,
-      transparent 0px,
-      transparent 75px,         /* Top: faded */
-      black 175px,          /* Fade in fully opaque after 20px */
-      black
-    ) !important;
-  }
-  &[data-course-visibility-settings="1"] {
-    mask-image: linear-gradient(
-      to bottom,
-      transparent 0px,
-      transparent 25px,         /* Top: faded */
-      black 125px,          /* Fade in fully opaque after 20px */
-      black
-    ) !important;
-  }
-  mask-size: 100% 100% !important;
-  mask-repeat: no-repeat !important;
+/* class-hover $ Hides top bar. */
+.joJglb:not(:hover), body:has(.joJglb:not(:hover)) .J6rR1b {
+   > * {
+      opacity: 0%;
+      transition: 0.2s;
+   }
+   height: 20px;
+   transition: 0.3s;
+}
+
+.joJglb:hover, body:has(.joJglb:hover) .J6rR1b {
+   > * {
+      opacity: 100%;
+      transition: 0.4s;
+   }
+   height: 70px;
+   transition: 0.3s;
 }
 
 /* class-transparency */
