@@ -7,6 +7,7 @@ header,
 #Top,
 #Main > .box,
 .cell,
+.topic_info::after,
 #Rightbar .box {
   background-color: transparent !important;
   background: none !important;
@@ -14,17 +15,44 @@ header,
   box-shadow: none !important;
   transition:
     background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
     border 0.5s ease-in-out,
     box-shadow 0.5s ease-in-out !important;
 }
 
-/* v2ex-darkreader */
-:root {
-  --darkreader-background-ffffff: transparent !important;
+/* Tabs style */
+#Tabs {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 1em !important;
+}
+
+/* post or reply style */
+.cell.item,
+.topic_content,
+[id^="r_"] {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 1em !important;
+  padding: 0.5em !important;
+  margin: 0.5em !important;
+}
+
+/* append style */
+.subtle,
+.topic_buttons {
+  border-radius: 1em !important;
+  margin: 0.5em !important;
+}
+
+/* v2ex-no ads */
+#pro-campaign-container {
+  display: none !important;
 }
 
 /* v2ex-no footer */
 #Bottom {
   display: none !important;
+}
+
+/* v2ex-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
 }
