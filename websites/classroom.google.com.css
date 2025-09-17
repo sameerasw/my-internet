@@ -53,18 +53,26 @@
 
 /* class-hover $ Hides top bar. */
 .joJglb:not(:hover), body:has(.joJglb:not(:hover)) .J6rR1b {
-   > * {
+   *:not(.QRiHXd) {
       opacity: 0% !important;
       transition: 0.2s !important;
+      pointer-events: none !important;
    }
-   height: 20px !important;
+   > .QRiHXd {
+      height: 30px !important;
+   }
+   height: 35px !important;
    transition: 0.3s !important;
 }
 
 .joJglb:hover, body:has(.joJglb:hover) .J6rR1b {
-   > * {
+   *:not(.QRiHXd) {
       opacity: 100% !important;
       transition: 0.4s !important;
+      pointer-events: all !important;
+   }
+   > .QRiHXd {
+      height: 70px !important;
    }
    height: 70px !important;
    transition: 0.3s !important;
