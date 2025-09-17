@@ -21,11 +21,7 @@ header {
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  transition:
-    background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
-    border 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 /* sidebar legibility */
@@ -35,4 +31,9 @@ header {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
   backdrop-filter: blur(var(--glass-blur-radius, 10px));
   border: 1px solid rgba(200, 200, 200, 0.1) !important; /* Optional subtle border */
+}
+
+/* darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
 }
