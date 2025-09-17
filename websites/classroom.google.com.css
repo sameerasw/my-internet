@@ -1,7 +1,7 @@
 /*  class-glass effect */
 .lXuxY, .jWCzBe:hover, .gHz6xd, .d4Fe0d, .n4xnA, .hgjBDc, .MHxtic:hover, .GWZ7yf {
    background-color: #18181875 !important;
-   border-color: #90909080;
+   border-color: #90909080 !important;
 }
 
 .s2g3Xd, .vwNuXe, .VfPpkd-P5QLlc, .ysU8Le, .rHGeGc-O1htCb {
@@ -13,12 +13,12 @@
 }
 
 .qhnNic * {
-   border-color: #90909080;
+   border-color: #90909080 !important;
 }
 
 .xHPsid, .YJHsie {
    background-color: #08080890 !important;
-   backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px) !important;
 }
 
 /*  class-sidebar $ Adds rounding, a darker blurred background, and moves the scroll bar to the left side. */
@@ -28,7 +28,7 @@
 
 .rknsod {
    background-color: #08080890 !important;
-   backdrop-filter: blur(10px);
+   backdrop-filter: blur(10px) !important;
    border-top-right-radius: 35px !important;
    border-bottom-right-radius: 35px !important;
 }
@@ -41,7 +41,7 @@
 }
 
 .rknsod {
-   direction: rtl;
+   direction: rtl !important;
 }
 
 .uTwgne, .ug8OTc {
@@ -54,20 +54,20 @@
 /* class-hover $ Hides top bar. */
 .joJglb:not(:hover), body:has(.joJglb:not(:hover)) .J6rR1b {
    > * {
-      opacity: 0%;
-      transition: 0.2s;
+      opacity: 0% !important;
+      transition: 0.2s !important;
    }
-   height: 20px;
-   transition: 0.3s;
+   height: 20px !important;
+   transition: 0.3s !important;
 }
 
 .joJglb:hover, body:has(.joJglb:hover) .J6rR1b {
    > * {
-      opacity: 100%;
-      transition: 0.4s;
+      opacity: 100% !important;
+      transition: 0.4s !important;
    }
-   height: 70px;
-   transition: 0.3s;
+   height: 70px !important;
+   transition: 0.3s !important;
 }
 
 /* class-transparency */
