@@ -33,6 +33,14 @@ header {
   border: 1px solid rgba(200, 200, 200, 0.1) !important; /* Optional subtle border */
 }
 
+/* canvas-bettercanvas */
+:root {
+  --bcbackground-0: transparent !important;
+  --bcbackground-1: transparent !important;
+  --bcbackground-2: transparent !important;
+  --bcsidebar: transparent !important;
+}
+
 /* canvas-darkreader */
 :root {
   --darkreader-background-ffffff: transparent !important;
