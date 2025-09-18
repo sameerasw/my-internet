@@ -1,0 +1,35 @@
+/* transparency */
+.ic-Dashboard-header,
+.ic-Dashboard-header__layout,
+#dashboard-planner-header,
+#nav-tray-portal > span > span,
+.PlannerHeader-styles__root,
+.PlannerHeader,
+.CanvasPlanner__HeaderContainer,
+.profile-tray,
+.ic-app-header__main-navigation,
+.Grouping-styles__title,
+.Grouping-styles__title::after,
+html,
+body,
+nav,
+header {
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* sidebar legibility */
+.navigation-tray-container {
+  background: var(--natsumi-glass-background) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(var(--glass-blur-radius, 10px));
+  border: 1px solid rgba(200, 200, 200, 0.1) !important; /* Optional subtle border */
+}

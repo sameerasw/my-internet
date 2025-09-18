@@ -28,6 +28,7 @@ body,
   --WDS-systems-bubble-surface-system: #24262666 !important;
   --WDS-systems-bubble-surface-incoming: #24262666 !important;
   --WDS-systems-bubble-surface-outgoing: #144d3766 !important;
+  --bot-suggestion-background-color: #18222966 !important;
   --rich-text-panel-background: var(--WDS-surface-highlight) !important;
   --panel-input-background: var(--WDS-surface-highlight) !important;
 }
@@ -64,7 +65,7 @@ body,
   background-color: var(--WDS-surface-highlight) !important;
 }
 
-.app-wrapper-web:has(._ak4w, > span:not(:empty)) {
+.app-wrapper-web:has(._ak4w, > span:nth-child(3):not(:empty), > span:nth-child(4):not(:empty)) {
   ._aigs {
     filter: blur(20px) !important;
   }
@@ -76,27 +77,29 @@ body,
   }
 }
 
-#app:has([data-animate-modal-backdrop], [role="application"]) {
-  [data-animate-status-viewer] {
-    filter: blur(20px) !important;
+._aiwn {
+  &:has(> span:nth-child(3):not(:empty), > span:nth-child(8):not(:empty)):not(:has(._ajx_, [data-animate-status-viewer])) {
+    > span:nth-child(4) > [tabindex] > div {
+      filter: blur(20px) !important;
+    }
   }
-}
 
-#app:has([data-animate-modal-backdrop]:not([data-animate-status-viewer]), ._aiwn > span > ._ak4-, ._aiwn > span > ._ak4_):not(:has(._ajx_, [data-animate-status-viewer])) {
-  ._aiwn > span > [tabindex] > div {
-    filter: blur(20px) !important;
+  &:has(.x1h2kqdt) {
+    [data-animate-status-viewer] > span > div > div > [tabindex] > div:not(:last-child) {
+      filter: blur(20px) !important;
+    }
   }
-}
 
-._aiwn:has(.x1h2kqdt) {
-  [data-animate-status-viewer] > span > div > div > [tabindex] > div:not(:last-child) {
-    filter: blur(20px) !important;
+  &:has(> div > div:not(._aigw) > span > div) {
+    #main > div,
+    #main > footer {
+      opacity: 0 !important;
+    }
   }
-}
 
-._aigs:has(> div > div:not(._aigw) > span > div) {
-  #main > div,
-  #main > footer {
-    opacity: 0 !important;
+  &:has([data-animate-modal-backdrop], [role="application"]) {
+    [data-animate-status-viewer] {
+      filter: blur(20px) !important;
+    }
   }
 }
