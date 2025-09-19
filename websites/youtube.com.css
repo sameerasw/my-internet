@@ -5,7 +5,8 @@ html[dark],
 #movie_player,
 yt-report-form-modal-renderer,
 ytd-engagement-panel-section-list-renderer[dialog] #content.ytd-engagement-panel-section-list-renderer,
-.ytGridShelfViewModelGridShelfBottomButtonContainer {
+.ytGridShelfViewModelGridShelfBottomButtonContainer,
+.ytp-caption-segment {
   background-color: transparent !important;
 }
 
