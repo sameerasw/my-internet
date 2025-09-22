@@ -22,23 +22,22 @@ td, #imp > div > div,#imp > div > div > div
   transition: background-color 0.3s ease-in-out !important;
 }
 
-h1 + [role="navigation"].GG4mbd{
+h1 + [role="navigation"].GG4mbd {
   margin: auto 1em !important;
 }
 
 .vzEsdb {
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%) !important;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%) !important;
   mask-repeat: no-repeat !important;
   mask-size: cover !important;
   border-radius: 1em !important;
 }
 
-
 .exZRme {
   border-color: transparent !important;
 }
 
-.Fgyi2e.rZj61.caNvfd{
+.Fgyi2e.rZj61.caNvfd {
   border-radius: 1em !important;
 }
 
@@ -183,8 +182,14 @@ div.RNNXgb,
 
 .dG2XIf.ouUsKb {
   padding: 1em !important;
-    box-shadow:  light-dark(#fff3, #0003) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
-    background-color: light-dark(#fff8, #0005)  !important;
+  box-shadow:
+    light-dark(#fff3, #0003) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+  background-color: light-dark(#fff8, #0005) !important;
   transition: background-color 0.5s ease-in-out !important;
 }
 
