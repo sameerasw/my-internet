@@ -45,6 +45,9 @@
 }
 
 .uTwgne, .ug8OTc {
+   *:not(.pzaVke) {
+      pointer-events: none;
+   }
    :hover {
       background-color: #ffffff06 !important;
    }
