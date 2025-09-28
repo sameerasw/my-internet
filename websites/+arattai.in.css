@@ -85,12 +85,6 @@ body {
       pointer-events: none !important;
     }
   }
-  
-  &:xnot(#rtcpconference:has(.dN)) {
-    #officechat, #lhs-rail {
-      filter: blur(20px) !important;
-    }
-  }
 }
 
 /* at-Misc */
