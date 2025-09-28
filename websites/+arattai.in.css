@@ -1,0 +1,122 @@
+/* at-Transparency */
+body,
+.qr-container,
+#background_bg,
+#rtcpconference .zc-av-header, 
+#rtcpconference .smartconf-ftr,
+#rtcpconference .smartconf-spotlight-mode .smartconf-main,
+.amc-menu-item {
+  background-color: transparent !important;
+}
+
+:root, .arattai-dark-mode.theme4, .am-nitemode, * {
+  --am-bg-color-main: transparent !important;
+  --bg-color-1: transparent !important; 
+  --am-bg-color-1: transparent !important;
+  --am-bg-color-2: transparent !important;
+  --am-bg-color-3: transparent !important;
+  --lhs-bg-color: transparent !important;
+  --am-meeting-det-bg: transparent !important;
+  --am-bg-chatwindow: transparent !important;
+  --am-overlay-bg: transparent !important;
+  --am-bdr-chatwindow: transparent !important;
+  --chatwindow-bg-color: transparent !important;
+  --chatwindow-hdr-bg-color: transparent !important;
+  --am-container-bg: transparent !important;
+  --am-media-list-bg: transparent !important;
+  --sticky-bg: transparent !important;
+  --custom-background: transparent !important;
+  --am-btn-secondary-bg: transparent !important;
+  --other-msg-bg: #2B2B2B66 !important;
+  --self-msg-bg: #0B394D66 !important;
+}
+
+/* at-Glass Effect */ 
+:root, .arattai-dark-mode.theme4, .am-nitemode, .am-overlay, * {
+  --am-dialog-bg: hsla(0, 0%, 100%, 0.08) !important;
+  --am-color-hover1: hsla(0, 0%, 100%, 0.08) !important;
+  --am-color-theme-selected-bg: hsla(0, 0%, 100%, 0.08) !important;
+  --am-color-theme-hover-bg: hsla(0, 0%, 100%, 0.08) !important;
+  --chatwindow-composer-bg: hsla(0, 0%, 100%, 0.08) !important;
+  --am-color-mode: hsla(0, 0%, 100%, 0.08) !important;
+  --am-menu-color: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+.login-container, 
+.signin_container,
+#signin_flow,
+.textbox,
+.selectbox_options_container, .selectbox_options {
+  background: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+/* at-Immersive Popup */
+body {
+  &:has(> div[jsid="country_code_select"]){
+    #nextbtn {
+      filter: blur(20px) !important;
+    }
+  }
+  
+  &:has(
+  > #app > div > #app > div > .amc-recipients-container,
+  > #app > div > #app > div > div[data-vue-dialogcomponent],
+  > #app > div > #app > div > .art-dialog-wrapper
+  ) {
+    #officechat,
+    #lhs-rail,
+    #lhsOverlay{
+      filter: blur(20px) !important;
+    }
+  }
+  
+  &:has(.amc-posrel > .active) {
+    #leftpannel #art-chats,
+    #leftpannel #chatlist-header > .amc-form,
+    #overlay_secondary > div > div:nth-child(n+2) {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+  
+  &:has(#lhs-rail .amc-posrel > .active) {
+    .art-rail-bottom-actions > .art-lhs-module {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+  
+  &:xnot(#rtcpconference:has(.dN)) {
+    #officechat, #lhs-rail {
+      filter: blur(20px) !important;
+    }
+  }
+}
+
+/* at-Misc */
+#art-modal-view > .smileydivmn {
+  --bg-color-1: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+.art-filters-wrapper {
+  position: relative !important;
+}
+
+#art-chats.amc-ovrflwA {
+  overflow-y: hidden !important;
+}
+
+#art-chats .amc-flex-col {
+  overflow-y: auto !important;
+}
+
+body:has(#lhsOverlay > #overlay_secondary) {
+  #officechat {
+    display: none !important;
+  }
+}
+
+/* at-No Footer */
+#footer {
+  display: none !important;
+}
