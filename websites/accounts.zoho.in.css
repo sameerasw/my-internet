@@ -1,0 +1,58 @@
+/* za-Transparency */
+body,
+.ztopbar,
+.navbar,
+.box,
+.box_info,
+.field_email,
+.field_mobile,
+.profile_mode,
+.basic_selectbox,
+#usecase_abt_geofencing,
+.option_grid,
+.mfa_option_deatils,
+.tfa_footer_warning,
+.add_new_account_container,
+.certification_info,
+.header_pp_expand,
+.zmdrawer__llvj0t,
+.zmbackdrop--dark__bxuhvd {
+  background-color: transparent !important;
+}
+
+.pp_expand_info {
+  background: none !important;
+}
+
+/* za-Glass Effect */
+.box,
+.blue_tag,
+.organge_tag,
+.option_grid,
+.bgchange,
+.certification_info,
+.header_pp_expand,
+.zmdrawer__llvj0t {
+  background-color: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+.box_info,
+.certification_info,
+.zmdrawer__llvj0t {
+  border-color: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+/* za-Immersive Popup */
+:root.donnotscroll {
+  #zcontiner,
+  .topbar_pp,
+  .zwZHamburger {
+    filter: blur(20px) !important;
+  }
+}
+
+body.zmc-overflow-hidden__x4nlek {
+  #zcontiner {
+    filter: blur(20px) !important;
+  }
+}
