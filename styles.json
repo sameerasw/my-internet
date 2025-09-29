@@ -753,6 +753,13 @@
       "cgpt-hidden elements": "button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light.text-xs.text-token-text-secondary, .grow + .bg-token-bg-elevated-secondary.sticky, #page-header > .absolute {\n  display: none !important;\n}",
       "cgpt-bg image glow": "body > picture {\n  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 80%) !important;\n  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 90%) !important;\n  -webkit-mask-repeat: no-repeat !important;\n  mask-repeat: no-repeat !important;\n  -webkit-mask-size: cover !important;\n  mask-size: cover !important;\n}"
     },
+    "check.torproject.org.css": {
+      "transparency": "body, .head {\n  color: white !important;\n  background-color: transparent !important;\n}",
+      "anchor styles": "a {\n  color: white !important;\n  text-decoration: none !important;\n  transition: color 0.3s ease !important;\n}",
+      "anchor hover": "a:not(#donate):hover {\n  color: #85559f !important;\n  text-decoration: underline !important;\n}",
+      "no javascript text": "p#js {\n  display: none !important;\n}",
+      "no footer": "div.foot {\n  display: none !important;\n}"
+    },
     "chess.com.css": {
       "chess-transparency": "html, body, .nav, header, #sb, .index-suggestion-component {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "chess-no footer": "footer {\n  display: none !important;\n}",
