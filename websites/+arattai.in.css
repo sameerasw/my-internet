@@ -2,7 +2,7 @@
 body,
 .qr-container,
 #background_bg,
-#rtcpconference .zc-av-header, 
+#rtcpconference .zc-av-header,
 #rtcpconference .smartconf-ftr,
 #rtcpconference .smartconf-spotlight-mode .smartconf-main,
 .amc-menu-item,
@@ -13,7 +13,7 @@ body,
 :root .arattai-classic [data-classic="arattai-classic"],
 .am-nitemode {
   --am-bg-color-main: transparent !important;
-  --bg-color-1: transparent !important; 
+  --bg-color-1: transparent !important;
   --bg-color-3: transparent !important;
   --am-bg-color-1: transparent !important;
   --am-bg-color-2: transparent !important;
@@ -30,14 +30,14 @@ body,
   --sticky-bg: transparent !important;
   --custom-background: transparent !important;
   --am-btn-secondary-bg: transparent !important;
-  --other-msg-bg: #2B2B2B66 !important;
-  --self-msg-bg: #0B394D66 !important;
-  --am-color-theme-hover-bg-updated: #0B394D66 !important;
+  --other-msg-bg: #2b2b2b66 !important;
+  --self-msg-bg: #0b394d66 !important;
+  --am-color-theme-hover-bg-updated: #0b394d66 !important;
   --am-image-viewer-bg: transparent !important;
   --overlay-bg-dark: transparent !important;
 }
 
-/* at-Glass Effect */ 
+/* at-Glass Effect */
 :root .arattai-classic [data-classic="arattai-classic"],
 .am-nitemode {
   --am-dialog-bg: hsla(0, 0%, 100%, 0.08) !important;
@@ -51,11 +51,12 @@ body,
   --info-msg-bg: hsla(0, 0%, 100%, 0.08) !important;
 }
 
-.login-container, 
+.login-container,
 .signin_container,
 #signin_flow,
 .textbox,
-.selectbox_options_container, .selectbox_options {
+.selectbox_options_container,
+.selectbox_options {
   background: hsla(0, 0%, 100%, 0.08) !important;
 }
 
@@ -65,17 +66,17 @@ div[purpose="message_actions"] {
 
 /* at-Immersive Popup */
 body {
-  &:has(> div[jsid="country_code_select"]){
+  &:has(> div[jsid="country_code_select"]) {
     #nextbtn {
       filter: blur(20px) !important;
     }
   }
-  
+
   &:has(
-  > #imgviewer[style="display: block;"],
-  #app[data-v-874ed99a] > div > .amc-recipients-container,
-  #app[data-v-874ed99a] > div > div[data-vue-dialogcomponent],
-  #app[data-v-874ed99a] > div > .art-dialog-wrapper
+    > #imgviewer[style="display: block;"],
+    #app[data-v-874ed99a] > div > .amc-recipients-container,
+    #app[data-v-874ed99a] > div > div[data-vue-dialogcomponent],
+    #app[data-v-874ed99a] > div > .art-dialog-wrapper
   ) {
     #officechat,
     #lhs-rail,
@@ -83,48 +84,46 @@ body {
       filter: blur(20px) !important;
     }
   }
-  
-  &:has(
-  #app[data-v-874ed99a] > div > .amc-image-viewer
-  ) {
+
+  &:has(#app[data-v-874ed99a] > div > .amc-image-viewer) {
     #lhs-rail,
     #app[data-v-874ed99a] > div > .am-wrapper {
       filter: blur(20px) !important;
     }
   }
-  
+
   &:has(#am-modal-container > .amc-image-viewer) {
     #am-modal-container {
       background-color: transparent !important;
     }
-    #am-modal-container > div:nth-child(-n+4) {
+    #am-modal-container > div:nth-child(-n + 4) {
       opacity: 0 !important;
     }
   }
-  
+
   &:has(.amc-posrel > .active) {
     #leftpannel #art-chats,
     #leftpannel #chatlist-header > .amc-form,
-    #overlay_secondary > div > div:nth-child(n+2) {
+    #overlay_secondary > div > div:nth-child(n + 2) {
       filter: blur(20px) !important;
       pointer-events: none !important;
     }
   }
-  
+
   & #chatwindows:has(.art-selected) {
     #chatbody {
       filter: blur(20px) !important;
       pointer-events: none !important;
     }
   }
-  
+
   &:has(#lhs-rail .amc-posrel > .active) {
     .art-rail-bottom-actions > .art-lhs-module {
       filter: blur(20px) !important;
       pointer-events: none !important;
     }
   }
-  
+
   &:has(#art-smiley-container) {
     #art-msgarea-container) {
       filter: blur(20px) !important;
@@ -156,7 +155,7 @@ body {
       display: none !important;
     }
   }
-  
+
   &:has(#lhs_globalsearch) {
     #art-chats {
       display: none !important;
