@@ -44,7 +44,7 @@ c-wiz,
     }
   }
 
-  div[data-menu-uid]:has([role="menu"]){
+  div[data-menu-uid]:has([role="menu"]) {
     p,
     i,
     span,
@@ -60,7 +60,6 @@ c-wiz,
     }
   }
 }
-
 
 /* meet-darkreader */
 :root {
