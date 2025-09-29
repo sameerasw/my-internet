@@ -15,7 +15,7 @@ body, .header-bottom {
     text-shadow: 0 0 4px black, 0 0 8px black;
 }
 
-/* header glass effect */
+/* show header on hover */
 .site-header {
   transition: opacity 0.3s ease-in-out !important;
   opacity: 0 !important;
