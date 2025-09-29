@@ -399,6 +399,7 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer) {
   border-radius: 1em !important;
   padding: 1em !important;
   box-shadow: #0008 0 0 20px !important;
+  width: fit-content !important;
 }
 
 /* yt-Keep player shadow $ Remove the shadow around the player when disabled */
