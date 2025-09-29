@@ -1,84 +1,104 @@
 /*  class-glass effect */
-.qhnNic, .lXuxY, .jWCzBe:hover, .gHz6xd, .d4Fe0d, .n4xnA, .hgjBDc, .MHxtic:hover, .G3xBUc:hover, .GWZ7yf {
-   background-color: #18181875 !important;
-   border-color: #90909080 !important;
+.qhnNic,
+.lXuxY,
+.jWCzBe:hover,
+.gHz6xd,
+.d4Fe0d,
+.n4xnA,
+.hgjBDc,
+.MHxtic:hover,
+.G3xBUc:hover,
+.GWZ7yf {
+  background-color: #18181875 !important;
+  border-color: #90909080 !important;
 }
 
-.SUV7We, .s2g3Xd, .vwNuXe, .VfPpkd-P5QLlc, .ysU8Le, .rHGeGc-O1htCb {
-   background-color: #08080875 !important;
+.SUV7We,
+.s2g3Xd,
+.vwNuXe,
+.VfPpkd-P5QLlc,
+.ysU8Le,
+.rHGeGc-O1htCb {
+  background-color: #08080875 !important;
 }
 
-.vwNuXe, .xHPsid, .YJHsie {
-   border-radius: 10px !important;
+.vwNuXe,
+.xHPsid,
+.YJHsie {
+  border-radius: 10px !important;
 }
 
 .qhnNic * {
-   border-color: #90909080 !important;
+  border-color: #90909080 !important;
 }
 
-.xHPsid, .YJHsie {
-   background-color: #08080890 !important;
-   backdrop-filter: blur(10px) !important;
+.xHPsid,
+.YJHsie {
+  background-color: #08080890 !important;
+  backdrop-filter: blur(10px) !important;
 }
 
 /*  class-sidebar $ Adds rounding, a darker blurred background, and moves the scroll bar to the left side. */
 .tCcYY[role="menu"] {
-   background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .rknsod {
-   background-color: #08080890 !important;
-   backdrop-filter: blur(10px) !important;
-   border-top-right-radius: 35px !important;
-   border-bottom-right-radius: 35px !important;
+  background-color: #08080890 !important;
+  backdrop-filter: blur(10px) !important;
+  border-top-right-radius: 35px !important;
+  border-bottom-right-radius: 35px !important;
 }
 
 .uTwgne[aria-current="page"] {
-   background-color: #ffffff30 !important;
-   * {
-      background-color: transparent !important;
-   }
+  background-color: #ffffff30 !important;
+  * {
+    background-color: transparent !important;
+  }
 }
 
 .rknsod {
-   direction: rtl !important;
+  direction: rtl !important;
 }
 
-.uTwgne, .ug8OTc {
-   *:not(.pzaVke) {
-      pointer-events: none;
-   }
-   :hover {
-      background-color: #ffffff06 !important;
-   }
-   direction: ltr;
+.uTwgne,
+.ug8OTc {
+  *:not(.pzaVke) {
+    pointer-events: none;
+  }
+  :hover {
+    background-color: #ffffff06 !important;
+  }
+  direction: ltr;
 }
 
 /* class-hover $ Hides top bar. */
-.joJglb:not(:hover), body:has(.joJglb:not(:hover)) .J6rR1b {
-   *:not(.QRiHXd) {
-      opacity: 0% !important;
-      transition: 0.2s !important;
-      pointer-events: none !important;
-   }
-   > .QRiHXd {
-      height: 30px !important;
-   }
-   height: 35px !important;
-   transition: 0.3s !important;
+.joJglb:not(:hover),
+body:has(.joJglb:not(:hover)) .J6rR1b {
+  *:not(.QRiHXd) {
+    opacity: 0% !important;
+    transition: 0.2s !important;
+    pointer-events: none !important;
+  }
+  > .QRiHXd {
+    height: 30px !important;
+  }
+  height: 35px !important;
+  transition: 0.3s !important;
 }
 
-.joJglb:hover, body:has(.joJglb:hover) .J6rR1b {
-   *:not(.QRiHXd) {
-      opacity: 100% !important;
-      transition: 0.4s !important;
-      pointer-events: all !important;
-   }
-   > .QRiHXd {
-      height: 70px !important;
-   }
-   height: 70px !important;
-   transition: 0.3s !important;
+.joJglb:hover,
+body:has(.joJglb:hover) .J6rR1b {
+  *:not(.QRiHXd) {
+    opacity: 100% !important;
+    transition: 0.4s !important;
+    pointer-events: all !important;
+  }
+  > .QRiHXd {
+    height: 70px !important;
+  }
+  height: 70px !important;
+  transition: 0.3s !important;
 }
 
 /* class-transparency */
