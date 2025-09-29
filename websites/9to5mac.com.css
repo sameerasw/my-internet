@@ -6,13 +6,13 @@ body, .header-bottom {
 /* submenu glass effect */
 .sub-menu {
     background-color: transparent !important;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-    text-shadow: 0 0 4px black, 0 0 8px black;
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    text-shadow: 0 0 4px black, 0 0 8px black !important;
 }
 
 /* show header on hover */
