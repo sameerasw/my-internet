@@ -1,74 +1,127 @@
 /* yt-Transparency */
-html[dark],
 html,
-body,
-#container.ytd-searchbox,
-ytd-app,
-#page-header-container,
-#page-header,
-#tabs-container,
-#tabs-inner-container,
-#chips-wrapper,
-.navigation-container,
-#cinematic-shorts-scrim,
-#shorts-container,
-.ytLrGuideResponseMask,
-.ytLrPromoShelfRendererContainer,
-ytd-item-section-renderer[page-subtype="playlist"] #header.ytd-item-section-renderer {
-  background-color: #00000000 !important;
-  background: none !important;
+html[dark],
+#full-bleed-container,
+#movie_player,
+yt-report-form-modal-renderer,
+ytd-engagement-panel-section-list-renderer[dialog] #content.ytd-engagement-panel-section-list-renderer,
+.ytGridShelfViewModelGridShelfBottomButtonContainer,
+.ytp-caption-segment {
+  background-color: transparent !important;
 }
 
-#tabs-divider,
-#short-video-container #cinematic-container,
-#frosted-glass {
-  display: none !important;
+:root,
+ytd-masthead,
+[use-color-palette],
+[use-custom-colors] {
+  --yt-spec-base-background: transparent !important;
+  --yt-spec-menu-background: transparent !important;
+  --yt-spec-brand-background-solid: transparent !important;
+  --yt-spec-brand-background-primary: transparent !important;
+  --yt-spec-raised-background: transparent !important;
+  --yt-frosted-glass-desktop: transparent !important;
+  --yt-spec-menu-background: hsla(0, 0%, 100%, 0.08) !important;
+  --yt-spec-brand-background-solid: hsla(0, 0%, 100%, 0.08) !important;
+  --yt-active-playlist-panel-background-color: transparent !important;
+  --yt-spec-text-primary-inverse: transparent !important;
+  --yt-spec-static-black: transparent !important;
+  --yt-lightsource-section2-color: transparent !important;
 }
 
-#shorts-container {
-  height: 98vh !important;
+.skeleton-bg-color,
+.ytSearchboxComponentInputBox,
+.ytContextualSheetLayoutHost {
+  background-color: hsla(0, 0%, 100%, 0.08) !important;
 }
 
-tp-yt-app-drawer > #contentContainer,
-#guide-content,
-ytd-mini-guide-renderer,
-ytd-mini-guide-entry-renderer {
-  background-color: #00000000 !important;
-  background: none !important;
+ytd-playlist-panel-video-renderer[selected][use-color-palette] {
+  --yt-active-playlist-panel-background-color: hsla(0, 0%, 100%, 0.08) !important;
 }
 
-.ytLrPromoShelfRendererPreviewBackground {
-  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%) !important;
-  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 50%) !important;
-  -webkit-mask-repeat: no-repeat !important;
-  mask-repeat: no-repeat !important;
-  -webkit-mask-size: cover !important;
-  mask-size: cover !important;
+/* yt-Fix Overlapping Header */ 
+body {
+  overflow-y: hidden !important;
 }
 
-/* yt-Toggle side guide $ Completely remove the side guide */
-ytd-mini-guide-renderer,
-[theater=""] #contentContainer::after {
-  display: none !important;
-}
-tp-yt-app-drawer > #contentContainer:not([opened=""]),
-#contentContainer:not([opened=""]) #guide-content,
-ytd-mini-guide-renderer,
-ytd-mini-guide-entry-renderer {
-  background-color: var(--yt-spec-text-primary-inverse) !important;
-  background: var(--yt-spec-text-primary-inverse) !important;
-}
-#content:not(:has(#contentContainer[opened=""])) #page-manager {
-  margin-left: 0 !important;
+ytd-app:not([fullscreen]) {
+  #masthead-container {
+    position: relative !important;
+  }
+  
+  .ytd-page-manager {
+    overflow-y: scroll !important;
+    height: calc(100dvh - 56px) !important;
+  }
 }
 
-ytd-app:not([guide-persistent-and-visible=""]) tp-yt-app-drawer > #contentContainer {
-  background-color: var(--yt-spec-text-primary-inverse) !important;
+#page-manager {
+  margin-top: 0 !important;
 }
 
-ytd-alert-with-button-renderer {
-  align-items: center !important;
-  justify-content: center !important;
+#chips-wrapper {
+  position: relative !important;
+  top: 0 !important;
+}
+
+tp-yt-app-header {
+  position: relative !important;
+  margin-top: 0 !important;
+}
+
+#contentContainer {
+  padding-top: 0 !important;
+}
+
+/* yt-Immersive Popup */
+#guide,
+#scrim,
+tp-yt-iron-overlay-backdrop {
+  background-color: transparent !important;
+}
+
+#guide > #contentContainer:not([persistent]),
+.ytSearchboxComponentSuggestionsContainer,
+.yt-contextual-sheet-layout-wiz,
+.ytp-settings-menu {
+  background-color: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+#guide-content > #header {
+  opacity: 0 !important;
+}
+
+.ytp-settings-menu {
+  backdrop-filter: blur(20px) !important;
+}
+
+ytd-app {
+  &:has(
+  #guide[opened]:not([persistent]),
+  tp-yt-iron-dropdown:not([aria-hidden="true"]),
+  tp-yt-iron-dropdown[aria-disabled="true"],
+  #masthead yt-searchbox > .ytSearchboxComponentInputBoxHasFocus
+    ) #page-manager {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+  
+  &:has(
+  ytd-voice-search-dialog-renderer #microphone[state],
+  tp-yt-paper-dialog:not([aria-hidden])
+    ) {
+      #masthead-container,
+      #page-manager,
+      #guide > #contentContainer {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+  
+  &:has(ytd-network-status-banner[current-state="OFFLINE"]) {
+    .ytd-page-manager {
+      height: calc(100dvh - 56px - 26px) !important;
+    }
+  }
 }
 
 /* yt-clean side guide $ Remove YouTube Studio, Sports, Settings and the gfooter from the guide */
@@ -82,56 +135,118 @@ ytd-guide-collapsible-section-entry-renderer {
   border: none !important;
 }
 
-/* yt-mini guide $ A minimal guide with an icon only sidebar similar to the tablet view but more entries */
-body:not(:has([mini-guide-visible=""])) {
-  #endpoint.ytd-guide-entry-renderer yt-formatted-string,
-  h3.ytd-guide-section-renderer,
-  #newness-dot,
-  tp-yt-paper-item:not(:hover) yt-icon.guide-entry-badge {
-    display: none !important;
-  }
+ytd-mini-guide-entry-renderer .title {
+  display: none !important;
+}
 
-  #endpoint.ytd-guide-entry-renderer,
-  ytd-guide-entry-renderer,
-  ytd-guide-collapsible-section-entry-renderer,
-  .ytd-guide-section-renderer,
-  ytd-guide-section-renderer,
-  ytd-guide-renderer > #sections,
-  ytd-guide-renderer,
-  #guide-inner-content,
-  #guide-content,
-  #guide-wrapper,
-  tp-yt-app-drawer,
-  #tabsContent,
-  yt-tab-group-shape,
-  yt-tab-group-shape > [role="tablist"] {
-    width: fit-content !important;
-  }
+.ytd-mini-guide-entry-renderer {
+  width: 100% !important;
+}
 
-  tp-yt-paper-item {
-    padding: 2px 10px !important;
-  }
+ytd-mini-guide-renderer {
+  display: inline-block !important;
+  width: calc(var(--ytd-mini-guide-width) - 4px) !important;
+  padding: 12px !important;
+  margin-right: 4px !important;
+}
 
-  yt-icon.ytd-guide-entry-renderer,
-  yt-img-shadow.ytd-guide-entry-renderer {
-    margin: 0 !important;
-  }
+a.ytd-mini-guide-entry-renderer {
+  padding: 10px 0 10px !important;
+}
 
-  tp-yt-paper-tabs {
-    margin: auto 0 !important;
-  }
+#items.ytd-mini-guide-renderer {
+  margin-top: 0 !important;
+}
+
+.guide-icon.ytd-mini-guide-entry-renderer {
+  margin-bottom: 0 !important;
+}
+
+/* yt-No side guide $ Completely remove the side guide */
+ytd-mini-guide-renderer,
+[theater=""] #contentContainer::after {
+  display: none !important;
+}
+
+#content:not(:has(#guide[opened=""])) {
   #page-manager {
-    margin-left: 80px !important;
+    margin-left: 0 !important;
   }
+}
 
-  #tabsContainer.tp-yt-paper-tabs {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-  }
+ytd-alert-with-button-renderer {
+  align-items: center !important;
+  justify-content: center !important;
+}
 
-  ytd-app:not([guide-persistent-and-visible=""]) tp-yt-app-drawer > #contentContainer {
+/* yt-mini guide $ A minimal guide with an icon only sidebar similar to the tablet view but more entries */ 
+ytd-app {
+  --app-drawer-width: var(--ytd-mini-guide-width) !important;
+  --ytd-persistent-guide-width: var(--ytd-mini-guide-width) !important;
+}
+
+tp-yt-app-drawer {
+  width: var(--app-drawer-width) !important;
+}
+
+ytd-guide-renderer,
+ytd-guide-entry-renderer {
+  width: fit-content !important;
+}
+
+#endpoint.ytd-guide-entry-renderer yt-formatted-string,
+h3.ytd-guide-section-renderer,
+#newness-dot,
+tp-yt-paper-item:not(:hover) yt-icon.guide-entry-badge,
+#guide #header,
+#scrim.tp-yt-app-drawer {
+  display: none !important;
+}
+
+tp-yt-paper-item {
+  padding: 2px 10px !important;
+}
+
+yt-icon.ytd-guide-entry-renderer,
+yt-img-shadow.ytd-guide-entry-renderer {
+  margin: 0 !important;
+}
+
+tp-yt-paper-tabs {
+  margin: auto 0 !important;
+}
+
+#guide:not([persistent]) {
+  top: var(--ytd-toolbar-height) !important;
+  
+  #contentContainer {
     background: transparent !important;
+    padding-top: 0 !important;
+  }
+}
+
+#tabsContainer.tp-yt-paper-tabs {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+ytd-app:has(#guide[opened]) {
+  #page-manager {
+    margin-left: var(--app-drawer-width) !important;
+  }
+  
+  &:not(:has(
+  tp-yt-iron-dropdown:not([aria-hidden="true"]),
+  tp-yt-iron-dropdown[aria-disabled="true"],
+  #masthead yt-searchbox > .ytSearchboxComponentInputBoxHasFocus,
+  ytd-voice-search-dialog-renderer #microphone[state],
+  tp-yt-paper-dialog:not([aria-hidden])
+    )) {
+    #page-manager {
+      filter: none !important;
+      pointer-events: auto !important;
+    }
   }
 }
 
@@ -144,33 +259,21 @@ ytd-two-column-browse-results-renderer[page-subtype="playlist"] {
   width: fit-content !important;
 }
 
-/* yt-Transparent header */
-#masthead-container {
-  #background.ytd-masthead {
-    background-color: #00000000 !important;
-  }
-}
-
-.ytSearchboxComponentSearchButton {
-  background-color: var(--yt-spec-text-primary-inverse) !important;
-  color: var(--yt-live-chat-text-input-field-placeholder-color) !important;
-}
-
 /* yt-no voice search */
 #voice-search-button {
   display: none !important;
 }
 
 /* yt-Hide filter chips $ Hide the chips at the top of the feed homepage if unused */
-#chips-wrapper {
-  top: 0 !important;
-}
-
-[page-subtype="home"] .ytd-two-column-browse-results-renderer #header {
+ytd-feed-filter-chip-bar-renderer, yt-related-chip-cloud-renderer {
   display: none !important;
 }
 
-/* yt-early New To You chip */
+ytd-watch-next-secondary-results-renderer #contents > yt-lockup-view-model:first-child {
+  margin-top: 0 !important;
+}
+
+/* yt-early New To You chip */ 
 #chips {
   display: flex !important;
 }
@@ -188,7 +291,7 @@ ytd-two-column-browse-results-renderer[page-subtype="playlist"] {
   order: 1 !important;
 }
 
-/* yt-Compact feed $ Reduce spacing, Show menu button on hover, inline details */
+/* yt-Compact feed $ Reduce spacing, Show menu button on hover, inline details */  
 ytd-rich-item-renderer {
   margin-bottom: 15px !important;
   [rendered-from-rich-grid] {
@@ -211,21 +314,18 @@ ytd-rich-grid-media {
 
   ytd-menu-renderer #button {
     opacity: 0 !important;
-    transition: opacity 0.3s ease-in-out !important;
   }
   :hover ytd-menu-renderer #button {
     opacity: 1 !important;
   }
 }
 
-/* yt-thumbnail hover $ Zoom in the inline thumbnail previews while hovering */
+/* yt-thumbnail hover $ Zoom in the inline thumbnail previews while hovering */ 
 #inline-preview-player {
-  transition: scale 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s !important;
   scale: 1 !important;
 }
 
 #video-preview-container:has(#inline-preview-player) {
-  transition: scale 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   border-radius: 1.2em !important;
   overflow: hidden !important;
   scale: 1 !important;
@@ -234,18 +334,15 @@ ytd-rich-grid-media {
 #video-preview-container:has(#inline-preview-player):hover {
   scale: 1.25 !important;
   box-shadow: #0008 0px 0px 60px;
-  transition: scale 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s !important;
 }
 ytd-app #content {
   opacity: 1 !important;
-  transition: opacity 0.3s ease-in-out !important;
 }
 ytd-app:has(#video-preview-container:hover) #content {
   opacity: 0.5 !important;
-  transition: opacity 4s ease-in-out 1s !important;
 }
 
-/* yt-no distractions $ No shorts and other obsolete sections in the feed */
+/* yt-no distractions $ No shorts and other obsolete sections in the feed */  
 #contents ytd-rich-section-renderer {
   display: none !important;
 }
@@ -255,71 +352,33 @@ ytd-merch-shelf-renderer,
   display: none !important;
 }
 
-/* yt-Transparent video background */
-.html5-main-video,
-.html5-video-container,
-#movie_player,
-#container,
-#ytd-player,
-#player-container,
-#player-full-bleed-container,
-#full-bleed-container,
-ytlr-player {
-  background-color: #00000000 !important;
-  background: transparent !important;
-}
-
-#cinematics {
-  display: none !important;
-}
-
-.ytp-gradient-bottom {
-  display: none !important;
-}
-
 /* yt-no ambient mode */
 #cinematics-container {
   display: none !important;
 }
 
-/* yt-theater: zen view $ Make the theater view video fit the full window size */
-[theater=""] #full-bleed-container {
-  height: 100vh !important;
-  max-height: 100vh !important;
-  top: 0 !important;
-}
-
-#masthead-container,
-#columns #secondary {
-  transition: all 0.3s ease-in-out 0.5s !important;
-}
-
-body:has([fullscreen=""], [theater=""]):not(:has(ytd-watch-flexy[hidden=""])) #masthead-container:not(:has(.ytSearchboxComponentInputBoxHasFocus)) {
-  top: -40px !important;
-  opacity: 0 !important;
-  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
-  &:hover {
-    opacity: 1 !important;
-    top: 0 !important;
+/* yt-theater: zen view $ Make the theater view video fit the full window size */ 
+#content:has(.ytd-page-manager[theater]:not([hidden])) {
+  #masthead-container {
+    position: fixed !important;
+    top: -40px !important;
+    opacity: 0 !important;
+    &:hover {
+      opacity: 1 !important;
+      top: 0 !important;
+    }
+  }
+  
+  .ytd-page-manager, #full-bleed-container {
+    height: 100dvh !important;
+    max-height: 100dvh !important;
   }
 }
 
-ytd-app:has([fullscreen=""], [theater=""]):not(:has(ytd-watch-flexy[hidden=""])) {
-  --ytd-toolbar-height: 0px !important;
-
-  #page-manager {
-    margin: 0 !important;
-  }
-}
-
-/* yt-zen view comments $ In theater mode, move comments to the edge of the video on left or right and show on hover */
+/* yt-zen view comments $ In theater mode, move comments to the edge of the video on left or right and show on hover */ 
 [theater=""] #columns #secondary {
   scale: 0 !important;
   display: none !important;
-}
-
-ytd-comments {
-  transition: all 0.5s ease-in-out !important;
 }
 
 [theater=""] ytd-comments {
@@ -393,6 +452,20 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer) {
   display: none !important;
 }
 
+ytd-mini-guide-renderer[hidden] {
+  display: inline-block !important;
+  transform: translate3d(-100%,0,0) !important;;
+  pointer-events: none !important;
+}
+
+#guide[persistent] #header {
+  display: none !important;
+}
+
+.ytGridShelfViewModelHostHasBottomButton {
+  border-color: transparent !important;
+}
+
 /* yt-better captions $ Caption background has blur */
 .caption-window {
   backdrop-filter: blur(10px) brightness(70%) !important;
@@ -407,8 +480,8 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer) {
   display: initial !important;
 }
 
-/* yt-fix new feed layout $ Revert the new ugly feed layout that barely fits 3 columns of videos */
-ytd-rich-item-renderer[rendered-from-rich-grid] {
+/* yt-fix new feed layout $ Revert the new ugly feed layout that barely fits 3 columns of videos */ 
+ytd-rich-item-renderer[rendered-from-rich-grid], ytd-ghost-grid-renderer {
   @media only screen and (min-width: 1400px) {
     --ytd-rich-grid-items-per-row: 4 !important;
 
@@ -422,20 +495,15 @@ ytd-rich-item-renderer[rendered-from-rich-grid] {
   }
 }
 
-ytd-rich-item-renderer[is-in-first-column=""] {
-  margin-left: calc(var(--ytd-rich-grid-item-margin) / 2) !important;
+ytd-rich-item-renderer[rendered-from-rich-grid][is-in-first-column] {
+  margin-left: calc(var(--ytd-rich-grid-item-margin)/2) !important;
 }
 
-#contents {
-  padding-left: calc(var(--ytd-rich-grid-item-margin) / 2 + var(--ytd-rich-grid-gutter-margin)) !important;
+#primary > ytd-rich-grid-renderer > #contents {
+  margin-left: calc(var(--ytd-rich-grid-item-margin)/2 + var(--ytd-rich-grid-gutter-margin)) !important;
 }
 
-/* yt-Immersive search $ Smooth blur and zoom effect for searhbar */
-#page-manager,
-yt-searchbox {
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
-}
-
+/* yt-Immersive search $ Smooth blur and zoom effect for searhbar */ 
 #masthead yt-searchbox button[aria-label="Search"] {
   display: none !important;
 }
@@ -444,53 +512,37 @@ yt-searchbox {
   border-radius: 2em !important;
 }
 
-yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
-  position: relative !important;
-  left: 0vw !important;
-  top: -30vh !important;
-
-  height: 40px !important;
-  max-width: 600px !important;
-  scale: 1 !important;
-
-  @media only screen and (min-width: 1400px) {
-    height: 60px !important;
-    max-width: 700px !important;
+#masthead:has(yt-searchbox > .ytSearchboxComponentInputBoxHasFocus) {
+  > #container > #center {
+    height: 100dvh !important;
+    width: 100dvw !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+  
+  yt-searchbox {
+    position: relative !important;
+    left: 0 !important;
+    height: 40px !important;
+    top: 0 !important;
+    max-width: 60dvw !important;
     scale: 1.1 !important;
-  }
-
-  .ytSearchboxComponentInputBox,
-  #i0 {
-    background-color: #fffb !important;
-
-    @media (prefers-color-scheme: dark) {
-      background-color: #000b !important;
+    margin-top: 30vh !important;
+    
+    
+    @media only screen and (max-width: 656px) {
+      margin-left: 0 !important;
     }
-
-    box-shadow: black 0 0 30px !important;
-  }
-
-  #i0 {
-    margin-top: 10px !important;
 
     @media only screen and (min-width: 1400px) {
-      margin-top: 30px !important;
+      height: 60px !important;
+      max-width: 50dvw !important;
+    
+      .ytSearchboxComponentSuggestionsContainer {
+        margin-top: 30px !important;
+      }
     }
   }
-}
-
-.ytd-masthead #center:has(.ytSearchboxComponentInputBoxHasFocus) {
-  height: 100vh !important;
-  width: 100vw !important;
-  left: 0 !important;
-  top: 0 !important;
-  position: fixed !important;
-  justify-content: center !important;
-}
-
-#content:has(.ytSearchboxComponentInputBoxHasFocus) #page-manager {
-  filter: blur(20px) !important;
-  scale: 1.05 !important;
 }
 
 /* yt-Addon : Viewstats */
@@ -510,7 +562,6 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
 .__youtube-timestamps__stamp {
   scale: 3 !important;
   border-radius: 1.5px !important;
-  transition: all 0.3s ease-in-out !important;
   z-index: 10000000000000 !important;
 
   &:hover {
@@ -560,7 +611,6 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
     margin-bottom: 1em !important;
     border-radius: 1em !important;
     max-width: 40em !important;
-    transition: all 0.4s ease-in-out !important;
 
     .likes-and-replies {
       opacity: 0.3 !important;
@@ -593,4 +643,25 @@ ytlr-surface-page::before {
 ytlr-compact-link-renderer {
   background-color: transparent !important;
   font-size: 0.7em !important;
+}
+
+/*yt-Animations*/ 
+#content > #guide,
+#guide > #contentContainer,
+#masthead-container,
+#page-manager,
+#masthead-container yt-searchbox,
+#masthead-container yt-searchbox > .ytSearchboxComponentInputBox,
+#masthead #center,
+ytd-mini-guide-renderer,
+ytd-menu-renderer #button,
+#inline-preview-player, 
+#video-preview-container,
+ytd-app #content,
+#columns #secondary,
+ytd-comments,
+.__youtube-timestamps__stamp,
+div.clickable-comment,
+div.replies {
+  transition: all 0.6s cubic-bezier(0.85, 0, 0.15, 1) !important;
 }
