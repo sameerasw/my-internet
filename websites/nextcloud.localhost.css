@@ -1,4 +1,4 @@
-/* transparency */
+/* nc-transparency */
 html, body, 
 .app-navigation, /* @ sidebar in files */
 .content-list__search, .text-menubar, .text-menubar--ready, 
@@ -24,6 +24,7 @@ html, body,
 .memories-top-bar {
   background: rgba(23, 23, 23, 0.9) !important;
   background-color: rgba(23, 23, 23, 0.9) !important;
+  border-radius: 12px !important;
 }
 
 /* @ popup menu carret */
