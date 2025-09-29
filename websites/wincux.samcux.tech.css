@@ -1,0 +1,14 @@
+/* transparency */
+.features-section, :root, .download-all-section {
+  background-color: transparent !important;
+   --background: transparent !important;
+  --foreground: #f8f7fd !important;
+  --border: #2a2438 !important;
+  --dark: #f8f7fd !important;
+  --muted-foreground: #9ca3af !important;
+}
+
+/* no footer */
+footer {
+  display: none !important;
+}
