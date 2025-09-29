@@ -14,8 +14,8 @@ a {
 
 /* anchor hover */
 a:not(#donate):hover {
-    color: #85559f !important;
-    text-decoration: underline !important;
+  color: #85559f !important;
+  text-decoration: underline !important;
 }
 
 /* no javascript text */
