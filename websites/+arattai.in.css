@@ -1,0 +1,170 @@
+/* at-Transparency */
+body,
+.qr-container,
+#background_bg,
+#rtcpconference .zc-av-header, 
+#rtcpconference .smartconf-ftr,
+#rtcpconference .smartconf-spotlight-mode .smartconf-main,
+.amc-menu-item,
+.zcl-menu-item {
+  background-color: transparent !important;
+}
+
+:root .arattai-classic [data-classic="arattai-classic"],
+.am-nitemode {
+  --am-bg-color-main: transparent !important;
+  --bg-color-1: transparent !important; 
+  --bg-color-3: transparent !important;
+  --am-bg-color-1: transparent !important;
+  --am-bg-color-2: transparent !important;
+  --am-bg-color-3: transparent !important;
+  --lhs-bg-color: transparent !important;
+  --am-meeting-det-bg: transparent !important;
+  --am-bg-chatwindow: transparent !important;
+  --am-overlay-bg: transparent !important;
+  --am-bdr-chatwindow: transparent !important;
+  --chatwindow-bg-color: transparent !important;
+  --chatwindow-hdr-bg-color: transparent !important;
+  --am-container-bg: transparent !important;
+  --am-media-list-bg: transparent !important;
+  --sticky-bg: transparent !important;
+  --custom-background: transparent !important;
+  --am-btn-secondary-bg: transparent !important;
+  --other-msg-bg: #2B2B2B66 !important;
+  --self-msg-bg: #0B394D66 !important;
+  --am-color-theme-hover-bg-updated: #0B394D66 !important;
+  --am-image-viewer-bg: transparent !important;
+  --overlay-bg-dark: transparent !important;
+}
+
+/* at-Glass Effect */ 
+:root .arattai-classic [data-classic="arattai-classic"],
+.am-nitemode {
+  --am-dialog-bg: hsla(0, 0%, 100%, 0.08) !important;
+  --am-color-hover1: hsla(0, 0%, 100%, 0.08) !important;
+  --am-color-theme-selected-bg: hsla(0, 0%, 100%, 0.08) !important;
+  --am-color-theme-hover-bg: hsla(0, 0%, 100%, 0.08) !important;
+  --chatwindow-composer-bg: hsla(0, 0%, 100%, 0.08) !important;
+  --am-color-mode: hsla(0, 0%, 100%, 0.08) !important;
+  --am-menu-color: hsla(0, 0%, 100%, 0.08) !important;
+  --lhs-icon-bg-hover: hsla(0, 0%, 100%, 0.08) !important;
+  --info-msg-bg: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+.login-container, 
+.signin_container,
+#signin_flow,
+.textbox,
+.selectbox_options_container, .selectbox_options {
+  background: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+div[purpose="message_actions"] {
+  --bg-color-1: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+/* at-Immersive Popup */
+body {
+  &:has(> div[jsid="country_code_select"]){
+    #nextbtn {
+      filter: blur(20px) !important;
+    }
+  }
+  
+  &:has(
+  > #imgviewer[style="display: block;"],
+  #app[data-v-874ed99a] > div > .amc-recipients-container,
+  #app[data-v-874ed99a] > div > div[data-vue-dialogcomponent],
+  #app[data-v-874ed99a] > div > .art-dialog-wrapper
+  ) {
+    #officechat,
+    #lhs-rail,
+    #lhsOverlay {
+      filter: blur(20px) !important;
+    }
+  }
+  
+  &:has(
+  #app[data-v-874ed99a] > div > .amc-image-viewer
+  ) {
+    #lhs-rail,
+    #app[data-v-874ed99a] > div > .am-wrapper {
+      filter: blur(20px) !important;
+    }
+  }
+  
+  &:has(#am-modal-container > .amc-image-viewer) {
+    #am-modal-container {
+      background-color: transparent !important;
+    }
+    #am-modal-container > div:nth-child(-n+4) {
+      opacity: 0 !important;
+    }
+  }
+  
+  &:has(.amc-posrel > .active) {
+    #leftpannel #art-chats,
+    #leftpannel #chatlist-header > .amc-form,
+    #overlay_secondary > div > div:nth-child(n+2) {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+  
+  & #chatwindows:has(.art-selected) {
+    #chatbody {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+  
+  &:has(#lhs-rail .amc-posrel > .active) {
+    .art-rail-bottom-actions > .art-lhs-module {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+  
+  &:has(#art-smiley-container) {
+    #art-msgarea-container) {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+}
+
+/* at-Misc */
+#art-modal-view > .smileydivmn {
+  --bg-color-1: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+.art-filters-wrapper {
+  position: relative !important;
+}
+
+#art-chats.amc-ovrflwA {
+  overflow-y: hidden !important;
+}
+
+#art-chats .amc-flex-col {
+  overflow-y: auto !important;
+}
+
+body {
+  &:has(#lhsOverlay > #overlay_secondary) {
+    #officechat {
+      display: none !important;
+    }
+  }
+  
+  &:has(#lhs_globalsearch) {
+    #art-chats {
+      display: none !important;
+    }
+  }
+}
+
+/* at-No Footer */
+#footer {
+  display: none !important;
+}
