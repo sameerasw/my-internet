@@ -2,12 +2,20 @@
 body,
 .qr-container,
 #background_bg,
-#rtcpconference .zc-av-header,
-#rtcpconference .smartconf-ftr,
-#rtcpconference .smartconf-spotlight-mode .smartconf-main,
-.amc-menu-item,
-.zcl-menu-item {
+.zc-av-header,
+.smartconf-ftr,
+.smartconf-main,
+#screenshare_container,
+:fullscreen:not(:root)::backdrop {
   background-color: transparent !important;
+}
+
+#quoteui,
+.AV-call-fullscrn,
+.AV-call-fullscrn .AV-call-main,
+.AV-call-new-header,
+.AV-call-new-footer {
+  background: none !important;
 }
 
 :root .arattai-classic [data-classic="arattai-classic"],
@@ -38,6 +46,12 @@ body,
 }
 
 /* at-Glass Effect */
+.amc-menu-item,
+.zcl-menu-item,
+.zcoverlay > :last-child::before {
+  background-color: transparent !important;
+}
+
 :root .arattai-classic [data-classic="arattai-classic"],
 .am-nitemode {
   --am-dialog-bg: hsla(0, 0%, 100%, 0.08) !important;
@@ -49,6 +63,7 @@ body,
   --am-menu-color: hsla(0, 0%, 100%, 0.08) !important;
   --lhs-icon-bg-hover: hsla(0, 0%, 100%, 0.08) !important;
   --info-msg-bg: hsla(0, 0%, 100%, 0.08) !important;
+  --bg-hover-color: hsla(0, 0%, 100%, 0.08) !important;
 }
 
 .login-container,
@@ -56,7 +71,15 @@ body,
 #signin_flow,
 .textbox,
 .selectbox_options_container,
-.selectbox_options {
+.selectbox_options,
+.zcl-menu-item:hover,
+a .modalwindow > div,
+.AV-call-info,
+.AV-call-options,
+.AV-call-mini-btn,
+.AV-call-newbox,
+.AV-call-ssfullscrn-optn,
+.AV-call-miniplayer-header-cnt :is(.zcf-maximize, .AV-call-subtimer, .AV-alert-indicator) {
   background: hsla(0, 0%, 100%, 0.08) !important;
 }
 
@@ -64,8 +87,21 @@ div[purpose="message_actions"] {
   --bg-color-1: hsla(0, 0%, 100%, 0.08) !important;
 }
 
+.AV-call-info,
+.AV-call-options,
+.AV-call-miniplayer-header-cnt :is(.zcf-maximize, .AV-call-subtimer, .AV-alert-indicator) {
+  backdrop-filter: blur(4px) !important;
+}
+
 /* at-Immersive Popup */
 body {
+  &:has(#quoteui) {
+    #officechat,
+    #lhs-rail {
+      display: none !important;
+    }
+  }
+
   &:has(> div[jsid="country_code_select"]) {
     #nextbtn {
       filter: blur(20px) !important;
@@ -73,6 +109,8 @@ body {
   }
 
   &:has(
+    #mediaerrorpopup,
+    #mediacall_container > .AV-call-wrapper.AV-call-fullscrn,
     > #imgviewer[style="display: block;"],
     #app[data-v-874ed99a] > div > .amc-recipients-container,
     #app[data-v-874ed99a] > div > div[data-vue-dialogcomponent],
@@ -124,8 +162,9 @@ body {
     }
   }
 
-  &:has(#art-smiley-container) {
-    #art-msgarea-container) {
+  &:has(#art-smiley-container, .msg-actions-hover.zcvsble) {
+    #art-msgarea-container,
+    .msg-contnr.in-view:not(> div > div.zcvsble) {
       filter: blur(20px) !important;
       pointer-events: none !important;
     }
@@ -151,8 +190,8 @@ body {
 
 body {
   &:has(#lhsOverlay > #overlay_secondary) {
-    #officechat {
-      display: none !important;
+    #leftpannel {
+      opacity: 0 !important;
     }
   }
 
