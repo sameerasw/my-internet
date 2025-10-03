@@ -5,6 +5,7 @@ body,
 .zc-av-header,
 .smartconf-ftr,
 .smartconf-main,
+.amc-posstky-label,
 #screenshare_container,
 :fullscreen:not(:root)::backdrop {
   background-color: transparent !important;
@@ -48,7 +49,9 @@ body,
 /* at-Glass Effect */
 .amc-menu-item,
 .zcl-menu-item,
-.zcoverlay > :last-child::before {
+.zcoverlay > :last-child::before,
+.amc-action .amc-action,
+.amc-missed-call-bg {
   background-color: transparent !important;
 }
 
@@ -74,12 +77,15 @@ body,
 .selectbox_options,
 .zcl-menu-item:hover,
 .modalwindow > div,
+.amc-list-menu,
 .AV-call-info,
 .AV-call-options,
 .AV-call-mini-btn,
 .AV-call-newbox,
 .AV-call-ssfullscrn-optn,
-.AV-call-miniplayer-header-cnt :is(.zcf-maximize, .AV-call-subtimer, .AV-alert-indicator) {
+.AV-call-miniplayer-header-cnt :is(.zcf-maximize, .AV-call-subtimer, .AV-alert-indicator),
+.amc-missed-call-bg:hover,
+.msg-actions-hover {
   background: hsla(0, 0%, 100%, 0.08) !important;
 }
 
@@ -94,6 +100,11 @@ div[purpose="message_actions"] {
 }
 
 /* at-Immersive Popup */
+#wms_theatremode_overlay,
+#wms_theatremode > .mc183cf01f_videoplayer_container {
+  background-color: transparent !important;
+}
+
 body {
   &:has(#quoteui) {
     #officechat,
@@ -110,6 +121,7 @@ body {
 
   &:has(
     #mediaerrorpopup,
+    > #wms_theatre_mountpoint,
     #mediacall_container > .AV-call-wrapper.AV-call-fullscrn,
     > #imgviewer[style="display: block;"],
     #app[data-v-874ed99a] > div > .amc-recipients-container,
@@ -162,11 +174,25 @@ body {
     }
   }
 
-  &:has(#art-smiley-container, .msg-actions-hover.zcvsble) {
-    #art-msgarea-container,
-    .msg-contnr.in-view:not(> div > div.zcvsble) {
+  &:has(#art-smiley-container) {
+    #midcontainer {
       filter: blur(20px) !important;
       pointer-events: none !important;
+    }
+  }
+}
+
+#art-msgarea-container:has(#msgarea > div > .in-view .msg-opt-list) {
+  overflow-y: hidden !important;
+
+  #msgarea > div > .in-view:not(:has(.msg-opt-list)) {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+
+  @media screen and (max-width: 1300px) {
+    #msgarea > div > .in-view > div > span {
+      filter: blur(20px) !important;
     }
   }
 }
@@ -176,7 +202,8 @@ body {
   --bg-color-1: hsla(0, 0%, 100%, 0.08) !important;
 }
 
-.art-filters-wrapper {
+.art-filters-wrapper,
+.amc-posstky-label {
   position: relative !important;
 }
 
