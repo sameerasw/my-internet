@@ -19,32 +19,35 @@ body,
   background: none !important;
 }
 
-:root .arattai-classic [data-classic="arattai-classic"],
+#leftpannel,
+#overlay_secondary,
+.am-leftbar,
+.art-lhs-modules-container,
 .am-nitemode {
   --am-bg-color-main: transparent !important;
-  --bg-color-1: transparent !important;
-  --bg-color-3: transparent !important;
   --am-bg-color-1: transparent !important;
   --am-bg-color-2: transparent !important;
   --am-bg-color-3: transparent !important;
-  --lhs-bg-color: transparent !important;
   --am-meeting-det-bg: transparent !important;
   --am-bg-chatwindow: transparent !important;
   --am-overlay-bg: transparent !important;
   --am-bdr-chatwindow: transparent !important;
-  --chatwindow-bg-color: transparent !important;
-  --chatwindow-hdr-bg-color: transparent !important;
   --am-container-bg: transparent !important;
   --am-media-list-bg: transparent !important;
-  --sticky-bg: transparent !important;
-  --custom-background: transparent !important;
   --am-btn-secondary-bg: transparent !important;
-  --other-msg-bg: #2b2b2b66 !important;
-  --self-msg-bg: #0b394d66 !important;
   --am-color-theme-hover-bg-updated: #0b394d66 !important;
   --am-image-viewer-bg: transparent !important;
-  --overlay-bg-dark: transparent !important;
   --am-rec-card-bg: transparent !important;
+  --bg-color-1: transparent !important;
+  --bg-color-3: transparent !important;
+  --lhs-bg-color: transparent !important;
+  --chatwindow-bg-color: transparent !important;
+  --chatwindow-hdr-bg-color: transparent !important;
+  --sticky-bg: transparent !important;
+  --custom-background: transparent !important;
+  --other-msg-bg: #2b2b2b66 !important;
+  --self-msg-bg: #0b394d66 !important;
+  --overlay-bg-dark: transparent !important;
 }
 
 /* at-Glass Effect */
@@ -56,18 +59,41 @@ body,
   background-color: transparent !important;
 }
 
-:root .arattai-classic [data-classic="arattai-classic"],
+:root {
+  --color-highlight: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+#leftpannel,
+#overlay_secondary,
+.am-leftbar,
+.art-lhs-modules-container,
 .am-nitemode {
-  --am-dialog-bg: hsla(0, 0%, 100%, 0.08) !important;
-  --am-color-hover1: hsla(0, 0%, 100%, 0.08) !important;
-  --am-color-theme-selected-bg: hsla(0, 0%, 100%, 0.08) !important;
-  --am-color-theme-hover-bg: hsla(0, 0%, 100%, 0.08) !important;
-  --chatwindow-composer-bg: hsla(0, 0%, 100%, 0.08) !important;
-  --am-color-mode: hsla(0, 0%, 100%, 0.08) !important;
-  --am-menu-color: hsla(0, 0%, 100%, 0.08) !important;
-  --lhs-icon-bg-hover: hsla(0, 0%, 100%, 0.08) !important;
-  --info-msg-bg: hsla(0, 0%, 100%, 0.08) !important;
-  --bg-hover-color: hsla(0, 0%, 100%, 0.08) !important;
+  --am-dialog-bg: var(--color-highlight) !important;
+  --am-color-hover1: var(--color-highlight) !important;
+  --am-color-hover2: var(--color-highlight) !important;
+  --am-color-hover3: var(--color-highlight) !important;
+  --am-color-theme-selected-bg: var(--color-highlight) !important;
+  --am-color-theme-hover-bg: var(--color-highlight) !important;
+  --am-color-mode: var(--color-highlight) !important;
+  --am-menu-color: var(--color-highlight) !important;
+  --am-color-divider: var(--color-highlight) !important;
+  --am-border-color: var(--color-highlight) !important;
+  --am-tab-border-color: var(--color-highlight) !important;
+  --am-recurrence-border-color: var(--color-highlight) !important;
+  --am-meeting-card-border: var(--color-highlight) !important;
+  --am-cropper-border-bg: var(--color-highlight) !important;
+  --am-border-color-1: var(--color-highlight) !important;
+  --am-border-color-2: var(--color-highlight) !important;
+  --am-btn-primary-active: var(--color-highlight) !important;
+  --am-btn-negative-active: var(--color-highlight) !important;
+  --am-btn-secondary-hover-bg: var(--color-highlight) !important;
+  --chatwindow-composer-bg: var(--color-highlight) !important;
+  --lhs-icon-bg-hover: var(--color-highlight) !important;
+  --info-msg-bg: var(--color-highlight) !important;
+  --bg-hover-color: var(--color-highlight) !important;
+  --input-border-color: var(--color-highlight) !important;
+  --am-input-border-color1: var(--color-highlight) !important;
+  --lhs-border-color: var(--color-highlight) !important;
 }
 
 .login-container,
@@ -84,20 +110,27 @@ body,
 .AV-call-mini-btn,
 .AV-call-newbox,
 .AV-call-ssfullscrn-optn,
-.AV-call-miniplayer-header-cnt :is(.zcf-maximize, .AV-call-subtimer, .AV-alert-indicator),
+.AV-call-miniplayer-header-cnt
+  :is(.zcf-maximize, .AV-call-subtimer, .AV-alert-indicator),
 .amc-missed-call-bg:hover,
-.msg-actions-hover {
-  background: hsla(0, 0%, 100%, 0.08) !important;
+.msg-actions-hover,
+.amc-range-calndr {
+  background: var(--color-highlight) !important;
 }
 
 div[purpose="message_actions"] {
-  --bg-color-1: hsla(0, 0%, 100%, 0.08) !important;
+  --bg-color-1: var(--color-highlight) !important;
 }
 
 .AV-call-info,
 .AV-call-options,
-.AV-call-miniplayer-header-cnt :is(.zcf-maximize, .AV-call-subtimer, .AV-alert-indicator) {
+.AV-call-miniplayer-header-cnt
+  :is(.zcf-maximize, .AV-call-subtimer, .AV-alert-indicator) {
   backdrop-filter: blur(4px) !important;
+}
+
+.art-rail-dp::before {
+  border-color: var(--color-highlight) !important;
 }
 
 /* at-Immersive Popup */
@@ -161,13 +194,6 @@ body {
     }
   }
 
-  & #chatwindows:has(.art-selected) {
-    #chatbody {
-      filter: blur(20px) !important;
-      pointer-events: none !important;
-    }
-  }
-
   &:has(#lhs-rail .amc-posrel > .active) {
     .art-rail-bottom-actions > .art-lhs-module {
       filter: blur(20px) !important;
@@ -180,6 +206,20 @@ body {
       filter: blur(20px) !important;
       pointer-events: none !important;
     }
+  }
+}
+
+#chatwindows:has(.art-selected) {
+  #chatbody {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+}
+
+#overlay_secondary:has(.amc-range-calndr) {
+  .am-meeting-list {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
   }
 }
 
@@ -200,7 +240,7 @@ body {
 
 /* at-Misc */
 #art-modal-view > .smileydivmn {
-  --bg-color-1: hsla(0, 0%, 100%, 0.08) !important;
+  --bg-color-1: var(--color-highlight) !important;
 }
 
 .art-filters-wrapper,
