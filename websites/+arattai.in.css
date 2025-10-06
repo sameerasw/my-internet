@@ -142,7 +142,8 @@ div[purpose="message_actions"] {
 body {
   &:has(#quoteui) {
     #officechat,
-    #lhs-rail {
+    #lhs-rail,
+    #app {
       display: none !important;
     }
   }
