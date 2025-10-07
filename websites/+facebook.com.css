@@ -26,7 +26,7 @@ input,
   --card-background: transparent !important;
   --comment-background: transparent !important;
   --messenger-card-background: transparent !important;
-  --web-wash:  transparent !important;
+  --web-wash: transparent !important;
 }
 
 /* fb-Glass Effect */
@@ -35,7 +35,7 @@ input,
 ._55r1,
 ._1gax,
 ._59s7 {
-  background-color: rgba(255,255,255,0.1) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 :root,
@@ -45,10 +45,10 @@ input,
 .xezm23g,
 .__fb-dark-mode,
 .__fb-light-mode {
-  --card-background: rgba(255,255,255,0.1) !important;
-  --comment-background: rgba(255,255,255,0.1) !important;
-  --messenger-card-background: rgba(255,255,255,0.1) !important;
-  --secondary-button-background: rgba(255,255,255,0.1) !important;
+  --card-background: rgba(255, 255, 255, 0.1) !important;
+  --comment-background: rgba(255, 255, 255, 0.1) !important;
+  --messenger-card-background: rgba(255, 255, 255, 0.1) !important;
+  --secondary-button-background: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* fb-Fix Overlapping Header */
@@ -67,9 +67,11 @@ body:not(:has([role="dialog"] [role="main"])) {
 
 /* fb-Immersive Popup */
 body:has(
-  [role="dialog"]:not([aria-label="Photo viewer"]),
-  [role="menu"],
-  [role="none"][tabindex]
+  [aria-label="Account controls and settings"] [role="button"][aria-expanded="true"],
+  [role="complementary"] [role="button"][aria-expanded="true"],
+  [aria-haspopup="menu"][aria-expanded="true"],
+  [role="none"][tabindex="-1"],
+  > div.__fb-dark-mode:not(:empty)
 ) {
   #globalContainer,
   #scrollview,
@@ -87,6 +89,7 @@ span[aria-hidden="true"] {
 }
 
 /* fb-No Footer */
-._95ke {
+._95ke,
+footer {
   display: none !important;
 }
