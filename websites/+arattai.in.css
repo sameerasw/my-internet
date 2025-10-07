@@ -1,4 +1,4 @@
-/* at-Transparency */
+/* am-Transparency */
 body,
 .qr-container,
 #background_bg,
@@ -7,7 +7,18 @@ body,
 .smartconf-main,
 .amc-posstky-label,
 #screenshare_container,
-:fullscreen:not(:root)::backdrop {
+:fullscreen:not(:root)::backdrop,
+.zwc-pagewrapper,
+header,
+.zwrapper,
+.zw-product-header,
+.content-wrap,
+.z-bottom-cta-menu,
+.mobile-menu-icon1,
+.z-bottom-cta-menu a,
+.zwc-faq-wrap,
+.zwc-faq-wrap::before,
+.zwc-footer-sectionwrap {
   background-color: transparent !important;
 }
 
@@ -48,94 +59,14 @@ body,
   --other-msg-bg: #2b2b2b66 !important;
   --self-msg-bg: #0b394d66 !important;
   --overlay-bg-dark: transparent !important;
+  --light-footer-bg: transparent !important;
 }
 
-/* at-Glass Effect */
-.amc-menu-item,
-.zcl-menu-item,
-.zcoverlay > :last-child::before,
-.amc-action .amc-action,
-.amc-missed-call-bg {
-  background-color: transparent !important;
-}
-
-:root {
-  --color-highlight: hsla(0, 0%, 100%, 0.08) !important;
-}
-
-#leftpannel,
-#overlay_secondary,
-.am-leftbar,
-.art-lhs-modules-container,
-.am-nitemode {
-  --am-dialog-bg: var(--color-highlight) !important;
-  --am-color-hover1: var(--color-highlight) !important;
-  --am-color-hover2: var(--color-highlight) !important;
-  --am-color-hover3: var(--color-highlight) !important;
-  --am-color-theme-selected-bg: var(--color-highlight) !important;
-  --am-color-theme-hover-bg: var(--color-highlight) !important;
-  --am-color-mode: var(--color-highlight) !important;
-  --am-menu-color: var(--color-highlight) !important;
-  --am-color-divider: var(--color-highlight) !important;
-  --am-border-color: var(--color-highlight) !important;
-  --am-tab-border-color: var(--color-highlight) !important;
-  --am-recurrence-border-color: var(--color-highlight) !important;
-  --am-meeting-card-border: var(--color-highlight) !important;
-  --am-cropper-border-bg: var(--color-highlight) !important;
-  --am-border-color-1: var(--color-highlight) !important;
-  --am-border-color-2: var(--color-highlight) !important;
-  --am-btn-primary-active: var(--color-highlight) !important;
-  --am-btn-negative-active: var(--color-highlight) !important;
-  --am-btn-secondary-hover-bg: var(--color-highlight) !important;
-  --chatwindow-composer-bg: var(--color-highlight) !important;
-  --lhs-icon-bg-hover: var(--color-highlight) !important;
-  --info-msg-bg: var(--color-highlight) !important;
-  --bg-hover-color: var(--color-highlight) !important;
-  --input-border-color: var(--color-highlight) !important;
-  --am-input-border-color1: var(--color-highlight) !important;
-  --lhs-border-color: var(--color-highlight) !important;
-}
-
-.login-container,
-.signin_container,
-#signin_flow,
-.textbox,
-.selectbox_options_container,
-.selectbox_options,
-.zcl-menu-item:hover,
-.modalwindow > div,
-.amc-list-menu,
-.AV-call-info,
-.AV-call-options,
-.AV-call-mini-btn,
-.AV-call-newbox,
-.AV-call-ssfullscrn-optn,
-.AV-call-miniplayer-header-cnt
-  :is(.zcf-maximize, .AV-call-subtimer, .AV-alert-indicator),
-.amc-missed-call-bg:hover,
-.msg-actions-hover,
-.amc-range-calndr {
-  background: var(--color-highlight) !important;
-}
-
-div[purpose="message_actions"] {
-  --bg-color-1: var(--color-highlight) !important;
-}
-
-.AV-call-info,
-.AV-call-options,
-.AV-call-miniplayer-header-cnt
-  :is(.zcf-maximize, .AV-call-subtimer, .AV-alert-indicator) {
-  backdrop-filter: blur(4px) !important;
-}
-
-.art-rail-dp::before {
-  border-color: var(--color-highlight) !important;
-}
-
-/* at-Immersive Popup */
+/* am-Immersive Popup */
 #wms_theatremode_overlay,
-#wms_theatremode > .mc183cf01f_videoplayer_container {
+#wms_theatremode > .mc183cf01f_videoplayer_container,
+.zmobile-menu-new-inner,
+.dropdown-menu {
   background-color: transparent !important;
 }
 
@@ -208,6 +139,13 @@ body {
       pointer-events: none !important;
     }
   }
+
+  &:has(.dropdown.active, .zmobile-menu-new-inner.zshow) {
+    main {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
 }
 
 #chatwindows:has(.art-selected) {
@@ -239,11 +177,95 @@ body {
   }
 }
 
-/* at-Misc */
-#art-modal-view > .smileydivmn {
+/* am-Glass Effect */
+.amc-menu-item,
+.zcl-menu-item,
+.zcoverlay > :last-child::before,
+.amc-action .amc-action,
+.amc-missed-call-bg,
+.dropdown-menu > li > a {
+  background-color: transparent !important;
+}
+
+:root {
+  --color-highlight: hsla(0, 0%, 100%, 0.08) !important;
+  --border-color: var(--color-highlight) !important;
+}
+
+#leftpannel,
+#overlay_secondary,
+.am-leftbar,
+.art-lhs-modules-container,
+.am-nitemode {
+  --am-dialog-bg: var(--color-highlight) !important;
+  --am-color-hover1: var(--color-highlight) !important;
+  --am-color-hover2: var(--color-highlight) !important;
+  --am-color-hover3: var(--color-highlight) !important;
+  --am-color-theme-selected-bg: var(--color-highlight) !important;
+  --am-color-theme-hover-bg: var(--color-highlight) !important;
+  --am-color-mode: var(--color-highlight) !important;
+  --am-menu-color: var(--color-highlight) !important;
+  --am-color-divider: var(--color-highlight) !important;
+  --am-border-color: var(--color-highlight) !important;
+  --am-tab-border-color: var(--color-highlight) !important;
+  --am-recurrence-border-color: var(--color-highlight) !important;
+  --am-meeting-card-border: var(--color-highlight) !important;
+  --am-cropper-border-bg: var(--color-highlight) !important;
+  --am-border-color-1: var(--color-highlight) !important;
+  --am-border-color-2: var(--color-highlight) !important;
+  --am-btn-primary-active: var(--color-highlight) !important;
+  --am-btn-negative-active: var(--color-highlight) !important;
+  --am-btn-secondary-hover-bg: var(--color-highlight) !important;
+  --chatwindow-composer-bg: var(--color-highlight) !important;
+  --lhs-icon-bg-hover: var(--color-highlight) !important;
+  --info-msg-bg: var(--color-highlight) !important;
+  --bg-hover-color: var(--color-highlight) !important;
+  --input-border-color: var(--color-highlight) !important;
+  --am-input-border-color1: var(--color-highlight) !important;
+  --lhs-border-color: var(--color-highlight) !important;
+}
+
+.login-container,
+.signin_container,
+#signin_flow,
+.textbox,
+.selectbox_options_container,
+.selectbox_options,
+.zcl-menu-item:hover,
+.modalwindow > div,
+.amc-list-menu,
+.AV-call-info,
+.AV-call-options,
+.AV-call-mini-btn,
+.AV-call-newbox,
+.AV-call-ssfullscrn-optn,
+.AV-call-miniplayer-header-cnt :is(.zcf-maximize, .AV-call-subtimer, .AV-alert-indicator),
+.amc-missed-call-bg:hover,
+.msg-actions-hover,
+.amc-range-calndr,
+.z-bottom-cta-menu a,
+.zmobile-menu-new-inner,
+.dropdown-menu,
+.dropdown-menu > li > a:hover {
+  background-color: var(--color-highlight) !important;
+}
+
+div[purpose="message_actions"] {
   --bg-color-1: var(--color-highlight) !important;
 }
 
+.AV-call-info,
+.AV-call-options,
+.AV-call-miniplayer-header-cnt :is(.zcf-maximize, .AV-call-subtimer, .AV-alert-indicator) {
+  backdrop-filter: blur(4px) !important;
+}
+
+.art-rail-dp::before,
+.content-wrap.active {
+  border-color: var(--color-highlight) !important;
+}
+
+/* zw-Fix Overlappings */
 .art-filters-wrapper,
 .amc-posstky-label {
   position: relative !important;
@@ -255,6 +277,38 @@ body {
 
 #art-chats .amc-flex-col {
   overflow-y: auto !important;
+}
+
+body {
+  overflow-y: hidden !important;
+}
+
+main {
+  height: calc(100dvh - 68px) !important;
+  overflow-y: auto !important;
+}
+
+.zw-product-header .content-wrap {
+  position: relative !important;
+}
+
+.zw-product-header {
+  padding-block: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  main {
+    height: calc(100dvh - 106px) !important;
+  }
+
+  .z-bottom-cta-menu {
+    position: relative !important;
+  }
+}
+
+/* am-Misc */
+#art-modal-view > .smileydivmn {
+  --bg-color-1: var(--color-highlight) !important;
 }
 
 body {
@@ -271,7 +325,12 @@ body {
   }
 }
 
-/* at-No Footer */
-#footer {
+.am-main:has(.amc-meeting-detail, .amc-recording-detail) > :first-child {
+  display: none !important;
+}
+
+/* am-No Footer */
+#footer,
+footer {
   display: none !important;
 }
