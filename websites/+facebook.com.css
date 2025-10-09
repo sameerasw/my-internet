@@ -1,26 +1,95 @@
-/* fb-transparency */
-:root {
-  --web-wash: #00000000 !important;
-  --nav-bar-background: #00000000 !important;
-}
-
+/* fb-Transparency */
 body,
-#mount_0_0_u1 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) {
-  background-color: #00000000 !important;
-  transition:
-    background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
-    border 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out !important;
+input,
+._95k9,
+._4t2a,
+._4-i2,
+[role="link"] > div,
+.html-span > div .x1jx94hy,
+.xcrg951[role="presentation"],
+[role="dialog"] .x1jx94hy {
+  background-color: transparent !important;
 }
 
-/* fb-other changes */
+:root,
+.x2bj2ny,
+.x1jx94hy,
+.x1h0vfkc,
+.xezm23g,
+.__fb-dark-mode,
+.__fb-light-mode {
+  --always-black: transparent !important;
+  --surface-background: transparent !important;
+  --overlay-alpha-80: transparent !important;
+  --nav-bar-background: transparent !important;
+  --card-background-flat: transparent !important;
+  --card-background: transparent !important;
+  --comment-background: transparent !important;
+  --messenger-card-background: transparent !important;
+  --web-wash: transparent !important;
+}
 
-div.xnp8db0:nth-child(1),
-div.xnp8db0:nth-child(4) {
-  opacity: 0 !important;
-  transition: all 0.3s ease-in-out !important;
-  &:hover {
-    opacity: 1 !important;
+/* fb-Glass Effect */
+._1gaz,
+._6luv,
+._55r1,
+._1gax,
+._59s7 {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+:root,
+.x2bj2ny,
+.x1jx94hy,
+.x1h0vfkc,
+.xezm23g,
+.__fb-dark-mode,
+.__fb-light-mode {
+  --card-background: rgba(255, 255, 255, 0.1) !important;
+  --comment-background: rgba(255, 255, 255, 0.1) !important;
+  --messenger-card-background: rgba(255, 255, 255, 0.1) !important;
+  --secondary-button-background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* fb-Fix Overlapping Header */
+body:not(:has([role="dialog"] [role="main"])) {
+  [role="main"]:not([role="main"] [role="main"]) {
+    height: calc(100dvh - 56px) !important;
+    overflow-y: scroll !important;
   }
+}
+
+[role="banner"] [aria-hidden="true"] {
+  [aria-label="Facebook"][role="navigation"] {
+    display: none !important;
+  }
+}
+
+/* fb-Immersive Popup */
+body:has(
+  [aria-label="Account controls and settings"] [role="button"][aria-expanded="true"],
+  [role="complementary"] [role="button"][aria-expanded="true"],
+  [aria-haspopup="menu"][aria-expanded="true"],
+  [role="none"][tabindex="-1"],
+  > div.__fb-dark-mode:not(:empty)
+) {
+  #globalContainer,
+  #scrollview,
+  [role="main"],
+  [role="complementary"],
+  [role="navigation"]:not([role="banner"] [role="navigation"]) {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+}
+
+/* fb-Misc */
+span[aria-hidden="true"] {
+  opacity: 0 !important;
+}
+
+/* fb-No Footer */
+._95ke,
+footer {
+  display: none !important;
 }
