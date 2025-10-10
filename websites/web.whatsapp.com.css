@@ -1,7 +1,8 @@
 /* wa-Transparency */
 html,
 body,
-.x1iek97a {
+.x1iek97a,
+.xsm26vf {
   background: none !important;
 }
 
@@ -31,6 +32,7 @@ body,
   --bot-suggestion-background-color: #18222966 !important;
   --rich-text-panel-background: var(--WDS-surface-highlight) !important;
   --panel-input-background: var(--WDS-surface-highlight) !important;
+  --chevron-button-background: var(--WDS-surface-highlight) !important;
 }
 
 @media screen and (max-width: 1300px) {
