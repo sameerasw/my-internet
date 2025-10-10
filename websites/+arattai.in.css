@@ -6,7 +6,9 @@ body,
 .smartconf-ftr,
 .smartconf-main,
 .amc-posstky-label,
+.art-hr-line,
 #screenshare_container,
+.zimageeditor__overlay,
 :fullscreen:not(:root)::backdrop,
 .zwc-pagewrapper,
 header,
@@ -43,13 +45,13 @@ header,
   --am-bg-chatwindow: transparent !important;
   --am-overlay-bg: transparent !important;
   --am-bdr-chatwindow: transparent !important;
-  --am-container-bg: transparent !important;
   --am-media-list-bg: transparent !important;
   --am-btn-secondary-bg: transparent !important;
   --am-color-theme-hover-bg-updated: #0b394d66 !important;
   --am-image-viewer-bg: transparent !important;
   --am-rec-card-bg: transparent !important;
   --bg-color-1: transparent !important;
+  --bg-color-2: transparent !important;
   --bg-color-3: transparent !important;
   --lhs-bg-color: transparent !important;
   --chatwindow-bg-color: transparent !important;
@@ -60,14 +62,27 @@ header,
   --self-msg-bg: #0b394d66 !important;
   --overlay-bg-dark: transparent !important;
   --light-footer-bg: transparent !important;
+  --am-unfurl-audio-background: transparent !important;
+  --time-divider-bg: transparent !important;
+  --chatwindow-composer-bg: transparent !important;
 }
 
 /* am-Immersive Popup */
 #wms_theatremode_overlay,
 #wms_theatremode > .mc183cf01f_videoplayer_container,
 .zmobile-menu-new-inner,
-.dropdown-menu {
+.dropdown-menu,
+.zimageeditor__tools,
+.zimageeditor__footer {
   background-color: transparent !important;
+}
+
+#leftpannel,
+#overlay_secondary,
+.am-leftbar,
+.art-lhs-modules-container,
+.am-nitemode {
+  --am-container-bg: transparent !important;
 }
 
 body {
@@ -90,6 +105,7 @@ body {
     > #wms_theatre_mountpoint,
     #mediacall_container > .AV-call-wrapper.AV-call-fullscrn,
     > #imgviewer[style="display: block;"],
+    #art-media-preview,
     #app[data-v-874ed99a] > div > .amc-recipients-container,
     #app[data-v-874ed99a] > div > div[data-vue-dialogcomponent],
     #app[data-v-874ed99a] > div > .art-dialog-wrapper
@@ -146,6 +162,12 @@ body {
       pointer-events: none !important;
     }
   }
+
+  &:has(> #zimageeditor) {
+    #art-media-preview {
+      opacity: 0 !important;
+    }
+  }
 }
 
 #chatwindows:has(.art-selected) {
@@ -187,9 +209,14 @@ body {
   background-color: transparent !important;
 }
 
-:root {
+#leftpannel,
+#overlay_secondary,
+.am-leftbar,
+.art-lhs-modules-container,
+.am-nitemode {
   --color-highlight: hsla(0, 0%, 100%, 0.08) !important;
   --border-color: var(--color-highlight) !important;
+  --am-container-bg: var(--color-highlight) !important;
 }
 
 #leftpannel,
@@ -223,6 +250,8 @@ body {
   --input-border-color: var(--color-highlight) !important;
   --am-input-border-color1: var(--color-highlight) !important;
   --lhs-border-color: var(--color-highlight) !important;
+  --am-unfurl-audio-background: var(--color-highlight) !important;
+  --time-divider-bg: var(--color-highlight) !important;
 }
 
 .login-container,
@@ -246,7 +275,9 @@ body {
 .z-bottom-cta-menu a,
 .zmobile-menu-new-inner,
 .dropdown-menu,
-.dropdown-menu > li > a:hover {
+.dropdown-menu > li > a:hover,
+.zimageeditor__tools,
+.zimageeditor__footer {
   background-color: var(--color-highlight) !important;
 }
 
