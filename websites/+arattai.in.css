@@ -102,9 +102,10 @@ body {
 
   &:has(
     #mediaerrorpopup,
+    > #lhs-context-menu,
     > #wms_theatre_mountpoint,
-    #mediacall_container > .AV-call-wrapper.AV-call-fullscrn,
     > #imgviewer[style="display: block;"],
+    #mediacall_container > .AV-call-wrapper.AV-call-fullscrn,
     #art-media-preview,
     #app[data-v-874ed99a] > div > .amc-recipients-container,
     #app[data-v-874ed99a] > div > div[data-vue-dialogcomponent],
