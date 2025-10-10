@@ -65,6 +65,7 @@ header,
   --am-unfurl-audio-background: transparent !important;
   --time-divider-bg: transparent !important;
   --chatwindow-composer-bg: transparent !important;
+  --lhs-menu-color: transparent !important;
 }
 
 /* am-Immersive Popup */
@@ -115,6 +116,7 @@ body {
     #lhs-rail,
     #lhsOverlay {
       filter: blur(20px) !important;
+      pointer-events: none !important;
     }
   }
 
@@ -138,12 +140,14 @@ body {
     #leftpannel #art-chats,
     #leftpannel #chatlist-header > .amc-form,
     #overlay_secondary > div > div:nth-child(n + 2) {
-      filter: blur(20px) !important;
-      pointer-events: none !important;
+      xfilter: blur(20px) !important;
+      xpointer-events: none !important;
     }
   }
 
-  &:has(#lhs-rail .amc-posrel > .active) {
+  &:has(.amc-posrel > .active) {
+    #list,
+    #overlay_secondary,
     .art-rail-bottom-actions > .art-lhs-module {
       filter: blur(20px) !important;
       pointer-events: none !important;
@@ -171,13 +175,6 @@ body {
   }
 }
 
-#chatwindows:has(.art-selected) {
-  #chatbody {
-    filter: blur(20px) !important;
-    pointer-events: none !important;
-  }
-}
-
 #overlay_secondary:has(.amc-range-calndr) {
   .am-meeting-list {
     filter: blur(20px) !important;
@@ -185,17 +182,34 @@ body {
   }
 }
 
-#art-msgarea-container:has(#msgarea > div > .in-view .msg-opt-list) {
-  overflow-y: hidden !important;
-
-  #msgarea > div > .in-view:not(:has(.msg-opt-list)) {
-    filter: blur(20px) !important;
-    pointer-events: none !important;
+#chatwindows > div {
+  &:has(.art-selected) {
+    #chatbody {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
   }
 
-  @media screen and (max-width: 1300px) {
-    #msgarea > div > .in-view > div > span {
+  &:has(#msgarea > div > .in-view .msg-opt-list) {
+    #art-msgarea-container {
+      overflow-y: hidden !important;
+    }
+
+    #msgarea > div > .in-view:not(:has(.msg-opt-list)) {
       filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+
+    #msgarea > div > .in-view:has(.msg-opt-list) > div > span {
+      @media screen and (max-width: 1299px) {
+        filter: blur(20px) !important;
+      }
+
+      @media screen and (min-width: 1300px) {
+        &:has(:not([style="display: none;"])) {
+          filter: blur(20px) !important;
+        }
+      }
     }
   }
 }
@@ -253,6 +267,9 @@ body {
   --lhs-border-color: var(--color-highlight) !important;
   --am-unfurl-audio-background: var(--color-highlight) !important;
   --time-divider-bg: var(--color-highlight) !important;
+  --lhs-menu-color: var(--color-highlight) !important;
+  --other-msg-bg-in-lhs: var(--color-highlight) !important;
+  --color-mode: var(--color-highlight) !important;
 }
 
 .login-container,
@@ -344,7 +361,7 @@ main {
 }
 
 body {
-  &:has(#lhsOverlay > #overlay_secondary) {
+  &:has(#overlay_secondary) {
     #leftpannel {
       opacity: 0 !important;
     }
