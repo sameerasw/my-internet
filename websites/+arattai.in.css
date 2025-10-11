@@ -28,7 +28,9 @@ header,
 .AV-call-fullscrn,
 .AV-call-fullscrn .AV-call-main,
 .AV-call-new-header,
-.AV-call-new-footer {
+.AV-call-new-footer,
+.rtcp-mp-top-gradient,
+.rtcp-mp-bottom-gradient {
   background: none !important;
 }
 
@@ -66,6 +68,7 @@ header,
   --time-divider-bg: transparent !important;
   --chatwindow-composer-bg: transparent !important;
   --lhs-menu-color: transparent !important;
+  --rtcp-mp-vido-bg-color: transparent !important;
 }
 
 /* am-Immersive Popup */
@@ -74,7 +77,8 @@ header,
 .zmobile-menu-new-inner,
 .dropdown-menu,
 .zimageeditor__tools,
-.zimageeditor__footer {
+.zimageeditor__footer,
+.rtcpmediaplayerdiv {
   background-color: transparent !important;
 }
 
@@ -110,7 +114,8 @@ body {
     #art-media-preview,
     #app[data-v-874ed99a] > div > .amc-recipients-container,
     #app[data-v-874ed99a] > div > div[data-vue-dialogcomponent],
-    #app[data-v-874ed99a] > div > .art-dialog-wrapper
+    #app[data-v-874ed99a] > div > .art-dialog-wrapper,
+    #recordingplay-section > .rtcpmediaplayerdiv
   ) {
     #officechat,
     #lhs-rail,
@@ -140,15 +145,6 @@ body {
     #leftpannel #art-chats,
     #leftpannel #chatlist-header > .amc-form,
     #overlay_secondary > div > div:nth-child(n + 2) {
-      xfilter: blur(20px) !important;
-      xpointer-events: none !important;
-    }
-  }
-
-  &:has(.amc-posrel > .active) {
-    #list,
-    #overlay_secondary,
-    .art-rail-bottom-actions > .art-lhs-module {
       filter: blur(20px) !important;
       pointer-events: none !important;
     }
@@ -295,7 +291,9 @@ body {
 .dropdown-menu,
 .dropdown-menu > li > a:hover,
 .zimageeditor__tools,
-.zimageeditor__footer {
+.zimageeditor__footer,
+.rtcp-mp-closebutton,
+.zcl-icon:hover {
   background-color: var(--color-highlight) !important;
 }
 
