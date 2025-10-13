@@ -49,7 +49,6 @@ body,
   --am-bdr-chatwindow: transparent !important;
   --am-media-list-bg: transparent !important;
   --am-btn-secondary-bg: transparent !important;
-  --am-color-theme-hover-bg-updated: #0b394d66 !important;
   --am-image-viewer-bg: transparent !important;
   --am-rec-card-bg: transparent !important;
   --bg-color-1: transparent !important;
@@ -217,6 +216,12 @@ body {
         filter: blur(20px) !important;
       }
     }
+
+    @media screen and (min-width: 1300px) {
+      #msgarea > div > .in-view:has(.msg-opt-list) > div > span {
+        xfilter: blur(20px) !important;
+      }
+    }
   }
 }
 
@@ -267,6 +272,7 @@ body,
   --am-btn-secondary-hover-bg: var(--color-highlight) !important;
   --other-msg-bg: var(--color-highlight) !important;
   --self-msg-bg: var(--color-highlight) !important;
+  --am-color-theme-hover-bg-updated: #0b394d66 !important;
   --chatwindow-composer-bg: var(--color-highlight) !important;
   --lhs-icon-bg-hover: var(--color-highlight) !important;
   --info-msg-bg: var(--color-highlight) !important;
