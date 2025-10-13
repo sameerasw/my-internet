@@ -34,11 +34,11 @@ header,
   background: none !important;
 }
 
+body,
 #leftpannel,
 #overlay_secondary,
 .am-leftbar,
-.art-lhs-modules-container,
-.am-nitemode {
+.art-lhs-modules-container {
   --am-bg-color-main: transparent !important;
   --am-bg-color-1: transparent !important;
   --am-bg-color-2: transparent !important;
@@ -60,8 +60,6 @@ header,
   --chatwindow-hdr-bg-color: transparent !important;
   --sticky-bg: transparent !important;
   --custom-background: transparent !important;
-  --other-msg-bg: #2b2b2b66 !important;
-  --self-msg-bg: #0b394d66 !important;
   --overlay-bg-dark: transparent !important;
   --light-footer-bg: transparent !important;
   --am-unfurl-audio-background: transparent !important;
@@ -69,6 +67,8 @@ header,
   --chatwindow-composer-bg: transparent !important;
   --lhs-menu-color: transparent !important;
   --rtcp-mp-vido-bg-color: transparent !important;
+  --voice-record-bg: transparent !important;
+  --am-btn-standard: transparent !important;
 }
 
 /* am-Immersive Popup */
@@ -82,12 +82,16 @@ header,
   background-color: transparent !important;
 }
 
+body,
 #leftpannel,
 #overlay_secondary,
 .am-leftbar,
-.art-lhs-modules-container,
-.am-nitemode {
+.art-lhs-modules-container {
   --am-container-bg: transparent !important;
+}
+
+#imgmaskbg {
+  backdrop-filter: none !important;
 }
 
 body {
@@ -106,12 +110,13 @@ body {
   }
 
   &:has(
-    #mediaerrorpopup,
     > #lhs-context-menu,
     > #wms_theatre_mountpoint,
-    > #imgviewer[style="display: block;"],
-    #mediacall_container > .AV-call-wrapper.AV-call-fullscrn,
+    > #imgmaskbg[style="display: block;"],
+    #mediaerrorpopup,
     #art-media-preview,
+    #art-modal-view:not(:empty),
+    #mediacall_container > .AV-call-wrapper.AV-call-fullscrn,
     #app[data-v-874ed99a] > div > .amc-recipients-container,
     #app[data-v-874ed99a] > div > div[data-vue-dialogcomponent],
     #app[data-v-874ed99a] > div > .art-dialog-wrapper,
@@ -141,9 +146,20 @@ body {
     }
   }
 
-  &:has(.amc-posrel > .active) {
+  &:has(#lhs-rail .amc-posrel > .active) {
+    #leftpannel #art-chats,
+    #leftpannel #lhs_globalsearch,
+    #overlay_secondary > div > div:nth-child(n + 2),
+    .art-rail-dp {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+
+  &:has(#leftpannel .amc-posrel > .active, #overlay_secondary .amc-posrel > .active) {
     #leftpannel #art-chats,
     #leftpannel #chatlist-header > .amc-form,
+    #leftpannel #lhs_globalsearch,
     #overlay_secondary > div > div:nth-child(n + 2) {
       filter: blur(20px) !important;
       pointer-events: none !important;
@@ -196,22 +212,24 @@ body {
       pointer-events: none !important;
     }
 
-    #msgarea > div > .in-view:has(.msg-opt-list) > div > span {
-      @media screen and (max-width: 1299px) {
+    @media screen and (max-width: 1299px) {
+      #msgarea > div > .in-view:has(.msg-opt-list) > div > span {
         filter: blur(20px) !important;
-      }
-
-      @media screen and (min-width: 1300px) {
-        &:has(:not([style="display: none;"])) {
-          filter: blur(20px) !important;
-        }
       }
     }
   }
 }
 
+@media screen and (min-width: 1300px) {
+  #chatwindows:has(> div:nth-child(2):not([style])) {
+    #msgarea > div > .in-view:has(.msg-opt-list) > div > span {
+      filter: blur(20px) !important;
+    }
+  }
+}
+
 /* am-Glass Effect */
-.amc-menu-item,
+.amc-menu-item:not(:hover),
 .zcl-menu-item,
 .zcoverlay > :last-child::before,
 .amc-action .amc-action,
@@ -220,21 +238,14 @@ body {
   background-color: transparent !important;
 }
 
+body,
 #leftpannel,
 #overlay_secondary,
 .am-leftbar,
-.art-lhs-modules-container,
-.am-nitemode {
+.art-lhs-modules-container {
   --color-highlight: hsla(0, 0%, 100%, 0.08) !important;
   --border-color: var(--color-highlight) !important;
   --am-container-bg: var(--color-highlight) !important;
-}
-
-#leftpannel,
-#overlay_secondary,
-.am-leftbar,
-.art-lhs-modules-container,
-.am-nitemode {
   --am-dialog-bg: var(--color-highlight) !important;
   --am-color-hover1: var(--color-highlight) !important;
   --am-color-hover2: var(--color-highlight) !important;
@@ -254,6 +265,8 @@ body {
   --am-btn-primary-active: var(--color-highlight) !important;
   --am-btn-negative-active: var(--color-highlight) !important;
   --am-btn-secondary-hover-bg: var(--color-highlight) !important;
+  --other-msg-bg: var(--color-highlight) !important;
+  --self-msg-bg: var(--color-highlight) !important;
   --chatwindow-composer-bg: var(--color-highlight) !important;
   --lhs-icon-bg-hover: var(--color-highlight) !important;
   --info-msg-bg: var(--color-highlight) !important;
@@ -266,6 +279,13 @@ body {
   --lhs-menu-color: var(--color-highlight) !important;
   --other-msg-bg-in-lhs: var(--color-highlight) !important;
   --color-mode: var(--color-highlight) !important;
+  --icon-bg-hover: var(--color-highlight) !important;
+  --color-hdr: var(--color-highlight) !important;
+  --voice-record-bg: var(--color-highlight) !important;
+  --am-btn-standard-hover: var(--color-highlight) !important;
+  --am-color-negative-hover: var(--color-highlight) !important;
+  --am-color-theme: var(--color-highlight) !important;
+  --am-self-msg-bg: var(--color-highlight) !important;
 }
 
 .login-container,
@@ -276,6 +296,7 @@ body {
 .selectbox_options,
 .zcl-menu-item:hover,
 .modalwindow > div,
+.amc-default-img,
 .amc-list-menu,
 .AV-call-info,
 .AV-call-options,
@@ -293,7 +314,8 @@ body {
 .zimageeditor__tools,
 .zimageeditor__footer,
 .rtcp-mp-closebutton,
-.zcl-icon:hover {
+.zcl-icon:hover,
+.zoomoption :hover {
   background-color: var(--color-highlight) !important;
 }
 
@@ -310,6 +332,11 @@ div[purpose="message_actions"] {
 .art-rail-dp::before,
 .content-wrap.active {
   border-color: var(--color-highlight) !important;
+}
+
+.zoomoption,
+.zh-arf-add::before {
+  color: var(--lhs-icon-color) !important;
 }
 
 /* zw-Fix Overlappings */
