@@ -355,7 +355,8 @@ div[purpose="message_actions"] {
   overflow-y: hidden !important;
 }
 
-#art-chats .amc-flex-col {
+#art-chats .amc-flex-col,
+#art-archived-chatlist {
   overflow-y: auto !important;
 }
 
