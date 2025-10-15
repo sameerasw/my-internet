@@ -115,6 +115,7 @@ body {
     #mediaerrorpopup,
     #art-media-preview,
     #art-modal-view:not(:empty),
+    #am-modal-container,
     #mediacall_container > .AV-call-wrapper.AV-call-fullscrn,
     #app[data-v-874ed99a] > div > .amc-recipients-container,
     #app[data-v-874ed99a] > div > div[data-vue-dialogcomponent],
@@ -341,7 +342,8 @@ div[purpose="message_actions"] {
 }
 
 .zoomoption,
-.zh-arf-add::before {
+.zh-arf-add::before,
+.zcunrdchkbx-label::before {
   color: var(--lhs-icon-color) !important;
 }
 
