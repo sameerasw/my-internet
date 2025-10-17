@@ -606,13 +606,13 @@ ytlr-compact-link-renderer {
   .ytp-time-display.notranslate > span,
   .ytp-chapter-container > button {
     backdrop-filter: blur(5px) !important;
-    background-color: #0001 !important;
+    background-color: #0002 !important;
   }
 }
 
 .ytp-right-controls {
   backdrop-filter: blur(5px) !important;
-  background-color: #0001 !important;
+  background-color: #0002 !important;
 }
 
 .ytp-popup {
