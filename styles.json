@@ -563,6 +563,11 @@
       "appinn-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "appinn-no footer": "footer {\n  display: none !important;\n}"
     },
+    "appstoreconnect.apple.com.css": {
+      "transparency": "html, body, nav, #nav, .nav, navbar, .navbar, #navbar, header, #header, .header, header::before, app, #app, footer, .sidebar-wrap, section, .main, #__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before, #root, .min-h-screen.bg-white, .app, .AppContainer, .app-root, #wrapper, body[data-theme=\"dark\"], body[data-theme=\"light\"], #pass-sidebar, .side-bar, #main, .sidebar, .global-content__content, main, .header-top, #content, #cu-identity, section, .l-root, #__next, .landing-hero, #navigation-wrapper, #global-navbar, .layout__content-wrapper, .head.notfixed, .main-container, #app > div, .btm-nav > a, .oc-content--main, body.dark_mode, body.light_mode, text-div > textarea, #footer, body.idms-login.login-type-asc #footer, #_m_footer, .footer {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}\n[role=\"menu\"] > div {\n  background-color: var(--darkreader-background-000000) !important;\n}",
+      "no footer": "footer, mfe-footer-pharos-footer, .footer, #footer, amp-footer {\n  display: none !important;\n}"
+    },
     "arstechnica.com.css": {
       "arstechnica-transparency": "html, body, nav, header, header > div, div.dusk\\:bg-gray-700:nth-child(4), article > div {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "arstechnica-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
