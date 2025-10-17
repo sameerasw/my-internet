@@ -23,7 +23,7 @@
 .bg-flathub-white:hover,
 .bg-secondary:hover,
 #search:hover {
-  background-color: hsla(0, 0%, 100%, 0.10) !important;
+  background-color: hsla(0, 0%, 100%, 0.1) !important;
 }
 
 .bg-linear-to-r {
