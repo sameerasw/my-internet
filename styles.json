@@ -1248,7 +1248,11 @@
       "no footer": "footer {\n  display: none !important;\n}"
     },
     "flathub.org.css": {
-      "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next > div, main ul.hidden:nth-child(2), header + div.bg-flathub-gainsborow, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}"
+      "fh-Transparency": ":root {\n  --background: transparent !important;\n  --flathub-dark-gunmetal: transparent !important;\n  --flathub-arsenic: transparent !important;\n  --secondary: transparent !important;\n}\n[data-slot=\"carousel-item\"] > a {\n  background-color: transparent !important;\n}",
+      "fh-Glass Effect": ".bg-white, .bg-flathub-white, .bg-secondary, #search, [data-slot=\"carousel-item\"] > a {\n  background-color: hsla(0, 0%, 100%, 0.08) !important;\n}\n.bg-white:hover, .bg-flathub-white:hover, .bg-secondary:hover, #search:hover {\n  background-color: hsla(0, 0%, 100%, 0.1) !important;\n}\n.bg-linear-to-r {\n  background: none !important;\n}",
+      "fh-Immersive Popup": "body:has(> #headlessui-portal-root) {\n  main {\n    filter: blur(20px) !important;\n  }\n}",
+      "fh-Fix Overlapping Header": ":root {\n  overflow-y: hidden !important;\n}\nheader {\n  position: relative !important;\n  background-color: transparent !important;\n}\nmain {\n  height: calc(100dvh - 68px) !important;\n  overflow-y: auto !important;\n  padding-top: 0 !important;\n  padding-bottom: 16px !important;\n}",
+      "fh-No Footer": "footer {\n  display: none !important;\n}"
     },
     "flipkart.com.css": {
       "fkart-Transparency": "html, body, #container, .css-175oi2r, ._2nl6Ch, header, ._1yQHx8, ._3sdu8W, .header-form-search *, .ACvr7K, .DOjaWF *, ._39kFie *, .NXna7w, .Q\\+Pbkc, .Sm1-5F, .r4vIwl, ._0VXZNJ *, ._0gqrsB *, .css-175oi2r * {\n  background-color: transparent !important;\n}\n._3n8fna1co div {\n  background: none !important;\n}\n:root {\n  --backdrop-bg: rgba(255, 255, 255, 0.75);\n  --backdrop-filter: blur(16px) saturate(180%) !important;\n}",
