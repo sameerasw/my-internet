@@ -1,5 +1,6 @@
 /* zm-Transparency */
 body,
+#ms_load,
 .zmLHSBlk,
 .zmTopBar,
 .zmWorkSpace,
@@ -116,8 +117,12 @@ body,
   position: relative !important;
 }
 
-#jsAppNameIcons {
-  overflow: hidden !important;
+.zmAppHeader {
+  border-bottom: none !important;
+}
+
+.SC_mclst {
+  border-top: var(--app-border-color) 1px solid;
 }
 
 @media only screen and (max-width: 1023px) {
