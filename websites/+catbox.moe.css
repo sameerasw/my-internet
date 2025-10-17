@@ -1,11 +1,12 @@
 /* transparency */
-html, body {
+html,
+body {
   background: transparent !important;
 }
 
 /* global text color */
 body :not(.notetiny):not(.notetiny *) {
-  color: light-dark(white,black) !important;
+  color: light-dark(white, black) !important;
 }
 
 /* no footer */
