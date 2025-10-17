@@ -7,7 +7,9 @@ div.sticky:nth-child(2),
 .pb-32 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),
 .mt-xs > div:nth-child(1) > div:nth-child(1),
 .bg-background-100:has([data-testid="answer-mode-tabs"]),
-#root > div, \@container\/main, .bg-clip-border.border-subtlest.ring-subtlest.divide-subtlest.bg-base {
+#root > div,
+\@container\/main,
+.bg-clip-border.border-subtlest.ring-subtlest.divide-subtlest.bg-base {
   background-color: transparent !important;
   border: none !important;
 }
