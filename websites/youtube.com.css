@@ -14,7 +14,7 @@ ytd-app,
 #shorts-container,
 .ytLrGuideResponseMask,
 .ytLrPromoShelfRendererContainer,
-ytd-item-section-renderer[page-subtype="playlist"] #header.ytd-item-section-renderer {
+ytd-item-section-renderer[page-subtype="playlist"] #header.ytd-item-section-renderer, .ytd-engagement-panel-title-header-renderer, .ytd-engagement-panel-section-list-renderer {
   background-color: #00000000 !important;
   background: none !important;
 }
@@ -287,7 +287,7 @@ ytlr-player {
 }
 
 /* yt-theater: zen view $ Make the theater view video fit the full window size */
-[theater=""] #full-bleed-container {
+#content:has(ytd-masthead[theater=""]) #full-bleed-container {
   height: 100vh !important;
   max-height: 100vh !important;
   top: 0 !important;
@@ -327,39 +327,41 @@ ytd-comments {
 }
 
 [theater=""] ytd-comments {
-  position: fixed !important;
-  z-index: 1000 !important;
-  top: 3vh !important;
-  right: -42em !important;
-  width: 40em !important;
-  height: 90vh !important;
-  max-height: calc(100vh - 175px) !important;
-  overflow-y: scroll !important;
-  opacity: 0 !important;
-
+  &:not[fullscreen=""]{
   background-color: var(--yt-live-chat-shimmer-background-color) !important;
   backdrop-filter: blur(20px) !important;
-
   padding: 0 2em !important;
   border-radius: 2em 0 0 2em !important;
-
-  &:hover {
-    opacity: 1 !important;
-    right: 0 !important;
+    max-height: calc(100vh - 175px) !important;
+    overflow-y: scroll !important;
+    position: fixed !important;
+    z-index: 1000 !important;
+    top: 3vh !important;
+    right: -42em !important;
+    width: 40em !important;
+    height: 90vh !important;
+    opacity: 0 !important;
+    &:hover {
+      opacity: 1 !important;
+      right: 0 !important;
+    }
   }
 }
 
 /* yt-zen view comments on left */
 [theater=""] ytd-comments {
   border-radius: 0 2em 2em 0 !important;
-  left: -40em !important;
-  &:hover {
-    left: 0 !important;
+
+  &:not[fullscreen=""]{
+    left: -40em !important;
+    &:hover {
+      left: 0 !important;
+    }
   }
 }
 
 /* yt-zen comments solid $ Make above Zen View comments background solid instead of blur */
-[theater=""] ytd-comments {
+[theater=""]:not[fullscreen=""] ytd-comments {
   backdrop-filter: none !important;
   background-color: var(--yt-spec-text-primary-inverse) !important;
 }
@@ -385,7 +387,7 @@ ytd-comments {
   }
 }
 
-#panels-full-bleed-container {
+ytd-app:not[fullscreen=""] #panels-full-bleed-container {
   width: 0 !important;
 }
 
@@ -600,22 +602,19 @@ ytlr-compact-link-renderer {
 }
 
 /* yt-New player blur */
-.ytp-left-controls {
-  .ytp-play-button,
-  .ytp-volume-area,
-  .ytp-time-display.notranslate > span,
-  .ytp-chapter-container > button {
+.ytp-left-controls{
+  .ytp-play-button, .ytp-volume-area, .ytp-time-display.notranslate > span, .ytp-chapter-container > button{
     backdrop-filter: blur(5px) !important;
-    background-color: #0002 !important;
+    background-color: #0001 !important;
   }
 }
 
-.ytp-right-controls {
-  backdrop-filter: blur(5px) !important;
-  background-color: #0002 !important;
-}
+.ytp-right-controls{
+    backdrop-filter: blur(5px) !important;
+    background-color: #0001 !important;
+  }
 
-.ytp-popup {
-  backdrop-filter: blur(10px) !important;
-  background-color: #0007 !important;
-}
+  .ytp-popup{
+    backdrop-filter: blur(10px) !important;
+    background-color: #0007 !important;
+  }
