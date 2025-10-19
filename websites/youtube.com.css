@@ -14,7 +14,9 @@ ytd-app,
 #shorts-container,
 .ytLrGuideResponseMask,
 .ytLrPromoShelfRendererContainer,
-ytd-item-section-renderer[page-subtype="playlist"] #header.ytd-item-section-renderer, .ytd-engagement-panel-title-header-renderer, .ytd-engagement-panel-section-list-renderer {
+ytd-item-section-renderer[page-subtype="playlist"] #header.ytd-item-section-renderer,
+.ytd-engagement-panel-title-header-renderer,
+.ytd-engagement-panel-section-list-renderer {
   background-color: #00000000 !important;
   background: none !important;
 }
@@ -327,11 +329,11 @@ ytd-comments {
 }
 
 [theater=""] ytd-comments {
-  &:not[fullscreen=""]{
-  background-color: var(--yt-live-chat-shimmer-background-color) !important;
-  backdrop-filter: blur(20px) !important;
-  padding: 0 2em !important;
-  border-radius: 2em 0 0 2em !important;
+  &:not[fullscreen=""] {
+    background-color: var(--yt-live-chat-shimmer-background-color) !important;
+    backdrop-filter: blur(20px) !important;
+    padding: 0 2em !important;
+    border-radius: 2em 0 0 2em !important;
     max-height: calc(100vh - 175px) !important;
     overflow-y: scroll !important;
     position: fixed !important;
@@ -352,7 +354,7 @@ ytd-comments {
 [theater=""] ytd-comments {
   border-radius: 0 2em 2em 0 !important;
 
-  &:not[fullscreen=""]{
+  &:not[fullscreen=""] {
     left: -40em !important;
     &:hover {
       left: 0 !important;
@@ -602,19 +604,22 @@ ytlr-compact-link-renderer {
 }
 
 /* yt-New player blur */
-.ytp-left-controls{
-  .ytp-play-button, .ytp-volume-area, .ytp-time-display.notranslate > span, .ytp-chapter-container > button{
+.ytp-left-controls {
+  .ytp-play-button,
+  .ytp-volume-area,
+  .ytp-time-display.notranslate > span,
+  .ytp-chapter-container > button {
     backdrop-filter: blur(5px) !important;
     background-color: #0001 !important;
   }
 }
 
-.ytp-right-controls{
-    backdrop-filter: blur(5px) !important;
-    background-color: #0001 !important;
-  }
+.ytp-right-controls {
+  backdrop-filter: blur(5px) !important;
+  background-color: #0001 !important;
+}
 
-  .ytp-popup{
-    backdrop-filter: blur(10px) !important;
-    background-color: #0007 !important;
-  }
+.ytp-popup {
+  backdrop-filter: blur(10px) !important;
+  background-color: #0007 !important;
+}
