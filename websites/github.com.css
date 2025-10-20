@@ -41,7 +41,9 @@ aside > div,
 .ContentPreview-module__tabsContainer--bNywg::after,
 .snippet-clipboard-content > .notranslate,
 .IssueViewer-module__contentArea--mHr61,
-.SubscriptionSection-module__button--WSUPv, .IssueViewer-module__contentArea--IpMnd, section[aria-label="Events"] > div > div > [data-timeline-event-id]  {
+.SubscriptionSection-module__button--WSUPv,
+.IssueViewer-module__contentArea--IpMnd,
+section[aria-label="Events"] > div > div > [data-timeline-event-id] {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
