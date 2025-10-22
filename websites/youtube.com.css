@@ -14,7 +14,9 @@ ytd-app,
 #shorts-container,
 .ytLrGuideResponseMask,
 .ytLrPromoShelfRendererContainer,
-ytd-item-section-renderer[page-subtype="playlist"] #header.ytd-item-section-renderer, .ytd-engagement-panel-title-header-renderer, .ytd-engagement-panel-section-list-renderer {
+ytd-item-section-renderer[page-subtype="playlist"] #header.ytd-item-section-renderer,
+.ytd-engagement-panel-title-header-renderer,
+.ytd-engagement-panel-section-list-renderer {
   background-color: #00000000 !important;
   background: none !important;
 }
@@ -376,7 +378,7 @@ ytd-comments {
   background-color: transparent !important;
 }
 
-#content:has([data-title-no-tooltip="Exit full screen"]) ytd-live-chat-frame{
+#content:has([data-title-no-tooltip="Exit full screen"]) ytd-live-chat-frame {
   background-color: var(--app-drawer-content-container-background-color) !important;
 }
 
@@ -387,7 +389,7 @@ ytd-comments {
   }
 }
 
-#content:has(ytd-masthead[theater=""]:not([fullscreen=""]))  #panels-full-bleed-container {
+#content:has(ytd-masthead[theater=""]:not([fullscreen=""])) #panels-full-bleed-container {
   width: 0 !important;
 }
 
@@ -602,19 +604,24 @@ ytlr-compact-link-renderer {
 }
 
 /* yt-New player blur */
-.ytp-left-controls{
-  .ytp-play-button, .ytp-volume-area, .ytp-time-display.notranslate > span, .ytp-chapter-container > button, .ytp-prev-button, .ytp-next-button{
+.ytp-left-controls {
+  .ytp-play-button,
+  .ytp-volume-area,
+  .ytp-time-display.notranslate > span,
+  .ytp-chapter-container > button,
+  .ytp-prev-button,
+  .ytp-next-button {
     backdrop-filter: blur(5px) !important;
     background-color: #0001 !important;
   }
 }
 
-.ytp-right-controls{
-    backdrop-filter: blur(5px) !important;
-    background-color: #0001 !important;
-  }
+.ytp-right-controls {
+  backdrop-filter: blur(5px) !important;
+  background-color: #0001 !important;
+}
 
-  .ytp-popup{
-    backdrop-filter: blur(10px) !important;
-    background-color: #0007 !important;
-  }
+.ytp-popup {
+  backdrop-filter: blur(10px) !important;
+  background-color: #0007 !important;
+}
