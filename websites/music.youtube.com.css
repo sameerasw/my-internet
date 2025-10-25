@@ -32,8 +32,7 @@ ytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app {
 
 /* Hide elements */
 #nav-bar-divider,
-#browse-page > #background,
-tp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper-toast-open {
+#browse-page > #background {
   display: none !important;
 }
 
