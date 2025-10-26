@@ -2235,7 +2235,8 @@
     "priv.au.css": {
       "priv-transparency": ":root {\n  --color-header-background: #00000000 !important;\n  --color-sidebar-border: #00000000 !important;\n  --color-result-background: #00000000 !important;\n}\nhtml, #search_header, article {\n  background-color: #00000000 !important;\n  border: none !important;\n}",
       "priv-no footer": "footer {\n  display: none !important;\n}",
-      "priv-other changes": "#links_on_top {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}\narticle {\n  margin: 0 !important;\n\n  img {\n    border-radius: 0.5em !important;\n  }\n}"
+      "priv-other changes": "#links_on_top {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n\n  &:hover {\n    opacity: 1 !important;\n  }\n}\narticle {\n  margin: 0 !important;\n\n  img {\n    border-radius: 0.5em !important;\n  }\n}",
+      "search focus": "#results, .search_filters {\n  transition: all 0.2s ease-in-out !important;\n}\nbody:has(input#q:focus) {\n  #results,\n  .search_filters {\n    filter: blur(10px) !important;\n  }\n}"
     },
     "programiz.com.css": {
       "transparency": ".dark-mode, .dark-mode .header, .dark-mode .wrapper, .dark-mode .editor-wrapper, .dark-mode .ace_editor, .dark-mode .ace_gutter, .dark-mode .ace_scroller, .dark-mode .ace_gutter-active-line, .dark-mode .ace_gutter-cell, .dark-mode .terminal-wrapper {\n  background: none !important;\n}"
