@@ -34,3 +34,13 @@ article {
     border-radius: 0.5em !important;
   }
 }
+/* search focus */
+#results, .search_filters{
+  transition: all 0.2s ease-in-out !important;
+}
+
+body:has(input#q:focus){
+ #results, .search_filters{
+  filter: blur(10px) !important;
+}
+}
