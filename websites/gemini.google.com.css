@@ -68,7 +68,6 @@ top-bar-actions {
   border-radius: 1em !important;
 }
 
-/* the buttons that are in a div with the input area */
 div:has(input-area-v2) button {
   display: flex !important;
   justify-content: center !important;
