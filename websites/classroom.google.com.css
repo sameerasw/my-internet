@@ -44,6 +44,18 @@
    background-color: transparent !important;
 }
 
+/* class-new post zoom */
+.SSPGKf {
+   transition: 0.6s;
+}
+
+body:has(.hgjBDc) {
+   .SSPGKf {
+      filter: blur(10px) !important;
+      transform: scale(1.1) !important;
+   }
+}
+
 /*  class-sidebar $ Adds rounding, a darker blurred background, and moves the scroll bar to the left side. */
 .tCcYY[role="menu"] {
   background-color: transparent !important;
