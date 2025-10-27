@@ -380,20 +380,22 @@ body:has(header > .search-expanded) .application-main {
 
 /* gh-better chip margin */
 .OverviewContent-module__Button--MDoYP {
-  margin-right: 8px !important; 
+  margin-right: 8px !important;
 }
 #global-copilot-menu-button {
   margin-left: 8px !important;
 }
 
 /* gh-remove borders */
-.prc-Button-ButtonBase-c50BI, 
-.BtnGroup-item, .Button--secondary, 
+.prc-Button-ButtonBase-c50BI,
+.BtnGroup-item,
+.Button--secondary,
 .TextInput__StyledTextInput-sc-ttxlvl-0,
 .Box-sc-62in7e-0.BranchInfoBar-module__Box--NhDLA.BranchInfoBar-module__BranchInfoBarContainer--vaFVP {
   border: none !important;
 }
 
-#fork-button, .BtnGroup-parent {
-  margin-right: 3px !important;  
+#fork-button,
+.BtnGroup-parent {
+  margin-right: 3px !important;
 }
