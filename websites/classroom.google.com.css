@@ -18,7 +18,8 @@
 .vwNuXe,
 .VfPpkd-P5QLlc,
 .ysU8Le,
-.rHGeGc-O1htCb {
+.rHGeGc-O1htCb,
+.UywwFc-LgbsSe {
   background-color: #08080875 !important;
 }
 
@@ -33,9 +34,26 @@
 }
 
 .xHPsid,
-.YJHsie {
+.YJHsie,
+.hgjBDc {
   background-color: #08080890 !important;
   backdrop-filter: blur(10px) !important;
+}
+
+.OVu6ob .lXuxY .u73Apc, .OVu6ob .pO6AMc .u73Apc, .OVu6ob .PqkECe .u73Apc, .OVu6ob .S9CVKb, .OVu6ob .UW3s6d, .uW2Fw-P5QLlc {
+   background-color: transparent !important;
+}
+
+/* class-new post zoom */
+.SSPGKf {
+   transition: 0.6s;
+}
+
+body:has(.hgjBDc) {
+   .SSPGKf {
+      filter: blur(10px) !important;
+      transform: scale(1.1) !important;
+   }
 }
 
 /*  class-sidebar $ Adds rounding, a darker blurred background, and moves the scroll bar to the left side. */
