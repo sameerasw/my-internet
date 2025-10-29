@@ -9,10 +9,13 @@
 .profile-tray,
 .ic-app-header__main-navigation,
 .ic-notification__content,
+.tox .tox-toolbar-overlord,
 .Grouping-styles__title,
 .Grouping-styles__title::after,
 .header-bar,
 #context_modules_sortable_container,
+div:has(> div[data-testid="text-editor"]),
+label > span[data-position-target] > span,
 html,
 body,
 nav,
@@ -25,7 +28,8 @@ header {
 }
 
 /* canvas-sidebar */
-.navigation-tray-container {
+.navigation-tray-container,
+.tox-menu {
   background: color-mix(in srgb, var(--natsumi-colors-secondary, color-mix(in srgb, #101010 30%, #202020 70%)) 60%, transparent) !important;
   border-radius: 16px !important;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
