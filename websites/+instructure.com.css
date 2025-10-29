@@ -16,6 +16,7 @@
 #context_modules_sortable_container,
 div:has(> div[data-testid="text-editor"]),
 label > span[data-position-target] > span,
+div[data-testid="attempt-tab"] > div,
 html,
 body,
 nav,
