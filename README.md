@@ -60,7 +60,7 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
 
 12. Always make sure the first feature is `transparency` and also use the exact feature name without a difference allowing the global transparency toggle to work. Prefixes with `-` are acceptable.
 13. Don't keep the firefox selectors if you are coying over from the userContent.css (remove `@-moz-document domain(" ")` )
-14. Once comitted to the repository, github actions will parse the css file and update/ generate the [styles.js](https://github.com/sameerasw/my-internet/blob/main/styles.json) and then will be deployed to the github pages allowing the add-on to fetch from it.
+14. Once comitted to the repository, github actions will parse the css file and update/ generate the [styles.json](https://github.com/sameerasw/my-internet/blob/main/styles.json) and then will be deployed to the github pages allowing the add-on to fetch from it.
 15. _**[NEW!]**_ Now you can add descriptive comments to the css file which will be skipped during parsing and generating the styles.json file. BUT, make sure to start those css comment text with the `@` symbol as below examples. BUT, Any comment inside a feature in the css selectors or in properties will be skipped anyways.
 
     ```
