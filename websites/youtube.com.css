@@ -410,6 +410,10 @@ ytd-two-column-browse-results-renderer:has(.ytd-playlist-video-renderer) {
   width: fit-content !important;
 }
 
+.ytp-caption-segment {
+  background: none !important;
+}
+
 /* yt-Keep player shadow $ Remove the shadow around the player when disabled */
 .ytp-gradient-bottom {
   display: initial !important;
