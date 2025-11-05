@@ -70,3 +70,8 @@ div.xixxii4:nth-child(2):has([href="#"]) {
     opacity: 1 !important;
   }
 }
+
+/* no suggestions */
+main[role="main"] > div > div.x1dr59a3.x13vifvy.x7vhb2i.x6bx242:nth-last-child(1){
+  display: none !important;
+}
