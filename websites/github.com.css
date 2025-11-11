@@ -89,7 +89,7 @@ div.px-2:nth-child(3) {
 
 /* gh-hover $ Make the left and right sidebars show on hover */
 .feed-left-sidebar,
-.feed-right-sidebar {
+.feed-right-column {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
   &:hover {
