@@ -387,7 +387,7 @@ body:has(header > .search-expanded) .application-main {
 }
 
 /* gh-remove borders */
-.prc-Button-ButtonBase-c50BI,
+.prc-Button-ButtonBase-c50BI:not(.ReactionButton-module__reactionToggleButtonReacted--TgLue),
 .BtnGroup-item,
 .Button--secondary,
 .TextInput__StyledTextInput-sc-ttxlvl-0,
