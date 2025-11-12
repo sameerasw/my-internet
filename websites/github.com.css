@@ -82,8 +82,7 @@ button[role="tab"] {
 }
 
 /* gh-no footer */
-footer:has(h2),
-div.px-2:nth-child(3) {
+footer:has(h2){
   opacity: 0 !important;
 }
 
