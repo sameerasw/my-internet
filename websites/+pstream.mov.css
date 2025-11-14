@@ -1,0 +1,178 @@
+/* pstream-transparency $ Apply transparent backgrounds to main containers. Recommended: enable the site's grey theme for best contrast. */
+html,
+body,
+#root,
+.flex.min-h-screen.flex-col > .bg-background-main {
+  background-color: transparent !important;
+  background: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  -webkit-transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+.flex.min-h-screen.flex-col > .bg-background-main > :is(.bg-background-accentA, .bg-background-accentB),
+.h-\[50px\] {
+  display: none !important;
+}
+
+/* pstream-darkreader $ Enables Dark Reader compatibility */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* pstream-no footer $ Removes the footer section */
+.flex.min-h-screen.flex-col > footer {
+  display: none !important;
+}
+
+/* pstream-no ads $ Removes sponsored content */
+.w-fit {
+  display: none !important;
+}
+
+/* pstream-no top shadow $ Removes the header shadow */
+.flex.min-h-screen.flex-col > div > .top-content.fixed.z-\[20\] {
+  display: none !important;
+}
+
+/* pstream-no lightbar $ Removes the decorative lightbar */
+.h-\[88px\],
+.lightbar {
+  display: none !important;
+}
+
+/* pstream-no flare light $ Removes flare lighting effects */
+.flare-light {
+  display: none !important;
+}
+
+/* pstream-no backtotop $ Removes the back-to-top button */
+div.fixed:nth-child(4) {
+  display: none !important;
+}
+
+/* pstream-uniform cards $ Disables card text wrapping */
+.relative.mt-4.group.cursor-pointer.user-select-none,
+.line-clamp-3 {
+  display: block !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  -webkit-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* pstream-bg opacity $ Sets background opacity for main containers and buttons */
+.bg-background-main, .bg-buttons-purple, .bg-background-secondary, .bg-search-hoverBackground, .bg-mediaCard-hoverBackground {
+  --tw-bg-opacity: 0.1 !important;
+  background-color: rgb(var(--colors-background-main) / var(--tw-bg-opacity, 1)) !important;
+}
+
+/* pstream-left align header $ Moves header content to the left */
+.w-\[950px\] {
+  margin-left: 3.5rem !important;
+}
+
+/* pstream-unified header $ Applies unified header layout */
+div.h-20:nth-child(2) > div:nth-child(1) > div:nth-child(1),
+.w-\[600px\] > div:nth-child(1):not(.space-y-16) {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  z-index: 25 !important;
+  padding: 1.25rem 11.75rem 0 20.25rem !important;
+}
+
+.top-content.fixed.pointer-events-none .relative.pointer-events-auto .w-\[1\.5rem\] {
+  transform: scale(0.9) translateX(-8px) !important;
+}
+
+div.h-20:nth-child(2),
+.mb-16,
+div.h-20:nth-child(2) > div:nth-child(1) {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+  min-height: unset !important;
+}
+
+.bg-search-background,
+.hover\:flare-enabled > div:nth-child(1),
+.hover\:flare-enabled > div:nth-child(1) > div:nth-child(1) {
+  border-radius: 20px !important;
+}
+
+.top-content .bg-pill-background,
+.hover\:flare-enabled input.w-full {
+  height: 40px !important;
+}
+
+.hover\:flare-enabled input.w-full {
+  padding: 0 2.25rem !important;
+}
+
+.bg-search-background,
+.bg-pill-background {
+  --tw-bg-opacity: 0.7 !important;
+  -webkit-backdrop-filter: blur(10px) saturate(1.25) !important;
+  backdrop-filter: blur(10px) saturate(1.25) !important;
+  transform: unset !important;
+  background: rgb(var(--colors-pill-background) / var(--tw-bg-opacity, 1)) !important;
+  border: none !important;
+}
+
+.bg-search-background:hover,
+.top-content .bg-pill-background:hover {
+  background: rgb(var(--colors-pill-backgroundHover) / 0.6) !important;
+}
+
+.hover\:flare-enabled .cursor-pointer.absolute {
+  right: 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 20px !important;
+  margin: 0 !important;
+  color: rgb(var(--colors-type-text)) !important;
+  transform: unset !important;
+}
+.hover\:flare-enabled .cursor-pointer.absolute:hover {
+  background: rgb(var(--colors-pill-backgroundHover) / 0.2) !important;
+}
+.hover\:flare-enabled > .flex-1 > div.bottom-0:nth-child(1) {
+  left: 0 !important;
+}
+
+@supports not ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))) {
+  .bg-search-background,
+  .bg-pill-background {
+    --tw-bg-opacity: 1 !important;
+    background: rgb(var(--colors-pill-background) / 0.95) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  body,
+  #root,
+  .flex.min-h-screen.flex-col > .bg-background-main {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  div.h-20:nth-child(2) > div:nth-child(1) > div:nth-child(1),
+  .w-\[600px\] > div:nth-child(1):not(.space-y-16) {
+    padding: 4.25rem 1.75rem 0 1.75rem !important;
+  }
+}
