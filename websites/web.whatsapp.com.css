@@ -12,24 +12,25 @@ body,
 }
 
 .color-refresh,
-.x1280gxy,
-.x1l0ey4t,
-.x1h3rtpe {
+.app-wrapper-web {
   --WDS-surface-default: transparent !important;
   --WDS-background-wash-inset: transparent !important;
   --WDS-surface-emphasized: transparent !important;
   --WDS-surface-elevated-emphasized: transparent !important;
   --WDS-systems-chat-background-wallpaper: transparent !important;
+  --WDS-systems-chat-surface-tray: transparent !important;
+  --reactions-panel-background-color: transparent !important;
+  --poll-modal-footer-background-color: transparent !important;
+  --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
+  --WDS-systems-chat-surface-composer: var(--WDS-surface-highlight) !important;
+  --WDS-systems-bubble-surface-system: var(--WDS-surface-highlight) !important;
+  --WDS-systems-bubble-surface-incoming: var(--WDS-surface-highlight) !important;
+  --WDS-systems-bubble-surface-outgoing: var(--WDS-surface-highlight) !important;
   --compose-input-background: var(--WDS-surface-highlight) !important;
   --background-default-hover: var(--WDS-surface-highlight) !important;
   --background-lightest-hover: var(--WDS-surface-highlight) !important;
-  --reactions-panel-background-color: transparent !important;
   --reactions-panel-search-background-color: var(--WDS-surface-highlight) !important;
-  --poll-modal-footer-background-color: transparent !important;
-  --WDS-systems-bubble-surface-system: #24262666 !important;
-  --WDS-systems-bubble-surface-incoming: #24262666 !important;
-  --WDS-systems-bubble-surface-outgoing: #144d3766 !important;
-  --bot-suggestion-background-color: #18222966 !important;
+  --bot-suggestion-background-color: var(--WDS-surface-highlight) !important;
   --rich-text-panel-background: var(--WDS-surface-highlight) !important;
   --panel-input-background: var(--WDS-surface-highlight) !important;
   --chevron-button-background: var(--WDS-surface-highlight) !important;
@@ -102,9 +103,17 @@ body,
   }
 }
 
-._aigs:has(> div:nth-child(3) > div:nth-child(2) > div > span > div) {
-  #main > div,
-  #main > footer {
-    opacity: 0 !important;
+._aigs{
+  &:has(> div:nth-child(3) > div:nth-child(2) > div > span > div) {
+    #main > div,
+    #main > footer {
+      opacity: 0 !important;
+    }
+  }
+  
+  &:has(._as6h.false + div > div > span:not(:empty)) {
+    ._as6h:not(.false) + div {
+      display: none !important;
+    }
   }
 }
