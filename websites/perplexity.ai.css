@@ -23,6 +23,12 @@ div.sticky:nth-child(2),
   background-color: var(--scrollbar-thumb) !important;
   box-shadow: light-dark(#fff5, #0005) 0 0 8px !important;
 }
+html[data-color-scheme="dark"] {
+  background: transparent !important;
+}
+*{
+  --background-base-color: transparent;
+}
 
 /* perplexity-hover */
 .grid-cols-6 {
