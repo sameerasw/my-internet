@@ -23,11 +23,11 @@ div.sticky:nth-child(2),
   background-color: var(--scrollbar-thumb) !important;
   box-shadow: light-dark(#fff5, #0005) 0 0 8px !important;
 }
-html[data-color-scheme="dark"] {
+html[data-color-scheme=dark], html[data-color-scheme=light], html {
   background: transparent !important;
 }
 *{
-  --background-base-color: transparent;
+  --background-base-color: transparent !important;
 }
 
 /* perplexity-hover */
