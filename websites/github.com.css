@@ -157,7 +157,11 @@ details-dialog.Box,
 }
 
 /* gh-glass effect */
-.prc-Button-ButtonBase-c50BI:not(.Toolbar-module__group--dOhAD > button[data-component="IconButton"], button[data-component="IconButton"].ToolbarButton-module__iconButton--o0jFl),
+.prc-Button-ButtonBase-c50BI:not(
+    [data-variant="primary"],
+    .Toolbar-module__group--dOhAD > button[data-component="IconButton"],
+    button[data-component="IconButton"].ToolbarButton-module__iconButton--o0jFl
+  ),
 .MergeabilityIcon-module__mergeabilityIcon--GOu7M,
 .range-editor,
 .TableHead.prc-DataTable-TableHead-eOrJU,
