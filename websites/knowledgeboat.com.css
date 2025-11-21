@@ -1,23 +1,34 @@
 :root {
-    --darkreader-background-eeeeee: transparent;
-    --darkreader-background-ffffff: transparent;
+  --darkreader-background-eeeeee: transparent;
+  --darkreader-background-ffffff: transparent;
 }
- body, html, .jss1, .jss2, .jss53, .jss4, .jss42, nav, .jss8, .jss59, .jss3, .jss122 {
-    background: none !important
+body,
+html,
+.jss1,
+.jss2,
+.jss53,
+.jss4,
+.jss42,
+nav,
+.jss8,
+.jss59,
+.jss3,
+.jss122 {
+  background: none !important;
 }
 
 header {
-    backdrop-filter: blur(50px) !important;
-    background: #00000060 !important;
+  backdrop-filter: blur(50px) !important;
+  background: #00000060 !important;
 }
 
 .jss95 {
-    z-index: 10000;
-    backdrop-filter: blur(64px) !important;
-    background: #00000060 !important;
+  z-index: 10000;
+  backdrop-filter: blur(64px) !important;
+  background: #00000060 !important;
 }
 
 .jss120 {
-    backdrop-filter: blur(256px) !important;
-    background: #00000090
+  backdrop-filter: blur(256px) !important;
+  background: #00000090;
 }
