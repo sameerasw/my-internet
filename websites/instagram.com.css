@@ -1,4 +1,4 @@
-/* ig-transparecy */
+/* ig-transparency */
 :root ._aa4d,
 :root ._ar45 {
   --ig-primary-background: #00000000 !important;
@@ -6,15 +6,18 @@
   --ig-secondary-background: #00000000 !important;
 }
 
-.xvbhtw8, .x103n6ev, .xzxgvzf, html {
+.xvbhtw8,
+.x103n6ev,
+.xzxgvzf,
+html {
   background-color: #00000000 !important;
   border: none !important;
   background-image: none !important;
 }
 
-
 /* ig-hide elements */
-div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1, .x3hkoc4 {
+div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1,
+.x3hkoc4 {
   display: none !important;
 }
 
@@ -28,37 +31,47 @@ div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xseo6mj.x1uhb9sk.x1
 }
 
 /* ig-centered */
-.x17snn68.x17snn68{
+.x17snn68.x17snn68 {
   width: 100vw !important;
 }
 
 /* ig-comments overlay fix */
-[role="dialog"] [role="presentation"] > div > div{
+[role="dialog"] [role="presentation"] > div > div {
   background-color: var(--fds-highlight-cell-background) !important;
   border-radius: 2em !important;
 }
 
 /* ig-overlay fix */
-div.x6s0dn4.xvbhtw8.x1lq5wgf.xgqcy7u.x30kzoy.x9jhf4c.x1xcus5i.xrvj5dj.x1dh5ka.xyamay9.x1l90r2v.x1n2onr6.xgpatz3.x1mu97ne, [role="dialog"], .x3zg9eu, .x1u3tz30{
+div.x6s0dn4.xvbhtw8.x1lq5wgf.xgqcy7u.x30kzoy.x9jhf4c.x1xcus5i.xrvj5dj.x1dh5ka.xyamay9.x1l90r2v.x1n2onr6.xgpatz3.x1mu97ne,
+[role="dialog"],
+.x3zg9eu,
+.x1u3tz30,
+div[data-visualcompletion="ignore-dynamic"] > div[style="transform: translateX(0%);"],
+[role="presentation"] > div.x1c1uobl,
+[role="presentation"] > div._at8n {
   background-color: var(--fds-highlight-cell-background) !important;
   border-radius: 1em !important;
 }
 
-[role="dialog"]:has([role="presentation"]){
+[role="dialog"]:has([role="presentation"]) {
   background: none !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* hover */
-div.xixxii4:nth-child(2):has([href="#"])
-{
+div.xixxii4:nth-child(2):has([href="#"]) {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
+}
+
+/* no suggestions */
+main[role="main"] > div > div.x1dr59a3.x13vifvy.x7vhb2i.x6bx242:nth-last-child(1) {
+  display: none !important;
 }

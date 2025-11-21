@@ -1,14 +1,36 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #super-deals, .carousel-container, .hp-module-background, .brands-of-the-week, #trending, .hp-product-carousel{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+#super-deals,
+.carousel-container,
+.hp-module-background,
+.brands-of-the-week,
+#trending,
+.hp-product-carousel {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.iherb-header[style="top: 36px;"]{
-  .iherb-header-primary, .header-container, .sub-header-container-wrapper, .link-bar-item, .iherb-header-primary::before{
+.iherb-header[style="top: 36px;"] {
+  .iherb-header-primary,
+  .header-container,
+  .sub-header-container-wrapper,
+  .link-bar-item,
+  .iherb-header-primary::before {
     background-color: transparent !important;
     background: none !important;
     border: none !important;
@@ -16,11 +38,11 @@ html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #su
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

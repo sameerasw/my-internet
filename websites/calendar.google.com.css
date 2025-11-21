@@ -1,4 +1,4 @@
-/* calendr-transparecy */
+/* calendr-transparency */
 body,
 .mXmivb.NekIXe,
 .xWId8e,
@@ -15,7 +15,8 @@ li.F262Ye,
 .enOdEe-wZVHld-xMbwt,
 .pljXM,
 .p9lUpf,
-.gZ8fdb {
+.gZ8fdb,
+[role="main"] > h1 + div > div[role="grid"] {
   --gm3-sys-color-surface-container-low: transparent !important;
   --gm3-sys-color-surface-container-high: transparent !important;
   background-color: transparent !important;
@@ -64,8 +65,7 @@ li.F262Ye,
 .AeBiU-LgbsSe.AeBiU-LgbsSe-OWXEXe-SfQLQb-suEOdc.AeBiU-LgbsSe-OWXEXe-dgl2Hf.AeBiU-kSE8rc-FoKg4d-sLO9V-YoZ4jf.UZLCCd,
 .EN2Rfc.CIy9F,
 .DyOaYd,
-.B5S4ge
-  .Fgl6fe-fmcmS-yrriRe.Fgl6fe-fmcmS-yrriRe-OWXEXe-MFS4be.Fgl6fe-fmcmS-yrriRe-OWXEXe-di8rgd-V67aGc,
+.B5S4ge .Fgl6fe-fmcmS-yrriRe.Fgl6fe-fmcmS-yrriRe-OWXEXe-MFS4be.Fgl6fe-fmcmS-yrriRe-OWXEXe-di8rgd-V67aGc,
 .d3Ig7c,
 .NkK3Fc.NkK3Fc.NkK3Fc form[role="search"],
 .AeBiU-LgbsSe,
@@ -83,6 +83,13 @@ li.F262Ye,
 
 .uW2Fw-P5QLlc {
   background-color: var(--gm3-sys-color-background) !important;
+}
+
+.K4vxLd-WsjYwc {
+  background-color: #18181860 !important;
+  border: solid !important;
+  border-width: 1px !important;
+  border-color: #ffffff30 !important;
 }
 
 /* transparent settings */

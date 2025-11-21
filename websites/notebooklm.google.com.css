@@ -4,13 +4,17 @@ body,
 nav,
 header,
 welcome-page,
-notebook {
+notebook,
+notebook > * {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* notebooklm-no card bg */
@@ -24,8 +28,11 @@ omnibar,
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* notebooklm-card borders */
@@ -33,4 +40,9 @@ omnibar,
 section {
   background-color: transparent !important;
   border: solid light-dark(#999, #444) 1px !important;
+}
+
+/* no footer */
+footer {
+  display: none !important;
 }

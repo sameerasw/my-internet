@@ -1,4 +1,11 @@
 /* outlook-transparency */
+:root,
+.dark {
+  --neutralSecondarySurface: transparent !important;
+  --colorNeutralBackground1: transparent !important;
+  --headerTextIcons: white !important;
+}
+
 html,
 body,
 nav,
@@ -23,9 +30,26 @@ header,
 .customScrollBar,
 .X4w2q {
   background-color: transparent !important;
-  background: none !important;
+  background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+.fui-Button {
+  background-color: transparent !important;
+}
+.o365sx-button {
+  transition: none !important;
+  background-color: transparent !important;
+}
+.fui-MenuPopover {
+  background-color: light-dark(white, #292929) !important;
+}
+.o365sx-appBrandLink {
+  color: white !important;
 }

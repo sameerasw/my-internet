@@ -1,27 +1,32 @@
 /* Transparency */
 :root {
-	--cp-bg: transparent;
-	--cp-color-16: transparent
+  --cp-bg: transparent;
+  --cp-color-16: transparent;
 }
 
 body.editor {
-	background: none !important
+  background: none !important;
 }
 footer {
-	background: none !important
+  background: none !important;
 }
 
 /* Transparent Navbar */
 :root {
-	--cp-color-20: transparent !important
+  --cp-color-20: transparent !important
+;
 }
 
 /* Transparent Code Editor */
-.box.box.box, .editor .top-boxes, .CodeMirror-gutter-wrapper, body.project .editor-pane, body.project .editor {
-	background: none !important;
+.box.box.box,
+.editor .top-boxes,
+.CodeMirror-gutter-wrapper,
+body.project .editor-pane,
+body.project .editor {
+  background: none !important;
 }
 
 /* Glass Effect */
 :root {
-	--cp-grid-item-bg: rgba(0,0,0,0.4)
+  --cp-grid-item-bg: rgba(0, 0, 0, 0.4);
 }

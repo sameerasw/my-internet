@@ -1,0 +1,41 @@
+/* transparency */
+#__next,
+.main,
+body,
+html {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+
+  --background-dash-sidebar: transparent !important;
+  --background-dash-canvas: transparent !important;
+  --background-alternative-default: transparent !important;
+  --background-surface-75: transparent !important;
+  --background-surface-100: transparent !important;
+  --background-surface-200: transparent !important;
+  --background-surface-300: transparent !important;
+  --background-surface-400: transparent !important;
+  --background-200: transparent !important;
+}
+.bg,
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.bg-sidebar {
+  transition: background-color 0.1s ease-in-out !important;
+}
+.bg-dash-sidebar.relative,
+[data-state="expanded"] .bg-sidebar {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}

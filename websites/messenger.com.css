@@ -1,4 +1,4 @@
-/* fbm-transparecy */
+/* fbm-transparency */
 :root {
   --web-wash: #00000000 !important;
   --messenger-card-background: #00000000 !important;
@@ -9,4 +9,9 @@
 .xcrg951 {
   background-color: #00000000 !important;
   box-shadow: none !important;
+}
+
+/* chat bubble color */
+[aria-label="Thread composer"] {
+  background-color: var(--mwp-message-row-background) !important;
 }

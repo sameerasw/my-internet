@@ -1,23 +1,40 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, main, .OfferBanner_offer-banner__xlgYQ, .Home_head__nbvaD, section > div, section > span > span{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+main,
+.OfferBanner_offer-banner__xlgYQ,
+.Home_head__nbvaD,
+section > div,
+section > span > span {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* hidden */
-[alt="universe"]{
+[alt="universe"] {
   display: none !important;
 }

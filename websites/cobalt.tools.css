@@ -1,20 +1,28 @@
 /* cobalt-transparency */
-body, #cobalt, #sidebar, #content{
+body,
+#cobalt,
+#sidebar,
+#content {
   background-color: transparent !important;
   background: none !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* cobalt-hidden */
-#terms-note{
+#terms-note {
   display: none !important;
 }
 
 /* cobalt-hover */
-#sidebar, #supported-services{
+#sidebar,
+#supported-services {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
-  &:hover{
+  &:hover {
     opacity: 1 !important;
   }
 }

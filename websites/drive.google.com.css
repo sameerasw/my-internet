@@ -1,5 +1,22 @@
 /* drive-transparency */
-.YkfxEe, .ZHllM, .ALpC8b, .a-b-uoC0bf.a-b-L .a-b-jl, .S630me, .PolqHc, body, .owVllc, .jLwBBf, .aaHEi, .zyephd, .sEppUc, .IkfnSb .zXGQ6d, .iBEKub{
+.YkfxEe,
+.ZHllM,
+.ALpC8b,
+.a-b-uoC0bf.a-b-L .a-b-jl,
+.S630me,
+.PolqHc,
+body,
+.owVllc,
+.jLwBBf,
+.aaHEi,
+.zyephd,
+.sEppUc,
+.IkfnSb .zXGQ6d,
+.iBEKub {
   background-color: transparent !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }

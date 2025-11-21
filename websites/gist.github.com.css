@@ -12,7 +12,8 @@ nav,
 .Layout-module__container--ON_wj,
 .Box-sc-g0xbh4-0.fFvqfZ,
 .Sidebar-module__container--s585U .Sidebar-module__sidebar--sn0TN,
-.Sidebar-module__container--s585U:where(.Sidebar-module__pinned--e3Nsi), .Sidebar-module__container--s585U:where(.Sidebar-module__visible--d8dRm),
+.Sidebar-module__container--s585U:where(.Sidebar-module__pinned--e3Nsi),
+.Sidebar-module__container--s585U:where(.Sidebar-module__visible--d8dRm),
 .prc-Button-ButtonBase-c50BI.prc-Button-IconButton-szpyj,
 .color-bg-default,
 .feed-background,
@@ -39,31 +40,37 @@ nav,
 #memex-root,
 [aria-label="Project"],
 #memex-project-view-root > div,
-[aria-label="Formatting tools"], .slicer-items-module__SlicerPanel--nSeK0,
-.jyoUVC, .gisthead,
+[aria-label="Formatting tools"],
+.slicer-items-module__SlicerPanel--nSeK0,
+.jyoUVC,
+.gisthead,
 .Box-sc-g0xbh4-0[role="grid"],
-[role="row"], .Header,
+[role="row"],
+.Header,
 .eqCHeb {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-button[role="tab"]{
-  &[aria-selected="true"]{
+button[role="tab"] {
+  &[aria-selected="true"] {
     border-radius: 0.5em !important;
   }
 }
 
-.MarkdownEditor-module__viewSwitchBorder--zeiDB{
+.MarkdownEditor-module__viewSwitchBorder--zeiDB {
   display: none !important;
 }
 
 /* gh-transparent lists */
-.PageLayout-content .Box:not(.Popover-message), 
+.PageLayout-content .Box:not(.Popover-message),
 .PageLayout-content .Box-row,
 #repo-content-turbo-frame .Box.Box:not(.Popover-message) {
   background-color: transparent !important;
@@ -113,8 +120,7 @@ button[role="tab"]{
 .color-bg-subtle,
 .ajax-pagination-btn,
 action-graph .color-bg-inset,
-[data-testid="comment-header"]
-.Box-sc-g0xbh4-0,
+[data-testid="comment-header"] .Box-sc-g0xbh4-0,
 .copilotPreview__suggestionButton:not(:hover) {
   background-color: transparent !important;
   background: none !important;
@@ -178,7 +184,8 @@ td {
 modal-dialog .search-suggestions,
 details-dialog.Box,
 .Table.prc-DataTable-Table-qYfrL,
-.Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top.color-bg-default, .Popover-message {
+.Box-sc-g0xbh4-0.gOHzTT.js-notification-shelf-offset-top.color-bg-default,
+.Popover-message {
   background-color: var(--bgColor-inset) !important;
   border-radius: 1em !important;
 }
@@ -189,7 +196,8 @@ details-dialog.Box,
 .range-editor,
 .TableHead.prc-DataTable-TableHead-eOrJU,
 .Table.prc-DataTable-Table-qYfrL,
-.tabnav-tab.selected, .TabNav__TabNavLink-sc-pwdi4r-3.selected,
+.tabnav-tab.selected,
+.TabNav__TabNavLink-sc-pwdi4r-3.selected,
 .timeline-comment-header,
 .Metadata-module__container--tL6Q3,
 .CodeBlock-module__header--RMUQr,
@@ -247,14 +255,16 @@ input[value="Follow"],
 .SearchBarActions-module__buttons--N7M2V a,
 #\:rbo\:-list-view-container,
 table[aria-labelledby="folders-and-files"],
-#\:r1a\:-list-view-container,[aria-label="Issues"][data-issue-and-pr-hovercards-enabled],
+#\:r1a\:-list-view-container,
+[aria-label="Issues"][data-issue-and-pr-hovercards-enabled],
 #js-issues-search,
 .QueryBuilder [data-target="query-builder.styledInput"],
 .Box-body,
 a[aria-label="Add file"],
 button[aria-label="Search this repository"],
 [data-testid="issue-body"],
-#\:rc\:-list-view-container, .container:has(#repos-sticky-header),
+#\:rc\:-list-view-container,
+.container:has(#repos-sticky-header),
 .UnderlineNav-item:hover,
 .TabNav__TabNavLink-sc-pwdi4r-3:hover,
 .notifications-list,
@@ -269,17 +279,22 @@ button[aria-label="Search this repository"],
 .react-issue-comment,
 .MergeBox-module__mergePartialContainer--N4i3Z,
 .MarkdownEditor-module__previewWrapper--UHhTL,
-.FormControl-input, .js-previewable-comment-form,
+.FormControl-input,
+.js-previewable-comment-form,
 .btn.btn-block.js-profile-editable-edit-button,
 .btn.js-quick-submit-alternative,
 #your-repos-filter {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important; 
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
   background-color: light-dark(#fff8, #0005) !important;
   border-radius: 0.5em !important;
 }
 
 .avatar-upload div.position-absolute {
-  box-shadow: rgba(0, 0, 0, 0.5) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important; 
+  box-shadow:
+    rgba(0, 0, 0, 0.5) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
 }
 
 .TabNav__TabNavTabList-sc-pwdi4r-1.DvNYj,
@@ -288,15 +303,17 @@ button[aria-label="Search this repository"],
   gap: 8px !important;
 }
 
-.CommentBox-container, .CommentBox-comment {
+.CommentBox-container,
+.CommentBox-comment {
   background-color: light-dark(#fff8, #0005) !important;
   border-radius: 0 0 10px 10px !important;
   border: none !important;
   margin: 0px !important;
 }
 
-#new_comment_field, .CommentBox-comment {
- box-shadow: none !important;
+#new_comment_field,
+.CommentBox-comment {
+  box-shadow: none !important;
 }
 
 .tabnav.CommentBox-header {
@@ -304,29 +321,30 @@ button[aria-label="Search this repository"],
   background-color: light-dark(#fff8, #0005) !important;
 }
 
-.timeline-comment-group .timeline-comment{
-  box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
+.timeline-comment-group .timeline-comment {
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
   background-color: light-dark(#fff8, #0005) !important;
   border-radius: 0.5em !important;
 }
 
-.row-module__timelineBodyRowContainer--ml7YX{
+.row-module__timelineBodyRowContainer--ml7YX {
   padding: 0.5em !important;
 }
 
 /* no tab text */
-.UnderlineNav-item{
-   span:not([class="Counter"]){
-  opacity: 0 !important;
-  width: 0em !important;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important
-   }
-  &:hover{
-    span:not([class="Counter"]){
-  width: 6em !important;
-  opacity: 1 !important;
-   }
+.UnderlineNav-item {
+  span:not([class="Counter"]) {
+    opacity: 0 !important;
+    width: 0em !important;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
+  }
+  &:hover {
+    span:not([class="Counter"]) {
+      width: 6em !important;
+      opacity: 1 !important;
+    }
   }
 }
 
@@ -336,32 +354,36 @@ button[aria-label="Search this repository"],
 
 .AppHeader-localBar .Counter {
   margin-left: 0px !important;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
 }
 
 /* repo sidebar hover */
-.Layout-sidebar{
-  .BorderGrid-cell{
-  .mt-2, ul, div:not(.hide-sm.hide-md, .flex-items-center, .my-3, .f6){
-    height: 0 !important;
-    opacity: 0 !important;
-    margin: 0 !important;
-    transition: all 0.5s ease-out !important
-  }
-  }
-  &:hover{
-  .BorderGrid-cell{
-    .mt-2, ul, div:not(.hide-sm.hide-md, .flex-items-center, .my-3, .f6){
-    height: 100% !important;
-    opacity: 1 !important;
-    margin: 0.5em !important;
+.Layout-sidebar {
+  .BorderGrid-cell {
+    .mt-2,
+    ul,
+    div:not(.hide-sm.hide-md, .flex-items-center, .my-3, .f6) {
+      height: 0 !important;
+      opacity: 0 !important;
+      margin: 0 !important;
+      transition: all 0.5s ease-out !important;
     }
   }
+  &:hover {
+    .BorderGrid-cell {
+      .mt-2,
+      ul,
+      div:not(.hide-sm.hide-md, .flex-items-center, .my-3, .f6) {
+        height: 100% !important;
+        opacity: 1 !important;
+        margin: 0.5em !important;
+      }
+    }
   }
 }
 
 /* immersive search */
-.application-main{
+.application-main {
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.35) !important;
 }
 

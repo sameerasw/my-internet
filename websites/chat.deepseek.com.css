@@ -1,18 +1,33 @@
-/* deepseek-transparecy */
+/* deepseek-transparency */
 body[data-ds-dark-theme] {
   --dsr-bg: transparent !important;
   --dsr-side-bg: transparent !important;
 }
 
-.b480065b, ._871cbca, ._2be88ba, .b8812f16, ._48cdfc1, .f0d4f23d {
+.b480065b,
+._871cbca,
+._2be88ba,
+.b8812f16,
+._48cdfc1,
+.f0d4f23d {
   background: none !important;
 }
 
-/* deepseek-other changes */
+/* deepseek-remove decoration */
+
 div.fcaa63f8.d9fb9344,
-.fcaa63f8, ._62b4800 {
+.fcaa63f8,
+._62b4800 {
   display: none !important;
 }
+
+/* deepseek-larger margin */
+
+div.aaff8b8f {
+  margin-bottom: 1em !important;
+}
+
+/* deepseek-hover show side bar */
 
 .dc04ec1d,
 div.ds-flex {
@@ -22,8 +37,4 @@ div.ds-flex {
   &:hover {
     opacity: 1 !important;
   }
-}
-
-div.aaff8b8f {
-  margin-bottom: 1em !important;
 }

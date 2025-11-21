@@ -1,15 +1,37 @@
 /* gmail-transparency */
-.aAU, .bkK > .nH, .a6o::before, .WR.aeN,.wl, .yO, .aKh, .Nt{
+.aAU,
+.bkK > .nH,
+.a6o::before,
+.WR.aeN,
+.wl,
+.yO,
+.aKh,
+.Nt {
   background: none !important;
   background-color: transparent !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* gmail-no borders */
-.aAU, .bkK > .nH, .a6o::before, .WR.aeN,.wl, .yO, .aKh, .Nt{
+.aAU,
+.bkK > .nH,
+.a6o::before,
+.WR.aeN,
+.wl,
+.yO,
+.aKh,
+.Nt {
   border: none !important;
   box-shadow: none !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* gmail-hidden */
@@ -18,8 +40,19 @@ div.apa.nH.oy8Mbf {
 }
 
 /* gmail-preview (experimental) */
-[jsname="h50Ewe"]{
-  .UG, .iY, p, h1, h2, h3, h4, h5, h6, span, .nH, div{
+[jsname="h50Ewe"] {
+  .UG,
+  .iY,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  .nH,
+  div {
     background: none !important;
     background-color: transparent !important;
     color: var(--gm3-sys-color-surface-variant) !important;
@@ -28,18 +61,41 @@ div.apa.nH.oy8Mbf {
 }
 
 /* gmail-glass */
-[role="main"]{
+[role="main"] {
   background-color: color-mix(in srgb, var(--gm3-sys-color-background), transparent 50%) !important;
-  box-shadow:  rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px !important;
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px !important;
 }
 
-/* darkreader */
-:root{
+/* gmail-darkreader */
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
-
 /*  gmail-rounded corners */
-#\:3, div.nH:nth-child(4) > div:nth-child(1) {
-    border-radius: 8px !important;
-  }
+#\:3,
+div.nH:nth-child(4) > div:nth-child(1) {
+  border-radius: 8px !important;
+}
+
+/* gmail-flashbangless loading */
+#loading {
+  background-color: transparent !important;
+}
+
+#loading .la-e {
+  display: none !important;
+}
+
+.tVu25 {
+  transition: all 0.75s ease-in-out !important;
+}
+
+body:not(:has(#loading[style="display: none;"])) .tVu25 {
+  filter: blur(20px) !important;
+}

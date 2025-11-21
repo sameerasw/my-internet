@@ -1,31 +1,46 @@
 /* transparency */
-html, body, nav,.header-sticky-show header, .app-root, #pass-sidebar, #main, #content, section, .site-container-fullwidth, .site-container, .site-content-table{
+html,
+body,
+nav,
+.header-sticky-show header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.site-container-fullwidth,
+.site-container,
+.site-content-table {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* other */
-.top-banner-container{
+.top-banner-container {
   position: relative !important;
 }
 
-.site-background-banner{
+.site-background-banner {
   display: none !important;
 }
-.header-sticky header{
+.header-sticky header {
   background-color: light-dark(#000, #000);
   border-radius: 1em !important;
 }

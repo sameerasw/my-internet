@@ -1,41 +1,145 @@
-/* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .devsite-top-logo-row, devsite-header:not([bottom-row--hidden]) .devsite-top-logo-row-wrapper-wrapper, .devsite-collapsible-section, .devsite-book-nav-bg, .devsite-book-nav-filter, .devsite-book-nav-blur,
-.devsite-sidebar-content,
-.devsite-breadcrumb-list,
-devsite-search .devsite-searchbox::before,
-.devsite-searchbox,
-[aria-controls="language-menu"]
-    {
-  background-color: transparent !important;
+/* Transparency */
+body,
+.devsite-article-body > section,
+devsite-playlist .devsite-playlist--header,
+.button-primary,
+.devsite-search-field,
+.android-quick-link,
+.android-fully-clickable,
+.android-item-dark-background-grey-1000,
+.devsite-landing-row-item-description::after,
+.devsite-landing-row-item-description::before,
+.devsite-landing-row-item::after,
+devsite-playlist [expanded] {
   background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
-.devsite-nav-item{
-  border-radius: 20px !important;
+:root,
+body,
+devsite-header,
+devsite-search,
+.devsite-tabs-dropdown-column,
+.android-grouped-resources-contained--primary {
+  --devsite-background-color: transparent !important;
+  --devsite-background-1: transparent !important;
+  --devsite-background-2: transparent !important;
+  --devsite-button-primary-background: transparent !important;
+  --devsite-button-background-hover: transparent !important;
+  --devsite-dropdown-column-background: transparent !important;
+  --devsite-background-3: transparent !important;
+  --devsite-popout-background: transparent !important;
+  --devsite-header-color-lower: transparent !important;
+  --group-background: transparent !important;
+  --devsite-body-background: transparent !important;
 }
 
-devsite-language-selector{
---devsite-background-1: #00000000 !important;
+/* Darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-f8f9fa: transparent !important;
 }
 
-/* no footer */
-footer, devsite-footer-promos, devsite-footer-linkboxes, devsite-footer-utility, devsite-content-footer{
+/* Glass Effect */
+:root,
+devsite-tabs .devsite-tabs-dropdown-content,
+devsite-language-selector {
+  --devsite-button-primary-background: hsla(0, 0%, 100%, 0.08) !important;
+  --devsite-button-background-hover: hsla(0, 0%, 100%, 0.08) !important;
+  --group-background: hsla(0, 0%, 100%, 0.08) !important;
+  --darkreader-background-ffffff1a: hsla(0, 0%, 100%, 0.08) !important;
+  --darkreader-background-e8eaed: hsla(0, 0%, 100%, 0.08) !important;
+  --devsite-background-1: hsla(0, 0%, 100%, 0.08) !important;
+  --darkreader-bg--devsite-book-nav-background: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+.button-primary,
+.devsite-search-field,
+.android-quick-link,
+.android-fully-clickable,
+.android-item-dark-background-grey-1000,
+.devsite-popout-result {
+  background-color: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  google-codelab #drawer {
+    background-color: hsla(0, 0%, 100%, 0.08) !important;
+  }
+}
+
+/* Fix Overlapping Header */
+body,
+devsite-book-nav {
+  overflow-y: hidden !important;
+}
+
+devsite-header,
+devsite-book-nav .devsite-mobile-header {
+  position: relative !important;
+}
+
+#gc-wrapper {
+  margin-top: 0 !important;
+}
+
+main {
+  height: calc(100dvh - var(--devsite-js-header-height)) !important;
+  overflow-y: scroll !important;
+}
+
+.devsite-nav-list {
+  height: calc(100dvh - 49px) !important;
+  overflow-y: scroll !important;
+}
+
+/* Immersive Popup */
+html:has(.devsite-dropdown--open, [devsite-book-nav--open=""], [search-active=""], devsite-header [open=""]) {
+  main,
+  .devsite-collapsible-section {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+}
+
+body[devsite-book-nav--open] {
+  devsite-header {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+}
+
+google-codelab[drawer--open] {
+  #codelab-title,
+  #main {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+}
+
+google-codelab:has(devsite-language-selector[open]) {
+  #main {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+}
+
+/* Misc */
+body[type="codelab"] {
+  .devsite-toc-embedded {
+    display: none !important;
+  }
+  .devsite-article {
+    border: none !important;
+  }
+}
+
+/* No Footer */
+footer,
+devsite-footer-promos,
+devsite-footer-linkboxes,
+devsite-footer-utility,
+devsite-content-footer,
+.devsite-playlist--footer,
+.devsite-quiz-rating {
   display: none !important;
 }
-
-/* glass effect */
-article, .devsite-search-field{
-    box-shadow:  rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
-
-    @media (prefers-color-scheme: light) {
-  background-color: #fff8  !important;
-}
-
-    @media (prefers-color-scheme: dark) {
-  background-color: #0005  !important;
-}
-    
-  }

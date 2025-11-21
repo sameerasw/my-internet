@@ -1,26 +1,44 @@
 /* transparency */
-html, body, nav, header, #header, .app-root, #pass-sidebar, #main, #content, section, #__next, #body, #searchBar{
+html,
+body,
+nav,
+header,
+#header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+#__next,
+#body,
+#searchBar {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.coral-card:not(:hover){
+.coral-card:not(:hover) {
   background-color: transparent !important;
 }
 
 /* better header */
-#header{
+#header {
   position: relative !important;
 }
 
-#searchBar.scrolled-shadow{
+#searchBar.scrolled-shadow {
   top: 0 !important;
 }
 
 /* hidden */
-footer, .announcement-top-banner,div.content-wrapper-regular:has(.hero-text-area){
+footer,
+.announcement-top-banner,
+div.content-wrapper-regular:has(.hero-text-area) {
   display: none !important;
 }

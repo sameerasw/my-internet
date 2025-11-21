@@ -5,22 +5,41 @@
 }
 
 /* docs-transparency */
-html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-editor, #docs-editor-container, .kix-appview-editor, .navigation-widget-floating-navigation-button.navigation-widget, .outlines-widget-chaptered .kix-outlines-widget-header-contents,
-#docs-header:not(.docs-hub-appbar) .docs-titlebar-buttons, .docs-revisions-chromecover-content-color-default, .docs-revisions-sidebar, .docs-revisions-sidebar-header, .docs-revisions-sidebar-revisions-list-container, .docs-revisions-tile-content-wrapper, .docs-revisions-sidebar-date-group, .docs-revisions-tile, .left-sidebar-container{
+html,
+body,
+body.docs-grille-gm3,
+#docs-chrome:not(.docs-hub-chrome),
+#docs-editor,
+#docs-editor-container,
+.kix-appview-editor,
+.navigation-widget-floating-navigation-button.navigation-widget,
+.outlines-widget-chaptered .kix-outlines-widget-header-contents,
+#docs-header:not(.docs-hub-appbar) .docs-titlebar-buttons,
+.docs-revisions-chromecover-content-color-default,
+.docs-revisions-sidebar,
+.docs-revisions-sidebar-header,
+.docs-revisions-sidebar-revisions-list-container,
+.docs-revisions-tile-content-wrapper,
+.docs-revisions-sidebar-date-group,
+.docs-revisions-tile,
+.left-sidebar-container {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
   --gm3-sys-color-surface-bright: transparent !important;
 }
 
 /* docs-borders */
 .kix-page-paginated {
-    border-radius: 1em !important;
-    overflow: hidden !important;
-    outline: none !important;
+  border-radius: 1em !important;
+  overflow: hidden !important;
+  outline: none !important;
 }
 
 /* docs-color fix */
@@ -29,51 +48,78 @@ html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-edit
 }
 
 @media (prefers-color-scheme: dark) {
-    .docs-title-input, .docs-revisions-tile-collaborator-name, .docs-revisions-collapsible-pane-detailed-tiles-container, .docs-revisions-tile-descriptor, .docs-revisions-tile-text-box, .docs-revisions-chromecover-titlebar-name-label, .docs-revisions-sidebar-title-text , .docs-revisions-sidebar-date-group, .navigation-widget-header, .docs-revisions-sidebar-actions *, .docs-material-gm-select-caption{
-        color: white !important;
-    }
+  .docs-title-input,
+  .docs-revisions-tile-collaborator-name,
+  .docs-revisions-collapsible-pane-detailed-tiles-container,
+  .docs-revisions-tile-descriptor,
+  .docs-revisions-tile-text-box,
+  .docs-revisions-chromecover-titlebar-name-label,
+  .docs-revisions-sidebar-title-text,
+  .docs-revisions-sidebar-date-group,
+  .navigation-widget-header,
+  .docs-revisions-sidebar-actions *,
+  .docs-material-gm-select-caption {
+    color: white !important;
+  }
 
+  .docs-gm .docs-menubar .goog-control,
+  .docs-appbar-circle-button,
+  .docs-titlebar-badge-container,
+  #docs-parent-collections-container-outer,
+  .docs-revisions-icon-img,
+  .navigation-widget-hat-close-button,
+  .docs-revisions-chromecover-titlebar-button-back-container,
+  .javascriptMaterialdesignGm3WizIconButtonFilled-icon-button__icon-slot {
+    filter: invert(1) !important;
+  }
 
-    .docs-gm .docs-menubar .goog-control, .docs-appbar-circle-button, .docs-titlebar-badge-container, #docs-parent-collections-container-outer, .docs-revisions-icon-img, .navigation-widget-hat-close-button, .docs-revisions-chromecover-titlebar-button-back-container, .javascriptMaterialdesignGm3WizIconButtonFilled-icon-button__icon-slot{
-        filter: invert(1) !important;
-    }
-    
-    .navigation-widget-empty-content {
-        color: #bbb !important;
-    }
+  .navigation-widget-empty-content {
+    color: #bbb !important;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    .docs-title-input, .docs-revisions-tile-collaborator-name, .docs-revisions-collapsible-pane-detailed-tiles-container, .docs-revisions-tile-descriptor, .docs-revisions-tile-text-box, .docs-revisions-chromecover-titlebar-name-label, .docs-revisions-sidebar-title-text , .docs-revisions-sidebar-date-group, .navigation-widget-header, .docs-revisions-sidebar-actions *, .docs-material-gm-select-caption{
-        color: black !important;
-    }
-    .navigation-widget-empty-content {
-        color: #444 !important;
-    }
+  .docs-title-input,
+  .docs-revisions-tile-collaborator-name,
+  .docs-revisions-collapsible-pane-detailed-tiles-container,
+  .docs-revisions-tile-descriptor,
+  .docs-revisions-tile-text-box,
+  .docs-revisions-chromecover-titlebar-name-label,
+  .docs-revisions-sidebar-title-text,
+  .docs-revisions-sidebar-date-group,
+  .navigation-widget-header,
+  .docs-revisions-sidebar-actions *,
+  .docs-material-gm-select-caption {
+    color: black !important;
+  }
+  .navigation-widget-empty-content {
+    color: #444 !important;
+  }
 }
 
 .docs-material-gm-select-outer-box {
-    border-color: white !important;
+  border-color: white !important;
 }
 
 /* docs-rounded ruler */
-#kix-horizontal-ruler, #kix-vertical-ruler{
-    border-radius: 10px !important;
+#kix-horizontal-ruler,
+#kix-vertical-ruler {
+  border-radius: 10px !important;
 }
 
 .docs-body-pageless #kix-horizontal-ruler {
-	margin-left: 16px;
-	padding-left: initial;
+  margin-left: 16px;
+  padding-left: initial;
 }
 
 /* docs-autohide sidebar */
 .left-sidebar-container {
-    opacity: 0 !important;
-    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
+  opacity: 0 !important;
+  transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
 }
 
 .left-sidebar-container:hover {
-    opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 /* docs-blured instant bubble */
@@ -86,4 +132,3 @@ html, body, body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome), #docs-edit
   backdrop-filter: blur(10px) !important;
   transition: all 0.5s !important;
 }
-

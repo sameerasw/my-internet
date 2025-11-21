@@ -1,5 +1,14 @@
 /* lb-Transparency */
-body, .site-body, footer, .journal-header, .journal-page-header, .page-body, .journal-page-section.latest-articles .article-summary-grid.-medium::before, .journal-page-section.home-feature, body.editorial .page-bg, .journal-page-header + .article-hero::before {
+body,
+.site-body,
+footer,
+.journal-header,
+.journal-page-header,
+.page-body,
+.journal-page-section.latest-articles .article-summary-grid.-medium::before,
+.journal-page-section.home-feature,
+body.editorial .page-bg,
+.journal-page-header + .article-hero::before {
   background: transparent !important;
 }
 .backdropped .site-header .site-header-bg {
@@ -16,17 +25,15 @@ footer {
   display: none !important;
 }
 
-/* lb-Fade Background Image */ 
+/* lb-Fade Background Image */
 .backdropimage {
-  -webkit-mask-image: 
-    linear-gradient(90deg,rgba(0,0,0,1) 75%, rgba(0,0,0,0) 99%),
-    linear-gradient(180deg,rgba(0,0,0,1) 60%, rgba(0,0,0,0) 70%),
-    linear-gradient(270deg,rgba(0,0,0,1) 75%, rgba(0,0,0,0) 99%) !important;
+  -webkit-mask-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 99%), linear-gradient(180deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 70%),
+    linear-gradient(270deg, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 99%) !important;
   -webkit-mask-composite: intersect !important;
- mask-image: 
-    linear-gradient(90deg,rgba(0,0,0,1) 75%, rgba(0,0,0,0) 99%),
-    linear-gradient(180deg,rgba(0,0,0,1) 60%, rgba(0,0,0,0) 70%),
-    linear-gradient(270deg,rgba(0,0,0,1) 75%, rgba(0,0,0,0) 99%) !important;
+  mask-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 99%), linear-gradient(180deg, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 70%),
+    linear-gradient(270deg, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 99%) !important;
   mask-composite: intersect !important;
 }
 .backdrop-wrapper .backdropmask::before {
@@ -35,16 +42,16 @@ footer {
 
 /* lb-Actions Panel Transparency */
 .actions-panel ul li {
-	background: transparent !important;
-	background-color: transparent !important;
+  background: transparent !important;
+  background-color: transparent !important;
 }
 
 /* lb-Actions Panel Borders */
 .actions-panel ul li {
-	border: none !important;
+  border: none !important;
 }
 
 /* lb-Hide Watch Panel */
 .watch-panel {
-	display: none !important;
+  display: none !important;
 }

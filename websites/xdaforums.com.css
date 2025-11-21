@@ -1,13 +1,40 @@
 /* transparency */
-html, body,div:not(.is-sticky) > .p-nav, header, .app-root, #pass-sidebar, #main, #content, section, .uix_sidebarNav, .xda_canvasSiteLinks, .p-sectionLinks, .p-body-header, .block-container, .block-filterBar, [name="title"], .inputGroup-text, .block-minorHeader, article, .message-cell--user, .message--quickReply, .block-body > a, dt, .formSubmitRow-bar{
+html,
+body,
+div:not(.is-sticky) > .p-nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.uix_sidebarNav,
+.xda_canvasSiteLinks,
+.p-sectionLinks,
+.p-body-header,
+.block-container,
+.block-filterBar,
+[name="title"],
+.inputGroup-text,
+.block-minorHeader,
+article,
+.message-cell--user,
+.message--quickReply,
+.block-body > a,
+dt,
+.formSubmitRow-bar {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

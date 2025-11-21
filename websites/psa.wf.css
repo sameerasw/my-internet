@@ -15,23 +15,40 @@ app,
 .app,
 .app-root,
 #pass-sidebar,
-#main, .container-inner,
-main, .main, #page,
-#content, .sidebar-content,
-section, .sidebar-content > div,
-#__next, .page-title, .alx-posts li,
-#navigation-wrapper, #wrapper,
-#global-navbar, .main::after,
-.head.notfixed, .post-row,
-body[data-theme="dark"], body[data-theme="light"], .container-inner > .main,
-body.dark_mode, body.light_mode{
+#main,
+.container-inner,
+main,
+.main,
+#page,
+#content,
+.sidebar-content,
+section,
+.sidebar-content > div,
+#__next,
+.page-title,
+.alx-posts li,
+#navigation-wrapper,
+#wrapper,
+#global-navbar,
+.main::after,
+.head.notfixed,
+.post-row,
+body[data-theme="dark"],
+body[data-theme="light"],
+.container-inner > .main,
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

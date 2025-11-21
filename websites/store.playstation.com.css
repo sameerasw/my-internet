@@ -1,23 +1,41 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, #jetstream-tertiary-nav > div, #shared-nav-container, .shared-nav__primary-parent, .psw-s-content-break-20, main > div{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+#__next,
+#jetstream-tertiary-nav > div,
+#shared-nav-container,
+.shared-nav__primary-parent,
+.psw-s-content-break-20,
+main > div {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }
 
 /* I know it's sony */
-.sony-bar{
+.sony-bar {
   display: none !important;
 }

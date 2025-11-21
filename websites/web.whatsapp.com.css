@@ -1,72 +1,110 @@
-/* wa-transparecy */
+/* wa-Transparency */
+html,
+body,
+.x1iek97a,
+.xsm26vf {
+  background: none !important;
+}
+
 :root {
-  --splashscreen-startup-background: #00000000 !important;
+  --splashscreen-startup-background: transparent !important;
   --splashscreen-startup-background-rgb: transparent !important;
-  --app-background: #00000000 !important;
-  --app-background-stripe: #00000000 !important;
-  --WDS-app-wash: #00000000 !important;
-  --panel-header-background: #00000000 !important;
-  --navbar-background: #00000000 !important;
-  --panel-background-lighter: #00000000 !important;
-  --intro-background: #00000000 !important;
-  --background-default: #00000000 !important;
-  --butterbar-default-background: #00000000 !important;
-  --filters-container-background: #00000000 !important;
-  --search-input-container-background: #00000000 !important;
-  --search-container-background: #00000000 !important;
-  --conversation-header-border: #00000000 !important;
-  --border-list: #00000000 !important;
-  --conversation-panel-background: #00000000 !important;
-  --rich-text-panel-background: #00000000 !important;
-  --drawer-background-deep: #00000000 !important;
-  --drawer-section-background: #00000000 !important;
 }
 
-._ai01._ai07,
-.xy4wh6y,
-.x10l6tqk > ._aigw,
-.x10l6tqk > ._aigw > span > div,
-.x10l6tqk > ._aigw > span > div > div > span > div {
-  background-color: transparent !important;
+.color-refresh,
+.x1280gxy,
+.x1l0ey4t,
+.x1h3rtpe {
+  --WDS-surface-default: transparent !important;
+  --WDS-background-wash-inset: transparent !important;
+  --WDS-surface-emphasized: transparent !important;
+  --WDS-surface-elevated-emphasized: transparent !important;
+  --WDS-systems-chat-background-wallpaper: transparent !important;
+  --compose-input-background: var(--WDS-surface-highlight) !important;
+  --background-default-hover: var(--WDS-surface-highlight) !important;
+  --background-lightest-hover: var(--WDS-surface-highlight) !important;
+  --reactions-panel-background-color: transparent !important;
+  --reactions-panel-search-background-color: var(--WDS-surface-highlight) !important;
+  --poll-modal-footer-background-color: transparent !important;
+  --WDS-systems-bubble-surface-system: #24262666 !important;
+  --WDS-systems-bubble-surface-incoming: #24262666 !important;
+  --WDS-systems-bubble-surface-outgoing: #144d3766 !important;
+  --bot-suggestion-background-color: #18222966 !important;
+  --rich-text-panel-background: var(--WDS-surface-highlight) !important;
+  --panel-input-background: var(--WDS-surface-highlight) !important;
+  --chevron-button-background: var(--WDS-surface-highlight) !important;
 }
 
-._aigs:has(._aigw > span > div) .x1m6msm {
+@media screen and (max-width: 1300px) {
+  .three ._ajx_ {
+    display: none !important;
+  }
+  ._aiwn:has(.overlay) ._aig- {
+    display: none !important;
+  }
+}
+
+._aigs:has(._aigw > div > span > div) .x18pi947 {
   opacity: 0 !important;
 }
 
-/* wa-layout fixes */
-.two,
-.three {
-  width: 100vw !important;
-  max-width: 100vw !important;
-  height: 100vh !important;
-  margin: 0 !important;
-  top: 0 !important;
+/* wa-Immersive Popup */
+.x1akjpcp,
+.xbyyjgo,
+.x42x0ya,
+.x1bmpntp,
+._ahyo {
+  background: none !important;
 }
 
-/* wa-other changes */
-.xu3j5b3,
-.xvkby78::after,
-.xso031l {
-  border: none !important;
-  outline: none !important;
+.color-refresh,
+.x1honnu5 {
+  --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
+  --WDS-background-dimmer: transparent !important;
 }
 
-._al_d,
-div.x9f619.x78zum5.x6s0dn4.xl56j7k.xcxhlts.xktsk01.x1fqp7bg.x1d52u69.x889kno.x178xt8z.x13fuv20.xyj1x25.xzwifym {
-  display: none !important;
+[data-animate-status-viewer] .x1h2kqdt,
+[data-animate-modal-popup] {
+  background-color: var(--WDS-surface-highlight) !important;
 }
 
-.x13x2ugz {
-  border-radius: 2em !important;
+._aiwn > div:has(._ak4w, > span:nth-child(3):not(:empty), > span:nth-child(4):not(:empty)) {
+  ._aigs {
+    filter: blur(20px) !important;
+  }
+  ._aigs [type="button"]:not(._aiwn > span > div [type="button"], [data-animate-modal-backdrop] [type="button"], [role="application"] [type="button"]),
+  [data-navbar-item="true"],
+  ._ak72:not([data-animate-modal-backdrop] ._ak72),
+  ._aigs [role="button"]:not(._ak4w [role="button"], [data-animate-modal-backdrop] [role="button"], .overlay [role="button"], ._aiwn > span > div [role="button"]),
+  ._amk6 {
+    pointer-events: none !important;
+  }
 }
 
-/* wa-overlay fixes  */
-div.xds687c:nth-child(1) {
-  background-color: var(--background-document-with-captions) !important;
+._aiwn > div {
+  &:has(> span:nth-child(3):not(:empty), > span:nth-child(8):not(:empty)):not(:has(._ajx_, [data-animate-status-viewer])) {
+    ._aigs,
+    > span:nth-child(4) > div {
+      filter: blur(20px) !important;
+    }
+  }
+
+  &:has(.x1h2kqdt) {
+    [data-animate-status-viewer] > span > div > div > div > div > div:not(:last-child) {
+      filter: blur(20px) !important;
+    }
+  }
+
+  &:has([data-animate-modal-backdrop], [role="application"]) {
+    [data-animate-status-viewer] {
+      filter: blur(20px) !important;
+    }
+  }
 }
 
-/* wa-chat-background */
-div.x10l6tqk.x13vifvy.x17qophe.xh8yej3.x5yr21d.x182nak8.x1wwuglj.x1vs56c6 {
-  background-image: none !important;
+._aigs:has(> div:nth-child(3) > div:nth-child(2) > div > span > div) {
+  #main > div,
+  #main > footer {
+    opacity: 0 !important;
+  }
 }

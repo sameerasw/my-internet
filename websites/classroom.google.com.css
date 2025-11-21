@@ -1,18 +1,147 @@
-/* class-overlay fix */
-[role="menu"]{
-  background-color: var(--darkreader-background-fffffff2) !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+/*  class-glass effect */
+.qhnNic,
+.lXuxY,
+.jWCzBe:hover,
+.gHz6xd,
+.d4Fe0d,
+.n4xnA,
+.hgjBDc,
+.MHxtic:hover,
+.G3xBUc:hover,
+.GWZ7yf {
+  background-color: #18181875 !important;
+  border-color: #90909080 !important;
+}
+
+.SUV7We,
+.s2g3Xd,
+.vwNuXe,
+.VfPpkd-P5QLlc,
+.ysU8Le,
+.rHGeGc-O1htCb,
+.UywwFc-LgbsSe {
+  background-color: #08080875 !important;
+}
+
+.vwNuXe,
+.xHPsid,
+.YJHsie {
+  border-radius: 10px !important;
+}
+
+.qhnNic * {
+  border-color: #90909080 !important;
+}
+
+.xHPsid,
+.YJHsie,
+.hgjBDc {
+  background-color: #08080890 !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.OVu6ob .lXuxY .u73Apc,
+.OVu6ob .pO6AMc .u73Apc,
+.OVu6ob .PqkECe .u73Apc,
+.OVu6ob .S9CVKb,
+.OVu6ob .UW3s6d,
+.uW2Fw-P5QLlc {
+  background-color: transparent !important;
+}
+
+/* class-new post zoom */
+.SSPGKf {
+  transition: 0.6s;
+}
+
+body:has(.hgjBDc) {
+  .SSPGKf {
+    filter: blur(10px) !important;
+    transform: scale(1.1) !important;
+  }
+}
+
+/*  class-sidebar $ Adds rounding, a darker blurred background, and moves the scroll bar to the left side. */
+.tCcYY[role="menu"] {
+  background-color: transparent !important;
+}
+
+.rknsod {
+  background-color: #08080890 !important;
+  backdrop-filter: blur(10px) !important;
+  border-top-right-radius: 35px !important;
+  border-bottom-right-radius: 35px !important;
+}
+
+.uTwgne[aria-current="page"] {
+  background-color: #ffffff30 !important;
+  * {
+    background-color: transparent !important;
+  }
+}
+
+.rknsod {
+  direction: rtl !important;
+}
+
+.uTwgne,
+.ug8OTc {
+  *:not(.pzaVke) {
+    pointer-events: none;
+  }
+  :hover {
+    background-color: #ffffff06 !important;
+  }
+  direction: ltr;
+}
+
+/* class-hover $ Hides top bar. */
+.joJglb:not(:hover),
+body:has(.joJglb:not(:hover)) .J6rR1b {
+  *:not(.QRiHXd) {
+    opacity: 0% !important;
+    transition: 0.2s !important;
+    pointer-events: none !important;
+  }
+  > .QRiHXd {
+    height: 30px !important;
+  }
+  height: 35px !important;
+  transition: 0.3s !important;
+}
+
+.joJglb:hover,
+body:has(.joJglb:hover) .J6rR1b {
+  *:not(.QRiHXd) {
+    opacity: 100% !important;
+    transition: 0.4s !important;
+    pointer-events: all !important;
+  }
+  > .QRiHXd {
+    height: 70px !important;
+  }
+  height: 70px !important;
+  transition: 0.3s !important;
 }
 
 /* class-transparency */
-.OX4Vcb, nav, .Tabkde, .Aopndd, .RIDjNe, .mwJvDe .KEDCCd{
+.OX4Vcb,
+nav,
+.Tabkde,
+.Aopndd,
+.RIDjNe,
+.mwJvDe .KEDCCd {
   background-color: transparent !important;
   border: none !important;
   box-shadow: none !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* class-darkreader */
-:root{
---darkreader-background-ffffff: transparent !important;
+:root {
+  --darkreader-background-ffffff: transparent !important;
 }

@@ -1,4 +1,4 @@
-/* priv-transparecy */
+/* priv-transparency */
 :root {
   --color-header-background: #00000000 !important;
   --color-sidebar-border: #00000000 !important;
@@ -32,5 +32,17 @@ article {
 
   img {
     border-radius: 0.5em !important;
+  }
+}
+/* search focus */
+#results,
+.search_filters {
+  transition: all 0.2s ease-in-out !important;
+}
+
+body:has(input#q:focus) {
+  #results,
+  .search_filters {
+    filter: blur(10px) !important;
   }
 }

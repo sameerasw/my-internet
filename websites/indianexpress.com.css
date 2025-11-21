@@ -1,23 +1,43 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .t-headlink, .main-header, .ie-header #fixednavbar, .mainnav, .s-level-menu, #HP_TOP_NEWS, .lead-stories, [data-tb-region="home-latest-news"],
-[data-tb-region="home-entertainment-section"]{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+.t-headlink,
+.main-header,
+.ie-header #fixednavbar,
+.mainnav,
+.s-level-menu,
+#HP_TOP_NEWS,
+.lead-stories,
+[data-tb-region="home-latest-news"],
+[data-tb-region="home-entertainment-section"] {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.g-fixednav #fixednavbar{
+.g-fixednav #fixednavbar {
   background-color: light-dark(#fff, #222) !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

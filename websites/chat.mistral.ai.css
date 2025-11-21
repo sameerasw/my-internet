@@ -1,8 +1,26 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, main > div, .bg-sidebar-subtle, .bg-subtle, main .group\/sidebar-wrapper, div.from-sidebar.via-transparent, [data-side="left"] > div{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+main > div,
+.bg-sidebar-subtle,
+.bg-subtle,
+main .group\/sidebar-wrapper,
+div.from-sidebar.via-transparent,
+[data-side="left"] > div {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }

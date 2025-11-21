@@ -1,24 +1,50 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #home-page, #modal-container > div, #account-statuses-page, #catchup-page, .timeline-deck, #app > div, #app > #columns > div, .timeline-header, .links-bar{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+#home-page,
+#modal-container > div,
+#account-statuses-page,
+#catchup-page,
+.timeline-deck,
+#app > div,
+#app > #columns > div,
+.timeline-header,
+.links-bar {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out,filter 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out,
+    filter 0.5s ease-in-out !important;
 }
 
-.timeline  li, #compose-container-outer{
-    background-color: light-dark(#fff8, #0005)  !important;
-    transition: filter 0.5s ease-in-out, border-radius 0.5s ease-in-out, scale 0.2s ease-in-out !important;
-  }
+.timeline li,
+#compose-container-outer {
+  background-color: light-dark(#fff8, #0005) !important;
+  transition:
+    filter 0.5s ease-in-out,
+    border-radius 0.5s ease-in-out,
+    scale 0.2s ease-in-out !important;
+}
 
 /* animations */
-  #home-page[inert=""], body:has(.szh-menu-container) .timeline li:not(:has(article.status-menu-open)){
-    filter: blur(20px) !important;
-  }
+#home-page[inert=""],
+body:has(.szh-menu-container) .timeline li:not(:has(article.status-menu-open)) {
+  filter: blur(20px) !important;
+}
 
-body:has(.szh-menu-container)  .timeline li:has(article.status-menu-open){
+body:has(.szh-menu-container) .timeline li:has(article.status-menu-open) {
   border-radius: 1em !important;
   scale: 1.02 !important;
-  }
-
+}

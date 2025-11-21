@@ -1,0 +1,36 @@
+/* in-transparency */
+:root {
+  --color-background: transparent !important;
+  --color-background-canvas: transparent !important;
+  --color-background-container: transparent !important;
+}
+
+#app__container,
+.form__input--floating,
+body {
+  background-color: transparent !important;
+}
+
+/* in-no borders */
+:root {
+  --color-border-faint: transparent !important;
+}
+
+/* in-navbar blur */
+header {
+  backdrop-filter: blur(20px) !important;
+}
+
+/* in-glass effect */
+:root {
+  --color-background: #fff8 !important;
+}
+
+.theme--dark {
+  --color-background: #0005 !important;
+}
+
+/* in-no footer */
+footer {
+  display: none !important;
+}

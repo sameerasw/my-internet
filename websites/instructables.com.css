@@ -1,0 +1,34 @@
+/* instructables-Transparency */
+body,
+.full-wrapper,
+.instructables-header,
+._footerWrapper_1g310_1,
+._commentEditorWrapper_cfxvj_8,
+._comment_83cm4_11,
+._searchInput_3i53d_19,
+.author-promo,
+._wrapper_ez9w2_12,
+._button_156n2_17 {
+  background-color: transparent !important;
+  background: none !important;
+}
+
+/* instructables-Darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* instructables-No Signup Background */
+._signupBackground_ez9w2_4 {
+  background: none !important;
+}
+
+/* instructables-No Recomendations */
+._recommendations_fjzu6_4 {
+  display: none !important;
+}
+
+/* instructables-No Footer */
+footer {
+  display: none !important;
+}

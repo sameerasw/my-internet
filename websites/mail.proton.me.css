@@ -1,15 +1,34 @@
 /* protonmail-Transparency */
-.sidebar, .header, body, .items-column-list, .content, .main, .drawer-sidebar,
-.searchbox, .input,
-.toolbar, .items-column-list-container, .checkbox-fakecheck, .toolbar .select-all-wrapper:hover,
-.item-container-wrapper, .item-container,
+.sidebar,
+.header,
+body,
+.items-column-list,
+.content,
+.main,
+.drawer-sidebar,
+.searchbox,
+.input,
+.toolbar,
+.items-column-list-container,
+.checkbox-fakecheck,
+.toolbar .select-all-wrapper:hover,
+.item-container-wrapper,
+.item-container,
 .button-promotion,
-.message-header, .button-group, .button-group-item, .banner,
+.message-header,
+.button-group,
+.button-group-item,
+.banner,
 .message-content,
-.message-attachments, .message-attachmentList-item,
-.ui-prominent, .ui-standard,
-.your-plan-section-container div ul li, .plan-selection div ul li,
-.field, .toggle-container.toggle-container, .button-outline-weak {
+.message-attachments,
+.message-attachmentList-item,
+.ui-prominent,
+.ui-standard,
+.your-plan-section-container div ul li,
+.plan-selection div ul li,
+.field,
+.toggle-container.toggle-container,
+.button-outline-weak {
   background: transparent !important;
 }
 :root {
@@ -17,23 +36,41 @@
 }
 
 /* protonmail-Disable Borders */
-.input, .toolbar, .item-container, .main, .main-area-border, .message-container, .vr, .button-group, .message-attachmentList-item, .banner {
-  border: none !important; 
+.input,
+.toolbar,
+.item-container,
+.main,
+.main-area-border,
+.message-container,
+.vr,
+.button-group,
+.message-attachmentList-item,
+.banner {
+  border: none !important;
 }
 
-/* protonmail-Switch Border Color */ 
-.input, .main, .main-area-border, .message-attachmentList-item, .message-container, .button-group, .banner {
+/* protonmail-Switch Border Color */
+.input,
+.main,
+.main-area-border,
+.message-attachmentList-item,
+.message-container,
+.button-group,
+.banner {
   border-color: light-dark(black, white) !important;
 }
-.toolbar, .item-container, .vr {
+.toolbar,
+.item-container,
+.vr {
   border: none !important;
 }
 
 /* protonmail-Themes Support */
-.ui-standard, .ui-prominent {
+.ui-standard,
+.ui-prominent {
   --text-norm: light-dark(black, white) !important;
-  --text-weak: light-dark(#333333,#cccccc) !important;
-  --optional-email-item-read-text-color: light-dark(#333333,#cccccc) !important;
+  --text-weak: light-dark(#333333, #cccccc) !important;
+  --optional-email-item-read-text-color: light-dark(#333333, #cccccc) !important;
 }
 .bg-weak {
   background: transparent !important;

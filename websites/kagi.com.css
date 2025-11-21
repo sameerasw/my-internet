@@ -1,18 +1,26 @@
 /* kagi-transparency */
-html, body, .search-results, .search-header, .search-footer, .search-container {
-    background-color: transparent !important;
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
-    background-image: none !important;
-  }
-  
-  /* kagi-hidden */
-  .search-footer, .search-header, .ads-container, .sponsored-links {
-    display: none !important;
-  }
-  
-  /* kagi-no-footer */
-  footer {
-    display: none !important;
-  }
+html,
+body,
+.search-results,
+.search-header,
+.search-footer,
+.search-container {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+/* kagi-hidden */
+.search-footer,
+.search-header,
+.ads-container,
+.sponsored-links {
+  display: none !important;
+}
+
+/* kagi-no-footer */
+footer {
+  display: none !important;
+}

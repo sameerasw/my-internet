@@ -1,7 +1,7 @@
 /* ycom-transparency */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
-table{
+table {
   background-color: transparent !important;
 }

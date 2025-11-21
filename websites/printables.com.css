@@ -40,7 +40,7 @@ a.btn.btn-info,
 #header-top-bar,
 #main-nav-bar {
   opacity: 0 !important;
-  transition: opacity .2s ease !important;
+  transition: opacity 0.2s ease !important;
 }
 
 #header-top-bar:hover,
@@ -51,7 +51,7 @@ a.btn.btn-info,
 /* printables-hide footer */
 footer {
   opacity: 0 !important;
-  transition: opacity .2s ease !important;
+  transition: opacity 0.2s ease !important;
 }
 
 footer:hover {
@@ -61,7 +61,7 @@ footer:hover {
 /* printables-hide sidebar */
 [data-name="sidebar"] {
   opacity: 0 !important;
-  transition: opacity .2s ease !important;
+  transition: opacity 0.2s ease !important;
 }
 
 [data-name="sidebar"]:hover {

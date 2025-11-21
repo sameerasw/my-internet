@@ -1,5 +1,7 @@
 /* mfp-transparency */
 body {
   background: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out !important;
 }

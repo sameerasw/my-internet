@@ -2,8 +2,11 @@
 *:not(.css-dxjz5z-Root-bodyText-circle-Root-Root-EnhancedAvatar) {
   background-color: transparent !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out,
-    border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* tg-create goal dialog */
@@ -24,7 +27,7 @@
 }
 
 /* tg-current page indicator */
-[aria-current='page'] .css-ttexsm-StyledSectionItem-p1Body {
+[aria-current="page"] .css-ttexsm-StyledSectionItem-p1Body {
   background: light-dark(rgba(230, 230, 230, 0.5), rgba(64, 50, 72, 0.5)) !important;
 }
 

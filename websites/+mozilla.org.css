@@ -6,8 +6,7 @@ nav,
 .nav,
 navbar,
 .navbar,
-#navbar
-header,
+#navbar header,
 #header,
 .header,
 app,
@@ -23,20 +22,27 @@ section,
 #navigation-wrapper,
 #global-navbar,
 .head.notfixed,
-body.dark_mode, body.light_mode, main > div, main > div::before{
+body.dark_mode,
+body.light_mode,
+main > div,
+main > div::before {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

@@ -1,37 +1,68 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, nav > div, body:not([style="overflow: hidden;"]) nav > div > div > div, nav + div > div, div.\$bg-white:nth-child(1){
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+nav > div,
+body:not([style="overflow: hidden;"]) nav > div > div > div,
+nav + div > div,
+div.\$bg-white:nth-child(1) {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-[data-testid="picture"] .\$object-cover, [data-testid="picture"] + .\$w-full{
+[data-testid="picture"] .\$object-cover,
+[data-testid="picture"] + .\$w-full {
   display: none !important;
 }
 
-
 @media (prefers-color-scheme: dark) {
-  h1, h2, h3, h4, h5, h6, span, p, li {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  p,
+  li {
     color: #fff !important;
   }
 }
 
-
 @media (prefers-color-scheme: light) {
-  h1, h2, h3, h4, h5, h6, span, p, button, li {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  p,
+  button,
+  li {
     color: #000 !important;
   }
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }
-

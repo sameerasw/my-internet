@@ -6,8 +6,7 @@ nav,
 .nav,
 navbar,
 .navbar,
-#navbar
-header,
+#navbar header,
 #header,
 .header,
 app,
@@ -22,24 +21,29 @@ section,
 #navigation-wrapper,
 #global-navbar,
 .head.notfixed,
-.site-back-white{
+.site-back-white {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.site-back-main{
+.site-back-main {
   border-radius: 1em !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer, .site-back-footer{
+footer,
+.site-back-footer {
   display: none !important;
 }

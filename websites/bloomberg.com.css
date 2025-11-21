@@ -1,25 +1,37 @@
 /* bloo-transparency */
-.media-ui-LeaderboardAd_parallaxWrapper-JMVgdxR--aU-, [data-component="logo-bar"], [data-component="menu-desktop"], [data-component="logo"]{
+.media-ui-LeaderboardAd_parallaxWrapper-JMVgdxR--aU-,
+[data-component="logo-bar"],
+[data-component="menu-desktop"],
+[data-component="logo"] {
   background-color: transparent !important;
-   transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* bloo-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* bloo-hidden */
-#bb-that{
+#bb-that {
   display: none !important;
 }
 
 /* bloo-no borders */
-section, .gridLayout_gridLayout__zTmc7, .LineupContent2Up_story__6VATd, .PhoenixTickerBarWrapper_tickerBarWrapper__2cAU2, [data-testid="secondary-stories"], [data-component="grid-module"]{
+section,
+.gridLayout_gridLayout__zTmc7,
+.LineupContent2Up_story__6VATd,
+.PhoenixTickerBarWrapper_tickerBarWrapper__2cAU2,
+[data-testid="secondary-stories"],
+[data-component="grid-module"] {
   border: none !important;
 }
 
 /* bloo-nav blur */
-nav{
+nav {
   backdrop-filter: blur(20px) !important;
 }

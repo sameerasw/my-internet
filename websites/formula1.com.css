@@ -7,40 +7,62 @@ nav:not([aria-label="Primary Navigation"]),
 navbar,
 .navbar,
 #navbar,
-header, tr.bg-brand-white, tr.bg-grey-10,
-#header, .f1-filters-wrapper, details.bg-brand-white,
-.header, .f1-container .f1-inner-wrapper, .f1-container .f1-inner-wrapper > div,
-app, li.bg-carbonBlack,
-#app, #maincontent > section, #maincontent > div,
-.app, .f1-container,
+header,
+tr.bg-brand-white,
+tr.bg-grey-10,
+#header,
+.f1-filters-wrapper,
+details.bg-brand-white,
+.header,
+.f1-container .f1-inner-wrapper,
+.f1-container .f1-inner-wrapper > div,
+app,
+li.bg-carbonBlack,
+#app,
+#maincontent > section,
+#maincontent > div,
+.app,
+.f1-container,
 .app-root,
 #pass-sidebar,
 #main,
-main, figure, figure::after,
+main,
+figure,
+figure::after,
 #content,
 #__next,
 #navigation-wrapper,
-#global-navbar, .f1-utils-inner-padding-y,
-.head.notfixed, #maincontent > div > div > div,#maincontent > div > div > div::before,#maincontent > div > div > ul,
-body[data-theme="dark"], body[data-theme="light"],
-body.dark_mode, body.light_mode{
+#global-navbar,
+.f1-utils-inner-padding-y,
+.head.notfixed,
+#maincontent > div > div > div,
+#maincontent > div > div > div::before,
+#maincontent > div > div > ul,
+body[data-theme="dark"],
+body[data-theme="light"],
+body.dark_mode,
+body.light_mode {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-section:has([aria-label="Primary Navigation"]){
+section:has([aria-label="Primary Navigation"]) {
   border-radius: 0 0 1em 1em !important;
 }
 
 /* darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* no footer */
-footer{
+footer {
   display: none !important;
 }

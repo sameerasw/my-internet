@@ -1,9 +1,9 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deployment
 
-on:    
+on:
   workflow_run:
-    workflows: ["Update styles.json"] # Match this to the name of your first workflow
+    workflows: ["Format and Update styles.json"]
     types:
       - completed
 

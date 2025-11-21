@@ -1,46 +1,75 @@
-/* anili-transparency */
-html,
-body {
+/* transparency */
+body,
+.nav,
+.header:not(.el-dialog__body > .header),
+.result-col,
+.list-preview,
+.markdown-editor,
+.media-preview[data-v-796abd11],
+.nav-wrap[data-v-1cc2919e],
+.favourites-wrap[data-v-ddf96a3c],
+.stats-wrap[data-v-5c30286e],
+.theme-switch[data-v-0567dd85],
+.medialist.table .list-section,
+.bar-chart-wrap[data-v-46edc0ca],
+.pie-chart[data-v-26dc9635],
+.line-chart-wrap[data-v-84e71bc6],
+.footer[data-v-0165744a],
+.input,
+.search[data-v-219025ae],
+.recommendation-pair-card[data-v-20967985],
+.content[data-v-48560ace],
+.input[data-v-c574a71c] .el-textarea__inner,
+.search-input > .el-input__inner,
+.search-input:has(.el-input__inner),
+.entry-filter > .el-input__inner,
+.entry-filter:has(.el-input__inner),
+.stat-card[data-v-686e8358],
+.relations-wrap[data-v-686e8358],
+.wrap[data-v-04d66030],
+.thread-card[data-v-550f7194],
+.review-card[data-v-0369a0cf],
+.list-stats[data-v-815ccddc],
+.footer[data-v-815ccddc],
+.app-section[data-v-4ab65192],
+.comment-wrap[data-v-20438142],
+.body[data-v-3f00779d],
+.rating[data-v-5ca094da],
+.body[data-v-5ca094da],
+.role-card[data-v-f92815d6],
+.follow[data-v-69b91520],
+.time[data-v-04d66030],
+.load-more[data-v-6f203cf2],
+.ranking[data-v-a6e466b2],
+.no-threads[data-v-19b948c8],
+.external-link[data-v-c1b7ee7c],
+.markdown .markdown-spoiler.spoiler-visible span,
+.landing,
+.media-card,
+.stats-graph,
+.media-score-distribution,
+.status-distribution[data-v-e2bbc000],
+.about .content-wrap[data-v-5c30286e],
+.overview[data-v-5c30286e] .content-wrap,
+.hohTable,
+.hohNotification {
   background-color: transparent !important;
-}
-
-.container,
-.content,
-.wrapper,
-.main,
-.sidebar,
-.header,
-.footer,
-.card,
-.box {
-  background-color: rgba(255, 255, 255, 0) !important;
-}
-
-:root {
-  --color-foreground: #00000000 !important;
-  --color-foreground-grey: #00000000 !important;
-}
-
-.media-card[data-v-70df6e62] {
-  background: #00000000 !important;
+  background: none !important;
+  border: none !important;
   box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
-.site-theme-dark {
-  --color-foreground: #00000000 !important;
+/* darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
 }
 
-.search[data-v-219025ae] {
-  background: #00000000 !important;
-}
-
-/* anili-nav bar transparency */
-.transparent[data-v-62eacfff] {
-  background: #00000000 !important;
-  color: #fffffff0 !important;
-}
-
-/* anili-no footer */
-.footer {
+/* no footer */
+.footer[data-v-0165744a] {
   display: none !important;
 }

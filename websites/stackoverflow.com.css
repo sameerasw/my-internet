@@ -1,22 +1,23 @@
 /* stack-transparency */
-body.unified-theme, body.unified-theme *{
+body.unified-theme,
+body.unified-theme * {
   --theme-background-color: transparent !important;
   --theme-content-background-color: transparent !important;
   border: none !important;
 }
 
 /* stack-transparency darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* stack-navbar */
-.s-topbar{
+.s-topbar {
   background-color: transparent !important;
   backdrop-filter: blur(10px) !important;
 }
 
 /* stack-no footer */
-#footer{
+#footer {
   display: none !important;
 }

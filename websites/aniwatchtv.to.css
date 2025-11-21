@@ -1,8 +1,30 @@
 /* transparency */
-html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #mw-top::before, #mw-top, .share-buttons.share-buttons-detail, .anis-cover-wrap, .anis-cover, #episodes-content, .player-servers, .watch-player, .player-controls, #servers-content{
+html,
+body,
+nav,
+header,
+.app-root,
+#pass-sidebar,
+#main,
+#content,
+section,
+#mw-top::before,
+#mw-top,
+.share-buttons.share-buttons-detail,
+.anis-cover-wrap,
+.anis-cover,
+#episodes-content,
+.player-servers,
+.watch-player,
+.player-controls,
+#servers-content {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }

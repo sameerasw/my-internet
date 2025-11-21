@@ -1,5 +1,9 @@
 /* claude-transparency */
-html, body, .z-sidebar > nav, .min-h-full > .bg-bg-100, .max-h-screen > .bg-bg-100{
+html,
+body,
+.z-sidebar > nav,
+.min-h-full > .bg-bg-100,
+.max-h-screen > .bg-bg-100 {
   background-color: transparent !important;
   background: none !important;
 }
