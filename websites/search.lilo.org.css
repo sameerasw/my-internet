@@ -83,8 +83,7 @@ mfe-footer-pharos-footer,
 #footer {
   display: none !important;
 }
-a[href="https://privacy.microsoft.com/privacystatement"]
-{
+a[href="https://privacy.microsoft.com/privacystatement"] {
   display: none !important;
 }
 

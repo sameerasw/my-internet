@@ -26,7 +26,7 @@ main > div > div {
 }
 
 /* no footer and banner */
-footer, main > div:has(a[href="https://twitter.com/ArtificialAnlys"])
-{
+footer,
+main > div:has(a[href="https://twitter.com/ArtificialAnlys"]) {
   display: none !important;
 }

@@ -6,7 +6,8 @@
 }
 
 input-container,
-.input-gradient::before, body,
+.input-gradient::before,
+body,
 .toolbox-drawer-container button {
   background: none !important;
   background-color: transparent !important;
