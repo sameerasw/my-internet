@@ -1,0 +1,11 @@
+/* transparency */
+body,
+.modern-hero-section,
+.download-page {
+  background-color: transparent !important;
+}
+
+/* no footer */
+footer {
+  display: none !important;
+}
