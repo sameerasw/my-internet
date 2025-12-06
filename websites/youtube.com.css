@@ -616,7 +616,8 @@ ytlr-compact-link-renderer {
   }
 }
 
-.ytp-right-controls, .ytp-time-wrapper {
+.ytp-right-controls,
+.ytp-time-wrapper {
   backdrop-filter: blur(5px) !important;
   background-color: #0001 !important;
 }
