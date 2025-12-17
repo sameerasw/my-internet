@@ -127,6 +127,15 @@ This should not be included as a toggle!*/
   padding-left: initial;
 }
 
+/* @the following are used for google slides*/
+.sketchy-horizontal-ruler-container {
+   border-radius: 10px !important;
+}
+
+.sketchy-vertical-ruler-container {
+   border-radius: 10px !important;
+}
+
 /* docs-autohide sidebar */
 .left-sidebar-container {
   opacity: 0 !important;
