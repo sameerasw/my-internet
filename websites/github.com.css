@@ -48,11 +48,7 @@ section[aria-label="Events"] > div > div > [data-timeline-event-id] {
   background: none !important;
   border: none !important;
   box-shadow: none !important;
-  transition:
-    background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
-    border 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out !important;
+  transition: background-color 0.5s ease-in-out, background 0.5s ease-in-out, border 0.5s ease-in-out, box-shadow 0.5s ease-in-out !important;
 }
 
 button[role="tab"] {
@@ -161,7 +157,11 @@ details-dialog.Box,
 }
 
 /* gh-glass effect */
-.prc-Button-ButtonBase-c50BI,
+.prc-Button-ButtonBase-c50BI:not(
+    [data-variant="primary"],
+    .Toolbar-module__group--dOhAD > button[data-component="IconButton"],
+    button[data-component="IconButton"].ToolbarButton-module__iconButton--o0jFl
+  ),
 .MergeabilityIcon-module__mergeabilityIcon--GOu7M,
 .range-editor,
 .TableHead.prc-DataTable-TableHead-eOrJU,
@@ -254,17 +254,13 @@ button[aria-label="Search this repository"],
 .btn.btn-block.js-profile-editable-edit-button,
 .btn.js-quick-submit-alternative,
 #your-repos-filter {
-  box-shadow:
-    rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
   background-color: light-dark(#fff8, #0005) !important;
   border-radius: 0.5em !important;
 }
 
 .avatar-upload div.position-absolute {
-  box-shadow:
-    rgba(0, 0, 0, 0.5) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
 }
 
 .TabNav__TabNavTabList-sc-pwdi4r-1.DvNYj,
@@ -297,9 +293,7 @@ a.rgh-own-conversation:hover {
 }
 
 .timeline-comment-group .timeline-comment {
-  box-shadow:
-    rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset !important;
   background-color: light-dark(#fff8, #0005) !important;
   border-radius: 0.5em !important;
 }
