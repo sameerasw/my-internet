@@ -103,14 +103,14 @@ body,
   }
 }
 
-._aigs{
+._aigs {
   &:has(> div:nth-child(3) > div:nth-child(2) > div > span > div) {
     #main > div,
     #main > footer {
       opacity: 0 !important;
     }
   }
-  
+
   &:has(._as6h.false + div > div > span:not(:empty)) {
     ._as6h:not(.false) + div {
       display: none !important;
