@@ -22,7 +22,9 @@ body.docs-grille-gm3,
 .docs-revisions-tile-content-wrapper,
 .docs-revisions-sidebar-date-group,
 .docs-revisions-tile,
-.left-sidebar-container {
+.left-sidebar-container,
+#workspace-container,
+#speakernotes-dragger:hover {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -33,6 +35,19 @@ body.docs-grille-gm3,
     border 0.5s ease-in-out,
     box-shadow 0.5s ease-in-out !important;
   --gm3-sys-color-surface-bright: transparent !important;
+}
+
+/* @the following are used for google slides;
+they are very minor tweaks to make the speaker notes resize bar not look weird without a background.
+This should not be included as a toggle!*/
+#speakernotes-dragger {
+   background-color: transparent !important;
+   height: 0px;
+}
+
+.speakernotes-dragger-thumb {
+   height: 4px;
+   background-color: #ffffff50 !important;
 }
 
 /* docs-borders */
@@ -112,6 +127,15 @@ body.docs-grille-gm3,
   padding-left: initial;
 }
 
+/* @the following are used for google slides*/
+.sketchy-horizontal-ruler-container {
+   border-radius: 10px !important;
+}
+
+.sketchy-vertical-ruler-container {
+   border-radius: 10px !important;
+}
+
 /* docs-autohide sidebar */
 .left-sidebar-container {
   opacity: 0 !important;
@@ -131,4 +155,28 @@ body.docs-grille-gm3,
   background-color: rgb(255 255 255 / 20%) !important;
   backdrop-filter: blur(10px) !important;
   transition: all 0.5s !important;
+}
+
+/* docs-filmstrip glass $ Adds glass effect & animates the sidebar in Google Slides*/
+.filmstrip:not(.filmstrip-collapsed):not(.grid-view) {
+   background-color: #ffffff70 !important;
+   border: solid !important;
+   border-width: 2px !important;
+   border-color: #ffffff90 !important;
+}
+
+.punch-filmstrip-scroll, .filmstrip {
+   border-radius: 15px !important;
+}
+
+#filmstrip-controls {
+   border-radius: 10px !important;
+}
+
+.filmstrip, #filmstrip-sizer {
+   transition: 0.15s linear !important;
+}
+
+#two-panel-layout {
+   gap: 8px !important;
 }
