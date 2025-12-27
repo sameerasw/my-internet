@@ -41,13 +41,13 @@ body.docs-grille-gm3,
 they are very minor tweaks to make the speaker notes resize bar not look weird without a background.
 This should not be included as a toggle!*/
 #speakernotes-dragger {
-   background-color: transparent !important;
-   height: 0px;
+  background-color: transparent !important;
+  height: 0px;
 }
 
 .speakernotes-dragger-thumb {
-   height: 4px;
-   background-color: #ffffff50 !important;
+  height: 4px;
+  background-color: #ffffff50 !important;
 }
 
 /* docs-borders */
@@ -129,11 +129,11 @@ This should not be included as a toggle!*/
 
 /* @the following are used for google slides*/
 .sketchy-horizontal-ruler-container {
-   border-radius: 10px !important;
+  border-radius: 10px !important;
 }
 
 .sketchy-vertical-ruler-container {
-   border-radius: 10px !important;
+  border-radius: 10px !important;
 }
 
 /* docs-autohide sidebar */
@@ -159,24 +159,26 @@ This should not be included as a toggle!*/
 
 /* docs-filmstrip glass $ Adds glass effect & animates the sidebar in Google Slides*/
 .filmstrip:not(.filmstrip-collapsed):not(.grid-view) {
-   background-color: #ffffff70 !important;
-   border: solid !important;
-   border-width: 2px !important;
-   border-color: #ffffff90 !important;
+  background-color: #ffffff70 !important;
+  border: solid !important;
+  border-width: 2px !important;
+  border-color: #ffffff90 !important;
 }
 
-.punch-filmstrip-scroll, .filmstrip {
-   border-radius: 15px !important;
+.punch-filmstrip-scroll,
+.filmstrip {
+  border-radius: 15px !important;
 }
 
 #filmstrip-controls {
-   border-radius: 10px !important;
+  border-radius: 10px !important;
 }
 
-.filmstrip, #filmstrip-sizer {
-   transition: 0.15s linear !important;
+.filmstrip,
+#filmstrip-sizer {
+  transition: 0.15s linear !important;
 }
 
 #two-panel-layout {
-   gap: 8px !important;
+  gap: 8px !important;
 }
