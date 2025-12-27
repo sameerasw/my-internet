@@ -136,8 +136,8 @@ ytmusic-nav-bar,
 
 /* @ fix overlapping of nav bar and guide */
 .content {
-	--ytmusic-player-page-vertical-padding: var(--ytmusic-nav-bar-height); 
-	--ytmusic-player-page-horizontal-padding: calc(var(--ytmusic-guide-width) + 20px);
+  --ytmusic-player-page-vertical-padding: var(--ytmusic-nav-bar-height);
+  --ytmusic-player-page-horizontal-padding: calc(var(--ytmusic-guide-width) + 20px);
 }
 
 div.ytmusic-player-queue#contents {
