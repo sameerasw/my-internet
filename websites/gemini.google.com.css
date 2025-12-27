@@ -8,7 +8,7 @@
 input-container,
 .input-gradient::before,
 body,
-.toolbox-drawer-container button {
+.toolbox-drawer-container button, bard-sidenav, .bottom-gradient {
   background: none !important;
   background-color: transparent !important;
   transition:
