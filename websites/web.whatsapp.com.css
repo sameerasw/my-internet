@@ -69,7 +69,7 @@ body,
   background-color: var(--WDS-surface-highlight) !important;
 }
 
-._aiwn > div:has(._ak4w, > span:nth-child(3):not(:empty), > span:nth-child(4):not(:empty)) {
+._aiwn:has(._ak4w, > span:nth-child(3):not(:empty), > span:nth-child(4):not(:empty)) {
   ._aigs {
     filter: blur(20px) !important;
   }
@@ -82,7 +82,7 @@ body,
   }
 }
 
-._aiwn > div {
+._aiwn {
   &:has(> span:nth-child(3):not(:empty), > span:nth-child(8):not(:empty)):not(:has(._ajx_, [data-animate-status-viewer])) {
     ._aigs,
     > span:nth-child(4) > div {
@@ -116,4 +116,4 @@ body,
       display: none !important;
     }
   }
-}
+5a
