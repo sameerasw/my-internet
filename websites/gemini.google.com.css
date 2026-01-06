@@ -7,8 +7,12 @@
 
 input-container,
 .input-gradient::before,
-.toolbox-drawer-container button {
+body,
+.toolbox-drawer-container button,
+bard-sidenav,
+.bottom-gradient {
   background: none !important;
+  background-color: transparent !important;
   transition:
     background-color 0.5s ease-in-out,
     background 0.5s ease-in-out,
@@ -68,7 +72,6 @@ top-bar-actions {
   border-radius: 1em !important;
 }
 
-/* the buttons that are in a div with the input area */
 div:has(input-area-v2) button {
   display: flex !important;
   justify-content: center !important;

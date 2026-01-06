@@ -1,7 +1,8 @@
 /* wa-Transparency */
 html,
 body,
-.x1iek97a {
+.x1iek97a,
+.xsm26vf {
   background: none !important;
 }
 
@@ -11,26 +12,28 @@ body,
 }
 
 .color-refresh,
-.x1280gxy,
-.x1l0ey4t,
-.x1h3rtpe {
+.app-wrapper-web {
   --WDS-surface-default: transparent !important;
   --WDS-background-wash-inset: transparent !important;
   --WDS-surface-emphasized: transparent !important;
   --WDS-surface-elevated-emphasized: transparent !important;
   --WDS-systems-chat-background-wallpaper: transparent !important;
+  --WDS-systems-chat-surface-tray: transparent !important;
+  --reactions-panel-background-color: transparent !important;
+  --poll-modal-footer-background-color: transparent !important;
+  --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
+  --WDS-systems-chat-surface-composer: var(--WDS-surface-highlight) !important;
+  --WDS-systems-bubble-surface-system: var(--WDS-surface-highlight) !important;
+  --WDS-systems-bubble-surface-incoming: var(--WDS-surface-highlight) !important;
+  --WDS-systems-bubble-surface-outgoing: var(--WDS-surface-highlight) !important;
   --compose-input-background: var(--WDS-surface-highlight) !important;
   --background-default-hover: var(--WDS-surface-highlight) !important;
   --background-lightest-hover: var(--WDS-surface-highlight) !important;
-  --reactions-panel-background-color: transparent !important;
   --reactions-panel-search-background-color: var(--WDS-surface-highlight) !important;
-  --poll-modal-footer-background-color: transparent !important;
-  --WDS-systems-bubble-surface-system: #24262666 !important;
-  --WDS-systems-bubble-surface-incoming: #24262666 !important;
-  --WDS-systems-bubble-surface-outgoing: #144d3766 !important;
-  --bot-suggestion-background-color: #18222966 !important;
+  --bot-suggestion-background-color: var(--WDS-surface-highlight) !important;
   --rich-text-panel-background: var(--WDS-surface-highlight) !important;
   --panel-input-background: var(--WDS-surface-highlight) !important;
+  --chevron-button-background: var(--WDS-surface-highlight) !important;
 }
 
 @media screen and (max-width: 1300px) {
@@ -42,7 +45,7 @@ body,
   }
 }
 
-._aigs:has(.xevlxbw > span > div) .x18pi947 {
+._aigs:has(._aigw > div > span > div) .x18pi947 {
   opacity: 0 !important;
 }
 
@@ -61,45 +64,56 @@ body,
   --WDS-background-dimmer: transparent !important;
 }
 
-[data-animate-status-viewer] .x1h2kqdt {
+[data-animate-status-viewer] .x1h2kqdt,
+[data-animate-modal-popup] {
   background-color: var(--WDS-surface-highlight) !important;
 }
 
-.app-wrapper-web:has(._ak4w, > span:nth-child(3):not(:empty), > span:nth-child(4):not(:empty)) {
+._aiwn:has(._ak4w, > span:nth-child(3):not(:empty), > span:nth-child(4):not(:empty)) {
   ._aigs {
     filter: blur(20px) !important;
   }
-  [type="button"]:not(._aiwn > span > div [type="button"], [data-animate-modal-backdrop] [type="button"], [role="application"] [type="button"]),
+  ._aigs [type="button"]:not(._aiwn > span > div [type="button"], [data-animate-modal-backdrop] [type="button"], [role="application"] [type="button"]),
   [data-navbar-item="true"],
   ._ak72:not([data-animate-modal-backdrop] ._ak72),
-  [role="button"]:not(._ak4w [role="button"], [data-animate-modal-backdrop] [role="button"], .overlay [role="button"], ._aiwn > span > div [role="button"]) {
+  ._aigs [role="button"]:not(._ak4w [role="button"], [data-animate-modal-backdrop] [role="button"], .overlay [role="button"], ._aiwn > span > div [role="button"]),
+  ._amk6 {
     pointer-events: none !important;
   }
 }
 
 ._aiwn {
   &:has(> span:nth-child(3):not(:empty), > span:nth-child(8):not(:empty)):not(:has(._ajx_, [data-animate-status-viewer])) {
-    > span:nth-child(4) > [tabindex] > div {
+    ._aigs,
+    > span:nth-child(4) > div {
       filter: blur(20px) !important;
     }
   }
 
   &:has(.x1h2kqdt) {
-    [data-animate-status-viewer] > span > div > div > [tabindex] > div:not(:last-child) {
+    [data-animate-status-viewer] > span > div > div > div > div > div:not(:last-child) {
       filter: blur(20px) !important;
-    }
-  }
-
-  &:has(> div > div:not(._aigw) > span > div) {
-    #main > div,
-    #main > footer {
-      opacity: 0 !important;
     }
   }
 
   &:has([data-animate-modal-backdrop], [role="application"]) {
     [data-animate-status-viewer] {
       filter: blur(20px) !important;
+    }
+  }
+}
+
+._aigs {
+  &:has(> div:nth-child(3) > div:nth-child(2) > div > span > div) {
+    #main > div,
+    #main > footer {
+      opacity: 0 !important;
+    }
+  }
+
+  &:has(._as6h.false + div > div > span:not(:empty)) {
+    ._as6h:not(.false) + div {
+      display: none !important;
     }
   }
 }

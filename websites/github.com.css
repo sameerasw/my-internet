@@ -42,7 +42,8 @@ aside > div,
 .snippet-clipboard-content > .notranslate,
 .IssueViewer-module__contentArea--mHr61,
 .SubscriptionSection-module__button--WSUPv,
-.IssueViewer-module__contentArea--IpMnd {
+.IssueViewer-module__contentArea--IpMnd,
+section[aria-label="Events"] > div > div > [data-timeline-event-id] {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -81,14 +82,13 @@ button[role="tab"] {
 }
 
 /* gh-no footer */
-footer:has(h2),
-div.px-2:nth-child(3) {
+footer:has(h2) {
   opacity: 0 !important;
 }
 
 /* gh-hover $ Make the left and right sidebars show on hover */
 .feed-left-sidebar,
-.feed-right-sidebar {
+.feed-right-column {
   opacity: 0 !important;
   transition: all 0.3s ease-in-out !important;
   &:hover {
@@ -161,7 +161,11 @@ details-dialog.Box,
 }
 
 /* gh-glass effect */
-.prc-Button-ButtonBase-c50BI,
+.prc-Button-ButtonBase-c50BI:not(
+  [data-variant="primary"],
+  .Toolbar-module__group--dOhAD > button[data-component="IconButton"],
+  button[data-component="IconButton"].ToolbarButton-module__iconButton--o0jFl
+),
 .MergeabilityIcon-module__mergeabilityIcon--GOu7M,
 .range-editor,
 .TableHead.prc-DataTable-TableHead-eOrJU,
@@ -187,6 +191,7 @@ details-dialog.Box,
 .edit_user button,
 .Box-sc-g0xbh4-0 .gxwXUv,
 .Box-sc-g0xbh4-0.fXxPgR,
+.Box-sc-62in7e-0.BranchInfoBar-module__Box--NhDLA.BranchInfoBar-module__BranchInfoBarContainer--vaFVP,
 #file-tree-filter-field,
 .highlight pre,
 .ListItem-module__listItem--kHali:hover,
@@ -278,6 +283,11 @@ button[aria-label="Search this repository"],
   border-radius: 0 0 10px 10px !important;
   border: none !important;
   margin: 0px !important;
+}
+
+a.rgh-own-conversation,
+a.rgh-own-conversation:hover {
+  border-radius: 4px 4px 10px;
 }
 
 #new_comment_field,
@@ -374,4 +384,26 @@ body:has(header > .search-expanded) .application-main {
     background-color: light-dark(#fff8, #00000054) !important;
     border: solid var(--borderWidth-thin) #3d444d !important;
   }
+}
+
+/* gh-better chip margin */
+.OverviewContent-module__Button--MDoYP {
+  margin-right: 8px !important;
+}
+#global-copilot-menu-button {
+  margin-left: 8px !important;
+}
+
+/* gh-remove borders */
+.prc-Button-ButtonBase-c50BI:not(.ReactionButton-module__reactionToggleButtonReacted--TgLue),
+.BtnGroup-item,
+.Button--secondary,
+.TextInput__StyledTextInput-sc-ttxlvl-0,
+.Box-sc-62in7e-0.BranchInfoBar-module__Box--NhDLA.BranchInfoBar-module__BranchInfoBarContainer--vaFVP {
+  border: none !important;
+}
+
+#fork-button,
+.BtnGroup-parent {
+  margin-right: 3px !important;
 }

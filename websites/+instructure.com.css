@@ -1,4 +1,4 @@
-/* transparency */
+/* canvas-transparency */
 .ic-Dashboard-header,
 .ic-Dashboard-header__layout,
 #dashboard-planner-header,
@@ -8,8 +8,15 @@
 .CanvasPlanner__HeaderContainer,
 .profile-tray,
 .ic-app-header__main-navigation,
+.ic-notification__content,
+.tox .tox-toolbar-overlord,
 .Grouping-styles__title,
 .Grouping-styles__title::after,
+.header-bar,
+#context_modules_sortable_container,
+div:has(> div[data-testid="text-editor"]),
+label > span[data-position-target] > span,
+div[data-testid="attempt-tab"] > div,
 html,
 body,
 nav,
@@ -25,11 +32,25 @@ header {
     box-shadow 0.5s ease-in-out !important;
 }
 
-/* sidebar legibility */
-.navigation-tray-container {
-  background: var(--natsumi-glass-background) !important;
+/* canvas-sidebar */
+.navigation-tray-container,
+.tox-menu {
+  background: color-mix(in srgb, var(--natsumi-colors-secondary, color-mix(in srgb, #101010 30%, #202020 70%)) 60%, transparent) !important;
   border-radius: 16px !important;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
   backdrop-filter: blur(var(--glass-blur-radius, 10px));
   border: 1px solid rgba(200, 200, 200, 0.1) !important; /* Optional subtle border */
+}
+
+/* canvas-bettercanvas */
+:root {
+  --bcbackground-0: transparent !important;
+  --bcbackground-1: transparent !important;
+  --bcbackground-2: transparent !important;
+  --bcsidebar: transparent !important;
+}
+
+/* canvas-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
 }

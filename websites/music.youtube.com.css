@@ -32,8 +32,7 @@ ytmusic-app[is-bauhaus-sidenav-enabled] #guide-wrapper.ytmusic-app {
 
 /* Hide elements */
 #nav-bar-divider,
-#browse-page > #background,
-tp-yt-paper-toast.toast-button.style-scope.yt-notification-action-renderer.paper-toast-open {
+#browse-page > #background {
   display: none !important;
 }
 
@@ -95,6 +94,10 @@ ytmusic-chip-cloud-renderer.style-scope.ytmusic-section-list-renderer:hover {
   min-width: auto !important;
 }
 
+div.ytmusic-player-queue#contents {
+  margin-bottom: 0 !important; /* @ margin no longer needed as sidebar is above player */
+}
+
 /* Centered player */
 ytmusic-app-layout:not([player-ui-state="FULLSCREEN"]) #main-panel {
   position: absolute !important;
@@ -129,6 +132,16 @@ ytmusic-nav-bar,
   top: 0 !important;
   height: 100% !important;
   width: 100% !important;
+}
+
+/* @ fix overlapping of nav bar and guide */
+.content {
+  --ytmusic-player-page-vertical-padding: var(--ytmusic-nav-bar-height);
+  --ytmusic-player-page-horizontal-padding: calc(var(--ytmusic-guide-width) + 20px);
+}
+
+div.ytmusic-player-queue#contents {
+  margin-bottom: calc(var(--ytmusic-player-bar-height) + 10px); /* @ otherwise user can't reach the final song of the queue as its covered by player bar */
 }
 
 /* Player bar styling */

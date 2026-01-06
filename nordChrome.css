@@ -6,7 +6,7 @@
   display: none;
 }
 
-/* reduce the separaters width */
+/* reduce the separators width */
 #vertical-pinned-tabs-container-separator,
 #tabbrowser-arrowscrollbox-periphery:before,
 #TabsToolbar-customization-target:after,
@@ -102,7 +102,7 @@ tab[busy] {
   opacity: 0 !important;
 }
 
-/* #main-window:has(#zen-main-app-wrapper[zen-compact-mode="true"] hbox#browser:has([zen-empty-tab="true"][selected="true"])) #mainPopupSet > 
+/* #main-window:has(#zen-main-app-wrapper[zen-compact-mode="true"] hbox#browser:has([zen-empty-tab="true"][selected="true"])) #mainPopupSet >
     #tab-preview-panel{
       display: none !important;
     } */
@@ -504,16 +504,16 @@ body:has(#ctrlTab-panel[hasbeenopened="true"] .ctrlTab-preview:not([hidden="true
 
 /* compact mode player */
 /* #zen-main-app-wrapper[zen-compact-mode="true"]:not(:has(toolbox[zen-user-show=""], toolbox[zen-has-hover])) #zen-media-controls-toolbar{
-  
+
   &.playing #zen-media-focus-button{
     position: fixed !important;
     left: 180px !important;
     bottom:0 !important;
     opacity: 1 !important;
     z-index: 100000000 !important;
-    
+
   }
-  
+
   position: fixed !important;
   transform: translateX(-120%) !important;
   left: 0 !important;
@@ -522,10 +522,10 @@ body:has(#ctrlTab-panel[hasbeenopened="true"] .ctrlTab-preview:not([hidden="true
   z-index: 1000 !important;
     width: 150px !important;
     height: 50px !important;
-  
+
   &:hover{
   transform: translateX(0) !important;
-    
+
   #zen-media-focus-button{
     position: initial !important;
     left: initial !important;

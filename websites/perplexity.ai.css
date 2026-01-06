@@ -7,7 +7,9 @@ div.sticky:nth-child(2),
 .pb-32 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1),
 .mt-xs > div:nth-child(1) > div:nth-child(1),
 .bg-background-100:has([data-testid="answer-mode-tabs"]),
-#root > div {
+#root > div,
+\@container\/main,
+.bg-clip-border.border-subtlest.ring-subtlest.divide-subtlest.bg-base {
   background-color: transparent !important;
   border: none !important;
 }
@@ -20,6 +22,14 @@ div.sticky:nth-child(2),
   margin: 5px 0 !important;
   background-color: var(--scrollbar-thumb) !important;
   box-shadow: light-dark(#fff5, #0005) 0 0 8px !important;
+}
+html[data-color-scheme="dark"],
+html[data-color-scheme="light"],
+html {
+  background: transparent !important;
+}
+* {
+  --background-base-color: transparent !important;
 }
 
 /* perplexity-hover */

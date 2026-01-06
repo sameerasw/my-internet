@@ -52,7 +52,11 @@ section,
 .oc-content--main,
 body.dark_mode,
 body.light_mode,
-text-div > textarea {
+text-div > textarea,
+#footer,
+body.idms-login.login-type-asc #footer,
+#_m_footer,
+.footer {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -63,62 +67,21 @@ text-div > textarea {
     border 0.5s ease-in-out,
     box-shadow 0.5s ease-in-out !important;
 }
-.theme-light .navbar #tabs a {
-  border-left: none !important;
-  border-right: none !important;
-}
-.theme-light .lilo-search .lilo-text-result p.description {
-  color: inherit !important;
-}
 
 /* darkreader */
 :root {
   --darkreader-background-ffffff: transparent !important;
 }
 
+[role="menu"] > div {
+  background-color: var(--darkreader-background-000000) !important;
+}
+
 /* no footer */
 footer,
 mfe-footer-pharos-footer,
 .footer,
-#footer {
+#footer,
+amp-footer {
   display: none !important;
-}
-a[href="https://privacy.microsoft.com/privacystatement"] {
-  display: none !important;
-}
-
-/* hide add to firefox button */
-.lilo-install-cta.column.is-2 {
-  display: none !important;
-}
-
-/* transparent search bar */
-.input {
-  background-color: transparent;
-  color: inherit;
-}
-
-/* center content */
-#content .column {
-  margin: auto !important;
-  width: 70% !important;
-}
-.lilo-search .container {
-  margin-left: 0% !important;
-  margin-inline-start: none !important;
-}
-.column.is-11,
-.column.is-11-tablet {
-  width: 80%;
-  margin: auto !important;
-}
-#content .column {
-  margin: auto !important;
-  width: 70% !important;
-}
-.column.is-11,
-.column.is-11-tablet {
-  margin-inline-start: none !important;
-  margin: auto !important;
-  width: 60% !important;
 }

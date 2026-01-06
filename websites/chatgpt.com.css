@@ -44,7 +44,9 @@ body,
 a[title="ChatGPT"],
 body.dark_mode,
 body.light_mode,
-.content-fade::after {
+.content-fade::after,
+.bg-\(--sidebar-bg\,var\(--bg-elevated-secondary\)\),
+aside {
   background-color: transparent !important;
   background: none !important;
   border: none !important;

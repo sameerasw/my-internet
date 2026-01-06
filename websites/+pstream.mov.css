@@ -1,0 +1,225 @@
+/* pstream-transparency $ Apply transparent backgrounds to main containers. Recommended: enable the site's grey theme for best contrast. */
+html,
+body,
+#root,
+.flex.min-h-screen.flex-col > .bg-background-main {
+  background-color: transparent !important;
+  background: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  -webkit-transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+.flex.min-h-screen.flex-col > .bg-background-main > :is(.bg-background-accentA, .bg-background-accentB),
+.h-\[50px\] {
+  display: none !important;
+}
+
+/* pstream-darkreader $ Enables Dark Reader compatibility by making backgrounds transparent */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* pstream-no footer $ Removes the footer section from page layout */
+.flex.min-h-screen.flex-col > footer {
+  display: none !important;
+}
+
+/* pstream-no ads $ Removes sponsored content and advertisements from the page */
+.w-fit:not(relative my-4 w-fit max-w-[\25rem]\ w-full) {
+  display: none !important;
+}
+
+/* pstream-no top shadow $ Removes the header shadow overlay element */
+.flex.min-h-screen.flex-col > div > .top-content.fixed.z-\[20\] {
+  display: none !important;
+}
+
+/* pstream-no lightbar $ Removes the decorative lightbar element from the UI */
+.h-\[88px\],
+.lightbar {
+  display: none !important;
+}
+
+/* pstream-no flare light $ Removes decorative flare lighting effects for cleaner appearance */
+.flare-light {
+  display: none !important;
+}
+
+/* pstream-no backtotop $ Removes the back-to-top floating button */
+div.fixed:nth-child(4) {
+  display: none !important;
+}
+
+/* pstream-uniform cards $ Prevents card text wrapping for consistent single-line display */
+.relative.mt-4.group.cursor-pointer.user-select-none,
+.line-clamp-3 {
+  display: block !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  -webkit-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* pstream-brighten text $ Increases visibility of secondary text elements for better readability */
+:root {
+  --colors-buttons-secondaryText: 162 183 196 !important;
+  --colors-type-text: 144 144 144 !important;
+  --colors-type-secondary: 127 127 127 !important;
+  --colors-mediaCard-badgeText: 127 127 127 !important;
+  --colors-dropdown-text: 144 144 144 !important;
+}
+
+/* pstream-bg opacity $ Sets background opacity levels for containers, buttons, and UI elements */
+.bg-buttons-purple,
+.bg-buttons-cancel,
+.bg-buttons-toggle,
+.bg-buttons-toggleDisabled,
+.bg-search-hoverBackground,
+.bg-video-context-buttonFocus:not(.bg-opacity-0),
+.bg-dropdown-background {
+  --tw-bg-opacity: 0.6 !important;
+}
+
+div.flex:nth-child(9) > div:nth-child(2) .bg-video-context-buttonFocus {
+  background: none !important;
+}
+
+.bg-dropdown-altBackground,
+.bg-search-background,
+.bg-pill-background {
+  -webkit-backdrop-filter: blur(18px) !important;
+  backdrop-filter: blur(16px) !important;
+  --tw-bg-opacity: 0.7 !important;
+  border: none !important;
+  background: rgb(var(--colors-pill-activeBackground) / var(--tw-bg-opacity, 1)) !important;
+}
+
+.bg-background-main,
+.bg-background-secondary,
+.bg-mediaCard-hoverBackground,
+button.relative:nth-child(1),
+.hover\:bg-dropdown-hoverBackground,
+.bg-settings-sidebar-activeLink,
+.bg-largeCard-background,
+.bg-settings-card-background,
+.bg-settings-card-altBackground,
+.bg-settings-sidebar-badge,
+.bg-background-secondaryHover,
+.bg-video-context-inputBg,
+.text-search-text,
+.bg-dropdown-contentBackground {
+  --tw-bg-opacity: 0.2 !important;
+  border: none !important;
+}
+
+.relative.mt-4.group.cursor-pointer.user-select-none .bg-background-main,
+div.mx-auto:nth-child(5) .bg-background-main {
+  --tw-bg-opacity: 0.05 !important;
+}
+
+.relative.mt-4.group.cursor-pointer.user-select-none .bg-background-main:hover,
+div.mx-auto:nth-child(5) .bg-background-main:hover {
+  --tw-bg-opacity: 0.1 !important;
+}
+
+/* pstream-general fixes $ Corrects padding, borders, and layout issues across various elements */
+div.pt-4:nth-child(4),
+div.pt-4:nth-child(2) {
+  padding-left: 0 !important;
+  border: none !important;
+}
+
+#headlessui-listbox-button-\:r58\:,
+#headlessui-listbox-button-\:r2\: {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+/* pstream-unified header $ Creates a fixed unified header layout with search bar integration */
+div.h-20:nth-child(2) > div:nth-child(1) > div:nth-child(1),
+.w-\[600px\] > div:nth-child(1):not(.space-y-16) {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  z-index: 25 !important;
+  padding: 1.25rem 11.5rem 0 20.25rem !important;
+}
+
+.top-content.fixed.pointer-events-none .relative.pointer-events-auto .w-\[1\.5rem\] {
+  height: 1.8rem !important;
+  width: 1.8rem !important;
+  transform: translateX(-6px) !important;
+}
+
+div.h-20:nth-child(2),
+.mb-16,
+div.h-20:nth-child(2) > div:nth-child(1) {
+  margin: 0 !important;
+  height: auto !important;
+  min-height: unset !important;
+}
+
+.bg-search-background,
+.hover\:flare-enabled > div:nth-child(1),
+.hover\:flare-enabled > div:nth-child(1) > div:nth-child(1) {
+  border-radius: 20px !important;
+}
+
+.top-content .bg-pill-background,
+.hover\:flare-enabled input.w-full {
+  height: 40px !important;
+}
+
+.hover\:flare-enabled input.w-full {
+  padding: 0 2.5rem !important;
+}
+
+.bg-pill-background {
+  transform: unset !important;
+}
+
+.bg-search-background:hover,
+.top-content .bg-pill-background:hover {
+  --tw-bg-opacity: 0.6 !important;
+  background: rgb(var(--colors-pill-backgroundHover) / var(--tw-bg-opacity, 1)) !important;
+}
+
+.hover\:flare-enabled .cursor-pointer.absolute {
+  right: 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+  border-radius: 20px !important;
+  color: rgb(var(--colors-type-text)) !important;
+  transform: unset !important;
+}
+
+.hover\:flare-enabled .cursor-pointer.absolute:hover {
+  --tw-bg-opacity: 0.15 !important;
+  background: rgb(var(--colors-pill-backgroundHover) / var(--tw-bg-opacity, 1)) !important;
+}
+
+.hover\:flare-enabled > .flex-1 > div.bottom-0:nth-child(1) {
+  left: 0 !important;
+}
+
+@media (max-width: 768px) {
+  div.h-20:nth-child(2) > div:nth-child(1) > div:nth-child(1),
+  .w-\[600px\] > div:nth-child(1):not(.space-y-16) {
+    padding: 4.25rem 1.75rem 0 1.75rem !important;
+  }
+}
