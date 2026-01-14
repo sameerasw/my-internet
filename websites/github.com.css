@@ -313,14 +313,14 @@ a.rgh-own-conversation:hover {
 }
 
 /* no tab text $ Make repository tabs only got icons and show text only on hover */
-.UnderlineNav-item {
-  span:not([class="Counter"]) {
+nav[aria-label="Repository"] > ul > li > a {
+  span[data-component="text"] {
     opacity: 0 !important;
     width: 0em !important;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
   }
   &:hover {
-    span:not([class="Counter"]) {
+    span[data-component="text"] {
       width: 6em !important;
       opacity: 1 !important;
     }
