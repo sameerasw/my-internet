@@ -2,9 +2,7 @@
 html,
 body,
 #root,
-.flex.min-h-screen.flex-col>.bg-background-main,
-.flex.min-h-screen.flex-col>.bg-background-main>div:nth-child(1),
-.flex.min-h-screen.flex-col>.bg-background-main>div:nth-child(2) {
+.flex.min-h-screen.flex-col>.bg-background-main {
   background-color: transparent !important;
   background: transparent !important;
   background-image: none !important;
@@ -20,6 +18,11 @@ body,
     background 0.5s ease-in-out,
     border 0.5s ease-in-out,
     box-shadow 0.5s ease-in-out !important;
+}
+
+.flex.min-h-screen.flex-col > .bg-background-main > :is(.bg-background-accentA, .bg-background-accentB),
+.h-\[50px\] {
+  display: none !important;
 }
 
 /* pstream-darkreader $ Enables Dark Reader compatibility by making backgrounds transparent */
