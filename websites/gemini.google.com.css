@@ -10,7 +10,8 @@ input-container,
 body,
 .toolbox-drawer-container button,
 bard-sidenav,
-.bottom-gradient, mat-sidenav-container {
+.bottom-gradient,
+mat-sidenav-container {
   background: none !important;
   background-color: transparent !important;
   transition:
