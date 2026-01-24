@@ -45,6 +45,10 @@ body,
   }
 }
 
+._aigs:has(._aigw > div > span > div) .x18pi947 {
+  opacity: 0 !important;
+}
+
 /* wa-Immersive Popup */
 .x1akjpcp,
 .xbyyjgo,
