@@ -1,10 +1,11 @@
 /* ycom-transparency */
 :root {
   --darkreader-background-ffffff: transparent !important;
+  color-scheme: light dark;
 }
 table {
   background-color: transparent !important;
 }
 .commtext, .c00 a:link, a:link {
-  color: whitesmoke;
+  color: light-dark(#000, whitesmoke);
 }
