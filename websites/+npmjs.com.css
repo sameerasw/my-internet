@@ -65,6 +65,120 @@ text-div > textarea {
     border 0.5s ease-in-out,
     box-shadow 0.5s ease-in-out !important;
 }
+:root {
+  color-scheme: light dark;
+  --color-fg-muted: light-dark(#4d4d4d, #c3c3c3);
+  --color-fg-subtle: light-dark(#222, #ccc);
+  --code-bg: light-dark(#f7f7f7, #0004);
+  --background-color: light-dark(#fafafa, transparent);
+}
+.bg-white {
+  background-color: transparent;
+}
+._89eb4d40 {
+  background-color: white;
+}
+[aria-label="Sort options"] {
+  background-color: light-dark(white, #0004);
+}
+.ffbzcB:hover {
+  background-color: light-dark(var(--search-bg-subtle), #0007);
+}
+._704c034e .highlight {
+  background-color: light-dark(#f0f0f0, transparent);
+}
+.a2ab2737:hover {
+  background-color: light-dark(#f4f4f4, #454545);
+}
+._704c034e blockquote {
+  background: light-dark(#efefef, #10101088);
+  border-left: light-dark(#cecece, #414141) solid 10px;
+}
+._704c034e,
+._00cd8e7e {
+  color: light-dark(#333, #ddd);
+}
+a,
+.black,
+.black:hover,
+.hover-black:focus,
+.hover-black:hover,
+._6d9832ac strong {
+  color: light-dark(#000, whitesmoke);
+}
+a {
+  filter: brightness(120%);
+}
+.cfb2a888 a {
+  filter: brightness(200%);
+}
+.black-60 {
+  color: light-dark(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.6));
+}
+.black-70 {
+  color: light-dark(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7));
+}
+.black-80,
+._704c034e p,
+._704c034e li {
+  color: light-dark(rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.8));
+}
+.black-90 {
+  color: light-dark(rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.9));
+}
+#pkg-list-exact-match {
+  color: light-dark(rgba(0, 0, 0, 0.9), #000);
+}
+._703b319c > span {
+  color: black;
+}
+._6d9832ac h1 {
+  border-bottom: 1px solid
+    light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+}
+._6d9832ac h1,
+._6d9832ac h2,
+._6d9832ac h3,
+._6d9832ac h4,
+._6d9832ac h5,
+._6d9832ac h6,
+.a0dff0b1 {
+  color: light-dark(#111, #eee);
+}
+.ca243068 pre {
+  background-color: light-dark(white, transparent) !important;
+  color: light-dark(rgb(51, 51, 51), whitesmoke) !important;
+  filter: brightness(300%);
+}
+._0edb515f,
+.c6c55db4,
+._704c034e code,
+._704c034e .highlight {
+  color: light-dark(black, whitesmoke);
+  filter: brightness(200%) contrast(95%);
+}
+._5ae7dfec button,
+._5ae7dfec button:hover {
+  color: light-dark(#343434, #f2f2f2);
+}
+input.black,
+input.black:hover {
+  color: #000;
+}
+.af43375d svg path {
+  fill: light-dark(#231f20, #dce0df);
+}
+.b5be2af6 svg,
+.b2812e30 svg {
+  fill: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+  color: light-dark(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+}
+.b2812e30 svg g {
+  fill: light-dark(#0a0b09, rgba(255, 255, 255, 0.5));
+}
+._5cfc0900 svg {
+  fill: light-dark(rgba(0, 0, 0, 0.45), rgba(255, 255, 255, 0.45));
+}
 
 /* darkreader */
 :root {
