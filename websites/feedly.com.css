@@ -25,9 +25,20 @@ header,
 }
 
 /* feedly-article view background */
-.InlineArticle.InlineArticle--fullArticle {
+.home.theme--dark .InlineArticle.InlineArticle--fullArticle {
   border-color: transparent !important;
-  background-color: light-dark(#fff8, #0005) !important;
+  background-color: #0005 !important;
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px !important;
+}
+.home.theme--light .InlineArticle.InlineArticle--fullArticle {
+  border-color: transparent !important;
+  background-color: #fff8 !important;
   box-shadow:
     rgba(0, 0, 0, 0.05) 0px -36px 30px 0px inset,
     rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
@@ -38,14 +49,25 @@ header,
 }
 
 /* feedly-active element */
-.theme--dark {
-  --semanticColorBackgroundStatesLightActive: light-dark(#fff8, #0005) !important;
+.home.theme--dark {
+  --semanticColorBackgroundStatesLightActive: #0005 !important;
+  color-scheme: dark !important;
+}
+.home.theme--light {
+  --semanticColorBackgroundStatesLightActive: #fff8 !important;
+  color-scheme: light !important;
 }
 
 /* feedly-compat header background */
-.Header--compact__row.row {
+.home.theme--dark .Header--compact__row.row {
   border-color: transparent !important;
-  background-color: light-dark(#fff8, #0005) !important;
+  background-color: #0005 !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px !important;
+  backdrop-filter: blur(6px) !important;
+}
+.home.theme--light .Header--compact__row.row {
+  border-color: transparent !important;
+  background-color: #fff8 !important;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px !important;
   backdrop-filter: blur(6px) !important;
 }
