@@ -24,7 +24,7 @@ header,
   display: none !important;
 }
 
-/* feedly-article view background */
+/* feedly-Article view background */
 .home.theme--dark .InlineArticle.InlineArticle--fullArticle {
   border-color: transparent !important;
   background-color: #0005 !important;
@@ -48,7 +48,7 @@ header,
     rgba(0, 0, 0, 0.09) 0px 16px 8px !important;
 }
 
-/* feedly-active element */
+/* feedly-Active element */
 .home.theme--dark {
   --semanticColorBackgroundStatesLightActive: #0005 !important;
   color-scheme: dark !important;
@@ -56,18 +56,4 @@ header,
 .home.theme--light {
   --semanticColorBackgroundStatesLightActive: #fff8 !important;
   color-scheme: light !important;
-}
-
-/* feedly-compat header background */
-.home.theme--dark .Header--compact__row.row {
-  border-color: transparent !important;
-  background-color: #0005 !important;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px !important;
-  backdrop-filter: blur(6px) !important;
-}
-.home.theme--light .Header--compact__row.row {
-  border-color: transparent !important;
-  background-color: #fff8 !important;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 18px !important;
-  backdrop-filter: blur(6px) !important;
 }
