@@ -1,5 +1,14 @@
 /* bing-transparency */
-html, body, .hp_body, .hp_top_cover_container::before, header, #b_content, .b_algo, .dg_b, #rfPane, #b_results > li{
+html,
+body,
+.hp_body,
+.hp_top_cover_container::before,
+header,
+#b_content,
+.b_algo,
+.dg_b,
+#rfPane,
+#b_results > li {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -8,11 +17,15 @@ html, body, .hp_body, .hp_top_cover_container::before, header, #b_content, .b_al
 }
 
 /* bing-hidden */
-.bottom_row, #hp_top_cover, .shaders, .hp_top_cover_container, .hp_media_container{
+.bottom_row,
+#hp_top_cover,
+.shaders,
+.hp_top_cover_container,
+.hp_media_container {
   display: none !important;
 }
 
 /* bing-no footer */
-footer{
+footer {
   display: none !important;
 }
