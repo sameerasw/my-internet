@@ -15,8 +15,7 @@ nav,
 .gh-header,
 .PageLayout-pane,
 .bSTcOH,
-.gOhIYN,
-.IssueViewer-module__contentArea__NVsYRb_,
+.gOhIYN, .IssueViewer-module__contentArea__NVsYRb_,
 #blob-edit-side-panel-id,
 #repository-container-header,
 .empty-cell,
@@ -44,7 +43,7 @@ aside > div,
 .IssueViewer-module__contentArea--mHr61,
 .SubscriptionSection-module__button--WSUPv,
 .IssueViewer-module__contentArea--IpMnd,
-section[aria-label="Events"] > div > div > [data-timeline-event-id] {
+section[aria-label="Events"] > div > div > [data-timeline-event-id], .IssueViewer-module__contentArea__ChMIU {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
