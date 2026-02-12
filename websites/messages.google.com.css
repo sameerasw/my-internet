@@ -40,61 +40,69 @@ footer {
 }
 
 /* messages-glass effect */
-.input-box, mws-message-send-button, .right-content, mw-new-conversation-sub-header {
-   background-color: #10101090 !important;
-   backdrop-filter: blur(10px);
-   border-width: 1px !important;
-   border-style: solid !important;
-   border-color: #FFFFFF30 !important;
+.input-box,
+mws-message-send-button,
+.right-content,
+mw-new-conversation-sub-header {
+  background-color: #10101090 !important;
+  backdrop-filter: blur(10px);
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #ffffff30 !important;
 }
 
-.right-content, mw-new-conversation-sub-header {
-   border-radius: 99999px !important;
+.right-content,
+mw-new-conversation-sub-header {
+  border-radius: 99999px !important;
 }
 
 .reply-header-container {
-   background-color: #FFFFFF30 !important;
+  background-color: #ffffff30 !important;
 }
 
 nav.container {
-   background-color: #10101090 !important;
-   backdrop-filter: blur(10px);
+  background-color: #10101090 !important;
+  backdrop-filter: blur(10px);
 }
 
-.input, #gb {
-   background-color: transparent !important;
+.input,
+#gb {
+  background-color: transparent !important;
 }
 
 mw-branded-header {
-   background-color: #10101090 !important;
+  background-color: #10101090 !important;
 }
 
 /* messages-compact sidebar */
 .main-nav {
-   min-width: 85px !important;
-   width: 50px !important;
-   transition: 0.3s !important;
-   
-   & .start-chat .mdc-button {
-      min-width: 50px !important;
-      width: 50px !important
-   }
-   
-   & .fab-label, & mw-banner {
-      display: none !important;
-   }
+  min-width: 85px !important;
+  width: 50px !important;
+  transition: 0.3s !important;
+
+  & .start-chat .mdc-button {
+    min-width: 50px !important;
+    width: 50px !important;
+  }
+
+  & .fab-label,
+  & mw-banner {
+    display: none !important;
+  }
 }
 
-.main-nav:hover, body:has(.mat-mdc-menu-content) .main-nav {
-   width: 400px !important;
-   transition: 0.5s !important;
-   
-   & .start-chat .mdc-button {
-      min-width: 200px !important;
-      width: 200px !important
-   }
-   
-   & .fab-label, & mw-banner {
-      display: flex !important;
-   }
+.main-nav:hover,
+body:has(.mat-mdc-menu-content) .main-nav {
+  width: 400px !important;
+  transition: 0.5s !important;
+
+  & .start-chat .mdc-button {
+    min-width: 200px !important;
+    width: 200px !important;
+  }
+
+  & .fab-label,
+  & mw-banner {
+    display: flex !important;
+  }
 }
