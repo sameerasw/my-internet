@@ -12,6 +12,7 @@
 }
 
 /* chat bubble color */
-[aria-label="Thread composer"], ul:has(li > ul[aria-labelledby="chatSearchListHeading-Your-contacts"]){
+[aria-label="Thread composer"],
+ul:has(li > ul[aria-labelledby="chatSearchListHeading-Your-contacts"]) {
   background-color: var(--mwp-message-row-background) !important;
 }
