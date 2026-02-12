@@ -1864,8 +1864,8 @@
       "messages-compact sidebar": ".main-nav {\n  min-width: 85px !important;\n  width: 50px !important;\n  transition: 0.3s !important;\n\n  & .start-chat .mdc-button {\n    min-width: 50px !important;\n    width: 50px !important;\n  }\n\n  & .fab-label,\n  & mw-banner {\n    display: none !important;\n  }\n}\n.main-nav:hover, body:has(.mat-mdc-menu-content) .main-nav {\n  width: 400px !important;\n  transition: 0.5s !important;\n\n  & .start-chat .mdc-button {\n    min-width: 200px !important;\n    width: 200px !important;\n  }\n\n  & .fab-label,\n  & mw-banner {\n    display: flex !important;\n  }\n}"
     },
     "messenger.com.css": {
-      "fbm-transparency": ":root {\n  --web-wash: #00000000 !important;\n  --messenger-card-background: #00000000 !important;\n  --mwp-header-background-color: #00000000 !important;\n  --mwp-message-row-background: #00000000 !important;\n}\n.xcrg951 {\n  background-color: #00000000 !important;\n  box-shadow: none !important;\n}",
-      "chat bubble color": "[aria-label=\"Thread composer\"] {\n  background-color: var(--mwp-message-row-background) !important;\n}"
+      "fbm-transparecy": ":root {\n  --web-wash: #00000000 !important;\n  --messenger-card-background: #00000000 !important;\n  --mwp-header-background-color: #00000000 !important;\n  --mwp-message-row-background: #00000000 !important;\n}\n.xcrg951 {\n  background-color: #00000000 !important;\n  box-shadow: none !important;\n}",
+      "chat bubble color": "[aria-label=\"Thread composer\"], ul:has(li > ul[aria-labelledby=\"chatSearchListHeading-Your-contacts\"]) {\n  background-color: var(--mwp-message-row-background) !important;\n}"
     },
     "meta.ai.css": {
       "transparency": "._asb1, .xr5ldyu, .xukmnpi.x78zum5, .x1b0b6sj {\n  background: transparent !important;\n}"
