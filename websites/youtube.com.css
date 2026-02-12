@@ -21,8 +21,8 @@ ytd-item-section-renderer[page-subtype="playlist"] #header.ytd-item-section-rend
   background: none !important;
 }
 
-
-body::-webkit-scrollbar, ytd-guide-signin-promo-renderer {
+body::-webkit-scrollbar,
+ytd-guide-signin-promo-renderer {
   display: none;
 }
 
