@@ -1,4 +1,4 @@
-/* fbm-transparency */
+/* fbm-transparecy */
 :root {
   --web-wash: #00000000 !important;
   --messenger-card-background: #00000000 !important;
@@ -12,6 +12,6 @@
 }
 
 /* chat bubble color */
-[aria-label="Thread composer"] {
+[aria-label="Thread composer"], ul:has(li > ul[aria-labelledby="chatSearchListHeading-Your-contacts"]){
   background-color: var(--mwp-message-row-background) !important;
 }
