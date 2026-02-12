@@ -15,6 +15,16 @@ nav,
     box-shadow 0.5s ease-in-out !important;
 }
 
+:is(.dark .dark\:bg-dark-layer-bg), body, #explore-app .background-rvs, :is(.dark .dark\:bg-layer-bg-gray), .user-story-chapter-base, .min-w-\[360px\] {
+	background: none !important; 
+	color: white 
+}
+.flexlayout__tabset, :is(.dark .dark\:bg-layer-01) { background: rgba(0,0,0,0.2); }
+
+.monaco-editor, .monaco-editor .inputarea.ime-input, .monaco-editor .margin, .monaco-editor .monaco-editor-background {
+	background: none !important;
+}
+
 /* leetcode-darkreader */
 :root {
   --darkreader-background-ffffff: transparent !important;
