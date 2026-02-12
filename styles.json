@@ -1706,7 +1706,7 @@
       "no footer": "footer {\n  display: none !important;\n}\nheader.border-transparent {\n  background-color: #fff !important;\n}"
     },
     "leetcode.com.css": {
-      "leetcode-transparency": "html, body, nav, .storyboard, .side-block {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "leetcode-transparency": "html, body, nav, .storyboard, .side-block {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}\n:is(.dark .dark\\:bg-dark-layer-bg), body, #explore-app .background-rvs, :is(.dark .dark\\:bg-layer-bg-gray), .user-story-chapter-base, .min-w-\\[360px\\] {\n  background: none !important;\n  color: white;\n}\n.flexlayout__tabset, :is(.dark .dark\\:bg-layer-01) {\n  background: rgba(0, 0, 0, 0.2);\n}\n.monaco-editor, .monaco-editor .inputarea.ime-input, .monaco-editor .margin, .monaco-editor .monaco-editor-background {\n  background: none !important;\n}",
       "leetcode-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n  --darkreader-background-1a1a1a: transparent !important;\n  --darkreader-background-282828: transparent !important;\n}",
       "leetcode-no footer": "footer {\n  display: none !important;\n}",
       "leetcode-no dividers": "hr {\n  opacity: 0 !important;\n}"
