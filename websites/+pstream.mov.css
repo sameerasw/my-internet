@@ -2,7 +2,7 @@
 html,
 body,
 #root,
-.flex.min-h-screen.flex-col>.bg-background-main {
+.flex.min-h-screen.flex-col > .bg-background-main {
   background-color: transparent !important;
   background: transparent !important;
   background-image: none !important;
@@ -31,7 +31,7 @@ body,
 }
 
 /* pstream-no footer $ Removes the footer section from page layout */
-.flex.min-h-screen.flex-col>footer {
+.flex.min-h-screen.flex-col > footer {
   display: none !important;
 }
 
@@ -71,12 +71,12 @@ body,
   user-select: none !important;
 }
 
-.relative.mt-4.group.cursor-pointer.user-select-none a.block>div {
+.relative.mt-4.group.cursor-pointer.user-select-none a.block > div {
   height: 21.3rem !important;
 }
 
 @media (max-width: 640px) {
-  .relative.mt-4.group.cursor-pointer.user-select-none a.block>div {
+  .relative.mt-4.group.cursor-pointer.user-select-none a.block > div {
     height: 19.05rem !important;
   }
 }
@@ -98,11 +98,11 @@ body,
 
 /* pstream-bg opacity $ Sets background opacity levels for containers, buttons, and UI elements */
 .bg-background-secondary\/50 {
-  background-color: rgb(var(--colors-background-secondary) / .3) !important;
+  background-color: rgb(var(--colors-background-secondary) / 0.3) !important;
 }
 
 .max-h-\[900px\] {
-  background-color: rgb(var(--colors-mediaCard-hoverBackground) / .8);
+  background-color: rgb(var(--colors-mediaCard-hoverBackground) / 0.8);
 }
 
 .bg-black\/80 {
@@ -155,7 +155,7 @@ body,
 
 /* pstream-unified header $ Creates a fixed unified header layout with search bar integration */
 div.h-20:nth-child(2).relative.h-20.z-30,
-.w-\[600px\]>div:nth-child(1):not(.space-y-16) {
+.w-\[600px\] > div:nth-child(1):not(.space-y-16) {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
@@ -165,13 +165,13 @@ div.h-20:nth-child(2).relative.h-20.z-30,
   margin: 0 !important;
 }
 
-body:not( :has(.top-content.fixed.pointer-events-none .relative.pointer-events-auto .w-\[1\.5rem\])) div.h-20:nth-child(2).relative.h-20.z-30,
-body:not( :has(.top-content.fixed.pointer-events-none .relative.pointer-events-auto .w-\[1\.5rem\])) .w-\[600px\]>div:nth-child(1):not(.space-y-16) {
+body:not(:has(.top-content.fixed.pointer-events-none .relative.pointer-events-auto .w-\[1\.5rem\])) div.h-20:nth-child(2).relative.h-20.z-30,
+body:not(:has(.top-content.fixed.pointer-events-none .relative.pointer-events-auto .w-\[1\.5rem\])) .w-\[600px\] > div:nth-child(1):not(.space-y-16) {
   padding: 1.25rem 7.5rem 1.25rem 20.5rem !important;
 }
 
-div.h-20:nth-child(2).relative.h-20.z-30>div,
-div.h-20:nth-child(2).relative.h-20.z-30>div>div {
+div.h-20:nth-child(2).relative.h-20.z-30 > div,
+div.h-20:nth-child(2).relative.h-20.z-30 > div > div {
   position: relative !important;
   min-height: unset !important;
   padding: 0 !important;
@@ -243,9 +243,8 @@ hr.border-0:nth-child(8) {
 }
 
 @media (max-width: 1024px) {
-
   div.h-20:nth-child(2).relative.h-20.z-30,
-  .w-\[600px\]>div:nth-child(1):not(.space-y-16) {
+  .w-\[600px\] > div:nth-child(1):not(.space-y-16) {
     padding: 4.25rem 1.75rem 0 1.75rem !important;
   }
 }

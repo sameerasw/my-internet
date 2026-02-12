@@ -6,6 +6,8 @@
 table {
   background-color: transparent !important;
 }
-.commtext, .c00 a:link, a:link {
+.commtext,
+.c00 a:link,
+a:link {
   color: light-dark(#000, whitesmoke);
 }

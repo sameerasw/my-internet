@@ -133,8 +133,7 @@ a {
   color: black;
 }
 ._6d9832ac h1 {
-  border-bottom: 1px solid
-    light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+  border-bottom: 1px solid light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
 }
 ._6d9832ac h1,
 ._6d9832ac h2,
