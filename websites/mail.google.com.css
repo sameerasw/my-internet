@@ -93,7 +93,8 @@ div.nH:nth-child(4) > div:nth-child(1) {
 .aC2,
 .aC3,
 .HM .ahe::after,
-.Am {
+.Am,
+.nr {
 	background-color: transparent;
 }
 
@@ -120,14 +121,31 @@ body:not(:has(#loading[style="display: none;"])) .tVu25 {
 	backdrop-filter: blur(5px) !important;
 	background-color: rgba(0, 0, 0, 0.3) !important;
 }
+.amr .ams,
+.jWOS7-JX-I {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	color: white !important;
+	border: none !important;
+}
+
+.jWOS7-JX-I::before {
+	border: none;
+}
 
 .aaA,
 .T-I-J3,
 .J-JN-M-I,
+.ajz,
+.T-KT,
 .J-Z-M-I-JG {
 	filter: brightness(0) invert(1) !important;
 }
 
-.J-Z-M-I {
+.J-Z-M-I,
+.hP {
 	color: white !important;
+}
+
+.btDi4d.tyMQmc {
+	box-shadow: none !important;
 }
