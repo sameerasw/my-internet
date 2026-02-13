@@ -52,6 +52,7 @@ div.apa.nH.oy8Mbf {
 	h5,
 	h6,
 	span,
+	.Ar,
 	.nH,
 	.iY {
 		background: none !important;
@@ -86,8 +87,14 @@ div.nH:nth-child(4) > div:nth-child(1) {
 
 /* gmail-flashbangless loading */
 #loading,
-.Ap {
-	background-color: transparent !important;
+.Ap,
+.aoI,
+.aoP .Ar,
+.aC2,
+.aC3,
+.HM .ahe::after,
+.Am {
+	background-color: transparent;
 }
 
 #loading .la-e {
@@ -108,5 +115,3 @@ body:not(:has(#loading[style="display: none;"])) .tVu25 {
 	background-color: rgba(0, 0, 0, 0.1) !important;
 	transition: none !important;
 }
-
-
