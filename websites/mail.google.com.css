@@ -110,8 +110,24 @@ body:not(:has(#loading[style="display: none;"])) .tVu25 {
 }
 
 .IG,
+.aDj,
 .GQ {
 	backdrop-filter: blur(5px) !important;
 	background-color: rgba(0, 0, 0, 0.1) !important;
-	transition: none !important;
+}
+
+.J-Z {
+	backdrop-filter: blur(5px) !important;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.aaA,
+.T-I-J3,
+.J-JN-M-I,
+.J-Z-M-I-JG {
+	filter: brightness(0) invert(1) !important;
+}
+
+.J-Z-M-I {
+	color: white !important;
 }
