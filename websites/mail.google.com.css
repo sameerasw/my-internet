@@ -110,17 +110,18 @@ body:not(:has(#loading[style="display: none;"])) .tVu25 {
 	filter: blur(20px) !important;
 }
 
-.IG,
-.aDj,
-.GQ {
+.gA .IG,
+.gA .aDj,
+.gA .GQ {
 	backdrop-filter: blur(5px) !important;
 	background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-.J-Z {
+.gA .J-Z {
 	backdrop-filter: blur(5px) !important;
 	background-color: rgba(0, 0, 0, 0.3) !important;
 }
+
 .amr .ams,
 .jWOS7-JX-I {
 	background-color: rgba(0, 0, 0, 0.5) !important;
@@ -132,16 +133,16 @@ body:not(:has(#loading[style="display: none;"])) .tVu25 {
 	border: none;
 }
 
-.aaA,
-.T-I-J3,
-.J-JN-M-I,
+.gA .aaA,
+.gA .T-I-J3,
+.gA .J-JN-M-I,
 .ajz,
 .T-KT,
-.J-Z-M-I-JG {
+.gA .J-Z-M-I-JG {
 	filter: brightness(0) invert(1) !important;
 }
 
-.J-Z-M-I,
+.gA .J-Z-M-I,
 .hP {
 	color: white !important;
 }
