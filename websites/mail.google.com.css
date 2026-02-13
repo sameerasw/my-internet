@@ -42,7 +42,7 @@ div.apa.nH.oy8Mbf {
 /* gmail-preview (experimental) */
 [jsname="h50Ewe"] {
   .UG,
-  .iY,
+  .iYV,
   p,
   h1,
   h2,
@@ -52,7 +52,8 @@ div.apa.nH.oy8Mbf {
   h6,
   span,
   .nH,
-  div {
+  .iY
+  {
     background: none !important;
     background-color: transparent !important;
     color: var(--gm3-sys-color-surface-variant) !important;
@@ -99,3 +100,4 @@ div.nH:nth-child(4) > div:nth-child(1) {
 body:not(:has(#loading[style="display: none;"])) .tVu25 {
   filter: blur(20px) !important;
 }
+
