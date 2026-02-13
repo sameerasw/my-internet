@@ -51,14 +51,13 @@ div.apa.nH.oy8Mbf {
 	h4,
 	h5,
 	h6,
-	span,
+	.adn span,
+	.oL span,
 	.Ar,
 	.nH,
 	.iY {
 		background: none !important;
-		/*! background-color: transparent !important; */
 		color: var(--gm3-sys-color-surface-variant);
-		/*! fill: var(--gm3-sys-color-surface-variant) !important; */
 	}
 }
 
@@ -72,11 +71,6 @@ div.apa.nH.oy8Mbf {
 		rgba(0, 0, 0, 0.09) 0px 4px 2px,
 		rgba(0, 0, 0, 0.09) 0px 8px 4px,
 		rgba(0, 0, 0, 0.09) 0px 16px 8px !important;
-}
-
-/* gmail-darkreader */
-:root {
-	/*! --darkreader-background-ffffff: transparent !important; */
 }
 
 /*  gmail-rounded corners */
@@ -94,7 +88,10 @@ div.nH:nth-child(4) > div:nth-child(1) {
 .aC3,
 .HM .ahe::after,
 .Am,
-.nr {
+.nr,
+.gA .aGb,
+.gA .agP,
+.gA .agh {
 	background-color: transparent;
 }
 
@@ -113,7 +110,7 @@ body:not(:has(#loading[style="display: none;"])) .tVu25 {
 .gA .IG,
 .gA .aDj,
 .gA .GQ {
-	backdrop-filter: blur(5px) !important;
+	/*! backdrop-filter: blur(5px) !important; */
 	background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -123,14 +120,15 @@ body:not(:has(#loading[style="display: none;"])) .tVu25 {
 }
 
 .amr .ams,
-.jWOS7-JX-I {
+.jWOS7-JX-I,
+.gA .afV {
 	background-color: rgba(0, 0, 0, 0.5) !important;
 	color: white !important;
 	border: none !important;
 }
 
 .jWOS7-JX-I::before {
-	border: none;
+	border: none !important;
 }
 
 .gA .aaA,
@@ -138,8 +136,13 @@ body:not(:has(#loading[style="display: none;"])) .tVu25 {
 .gA .J-JN-M-I,
 .ajz,
 .T-KT,
-.gA .J-Z-M-I-JG {
+.gA .J-Z-M-I-JG,
+.SB,
+.pYTkkf-JX-ank-Rtc0Jf {
 	filter: brightness(0) invert(1) !important;
+}
+.gA .aDj {
+	filter: none;
 }
 
 .gA .J-Z-M-I,
