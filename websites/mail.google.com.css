@@ -138,7 +138,8 @@ body:not(:has(#loading[style="display: none;"])) .tVu25 {
 .T-KT,
 .gA .J-Z-M-I-JG,
 .SB,
-.pYTkkf-JX-ank-Rtc0Jf {
+.pYTkkf-JX-ank-Rtc0Jf,
+.amr .ams::before {
 	filter: brightness(0) invert(1) !important;
 }
 .gA .aDj {
