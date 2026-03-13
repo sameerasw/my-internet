@@ -55,6 +55,11 @@ body,
   display: none !important;
 }
 
+/* pstream-no heading text $ Removes the "heading" text element from the top of the page */
+h1.text-2xl {
+  display: none !important;
+}
+
 /* pstream-no backtotop btn $ Removes the "back to top" button at the bottom of the page */
 .fixed.bottom-9.md\:bottom-4.transform.-translate-x-1\/2.z-50.left-12.md\:left-1\/2 {
   display: none !important;
