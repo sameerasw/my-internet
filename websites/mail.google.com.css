@@ -57,7 +57,7 @@ div.apa.nH.oy8Mbf {
 	.nH,
 	.iY {
 		background: none !important;
-		color: var(--gm3-sys-color-surface-variant);
+		color: var(--gm3-sys-color-on-background);
 	}
 }
 
@@ -116,13 +116,13 @@ body:not(:has(#loading[style="display: none;"])) .tVu25 {
 
 .gA .J-Z {
 	backdrop-filter: blur(5px) !important;
-	background-color: rgba(0, 0, 0, 0.4) !important;
+	background-color: light-dark(rgba(255, 255, 255, 0.4),rgba(0, 0, 0, 0.4)) !important;
 }
 
 .amr .ams,
 .jWOS7-JX-I,
 .gA .afV {
-	background-color: rgba(0, 0, 0, 0.5) !important;
+	background-color: light-dark(rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 0.5)) !important;
 	color: white !important;
 	border: none !important;
 }
