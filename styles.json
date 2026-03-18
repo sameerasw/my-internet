@@ -3186,6 +3186,9 @@
     ],
     "gitlab.com.css": [
       "gitlab.freedesktop.org"
+    ],
+    "+instructure.com.css": [
+      "classroom.ucscout.org"
     ]
   }
 }
