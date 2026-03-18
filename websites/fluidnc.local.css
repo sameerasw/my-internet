@@ -35,7 +35,8 @@ nav,
 .filetext {
   background-color: var(--color-highlight-default) !important;
 }
-.btn-primary, .btn-info {
+.btn-primary,
+.btn-info {
   background-color: var(--color-highlight-primary) !important;
 }
 .btn-success {
@@ -46,7 +47,9 @@ nav,
 }
 
 /* fnclcl-Immersive Popup */
-.modal, .modal-header, .modal-footer {
+.modal,
+.modal-header,
+.modal-footer {
   background-color: transparent !important;
 }
 .modal-content {
@@ -57,7 +60,7 @@ body:has(.modal[style="display: block;"]) {
     filter: blur(20px) !important;
     pointer-events: none !important;
   }
-  
+
   overflow-y: hidden !important;
 }
 
