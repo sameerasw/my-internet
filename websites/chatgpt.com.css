@@ -81,6 +81,12 @@ form[aria-label="Message Composer"] > div {
   border-radius: 1em !important;
 }
 
+/* Ask anything main input */
+[data-type="unified-composer"] > div:nth-child(2) > div {
+  background: #00000060;
+  backdrop-filter: blur(30px);
+}
+
 [data-testid="history-item-0"] > div.bg-\[var\(--sidebar-surface-tertiary\)\] {
   background-color: light-dark(#fff5, #1115) !important;
 }
