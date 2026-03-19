@@ -183,13 +183,13 @@ body > picture {
   mask-size: cover !important;
 }
 
-/* cgpt-input main-input */
+/* cgpt-main input transparency */
 [data-type="unified-composer"] > div:nth-child(2) > div {
   background: #00000060;
   backdrop-filter: blur(30px);
 }
 
-/* cgpt-modals modal-transparency */
+/* cgpt-transparent modals */
 [data-radix-popper-content-wrapper] > div {
   background-color: #00000080 !important;
   backdrop-filter: blur(30px);
