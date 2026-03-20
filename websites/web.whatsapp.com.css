@@ -23,6 +23,7 @@ body,
   --reactions-panel-background-color: transparent !important;
   --poll-modal-footer-background-color: transparent !important;
   --transient-background: transparent !important;
+  --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
   --WDS-systems-chat-surface-composer: var(--WDS-surface-highlight) !important;
   --WDS-systems-bubble-surface-system: var(--WDS-surface-highlight) !important;
   --WDS-systems-bubble-surface-incoming: var(--WDS-surface-highlight) !important;
@@ -35,6 +36,7 @@ body,
   --rich-text-panel-background: var(--WDS-surface-highlight) !important;
   --panel-input-background: var(--WDS-surface-highlight) !important;
   --chevron-button-background: var(--WDS-surface-highlight) !important;
+  --notification-e2e-background: var(--WDS-surface-highlight) !important;
 }
 
 .x12peec7 {
@@ -94,22 +96,18 @@ body,
 }
 
 ._aiwn {
-  &:has(#wa-popovers-bucket:not(:empty)) {
-    > div:nth-child(4) {
-      filter: blur(20px) !important;
-    }
-  }
-  
-  &:has(> div:nth-child(11) [role="menu"]) {
+  &:has(#wa-popovers-bucket:not(:empty), > div:nth-child(11) [role="menu"]) {
     ._aigs {
       filter: blur(20px) !important;
     }
   }
+  
   &:has(> span:nth-child(8):not(:empty)) {
     > span:nth-child(4) > div > div > :nth-child(2) {
       filter: blur(20px) !important;
     }
   }
+  
   &:has(> span:nth-child(3):not(:empty)) {
     > span:nth-child(4) > div {
       filter: blur(20px) !important;
