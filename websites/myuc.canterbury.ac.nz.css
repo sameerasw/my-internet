@@ -3,3 +3,20 @@ body,
 #main-content {
     background-color: transparent !important;
 }
+
+/* @ this comment will also get skipped */
+/* @ this too */
+/* darkreader $ This is a example description */
+:root {
+    --darkreader-background-ffffff: transparent !important;
+}
+
+@layer {
+
+    :root,
+    html,
+    body {
+        --darkreader-background-ffffff: transparent !important;
+        background-color: transparent !important;
+    }
+}
