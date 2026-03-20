@@ -1,9 +1,5 @@
 /* wa-Transparency */
-html,
-body,
-.x1iek97a,
-.xsm26vf,
-.xe4h88v {
+html, body, .x1iek97a, .xsm26vf, .xe4h88v {
   background: none !important;
 }
 
@@ -12,8 +8,7 @@ body,
   --splashscreen-startup-background-rgb: transparent !important;
 }
 
-.color-refresh,
-.app-wrapper-web {
+.color-refresh, .app-wrapper-web {
   --WDS-surface-default: transparent !important;
   --WDS-background-wash-inset: transparent !important;
   --WDS-surface-emphasized: transparent !important;
@@ -57,24 +52,16 @@ body,
 }
 
 /* wa-Immersive Popup */
-.x1akjpcp,
-.xbyyjgo,
-.x42x0ya,
-.x1bmpntp,
-._ahyo,
-.html-button {
+.x1akjpcp, .xbyyjgo, .x42x0ya, .x1bmpntp, ._ahyo, .html-button {
   background: none !important;
 }
 
-.color-refresh,
-.x1honnu5,
-.x1kumeab.x1kumeab {
+.color-refresh, .x1honnu5, .x1kumeab.x1kumeab {
   --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
   --WDS-background-dimmer: transparent !important;
 }
 
-[data-animate-status-viewer] .x1h2kqdt,
-[data-animate-modal-popup] {
+[data-animate-status-viewer] .x1h2kqdt, [data-animate-modal-popup] {
   background-color: var(--WDS-surface-highlight) !important;
 }
 
@@ -163,9 +150,9 @@ body,
       --WDS-content-deemphasized: var(--WDS-white) !important;
       --WDS-persistent-always-black: var(--WDS-white) !important;
       --primary-stronger: var(--WDS-white) !important;
+      --WDS-content-on-accent: var(--WDS-white) !important;
       --button-secondary-background: var(--WDS-surface-highlight) !important;
       --WDS-persistent-always-white: var(--WDS-surface-highlight) !important;
-      --WDS-content-on-accent: var(--WDS-white) !important;
     }
   
     .x1mqxbix {
@@ -176,7 +163,7 @@ body,
       border-color: var(--WDS-white) !important;
     }
   
-    .x1l6jbk0 {
+    .x1l6jbk0, .x16w0wmm {
       background-color: var(--WDS-surface-highlight) !important;
     }
   }
@@ -188,4 +175,8 @@ body,
 
 [role="button"] {
   --WDS-surface-elevated-emphasized: var(--WDS-surface-highlight) !important;
+}
+
+.x28tbhy.x28tbhy {
+  --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
 }
