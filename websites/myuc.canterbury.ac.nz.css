@@ -1,20 +1,19 @@
 /* yt-transparency */
 body,
 #main-content {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 /* darkreader */
 :root {
-    --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-ffffff: transparent !important;
 }
 
 @layer {
-
-    :root,
-    html,
-    body {
-        --darkreader-background-ffffff: transparent !important;
-        background-color: transparent !important;
-    }
+  :root,
+  html,
+  body {
+    --darkreader-background-ffffff: transparent !important;
+    background-color: transparent !important;
+  }
 }
