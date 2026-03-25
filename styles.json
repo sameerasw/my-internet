@@ -2348,6 +2348,12 @@
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer, mfe-footer-pharos-footer, .footer, #footer, .Footer_content__WG3KU {\n  display: none !important;\n}"
     },
+    "read.readwise.io.css": {
+      "rw-transparency $ Make all background surfaces transparent": "html, body, aside, main, header, nav, section, article, div, button, a, input, span, li {\n  background-color: transparent !important;\n}",
+      "rw-readable $ Keep popover panels and menus readable": "div[class*=\"_appearancePanel_\"], div[class*=\"_appearancePanel_\"] *, div[class*=\"_dropdownContent_\"], div[class*=\"_dropdownContent_\"] *, div[class*=\"_content_1j6f0\"], div[class*=\"_content_1j6f0\"] *, div.popover, div.popover *, div[class*=\"_commandsContainer_\"], div[class*=\"_commandsContainer_\"] *, div[class*=\"_paletteActionRow_\"], div[class*=\"_paletteActionRow_\"] *, div[class*=\"_palette_29opr\"] > *, div[class*=\"_palette_29opr\"] input, div[class*=\"_sortMenu_\"], div[class*=\"_sortMenu_\"] *, div[class*=\"_filterMenu_\"], div[class*=\"_filterMenu_\"] * {\n  background-color: light-dark(#eee, #1a1f25) !important;\n}",
+      "rw-borders $ Remove borders, shadows, and dividers": "div[class*=\"_divider_\"], div[class*=\"_trashDivider_\"], div.document-header-separator, span[class*=\"_bulletSeparator_\"] {\n  border-color: transparent !important;\n}\n*:focus-visible {\n  outline: 2px solid light-dark(#0003, #fff3) !important;\n}",
+      "rw-hover $ Hide sidebar toggle until hovered": "[aria-label=\"Toggle sidebar\"] {\n  opacity: 0 !important;\n  transition: opacity 0.3s ease-in-out !important;\n  &:hover {\n    opacity: 1 !important;\n  }\n}"
+    },
     "rebang.today.css": {
       "rebang-transparency": "html, body, nav, header, #root > div, .dark .dark\\:bg-primaryDark-200, .bg-primary-200 {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "rebang-darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
