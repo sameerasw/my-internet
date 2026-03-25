@@ -1,18 +1,14 @@
 /* wa-Transparency */
-html,
-body,
-.x1iek97a,
-.xsm26vf {
+html, body, .x1iek97a, .xsm26vf, .xe4h88v {
   background: none !important;
 }
 
-:root {
+:root { 
   --splashscreen-startup-background: transparent !important;
   --splashscreen-startup-background-rgb: transparent !important;
 }
 
-.color-refresh,
-.app-wrapper-web {
+.color-refresh, .app-wrapper-web {
   --WDS-surface-default: transparent !important;
   --WDS-background-wash-inset: transparent !important;
   --WDS-surface-emphasized: transparent !important;
@@ -21,6 +17,7 @@ body,
   --WDS-systems-chat-surface-tray: transparent !important;
   --reactions-panel-background-color: transparent !important;
   --poll-modal-footer-background-color: transparent !important;
+  --transient-background: transparent !important;
   --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
   --WDS-systems-chat-surface-composer: var(--WDS-surface-highlight) !important;
   --WDS-systems-bubble-surface-system: var(--WDS-surface-highlight) !important;
@@ -34,6 +31,11 @@ body,
   --rich-text-panel-background: var(--WDS-surface-highlight) !important;
   --panel-input-background: var(--WDS-surface-highlight) !important;
   --chevron-button-background: var(--WDS-surface-highlight) !important;
+  --notification-e2e-background: var(--WDS-surface-highlight) !important;
+}
+
+.x12peec7 {
+  background-color: var(--WDS-surface-highlight) !important;
 }
 
 @media screen and (max-width: 1300px) {
@@ -50,23 +52,21 @@ body,
 }
 
 /* wa-Immersive Popup */
-.x1akjpcp,
-.xbyyjgo,
-.x42x0ya,
-.x1bmpntp,
-._ahyo {
+.x1akjpcp, .xbyyjgo, .x42x0ya, .x1bmpntp, ._ahyo, .html-button {
   background: none !important;
 }
 
-.color-refresh,
-.x1honnu5 {
+.color-refresh, .x1honnu5, .x1kumeab.x1kumeab {
   --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
   --WDS-background-dimmer: transparent !important;
 }
 
-[data-animate-status-viewer] .x1h2kqdt,
-[data-animate-modal-popup] {
+[data-animate-status-viewer] .x1h2kqdt, [data-animate-modal-popup] {
   background-color: var(--WDS-surface-highlight) !important;
+}
+
+[role="menu"] {
+  --WDS-surface-default: var(--WDS-surface-highlight) !important;
 }
 
 ._aiwn:has(._ak4w, > span:nth-child(3):not(:empty), > span:nth-child(4):not(:empty)) {
@@ -83,15 +83,26 @@ body,
 }
 
 ._aiwn {
-  &:has(> span:nth-child(3):not(:empty), > span:nth-child(8):not(:empty)):not(:has(._ajx_, [data-animate-status-viewer])) {
-    ._aigs,
+  &:has(#wa-popovers-bucket:not(:empty), > div:nth-child(11) [role="menu"]) {
+    ._aigs {
+      filter: blur(20px) !important;
+    }
+  }
+  
+  &:has(> span:nth-child(8):not(:empty)) {
+    > span:nth-child(4) > div > div > :nth-child(2) {
+      filter: blur(20px) !important;
+    }
+  }
+  
+  &:has(> span:nth-child(3):not(:empty)) {
     > span:nth-child(4) > div {
       filter: blur(20px) !important;
     }
   }
 
   &:has(.x1h2kqdt) {
-    [data-animate-status-viewer] > span > div > div > div > div > div:not(:last-child) {
+    [data-animate-status-viewer] [tabindex] > :not(:last-child) {
       filter: blur(20px) !important;
     }
   }
@@ -103,7 +114,7 @@ body,
   }
 }
 
-._aigs {
+._aigs { 
   &:has(> div:nth-child(3) > div:nth-child(2) > div > span > div) {
     #main > div,
     #main > footer {
@@ -116,4 +127,56 @@ body,
       display: none !important;
     }
   }
+}
+
+/* wa-Misc */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --splashscreen-startup-icon: var(--WDS-white) !important;
+    --splashscreen-primary-title: var(--WDS-white) !important;
+    --splashscreen-secondary-lighter: var(--WDS-white) !important;
+    --splashscreen-progress-background: var(--WDS-surface-highlight) !important;
+  }
+  
+  #mount_0_0_ab {
+    --gray-850: var(--WDS-white) !important;
+    --WDS-black-alpha-60: var(--WDS-white) !important;
+    --WDS-neutral-gray-1000: var(--WDS-white) !important;
+    --WDS-neutral-gray-75: var(--WDS-surface-highlight) !important;
+  
+    .light, .x1kumeab.x1kumeab, .x1646n1n.x1646n1n {
+      --WDS-surface-default: transparent !important;
+      --WDS-content-default: var(--WDS-white) !important;
+      --WDS-content-deemphasized: var(--WDS-white) !important;
+      --WDS-persistent-always-black: var(--WDS-white) !important;
+      --primary-stronger: var(--WDS-white) !important;
+      --WDS-content-on-accent: var(--WDS-white) !important;
+      --button-secondary-background: var(--WDS-surface-highlight) !important;
+      --WDS-persistent-always-white: var(--WDS-surface-highlight) !important;
+    }
+  
+    .x1mqxbix {
+      color: var(--WDS-white) !important;
+    }
+  
+    .xpypsur {
+      border-color: var(--WDS-white) !important;
+    }
+  
+    .x1l6jbk0, .x16w0wmm {
+      background-color: var(--WDS-surface-highlight) !important;
+    }
+  }
+}
+
+._apdm::after, .x98f6rh::after {
+  display: none !important;
+}
+
+[role="button"] {
+  --WDS-surface-elevated-emphasized: var(--WDS-surface-highlight) !important;
+}
+
+.x28tbhy.x28tbhy {
+  --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
 }
