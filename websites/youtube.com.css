@@ -265,7 +265,6 @@ ytd-merch-shelf-renderer,
 /* yt-Transparent video background */
 .html5-main-video,
 .html5-video-container,
-#movie_player,
 #container,
 #ytd-player,
 #player-container,
@@ -274,6 +273,10 @@ ytd-merch-shelf-renderer,
 ytlr-player {
   background-color: #00000000 !important;
   background: transparent !important;
+}
+
+#movie_player {
+  background: black !important;
 }
 
 #cinematics {
