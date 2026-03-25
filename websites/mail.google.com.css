@@ -39,24 +39,47 @@ div.apa.nH.oy8Mbf {
   display: none !important;
 }
 
+[jsname="h50Ewe"] {
+  .gs,
+  .aO7,
+  .Iy {
+    .UG,
+    .iY,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    span,
+    .nH,
+    div {
+      color: var(--gm3-sys-color-surface-variant) !important;
+      fill: var(--gm3-sys-color-surface-variant) !important;
+    }
+  }
+}
+
 /* gmail-preview (experimental) */
 [jsname="h50Ewe"] {
   .UG,
-  .iY,
+  .iYV,
   p,
   h1,
   h2,
+  .adn div,
   h3,
   h4,
   h5,
   h6,
-  span,
+  .adn span,
+  .oL span,
+  .Ar,
   .nH,
-  div {
+  .iY {
     background: none !important;
-    background-color: transparent !important;
-    color: var(--gm3-sys-color-surface-variant) !important;
-    fill: var(--gm3-sys-color-surface-variant) !important;
+    color: var(--gm3-sys-color-on-background);
   }
 }
 
@@ -72,11 +95,6 @@ div.apa.nH.oy8Mbf {
     rgba(0, 0, 0, 0.09) 0px 16px 8px !important;
 }
 
-/* gmail-darkreader */
-:root {
-  --darkreader-background-ffffff: transparent !important;
-}
-
 /*  gmail-rounded corners */
 #\:3,
 div.nH:nth-child(4) > div:nth-child(1) {
@@ -84,8 +102,19 @@ div.nH:nth-child(4) > div:nth-child(1) {
 }
 
 /* gmail-flashbangless loading */
-#loading {
-  background-color: transparent !important;
+#loading,
+.Ap,
+.aoI,
+.aoP .Ar,
+.aC2,
+.aC3,
+.HM .ahe::after,
+.Am,
+.nr,
+.gA .aGb,
+.gA .agP,
+.gA .agh {
+  background-color: transparent;
 }
 
 #loading .la-e {
@@ -98,4 +127,56 @@ div.nH:nth-child(4) > div:nth-child(1) {
 
 body:not(:has(#loading[style="display: none;"])) .tVu25 {
   filter: blur(20px) !important;
+}
+
+.gA .IG,
+.gA .aDj,
+.gA .GQ {
+  /*! backdrop-filter: blur(5px) !important; */
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.gA .J-Z {
+  backdrop-filter: blur(5px) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4)) !important;
+}
+/* darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+.amr .ams,
+.jWOS7-JX-I,
+.gA .afV {
+  background-color: light-dark(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.jWOS7-JX-I::before {
+  border: none !important;
+}
+
+.gA .aaA,
+.gA .T-I-J3,
+.gA .J-JN-M-I,
+.ajz,
+.T-KT,
+.gA .J-Z-M-I-JG,
+.SB,
+.pYTkkf-JX-ank-Rtc0Jf,
+.amr .ams::before {
+  filter: brightness(0) invert(1) !important;
+}
+.gA .aDj {
+  filter: none !important;
+}
+
+.gA .J-Z-M-I,
+.hP {
+  color: white !important;
+}
+
+.btDi4d.tyMQmc {
+  box-shadow: none !important;
 }

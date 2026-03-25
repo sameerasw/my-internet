@@ -1,6 +1,7 @@
 /* brave-transparency */
 :root {
   --color-page-background: transparent !important;
+  --color-search-background-page: transparent !important;
 }
 
 body.fullscreen-drawer-open,
