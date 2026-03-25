@@ -1,14 +1,19 @@
 /* wa-Transparency */
-html, body, .x1iek97a, .xsm26vf, .xe4h88v {
+html,
+body,
+.x1iek97a,
+.xsm26vf,
+.xe4h88v {
   background: none !important;
 }
 
-:root { 
+:root {
   --splashscreen-startup-background: transparent !important;
   --splashscreen-startup-background-rgb: transparent !important;
 }
 
-.color-refresh, .app-wrapper-web {
+.color-refresh,
+.app-wrapper-web {
   --WDS-surface-default: transparent !important;
   --WDS-background-wash-inset: transparent !important;
   --WDS-surface-emphasized: transparent !important;
@@ -52,16 +57,24 @@ html, body, .x1iek97a, .xsm26vf, .xe4h88v {
 }
 
 /* wa-Immersive Popup */
-.x1akjpcp, .xbyyjgo, .x42x0ya, .x1bmpntp, ._ahyo, .html-button {
+.x1akjpcp,
+.xbyyjgo,
+.x42x0ya,
+.x1bmpntp,
+._ahyo,
+.html-button {
   background: none !important;
 }
 
-.color-refresh, .x1honnu5, .x1kumeab.x1kumeab {
+.color-refresh,
+.x1honnu5,
+.x1kumeab.x1kumeab {
   --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
   --WDS-background-dimmer: transparent !important;
 }
 
-[data-animate-status-viewer] .x1h2kqdt, [data-animate-modal-popup] {
+[data-animate-status-viewer] .x1h2kqdt,
+[data-animate-modal-popup] {
   background-color: var(--WDS-surface-highlight) !important;
 }
 
@@ -88,13 +101,13 @@ html, body, .x1iek97a, .xsm26vf, .xe4h88v {
       filter: blur(20px) !important;
     }
   }
-  
+
   &:has(> span:nth-child(8):not(:empty)) {
     > span:nth-child(4) > div > div > :nth-child(2) {
       filter: blur(20px) !important;
     }
   }
-  
+
   &:has(> span:nth-child(3):not(:empty)) {
     > span:nth-child(4) > div {
       filter: blur(20px) !important;
@@ -114,7 +127,7 @@ html, body, .x1iek97a, .xsm26vf, .xe4h88v {
   }
 }
 
-._aigs { 
+._aigs {
   &:has(> div:nth-child(3) > div:nth-child(2) > div > span > div) {
     #main > div,
     #main > footer {
@@ -137,14 +150,16 @@ html, body, .x1iek97a, .xsm26vf, .xe4h88v {
     --splashscreen-secondary-lighter: var(--WDS-white) !important;
     --splashscreen-progress-background: var(--WDS-surface-highlight) !important;
   }
-  
+
   #mount_0_0_ab {
     --gray-850: var(--WDS-white) !important;
     --WDS-black-alpha-60: var(--WDS-white) !important;
     --WDS-neutral-gray-1000: var(--WDS-white) !important;
     --WDS-neutral-gray-75: var(--WDS-surface-highlight) !important;
-  
-    .light, .x1kumeab.x1kumeab, .x1646n1n.x1646n1n {
+
+    .light,
+    .x1kumeab.x1kumeab,
+    .x1646n1n.x1646n1n {
       --WDS-surface-default: transparent !important;
       --WDS-content-default: var(--WDS-white) !important;
       --WDS-content-deemphasized: var(--WDS-white) !important;
@@ -154,22 +169,24 @@ html, body, .x1iek97a, .xsm26vf, .xe4h88v {
       --button-secondary-background: var(--WDS-surface-highlight) !important;
       --WDS-persistent-always-white: var(--WDS-surface-highlight) !important;
     }
-  
+
     .x1mqxbix {
       color: var(--WDS-white) !important;
     }
-  
+
     .xpypsur {
       border-color: var(--WDS-white) !important;
     }
-  
-    .x1l6jbk0, .x16w0wmm {
+
+    .x1l6jbk0,
+    .x16w0wmm {
       background-color: var(--WDS-surface-highlight) !important;
     }
   }
 }
 
-._apdm::after, .x98f6rh::after {
+._apdm::after,
+.x98f6rh::after {
   display: none !important;
 }
 
