@@ -151,6 +151,10 @@ ytd-two-column-browse-results-renderer[page-subtype="playlist"] {
   width: fit-content !important;
 }
 
+ytd-app {
+  --app-drawer-width: calc(var(--ytd-mini-guide-width) - 4px) !important;
+}
+
 /* yt-Transparent header */
 #masthead-container {
   #background.ytd-masthead {
@@ -504,6 +508,44 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
 #content:has(.ytSearchboxComponentInputBoxHasFocus) #page-manager {
   filter: blur(20px) !important;
   scale: 1.05 !important;
+}
+
+/* yt-Immersive Popup */ 
+:root, ytd-app {
+  --yt-spec-raised-background: transparent !important;
+  --app-drawer-scrim-background: transparent !important;
+  --iron-overlay-backdrop-background-color: transparent !important;
+  
+  --yt-spec-menu-background: var(--yt-spec-additive-background) !important;
+  --yt-spec-base-background: var(--yt-spec-additive-background) !important;
+  --yt-spec-text-primary-inverse: var(--yt-spec-additive-background) !important;
+  --paper-dialog-background-color: var(--yt-spec-additive-background) !important;
+  --t08a7c6c176cbc5c2: var(--yt-spec-additive-background) !important;
+}
+
+#guide>#contentContainer {
+  background-color: var(--yt-spec-additive-background) !important;
+}
+
+ytd-app {
+  &:has(
+  #guide[opened]:not([persistent]),
+  tp-yt-iron-dropdown:not([aria-hidden="true"])
+    ) #page-manager {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+  
+  &:has(
+  tp-yt-paper-dialog:not([aria-hidden])
+    ) {
+      #masthead-container,
+      #page-manager,
+      #guide > #contentContainer {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
 }
 
 /* yt-Addon : Viewstats */
