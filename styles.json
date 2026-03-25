@@ -1973,6 +1973,10 @@
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer {\n  display: none !important;\n}"
     },
+    "myuc.canterbury.ac.nz.css": {
+      "yt-transparency": "body, #main-content {\n  background-color: transparent !important;\n}",
+      "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}\n@layer {\n  :root,\n  html,\n  body {\n    --darkreader-background-ffffff: transparent !important;\n    background-color: transparent !important;\n  }\n}"
+    },
     "na.se.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, .site-nav__links, .site-header__navigation-home {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
