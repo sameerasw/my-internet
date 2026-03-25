@@ -329,7 +329,7 @@ ytd-app:has([fullscreen=""], [theater=""]):not(:has(ytd-watch-flexy[hidden=""]))
   display: none !important;
 }
 
-ytd-comments {
+ytd-comments, #chat-container, #chat {
   transition: all 0.5s ease-in-out !important;
 }
 
@@ -353,7 +353,30 @@ ytd-comments {
   }
 }
 
-/* yt-zen view comments on left */
+#chat-container {
+  opacity: 0 !important;
+  z-index: 1000 !important;
+  
+  > #chat {
+    height: 90vh !important;
+    top: 50vh !important;
+    transform: translateY(-50%) !important;
+    border-radius: 2em 0 0 2em !important;
+    right: calc(var(--ytd-watch-flexy-sidebar-width) - 80%) !important;
+    xbackground-color: var(--yt-live-chat-shimmer-background-color) !important;
+    xbackdrop-filter: blur(20px) !important;
+  }
+  
+  &:hover {
+    opacity: 0.8 !important;
+    
+    > #chat {
+      right: 0 !important;
+    }
+  }
+} 
+
+/* yt-zen view comments on left */ 
 #content:has([data-title-no-tooltip="Full screen"]):has([data-title-no-tooltip="Default view"]) ytd-comments {
   border-radius: 0 2em 2em 0 !important;
 
@@ -363,28 +386,23 @@ ytd-comments {
   }
 }
 
+#chat-container {  
+  > #chat {
+    border-radius: 0 2em 2em 0 !important;
+    left: calc(var(--ytd-watch-flexy-sidebar-width) - 80%) !important;
+  }
+  
+  &:hover {
+    > #chat {
+      left: 0 !important;
+    }
+  }
+} 
+
 /* yt-zen comments solid $ Make above Zen View comments background solid instead of blur */
 #content:has([data-title-no-tooltip="Full screen"]):has([data-title-no-tooltip="Default view"]) ytd-comments {
   backdrop-filter: none !important;
   background-color: var(--yt-spec-text-primary-inverse) !important;
-}
-
-/* yt-transparent overlay chat $ Make the live chat appear as an overlay in theater mode right side edge. */
-#content:has([data-title-no-tooltip="Full screen"]):has([data-title-no-tooltip="Default view"]) #chat {
-  position: absolute !important;
-  height: 800px !important;
-  top: 50vh !important;
-  transform: translateY(-50%) !important;
-  opacity: 0.8 !important;
-}
-
-#content:has([data-title-no-tooltip="Full screen"]):has([data-title-no-tooltip="Default view"]) yt-live-chat-renderer {
-  background: none !important;
-  background-color: transparent !important;
-}
-
-#content:has([data-title-no-tooltip="Exit full screen"]) ytd-live-chat-frame {
-  background-color: var(--app-drawer-content-container-background-color) !important;
 }
 
 /* yt-Misc */
@@ -510,7 +528,7 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
   scale: 1.05 !important;
 }
 
-/* yt-Immersive Popup */ 
+/* yt-Immersive Popup */ /*
 :root, ytd-app {
   --yt-spec-raised-background: transparent !important;
   --app-drawer-scrim-background: transparent !important;
@@ -546,6 +564,40 @@ ytd-app {
       pointer-events: none !important;
     }
   }
+}
+
+/* yt-Fix Overlapping Header */ /*
+body {
+  overflow-y: hidden !important;
+}
+
+ytd-app:not([fullscreen]) {
+  #masthead-container {
+    position: relative !important;
+  }
+  
+  .ytd-page-manager {
+    overflow-y: scroll !important;
+    height: calc(100dvh - 56px) !important;
+  }
+}
+
+#page-manager {
+  margin-top: 0 !important;
+}
+
+#chips-wrapper {
+  position: relative !important;
+  top: 0 !important;
+}
+
+tp-yt-app-header {
+  position: relative !important;
+  margin-top: 0 !important;
+}
+
+#contentContainer {
+  padding-top: 0 !important;
 }
 
 /* yt-Addon : Viewstats */
