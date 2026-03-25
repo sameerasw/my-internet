@@ -387,7 +387,7 @@ ytd-comments, #chat-container, #chat {
 #chat-container {  
   > #chat {
     border-radius: 0 2em 2em 0 !important;
-    left: calc(var(--ytd-watch-flexy-sidebar-width) - 80%) !important;
+    left: calc((var(--ytd-watch-flexy-sidebar-width) - 5em) * -1) !important;
   }
   
   &:hover {
