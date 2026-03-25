@@ -362,9 +362,7 @@ ytd-comments, #chat-container, #chat {
     top: 50vh !important;
     transform: translateY(-50%) !important;
     border-radius: 2em 0 0 2em !important;
-    right: calc(var(--ytd-watch-flexy-sidebar-width) - 80%) !important;
-    xbackground-color: var(--yt-live-chat-shimmer-background-color) !important;
-    xbackdrop-filter: blur(20px) !important;
+    right: calc((var(--ytd-watch-flexy-sidebar-width) - 5em) * -1) !important;
   }
   
   &:hover {
