@@ -528,7 +528,7 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
   scale: 1.05 !important;
 }
 
-/* yt-Immersive Popup */ /*
+/* yt-Immersive Popup */
 :root, ytd-app {
   --yt-spec-raised-background: transparent !important;
   --app-drawer-scrim-background: transparent !important;
@@ -564,40 +564,6 @@ ytd-app {
       pointer-events: none !important;
     }
   }
-}
-
-/* yt-Fix Overlapping Header */ /*
-body {
-  overflow-y: hidden !important;
-}
-
-ytd-app:not([fullscreen]) {
-  #masthead-container {
-    position: relative !important;
-  }
-  
-  .ytd-page-manager {
-    overflow-y: scroll !important;
-    height: calc(100dvh - 56px) !important;
-  }
-}
-
-#page-manager {
-  margin-top: 0 !important;
-}
-
-#chips-wrapper {
-  position: relative !important;
-  top: 0 !important;
-}
-
-tp-yt-app-header {
-  position: relative !important;
-  margin-top: 0 !important;
-}
-
-#contentContainer {
-  padding-top: 0 !important;
 }
 
 /* yt-Addon : Viewstats */
