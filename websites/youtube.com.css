@@ -374,6 +374,10 @@ ytd-comments, #chat-container, #chat {
   }
 } 
 
+ytd-watch-flexy {
+  --ytd-watch-flexy-sidebar-width: 0 !important;
+}
+
 /* yt-zen view comments on left */ 
 #content:has([data-title-no-tooltip="Full screen"]):has([data-title-no-tooltip="Default view"]) ytd-comments {
   border-radius: 0 2em 2em 0 !important;
@@ -457,10 +461,6 @@ ytd-rich-item-renderer[rendered-from-rich-grid] {
 
 ytd-rich-item-renderer[is-in-first-column=""] {
   margin-left: calc(var(--ytd-rich-grid-item-margin) / 2) !important;
-}
-
-#contents {
-  padding-left: calc(var(--ytd-rich-grid-item-margin) / 2 + var(--ytd-rich-grid-gutter-margin)) !important;
 }
 
 /* yt-Immersive search $ Smooth blur and zoom effect for searhbar */
