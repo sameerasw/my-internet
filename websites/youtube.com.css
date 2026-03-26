@@ -152,7 +152,7 @@ ytd-two-column-browse-results-renderer[page-subtype="playlist"] {
 }
 
 ytd-app[is-watch-page] {
-  --app-drawer-width: calc(var(--ytd-mini-guide-width) - 4px) !important;
+  --app-drawer-width: calc(var(--ytd-mini-guide-width) - var(--ytd-margin-base)) !important;
 }
 
 /* yt-Transparent header */
@@ -374,8 +374,8 @@ ytd-comments, #chat-container, #chat {
   }
 } 
 
-ytd-watch-flexy {
-  --ytd-watch-flexy-sidebar-width: 0 !important;
+ytd-watch-flexy > #columns {
+  padding-right: 0 !important;
 }
 
 /* yt-zen view comments on left */ 
