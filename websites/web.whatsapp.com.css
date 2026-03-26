@@ -23,6 +23,7 @@ body,
   --reactions-panel-background-color: transparent !important;
   --poll-modal-footer-background-color: transparent !important;
   --transient-background: transparent !important;
+  --WDS-background-elevated-wash-plain: var(--WDS-surface-highlight) !important;
   --WDS-surface-elevated-default: var(--WDS-surface-highlight) !important;
   --WDS-systems-chat-surface-composer: var(--WDS-surface-highlight) !important;
   --WDS-systems-bubble-surface-system: var(--WDS-surface-highlight) !important;
