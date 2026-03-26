@@ -338,15 +338,16 @@ ytd-comments, #chat-container, #chat {
   backdrop-filter: blur(20px) !important;
   padding: 0 2em !important;
   border-radius: 2em 0 0 2em !important;
-  max-height: calc(100vh - 175px) !important;
   overflow-y: scroll !important;
   position: fixed !important;
-  z-index: 1000 !important;
-  top: 3vh !important;
-  right: -42em !important;
-  width: 40em !important;
+  z-index: 1000 !important; 
   height: 90vh !important;
+  top: 50vh !important;
+  transform: translateY(-50%) !important;
+  right: calc((var(--ytd-watch-flexy-sidebar-width) - 5em) * -1) !important;
+  width: var(--ytd-watch-flexy-sidebar-width) !important;
   opacity: 0 !important;
+  
   &:hover {
     opacity: 1 !important;
     right: 0 !important;
@@ -381,8 +382,8 @@ ytd-watch-flexy > #columns {
 /* yt-zen view comments on left */ 
 #content:has([data-title-no-tooltip="Full screen"]):has([data-title-no-tooltip="Default view"]) ytd-comments {
   border-radius: 0 2em 2em 0 !important;
+  left: calc((var(--ytd-watch-flexy-sidebar-width) - 5em) * -1) !important;
 
-  left: -40em !important;
   &:hover {
     left: 0 !important;
   }
