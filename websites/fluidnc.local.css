@@ -9,21 +9,83 @@ nav,
 #cmd_content,
 .input-group *,
 .label,
-.tablinks {
+#tablettab,
+#tablettab > div,
+#gcode-states,
+#messages,
+#gcode,
+.btn-primary .badge {
   background-color: transparent !important;
   background: none !important;
 }
 :root {
   --darkreader-background-ffffff: transparent !important;
+  --color-highlight-default: hsla(0, 0%, 100%, 0.08) !important;
+  --color-highlight-primary: hsla(207.73, 56.41%, 45.88%, 0.08) !important;
+  --color-highlight-success: hsla(134.48, 57.62%, 29.61%, 0.08) !important;
+  --color-highlight-danger: hsla(0, 100%, 50%, 0.08) !important;
 }
 
 /* fnclcl-Translucent Buttons */
-.btn-default {
-  background-color: rgba(255, 255, 255, 0.25) !important;
+.btn-default,
+.btn-go,
+.btn-tablet,
+.mdi-entry,
+.form-control,
+.filetext {
+  background-color: var(--color-highlight-default) !important;
 }
-.btn-primary {
-  background-color: rgba(0, 255, 255, 0.25) !important;
+.btn-primary,
+.btn-info {
+  background-color: var(--color-highlight-primary) !important;
+}
+.btn-success {
+  background-color: var(--color-highlight-success) !important;
 }
 .btn-danger {
-  background-color: rgba(255, 0, 0, 0.25) !important;
+  background-color: var(--color-highlight-danger) !important;
+}
+
+/* fnclcl-Immersive Popup */
+.modal,
+.modal-header,
+.modal-footer {
+  background-color: transparent !important;
+}
+.modal-content {
+  background-color: var(--color-highlight-default) !important;
+}
+body:has(.modal[style="display: block;"]) {
+  #main_ui {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+
+  overflow-y: hidden !important;
+}
+
+/* fnclcl-Better Tabs */
+#mainuitablinks {
+  margin-top: 10px !important;
+  background-color: var(--color-highlight-default) !important;
+  border-radius: 18px !important;
+}
+.tablinks:not(.hide_it) {
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  border: none !important;
+  border-radius: 18px !important;
+  background-color: transparent !important;
+}
+.tablinks.active {
+  background-color: var(--color-highlight-primary) !important;
+}
+
+/* fnclcl-Misc */
+#JogUI {
+  --darkreader-text-000000: black !important;
+}
+#ZSpace {
+  opacity: 0 !important;
 }

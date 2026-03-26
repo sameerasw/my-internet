@@ -69,7 +69,7 @@ body:has(.persistent-player--theatre) {
   .channel-root,
   nav,
   [aria-label="Expand Side Nav"] {
-    display: none !important;
+    visibility: hidden !important;
   }
 }
 

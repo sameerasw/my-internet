@@ -1,5 +1,7 @@
 /* perplexity-transparency */
 body,
+html[data-color-scheme="dark"]:not(.todesktop),
+html[data-color-scheme="light"]:not(.todesktop),
 #__next > main:nth-child(1) > div:nth-child(1),
 .erp-tab\:rounded-none,
 div.sticky:nth-child(2),
@@ -25,6 +27,8 @@ div.sticky:nth-child(2),
 }
 html[data-color-scheme="dark"],
 html[data-color-scheme="light"],
+html[data-color-scheme="dark"]:not(.todesktop),
+html[data-color-scheme="light"]:not(.todesktop),
 html {
   background: transparent !important;
 }
