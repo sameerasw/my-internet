@@ -151,7 +151,7 @@ ytd-two-column-browse-results-renderer[page-subtype="playlist"] {
   width: fit-content !important;
 }
 
-ytd-app {
+ytd-app[is-watch-page] {
   --app-drawer-width: calc(var(--ytd-mini-guide-width) - 4px) !important;
 }
 
