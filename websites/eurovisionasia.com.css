@@ -1,6 +1,6 @@
 /* transparency */
 .bg-navy {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 #countries {
