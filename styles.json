@@ -1223,6 +1223,9 @@
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer {\n  display: none !important;\n}"
     },
+    "eurovisionasia.com.css": {
+      "transparency": ".bg-navy {\n  background-color: transparent;\n}\n#countries {\n  .overflow-hidden {\n    mask-image: linear-gradient(0.25turn, #fff0, white 15%, white 85%, #fff0) !important;\n  }\n\n  .bg-linear-to-r,\n  .bg-linear-to-l {\n    background-image: none !important;\n  }\n}"
+    },
     "eurovisionworld.com.css": {
       "transparency": "html, body, nav, #nav, .nav.sticky_n, navbar, .navbar, #navbar, header, #header, .header, app, #app, .app, .app-root, #pass-sidebar, #main, #content, section, #__next, .top, .pagewrap, .page {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
