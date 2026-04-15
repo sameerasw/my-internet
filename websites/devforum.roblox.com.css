@@ -53,7 +53,7 @@ section,
 body.dark_mode,
 body.light_mode,
 text-div>textarea {
-  background: none !important;
+  background: transparent !important;
 
   td,
   th,
@@ -69,5 +69,3 @@ text-div>textarea {
     padding-bottom: 5px !important;
   }
 }
-
-/* @ Commit Hell */
