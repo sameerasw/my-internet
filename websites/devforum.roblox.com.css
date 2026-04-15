@@ -1,0 +1,10 @@
+/* transparency */
+body {
+    background: none !important;
+
+    .d-header {
+        border: 1px solid var(--primary-low) !important;
+        border-radius: 15px !important;
+        padding-bottom: 5px !important;
+    }
+}
