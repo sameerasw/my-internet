@@ -56,8 +56,9 @@ text-div>textarea {
   background: none !important;
 
   td,
-  th {
-    color: var(--primary-medium);
+  th,
+  .topics a {
+    color: var(--primary-high-or-secondary-low) !important
   }
 
   .d-header {
