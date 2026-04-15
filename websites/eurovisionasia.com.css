@@ -1,29 +1,26 @@
 /* transparency */
 body {
-  background-color: transparent !important;
-
-  .bg-navy {
     background-color: transparent !important;
-  }
 
-  .backdrop-blur-none {
-    background: transparent !important;
-    backdrop-filter: blur(10px) !important;
-  }
-
-  .backdrop-blur-md {
-    background: transparent !important;
-    backdrop-filter: blur(10px) !important;
-  }
-
-  #countries {
-    .overflow-hidden {
-      mask-image: linear-gradient(0.25turn, #fff0, white 15%, white 85%, #fff0) !important;
+    .bg-navy {
+        background-color: transparent !important;
     }
 
-    .bg-linear-to-r,
-    .bg-linear-to-l {
-      background-image: none !important;
+    #countries {
+        .overflow-hidden {
+            mask-image: linear-gradient(0.25turn, #fff0, white 15%, white 85%, #fff0) !important;
+        }
+
+        .bg-linear-to-r,
+        .bg-linear-to-l {
+            background-image: none !important;
+        }
     }
-  }
+}
+
+
+.backdrop-blur-none,
+.backdrop-blur-md {
+    background: transparent !important;
+    backdrop-filter: blur(10px) !important;
 }
