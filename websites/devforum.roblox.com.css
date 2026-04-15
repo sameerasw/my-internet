@@ -54,18 +54,17 @@ body.dark_mode,
 body.light_mode,
 text-div>textarea {
   background: transparent !important;
-}
 
-td,
-th,
-.topics a {
-  color: var(--primary-high-or-secondary-low) !important;
-}
+  td,
+  th,
+  .topics a {
+    color: var(--primary-high-or-secondary-low) !important;
+  }
 
-.d-header {
-  background: var(--secondary) !important;
-  border: 1px solid var(--primary-low) !important;
-  border-radius: 15px !important;
-  box-shadow: 0px 1px 16px 2px #00000082 !important;
-  padding-bottom: 5px !important;
+  .d-header {
+    border: 1px solid var(--primary-low) !important;
+    border-radius: 15px !important;
+    box-shadow: 0px 1px 16px 2px #00000082 !important;
+    padding-bottom: 5px !important;
+  }
 }
