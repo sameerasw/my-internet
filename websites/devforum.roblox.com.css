@@ -47,12 +47,12 @@ section,
 .layout__content-wrapper,
 .head.notfixed,
 .main-container,
-#app > div,
-.btm-nav > a,
+#app>div,
+.btm-nav>a,
 .oc-content--main,
 body.dark_mode,
 body.light_mode,
-text-div > textarea {
+text-div>textarea {
   background: none !important;
 
   td,
@@ -69,3 +69,5 @@ text-div > textarea {
     padding-bottom: 5px !important;
   }
 }
+
+/* @ Commit Hell */
