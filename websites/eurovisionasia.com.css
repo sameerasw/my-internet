@@ -1,14 +1,14 @@
 .bg-navy {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 #countries {
-    .overflow-hidden {
-        mask-image: linear-gradient(0.25turn, #fff0, white 15%, white 85%, #fff0) !important;
-    }
+  .overflow-hidden {
+    mask-image: linear-gradient(0.25turn, #fff0, white 15%, white 85%, #fff0) !important;
+  }
 
-    .bg-linear-to-r,
-    .bg-linear-to-l {
-        background-image: none !important;
-    }
+  .bg-linear-to-r,
+  .bg-linear-to-l {
+    background-image: none !important;
+  }
 }
