@@ -47,12 +47,12 @@ section,
 .layout__content-wrapper,
 .head.notfixed,
 .main-container,
-#app > div,
-.btm-nav > a,
+#app>div,
+.btm-nav>a,
 .oc-content--main,
 body.dark_mode,
 body.light_mode,
-text-div > textarea {
+text-div>textarea {
   background: none !important;
 
   td,
@@ -66,6 +66,6 @@ text-div > textarea {
     border: 1px solid var(--primary-low) !important;
     border-radius: 15px !important;
     box-shadow: 0px 1px 16px 2px #00000082 !important;
-    padding-bottom: 5px !important !important;
+    padding-bottom: 5px !important;
   }
 }
