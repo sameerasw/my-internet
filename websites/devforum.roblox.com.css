@@ -5,6 +5,7 @@ body {
   .d-header {
     border: 1px solid var(--primary-low) !important;
     border-radius: 15px !important;
+    box-shadow: 0px 1px 16px 2px #00000082;
     padding-bottom: 5px !important;
   }
 }
