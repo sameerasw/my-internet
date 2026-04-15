@@ -3,7 +3,7 @@ body {
   background: none !important;
 
   th {
-    color: var(--primary);
+    color: var(--primary-medium);
   }
 
   .d-header {
