@@ -1022,6 +1022,9 @@
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer, .devsite-footer {\n  display: none !important;\n}"
     },
+    "devforum.roblox.com.css": {
+      "transparency": "html, body, nav, #nav, .nav, navbar, .navbar, #navbar, header, #header, .header, header::before, app, #app, footer, .sidebar-wrap, section, .main, #__next, .sidebar-wrapper, .sidebar-footer-wrapper, .sidebar-footer-container::before, #root, .min-h-screen.bg-white, .app, .AppContainer, .app-root, #wrapper, body[data-theme=\"dark\"], body[data-theme=\"light\"], #pass-sidebar, .side-bar, #main, .sidebar, .global-content__content, main, .header-top, #content, #cu-identity, section, .l-root, #__next, .landing-hero, #navigation-wrapper, #global-navbar, .layout__content-wrapper, .head.notfixed, .main-container, #app > div, .btm-nav > a, .oc-content--main, body.dark_mode, body.light_mode, text-div > textarea {\n  background: none !important;\n}"
+    },
     "deviantart.com.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, main > div, ._3BfxY._2y8fu.I_eT4:has(nav), main > div > div > div > div > ._11Kbm, main > div > div {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}"
     },
@@ -1222,6 +1225,9 @@
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, #__next, #desktop-category-topnav > div, #gnav-header {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer {\n  display: none !important;\n}"
+    },
+    "eurovisionasia.com.css": {
+      "transparency": "body {\n  background-color: transparent !important;\n\n  .bg-navy {\n    background-color: transparent !important;\n  }\n\n  #countries {\n    .overflow-hidden {\n      mask-image: linear-gradient(0.25turn, #fff0, white 15%, white 85%, #fff0) !important;\n    }\n\n    .bg-linear-to-r,\n    .bg-linear-to-l {\n      background-image: none !important;\n    }\n  }\n}\n.backdrop-blur-none, .backdrop-blur-md {\n  background: transparent !important;\n  backdrop-filter: blur(10px) !important;\n}"
     },
     "eurovisionworld.com.css": {
       "transparency": "html, body, nav, #nav, .nav.sticky_n, navbar, .navbar, #navbar, header, #header, .header, app, #app, .app, .app-root, #pass-sidebar, #main, #content, section, #__next, .top, .pagewrap, .page {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
