@@ -151,6 +151,10 @@ ytd-two-column-browse-results-renderer[page-subtype="playlist"] {
   width: fit-content !important;
 }
 
+ytd-app[is-watch-page] {
+  --app-drawer-width: calc(var(--ytd-mini-guide-width) - var(--ytd-margin-base)) !important;
+}
+
 /* yt-Transparent header */
 #masthead-container {
   #background.ytd-masthead {
@@ -325,7 +329,7 @@ ytd-app:has([fullscreen=""], [theater=""]):not(:has(ytd-watch-flexy[hidden=""]))
   display: none !important;
 }
 
-ytd-comments {
+ytd-comments, #chat-container, #chat {
   transition: all 0.5s ease-in-out !important;
 }
 
@@ -334,53 +338,78 @@ ytd-comments {
   backdrop-filter: blur(20px) !important;
   padding: 0 2em !important;
   border-radius: 2em 0 0 2em !important;
-  max-height: calc(100vh - 175px) !important;
   overflow-y: scroll !important;
-  position: fixed !important;
-  z-index: 1000 !important;
-  top: 3vh !important;
-  right: -42em !important;
-  width: 40em !important;
+  position: absolute !important;
+  z-index: 1000 !important; 
   height: 90vh !important;
+  top: 50vh !important;
+  transform: translateY(-50%) !important;
+  right: calc((var(--ytd-watch-flexy-sidebar-width) - 5em) * -1) !important;
+  width: var(--ytd-watch-flexy-sidebar-width) !important;
   opacity: 0 !important;
+  
   &:hover {
     opacity: 1 !important;
     right: 0 !important;
   }
 }
 
-/* yt-zen view comments on left */
+#chat-container {
+  opacity: 0 !important;
+  z-index: 1000 !important;
+  
+  > #chat {
+    height: 90vh !important;
+    top: 50vh !important;
+    transform: translateY(-50%) !important;
+    border-radius: 2em 0 0 2em !important;
+    right: calc((var(--ytd-watch-flexy-sidebar-width) - 5em) * -1) !important;
+  }
+  
+  &:hover {
+    opacity: 0.8 !important;
+    
+    > #chat {
+      right: 0 !important;
+    }
+  }
+} 
+
+ytd-watch-flexy > #columns {
+  padding-right: 0 !important;
+}
+
+ytd-watch-flexy #below {
+  position: unset !important;
+}
+
+/* yt-zen view comments on left */ 
 #content:has([data-title-no-tooltip="Full screen"]):has([data-title-no-tooltip="Default view"]) ytd-comments {
   border-radius: 0 2em 2em 0 !important;
+  left: calc((var(--ytd-watch-flexy-sidebar-width) - 5em) * -1) !important;
 
-  left: -40em !important;
   &:hover {
     left: 0 !important;
   }
 }
 
+#chat-container {  
+  > #chat {
+    border-radius: 0 2em 2em 0 !important;
+    left: calc((var(--ytd-watch-flexy-sidebar-width) - 5em) * -1) !important;
+  }
+  
+  &:hover {
+    > #chat {
+      left: 0 !important;
+    }
+  }
+} 
+
 /* yt-zen comments solid $ Make above Zen View comments background solid instead of blur */
 #content:has([data-title-no-tooltip="Full screen"]):has([data-title-no-tooltip="Default view"]) ytd-comments {
   backdrop-filter: none !important;
   background-color: var(--yt-spec-text-primary-inverse) !important;
-}
-
-/* yt-transparent overlay chat $ Make the live chat appear as an overlay in theater mode right side edge. */
-#content:has([data-title-no-tooltip="Full screen"]):has([data-title-no-tooltip="Default view"]) #chat {
-  position: absolute !important;
-  height: 800px !important;
-  top: 50vh !important;
-  transform: translateY(-50%) !important;
-  opacity: 0.8 !important;
-}
-
-#content:has([data-title-no-tooltip="Full screen"]):has([data-title-no-tooltip="Default view"]) yt-live-chat-renderer {
-  background: none !important;
-  background-color: transparent !important;
-}
-
-#content:has([data-title-no-tooltip="Exit full screen"]) ytd-live-chat-frame {
-  background-color: var(--app-drawer-content-container-background-color) !important;
 }
 
 /* yt-Misc */
@@ -437,10 +466,6 @@ ytd-rich-item-renderer[rendered-from-rich-grid] {
 
 ytd-rich-item-renderer[is-in-first-column=""] {
   margin-left: calc(var(--ytd-rich-grid-item-margin) / 2) !important;
-}
-
-#contents {
-  padding-left: calc(var(--ytd-rich-grid-item-margin) / 2 + var(--ytd-rich-grid-gutter-margin)) !important;
 }
 
 /* yt-Immersive search $ Smooth blur and zoom effect for searhbar */
@@ -504,6 +529,44 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
 #content:has(.ytSearchboxComponentInputBoxHasFocus) #page-manager {
   filter: blur(20px) !important;
   scale: 1.05 !important;
+}
+
+/* yt-Immersive Popup */
+:root, ytd-app {
+  --yt-spec-raised-background: transparent !important;
+  --app-drawer-scrim-background: transparent !important;
+  --iron-overlay-backdrop-background-color: transparent !important;
+  
+  --yt-spec-menu-background: var(--yt-spec-additive-background) !important;
+  --yt-spec-base-background: var(--yt-spec-additive-background) !important;
+  --yt-spec-text-primary-inverse: var(--yt-spec-additive-background) !important;
+  --paper-dialog-background-color: var(--yt-spec-additive-background) !important;
+  --t08a7c6c176cbc5c2: var(--yt-spec-additive-background) !important;
+}
+
+#guide>#contentContainer {
+  background-color: var(--yt-spec-additive-background) !important;
+}
+
+ytd-app {
+  &:has(
+  #guide[opened]:not([persistent]),
+  tp-yt-iron-dropdown:not([aria-hidden="true"])
+    ) #page-manager {
+    filter: blur(20px) !important;
+    pointer-events: none !important;
+  }
+  
+  &:has(
+  tp-yt-paper-dialog:not([aria-hidden])
+    ) {
+      #masthead-container,
+      #page-manager,
+      #guide > #contentContainer {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
 }
 
 /* yt-Addon : Viewstats */
