@@ -13,7 +13,8 @@ app,
 #app,
 .app,
 .alert,
-.content {
+.content,
+.left-nav {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -23,6 +24,10 @@ app,
     background 0.5s ease-in-out,
     border 0.5s ease-in-out,
     box-shadow 0.5s ease-in-out !important;
+}
+
+.bg-surface-300 {
+  background: linear-gradient(90deg, color-mix(var(--color-surface-300), transparent 40%), color-mix(var(--color-surface-300), transparent 75%));
 }
 
 /* roblox-navigation transparency */
