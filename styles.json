@@ -916,7 +916,7 @@
       "no vignette": ".vortex-vignette {\n  display: none !important;\n}"
     },
     "create.roblox.com.css": {
-      "transparency": ".web-blox-css-tss-17q8njr-Grid-root-root, .web-blox-css-tss-1fr0wgh-drawerPaper, .web-blox-css-tss-1pla7pb-updatesContainer, .web-blox-css-tss-hfzkng-Grid-root-container, .web-blox-css-tss-kqp5ww-background, .web-blox-css-tss-xr39s8-Grid-root-scroll-railContainer-railContainerTransition {\n  background: none !important;\n}"
+      "transparency": "body, .web-blox-css-tss-17q8njr-Grid-root-root, .web-blox-css-tss-1fr0wgh-drawerPaper, .web-blox-css-tss-1pla7pb-updatesContainer, .web-blox-css-tss-hfzkng-Grid-root-container, .web-blox-css-tss-kqp5ww-background, .web-blox-css-tss-xr39s8-Grid-root-scroll-railContainer-railContainerTransition {\n  background: none !important;\n}"
     },
     "croxyproxy.com.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
