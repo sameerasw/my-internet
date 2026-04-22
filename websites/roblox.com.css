@@ -27,7 +27,7 @@ app,
 }
 
 .bg-surface-300 {
-  background: linear-gradient(90deg, color-mix(var(--color-surface-300), transparent 40%), color-mix(var(--color-surface-300), transparent 75%));
+  background: linear-gradient(90deg, color-mix(var(--color-surface-300), transparent 40%), color-mix(var(--color-surface-300), transparent 75%)) !important;
 }
 
 /* roblox-navigation transparency */
