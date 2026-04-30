@@ -327,7 +327,7 @@ nav[aria-label="Repository"] > ul > li > a {
 }
 
 nav[aria-label="Repository"] > ul > li > a:hover {
-  max-width: 8rem; /* enough for "Security", "Insights", etc. */
+  max-width: 8rem;
 }
 
 
