@@ -330,18 +330,16 @@ nav[aria-label="Repository"] > ul > li > a:hover {
   max-width: 8rem;
 }
 
-
 nav[aria-label="Repository"] > ul > li > a {
   span[data-component="text"] {
-  opacity: 0;
-  white-space: nowrap;
-  transition: opacity 0.2s ease;
-}
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+  }
 
-a:hover span[data-component="text"] {
-  opacity: 1;
-}
-
+  a:hover span[data-component="text"] {
+    opacity: 1;
+  }
 }
 
 .UnderlineNav-item:hover .Counter {
