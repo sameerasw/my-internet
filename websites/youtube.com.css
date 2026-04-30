@@ -519,15 +519,19 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
   margin: 0.5em !important;
 }
 
+
 /* yt-Addon : timed comments */
 .__youtube-timestamps__stamp {
-  scale: 3 !important;
+  scale: 1.5 !important;
+  opacity: 0.75;;
+  border: black 1px solid;
   border-radius: 1.5px !important;
   transition: all 0.3s ease-in-out !important;
   z-index: 10000000000000 !important;
 
   &:hover {
-    scale: 5 !important;
+    opacity: 1;
+    background-color: #f34;
   }
 }
 
@@ -560,10 +564,21 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
   }
 }
 
+#root > #app{
+  inset: 10px !important;
+  width: fit-content;
+  height: fit-content;
+}
+
 .comments-container {
   div.wrapper {
-    background-color: transparent !important;
+    border-radius: 1em !important;
+    backdrop-filter: blur(20px) !important;
+    background-color: #00000088 !important;
+    border: solid 1px #88888855 !important;
+    margin-bottom: 5px !important;
   }
+
 
   div.clickable-comment,
   div.replies {
