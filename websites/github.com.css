@@ -318,13 +318,13 @@ a.rgh-own-conversation:hover {
 nav[aria-label="Repository"] > ul > li > a {
   span[data-component="text"] {
     opacity: 0 !important;
-    width: 0em !important;
+    transform: scaleX(0) !important;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
   }
   &:hover {
     span[data-component="text"] {
-      width: 7em !important;
       opacity: 1 !important;
+      transform: scaleX(1) !important;
     }
   }
 }
