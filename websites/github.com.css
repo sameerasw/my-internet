@@ -326,7 +326,6 @@ nav[aria-label="Repository"] > ul > li > a {
   transition: max-width 0.3s ease;
 }
 
-
 nav[aria-label="Repository"] > ul > li > a {
   span[data-component="text"] {
     opacity: 0;
