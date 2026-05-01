@@ -314,7 +314,7 @@ a.rgh-own-conversation:hover {
   padding: 0.5em !important;
 }
 
-/* no tab text $ Make repository tabs only got icons and show text only on hover */
+/* no tab text $ Make repository tabs only got icons and show text only on hover. */
 nav[aria-label="Repository"] > ul > li > a {
   span[data-component="text"] {
     opacity: 0 !important;
