@@ -323,7 +323,7 @@ nav[aria-label="Repository"] > ul > li > a {
   }
   &:hover {
     span[data-component="text"] {
-      width: 6em !important;
+      width: 9em !important;
       opacity: 1 !important;
     }
   }
