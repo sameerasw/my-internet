@@ -1,0 +1,39 @@
+/* transparency */
+.Layout-module-root,
+.GeneralMaterial-module-root {
+  background-color: transparent !important;
+}
+
+/* custom-links */
+a {
+  color: #e7eaff !important;
+}
+
+/* custom-cards */
+.RichBlock-module-root {
+  background-color: #385d7d36 !important;
+  box-shadow: none !important;
+}
+
+/* custom-cards-override-inline */
+article.RichBlock-module-root {
+  --bgColor: rgba(26, 26, 26, 0.41) !important;
+}
+
+/* custom-text */
+.GeneralMaterial-module-article {
+  color: white !important;
+}
+
+.RichTitle-module_root__U5XQu {
+  color: white !important;
+}
+
+.SimpleTitle-module_root__YOzNn {
+  color: #c7c2fde5 !important;
+}
+
+/* custom-highlight */
+span[data-body] {
+  background: #93b8ffa1 !important;
+}
