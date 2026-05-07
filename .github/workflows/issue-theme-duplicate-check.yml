@@ -1,0 +1,70 @@
+name: Theme Issue Duplicate Checker
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  check-duplicate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      - name: Check for duplicate theme issues
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const issue = context.payload.issue;
+
+            // Check if the issue has the [THEME] label
+            const hasThemeLabel = issue.labels.some(label => label.name === '[THEME]');
+            if (!hasThemeLabel) {
+              console.log('Issue does not have [THEME] label. Exiting...');
+              return;
+            }
+
+            // Fetch all issues with the [THEME] label
+            const issues = await github.issues.listForRepo({
+              owner,
+              repo,
+              state: 'all',
+              labels: '[THEME]'
+            });
+
+            // Check for duplicate titles
+            const duplicateIssue = issues.data.find(otherIssue => {
+              return otherIssue.title === issue.title && otherIssue.number !== issue.number;
+            });
+
+            if (duplicateIssue) {
+              console.log(`Found duplicate issue: #${duplicateIssue.number}`);
+
+              // Add a comment to the issue
+              await github.issues.createComment({
+                owner,
+                repo,
+                issue_number: issue.number,
+                body: `This issue is marked as a duplicate of #${duplicateIssue.number}. Please refer to the previous issue for more details.`
+              });
+
+              // Add the duplicate label to the issue
+              await github.issues.addLabels({
+                owner,
+                repo,
+                issue_number: issue.number,
+                labels: ['duplicate']
+              });
+
+              // Close the issue as a duplicate using GitHub's native feature
+              await github.issues.update({
+                owner,
+                repo,
+                issue_number: issue.number,
+                state: 'closed',
+                duplicate_of: duplicateIssue.number
+              });
+            } else {
+              console.log('No duplicate issue found.');
+            }

@@ -1,0 +1,115 @@
+/* zs-Transparency */
+:root,
+body {
+  --white: transparent !important;
+  --dark-bg-color: transparent !important;
+  --side-panel-color: transparent !important;
+  --main-ctn: transparent !important;
+  --zsheet-white: transparent !important;
+  --zsheet-topbar-bg: transparent !important;
+  --zsheet-menubar-bg: transparent !important;
+  --zsheet-qkFind-bg: transparent !important;
+  --zsheet-formula-bar: transparent !important;
+  --zsheet-status-bar: transparent !important;
+  --zsheet-select-all: transparent !important;
+  --zsheet-scrollbar-area: transparent !important;
+  --zsheet-input: transparent !important;
+  x--codeblock-background: transparent !important;
+}
+
+.wms-mainui {
+  --wms-chat-bg-color: transparent !important;
+}
+
+.CG_gridContainer,
+.sPRt > .sPISet {
+  background-color: transparent !important;
+}
+
+/* zs-Immersive Popup */
+body {
+  --properties-panel-color: transparent !important;
+  --profile-BG-color: transparent !important;
+  --zsheet-sidepanel: transparent !important;
+}
+
+.zwd-theme-integration {
+  --zwd-page-bg: transparent !important;
+}
+
+.zmbackdrop--dark__bxuhvd,
+.zwd-ui.zwd-dimmer {
+  background-color: transparent !important;
+}
+
+body {
+  &:has(#zmCompPortalWrapper > div:not(:empty), #zwd-draggable-dialog) {
+    #slMainContainer,
+    #wmstoolbar,
+    #sheetTopMenu,
+    > .mainGrid,
+    > .sheetTabHldrCtn {
+      filter: blur(20px) !important;
+    }
+  }
+
+  &:has(#LPUserProfileCtn[style=""], #tbUserProfile[style=""]) {
+    #slHeader,
+    #zsMainContainer,
+    #wmstoolbar,
+    #sheetTopMenu,
+    > .mainGrid,
+    > .sheetTabHldrCtn {
+      filter: blur(20px) !important;
+      pointer-events: none !important;
+    }
+  }
+
+  &:has(#menutabContainer > .zmenubar__item.is-selected.on-hover) {
+    #quickToolBar,
+    > .mainGrid {
+      filter: blur(20px) !important;
+    }
+  }
+
+  &:has(> .zsubmenu[aria-hidden="false"], > .zdropdownlist[aria-hidden="false"]) {
+    > .mainGrid {
+      filter: blur(20px) !important;
+    }
+  }
+}
+
+/* zs-Glss Effect */
+body {
+  --color-highlight: hsla(0, 0%, 100%, 0.08) !important;
+  --border-color: var(--color-highlight) !important;
+  --header-border-color: var(--color-highlight) !important;
+  --zsheet-border: var(--color-highlight) !important;
+  --border-grey-color: var(--color-highlight) !important;
+  --zsheet-green-active: var(--color-highlight) !important;
+  --zsheet-button-set-active: var(--color-highlight) !important;
+  --zsheet-toolbar-btn-hover-bg: var(--color-highlight) !important;
+  --zsheet-toolbar-btn-active-bg: var(--color-highlight) !important;
+  --zsheet-sidepanel: var(--color-highlight) !important;
+  --zsheet-white-medium-BG: var(--color-highlight) !important;
+  --zsheet-formula-bar-bdr: var(--color-highlight) !important;
+  --zsheet-sidepanel-border: var(--color-highlight) !important;
+  --zsheet-border-dark: var(--color-highlight) !important;
+  --zsheet-white: var(--color-highlight) !important
+;
+}
+
+.zwd-theme-integration {
+  --zwd-page-bg: var(--color-highlight) !important;
+  --zwd-hover-bg: var(--color-highlight) !important;
+  --zwd-medium-hover-bg: var(--color-highlight) !important;
+  --zwd-border-color: var(--color-highlight) !important;
+  --zwd-light-border-color: var(--color-highlight) !important;
+  --zsheet-toolbar-btn-active-bg: var(--color-highlight) !important;
+  --zsheet-toolbar-btn-active-stroke: var(--color-highlight) !important;
+}
+
+/* zs-Misc */
+.shIconsHldr > li {
+  background-color: transparent !important;
+}

@@ -1,0 +1,61 @@
+/* transparency */
+.blocklySvg,
+html,
+body,
+.menu-bar_menu-bar_x2Jqi,
+.gui_body-wrapper_-6Yg4,
+#view,
+#navigation,
+.title-banner,
+.donate-banner,
+.intro-banner,
+.intro-banner .intro-container,
+.intro-banner .intro-subnav,
+.tab-background,
+.outer #projectBox,
+.banner-wrapper,
+.tips,
+.modal-overlay,
+.studio-page {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+.blocklyFlyout {
+  border-radius: 0px 8px 8px 0px !important;
+}
+#navigation {
+  position: static !important;
+}
+.masthead *,
+.preview > .inner *,
+#frc-sort-1088,
+.studio-info,
+.studio-header-container span,
+h1,
+.messages-header span {
+  color: white !important;
+}
+#frc-sort-1088 > option {
+  color: black !important;
+}
+
+/* darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* no footer */
+footer,
+mfe-footer-pharos-footer,
+.footer,
+#footer,
+#donor {
+  display: none !important;
+}

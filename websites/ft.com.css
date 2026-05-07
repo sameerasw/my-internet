@@ -1,25 +1,34 @@
 /* ft-transparency */
-html, .n-layout__header-before, .o-header, .markets-data-wrapper{
+html,
+.n-layout__header-before,
+.o-header,
+.markets-data-wrapper {
   background-color: transparent !important;
 }
 
 /* ft-transparency darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* ft-no post background */
-.slice__content, .separator--dotted{
+.slice__content,
+.separator--dotted {
   background-color: transparent !important;
   background: none !important;
 }
 
 /* ft-no borders */
-.o-header__row, .layout__grid-content, .list__item-link, .separator--solid, .story-group__article, .spotlight-grid--secondary-story{
+.o-header__row,
+.layout__grid-content,
+.list__item-link,
+.separator--solid,
+.story-group__article,
+.spotlight-grid--secondary-story {
   border: none !important;
 }
 
 /* ft-no footer */
-footer{
+footer {
   display: none !important;
 }

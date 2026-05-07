@@ -1,0 +1,60 @@
+/* fh-Transparency */
+:root {
+  --background: transparent !important;
+  --flathub-dark-gunmetal: transparent !important;
+  --flathub-arsenic: transparent !important;
+  --secondary: transparent !important;
+}
+
+[data-slot="carousel-item"] > a {
+  background-color: transparent !important;
+}
+
+/* fh-Glass Effect */
+.bg-white,
+.bg-flathub-white,
+.bg-secondary,
+#search,
+[data-slot="carousel-item"] > a {
+  background-color: hsla(0, 0%, 100%, 0.08) !important;
+}
+
+.bg-white:hover,
+.bg-flathub-white:hover,
+.bg-secondary:hover,
+#search:hover {
+  background-color: hsla(0, 0%, 100%, 0.1) !important;
+}
+
+.bg-linear-to-r {
+  background: none !important;
+}
+
+/* fh-Immersive Popup */
+body:has(> #headlessui-portal-root) {
+  main {
+    filter: blur(20px) !important;
+  }
+}
+
+/* fh-Fix Overlapping Header */
+:root {
+  overflow-y: hidden !important;
+}
+
+header {
+  position: relative !important;
+  background-color: transparent !important;
+}
+
+main {
+  height: calc(100dvh - 68px) !important;
+  overflow-y: auto !important;
+  padding-top: 0 !important;
+  padding-bottom: 16px !important;
+}
+
+/* fh-No Footer */
+footer {
+  display: none !important;
+}

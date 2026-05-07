@@ -1,0 +1,84 @@
+/* transparency */
+html,
+body,
+nav,
+#nav,
+.nav,
+navbar,
+.navbar,
+#navbar,
+header,
+#header,
+.header,
+header::before,
+app,
+.MuiBackdrop-root,
+#app,
+footer,
+.mw-css-nba20t > div,
+.mw-css-nba20t > div > div,
+.sidebar-wrap,
+section,
+.main,
+.mw-css-11araa4 .module-container,
+#__next,
+.sidebar-wrapper,
+.sidebar-footer-wrapper,
+.sidebar-footer-container::before,
+#root,
+.min-h-screen.bg-white,
+.app,
+.AppContainer,
+.app-root,
+#wrapper,
+.mw-css-1g9l2qz > div,
+body[data-theme="dark"],
+body[data-theme="light"],
+.mw-css-1g9l2qz,
+#pass-sidebar,
+.side-bar,
+#main,
+.sidebar,
+.global-content__content,
+main,
+.header-top,
+#content,
+#cu-identity,
+section,
+.l-root,
+#__next,
+.landing-hero,
+#navigation-wrapper,
+#global-navbar,
+.layout__content-wrapper,
+.head.notfixed,
+.main-container,
+#app > div,
+.btm-nav > a,
+.oc-content--main,
+body.dark_mode,
+body.light_mode,
+text-div > textarea {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* no footer */
+footer,
+mfe-footer-pharos-footer,
+.footer,
+#footer {
+  display: none !important;
+}

@@ -1,15 +1,17 @@
 /* kick-transparency */
-:root, .bg-surface-lower, .bg-black{
+:root,
+.bg-surface-lower,
+.bg-black {
   --tw-bg-opacity: 0 !important;
   --background-color: transparent !important;
 }
 
 /* kick-nav shadow */
-nav{
+nav {
   box-shadow: none !important;
 }
 
 /* kick-overlay bg */
-.z-dropdown{
+.z-dropdown {
   background-color: var(--tw-shadow-color, #000) !important;
 }

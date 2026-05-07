@@ -1,26 +1,108 @@
 /* messages-transparency */
-html, body, nav, .header, mw-main-nav, mw-main-landing, mw-conversation-container, .input-background, mw-new-conversation-container{
+html,
+body,
+.header,
+mw-main-nav,
+mw-main-landing,
+mw-conversation-container,
+.input-background,
+mw-new-conversation-container {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
 }
 
 /* messages-darkreader */
-:root{
+:root {
   --darkreader-background-ffffff: transparent !important;
 }
 
 /* messages-no footer */
-footer{
+footer {
   display: none !important;
 }
 
-/* messages-round */
-.conv-container mws-conversation-list-item > a, .contact-chip-input, .contact-chip-input input{
+/* messages-round chip */
+.conv-container mws-conversation-list-item > a,
+.contact-chip-input,
+.contact-chip-input input {
   border-radius: 1em;
 
-  &::after{
+  &::after {
     display: none;
+  }
+}
+
+/* messages-glass effect */
+.input-box,
+mws-message-send-button,
+.right-content,
+mw-new-conversation-sub-header {
+  background-color: #10101090 !important;
+  backdrop-filter: blur(10px);
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #ffffff30 !important;
+}
+
+.right-content,
+mw-new-conversation-sub-header {
+  border-radius: 99999px !important;
+}
+
+.reply-header-container {
+  background-color: #ffffff30 !important;
+}
+
+nav.container {
+  background-color: #10101090 !important;
+  backdrop-filter: blur(10px);
+}
+
+.input,
+#gb {
+  background-color: transparent !important;
+}
+
+mw-branded-header {
+  background-color: #10101090 !important;
+}
+
+/* messages-compact sidebar */
+.main-nav {
+  min-width: 85px !important;
+  width: 50px !important;
+  transition: 0.3s !important;
+
+  & .start-chat .mdc-button {
+    min-width: 50px !important;
+    width: 50px !important;
+  }
+
+  & .fab-label,
+  & mw-banner {
+    display: none !important;
+  }
+}
+
+.main-nav:hover,
+body:has(.mat-mdc-menu-content) .main-nav {
+  width: 400px !important;
+  transition: 0.5s !important;
+
+  & .start-chat .mdc-button {
+    min-width: 200px !important;
+    width: 200px !important;
+  }
+
+  & .fab-label,
+  & mw-banner {
+    display: flex !important;
   }
 }

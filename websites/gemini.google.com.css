@@ -1,4 +1,4 @@
-/* gemini-transparecy */
+/* gemini-transparency */
 :root .dark-theme,
 :root .light-theme {
   --gem-sys-color--surface: #00000000 !important;
@@ -6,8 +6,25 @@
 }
 
 input-container,
-.input-gradient::before {
+.input-gradient::before,
+body,
+.toolbox-drawer-container button,
+bard-sidenav,
+.bottom-gradient,
+mat-sidenav-container {
   background: none !important;
+  background-color: transparent !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* gemini-better text input */
+input-area-v2.ng-tns-c2580532240-2.ui-improvements-phase-1.ng-star-inserted {
+  border: 0px;
+  background: var(--bard-color-new-conversation-button);
 }
 
 /* gemini-other changes */
@@ -15,7 +32,8 @@ input-container,
   margin-bottom: 30px !important;
 }
 
-input-container hallucination-disclaimer {
+input-container hallucination-disclaimer,
+.disclaimer {
   display: none !important;
 }
 
@@ -39,4 +57,24 @@ top-bar-actions {
   &:hover {
     opacity: 1 !important;
   }
+}
+
+/* gemini-input and code block */
+.input-area-container input-area-v2,
+.code-block {
+  box-shadow:
+    light-dark(#fff3, #0003) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+  background-color: light-dark(#fff8, #0005) !important;
+  border-radius: 1em !important;
+}
+
+div:has(input-area-v2) button {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }

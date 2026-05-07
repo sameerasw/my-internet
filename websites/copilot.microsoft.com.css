@@ -1,9 +1,28 @@
 /* copilot-transparency */
-html, body, .dark\:bg-midnight-850:is([data-theme="dark"] *), .bg-gradient-chat-light{
+html,
+body,
+#app,
+.dark\:bg-midnight-850:is([data-theme="dark"] *),
+.bg-gradient-chat-light,
+main > div > div > div,
+[data-testid="chat-page"] > div > div,
+[data-testid="composer"] > .t-bottom-fade > div > div,
+#app > div,
+.absolute.size-full.bg-background-150,
+[data-testid="sticky-header"] > div > div,
+[data-testid="sidebar-container"],
+.bg-sidebar-light.dark\:bg-sidebar-dark.before\:absolute,
+.bg-sidebar-light.dark\:bg-sidebar-dark.before\:absolute > div {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
   box-shadow: none !important;
 }
 
-div.space-y-8:nth-child(1){display: none !important;}
+.w-expanded-composer.to-white\/35 {
+  background-color: #fff !important;
+}
+
+.w-expanded-composer.dark\:to-midnight-800\/65:is([data-theme="dark"] *) {
+  background-color: #000 !important;
+}

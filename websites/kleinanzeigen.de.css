@@ -1,0 +1,34 @@
+/* kleinanzeigen-transparency */
+html,
+body,
+nav,
+header,
+#site-header-top,
+.site-base,
+.ka-site-header,
+.surface,
+li,
+.tilesbox-featured,
+.tilesbox,
+.contentbox--vip,
+.splitlinebox {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* kleinanzeigen-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* kleinanzeigen-no footer */
+footer {
+  display: none !important;
+}

@@ -1,0 +1,31 @@
+/* bundesliga-transparency */
+html,
+body,
+nav,
+header,
+.tile__match,
+.tile__epg,
+.teaser,
+dfl-editorial-teaser,
+.partnerbar,
+.row {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* bundesliga-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* bundesliga-no footer */
+footer {
+  display: none !important;
+}

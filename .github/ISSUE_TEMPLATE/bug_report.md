@@ -1,38 +1,48 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
-
+name: "Bug report"
+about: "Report a bug to help us improve"
+title: "[BUG] "
+labels: ["bug"]
+assignees: ["sameerasw"]
 ---
 
-**Describe the bug**
+## Describe the bug
+
 A clear and concise description of what the bug is.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+## Steps to reproduce
 
-**Expected behavior**
+Steps to reproduce the behavior:
+
+1.
+2.
+3.
+
+## Expected behavior
+
 A clear and concise description of what you expected to happen.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## Actual behavior
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+Describe what actually happened.
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+## ZenInternet Backup JSON (optional)
 
-**Additional context**
+If possible, please attach the JSON file from a ZenInternet backup (found in Advanced Settings of the addon).  
+_This is optional, but may help with debugging._
+
+## Zen Browser Version
+
+Please specify the version of the Zen browser you are using:
+
+## Platform
+
+What platform are you using? (e.g., Windows, macOS, Linux, Android, iOS, etc.)
+
+## Website (if applicable)
+
+If this bug relates to a specific website, please provide its URL:
+
+## Additional context
+
 Add any other context about the problem here.

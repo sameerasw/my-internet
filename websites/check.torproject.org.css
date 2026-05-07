@@ -1,0 +1,29 @@
+/* transparency */
+body,
+.head {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+/* anchor styles */
+a {
+  color: white !important;
+  text-decoration: none !important;
+  transition: color 0.3s ease !important;
+}
+
+/* anchor hover */
+a:not(#donate):hover {
+  color: #85559f !important;
+  text-decoration: underline !important;
+}
+
+/* no javascript text */
+p#js {
+  display: none !important;
+}
+
+/* no footer */
+div.foot {
+  display: none !important;
+}

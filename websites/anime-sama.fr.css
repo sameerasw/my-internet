@@ -1,0 +1,192 @@
+/* tranparency */
+html,
+body,
+footer,
+.container,
+.main-content,
+.bg-slate-900,
+.bg-gray-800,
+.bg-slate-800,
+.bg-gray-900,
+.bg-sky-900,
+.bg-black,
+.bg-zinc-900 {
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.border-sky-900,
+.border-sky-800,
+.dark\:border-gray-700,
+.border-gray-400,
+.border-slate-600 {
+  border-color: transparent !important;
+}
+
+.outline-sky-800,
+.outline-gray-500,
+.outline-sky-700 {
+  outline-color: transparent !important;
+}
+
+.border-slate-500 {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(255, 255, 255);
+}
+
+.bg-gray-600 {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+nav.border-b-2 {
+  background: transparent !important;
+  backdrop-filter: blur(10px) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 999 !important;
+}
+
+.content-section {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(8px) !important;
+  border-radius: 1rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Hover */
+.hover\:bg-gray-700:hover,
+.hover\:bg-sky-900:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.hover\:text-sky-500:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+nav.border-b-2 {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+nav.border-b-2:hover {
+  opacity: 1 !important;
+}
+
+footer {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+footer:hover {
+  opacity: 1 !important;
+}
+
+.flex.flex-wrap.justify-center.items-center.mt-2.bg-slate-900.bg-opacity-70.rounded {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+.flex.flex-wrap.justify-center.items-center.mt-2.bg-slate-900.bg-opacity-70.rounded:hover {
+  opacity: 1 !important;
+}
+
+.text-white.text-center.mt-2.italic {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+.text-white.text-center.mt-2.italic:hover {
+  opacity: 1 !important;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 0.5rem !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Shadow effects */
+.shadow-black {
+  --tw-shadow-color: rgba(0, 0, 0, 0.2) !important;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+/* Navigation links */
+.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Better Spacing */
+#sousBlocMiddle {
+  padding-top: 56px !important;
+}
+.content-section {
+  margin: 1rem 0 !important;
+  padding: 1.5rem !important;
+}
+
+/* Hide undesirable */
+.text-sm.text-white.text-center.font-medium.opacity-50.mt-32.pb-2 {
+  display: none !important;
+}
+
+.flex.flex-wrap.justify-center.items-center.my-2.bg-slate-900.bg-opacity-70.rounded {
+  display: none !important;
+}
+
+/* Remove advertisements */
+#bannRight,
+#bannBot,
+#squBot,
+#bannLeft {
+  display: none !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Dark Reader  */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+  --darkreader-text-bgcolor: transparent !important;
+}

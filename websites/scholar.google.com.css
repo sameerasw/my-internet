@@ -1,0 +1,42 @@
+/* gs-transparency */
+html,
+body,
+#gs_hdr_drw_in,
+div,
+#gs_hdr,
+.gs_hdr {
+  background-color: transparent !important;
+}
+
+.gs_grn,
+a.gs_in_ib .gs_lbl,
+body {
+  color: #fff !important;
+}
+
+/* gs-search bar */
+#gs_hdr_tsi {
+  border: 1px solid !important;
+  color: #fff !important;
+  background: transparent !important;
+}
+
+/* gs-hover */
+#gs_hdr_mnu,
+#gs_hdr_hpl,
+#gs_hdr_act_i {
+  opacity: 0 !important;
+}
+#gs_hdr_mnu:hover,
+#gs_hdr_hpl:hover,
+#gs_hdr_act_i:hover {
+  opacity: 1 !important;
+  transition: 0.3s !important;
+}
+
+/* gs-no footer */
+#gs_ftr {
+  background-color: transparent !important;
+  border: none !important;
+  display: none !important;
+}

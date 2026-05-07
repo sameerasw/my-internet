@@ -1,0 +1,163 @@
+/* todoist-transparency */
+html,
+body,
+nav,
+#nav,
+.nav,
+navbar,
+.navbar,
+#navbar,
+header,
+#header,
+.header,
+app,
+#app,
+.sidebar-wrap,
+section,
+#__next,
+#root,
+.app,
+.AppContainer,
+.app-root,
+#wrapper,
+body[data-theme="dark"],
+body[data-theme="light"],
+#pass-sidebar,
+.side-bar,
+#main,
+.sidebar,
+main,
+.header-top,
+#content,
+#cu-identity,
+section,
+.l-root,
+#__next,
+.landing-hero,
+loading_screen,
+#navigation-wrapper,
+#global-navbar,
+.layout__content-wrapper,
+.head.notfixed,
+.main-container,
+#app > div,
+.btm-nav > a,
+.oc-content--main,
+body.dark_mode,
+body.light_mode,
+text-div > textarea,
+#todoist_app > div:has(> .app-sidebar-container),
+#todoist_app > div > div.app-sidebar-container > div > nav,
+#todoist_app > div > div.app-sidebar-container > div > nav > div,
+#todoist_app > div > div:has(> #content),
+header > div,
+.task_list_item,
+.task_list_item:hover .task_list_item__actions,
+.task_list_item .task_list_item__actions__active,
+.theme_dark .task_list_item:hover .task_list_item__actions,
+.theme_dark .task_list_item__actions__active,
+.section,
+.loading_screen,
+.task_editor__editing_area,
+.task_editor__description_field,
+.rbc-calendar > div,
+div[data-expansion-panel-header="true"] {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+header > div {
+  border-color: transparent !important;
+}
+
+.task_editor {
+  background: rgba(50, 50, 50, 0.44) !important;
+}
+
+li:not(.current) > div[data-sidebar-list-item="true"] > div:hover {
+  background-color: #5f5f5f70 !important;
+}
+
+li.current > div[data-sidebar-list-item="true"] > div {
+  background-color: #d04a4a40 !important;
+}
+
+:root {
+  --product-library-selectable-secondary-selected-fill: #d04a4a40 !important;
+}
+
+div[data-expansion-panel-header="true"]:has(* button[aria-expanded="false"]) {
+  position: unset !important;
+}
+
+div#week-view-container > div:first-child > div:first-child > div:first-child {
+  backdrop-filter: blur(5px) !important;
+  background-color: transparent !important;
+}
+
+div[data-column-date] > div:first-child > div,
+div[data-column-date] ~ div {
+  background: rgba(50, 50, 50, 0.44) !important;
+  backdrop-filter: blur(2px) grayscale() !important;
+}
+
+div[data-column-date] > div {
+  border-bottom: none !important;
+}
+
+/* todoist-sidebar hover */
+.app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) {
+  min-width: 24px !important;
+  overflow: hidden !important;
+  transition:
+    min-width 0.3s,
+    width 0.3s,
+    margin 0.3s !important;
+}
+
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) {
+  width: 24px !important;
+  margin: 5px !important;
+}
+
+.app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) * {
+  transition:
+    margin 0.3s,
+    padding 0.3s !important;
+}
+
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) * {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.app-sidebar-container > div:has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
+  transition: height 0.3s !important;
+  overflow: hidden !important;
+}
+
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) div[data-expansion-panel-header="true"] {
+  height: 0 !important;
+}
+
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) > nav > div > div > div:has(> button[aria-controls="sidebar"]) {
+  display: none !important;
+}
+
+.app-sidebar-container > div:not(:hover):has(> nav > div > div > div > button[aria-expanded="true"]) button[aria-label="Settings"] svg {
+  opacity: 0 !important;
+  transition: opactiy 0.3s !important;
+}
+
+/* darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* no footer */
+footer,
+mfe-footer-pharos-footer,
+.footer,
+#footer {
+  display: none !important;
+}

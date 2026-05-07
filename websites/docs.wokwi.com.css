@@ -1,0 +1,35 @@
+/* wkid-Transparency */
+html,
+.theme-code-block,
+.codeBlock_bY9V {
+  background-color: transparent !important;
+  background: none !important;
+}
+
+:root {
+  --backdrop-bg: rgba(255, 255, 255, 0.75) !important;
+  --backdrop-filter: blur(16px) saturate(180%) !important;
+}
+
+html[data-theme="dark"] {
+  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* wkid-Translucent Overlays */
+.navbar--fixed-top,
+.dropdown__menu,
+.alert,
+.navbar-sidebar {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+/* wkid-Misc */
+.navbar-sidebar {
+  height: 100vh !important;
+}
+
+/* wkid-No Footer */
+footer {
+  display: none !important;
+}

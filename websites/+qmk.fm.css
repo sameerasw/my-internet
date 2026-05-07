@@ -1,0 +1,48 @@
+/* qmk-Transparency */
+body,
+.VPNavBar,
+.VPFeature,
+.v-application,
+.v-toolbar,
+.v-table,
+.v-table thead *,
+.content-body,
+.VPSidebar,
+.curtain,
+.VPLocalNav {
+  background-color: transparent !important;
+  background: none !important;
+}
+:root {
+  --backdrop-bg: rgba(255, 255, 255, 0.75);
+  --backdrop-filter: blur(16px) saturate(180%) !important;
+}
+html[class="dark"],
+#app .v-theme--dark {
+  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* qmk-Translucent Header */
+.VPNavBar:not(.top),
+:has(.VPNavBar:not(.top)) .VPLocalNav .container,
+.VPNavScreen {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+/* qmk-Translucent Overlays */
+.VPMenu,
+.v-table thead {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+/* qmk-Misc */
+.VPLocalNav {
+  border: none !important;
+}
+
+/* qmk-No Footer */
+footer {
+  display: none !important;
+}

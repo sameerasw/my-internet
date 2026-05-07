@@ -1,0 +1,4 @@
+/* Can't be themed ;( $ Unfortunately with how the canvas works in this website, We can not theme a js element with css to make it transparent. Would have been cool, I know */
+:root {
+  --zeninternet: none;
+}

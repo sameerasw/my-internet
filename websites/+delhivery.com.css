@@ -1,0 +1,40 @@
+/* delhivery-Transparency */
+.bg-white,
+.bg-black,
+.grey-bg,
+.dark-bg,
+.container,
+.card,
+.efficient_logistics_company,
+.suit-solution-wrap,
+.counter-wrap,
+.faq-wrap,
+.rto-testimonials,
+.ir-left-bx,
+.accordion,
+#simple-search,
+.ticket,
+.content-right,
+.marquee-container,
+.brands,
+.offers > div {
+  background-color: transparent !important;
+}
+
+/* delhivery-Darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* delhivery-No Banner */
+.banner-wrap,
+.rto-activation,
+.full-to-right-bg,
+.texture {
+  background: none !important;
+}
+
+/* delhivery-No Footer */
+.footer-wrap {
+  display: none !important;
+}

@@ -1,0 +1,26 @@
+/* fb-transparency */
+:root {
+  --web-wash: #00000000 !important;
+  --nav-bar-background: #00000000 !important;
+}
+
+body,
+#mount_0_0_u1 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) {
+  background-color: #00000000 !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* fb-other changes */
+
+div.xnp8db0:nth-child(1),
+div.xnp8db0:nth-child(4) {
+  opacity: 0 !important;
+  transition: all 0.3s ease-in-out !important;
+  &:hover {
+    opacity: 1 !important;
+  }
+}

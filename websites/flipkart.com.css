@@ -1,0 +1,51 @@
+/* fkart-Transparency */
+html,
+body,
+#container,
+.css-175oi2r,
+._2nl6Ch,
+header,
+._1yQHx8,
+._3sdu8W,
+.header-form-search *,
+.ACvr7K,
+.DOjaWF *,
+._39kFie *,
+.NXna7w,
+.Q\+Pbkc,
+.Sm1-5F,
+.r4vIwl,
+._0VXZNJ *,
+._0gqrsB *,
+.css-175oi2r * {
+  background-color: transparent !important;
+}
+._3n8fna1co div {
+  background: none !important;
+}
+:root {
+  --backdrop-bg: rgba(255, 255, 255, 0.75);
+  --backdrop-filter: blur(16px) saturate(180%) !important;
+}
+
+/* fkart-Darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+[data-darkreader-scheme="dark"] {
+  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* fkart-Translucent Header */
+.J\+HqMZ,
+.bbjHWC,
+.intRxj {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+/* fkart-No Footer */
+._39odR7,
+footer {
+  display: none !important;
+}

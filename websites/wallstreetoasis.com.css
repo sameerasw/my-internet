@@ -1,23 +1,26 @@
 /* transparency */
-:root{
+:root {
   --color-page-bg: transparent !important;
 }
 
-#header.header-monkey-origin, .forum__dropdown, .forum__dropdown a, .box-content{
+#header.header-monkey-origin,
+.forum__dropdown,
+.forum__dropdown a,
+.box-content {
   background-color: transparent !important;
 }
 
-.region-sidebar-right .block .box-content ul li{
+.region-sidebar-right .block .box-content ul li {
   border: none !important;
 }
 
 /* blurry header */
-#header{
+#header {
   backdrop-filter: blur(20px) !important;
 }
 
 /* no footer */
-.region-footer-1{
+.region-footer-1 {
   display: none !important;
 }
 

@@ -1,0 +1,205 @@
+/* ino-Transparency */
+._editor-panel-container_ju0pj_168,
+._sidenav-children_3zq3a_246,
+._container_ju0pj_160,
+._toolbar_kzmq2_228,
+._status-bar_iklxf_591,
+._tabs-bar_1jz5n_215,
+._container_51qei_211,
+.cm-gutters,
+._tab_8yosf_196,
+._tab-close-button-wrapper_8yosf_276,
+._dropdown-menu-button_1xjic_251,
+.profile-header,
+.box,
+.bio textarea,
+.legacy,
+._Header-inner_1iljv_16,
+._Content-footer_q55wc_84,
+._Header-logo_link_1iljv_43,
+._common-card_1k27k_1,
+.swiper-slide a,
+.tabs__blur,
+._Header-hamburgher_1iljv_101,
+._Header-menusheet_1iljv_151,
+.container-fluid,
+.row div,
+.header,
+.list-group-item,
+._card_2grii_1,
+._InputBox__wrapper_khprl_11,
+.menu-list,
+.customArrow_button__DqoaW,
+.main,
+.input,
+.social-button,
+.back-to-sign-in,
+.sidebar-wrapper,
+.sidebar-footer-wrapper,
+.sidebar-footer-container::before,
+.popup-container__box,
+.page-content,
+.download-row,
+.success-stories-card,
+.solution-card,
+.download-column,
+.donate-banner,
+._Viewport_q55wc_96,
+._Header-inner_lfa7m_16,
+._Header-hamburgher_lfa7m_101,
+._Header-logo_link_lfa7m_43,
+._Header-menusheet_lfa7m_155,
+.product-list__item,
+.about-section__top-card,
+.about-section__bottom-card,
+.site-navigation-wrapper,
+.site-navigation,
+.navmenu-item,
+.productitem,
+.highlights-banner__container,
+.highlights-banner__block,
+.ino-collection-list,
+.quantity-selector__input,
+.quantity-selector__button,
+.options-selection__input-select,
+.navmenu.navmenu-depth-3,
+.productgrid--utils,
+.form-field-input,
+.hero-banner,
+.title-and-description,
+.content-page,
+.tabs-content__tab,
+.tabs-content__card-container,
+.standard-card-item,
+._console-output_iklxf_594,
+.blog-card,
+.info-wrapper,
+.alignleft a,
+.blog-home-btn,
+.image-post,
+.sidebar,
+.page-layout,
+.getting-started,
+.search-hits,
+.sidebar__categories,
+.sidebar__checkboxs,
+.sidebar__category-type,
+.api-info,
+.tabs__item button,
+.api-info__client-library__title,
+.api-info__client-library__tabs,
+.api-info__auth-token__code,
+#root,
+.fixed,
+._TableEmpty_zob1a_1,
+._Table__head-row_pfg8l_57,
+._Typography_17qm4_1,
+.bg-clouds,
+._CreateNewHint_1ivyu_1,
+._CreateNewHintCard_1ivyu_47,
+._resources-item_1n55e_16,
+._Banner_1tl5b_1,
+._courses-banner_htss4_10,
+._Alert_pam0z_1,
+._plan-usage__upgrade_1da3n_46,
+._input_nbwhf_1,
+._sidenav-content_3zq3a_251,
+._setting__theme_16vnc_216,
+._setting__font-size-input_16vnc_323,
+._container_13cb0_214,
+._dialog-actions_13cb0_259,
+html,
+body {
+  background-color: transparent !important;
+  background: none !important;
+}
+:root {
+  --backdrop-bg: rgba(255, 255, 255, 0.75);
+  --backdrop-filter: blur(16px) saturate(180%) !important;
+}
+
+/* ino-Darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+[data-darkreader-scheme="dark"] {
+  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* ino-No Hero Banner */
+.primary-hero-banner,
+.homepage-overlay {
+  display: none !important;
+}
+
+/* ino-Translucent Header */
+.announcement-bar,
+.ino-header,
+.navmenu-meganav,
+.navmenu.navmenu-depth-2.navmenu-submenu,
+.ino-collection-anchor-menu-wrap,
+.app-sub-menu,
+.customSearch_container__pCEX7,
+.header__panel,
+._Header-menusheet_lfa7m_155,
+.select-btn,
+.dropdown-menu,
+._Header_lfa7m_1,
+._Header_1iljv_1,
+.header,
+.d-header,
+.arduino-nav,
+.ino-anchor-menu,
+._Viewport_q55wc_96,
+.open,
+._Header-menusheet_1iljv_151[data-show="true"],
+._Header-menusheet_root_second_1iljv_190 {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+/* ino-Translucent Overlays */
+._PopupBox_56g29_1,
+._header--mobile_1ej6i_83,
+._PlanItem-progress_1da3n_136,
+#radix-\:rs\:,
+#radix-\:r7t\:,
+#radix-\:rh\:,
+#radix-\:ra\:,
+#radix-\:re\:,
+._tooltip_5iy2d_160,
+._share-sketch-panel_1ppjn_171,
+.Toastify__toast,
+._onboarding-content_eyqze_174,
+.cm-activeLineGutter,
+._tab-selected_8yosf_208,
+.ReactModal__Content,
+._upload-info-popover_kzmq2_197,
+._file-selected_56btt_250,
+.alert,
+.select-kit-body,
+.popup-container,
+.menu-panel {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+/* ino-Misc */
+.site-announcement,
+.ino-collection-anchor-menu-wrap,
+.ino-anchor-menu {
+  opacity: 0;
+}
+.header-expanded .site-announcement,
+.ino-collection-anchor-menu-wrap.is-active,
+.ino-anchor-menu.is-active {
+  opacity: 1;
+}
+
+/* ino-No Footer */
+#footer,
+._Footer_mv59m_1,
+#shopify-section-arduino-footer,
+footer {
+  display: none !important;
+}

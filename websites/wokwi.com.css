@@ -1,0 +1,62 @@
+/* wki-Transparency */
+body,
+header,
+main,
+.header-small_toolbar__yvrzx,
+.Pane,
+.tabs_tabs__0p32m,
+.code-editor_editorContainer__hSbk1,
+.monaco-editor,
+.margin,
+.monaco-editor-background,
+.simulation_container___BvyD,
+.mui-xzhep0,
+.markdown-body,
+.tabs_tab__iUAy8,
+.mui-189k4wo,
+.serial-monitor_serialControls__ZApdN *,
+.MuiDrawer-paper,
+.MuiDialogTitle-root,
+.notranslate,
+#nested-list-subheader {
+  background-color: transparent !important;
+  background: none !important;
+}
+:root {
+  --backdrop-bg: rgba(255, 255, 255, 0.75);
+  --backdrop-filter: blur(16px) saturate(180%) !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
+  }
+}
+
+/* wki-Translucent Overlays */
+.MuiMenu-paper,
+.MuiDialog-paper,
+.MuiPopover-paper,
+.tabs_active__IguNq,
+.MuiDialog-paperWidthMd {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+.mui-1w2fn6y,
+.home-page_card__Y_idX,
+.page_card__3gFlg,
+.MuiPaper-elevation2,
+.MuiPaper-elevation1 {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: transparent !important;
+}
+
+.tabs_tab__iUAy8,
+.notranslate,
+.serial-monitor_serialControls__ZApdN * {
+  color: #fff !important;
+}
+
+/* wki-No Footer */
+footer {
+  display: none !important;
+}

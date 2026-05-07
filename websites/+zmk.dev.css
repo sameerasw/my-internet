@@ -1,0 +1,25 @@
+/* zmk-Transparency */
+html,
+.hero {
+  background-color: transparent !important;
+  background: none !important;
+}
+:root {
+  --backdrop-bg: rgba(255, 255, 255, 0.75);
+  --backdrop-filter: blur(16px) saturate(180%) !important;
+}
+[data-theme="dark"] {
+  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* zmk-Translucent Overlays */
+.navbar,
+.navbar-sidebar {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+/* zmk-No Footer */
+footer {
+  display: none !important;
+}

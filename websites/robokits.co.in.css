@@ -1,0 +1,47 @@
+/* rk-Transparency */
+html,
+body,
+.dropdown-toggle,
+.navbar,
+.tab-pane,
+.stuck-nav,
+.icon,
+.title-aside-wrapper,
+.settings,
+.product__inside,
+.product__inside__hover,
+.leftColumn,
+#search-dropdown,
+#search,
+#cboxClose {
+  background-color: transparent !important;
+}
+:root {
+  --backdrop-bg: rgba(255, 255, 255, 0.75);
+  --backdrop-filter: blur(16px) saturate(180%) !important;
+}
+
+/* rk-Darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+[data-darkreader-scheme="dark"] {
+  --backdrop-bg: rgba(0, 0, 0, 0.75) !important;
+}
+
+/* rk-Translucent Overlays */
+nav,
+.dropdown-menu,
+.fixedbar,
+.resultsContainer,
+.megamenu__submenu,
+.dropdown-toggle:hover,
+.input-outer {
+  backdrop-filter: var(--backdrop-filter) !important;
+  background-color: var(--backdrop-bg) !important;
+}
+
+/* rk-No Footer */
+footer {
+  display: none !important;
+}

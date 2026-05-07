@@ -1,0 +1,29 @@
+/* freecodecamp-transparency */
+html,
+body,
+nav,
+header,
+section,
+.gradient-container,
+pre {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* freecodecamp-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* freecodecamp-no footer */
+footer,
+#banner {
+  display: none !important;
+}

@@ -1,5 +1,8 @@
 /* substack-transparency */
-.pc-root, .reader-nav-root, .bg-primary-zk6FDl, .topNav-x_3DWw{
+.pc-root,
+.reader-nav-root,
+.bg-primary-zk6FDl,
+.topNav-x_3DWw {
   background-color: transparent !important;
   border: none !important;
 }
