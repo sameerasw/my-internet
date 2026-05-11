@@ -2021,6 +2021,11 @@
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer {\n  display: none !important;\n}"
     },
+    "netflix.com.css": {
+      "transparency": "body, html {\n  background: transparent !important;\n}\n.profiles-gate-container {\n  background: transparent !important;\n}\n.default-ltr-yhcdbf-cache-1rt8xw3, .nf-modal .nf-modal-background, .player-loading, .player-loading .gradient, .nf-screen-wrapper {\n  background: transparent !important;\n}",
+      "transparent billboard fade $ makes the featured show/game fade into the background.": ".billboard-row .billboard .hero-image-wrapper .hero-vignette, .billboard-row .billboard, .billboard-row, .default-ltr-iqcdef-cache-1v829xk::after, .default-ltr-iqcdef-cache-1gluhd1::before {\n  background: transparent !important;\n}\n.billboard-row .billboard .hero-image-wrapper .hero-vignette, .billboard-row .billboard .hero-image-wrapper .trailer-vignette, .billboard-row .billboard .hero-image-wrapper .static-image, .billboard-row .billboard video, .default-ltr-iqcdef-cache-1x8ghsg, #\\38 2675013 > video:nth-child(1) {\n  mask-image: linear-gradient(180deg, #000000ff 0, #000000ff 80%, #00000055 88%, #00000000 98%, #00000000) !important;\n}",
+      "remove player black bars": ".default-ltr-iqcdef-cache-18tyyic {\n  background: transparent !important;\n}"
+    },
     "newcger.com.css": {
       "transparency": "html, body, header, section, .blockTit {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
