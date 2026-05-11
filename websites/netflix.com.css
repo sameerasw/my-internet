@@ -1,15 +1,16 @@
 /* transparency */
-body, html{
+body,
+html {
   background: transparent !important;
 }
-.profiles-gate-container{
+.profiles-gate-container {
   background: transparent !important;
 }
 .default-ltr-yhcdbf-cache-1rt8xw3,
 .nf-modal .nf-modal-background,
 .player-loading,
 .player-loading .gradient,
-.nf-screen-wrapper{
+.nf-screen-wrapper {
   background: transparent !important;
 }
 
@@ -18,7 +19,7 @@ body, html{
 .billboard-row .billboard,
 .billboard-row,
 .default-ltr-iqcdef-cache-1v829xk::after,
-.default-ltr-iqcdef-cache-1gluhd1::before{
+.default-ltr-iqcdef-cache-1gluhd1::before {
   background: transparent !important;
 }
 .billboard-row .billboard .hero-image-wrapper .hero-vignette,
@@ -26,17 +27,10 @@ body, html{
 .billboard-row .billboard .hero-image-wrapper .static-image,
 .billboard-row .billboard video,
 .default-ltr-iqcdef-cache-1x8ghsg,
-#\38 2675013 > video:nth-child(1){
-  mask-image: linear-gradient(
-    180deg,
-    #000000FF 0,
-    #000000FF 80%,
-    #00000055 88%,
-    #00000000 98%,
-    #00000000
-  ) !important;
+#\38 2675013 > video:nth-child(1) {
+  mask-image: linear-gradient(180deg, #000000ff 0, #000000ff 80%, #00000055 88%, #00000000 98%, #00000000) !important;
 }
 /* remove player black bars */
-.default-ltr-iqcdef-cache-18tyyic{
-  background:transparent !important;
+.default-ltr-iqcdef-cache-18tyyic {
+  background: transparent !important;
 }
