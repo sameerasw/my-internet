@@ -1,0 +1,46 @@
+/* obs-transparency */
+html,
+body,
+nav,
+.nav,
+header,
+.header,
+footer,
+section,
+main,
+#main,
+#root,
+#__next,
+.layout,
+.container,
+.site-header,
+.site-footer,
+.site-content,
+.markdown-body,
+.markdown-rendered,
+.theme-dark,
+.theme-light,
+[class*="hero"],
+[class*="Hero"] {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* obs-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* obs-no footer */
+footer,
+.footer,
+.site-footer {
+  display: none !important;
+}

@@ -1,0 +1,59 @@
+/* yaz-transparency */
+html,
+body,
+nav,
+header,
+footer,
+section,
+main,
+article,
+.container,
+.wrapper,
+.content,
+.sidebar,
+.menu,
+.navbar,
+.VPNav,
+.VPNavBar,
+.VPSidebar,
+.VPSidebarItem,
+.VPContent,
+.VPDoc,
+.VPHome,
+.VPHero,
+.VPLocalNav,
+.VPFooter,
+[class*="VPDoc"],
+[class*="vp-doc"] {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* yaz-vitepress vars */
+:root {
+  --vp-c-bg: transparent !important;
+  --vp-c-bg-alt: transparent !important;
+  --vp-c-bg-elv: transparent !important;
+  --vp-c-bg-soft: transparent !important;
+  --vp-sidebar-bg-color: transparent !important;
+  --vp-nav-bg-color: transparent !important;
+}
+
+/* yaz-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* yaz-no footer */
+footer,
+.VPFooter,
+.footer {
+  display: none !important;
+}

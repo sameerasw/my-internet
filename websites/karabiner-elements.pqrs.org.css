@@ -1,0 +1,43 @@
+/* kbn-transparency */
+html,
+body,
+nav,
+header,
+footer,
+section,
+main,
+.container,
+.wrapper,
+.content,
+.sidebar,
+.menu,
+.navbar,
+[class*="docusaurus"],
+[class*="theme-doc"],
+[class*="navbar"],
+.theme-doc-sidebar-container,
+.theme-doc-sidebar-menu,
+.theme-doc-markdown,
+.main-wrapper {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* kbn-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* kbn-no footer */
+footer,
+.footer,
+.footer__bottom {
+  display: none !important;
+}

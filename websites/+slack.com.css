@@ -1,0 +1,56 @@
+/* slk-transparency */
+html,
+body,
+nav,
+header,
+footer,
+section,
+main,
+#main,
+#root,
+#__next,
+.app,
+.p-client,
+.p-client_workspace_wrapper,
+.p-workspace,
+.p-workspace__sidebar,
+.p-workspace__primary_view,
+.p-channel_sidebar,
+.p-tab_rail,
+.p-top_nav,
+.p-ia__sidebar_list,
+[class*="sidebar"],
+[class*="Sidebar"],
+[data-qa="message_pane"],
+[data-qa="workspace_sidebar"] {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* slk-css vars */
+:root {
+  --sk_primary_background: transparent !important;
+  --sk_secondary_background: transparent !important;
+  --sk_inverted_background: transparent !important;
+  --p-channel_sidebar--bg: transparent !important;
+  --p-top_nav--bg: transparent !important;
+}
+
+/* slk-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* slk-no footer */
+footer,
+.footer,
+#footer {
+  display: none !important;
+}
