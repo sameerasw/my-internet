@@ -1,0 +1,46 @@
+/* boot-transparency */
+html,
+body,
+nav,
+header,
+footer,
+section,
+main,
+#main,
+#root,
+#__next,
+#app,
+.app,
+.sidebar,
+.side-bar,
+.layout,
+.content-wrapper,
+.lesson-wrapper,
+.editor-wrapper,
+.course-wrapper,
+[class*="Sidebar"],
+[class*="Header"],
+[class*="Layout"],
+[class*="Background"] {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* boot-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* boot-no footer */
+footer,
+.footer,
+#footer {
+  display: none !important;
+}

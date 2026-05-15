@@ -1,0 +1,61 @@
+/* ant-transparency */
+html,
+body,
+nav,
+#nav,
+.nav,
+header,
+#header,
+.header,
+header::before,
+footer,
+section,
+.main,
+main,
+#main,
+#root,
+#__next,
+.app,
+.app-root,
+#app,
+.sidebar,
+.side-bar,
+#content,
+.content,
+[data-theme="dark"],
+[data-theme="light"],
+.layout__content-wrapper,
+.docs-sidebar,
+.console-sidebar,
+.workspace-sidebar,
+[class*="Sidebar_"],
+[class*="Header_"],
+[class*="Footer_"],
+[class*="Layout_"],
+[class*="Background_"],
+[class*="background_"] {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* ant-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-0d0d0d: transparent !important;
+}
+
+/* ant-no footer */
+footer,
+.footer,
+#footer,
+[class*="Footer_root"],
+[class*="footer_root"] {
+  display: none !important;
+}

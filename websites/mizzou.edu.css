@@ -1,0 +1,41 @@
+/* mzu-transparency */
+html,
+body,
+nav,
+header,
+footer,
+section,
+main,
+article,
+#main,
+.main,
+.content,
+.wrapper,
+.container,
+.site-header,
+.site-footer,
+.site-content,
+.page-wrapper,
+.page-content {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* mzu-darkreader */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* mzu-no footer */
+footer,
+.footer,
+.site-footer {
+  display: none !important;
+}
