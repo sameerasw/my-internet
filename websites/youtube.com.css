@@ -22,7 +22,7 @@ ytd-item-section-renderer[page-subtype="playlist"] #header.ytd-item-section-rend
 }
 
 body::-webkit-scrollbar,
-ytd-guide-signin-promo-renderer{
+ytd-guide-signin-promo-renderer {
   display: none;
   scrollbar-width: none;
 }
