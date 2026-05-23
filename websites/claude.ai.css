@@ -27,7 +27,7 @@ header *,
 ._ghost_10ocf_96:active:not(:disabled)::before,
 ._ghost_10ocf_96[aria-checked="true"]::before,
 ._ghost_10ocf_96[aria-expanded="true"]::before {
-  background-color: transparent !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 .\!bg-bg-300,
