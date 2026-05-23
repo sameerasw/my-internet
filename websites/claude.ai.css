@@ -1,9 +1,46 @@
 /* claude-transparency */
 html,
 body,
-.z-sidebar > nav,
-.min-h-full > .bg-bg-100,
-.max-h-screen > .bg-bg-100 {
+header,
+header *,
+.bg-bg-100,
+.z-sidebar > nav {
   background-color: transparent !important;
   background: none !important;
+}
+
+/* claude-transparent textbox */
+.bg-bg-000 {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* claude-transparent messages */
+.bg-bg-300 {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* claude-transparent buttons */
+._ghost_10ocf_96:hover:not(:disabled):not(:active):not([aria-expanded="true"])::before {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+._ghost_10ocf_96:active:not(:disabled)::before,
+._ghost_10ocf_96[aria-checked="true"]::before,
+._ghost_10ocf_96[aria-expanded="true"]::before {
+  background-color: transparent !important;
+}
+
+.\!bg-bg-300,
+.active\:bg-bg-300:active {
+  --tw-bg-opacity: 0 !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.\[\&\>button\:hover\]\:\!bg-bg-500 > button:hover,
+.active\:\!bg-bg-500:active {
+  --tw-bg-opacity: 0 !important;
+}
+
+.\[\&\:hover\>button\]\:\!bg-bg-300:hover > button {
+  background-color: rgba(0, 0, 0, 0.6) !important;
 }
