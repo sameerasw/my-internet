@@ -24,6 +24,12 @@ header *,
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
+._ghost_10ocf_96:active:not(:disabled)::before,
+._ghost_10ocf_96[aria-checked="true"]::before,
+._ghost_10ocf_96[aria-expanded="true"]::before {
+  background-color: transparent !important;
+}
+
 .\!bg-bg-300,
 .active\:bg-bg-300:active {
   background-color: rgba(0, 0, 0, 0.4) !important;
