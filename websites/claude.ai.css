@@ -9,7 +9,8 @@ header *,
   background: none !important;
 }
 
-.bg-surface-3 {
+.bg-surface-3,
+[role="dialog"] {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
@@ -35,7 +36,9 @@ header *,
 .\!bg-bg-300,
 .active\:bg-bg-300:active,
 .\!bg-bg-500,
-.hover\:bg-bg-200:hover {
+.hover\:bg-bg-200:hover,
+._secondary_10ocf_72:hover:not(:disabled)::before,
+._secondary_10ocf_72:active:not(:disabled)::before {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
@@ -47,10 +50,14 @@ header *,
   background-color: transparent !important;
 }
 
-.\[\&\>button\:hover\]\:\!bg-bg-500 > button:hover {
-  background-color: hsl(var(--bg-500) / 0) !important;
-}
-
 .\[\&\:hover\>button\]\:\!bg-bg-300:hover > button {
   background-color: hsl(var(--bg-500) / 0.6) !important;
+}
+
+button[class*="_ghost_"]:hover:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+button[class*="_ghost_"]:active:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
