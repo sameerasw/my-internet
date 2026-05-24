@@ -32,6 +32,14 @@ a[data-cds="Button"][class*="text-on-primary"] span {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
+#conversation-preferences {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.focus-visible\:bg-surface-popover:focus-visible {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
 /* claude-transparent messages */
 .bg-bg-300 {
   background-color: rgba(0, 0, 0, 0.4) !important;
