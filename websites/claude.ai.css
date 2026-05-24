@@ -48,9 +48,9 @@ header *,
 }
 
 .\[\&\>button\:hover\]\:\!bg-bg-500 > button:hover {
-  --tw-bg-opacity: 0 !important;
+  background-color: hsl(var(--bg-500) / 0) !important;
 }
 
 .\[\&\:hover\>button\]\:\!bg-bg-300:hover > button {
-  --tw-bg-opacity: 0.6 !important;
+  background-color: hsl(var(--bg-500) / 0.6) !important;
 }
