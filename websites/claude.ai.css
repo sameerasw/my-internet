@@ -9,6 +9,14 @@ header *,
   background: none !important;
 }
 
+.bg-surface-3 {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.bg-surface-1 {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
 /* claude-transparent textbox */
 .bg-bg-000 {
   background-color: rgba(0, 0, 0, 0.4) !important;
@@ -26,7 +34,8 @@ header *,
 ._ghost_10ocf_96:hover:not(:disabled):not(:active):not([aria-expanded="true"])::before,
 .\!bg-bg-300,
 .active\:bg-bg-300:active,
-.\!bg-bg-500 {
+.\!bg-bg-500,
+.hover\:bg-bg-200:hover {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
