@@ -42,15 +42,15 @@ header *,
 .\!bg-bg-300:hover,
 .active\:bg-bg-300:active:hover,
 .\[\&\:hover\>button\]\:\!bg-bg-300:hover,
-.aria-expanded\:\!bg-bg-400[aria-expanded="true"] {
+.aria-expanded\:\!bg-bg-400[aria-expanded="true"],
+.active\:\!bg-bg-500:active {
   background-color: transparent !important;
 }
 
-.\[\&\>button\:hover\]\:\!bg-bg-500 > button:hover,
-.active\:\!bg-bg-500:active {
+.\[\&\>button\:hover\]\:\!bg-bg-500 > button:hover {
   --tw-bg-opacity: 0 !important;
 }
 
 .\[\&\:hover\>button\]\:\!bg-bg-300:hover > button {
-  background-color: rgba(0, 0, 0, 0.55) !important;
+  --tw-bg-opacity: 0.6 !important;
 }
