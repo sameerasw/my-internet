@@ -28,11 +28,8 @@ a[data-cds="Button"][class*="text-on-primary"] span {
 }
 
 /* claude-transparent textbox */
-.bg-bg-000 {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-}
-
-#conversation-preferences {
+.bg-bg-000,
+.focus-visible\:bg-surface-popover:not(:focus-visible) {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
