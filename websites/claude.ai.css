@@ -10,8 +10,14 @@ header *,
 }
 
 .bg-surface-3,
-[role="dialog"] {
+[role="dialog"],
+[data-cds="TextInput"],
+[data-cds="Button"] {
   background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+a[data-cds="Button"] {
+  color: white !important;
 }
 
 .bg-surface-1 {
