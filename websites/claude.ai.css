@@ -16,7 +16,10 @@ header *,
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-a[data-cds="Button"] {
+button[data-cds="Button"][class*="text-on-primary"],
+a[data-cds="Button"][class*="text-on-primary"],
+button[data-cds="Button"][class*="text-on-primary"] span,
+a[data-cds="Button"][class*="text-on-primary"] span {
   color: white !important;
 }
 
@@ -44,7 +47,8 @@ a[data-cds="Button"] {
 .\!bg-bg-500,
 .hover\:bg-bg-200:hover,
 ._secondary_10ocf_72:hover:not(:disabled)::before,
-._secondary_10ocf_72:active:not(:disabled)::before {
+._secondary_10ocf_72:active:not(:disabled)::before,
+.group:hover .group-hover\:bg-fill-ghost-hover {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
