@@ -209,7 +209,7 @@ body:has(.A8SBwf.emcav) #main {
   @media (prefers-color-scheme: dark) {
     background-color: #0007 !important;
   }
-}/* google-transparency */
+} /* google-transparency */
 html,
 body,
 section,
