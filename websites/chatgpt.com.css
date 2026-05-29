@@ -1,196 +1,623 @@
 /* cgpt-transparency */
+/* @Clears all ChatGPT token surface variables and structural background colors to allow Zen's wallpaper to bleed through every layer of the app shell */
 :root {
-  --main-surface-background: #00000000 !important;
-  --main-surface-primary: #00000000 !important;
-  --sidebar-surface-primary: #00000000 !important;
-  --text-primary: light-dark(#000, #fff) !important;
+  color-scheme: light dark;
+
+  --main-surface-background: transparent !important;
+  --main-surface-primary:    transparent !important;
+  --main-surface-secondary:  transparent !important;
+  --sidebar-surface-primary:    transparent !important;
+  --sidebar-surface-secondary:  transparent !important;
+  --sidebar-surface-tertiary:   transparent !important;
+  --message-surface: transparent !important;
+
+  --text-primary:   light-dark(#0f172a, #f8fafc) !important;
+  --text-secondary: light-dark(#334155, #cbd5e1) !important;
+  --text-tertiary:  light-dark(#64748b, #94a3b8) !important;
+
+  /* Glass surface tokens used site-wide */
+  --cgpt-glass-weak:   light-dark(rgba(255,255,255,0.15), rgba(0,0,0,0.14));
+  --cgpt-glass:        light-dark(rgba(255,255,255,0.31), rgba(0,0,0,0.28));
+  --cgpt-glass-strong: light-dark(rgba(255,255,255,0.91), rgba(16,16,16,0.86));
+  --cgpt-glass-menu:   light-dark(rgba(255,255,255,0.95), rgba(17,17,17,0.93));
+
+  --cgpt-border:        light-dark(rgba(0,0,0,0.09),  rgba(255,255,255,0.11));
+  --cgpt-border-strong: light-dark(rgba(0,0,0,0.15),  rgba(255,255,255,0.18));
+  --cgpt-hover:         light-dark(rgba(0,0,0,0.04),  rgba(255,255,255,0.07));
+  --cgpt-active:        light-dark(rgba(0,0,0,0.08),  rgba(255,255,255,0.12));
+
+  --cgpt-blur:        18px;
+  --cgpt-blur-strong: 30px;
+  --cgpt-radius:      16px;
+  --cgpt-radius-lg:   24px;
+  --cgpt-shadow:      0 16px 42px rgba(0,0,0,0.19), inset 0 1px 0 rgba(255,255,255,0.09);
+  --cgpt-shadow-soft: 0 8px 28px rgba(0,0,0,0.14);
 }
 
-[class*="popover"],
-[class*="dropdown"],
-[class*="modal"],
-[class*="slideover"],
-[class*="dialog"],
-[class*="sheet"],
-[class*="tooltip"] {
-  --main-surface-primary: light-dark(#fff9, #0009) !important;
-}
-
-#thread-bottom + .text-token-text-secondary > div {
-  opacity: 0 !important;
-}
-
-html,
-html.light,
-html.dark,
+/* ── Core DOM shell ──────────────────────────────────────────────────────── */
+html, html.light, html.dark,
 body,
-nav,
-#nav,
-.nav,
-navbar,
-.navbar,
-#navbar,
-header,
-#header,
-.header,
-app,
-#app,
-.app,
-.app-root,
-#pass-sidebar,
 #main,
 main,
-#content,
-section,
-#stage-slideover-sidebar,
-#__next,
-.bg-linear-to-l,
-#navigation-wrapper,
-#global-navbar,
-.head.notfixed,
-body[data-theme="dark"],
-body,
-#sidebar > div,
-[data-theme="light"],
-a[title="ChatGPT"],
-body.dark_mode,
-body.light_mode,
-.content-fade::after,
-.bg-\(--sidebar-bg\,var\(--bg-elevated-secondary\)\),
-aside {
-  background-color: transparent !important;
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  color: light-dark(#000, #fff) !important;
-  transition:
-    background-color 0.5s ease-in-out,
-    background 0.5s ease-in-out,
-    border 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out !important;
-}
-
-main > div > div > .bg-token-bg-primary {
-  gap: 0 !important;
-}
-
-div[id="modal-settings"] > div::before {
-  background-color: color-mix(in oklab, var(--gray-900) 50%, transparent) !important;
-}
-
-div[id="modal-settings"] [class*="bg-white"] {
-  background-color: light-dark(#eeeeee, #1a1a1a) !important;
-}
-
-div[id="modal-settings"] [role="dialog"] {
-  background-color: light-dark(#fffe, #000e) !important;
-}
-
-/* cgpt-glass */
-#history .bg-token-bg-elevated-secondary,
-main > div > div > .bg-token-bg-primary,
-[aria-label="Chat history"] > div:nth-child(1),
-[data-testid="history-item-0"] > div.bg-\[var\(--sidebar-surface-tertiary\)\],
-[aria-label="Chat history"] > aside:nth-child(2),
-[aria-label="Chat history"] > div:nth-last-child(1),
-form[aria-label="Message Composer"] > div {
-  box-shadow:
-    light-dark(#fff3, #0003) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
-  background-color: light-dark(#fff, #111) !important;
-  border-radius: 1em !important;
-}
-
-[data-testid="history-item-0"] > div.bg-\[var\(--sidebar-surface-tertiary\)\] {
-  background-color: light-dark(#fff5, #1115) !important;
-}
-
-[data-testid="history-item-0"] {
-  margin-top: 5px;
-}
-.bg-\[var\(--sidebar-surface-tertiary\)\] {
-  background: light-dark(#fff2, #0002) !important;
-  border-radius: 16px;
-}
-.bg-token-bg-elevated-secondary {
-  background: none;
-}
-.bg-token-message-surface {
-  background: light-dark(#fff4, #0004);
-}
-section.popover.flex.h-full.w-full.flex-col.bg-token-main-surface-primary {
-  backdrop-filter: blur(16px);
-  background: light-dark(#fff5, #0005) !important;
-}
-
-/* cgpt-transparent sidebar */
-[aria-label="Chat history"] > div:nth-child(1),
-[aria-label="Chat history"] > aside:nth-child(2),
-[aria-label="Chat history"] > div:nth-last-child(1) {
-  box-shadow: none !important;
+#thread,
+.composer-parent,
+[data-voice-floating-orb-focus-background],
+#page-header {
+  background:       transparent !important;
   background-color: transparent !important;
 }
-[aria-label="Chat history"] > .bg-token-bg-elevated-secondary.sticky {
-  position: unset !important;
-}
-[aria-label="Chat history"] > .tall\:sticky {
-  position: unset !important;
+
+/* Kill every ChatGPT token-class surface — confirmed present in the real DOM */
+.bg-token-main-surface-primary,
+.bg-token-main-surface-secondary,
+.bg-token-bg-primary,
+.bg-token-bg-secondary,
+.bg-token-bg-elevated-primary,
+.bg-token-bg-elevated-secondary,
+.bg-token-bg-tertiary,
+.bg-token-sidebar-surface-primary,
+.bg-token-sidebar-surface-secondary,
+.bg-token-sidebar-surface-tertiary,
+.bg-token-message-surface,
+.bg-surface-primary,
+.bg-\(--sidebar-surface-primary\) {
+  background:       transparent !important;
+  background-color: transparent !important;
 }
 
-/* cgpt-chat bubble */
-[data-message-author-role="assistant"],
-.bg-token-message-surface {
-  box-shadow: #0003 0 0 10px !important;
-  width: fit-content !important;
-  padding: 0.25em 1em !important;
+/* Hide the bottom disclaimer/legal ribbon without breaking layout */
+#thread-bottom + .text-token-text-secondary > div {
+  opacity:        0 !important;
+  pointer-events: none !important;
 }
 
-.bg-token-message-surface {
-  border-radius: 1.25em 1.25em 0.3em 1.25em !important;
-  background-color: light-dark(#fff4, #0004) !important;
-}
-[data-message-author-role="assistant"] {
-  border-radius: 1.25em 1.25em 1.25em 0.3em !important;
-  background-color: light-dark(#fff7, #0007) !important;
+
+/* cgpt-sidebar */
+/* @Applies a frosted glass panel to the slide-over sidebar confirmed as #stage-slideover-sidebar in the real DOM, and clears all inner nav/header/history sub-surfaces */
+
+/* Outer sidebar glass panel — #stage-slideover-sidebar wraps the entire left rail */
+#stage-slideover-sidebar {
+  background:             var(--cgpt-glass-weak) !important;
+  backdrop-filter:        blur(var(--cgpt-blur)) saturate(118%) !important;
+  -webkit-backdrop-filter: blur(var(--cgpt-blur)) saturate(118%) !important;
+  border-inline-end: 1px solid var(--cgpt-border) !important;
+  box-shadow:        10px 0 32px rgba(0,0,0,0.12) !important;
+  will-change:       backdrop-filter;
 }
 
-.group\/conversation-turn > div > div.justify-start {
-  transition: all 0.3s ease-in-out !important;
+/* Every sub-surface inside the sidebar must be clear:
+   - the flex column wrapper div
+   - #stage-sidebar-tiny-bar  (the collapsible icon rail nav)
+   - nav[aria-label="Chat history"]  (confirmed selector from real DOM)
+   - #sidebar-header  (the ChatGPT wordmark + close-sidebar row)
+   - #history  (the chat history list container)
+   - all sticky/shadow edge helpers used by the sidebar scroll port */
+#stage-slideover-sidebar > div,
+#stage-slideover-sidebar > div > div.opacity-100,
+#stage-sidebar-tiny-bar,
+nav[aria-label="Chat history"],
+#sidebar-header,
+#history,
+nav[aria-label="Chat history"] .sticky,
+nav[aria-label="Chat history"] [data-edge="true"],
+nav[aria-label="Chat history"] [aria-hidden="true"].pointer-events-none.absolute,
+nav[aria-label="Chat history"] > div:first-child {
+  background:       transparent !important;
+  background-color: transparent !important;
+  box-shadow:       none !important;
 }
 
-.group\/conversation-turn:not(:hover) > div > div.justify-start {
-  opacity: 0 !important;
+/* The "Chat history" title h2 inside the sidebar scroll wrapper */
+#stage-slideover-sidebar h2 {
+  background:       transparent !important;
+  background-color: transparent !important;
 }
 
-/* cgpt-hidden elements */
-button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light.text-xs.text-token-text-secondary,
-.grow + .bg-token-bg-elevated-secondary.sticky,
-#page-header > .absolute {
+/* Sidebar nav items — [data-sidebar-item] confirmed on every a/button in the real DOM */
+[data-sidebar-item] {
+  border-radius: 12px !important;
+  background:    transparent !important;
+  transition:    background-color 140ms ease, box-shadow 140ms ease !important;
+}
+
+[data-sidebar-item]:hover {
+  background: var(--cgpt-hover) !important;
+  box-shadow: inset 0 0 0 1px var(--cgpt-border) !important;
+}
+
+/* Active history item uses data-active="" — confirmed in #history outerHTML */
+[data-sidebar-item][data-active],
+[data-sidebar-item][aria-current="page"] {
+  background: var(--cgpt-active) !important;
+  box-shadow: inset 0 0 0 1px var(--cgpt-border-strong) !important;
+}
+
+/* Sidebar text colours */
+.header-wordmark,
+nav[aria-label="Chat history"] .truncate {
+  color: var(--text-primary) !important;
+}
+
+
+/* cgpt-header */
+/* @Makes the sticky #page-header confirmed in the real DOM fully transparent with a light blur, removing its solid bg-token-bg-primary background class */
+#page-header {
+  background:             transparent !important;
+  background-color:       transparent !important;
+  backdrop-filter:        blur(12px) saturate(112%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(112%) !important;
+  box-shadow:             none !important;
+  border-bottom:          1px solid transparent !important;
+}
+
+/* The absolute decorative spacer div inside the header adds no value on a transparent layout */
+#page-header > div.pointer-events-none.absolute {
   display: none !important;
 }
 
-/* cgpt-bg image glow */
+/* Header action buttons — #conversation-header-actions confirmed in #page-header outerHTML */
+#conversation-header-actions button,
+#page-header button {
+  border-radius: 12px !important;
+  transition:    background-color 140ms ease !important;
+}
+
+#conversation-header-actions button:hover,
+#page-header button:hover {
+  background-color: var(--cgpt-hover) !important;
+}
+
+
+/* cgpt-composer */
+/* @Applies frosted glass to the unified composer surface. The real selector is form[data-type="unified-composer"] containing [data-composer-surface="true"] confirmed in the real DOM. Clears the gradient fade mask and all wrapper backgrounds in #thread-bottom-container */
+
+/* Nuke every opaque layer stacked under the composer box */
+#thread-bottom-container,
+#thread-bottom,
+#thread-bottom-container > div,
+#thread-bottom > div {
+  background:       transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow:       none !important;
+}
+
+#thread-bottom-container::before, #thread-bottom-container::after,
+#thread-bottom::before,           #thread-bottom::after {
+  content: none !important;
+  display: none !important;
+  opacity: 0 !important;
+}
+
+/* The actual frosted composer box — data-composer-surface="true" confirmed in form outerHTML */
+#thread-bottom-container [data-composer-surface="true"],
+form[data-type="unified-composer"] [data-composer-surface="true"] {
+  background:             light-dark(rgba(255,255,255,0.15), rgba(20,20,20,0.25)) !important;
+  background-color:       light-dark(rgba(255,255,255,0.15), rgba(20,20,20,0.25)) !important;
+  backdrop-filter:        blur(34px) saturate(135%) !important;
+  -webkit-backdrop-filter: blur(34px) saturate(135%) !important;
+  border:        1px solid light-dark(rgba(0,0,0,0.08), rgba(255,255,255,0.12)) !important;
+  border-radius: var(--cgpt-radius-lg) !important;
+  box-shadow:    0 16px 48px rgba(0,0,0,0.16), inset 0 1px 0 rgba(255,255,255,0.08) !important;
+  will-change:   backdrop-filter;
+}
+
+/* Kill the vertical scroll fade mask inside the ProseMirror parent — class confirmed in real DOM */
+.wcDTda_prosemirror-parent,
+.vertical-scroll-fade-mask {
+  -webkit-mask-image: none !important;
+  mask-image:         none !important;
+}
+
+/* Textarea / ProseMirror editable — #prompt-textarea confirmed in form outerHTML */
+form[data-type="unified-composer"] textarea,
+form[data-type="unified-composer"] [contenteditable="true"],
+form[data-type="unified-composer"] [role="textbox"],
+#prompt-textarea,
+.wcDTda_fallbackTextarea {
+  background:       transparent !important;
+  background-color: transparent !important;
+  color:            var(--text-primary) !important;
+}
+
+/* Composer pill buttons — .__composer-pill and .composer-btn confirmed in form outerHTML */
+form[data-type="unified-composer"] .composer-btn,
+form[data-type="unified-composer"] .__composer-pill,
+form[data-type="unified-composer"] .__composer-pill-remove,
+#composer-plus-btn {
+  background:    light-dark(rgba(0,0,0,0.04), rgba(255,255,255,0.05)) !important;
+  border:        1px solid var(--cgpt-border) !important;
+  transition:    background-color 140ms ease, box-shadow 140ms ease !important;
+}
+
+form[data-type="unified-composer"] .composer-btn:hover,
+form[data-type="unified-composer"] .__composer-pill:hover,
+#composer-plus-btn:hover {
+  background: var(--cgpt-hover) !important;
+  box-shadow: inset 0 0 0 1px var(--cgpt-border) !important;
+}
+
+/* Submit/Voice button — .composer-submit-button-color confirmed in real DOM */
+form[data-type="unified-composer"] .composer-submit-button-color {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2) !important;
+}
+
+/* Footer actions row */
+[data-testid="composer-footer-actions"] {
+  background: transparent !important;
+}
+
+
+/* cgpt-messages */
+/* @Applies glass surfaces to chat bubbles. User bubble uses .user-message-bubble-color confirmed in [data-message-author-role="user"] outerHTML. Assistant content uses .markdown inside [data-message-author-role="assistant"] confirmed in real DOM */
+
+/* User message bubble — .user-message-bubble-color confirmed in real DOM */
+.user-message-bubble-color,
+.bg-token-message-surface {
+  background:             light-dark(rgba(255,255,255,0.45), rgba(20,20,20,0.4)) !important;
+  backdrop-filter:        blur(14px) saturate(112%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(112%) !important;
+  border:        1px solid var(--cgpt-border) !important;
+  box-shadow:    var(--cgpt-shadow-soft) !important;
+  /* Matches ChatGPT's own rounded-[22px] rounded-se-lg shape */
+  border-radius: 1.375rem 1.375rem 0.25rem 1.375rem !important;
+}
+
+/* User message image attachment wrapper — rounded-[1.75rem] confirmed in real DOM */
+[data-message-author-role="user"] .group\/message-image {
+  background:       light-dark(rgba(255,255,255,0.3), rgba(20,20,20,0.3)) !important;
+  backdrop-filter:  blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-radius:    1.75rem !important;
+}
+
+/* Assistant prose block — div.markdown.prose confirmed in assistant outerHTML */
+[data-message-author-role="assistant"] .markdown {
+  width:      fit-content !important;
+  max-width:  min(100%, 980px) !important;
+  padding:    0.85rem 1rem !important;
+  /* Mirrors ChatGPT's own bottom-left squircle for assistant bubbles */
+  border-radius: 1.375rem 1.375rem 1.375rem 0.25rem !important;
+  background:             light-dark(rgba(255,255,255,0.35), rgba(15,15,15,0.3)) !important;
+  backdrop-filter:        blur(12px) saturate(110%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(110%) !important;
+  border:     1px solid var(--cgpt-border) !important;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.12) !important;
+}
+
+[data-message-author-role="assistant"] .markdown > :first-child { margin-top:    0 !important; }
+[data-message-author-role="assistant"] .markdown > :last-child  { margin-bottom: 0 !important; }
+
+/* Code blocks and tables inside assistant messages */
+[data-message-author-role="assistant"] pre,
+[data-message-author-role="assistant"] code,
+[data-message-author-role="assistant"] .markdown table {
+  background-color: light-dark(rgba(255,255,255,0.90), rgba(11,11,11,0.86)) !important;
+  border-color:     var(--cgpt-border) !important;
+}
+
+[data-message-author-role="assistant"] .markdown pre {
+  backdrop-filter:        blur(12px) saturate(110%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(110%) !important;
+}
+
+/* Copy buttons inside code blocks */
+[data-message-author-role="assistant"] button[aria-label*="Copy"],
+button[aria-label*="Copy code"],
+[data-testid="copy-turn-action-button"] {
+  background:             rgba(255,255,255,0.08) !important;
+  backdrop-filter:        blur(18px) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(120%) !important;
+  border:        1px solid rgba(255,255,255,0.14) !important;
+  border-radius: 10px !important;
+  box-shadow:    0 8px 24px rgba(0,0,0,0.18), inset 0 1px 0 rgba(255,255,255,0.10) !important;
+  color:         light-dark(#1e293b, rgba(255,255,255,0.88)) !important;
+}
+
+[data-message-author-role="assistant"] button[aria-label*="Copy"]:hover,
+button[aria-label*="Copy code"]:hover,
+[data-testid="copy-turn-action-button"]:hover {
+  background:   rgba(255,255,255,0.14) !important;
+  border-color: rgba(255,255,255,0.22) !important;
+}
+
+
+/* cgpt-reasoning-drawer */
+/* @Applies a glass panel to the stage thread fly-out (reasoning / thinking drawer) and clears all nested surfaces within it */
+[data-testid="stage-thread-flyout"],
+[data-stage-thread-flyout="true"] {
+  background:             var(--cgpt-glass-weak) !important;
+  backdrop-filter:        blur(24px) saturate(118%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(118%) !important;
+  border-left: 1px solid rgba(255,255,255,0.12) !important;
+  box-shadow:  -14px 0 42px rgba(0,0,0,0.10) !important;
+  will-change: backdrop-filter;
+}
+
+[data-testid="stage-thread-flyout"] > div,
+[data-testid="stage-thread-flyout"] .flex.h-full.flex-col,
+[data-testid="screen-threadFlyOut"],
+section[aria-label="Reasoning details"],
+section[aria-label="Reasoning details"] > div {
+  background:       transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow:       none !important;
+}
+
+section[aria-label="Reasoning details"] [class*="border-"] {
+  border-color: rgba(255,255,255,0.12) !important;
+}
+
+
+/* cgpt-popovers */
+/* @Applies strong frosted glass to all Radix-powered menus, tooltips, dialogs and popovers. Scoped to data-radix-popper-content-wrapper and role attributes */
+
+/* Tooltips — popover="hint" role="tooltip" confirmed in form outerHTML */
+[role="tooltip"],
+[class*="tooltip"] {
+  background:             var(--cgpt-glass-menu) !important;
+  backdrop-filter:        blur(var(--cgpt-blur-strong)) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(120%) !important;
+  border:     1px solid var(--cgpt-border-strong) !important;
+  box-shadow: var(--cgpt-shadow) !important;
+  color:      var(--text-primary) !important;
+}
+
+/* Menus and dialogs — aria-haspopup="menu" confirmed on radix triggers in real DOM */
+[data-radix-popper-content-wrapper] > div,
+[role="menu"],
+[role="dialog"],
+[role="alertdialog"] {
+  --main-surface-primary: var(--cgpt-glass-menu) !important;
+  background:             var(--cgpt-glass-menu) !important;
+  backdrop-filter:        blur(var(--cgpt-blur-strong)) saturate(122%) !important;
+  -webkit-backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(122%) !important;
+  border-color: var(--cgpt-border-strong) !important;
+  box-shadow:   var(--cgpt-shadow) !important;
+}
+
+/* Settings modal backdrop + panel */
+#modal-settings > div::before {
+  background-color: rgba(0,0,0,0.45) !important;
+  backdrop-filter:  blur(4px);
+}
+
+#modal-settings [role="dialog"] {
+  background:             var(--cgpt-glass-menu) !important;
+  backdrop-filter:        blur(var(--cgpt-blur-strong)) saturate(122%) !important;
+  -webkit-backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(122%) !important;
+  border: 1px solid var(--cgpt-border-strong) !important;
+}
+
+
+/* cgpt-library */
+/* @Fixes the Library (/library) page artifact surface controls toolbar, category tabs and primary action buttons which render with solid black backgrounds without this patch */
+
+[data-testid="artifacts-surface-top-controls"],
+[data-testid="artifacts-surface-top-controls"] .bg-surface-primary,
+[data-testid="artifacts-surface-top-controls"] [class*="bg-gradient"],
+[data-testid="artifacts-surface-top-controls"] [class*="from-token-bg"] {
+  background:       transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow:       none !important;
+}
+
+[data-testid="artifacts-surface-top-controls"] button.btn,
+[data-testid="artifacts-surface-top-controls"] .btn-ghost {
+  color:            var(--text-primary) !important;
+  background:       transparent !important;
+  background-image: none !important;
+  border-color:     var(--cgpt-border) !important;
+  box-shadow:       none !important;
+}
+
+/* Active library tab — bg-token-bg-tertiary confirmed in real DOM */
+[data-testid="artifacts-surface-top-controls"] button[aria-current="page"],
+[data-testid="artifacts-surface-top-controls"] .btn-primary-inverse,
+[data-testid="artifacts-surface-top-controls"] .bg-token-bg-tertiary {
+  color:                   var(--text-primary) !important;
+  background:              light-dark(rgba(255,255,255,0.55), rgba(255,255,255,0.08)) !important;
+  background-color:        light-dark(rgba(255,255,255,0.55), rgba(255,255,255,0.08)) !important;
+  background-image:        none !important;
+  border:                  1px solid var(--cgpt-border-strong) !important;
+  backdrop-filter:         blur(14px) saturate(1.16) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(1.16) !important;
+}
+
+[data-testid="artifacts-surface-top-controls"] .btn-ghost:hover,
+[data-testid="artifacts-surface-top-controls"] button[aria-label]:hover {
+  color:        var(--text-primary) !important;
+  background:   var(--cgpt-hover) !important;
+  border-color: var(--cgpt-border) !important;
+}
+
+/* Library/Apps primary action button — scoped to #main to avoid colliding with the send button */
+#main button.btn-primary,
+main button.btn-primary {
+  color:                   var(--text-primary) !important;
+  background:              light-dark(rgba(255,255,255,0.62), rgba(255,255,255,0.09)) !important;
+  background-color:        light-dark(rgba(255,255,255,0.62), rgba(255,255,255,0.09)) !important;
+  background-image:        none !important;
+  border:                  1px solid var(--cgpt-border-strong) !important;
+  box-shadow:              0 8px 24px rgba(0,0,0,0.16), inset 0 1px 0 rgba(255,255,255,0.10) !important;
+  backdrop-filter:         blur(16px) saturate(1.18) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(1.18) !important;
+}
+
+#main button.btn-primary:hover,
+main button.btn-primary:hover {
+  background:   light-dark(rgba(255,255,255,0.72), rgba(255,255,255,0.14)) !important;
+  border-color: var(--cgpt-border-strong) !important;
+}
+
+/* Library toolbar dividers */
+[data-testid="artifacts-surface-top-controls"] [class*="bg-token-border"] {
+  background:       var(--cgpt-border) !important;
+  background-color: var(--cgpt-border) !important;
+}
+
+
+/* cgpt-apps-page */
+/* @Fixes the Apps page screen-arch header strip and Manage button which carry a solid bg-surface-primary and render black without this patch */
+
+.screen-arch,
+.screen-arch.bg-surface-primary,
+.screen-arch > div {
+  background:       transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow:       none !important;
+  border-color:     transparent !important;
+}
+
+.screen-arch button,
+.screen-arch .btn-ghost {
+  color:                   var(--text-primary) !important;
+  background:              rgba(255,255,255,0.055) !important;
+  background-color:        rgba(255,255,255,0.055) !important;
+  background-image:        none !important;
+  border:                  1px solid var(--cgpt-border) !important;
+  border-radius:           12px !important;
+  backdrop-filter:         blur(14px) saturate(1.16) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(1.16) !important;
+}
+
+.screen-arch button:hover,
+.screen-arch .btn-ghost:hover {
+  background:   var(--cgpt-hover) !important;
+  border-color: var(--cgpt-border-strong) !important;
+}
+
+/* Apps/GPTs search inputs */
+#main input[type="search"],
+main input[type="search"],
+#main input#search[aria-label="Search GPTs"],
+main  input#search[aria-label="Search GPTs"],
+input[aria-label="Search GPTs"][role="combobox"] {
+  color:                   var(--text-primary) !important;
+  background:              rgba(255,255,255,0.07) !important;
+  background-color:        rgba(255,255,255,0.07) !important;
+  background-image:        none !important;
+  border:                  1px solid var(--cgpt-border-strong) !important;
+  border-radius:           14px !important;
+  box-shadow:              0 10px 28px rgba(0,0,0,0.16), inset 0 1px 0 rgba(255,255,255,0.08) !important;
+  backdrop-filter:         blur(18px) saturate(1.18) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(1.18) !important;
+}
+
+#main input[type="search"]::placeholder,
+input[aria-label="Search GPTs"][role="combobox"]::placeholder {
+  color: var(--text-tertiary) !important;
+}
+
+
+/* cgpt-gpts-page */
+/* @Fixes the /gpts explore page category tab pill row (no-scrollbar flex scroll-m-5 gap-1.5) which renders fully black without this patch, and styles the See-more / Create / My-GPTs buttons */
+
+/* Category tab pill row */
+.no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] {
+  position:         relative !important;
+  z-index:          2 !important;
+  background:       rgba(255,255,255,0.035) !important;
+  background-color: rgba(255,255,255,0.035) !important;
+  background-image: none !important;
+  border:           1px solid var(--cgpt-border) !important;
+  border-radius:    999px !important;
+  box-shadow:       0 8px 24px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.06) !important;
+  backdrop-filter:         blur(16px) saturate(1.14) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(1.14) !important;
+  padding:          0.35rem !important;
+  gap:              0.35rem !important;
+  overflow-x:       auto !important;
+  overflow-y:       visible !important;
+}
+
+/* Individual category tab */
+.no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] > div {
+  color:            var(--text-secondary) !important;
+  background:       transparent !important;
+  border-color:     transparent !important;
+  border-radius:    999px !important;
+  white-space:      nowrap !important;
+  flex:             0 0 auto !important;
+}
+
+/* Active category tab — bg-token-bg-tertiary confirmed present on the selected tab */
+.no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] > div.bg-token-bg-tertiary,
+.no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] > div[class*="border-token-text-primary"] {
+  color:            var(--text-primary) !important;
+  background:       rgba(255,255,255,0.10) !important;
+  background-color: rgba(255,255,255,0.10) !important;
+  border-color:     var(--cgpt-border-strong) !important;
+}
+
+/* Inactive tab hover */
+.no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] > div:hover {
+  color:       var(--text-primary) !important;
+  background:  var(--cgpt-hover) !important;
+}
+
+/* GPTs page secondary / ghost buttons (See more, My GPTs, Create) */
+#main button.btn-secondary,
+main button.btn-secondary,
+#main .btn-secondary,
+main .btn-secondary {
+  color:                   var(--text-primary) !important;
+  background:              rgba(255,255,255,0.075) !important;
+  background-color:        rgba(255,255,255,0.075) !important;
+  background-image:        none !important;
+  border:                  1px solid var(--cgpt-border) !important;
+  border-radius:           14px !important;
+  box-shadow:              0 8px 24px rgba(0,0,0,0.14), inset 0 1px 0 rgba(255,255,255,0.08) !important;
+  backdrop-filter:         blur(16px) saturate(1.16) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(1.16) !important;
+}
+
+#main button.btn-secondary:hover,
+main button.btn-secondary:hover {
+  background:   rgba(255,255,255,0.13) !important;
+  border-color: var(--cgpt-border-strong) !important;
+}
+
+
+/* cgpt-decorative */
+/* @Softens any full-bleed background picture element (e.g. model splash) so it doesn't overpower Zen's wallpaper, and hides the small floating "upgrade" badge button that appears in the corner */
 body > picture {
-  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 80%) !important;
-  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 90%) !important;
-  -webkit-mask-repeat: no-repeat !important;
-  mask-repeat: no-repeat !important;
-  -webkit-mask-size: cover !important;
-  mask-size: cover !important;
+  opacity:      0.65 !important;
+  mask-image:   radial-gradient(circle, #000 25%, transparent 85%) !important;
+  mask-repeat:  no-repeat !important;
+  mask-size:    cover !important;
+  pointer-events: none !important;
 }
 
-/* cgpt-main input transparency */
-[data-type="unified-composer"] > div:nth-child(2) > div {
-  background: light-dark(#fff6, #0006);
-  backdrop-filter: blur(30px);
+/* Small rounded upgrade/plan badge button that floats over the thread — hide it */
+button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light {
+  display: none !important;
 }
 
-/* cgpt-transparent modals */
-[data-radix-popper-content-wrapper] > div {
-  background-color: light-dark(#fff8, #0008) !important;
-  backdrop-filter: blur(30px);
+
+/* cgpt-fallback */
+/* @Provides a solid semi-transparent fallback background for all glass surfaces when backdrop-filter is unavailable (e.g. Firefox with hardware acceleration disabled) */
+@supports not (backdrop-filter: blur(1px)) {
+  #stage-slideover-sidebar,
+  form[data-type="unified-composer"] [data-composer-surface="true"],
+  .user-message-bubble-color,
+  [data-message-author-role="assistant"] .markdown,
+  [role="tooltip"],
+  [role="menu"],
+  [role="dialog"] {
+    background: light-dark(#ffffffe8, #121212e8) !important;
+  }
+}
+
+
+/* cgpt-reduced-motion */
+/* @Collapses all transitions/animations to near-zero duration when the user has requested reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    transition-duration: 0.001ms !important;
+    animation-duration:  0.001ms !important;
+  }
 }
