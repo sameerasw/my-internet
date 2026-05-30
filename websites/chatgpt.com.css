@@ -1,7 +1,7 @@
-/* cgpt-transparency $ Clears all ChatGPT surface tokens and structural backgrounds so the wallpaper bleeds through every layer of the app shell */
+/* transparency $ Clears ChatGPT surface tokens and structural backgrounds so the wallpaper bleeds through the app shell */
 /* @Sets up shared glass design tokens and zeroes out all opaque surface variables */
 :root {
-  color-scheme: light dark;
+  color-scheme: light dark !important;
 
   --main-surface-background: transparent !important;
   --main-surface-primary:    transparent !important;
@@ -15,22 +15,22 @@
   --text-secondary: light-dark(#334155, #cbd5e1) !important;
   --text-tertiary:  light-dark(#64748b, #94a3b8) !important;
 
-  --cgpt-glass-weak:   light-dark(rgba(255,255,255,0.15), rgba(0,0,0,0.14));
-  --cgpt-glass:        light-dark(rgba(255,255,255,0.31), rgba(0,0,0,0.28));
-  --cgpt-glass-strong: light-dark(rgba(255,255,255,0.91), rgba(16,16,16,0.86));
-  --cgpt-glass-menu:   light-dark(rgba(255,255,255,0.95), rgba(17,17,17,0.93));
+  --cgpt-glass-weak:   light-dark(rgba(255,255,255,0.15), rgba(0,0,0,0.14)) !important;
+  --cgpt-glass:        light-dark(rgba(255,255,255,0.31), rgba(0,0,0,0.28)) !important;
+  --cgpt-glass-strong: light-dark(rgba(255,255,255,0.91), rgba(16,16,16,0.86)) !important;
+  --cgpt-glass-menu:   light-dark(rgba(255,255,255,0.95), rgba(17,17,17,0.93)) !important;
 
-  --cgpt-border:        light-dark(rgba(0,0,0,0.09),  rgba(255,255,255,0.11));
-  --cgpt-border-strong: light-dark(rgba(0,0,0,0.15),  rgba(255,255,255,0.18));
-  --cgpt-hover:         light-dark(rgba(0,0,0,0.04),  rgba(255,255,255,0.07));
-  --cgpt-active:        light-dark(rgba(0,0,0,0.08),  rgba(255,255,255,0.12));
+  --cgpt-border:        light-dark(rgba(0,0,0,0.09),  rgba(255,255,255,0.11)) !important;
+  --cgpt-border-strong: light-dark(rgba(0,0,0,0.15),  rgba(255,255,255,0.18)) !important;
+  --cgpt-hover:         light-dark(rgba(0,0,0,0.04),  rgba(255,255,255,0.07)) !important;
+  --cgpt-active:        light-dark(rgba(0,0,0,0.08),  rgba(255,255,255,0.12)) !important;
 
-  --cgpt-blur:        18px;
-  --cgpt-blur-strong: 30px;
-  --cgpt-radius:      16px;
-  --cgpt-radius-lg:   24px;
-  --cgpt-shadow:      0 16px 42px rgba(0,0,0,0.19), inset 0 1px 0 rgba(255,255,255,0.09);
-  --cgpt-shadow-soft: 0 8px 28px rgba(0,0,0,0.14);
+  --cgpt-blur:        18px !important;
+  --cgpt-blur-strong: 30px !important;
+  --cgpt-radius:      16px !important;
+  --cgpt-radius-lg:   24px !important;
+  --cgpt-shadow:      0 16px 42px rgba(0,0,0,0.19), inset 0 1px 0 rgba(255,255,255,0.09) !important;
+  --cgpt-shadow-soft: 0 8px 28px rgba(0,0,0,0.14) !important;
 }
 
 html, html.light, html.dark,
@@ -78,7 +78,7 @@ main,
   -webkit-backdrop-filter: blur(var(--cgpt-blur)) saturate(118%) !important;
   border-inline-end: 1px solid var(--cgpt-border) !important;
   box-shadow:        10px 0 32px rgba(0,0,0,0.12) !important;
-  will-change:       backdrop-filter;
+  will-change:       backdrop-filter !important;
 }
 
 #stage-slideover-sidebar > div,
@@ -184,7 +184,7 @@ form[data-type="unified-composer"] [data-composer-surface="true"] {
   border:        1px solid light-dark(rgba(0,0,0,0.08), rgba(255,255,255,0.12)) !important;
   border-radius: var(--cgpt-radius-lg) !important;
   box-shadow:    0 16px 48px rgba(0,0,0,0.16), inset 0 1px 0 rgba(255,255,255,0.08) !important;
-  will-change:   backdrop-filter;
+  will-change:   backdrop-filter !important;
 }
 
 .wcDTda_prosemirror-parent,
@@ -307,7 +307,7 @@ button[aria-label*="Copy code"]:hover,
   -webkit-backdrop-filter: blur(24px) saturate(118%) !important;
   border-left: 1px solid rgba(255,255,255,0.12) !important;
   box-shadow:  -14px 0 42px rgba(0,0,0,0.10) !important;
-  will-change: backdrop-filter;
+  will-change: backdrop-filter !important;
 }
 
 [data-testid="stage-thread-flyout"] > div,
@@ -576,4 +576,94 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
     transition-duration: 0.001ms !important;
     animation-duration:  0.001ms !important;
   }
+}
+/* cgpt-composer-readability-fix $ Makes the main input field darker so text does not visually overlap with wallpaper/content */
+/* @Append this at the END of the file so it overrides earlier composer transparency rules */
+
+#thread-bottom-container [data-composer-surface="true"],
+form[data-type="unified-composer"] [data-composer-surface="true"],
+[data-composer-surface="true"] {
+  background: light-dark(
+    rgba(255, 255, 255, 0.82),
+    rgba(10, 10, 12, 0.82)
+  ) !important;
+  background-color: light-dark(
+    rgba(255, 255, 255, 0.82),
+    rgba(10, 10, 12, 0.82)
+  ) !important;
+
+  backdrop-filter: blur(28px) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(120%) !important;
+
+  border: 1px solid light-dark(
+    rgba(0, 0, 0, 0.13),
+    rgba(255, 255, 255, 0.16)
+  ) !important;
+
+  border-radius: 28px !important;
+
+  box-shadow:
+    0 18px 52px rgba(0, 0, 0, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.035) !important;
+
+  background-image: linear-gradient(
+    to bottom,
+    light-dark(rgba(255,255,255,0.10), rgba(255,255,255,0.045)),
+    light-dark(rgba(255,255,255,0.04), rgba(0,0,0,0.10))
+  ) !important;
+}
+
+/* Keep the actual typing area readable */
+[data-composer-surface="true"] .ProseMirror,
+[data-composer-surface="true"] #prompt-textarea,
+[data-composer-surface="true"] textarea,
+[data-composer-surface="true"] [role="textbox"],
+[data-composer-surface="true"] [contenteditable="true"] {
+  color: light-dark(#0f172a, #f8fafc) !important;
+  caret-color: light-dark(#0f172a, #ffffff) !important;
+  background: transparent !important;
+}
+
+/* Placeholder should be visible, but not scream like a Windows error popup */
+[data-composer-surface="true"] .ProseMirror p.placeholder::before,
+[data-composer-surface="true"] .ProseMirror [data-placeholder]::before {
+  color: light-dark(rgba(15,23,42,0.55), rgba(248,250,252,0.48)) !important;
+}
+
+/* Footer/buttons inside composer need a darker glass layer too */
+[data-composer-surface="true"] .composer-btn,
+[data-composer-surface="true"] .__composer-pill,
+[data-composer-surface="true"] .__composer-pill-remove,
+[data-composer-surface="true"] #composer-plus-btn {
+  background: light-dark(
+    rgba(255,255,255,0.55),
+    rgba(255,255,255,0.075)
+  ) !important;
+
+  border: 1px solid light-dark(
+    rgba(0,0,0,0.10),
+    rgba(255,255,255,0.13)
+  ) !important;
+
+  color: light-dark(#111827, #f8fafc) !important;
+}
+
+[data-composer-surface="true"] .composer-btn:hover,
+[data-composer-surface="true"] .__composer-pill:hover,
+[data-composer-surface="true"] .__composer-pill-remove:hover,
+[data-composer-surface="true"] #composer-plus-btn:hover {
+  background: light-dark(
+    rgba(255,255,255,0.75),
+    rgba(255,255,255,0.13)
+  ) !important;
+}
+
+/* Optional: darker safety pad behind the whole sticky composer area */
+#thread-bottom-container {
+  background: linear-gradient(
+    to top,
+    light-dark(rgba(255,255,255,0.30), rgba(0,0,0,0.34)),
+    transparent
+  ) !important;
 }
