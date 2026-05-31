@@ -570,13 +570,6 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
 }
 
 
-/* cgpt-reduced-motion $ Collapses all transitions and animations to near-zero duration for users who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after {
-    transition-duration: 0.001ms !important;
-    animation-duration:  0.001ms !important;
-  }
-}
 /* cgpt-composer-readability-fix $ Makes the main input field darker so text does not visually overlap with wallpaper/content */
 /* @Append this at the END of the file so it overrides earlier composer transparency rules */
 
@@ -614,7 +607,7 @@ form[data-type="unified-composer"] [data-composer-surface="true"],
   ) !important;
 }
 
-/* Keep the actual typing area readable */
+/* @Keeps the actual typing area readable */
 [data-composer-surface="true"] .ProseMirror,
 [data-composer-surface="true"] #prompt-textarea,
 [data-composer-surface="true"] textarea,
@@ -625,13 +618,13 @@ form[data-type="unified-composer"] [data-composer-surface="true"],
   background: transparent !important;
 }
 
-/* Placeholder should be visible, but not scream like a Windows error popup */
+/* @Keeps placeholder text visible without making it too loud */
 [data-composer-surface="true"] .ProseMirror p.placeholder::before,
 [data-composer-surface="true"] .ProseMirror [data-placeholder]::before {
   color: light-dark(rgba(15,23,42,0.55), rgba(248,250,252,0.48)) !important;
 }
 
-/* Footer/buttons inside composer need a darker glass layer too */
+/* @Adds a darker glass layer to composer footer buttons */
 [data-composer-surface="true"] .composer-btn,
 [data-composer-surface="true"] .__composer-pill,
 [data-composer-surface="true"] .__composer-pill-remove,
@@ -659,7 +652,7 @@ form[data-type="unified-composer"] [data-composer-surface="true"],
   ) !important;
 }
 
-/* Optional: darker safety pad behind the whole sticky composer area */
+/* @Adds a subtle safety gradient behind the sticky composer area */
 #thread-bottom-container {
   background: linear-gradient(
     to top,
