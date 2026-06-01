@@ -50,7 +50,7 @@ main,
   background-color: transparent !important;
 }
 
-/* Safe shell clears. Broad enough for transparency, not so broad that scroll layout dies in a ditch. */
+/* @Safe shell clears. Broad enough for transparency, not so broad that scroll layout dies in a ditch. */
 .bg-token-main-surface-primary,
 .bg-token-main-surface-secondary,
 .bg-token-bg-primary,
@@ -102,7 +102,7 @@ nav[aria-label="Navigation"],
   box-shadow: none !important;
 }
 
-/* Sticky sidebar blocks stay transparent. The scroll helper gives the fade only while ChatGPT shows it. */
+/* @Sticky sidebar blocks stay transparent. The scroll helper gives the fade only while ChatGPT shows it. */
 #sidebar-header,
 #sidebar-header > *,
 #sidebar-header a,
@@ -120,18 +120,7 @@ nav[aria-label="Chat history"] > div[class*="tall:sticky"][class*="top-header-he
   box-shadow: none !important;
 }
 
-/* Only the top action sticky group may show the helper outside its tiny spacer area.
-   Do not apply overflow-visible globally. That broke page scrolling. */
-nav[aria-label="Chat history"] > div[class*="pt-(--sidebar-section-first-margin-top)"],
-nav[aria-label="Chat history"] > div[class*="tall:top-header-height"],
-nav[aria-label="Chat history"] > div[class*="tall:sticky"][class*="top-header-height"] {
-  position: sticky !important;
-  overflow: visible !important;
-  isolation: isolate !important;
-  z-index: 40 !important;
-}
-
-/* Keep the real list above the helper layer. */
+/* @Keep the real list above the helper layer. */
 nav[aria-label="Chat history"] > div[class*="pt-(--sidebar-section-first-margin-top)"] ul,
 nav[aria-label="Chat history"] > div[class*="tall:top-header-height"] ul,
 nav[aria-label="Chat history"] > div[class*="tall:sticky"][class*="top-header-height"] ul {
@@ -142,7 +131,7 @@ nav[aria-label="Chat history"] > div[class*="tall:sticky"][class*="top-header-he
   background-image: none !important;
 }
 
-/* Sidebar top scroll-glass helper.
+/* @Sidebar top scroll-glass helper.
    ChatGPT already toggles this helper's opacity on scroll, so do not set opacity here. */
 nav[aria-label="Chat history"]
   > div[class*="pt-(--sidebar-section-first-margin-top)"]
@@ -192,7 +181,7 @@ nav[aria-label="Chat history"]
     box-shadow 180ms ease !important;
 }
 
-/* Generic scroll-edge helpers elsewhere.
+/* @Generic scroll-edge helpers elsewhere.
    No overflow hacks. No opacity overrides. Just visual styling when ChatGPT shows them. */
 [aria-hidden="true"].pointer-events-none.absolute[class*="group-data-scrolled-from-top"],
 [aria-hidden="true"].pointer-events-none.absolute[class*="sharp-edge"],
@@ -228,7 +217,7 @@ nav[aria-label="Chat history"]
     box-shadow 180ms ease !important;
 }
 
-/* Sidebar text readability. */
+/* @Sidebar text readability. */
 #sidebar-header {
   position: relative !important;
   z-index: 3 !important;
@@ -261,32 +250,155 @@ nav[aria-label="Chat history"] .truncate {
 }
 
 
-/* cgpt-header $ Transparent sticky page header with light blur */
-/* @Targets #page-header confirmed in the real DOM */
-#page-header {
+/* cgpt-header $ Keeps page header background invisible and styles only Share / options buttons */
+/* @Removes header surface/background while preserving readable action buttons */
+
+/* @Header itself: no background, no blur, no shadow */
+#page-header,
+#page-header[data-fixed-header],
+[data-voice-floating-orb-focus-background] > #page-header {
   background: transparent !important;
   background-color: transparent !important;
-  backdrop-filter: blur(12px) saturate(112%) !important;
-  -webkit-backdrop-filter: blur(12px) saturate(112%) !important;
+  background-image: none !important;
+
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+
+  border: 0 !important;
+  border-bottom: 0 !important;
   box-shadow: none !important;
-  border-bottom: 1px solid transparent !important;
 }
 
-#page-header > div.pointer-events-none.absolute {
-  display: none !important;
+/* @Remove header decorative/scroll-shadow helper */
+#page-header::before,
+#page-header::after,
+#page-header > .pointer-events-none.absolute,
+#page-header [class*="sharp-edge"],
+#page-header [class*="box-shadow"],
+#page-header [aria-hidden="true"].pointer-events-none.absolute {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
-#conversation-header-actions button,
-#page-header button {
-  border-radius: 12px !important;
-  transition: background-color 140ms ease !important;
+/* @Header wrappers should stay invisible */
+#page-header [data-testid="thread-header-right-actions-container"],
+#page-header [data-testid="thread-header-right-actions"],
+#conversation-header-actions,
+#conversation-header-actions > div {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
-#conversation-header-actions button:hover,
-#page-header button:hover {
-  background-color: var(--cgpt-hover) !important;
+/* @Share button */
+#page-header [data-testid="share-chat-button"],
+#conversation-header-actions [data-testid="share-chat-button"] {
+  color: rgba(255, 255, 255, 0.94) !important;
+
+  background: rgba(10, 10, 12, 0.62) !important;
+  background-color: rgba(10, 10, 12, 0.62) !important;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.07),
+    rgba(0, 0, 0, 0)
+  ) !important;
+
+  backdrop-filter: blur(18px) saturate(118%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(118%) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.13) !important;
+  border-radius: 14px !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07) !important;
+
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease,
+    transform 140ms ease !important;
 }
 
+/* @Three dots button */
+#page-header [data-testid="conversation-options-button"],
+#conversation-header-actions [data-testid="conversation-options-button"] {
+  color: rgba(255, 255, 255, 0.94) !important;
+
+  background: rgba(10, 10, 12, 0.52) !important;
+  background-color: rgba(10, 10, 12, 0.52) !important;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.06),
+    rgba(0, 0, 0, 0.09)
+  ) !important;
+
+  backdrop-filter: blur(18px) saturate(118%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(118%) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 14px !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.065) !important;
+
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease,
+    transform 140ms ease !important;
+}
+
+/* @Button hover/focus */
+#page-header [data-testid="share-chat-button"]:hover,
+#page-header [data-testid="share-chat-button"]:focus-visible,
+#page-header [data-testid="conversation-options-button"]:hover,
+#page-header [data-testid="conversation-options-button"]:focus-visible {
+  color: rgba(255, 255, 255, 0.98) !important;
+
+  background: rgba(18, 18, 24, 0.74) !important;
+  background-color: rgba(18, 18, 24, 0.74) !important;
+
+  border-color: rgba(255, 255, 255, 0.20) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.10) !important;
+}
+
+/* @Button active press */
+#page-header [data-testid="share-chat-button"]:active,
+#page-header [data-testid="conversation-options-button"]:active {
+  transform: translateY(1px) !important;
+  background: rgba(8, 8, 10, 0.78) !important;
+  background-color: rgba(8, 8, 10, 0.78) !important;
+}
+
+/* @Keep icons/text clean */
+#page-header [data-testid="share-chat-button"] svg,
+#page-header [data-testid="conversation-options-button"] svg {
+  color: currentColor !important;
+  opacity: 0.95 !important;
+}
+
+#page-header [data-testid="share-chat-button"] div {
+  color: currentColor !important;
+}
+
+/* cgpt-search-sources-header $ Clears OLED variables and backgrounds for the Activity header */
+[data-testid="bar-search-sources-header"],
+[data-testid="bar-search-sources-header"] > div {
+  --main-surface-primary: #0000 !important;
+  background-color: #0000 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
 
 /* cgpt-composer $ Dark translucent unified composer input surface */
 /* @Targets form[data-type="unified-composer"] and [data-composer-surface="true"] */
@@ -311,27 +423,28 @@ nav[aria-label="Chat history"] .truncate {
 
 #thread-bottom-container [data-composer-surface="true"],
 form[data-type="unified-composer"] [data-composer-surface="true"] {
-  background: light-dark(rgba(255,255,255,0.82), rgba(10,10,12,0.82)) !important;
-  background-color: light-dark(rgba(255,255,255,0.82), rgba(10,10,12,0.82)) !important;
-  background-image: linear-gradient(
-    to bottom,
-    light-dark(rgba(255,255,255,0.10), rgba(255,255,255,0.045)),
-    light-dark(rgba(255,255,255,0.04), rgba(0,0,0,0.10))
-  ) !important;
+  /* Combined background shorthand (gradient handles the top layer, color handles the base) */
+  background: 
+    linear-gradient(
+      to bottom,
+      light-dark(rgba(255,255,255,0.10), rgba(255,255,255,0.045)),
+      light-dark(rgba(255,255,255,0.04), rgba(0,0,0,0.10))
+    ),
+    light-dark(rgba(255,255,255,0.82), rgba(10,10,12,0.82)) !important;
 
-  backdrop-filter: blur(28px) saturate(120%) !important;
-  -webkit-backdrop-filter: blur(28px) saturate(120%) !important;
+  /* Unified blur values (Adjust both to 28px or both to 60px depending on preferred depth) */
+  backdrop-filter: blur(100px) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(100px) saturate(120%) !important;
 
   border: 1px solid light-dark(rgba(0,0,0,0.13), rgba(255,255,255,0.16)) !important;
   border-radius: 28px !important;
 
   box-shadow:
-    0 18px 52px rgba(0,0,0,0.34),
-    inset 0 1px 0 rgba(255,255,255,0.08),
-    inset 0 0 0 1px rgba(255,255,255,0.035) !important;
-
-  will-change: backdrop-filter !important;
+    0 0px 30px rgba(0, 0, 0, .59),
+    inset 0 1px 0 rgba(255, 255, 255, .28),
+    inset 0 0 0 1px rgba(255, 255, 255, .035) !important;
 }
+
 
 .wcDTda_prosemirror-parent,
 .vertical-scroll-fade-mask {
@@ -458,7 +571,7 @@ button[aria-label*="Copy code"],
   -webkit-backdrop-filter: blur(18px) saturate(120%) !important;
   border: 1px solid rgba(255,255,255,0.14) !important;
   border-radius: 10px !important;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.18), inset 0 1px 0 rgba(255,255,255,0.10) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0), inset 0 1px 0 rgba(255,255,255,0.10) !important;
   color: light-dark(#1e293b, rgba(255,255,255,0.88)) !important;
 }
 
@@ -473,6 +586,96 @@ button[aria-label*="Copy code"]:hover,
   opacity: 0 !important;
 }
 
+/* cgpt-code-header-glass $ Gives code block sticky headers the same dark glass surface as composer/sidebar */
+/* @Targets code block language header rows like CSS / Python and their Copy button */
+
+/* Language label inside code block header */
+[data-message-author-role="assistant"] .markdown div[class*="sticky"] > div[class*="bg-token-bg-elevated-secondary"] .text-token-text-primary {
+  
+  background: light-dark(rgb(255, 255, 255), rgba(0, 0, 0, .83)) !important;
+  background-color: light-dark(rgba(255,255,255,0.55), rgba(255, 255, 255, .84)) !important;
+  background-image: none !important;
+  border: 1px solid light-dark(rgba(0,0,0,0.10), rgba(255,255,255,0.13)) !important;
+  border-radius: 12px !important;
+  color: light-dark(#000, #000) !important;
+    
+  /* Extends the border outward: 4px top/bottom, 12px left/right */
+  padding: 4px 12px !important; 
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important; /* Ensures the icon and text don't crowd each other */
+  box-shadow:
+    0 0px 18px rgba(255, 255, 255, .28),
+    inset 0 1px 0 rgba(255,255,255,0.07) !important;
+  backdrop-filter: blur(14px) saturate(116%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(116%) !important;
+}
+
+/* @Icon in language header */
+[data-message-author-role="assistant"] .markdown div[class*="sticky"] > div[class*="bg-token-bg-elevated-secondary"] svg {
+  color: inherit !important; /* Inherits text color automatically */
+  fill: currentColor !important;
+  width: 14px !important;
+  height: 14px !important;
+  margin: 0 !important; /* Resets default margins to prevent layout distortion */
+}
+
+/* @Copy button inside code block header */
+[data-message-author-role="assistant"] .markdown
+  div[class*="sticky"][class*="top-(--sticky-padding-top)"]
+  button[aria-label="Copy"],
+[data-message-author-role="assistant"] .markdown
+  div[class*="sticky"][class*="top-"][class*="z-"]
+  button[aria-label="Copy"] {
+  background: light-dark(rgb(255, 255, 255), rgba(0, 0, 0, .83)) !important;
+  background-color: light-dark(rgba(255,255,255,0.55), rgba(255, 255, 255, .69)) !important;
+  background-image: none !important;
+
+  border: 1px solid light-dark(rgba(0,0,0,0.10), rgba(255,255,255,0.13)) !important;
+  border-radius: 12px !important;
+
+  color: light-dark(#000, #000) !important;
+
+  box-shadow:
+    0 0px 18px rgba(255, 255, 255, .28),
+    inset 0 1px 0 rgba(255,255,255,0.07) !important;
+
+  backdrop-filter: blur(14px) saturate(116%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(116%) !important;
+
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease,
+    box-shadow 140ms ease,
+    transform 140ms ease !important;
+}
+
+/* @Copy button hover */
+[data-message-author-role="assistant"] .markdown
+  div[class*="sticky"][class*="top-(--sticky-padding-top)"]
+  button[aria-label="Copy"]:hover,
+[data-message-author-role="assistant"] .markdown
+  div[class*="sticky"][class*="top-"][class*="z-"]
+  button[aria-label="Copy"]:hover {
+  background: light-dark(rgba(255,255,255,0.75), rgba(255,255,255,0.13)) !important;
+  background-color: light-dark(rgba(255,255,255,0.75), rgba(255,255,255,0.13)) !important;
+
+  border-color: light-dark(rgba(0,0,0,0.16), rgba(255,255,255,0.22)) !important;
+  color: light-dark(#000, #fff) !important;
+  box-shadow:
+    0 0px 18px rgba(255, 255, 255, .28),
+    inset 0 1px 0 rgba(255,255,255,0.07) !important;
+}
+
+/* @Copy button press */
+[data-message-author-role="assistant"] .markdown
+  div[class*="sticky"][class*="top-(--sticky-padding-top)"]
+  button[aria-label="Copy"]:active,
+[data-message-author-role="assistant"] .markdown
+  div[class*="sticky"][class*="top-"][class*="z-"]
+  button[aria-label="Copy"]:active {
+  transform: translateY(1px) !important;
+}
 
 /* cgpt-reasoning-drawer $ Frosted stage thread flyout */
 /* @Targets reasoning and thinking output */
