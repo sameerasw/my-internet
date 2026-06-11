@@ -2,9 +2,35 @@
 html,
 body {
   background: transparent !important;
+  color-scheme: dark !important;
 }
 
-/* cses-header */
+/* global text */
+body,
+p,
+li,
+td,
+th,
+h1,
+h2,
+h3,
+h4,
+label,
+strong,
+b {
+  color: #e8e8e8 !important;
+}
+
+/* links */
+a {
+  color: #6fb4ff !important;
+}
+
+a:hover {
+  color: #8fc7ff !important;
+}
+
+/* header */
 .header {
   background: rgba(10, 10, 10, 0.35) !important;
 
@@ -16,8 +42,9 @@ body {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25) !important;
 }
 
-/* cses-main-content */
-.content {
+/* content containers */
+.content,
+.boxes > div {
   background: rgba(15, 15, 15, 0.45) !important;
 
   backdrop-filter: blur(12px) !important;
@@ -26,9 +53,11 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.06) !important;
 
   border-radius: 12px !important;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
 }
 
-/* cses-sidebar */
+/* sidebar */
 .sidebar {
   background: rgba(15, 15, 15, 0.55) !important;
 
@@ -38,21 +67,34 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.06) !important;
 
   border-radius: 12px !important;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+
+  margin-left: 1rem !important;
 }
 
-/* cses-homepage-cards */
-.boxes > div {
-  background: rgba(15, 15, 15, 0.45) !important;
-
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-
-  border-radius: 12px !important;
-
-  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+/* breathing room */
+.nav {
+  margin-top: 0.75rem !important;
+  margin-bottom: 1.25rem !important;
 }
 
-/* cses-task-rows */
+.content {
+  margin-top: 1rem !important;
+}
+
+.sidebar {
+  margin-top: 1rem !important;
+}
+
+/* nav tabs */
+.nav a,
+.nav .current {
+  padding: 0.35rem 0.75rem !important;
+  border-radius: 8px !important;
+}
+
+/* task rows */
 .task-list li {
   transition:
     background-color 150ms ease,
@@ -63,29 +105,59 @@ body {
   background: rgba(255, 255, 255, 0.06) !important;
 }
 
-/* cses-navigation */
-.nav a {
-  transition: opacity 150ms ease !important;
-}
-
-.nav a:hover {
-  opacity: 1 !important;
-}
-
-/* cses-forms */
+/* inputs */
 input[type="text"],
 input[type="password"],
 textarea,
 select {
   background: rgba(20, 20, 20, 0.35) !important;
 
+  color: #e8e8e8 !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+
+  border-radius: 8px !important;
+
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+}
+
+/* buttons */
+button,
+input[type="submit"],
+input[type="button"] {
+  background: rgba(255, 255, 255, 0.08) !important;
+
+  color: #e8e8e8 !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+
+  border-radius: 8px !important;
+
+  padding: 0.5rem 1rem !important;
+
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
 
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease !important;
 }
 
-/* cses-tables */
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* file picker */
+input[type="file"] {
+  color: #e8e8e8 !important;
+}
+
+/* tables */
 table {
   background: transparent !important;
 }
@@ -94,7 +166,18 @@ tbody tr:nth-child(even) {
   background: rgba(255, 255, 255, 0.03) !important;
 }
 
-/* cses-separators */
+th {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* code & examples */
+pre,
+code {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-radius: 6px !important;
+}
+
+/* separators */
 hr {
   opacity: 0.25 !important;
 }
