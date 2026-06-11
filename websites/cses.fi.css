@@ -1,0 +1,100 @@
+/* cses-background */
+html,
+body {
+  background: transparent !important;
+}
+
+/* cses-header */
+.header {
+  background: rgba(10, 10, 10, 0.35) !important;
+
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* cses-main-content */
+.content {
+  background: rgba(15, 15, 15, 0.45) !important;
+
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+
+  border-radius: 12px !important;
+}
+
+/* cses-sidebar */
+.sidebar {
+  background: rgba(15, 15, 15, 0.55) !important;
+
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+
+  border-radius: 12px !important;
+}
+
+/* cses-homepage-cards */
+.boxes > div {
+  background: rgba(15, 15, 15, 0.45) !important;
+
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+
+  border-radius: 12px !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+/* cses-task-rows */
+.task-list li {
+  transition:
+    background-color 150ms ease,
+    transform 150ms ease !important;
+}
+
+.task-list li:hover {
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* cses-navigation */
+.nav a {
+  transition: opacity 150ms ease !important;
+}
+
+.nav a:hover {
+  opacity: 1 !important;
+}
+
+/* cses-forms */
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  background: rgba(20, 20, 20, 0.35) !important;
+
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* cses-tables */
+table {
+  background: transparent !important;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03) !important;
+}
+
+/* cses-separators */
+hr {
+  opacity: 0.25 !important;
+}
