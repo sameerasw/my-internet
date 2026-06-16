@@ -27,7 +27,7 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
 ## Contributors
 
 <a href="https://github.com/sameerasw/my-internet/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=sameerasw/my-internet" />
+  <img src="https://stg.contrib.rocks/image?repo=sameerasw/my-internet" />
 </a>
 
 ## Contributing styles
