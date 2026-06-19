@@ -59,7 +59,28 @@ section,
 .oc-content--main,
 body.dark_mode,
 body.light_mode,
-text-div > textarea {
+text-div > textarea,
+.C3Tghf,
+.T5QJEc,
+.Ym7tLb,
+.Zaw5lf,
+.jZ7Nke,
+.Emrchf,
+a.MTmRkb,
+[jsname="NwW5ce"],
+.fykiDc,
+.mfQCMe,
+.UV4Xae,
+.x0QKAf,
+.DNAsC,
+.n8gdCd,
+.aSMlbb,
+.A1fzDc,
+.ioxXQe,
+.Tffdbb,
+.OSOLHc,
+.HcUSHc,
+.HiceN {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -73,6 +94,7 @@ text-div > textarea {
 
 /* thumbnail hover */
 a.p137Zd,
+a.MTmRkb,
 div > [jscontroller="ooYxFe"],
 [jsname="NwW5ce"] {
   transition: all 0.3s ease-in-out !important;
@@ -80,6 +102,7 @@ div > [jscontroller="ooYxFe"],
 }
 
 a.p137Zd:hover,
+a.MTmRkb:hover,
 .d5NbRd-EScbFb-JIbuQc-hSRGPd:hover > div > [jscontroller="ooYxFe"] {
   scale: 1.1 !important;
 }
