@@ -59,7 +59,7 @@ main,
     background-color: transparent !important;
 }
 
-/* cgpt-sidebar $ Keeps sidebar header clean at top and enables glass only when Tampermonkey adds the scroll class */
+/* cgpt-sidebar $ Sidebar glass works standalone; Tampermonkey optionally switches it to scroll-only */
 .sticky.top-0.z-30,
 #stage-sidebar .sticky.top-0.z-30,
 #stage-slideover-sidebar .sticky.top-0.z-30 {
@@ -94,6 +94,7 @@ main,
     box-shadow: none !important;
 }
 
+/* @Stylus-only default matches the New chat/Search chats glass darkness */
 #sidebar-header a[aria-label="Home"],
 #sidebar-header button[aria-label="Close sidebar"],
 #sidebar-header button[aria-label*="sidebar"],
@@ -101,18 +102,72 @@ main,
 #page-header button[aria-label="Close sidebar"],
 #page-header button[aria-label*="sidebar"],
 #page-header a[href="/"] {
+    background: var(--cgpt-sidebar-glass) !important;
+    background-color: var(--cgpt-sidebar-glass) !important;
+    background-image: none !important;
+
+    backdrop-filter: blur(40px) saturate(160%) !important;
+    -webkit-backdrop-filter: blur(40px) saturate(160%) !important;
+
+    border: 1px solid light-dark(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)) !important;
+    border-radius: 12px !important;
+
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18),
+    0 4px 10px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+
+    color: var(--cgpt-glass-text-primary) !important;
+
+    transition: background-color 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    backdrop-filter 180ms ease,
+    transform 140ms ease !important;
+}
+
+/* Tampermonkey mode before scroll: logo/sidebar buttons clean */
+html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) #sidebar-header a[aria-label="Home"],
+html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) #sidebar-header button[aria-label="Close sidebar"],
+html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) #sidebar-header button[aria-label*="sidebar"],
+html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) #page-header button[aria-label="Open sidebar"],
+html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) #page-header button[aria-label="Close sidebar"],
+html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) #page-header button[aria-label*="sidebar"],
+html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) #page-header a[href="/"] {
     background: transparent !important;
     background-color: transparent !important;
     background-image: none !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     border: 1px solid transparent !important;
-    border-radius: 12px !important;
     box-shadow: none !important;
-    color: var(--cgpt-glass-text-primary) !important;
-    transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, backdrop-filter 180ms ease, transform 140ms ease !important;
 }
 
+/* Tampermonkey mode after scroll: logo/sidebar buttons match sidebar nav glass */
+html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #sidebar-header a[aria-label="Home"],
+html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #sidebar-header button[aria-label="Close sidebar"],
+html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #sidebar-header button[aria-label*="sidebar"],
+html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #page-header button[aria-label="Open sidebar"],
+html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #page-header button[aria-label="Close sidebar"],
+html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #page-header button[aria-label*="sidebar"],
+html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #page-header a[href="/"] {
+    background: var(--cgpt-sidebar-glass) !important;
+    background-color: var(--cgpt-sidebar-glass) !important;
+    background-image: none !important;
+
+    backdrop-filter: blur(40px) saturate(160%) !important;
+    -webkit-backdrop-filter: blur(40px) saturate(160%) !important;
+
+    border: 1px solid light-dark(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)) !important;
+    border-radius: 12px !important;
+
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18),
+    0 4px 10px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+
+    color: var(--cgpt-glass-text-primary) !important;
+}
+
+/* Hover */
 #sidebar-header a[aria-label="Home"]:hover,
 #sidebar-header button[aria-label="Close sidebar"]:hover,
 #sidebar-header button[aria-label*="sidebar"]:hover,
@@ -120,39 +175,9 @@ main,
 #page-header button[aria-label="Close sidebar"]:hover,
 #page-header button[aria-label*="sidebar"]:hover,
 #page-header a[href="/"]:hover {
-    background: var(--cgpt-hover) !important;
-    background-color: var(--cgpt-hover) !important;
-    border-color: var(--cgpt-border) !important;
-}
-
-html.cgpt-sidebar-scrolled #sidebar-header a[aria-label="Home"],
-html.cgpt-sidebar-scrolled #sidebar-header button[aria-label="Close sidebar"],
-html.cgpt-sidebar-scrolled #sidebar-header button[aria-label*="sidebar"],
-html.cgpt-sidebar-scrolled #page-header button[aria-label="Open sidebar"],
-html.cgpt-sidebar-scrolled #page-header button[aria-label="Close sidebar"],
-html.cgpt-sidebar-scrolled #page-header button[aria-label*="sidebar"],
-html.cgpt-sidebar-scrolled #page-header a[href="/"] {
-    background: var(--cgpt-glass-menu) !important;
-    background-color: var(--cgpt-glass-menu) !important;
-    background-image: none !important;
-    backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(125%) !important;
-    -webkit-backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(125%) !important;
-    border: 1px solid var(--cgpt-border-strong) !important;
-    border-radius: 12px !important;
-    box-shadow: var(--cgpt-shadow-soft) !important;
-    color: var(--cgpt-glass-text-primary) !important;
-}
-
-html.cgpt-sidebar-scrolled #sidebar-header a[aria-label="Home"]:hover,
-html.cgpt-sidebar-scrolled #sidebar-header button[aria-label="Close sidebar"]:hover,
-html.cgpt-sidebar-scrolled #sidebar-header button[aria-label*="sidebar"]:hover,
-html.cgpt-sidebar-scrolled #page-header button[aria-label="Open sidebar"]:hover,
-html.cgpt-sidebar-scrolled #page-header button[aria-label="Close sidebar"]:hover,
-html.cgpt-sidebar-scrolled #page-header button[aria-label*="sidebar"]:hover,
-html.cgpt-sidebar-scrolled #page-header a[href="/"]:hover {
-    background: light-dark(rgba(255, 255, 255, 0.98), rgba(30, 30, 35, 0.95)) !important;
-    background-color: light-dark(rgba(255, 255, 255, 0.98), rgba(30, 30, 35, 0.95)) !important;
-    border-color: light-dark(rgba(15, 23, 42, 0.2), rgba(255, 255, 255, 0.2)) !important;
+    background: light-dark(rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.1)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.1)) !important;
+    border-color: var(--cgpt-border-strong) !important;
 }
 
 #sidebar-header a[aria-label="Home"]:active,
@@ -165,23 +190,48 @@ html.cgpt-sidebar-scrolled #page-header a[href="/"]:hover {
     transform: translateY(1px) !important;
 }
 
+/* Stylus-only default: New chat/Search block glass ON */
 div[class*="tall:sticky"][class*="top-header-height"],
 div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] {
     position: sticky !important;
     z-index: 20 !important;
+    background: var(--cgpt-sidebar-glass) !important;
+    background-color: var(--cgpt-sidebar-glass) !important;
+    background-image: none !important;
+    backdrop-filter: blur(40px) saturate(160%) !important;
+    -webkit-backdrop-filter: blur(40px) saturate(160%) !important;
+    border: 1px solid light-dark(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18), 0 4px 10px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+    margin-top: 0.25rem !important;
+    margin-inline: 0.35rem !important;
+    width: calc(100% - 0.7rem) !important;
+    padding-bottom: 0.3rem !important;
+    transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, backdrop-filter 180ms ease !important;
+}
+
+/* Tampermonkey mode before scroll: New chat/Search block clean */
+html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) div[class*="tall:sticky"][class*="top-header-height"],
+html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] {
     background: transparent !important;
     background-color: transparent !important;
     background-image: none !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     border: 1px solid transparent !important;
-    border-radius: 16px !important;
     box-shadow: none !important;
-    margin-top: 0.25rem !important;
-    margin-inline: 0.35rem !important;
-    width: calc(100% - 0.7rem) !important;
-    padding-bottom: 0.3rem !important;
-    transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, backdrop-filter 180ms ease !important;
+}
+
+/* Tampermonkey mode after scroll: New chat/Search block glass ON */
+html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled div[class*="tall:sticky"][class*="top-header-height"],
+html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] {
+    background: var(--cgpt-sidebar-glass) !important;
+    background-color: var(--cgpt-sidebar-glass) !important;
+    background-image: none !important;
+    backdrop-filter: blur(40px) saturate(160%) !important;
+    -webkit-backdrop-filter: blur(40px) saturate(160%) !important;
+    border: 1px solid light-dark(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)) !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18), 0 4px 10px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
 }
 
 div[class*="tall:sticky"][class*="top-header-height"]::before,
@@ -198,17 +248,6 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"]::aft
     -webkit-backdrop-filter: none !important;
     border: none !important;
     box-shadow: none !important;
-}
-
-html.cgpt-sidebar-scrolled div[class*="tall:sticky"][class*="top-header-height"],
-html.cgpt-sidebar-scrolled div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] {
-    background: var(--cgpt-sidebar-glass) !important;
-    background-color: var(--cgpt-sidebar-glass) !important;
-    background-image: none !important;
-    backdrop-filter: blur(40px) saturate(160%) !important;
-    -webkit-backdrop-filter: blur(40px) saturate(160%) !important;
-    border: 1px solid light-dark(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)) !important;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18), 0 4px 10px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
 }
 
 div[class*="tall:sticky"][class*="top-header-height"] > div[aria-hidden="true"],
