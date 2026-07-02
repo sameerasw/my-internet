@@ -1,8 +1,6 @@
-/* cgpt-transparency $ Clears ChatGPT surface tokens and structural backgrounds so the wallpaper bleeds through the app shell */
-/* @Sets up shared glass tokens while avoiding broad text color overrides */
+/* cgpt-transparency $ Clears ChatGPT app surfaces so the wallpaper can bleed through */
 :root {
     color-scheme: light dark !important;
-
     --main-surface-background: transparent !important;
     --main-surface-primary: transparent !important;
     --main-surface-secondary: transparent !important;
@@ -10,24 +8,18 @@
     --sidebar-surface-secondary: transparent !important;
     --sidebar-surface-tertiary: transparent !important;
     --message-surface: transparent !important;
-
     --cgpt-glass-text-primary: light-dark(#0f172a, #f8fafc) !important;
     --cgpt-glass-text-secondary: light-dark(#334155, #cbd5e1) !important;
     --cgpt-glass-text-muted: light-dark(#64748b, #94a3b8) !important;
-
     --cgpt-glass-weak: light-dark(rgba(255, 255, 255, 0.22), rgba(0, 0, 0, 0.14)) !important;
-    --cgpt-glass: light-dark(rgba(255, 255, 255, 0.38), rgba(0, 0, 0, 0.28)) !important;
-    --cgpt-glass-strong: light-dark(rgba(255, 255, 255, 0.91), rgba(16, 16, 16, 0.86)) !important;
+    --cgpt-glass-panel: light-dark(rgba(255, 255, 255, 0.45), rgba(15, 15, 18, 0.38)) !important;
+    --cgpt-glass-panel-strong: light-dark(rgba(255, 255, 255, 0.82), rgba(10, 10, 12, 0.82)) !important;
     --cgpt-glass-menu: light-dark(rgba(255, 255, 255, 0.95), rgba(17, 17, 17, 0.93)) !important;
-
-    --cgpt-edge-glass: light-dark(rgba(255, 255, 255, 0.72), rgba(10, 10, 12, 0.66)) !important;
-    --cgpt-edge-glass-soft: light-dark(rgba(255, 255, 255, 0.58), rgba(10, 10, 12, 0.56)) !important;
-
+    --cgpt-sidebar-glass: light-dark(rgba(235, 239, 246, 0.92), rgba(16, 16, 24, 0.92)) !important;
     --cgpt-border: light-dark(rgba(15, 23, 42, 0.13), rgba(255, 255, 255, 0.13)) !important;
-    --cgpt-border-strong: light-dark(rgba(15, 23, 42, 0.17), rgba(255, 255, 255, 0.18)) !important;
+    --cgpt-border-strong: light-dark(rgba(15, 23, 42, 0.18), rgba(255, 255, 255, 0.18)) !important;
     --cgpt-hover: light-dark(rgba(15, 23, 42, 0.055), rgba(255, 255, 255, 0.07)) !important;
     --cgpt-active: light-dark(rgba(15, 23, 42, 0.085), rgba(255, 255, 255, 0.12)) !important;
-
     --cgpt-blur: 18px !important;
     --cgpt-blur-strong: 30px !important;
     --cgpt-radius: 16px !important;
@@ -50,7 +42,6 @@ main,
     background-color: transparent !important;
 }
 
-/* @Safe shell clears. Broad enough for transparency, not so broad that scroll layout dies in a ditch. */
 .bg-token-main-surface-primary,
 .bg-token-main-surface-secondary,
 .bg-token-bg-primary,
@@ -68,179 +59,192 @@ main,
     background-color: transparent !important;
 }
 
-#thread-bottom + .text-token-text-secondary > div {
-    opacity: 0 !important;
-    pointer-events: none !important;
-}
-
-/* cgpt-sidebar $ Frosted sidebar with safe scroll-edge glass helpers */
-/* @Styles only sidebar surfaces and ChatGPT's own scroll helper, not every sticky element */
-#stage-slideover-sidebar,
-#stage-sidebar,
-#stage-sidebar-header {
-    background: var(--cgpt-glass-weak) !important;
-    background-color: var(--cgpt-glass-weak) !important;
-    backdrop-filter: blur(var(--cgpt-blur)) saturate(118%) !important;
-    -webkit-backdrop-filter: blur(var(--cgpt-blur)) saturate(118%) !important;
-    border-inline-end: 1px solid var(--cgpt-border) !important;
-    box-shadow: 10px 0 32px rgba(0, 0, 0, 0.12) !important;
-    will-change: backdrop-filter !important;
-}
-
-#stage-slideover-sidebar > div,
-#stage-slideover-sidebar > div > div.opacity-100,
-#stage-sidebar > div,
-#stage-sidebar-tiny-bar,
-nav[aria-label="Chat history"],
-nav[aria-label="Navigation"],
-#history,
-#stage-slideover-sidebar h2,
-#stage-sidebar h2 {
-    background: transparent !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-
-/* @Sticky sidebar blocks stay transparent. The scroll helper gives the fade only while ChatGPT shows it. */
-#sidebar-header,
-#sidebar-header > *,
-#sidebar-header a,
-#sidebar-header button,
-nav[aria-label="Chat history"] .sticky,
-nav[aria-label="Chat history"] > div,
-nav[aria-label="Chat history"] > div[class*="pt-(--sidebar-section-first-margin-top)"],
-nav[aria-label="Chat history"] > div[class*="tall:top-header-height"],
-nav[aria-label="Chat history"] > div[class*="tall:sticky"][class*="top-header-height"],
-[aria-label="Chat history"] > .bg-token-bg-elevated-secondary.sticky,
-[aria-label="Chat history"] > .tall\:sticky {
+/* cgpt-sidebar $ Keeps sidebar header clean at top and enables glass only when Tampermonkey adds the scroll class */
+.sticky.top-0.z-30,
+#stage-sidebar .sticky.top-0.z-30,
+#stage-slideover-sidebar .sticky.top-0.z-30 {
+    position: sticky !important;
+    z-index: 30 !important;
     background: transparent !important;
     background-color: transparent !important;
     background-image: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin-inline: 0 !important;
+    width: 100% !important;
+}
+
+.sticky.top-0.z-30::before,
+.sticky.top-0.z-30::after,
+#stage-sidebar .sticky.top-0.z-30::before,
+#stage-sidebar .sticky.top-0.z-30::after,
+#stage-slideover-sidebar .sticky.top-0.z-30::before,
+#stage-slideover-sidebar .sticky.top-0.z-30::after {
+    content: none !important;
+    display: none !important;
+    opacity: 0 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: none !important;
     box-shadow: none !important;
 }
 
-/* @Keep the real list above the helper layer. */
-nav[aria-label="Chat history"] > div[class*="pt-(--sidebar-section-first-margin-top)"] ul,
-nav[aria-label="Chat history"] > div[class*="tall:top-header-height"] ul,
-nav[aria-label="Chat history"] > div[class*="tall:sticky"][class*="top-header-height"] ul {
+#sidebar-header a[aria-label="Home"],
+#sidebar-header button[aria-label="Close sidebar"],
+#sidebar-header button[aria-label*="sidebar"],
+#page-header button[aria-label="Open sidebar"],
+#page-header button[aria-label="Close sidebar"],
+#page-header button[aria-label*="sidebar"],
+#page-header a[href="/"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid transparent !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    color: var(--cgpt-glass-text-primary) !important;
+    transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, backdrop-filter 180ms ease, transform 140ms ease !important;
+}
+
+#sidebar-header a[aria-label="Home"]:hover,
+#sidebar-header button[aria-label="Close sidebar"]:hover,
+#sidebar-header button[aria-label*="sidebar"]:hover,
+#page-header button[aria-label="Open sidebar"]:hover,
+#page-header button[aria-label="Close sidebar"]:hover,
+#page-header button[aria-label*="sidebar"]:hover,
+#page-header a[href="/"]:hover {
+    background: var(--cgpt-hover) !important;
+    background-color: var(--cgpt-hover) !important;
+    border-color: var(--cgpt-border) !important;
+}
+
+html.cgpt-sidebar-scrolled #sidebar-header a[aria-label="Home"],
+html.cgpt-sidebar-scrolled #sidebar-header button[aria-label="Close sidebar"],
+html.cgpt-sidebar-scrolled #sidebar-header button[aria-label*="sidebar"],
+html.cgpt-sidebar-scrolled #page-header button[aria-label="Open sidebar"],
+html.cgpt-sidebar-scrolled #page-header button[aria-label="Close sidebar"],
+html.cgpt-sidebar-scrolled #page-header button[aria-label*="sidebar"],
+html.cgpt-sidebar-scrolled #page-header a[href="/"] {
+    background: var(--cgpt-glass-menu) !important;
+    background-color: var(--cgpt-glass-menu) !important;
+    background-image: none !important;
+    backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(125%) !important;
+    -webkit-backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(125%) !important;
+    border: 1px solid var(--cgpt-border-strong) !important;
+    border-radius: 12px !important;
+    box-shadow: var(--cgpt-shadow-soft) !important;
+    color: var(--cgpt-glass-text-primary) !important;
+}
+
+html.cgpt-sidebar-scrolled #sidebar-header a[aria-label="Home"]:hover,
+html.cgpt-sidebar-scrolled #sidebar-header button[aria-label="Close sidebar"]:hover,
+html.cgpt-sidebar-scrolled #sidebar-header button[aria-label*="sidebar"]:hover,
+html.cgpt-sidebar-scrolled #page-header button[aria-label="Open sidebar"]:hover,
+html.cgpt-sidebar-scrolled #page-header button[aria-label="Close sidebar"]:hover,
+html.cgpt-sidebar-scrolled #page-header button[aria-label*="sidebar"]:hover,
+html.cgpt-sidebar-scrolled #page-header a[href="/"]:hover {
+    background: light-dark(rgba(255, 255, 255, 0.98), rgba(30, 30, 35, 0.95)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.98), rgba(30, 30, 35, 0.95)) !important;
+    border-color: light-dark(rgba(15, 23, 42, 0.2), rgba(255, 255, 255, 0.2)) !important;
+}
+
+#sidebar-header a[aria-label="Home"]:active,
+#sidebar-header button[aria-label="Close sidebar"]:active,
+#sidebar-header button[aria-label*="sidebar"]:active,
+#page-header button[aria-label="Open sidebar"]:active,
+#page-header button[aria-label="Close sidebar"]:active,
+#page-header button[aria-label*="sidebar"]:active,
+#page-header a[href="/"]:active {
+    transform: translateY(1px) !important;
+}
+
+div[class*="tall:sticky"][class*="top-header-height"],
+div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] {
+    position: sticky !important;
+    z-index: 20 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid transparent !important;
+    border-radius: 16px !important;
+    box-shadow: none !important;
+    margin-top: 0.25rem !important;
+    margin-inline: 0.35rem !important;
+    width: calc(100% - 0.7rem) !important;
+    padding-bottom: 0.3rem !important;
+    transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, backdrop-filter 180ms ease !important;
+}
+
+div[class*="tall:sticky"][class*="top-header-height"]::before,
+div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"]::before,
+div[class*="tall:sticky"][class*="top-header-height"]::after,
+div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"]::after {
+    content: none !important;
+    display: none !important;
+    opacity: 0 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+html.cgpt-sidebar-scrolled div[class*="tall:sticky"][class*="top-header-height"],
+html.cgpt-sidebar-scrolled div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] {
+    background: var(--cgpt-sidebar-glass) !important;
+    background-color: var(--cgpt-sidebar-glass) !important;
+    background-image: none !important;
+    backdrop-filter: blur(40px) saturate(160%) !important;
+    -webkit-backdrop-filter: blur(40px) saturate(160%) !important;
+    border: 1px solid light-dark(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)) !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18), 0 4px 10px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+}
+
+div[class*="tall:sticky"][class*="top-header-height"] > div[aria-hidden="true"],
+div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] > div[aria-hidden="true"] {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+div[class*="tall:sticky"][class*="top-header-height"] > ul,
+div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] > ul {
     position: relative !important;
     z-index: 2 !important;
     background: transparent !important;
     background-color: transparent !important;
-    background-image: none !important;
 }
 
-/* @Sidebar top scroll-glass helper. */
-nav[aria-label="Chat history"] > div[class*="pt-(--sidebar-section-first-margin-top)"] > div[aria-hidden="true"].pointer-events-none.absolute,
-nav[aria-label="Chat history"] > div[class*="tall:top-header-height"] > div[aria-hidden="true"].pointer-events-none.absolute,
-nav[aria-label="Chat history"] > div[class*="tall:sticky"][class*="top-header-height"] > div[aria-hidden="true"].pointer-events-none.absolute {
-    top: calc(-1 * var(--header-height, 3.5rem)) !important;
-    bottom: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    inset-inline-start: 0 !important;
-    inset-inline-end: 0 !important;
-
-    height: calc(var(--header-height, 3.5rem) + 100%) !important;
-    min-height: calc(var(--header-height, 3.5rem) + 100%) !important;
-
-    z-index: 1 !important;
-    pointer-events: none !important;
-
-    background: var(--cgpt-edge-glass-soft) !important;
-    background-color: var(--cgpt-edge-glass-soft) !important;
-    background-image: linear-gradient(to bottom, light-dark(rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.045)), light-dark(rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.1))) !important;
-
-    backdrop-filter: blur(22px) saturate(118%) !important;
-    -webkit-backdrop-filter: blur(22px) saturate(118%) !important;
-
-    border-bottom: 1px solid var(--cgpt-border) !important;
-
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
-
-    transition: opacity 180ms ease,
-    background-color 180ms ease,
-    background 180ms ease,
-    backdrop-filter 180ms ease,
-    -webkit-backdrop-filter 180ms ease,
-    box-shadow 180ms ease !important;
-}
-
-/* @Generic scroll-edge helpers elsewhere. */
-[aria-hidden="true"].pointer-events-none.absolute[class*="group-data-scrolled-from-top"],
-[aria-hidden="true"].pointer-events-none.absolute[class*="sharp-edge"],
-[aria-hidden="true"].pointer-events-none.absolute[class*="sticky-spacer"],
-[aria-hidden="true"].pointer-events-none.absolute[class*="will-change"],
-[aria-hidden="true"][class*="group-data-scrolled-from-top"][class*="opacity"],
-[aria-hidden="true"][class*="sharp-edge"][class*="opacity"] {
-    background: var(--cgpt-edge-glass) !important;
-    background-color: var(--cgpt-edge-glass) !important;
-    background-image: linear-gradient(to bottom, light-dark(rgba(255, 255, 255, 0.32), rgba(255, 255, 255, 0.045)), light-dark(rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.1))) !important;
-
-    backdrop-filter: blur(22px) saturate(118%) !important;
-    -webkit-backdrop-filter: blur(22px) saturate(118%) !important;
-
-    border-bottom: 1px solid var(--cgpt-border) !important;
-
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
-
-    pointer-events: none !important;
-
-    transition: opacity 180ms ease,
-    background-color 180ms ease,
-    background 180ms ease,
-    backdrop-filter 180ms ease,
-    -webkit-backdrop-filter 180ms ease,
-    box-shadow 180ms ease !important;
-}
-
-/* @Sidebar text readability. */
-#sidebar-header {
-    position: relative !important;
-    z-index: 3 !important;
-}
-
-html.light #sidebar-header .header-wordmark,
-html.light #sidebar-header .header-wordmark span,
-html.light #sidebar-header a[aria-label="Home"],
-html.light .header-wordmark,
-html.light nav[aria-label="Chat history"] .truncate,
-html.light nav[aria-label="Navigation"] .truncate {
-    color: inherit !important;
-    text-shadow: none !important;
-}
-
-html.dark #sidebar-header .header-wordmark,
-html.dark #sidebar-header .header-wordmark span,
-html.dark #sidebar-header a[aria-label="Home"],
-html.dark .header-wordmark,
-html.dark nav[aria-label="Chat history"] .truncate,
-html.dark nav[aria-label="Navigation"] .truncate {
-    color: rgba(255, 255, 255, 0.94) !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.28) !important;
-}
-
-[data-sidebar-item] {
-    border-radius: 12px !important;
+div[class*="tall:sticky"][class*="top-header-height"] [data-sidebar-item],
+div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] [data-sidebar-item] {
+    border-radius: 10px !important;
     background: transparent !important;
-    transition: background-color 140ms ease,
-    box-shadow 140ms ease !important;
+    background-color: transparent !important;
+    transition: background-color 140ms ease, box-shadow 140ms ease !important;
 }
 
-[data-sidebar-item]:hover {
+div[class*="tall:sticky"][class*="top-header-height"] [data-sidebar-item]:hover,
+div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] [data-sidebar-item]:hover {
     background: var(--cgpt-hover) !important;
+    background-color: var(--cgpt-hover) !important;
     box-shadow: inset 0 0 0 1px var(--cgpt-border) !important;
 }
 
-[data-sidebar-item][data-active],
-[data-sidebar-item][aria-current="page"] {
-    background: var(--cgpt-active) !important;
-    box-shadow: inset 0 0 0 1px var(--cgpt-border-strong) !important;
-}
-
-/* cgpt-header $ Keeps page header background invisible and styles only Share / options buttons */
+/* cgpt-page-header $ Keeps the main chat header transparent while styling action buttons */
 #page-header,
 #page-header[data-fixed-header],
 [data-voice-floating-orb-focus-background] > #page-header {
@@ -280,44 +284,20 @@ html.dark nav[aria-label="Navigation"] .truncate {
     box-shadow: none !important;
 }
 
-/* @Share button */
 #page-header [data-testid="share-chat-button"],
-#conversation-header-actions [data-testid="share-chat-button"] {
-    color: light-dark(#111827, rgba(255, 255, 255, 0.94)) !important;
-    background: light-dark(rgba(255, 255, 255, 0.72), rgba(10, 10, 12, 0.62)) !important;
-    background-color: light-dark(rgba(255, 255, 255, 0.72), rgba(10, 10, 12, 0.62)) !important;
-    background-image: linear-gradient(to bottom, light-dark(rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.07)), light-dark(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0))) !important;
-
-    backdrop-filter: blur(18px) saturate(118%) !important;
-    -webkit-backdrop-filter: blur(18px) saturate(118%) !important;
-
-    border: 1px solid var(--cgpt-border-strong) !important;
-    border-radius: 14px !important;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
-
-    transition: background-color 140ms ease,
-    border-color 140ms ease,
-    transform 140ms ease !important;
-}
-
-/* @Three dots button */
+#conversation-header-actions [data-testid="share-chat-button"],
 #page-header [data-testid="conversation-options-button"],
 #conversation-header-actions [data-testid="conversation-options-button"] {
     color: light-dark(#111827, rgba(255, 255, 255, 0.94)) !important;
-    background: light-dark(rgba(255, 255, 255, 0.62), rgba(10, 10, 12, 0.52)) !important;
-    background-color: light-dark(rgba(255, 255, 255, 0.62), rgba(10, 10, 12, 0.52)) !important;
-    background-image: linear-gradient(to bottom, light-dark(rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0.06)), light-dark(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.09))) !important;
-
-    backdrop-filter: blur(18px) saturate(118%) !important;
-    -webkit-backdrop-filter: blur(18px) saturate(118%) !important;
-
+    background: light-dark(rgba(255, 255, 255, 0.66), rgba(10, 10, 12, 0.56)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.66), rgba(10, 10, 12, 0.56)) !important;
+    background-image: linear-gradient(to bottom, light-dark(rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.06)), light-dark(rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.05))) !important;
+    backdrop-filter: blur(var(--cgpt-blur)) saturate(118%) !important;
+    -webkit-backdrop-filter: blur(var(--cgpt-blur)) saturate(118%) !important;
     border: 1px solid var(--cgpt-border-strong) !important;
     border-radius: 14px !important;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
-
-    transition: background-color 140ms ease,
-    border-color 140ms ease,
-    transform 140ms ease !important;
+    transition: background-color 140ms ease, border-color 140ms ease, transform 140ms ease !important;
 }
 
 #page-header [data-testid="share-chat-button"]:hover,
@@ -328,36 +308,21 @@ html.dark nav[aria-label="Navigation"] .truncate {
     background: light-dark(rgba(255, 255, 255, 0.82), rgba(18, 18, 24, 0.74)) !important;
     background-color: light-dark(rgba(255, 255, 255, 0.82), rgba(18, 18, 24, 0.74)) !important;
     border-color: light-dark(rgba(15, 23, 42, 0.2), rgba(255, 255, 255, 0.2)) !important;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
 }
 
 #page-header [data-testid="share-chat-button"]:active,
 #page-header [data-testid="conversation-options-button"]:active {
     transform: translateY(1px) !important;
-    background: light-dark(rgba(255, 255, 255, 0.88), rgba(8, 8, 10, 0.78)) !important;
-    background-color: light-dark(rgba(255, 255, 255, 0.88), rgba(8, 8, 10, 0.78)) !important;
 }
 
 #page-header [data-testid="share-chat-button"] svg,
-#page-header [data-testid="conversation-options-button"] svg {
+#page-header [data-testid="conversation-options-button"] svg,
+#page-header [data-testid="share-chat-button"] div {
     color: currentColor !important;
     opacity: 0.95 !important;
 }
 
-#page-header [data-testid="share-chat-button"] div {
-    color: currentColor !important;
-}
-
-/* cgpt-search-sources-header $ Clears OLED variables and backgrounds for the Activity header */
-[data-testid="bar-search-sources-header"],
-[data-testid="bar-search-sources-header"] > div {
-    --main-surface-primary: #0000 !important;
-    background-color: #0000 !important;
-    background: transparent !important;
-    box-shadow: none !important;
-}
-
-/* cgpt-composer $ Translucent unified composer input surface */
+/* cgpt-composer $ Adds a frosted glass composer without blocking transparency */
 #thread-bottom-container,
 #thread-bottom,
 #thread-bottom-container > div,
@@ -377,20 +342,19 @@ html.dark nav[aria-label="Navigation"] .truncate {
     opacity: 0 !important;
 }
 
+#thread-bottom-container {
+    background: linear-gradient(to top, light-dark(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.34)), transparent) !important;
+}
+
 #thread-bottom-container [data-composer-surface="true"],
 form[data-type="unified-composer"] [data-composer-surface="true"] {
-    background: linear-gradient(to bottom, light-dark(rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.045)), light-dark(rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.1))),
-    light-dark(rgba(255, 255, 255, 0.82), rgba(10, 10, 12, 0.82)) !important;
-
+    background: linear-gradient(to bottom, light-dark(rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.045)), light-dark(rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.1))), var(--cgpt-glass-panel-strong) !important;
+    background-color: var(--cgpt-glass-panel-strong) !important;
     backdrop-filter: blur(100px) saturate(120%) !important;
     -webkit-backdrop-filter: blur(100px) saturate(120%) !important;
-
     border: 1px solid light-dark(rgba(15, 23, 42, 0.13), rgba(255, 255, 255, 0.16)) !important;
     border-radius: 28px !important;
-
-    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.32),
-    inset 0 1px 0 rgba(255, 255, 255, 0.28),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.035) !important;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.28), inset 0 0 0 1px rgba(255, 255, 255, 0.035) !important;
 }
 
 .wcDTda_prosemirror-parent,
@@ -429,10 +393,10 @@ form[data-type="unified-composer"] .__composer-pill-remove,
 [data-composer-surface="true"] .__composer-pill-remove,
 [data-composer-surface="true"] #composer-plus-btn {
     background: light-dark(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.075)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.075)) !important;
     border: 1px solid light-dark(rgba(15, 23, 42, 0.1), rgba(255, 255, 255, 0.13)) !important;
     color: var(--cgpt-glass-text-primary) !important;
-    transition: background-color 140ms ease,
-    box-shadow 140ms ease !important;
+    transition: background-color 140ms ease, box-shadow 140ms ease !important;
 }
 
 form[data-type="unified-composer"] .composer-btn:hover,
@@ -441,6 +405,7 @@ form[data-type="unified-composer"] .__composer-pill:hover,
 [data-composer-surface="true"] .__composer-pill:hover,
 [data-composer-surface="true"] #composer-plus-btn:hover {
     background: light-dark(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.13)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.13)) !important;
 }
 
 form[data-type="unified-composer"] .composer-submit-button-color {
@@ -449,25 +414,24 @@ form[data-type="unified-composer"] .composer-submit-button-color {
 
 [data-testid="composer-footer-actions"] {
     background: transparent !important;
+    background-color: transparent !important;
 }
 
-#thread-bottom-container {
-    background: linear-gradient(to top, light-dark(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.34)), transparent) !important;
-}
-
-/* cgpt-messages $ Glass bubbles for chat messages */
+/* cgpt-messages $ Styles chat turns as readable glass bubbles */
 .user-message-bubble-color,
 .bg-token-message-surface {
     background: light-dark(rgba(255, 255, 255, 0.45), rgba(20, 20, 20, 0.4)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.45), rgba(20, 20, 20, 0.4)) !important;
     backdrop-filter: blur(14px) saturate(112%) !important;
     -webkit-backdrop-filter: blur(14px) saturate(112%) !important;
     border: 1px solid var(--cgpt-border) !important;
-    box-shadow: var(--cgpt-shadow-soft) !important;
     border-radius: 1.375rem 1.375rem 0.25rem 1.375rem !important;
+    box-shadow: var(--cgpt-shadow-soft) !important;
 }
 
 [data-message-author-role="user"] .group\/message-image {
     background: light-dark(rgba(255, 255, 255, 0.3), rgba(20, 20, 20, 0.3)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.3), rgba(20, 20, 20, 0.3)) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
     border-radius: 1.75rem !important;
@@ -479,6 +443,7 @@ form[data-type="unified-composer"] .composer-submit-button-color {
     padding: 0.85rem 1rem !important;
     border-radius: 1.375rem 1.375rem 1.375rem 0.25rem !important;
     background: light-dark(rgba(255, 255, 255, 0.35), rgba(15, 15, 15, 0.3)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.35), rgba(15, 15, 15, 0.3)) !important;
     backdrop-filter: blur(12px) saturate(110%) !important;
     -webkit-backdrop-filter: blur(12px) saturate(110%) !important;
     border: 1px solid var(--cgpt-border) !important;
@@ -493,59 +458,29 @@ form[data-type="unified-composer"] .composer-submit-button-color {
     margin-bottom: 0 !important;
 }
 
-[data-message-author-role="assistant"] button[aria-label*="Copy"],
-button[aria-label*="Copy code"],
-[data-testid="copy-turn-action-button"] {
-    background: light-dark(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.08)) !important;
-    backdrop-filter: blur(18px) saturate(120%) !important;
-    -webkit-backdrop-filter: blur(18px) saturate(120%) !important;
-    border: 1px solid var(--cgpt-border) !important;
-    border-radius: 10px !important;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
-    color: var(--cgpt-glass-text-primary) !important;
-}
-
-[data-message-author-role="assistant"] button[aria-label*="Copy"]:hover,
-button[aria-label*="Copy code"]:hover,
-[data-testid="copy-turn-action-button"]:hover {
-    background: light-dark(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.14)) !important;
-    border-color: var(--cgpt-border-strong) !important;
-}
-
 .group\/conversation-turn > div > div.justify-start {
     opacity: 0 !important;
 }
 
-/* cgpt-code-blocks-glass-panel $ Glassmorphic outer code block panels */
-/* Outer border wrapper */
+/* cgpt-code $ Gives code blocks and copy buttons frosted panels */
 [data-message-author-role="assistant"] .markdown .border-token-border-light,
 [data-message-author-role="assistant"] pre > div > div > div > div > div > div.border-token-border-light {
     border: 1px solid light-dark(rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.14)) !important;
     border-radius: 1.5rem !important;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18),
-    0 2px 8px rgba(0, 0, 0, 0.10),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
 }
 
-/* Inner elevated surface — the actual frosted panel */
 [data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary,
 [data-message-author-role="assistant"] pre > div > div > div > div > div > div > .bg-token-bg-elevated-secondary {
-    background: light-dark( rgba(255, 255, 255, 0.22),
-    rgba(12, 12, 18, 0.42)) !important;
-    background-color: light-dark( rgba(255, 255, 255, 0.22),
-    rgba(12, 12, 18, 0.42)) !important;
-    background-image: linear-gradient( 160deg,
-    light-dark(rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.04)) 0%,
-    light-dark(rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.08)) 100%) !important;
-
+    background: light-dark(rgba(255, 255, 255, 0.22), rgba(12, 12, 18, 0.42)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.22), rgba(12, 12, 18, 0.42)) !important;
+    background-image: linear-gradient(160deg, light-dark(rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.04)) 0%, light-dark(rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.08)) 100%) !important;
     backdrop-filter: blur(20px) saturate(130%) brightness(1.04) !important;
     -webkit-backdrop-filter: blur(20px) saturate(130%) brightness(1.04) !important;
-
     border-radius: 1.5rem !important;
     overflow: clip !important;
 }
 
-/* Code content area — keep transparent so glass shows through */
 [data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary .cm-editor,
 [data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary .cm-scroller,
 [data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary pre.cm-content,
@@ -555,114 +490,55 @@ button[aria-label*="Copy code"]:hover,
     background-image: none !important;
 }
 
-/* Copy button inside panel */
+[data-message-author-role="assistant"] button[aria-label*="Copy"],
+button[aria-label*="Copy code"],
+[data-testid="copy-turn-action-button"],
 [data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary button[aria-label="Copy"] {
-    background: light-dark( rgba(255, 255, 255, 0.52),
-    rgba(255, 255, 255, 0.09)) !important;
-    background-color: light-dark( rgba(255, 255, 255, 0.52),
-    rgba(255, 255, 255, 0.09)) !important;
-    border: 1px solid light-dark( rgba(15, 23, 42, 0.14),
-    rgba(255, 255, 255, 0.14)) !important;
-    border-radius: 999px !important;
+    background: light-dark(rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.09)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.09)) !important;
     backdrop-filter: blur(14px) saturate(118%) !important;
     -webkit-backdrop-filter: blur(14px) saturate(118%) !important;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14),
-    0 2px 8px rgba(0, 0, 0, 0.12) !important;
-    color: light-dark(#1e293b, rgba(248, 250, 252, 0.88)) !important;
-    transition: background-color 140ms ease,
-    border-color 140ms ease,
-    box-shadow 140ms ease,
-    transform 140ms ease !important;
+    border: 1px solid var(--cgpt-border) !important;
+    border-radius: 10px !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 2px 8px rgba(0, 0, 0, 0.12) !important;
+    color: var(--cgpt-glass-text-primary) !important;
+    transition: background-color 140ms ease, border-color 140ms ease, box-shadow 140ms ease, transform 140ms ease !important;
 }
 
+[data-message-author-role="assistant"] button[aria-label*="Copy"]:hover,
+button[aria-label*="Copy code"]:hover,
+[data-testid="copy-turn-action-button"]:hover,
 [data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary button[aria-label="Copy"]:hover {
-    background: light-dark( rgba(255, 255, 255, 0.76),
-    rgba(255, 255, 255, 0.16)) !important;
-    border-color: light-dark( rgba(15, 23, 42, 0.2),
-    rgba(255, 255, 255, 0.22)) !important;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18),
-    0 4px 12px rgba(0, 0, 0, 0.16) !important;
+    background: light-dark(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.16)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.16)) !important;
+    border-color: var(--cgpt-border-strong) !important;
 }
 
-[data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary button[aria-label="Copy"]:active {
-    transform: translateY(1px) scale(0.97) !important;
-}
-
-/* cgpt-code-header-glass $ Gives code block sticky headers readable glass surfaces */
 [data-message-author-role="assistant"] .markdown div[class*="sticky"] > div[class*="bg-token-bg-elevated-secondary"] {
     background: transparent !important;
     background-color: transparent !important;
     background-image: none !important;
 }
 
-[data-message-author-role="assistant"] .markdown div[class*="sticky"] > div[class*="bg-token-bg-elevated-secondary"] .text-token-text-primary {
-    background: light-dark(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.58)) !important;
-    background-color: light-dark(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.58)) !important;
-    background-image: none !important;
-    border: 1px solid var(--cgpt-border) !important;
-    border-radius: 12px !important;
-    color: var(--cgpt-glass-text-primary) !important;
-
-    padding: 4px 12px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 6px !important;
-
-    box-shadow: 0 0px 18px light-dark(rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.12)),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
-
-    backdrop-filter: blur(14px) saturate(116%) !important;
-    -webkit-backdrop-filter: blur(14px) saturate(116%) !important;
-}
-
-[data-message-author-role="assistant"] .markdown div[class*="sticky"] > div[class*="bg-token-bg-elevated-secondary"] svg {
-    color: inherit !important;
-    fill: currentColor !important;
-    width: 14px !important;
-    height: 14px !important;
-    margin: 0 !important;
-}
-
+[data-message-author-role="assistant"] .markdown div[class*="sticky"] > div[class*="bg-token-bg-elevated-secondary"] .text-token-text-primary,
 [data-message-author-role="assistant"] .markdown div[class*="sticky"][class*="top-(--sticky-padding-top)"] button[aria-label="Copy"],
 [data-message-author-role="assistant"] .markdown div[class*="sticky"][class*="top-"][class*="z-"] button[aria-label="Copy"] {
     background: light-dark(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.58)) !important;
     background-color: light-dark(rgba(255, 255, 255, 0.7), rgba(0, 0, 0, 0.58)) !important;
     background-image: none !important;
-
-    border: 1px solid var(--cgpt-border) !important;
-    border-radius: 12px !important;
-
-    color: var(--cgpt-glass-text-primary) !important;
-
-    box-shadow: 0 0px 18px light-dark(rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.12)),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
-
     backdrop-filter: blur(14px) saturate(116%) !important;
     -webkit-backdrop-filter: blur(14px) saturate(116%) !important;
-
-    transition: background-color 140ms ease,
-    border-color 140ms ease,
-    box-shadow 140ms ease,
-    transform 140ms ease !important;
-}
-
-[data-message-author-role="assistant"] .markdown div[class*="sticky"][class*="top-(--sticky-padding-top)"] button[aria-label="Copy"]:hover,
-[data-message-author-role="assistant"] .markdown div[class*="sticky"][class*="top-"][class*="z-"] button[aria-label="Copy"]:hover {
-    background: light-dark(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.13)) !important;
-    background-color: light-dark(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.13)) !important;
-    border-color: var(--cgpt-border-strong) !important;
+    border: 1px solid var(--cgpt-border) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 0 18px light-dark(rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.12)), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
     color: var(--cgpt-glass-text-primary) !important;
 }
 
-[data-message-author-role="assistant"] .markdown div[class*="sticky"][class*="top-(--sticky-padding-top)"] button[aria-label="Copy"]:active,
-[data-message-author-role="assistant"] .markdown div[class*="sticky"][class*="top-"][class*="z-"] button[aria-label="Copy"]:active {
-    transform: translateY(1px) !important;
-}
-
-/* cgpt-reasoning-drawer $ Frosted stage thread flyout */
+/* cgpt-flyout $ Styles reasoning and stage thread flyouts */
 [data-testid="stage-thread-flyout"],
 [data-stage-thread-flyout="true"] {
     background: var(--cgpt-glass-weak) !important;
+    background-color: var(--cgpt-glass-weak) !important;
     backdrop-filter: blur(24px) saturate(118%) !important;
     -webkit-backdrop-filter: blur(24px) saturate(118%) !important;
     border-left: 1px solid var(--cgpt-border) !important;
@@ -685,27 +561,27 @@ section[aria-label="Reasoning details"] [class*="border-"] {
     border-color: var(--cgpt-border) !important;
 }
 
-/* cgpt-popovers $ Strong frosted glass on Radix menus, tooltips and dialogs */
+/* cgpt-popovers $ Applies strong glass to menus, dialogs, tooltips, and composer dropdowns */
 [role="tooltip"],
-[class="tooltip"] {
-    background: var(--cgpt-glass-menu) !important;
-    backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(120%) !important;
-    -webkit-backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(120%) !important;
-    border: 1px solid var(--cgpt-border-strong) !important;
-    box-shadow: var(--cgpt-shadow) !important;
-    color: var(--cgpt-glass-text-primary) !important;
-}
-
+[class="tooltip"],
 [data-radix-popper-content-wrapper] > div,
 [role="menu"],
 [role="dialog"],
-[role="alertdialog"] {
+[role="alertdialog"],
+form[data-type="unified-composer"] [role="listbox"],
+form[data-type="unified-composer"] ul,
+[data-radix-popper-content-wrapper] div[class*="bg-token-"],
+div[class*="popover"][class*="bg-token-"] {
     --main-surface-primary: var(--cgpt-glass-menu) !important;
     background: var(--cgpt-glass-menu) !important;
+    background-color: var(--cgpt-glass-menu) !important;
+    background-image: none !important;
     backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(122%) !important;
     -webkit-backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(122%) !important;
-    border-color: var(--cgpt-border-strong) !important;
+    border: 1px solid var(--cgpt-border-strong) !important;
+    border-radius: 16px !important;
     box-shadow: var(--cgpt-shadow) !important;
+    color: var(--cgpt-glass-text-primary) !important;
 }
 
 #modal-settings > div::before {
@@ -714,43 +590,25 @@ section[aria-label="Reasoning details"] [class*="border-"] {
     -webkit-backdrop-filter: blur(4px) !important;
 }
 
-#modal-settings [role="dialog"] {
-    background: var(--cgpt-glass-menu) !important;
-    backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(122%) !important;
-    -webkit-backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(122%) !important;
-    border: 1px solid var(--cgpt-border-strong) !important;
-}
-
-/* cgpt-omni-dropdown $ Fixes text overlap/transparency in the tool/GPT mention dropdown menu */
-form[data-type="unified-composer"] [role="listbox"],
-form[data-type="unified-composer"] ul,
-[data-radix-popper-content-wrapper] div[class*="bg-token-"],
-div[class*="popover"][class*="bg-token-"] {
-    background: var(--cgpt-glass-menu) !important;
-    background-color: var(--cgpt-glass-menu) !important;
-    background-image: none !important;
-
-    backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(125%) !important;
-    -webkit-backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(125%) !important;
-
-    border: 1px solid var(--cgpt-border-strong) !important;
-    box-shadow: var(--cgpt-shadow) !important;
-    border-radius: 16px !important;
-}
-
 form[data-type="unified-composer"] [role="listbox"] input,
 form[data-type="unified-composer"] [role="listbox"] div {
     color: var(--cgpt-glass-text-primary) !important;
 }
 
-/* cgpt-library $ Fixes Library artifact controls */
+/* cgpt-pages $ Fixes Library, Apps, GPTs, and search surfaces */
+[data-testid="bar-search-sources-header"],
+[data-testid="bar-search-sources-header"] > div,
 [data-testid="artifacts-surface-top-controls"],
 [data-testid="artifacts-surface-top-controls"] .bg-surface-primary,
 [data-testid="artifacts-surface-top-controls"] [class="bg-gradient"],
-[data-testid="artifacts-surface-top-controls"] [class*="from-token-bg"] {
+[data-testid="artifacts-surface-top-controls"] [class*="from-token-bg"],
+.screen-arch,
+.screen-arch.bg-surface-primary,
+.screen-arch > div {
     background: transparent !important;
     background-color: transparent !important;
     background-image: none !important;
+    border-color: transparent !important;
     box-shadow: none !important;
 }
 
@@ -758,6 +616,7 @@ form[data-type="unified-composer"] [role="listbox"] div {
 [data-testid="artifacts-surface-top-controls"] .btn-ghost {
     color: var(--cgpt-glass-text-primary) !important;
     background: transparent !important;
+    background-color: transparent !important;
     background-image: none !important;
     border-color: var(--cgpt-border) !important;
     box-shadow: none !important;
@@ -765,74 +624,38 @@ form[data-type="unified-composer"] [role="listbox"] div {
 
 [data-testid="artifacts-surface-top-controls"] button[aria-current="page"],
 [data-testid="artifacts-surface-top-controls"] .btn-primary-inverse,
-[data-testid="artifacts-surface-top-controls"] .bg-token-bg-tertiary {
+[data-testid="artifacts-surface-top-controls"] .bg-token-bg-tertiary,
+.screen-arch button,
+.screen-arch .btn-ghost,
+#main button.btn-primary,
+main button.btn-primary,
+#main button.btn-secondary,
+main button.btn-secondary,
+#main .btn-secondary,
+main .btn-secondary {
     color: var(--cgpt-glass-text-primary) !important;
-    background: light-dark(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.08)) !important;
-    background-color: light-dark(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.08)) !important;
+    background: light-dark(rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.085)) !important;
+    background-color: light-dark(rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.085)) !important;
     background-image: none !important;
+    backdrop-filter: blur(16px) saturate(116%) !important;
+    -webkit-backdrop-filter: blur(16px) saturate(116%) !important;
     border: 1px solid var(--cgpt-border-strong) !important;
-    backdrop-filter: blur(14px) saturate(116%) !important;
-    -webkit-backdrop-filter: blur(14px) saturate(116%) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
 }
 
 [data-testid="artifacts-surface-top-controls"] .btn-ghost:hover,
-[data-testid="artifacts-surface-top-controls"] button[aria-label]:hover {
-    color: var(--cgpt-glass-text-primary) !important;
-    background: var(--cgpt-hover) !important;
-    border-color: var(--cgpt-border) !important;
-}
-
-[data-testid="artifacts-surface-top-controls"] [class*="bg-token-border"] {
-    background: var(--cgpt-border) !important;
-    background-color: var(--cgpt-border) !important;
-}
-
-#main button.btn-primary,
-main button.btn-primary {
-    color: var(--cgpt-glass-text-primary) !important;
-    background: light-dark(rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.09)) !important;
-    background-color: light-dark(rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.09)) !important;
-    background-image: none !important;
-    border: 1px solid var(--cgpt-border-strong) !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
-    backdrop-filter: blur(16px) saturate(118%) !important;
-    -webkit-backdrop-filter: blur(16px) saturate(118%) !important;
-}
-
-#main button.btn-primary:hover,
-main button.btn-primary:hover {
-    background: light-dark(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.14)) !important;
-    border-color: var(--cgpt-border-strong) !important;
-}
-
-/* cgpt-apps-page $ Fixes Apps page screen-arch header and Manage button */
-.screen-arch,
-.screen-arch.bg-surface-primary,
-.screen-arch > div {
-    background: transparent !important;
-    background-color: transparent !important;
-    background-image: none !important;
-    box-shadow: none !important;
-    border-color: transparent !important;
-}
-
-.screen-arch button,
-.screen-arch .btn-ghost {
-    color: var(--cgpt-glass-text-primary) !important;
-    background: light-dark(rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.055)) !important;
-    background-color: light-dark(rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.055)) !important;
-    background-image: none !important;
-    border: 1px solid var(--cgpt-border) !important;
-    border-radius: 12px !important;
-    backdrop-filter: blur(14px) saturate(116%) !important;
-    -webkit-backdrop-filter: blur(14px) saturate(116%) !important;
-}
-
+[data-testid="artifacts-surface-top-controls"] button[aria-label]:hover,
 .screen-arch button:hover,
-.screen-arch .btn-ghost:hover {
+.screen-arch .btn-ghost:hover,
+#main button.btn-primary:hover,
+main button.btn-primary:hover,
+#main button.btn-secondary:hover,
+main button.btn-secondary:hover {
     background: var(--cgpt-hover) !important;
+    background-color: var(--cgpt-hover) !important;
     border-color: var(--cgpt-border-strong) !important;
+    color: var(--cgpt-glass-text-primary) !important;
 }
 
 #main input[type="search"],
@@ -842,12 +665,11 @@ input[aria-label="Search GPTs"][role="combobox"] {
     background: light-dark(rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.07)) !important;
     background-color: light-dark(rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.07)) !important;
     background-image: none !important;
-    border: 1px solid var(--cgpt-border-strong) !important;
-    border-radius: 14px !important;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
     backdrop-filter: blur(18px) saturate(118%) !important;
     -webkit-backdrop-filter: blur(18px) saturate(118%) !important;
+    border: 1px solid var(--cgpt-border-strong) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
 }
 
 #main input[type="search"]::placeholder,
@@ -855,32 +677,31 @@ input[aria-label="Search GPTs"][role="combobox"]::placeholder {
     color: var(--cgpt-glass-text-muted) !important;
 }
 
-/* cgpt-gpts-page $ Fixes /gpts category pill row and secondary action buttons */
 .no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] {
     position: relative !important;
     z-index: 2 !important;
     background: light-dark(rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.035)) !important;
     background-color: light-dark(rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.035)) !important;
     background-image: none !important;
-    border: 1px solid var(--cgpt-border) !important;
-    border-radius: 999px !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
     backdrop-filter: blur(16px) saturate(114%) !important;
     -webkit-backdrop-filter: blur(16px) saturate(114%) !important;
-    padding: 0.35rem !important;
+    border: 1px solid var(--cgpt-border) !important;
+    border-radius: 999px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
     gap: 0.35rem !important;
     overflow-x: auto !important;
     overflow-y: visible !important;
+    padding: 0.35rem !important;
 }
 
 .no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] > div {
     color: var(--cgpt-glass-text-secondary) !important;
     background: transparent !important;
+    background-color: transparent !important;
     border-color: transparent !important;
     border-radius: 999px !important;
-    white-space: nowrap !important;
     flex: 0 0 auto !important;
+    white-space: nowrap !important;
 }
 
 .no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] > div.bg-token-bg-tertiary,
@@ -891,34 +712,7 @@ input[aria-label="Search GPTs"][role="combobox"]::placeholder {
     border-color: var(--cgpt-border-strong) !important;
 }
 
-.no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] > div:hover {
-    color: var(--cgpt-glass-text-primary) !important;
-    background: var(--cgpt-hover) !important;
-}
-
-#main button.btn-secondary,
-main button.btn-secondary,
-#main .btn-secondary,
-main .btn-secondary {
-    color: var(--cgpt-glass-text-primary) !important;
-    background: light-dark(rgba(255, 255, 255, 0.54), rgba(255, 255, 255, 0.075)) !important;
-    background-color: light-dark(rgba(255, 255, 255, 0.54), rgba(255, 255, 255, 0.075)) !important;
-    background-image: none !important;
-    border: 1px solid var(--cgpt-border) !important;
-    border-radius: 14px !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
-    backdrop-filter: blur(16px) saturate(116%) !important;
-    -webkit-backdrop-filter: blur(16px) saturate(116%) !important;
-}
-
-#main button.btn-secondary:hover,
-main button.btn-secondary:hover {
-    background: light-dark(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.13)) !important;
-    border-color: var(--cgpt-border-strong) !important;
-}
-
-/* cgpt-decorative $ Softens full-bleed model splash image and hides floating upgrade badge */
+/* cgpt-decorative $ Softens splash artwork and removes a floating upgrade badge */
 body > picture {
     opacity: 0.65 !important;
     mask-image: radial-gradient(circle, #000 25%, transparent 85%) !important;
@@ -931,7 +725,7 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
     display: none !important;
 }
 
-/* cgpt-fallback $ Semi-solid fallback when backdrop-filter is unavailable */
+/* cgpt-fallback $ Uses semi-solid surfaces when backdrop-filter is not supported */
 @supports not (backdrop-filter: blur(1px)) {
     #stage-slideover-sidebar,
     form[data-type="unified-composer"] [data-composer-surface="true"],
@@ -941,14 +735,28 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
     [role="menu"],
     [role="dialog"] {
         background: light-dark(#ffffffe8, #121212e8) !important;
+        background-color: light-dark(#ffffffe8, #121212e8) !important;
     }
 }
 
-/* cgpt-reduced-motion $ Collapses transitions and animations for users who prefer reduced motion */
+/* cgpt-reduced-motion $ Reduces transitions for users who prefer less motion */
 @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
+    :root {
+        scroll-behavior: auto !important;
+    }
+
+    .sticky.top-0.z-30,
+    div[class*="tall:sticky"][class*="top-header-height"],
+    div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"],
+    #sidebar-header a[aria-label="Home"],
+    #sidebar-header button[aria-label="Close sidebar"],
+    #sidebar-header button[aria-label*="sidebar"],
+    #page-header button[aria-label="Open sidebar"],
+    #page-header button[aria-label="Close sidebar"],
+    #page-header button[aria-label*="sidebar"],
+    #page-header a[href="/"],
+    #page-header [data-testid="share-chat-button"],
+    #page-header [data-testid="conversation-options-button"] {
         transition-duration: 0.001ms !important;
         animation-duration: 0.001ms !important;
     }
