@@ -493,18 +493,6 @@ form[data-type="unified-composer"] .composer-submit-button-color {
     margin-bottom: 0 !important;
 }
 
-[data-message-author-role="assistant"] pre,
-[data-message-author-role="assistant"] code,
-[data-message-author-role="assistant"] .markdown table {
-    background-color: light-dark(rgba(255, 255, 255, 0.9), rgba(11, 11, 11, 0.86)) !important;
-    border-color: var(--cgpt-border) !important;
-}
-
-[data-message-author-role="assistant"] .markdown pre {
-    backdrop-filter: blur(12px) saturate(110%) !important;
-    -webkit-backdrop-filter: blur(12px) saturate(110%) !important;
-}
-
 [data-message-author-role="assistant"] button[aria-label*="Copy"],
 button[aria-label*="Copy code"],
 [data-testid="copy-turn-action-button"] {
@@ -526,6 +514,78 @@ button[aria-label*="Copy code"]:hover,
 
 .group\/conversation-turn > div > div.justify-start {
     opacity: 0 !important;
+}
+
+/* cgpt-code-blocks-glass-panel $ Glassmorphic outer code block panels */
+/* Outer border wrapper */
+[data-message-author-role="assistant"] .markdown .border-token-border-light,
+[data-message-author-role="assistant"] pre > div > div > div > div > div > div.border-token-border-light {
+    border: 1px solid light-dark(rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.14)) !important;
+    border-radius: 1.5rem !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18),
+    0 2px 8px rgba(0, 0, 0, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Inner elevated surface — the actual frosted panel */
+[data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary,
+[data-message-author-role="assistant"] pre > div > div > div > div > div > div > .bg-token-bg-elevated-secondary {
+    background: light-dark( rgba(255, 255, 255, 0.22),
+    rgba(12, 12, 18, 0.42)) !important;
+    background-color: light-dark( rgba(255, 255, 255, 0.22),
+    rgba(12, 12, 18, 0.42)) !important;
+    background-image: linear-gradient( 160deg,
+    light-dark(rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.04)) 0%,
+    light-dark(rgba(255, 255, 255, 0.04), rgba(0, 0, 0, 0.08)) 100%) !important;
+
+    backdrop-filter: blur(20px) saturate(130%) brightness(1.04) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(130%) brightness(1.04) !important;
+
+    border-radius: 1.5rem !important;
+    overflow: clip !important;
+}
+
+/* Code content area — keep transparent so glass shows through */
+[data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary .cm-editor,
+[data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary .cm-scroller,
+[data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary pre.cm-content,
+[data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary code {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* Copy button inside panel */
+[data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary button[aria-label="Copy"] {
+    background: light-dark( rgba(255, 255, 255, 0.52),
+    rgba(255, 255, 255, 0.09)) !important;
+    background-color: light-dark( rgba(255, 255, 255, 0.52),
+    rgba(255, 255, 255, 0.09)) !important;
+    border: 1px solid light-dark( rgba(15, 23, 42, 0.14),
+    rgba(255, 255, 255, 0.14)) !important;
+    border-radius: 999px !important;
+    backdrop-filter: blur(14px) saturate(118%) !important;
+    -webkit-backdrop-filter: blur(14px) saturate(118%) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    0 2px 8px rgba(0, 0, 0, 0.12) !important;
+    color: light-dark(#1e293b, rgba(248, 250, 252, 0.88)) !important;
+    transition: background-color 140ms ease,
+    border-color 140ms ease,
+    box-shadow 140ms ease,
+    transform 140ms ease !important;
+}
+
+[data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary button[aria-label="Copy"]:hover {
+    background: light-dark( rgba(255, 255, 255, 0.76),
+    rgba(255, 255, 255, 0.16)) !important;
+    border-color: light-dark( rgba(15, 23, 42, 0.2),
+    rgba(255, 255, 255, 0.22)) !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 4px 12px rgba(0, 0, 0, 0.16) !important;
+}
+
+[data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary button[aria-label="Copy"]:active {
+    transform: translateY(1px) scale(0.97) !important;
 }
 
 /* cgpt-code-header-glass $ Gives code block sticky headers readable glass surfaces */
@@ -660,6 +720,7 @@ section[aria-label="Reasoning details"] [class*="border-"] {
     -webkit-backdrop-filter: blur(var(--cgpt-blur-strong)) saturate(122%) !important;
     border: 1px solid var(--cgpt-border-strong) !important;
 }
+
 /* cgpt-omni-dropdown $ Fixes text overlap/transparency in the tool/GPT mention dropdown menu */
 form[data-type="unified-composer"] [role="listbox"],
 form[data-type="unified-composer"] ul,
@@ -677,7 +738,6 @@ div[class*="popover"][class*="bg-token-"] {
     border-radius: 16px !important;
 }
 
-/* Ensure child search boxes or list rows inside this dropdown inherit proper text contrast */
 form[data-type="unified-composer"] [role="listbox"] input,
 form[data-type="unified-composer"] [role="listbox"] div {
     color: var(--cgpt-glass-text-primary) !important;
