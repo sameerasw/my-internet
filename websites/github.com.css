@@ -314,20 +314,19 @@ a.rgh-own-conversation:hover {
   padding: 0.5em !important;
 }
 
-/* no tab text $ Make repository tabs only got icons and show text only on hover */
+/* no tab text $ Make repository tabs only get icons, and show text only on hover */
 .prc-UnderlineNav-UnderlineWrapper-GWONT[data-hide-icons-breakpoint="xxlarge"] .prc-UnderlineNav-ItemsList-oj8gN [data-component="icon"] {
   display: block !important;
 }
 
 nav[aria-label="Repository"] > ul > li > a {
   span[data-component="text"] {
-    opacity: 0 !important;
-    width: 0em !important;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
   }
-  &:hover {
+  &:not(:hover) {
     span[data-component="text"] {
-      opacity: 1 !important;
+      opacity: 0 !important;
+      width: 0em !important;
     }
   }
 }
@@ -341,7 +340,7 @@ nav[aria-label="Repository"] > ul > li > a {
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
 }
 
-/* repo sidebar hover $ Revel more info on repository description and below sidebar content on hover */
+/* repo sidebar hover $ Reveal more info on repository description and below sidebar content on hover */
 .Layout-sidebar {
   .BorderGrid-cell {
     .mt-2,
