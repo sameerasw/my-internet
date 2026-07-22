@@ -321,14 +321,14 @@ a.rgh-own-conversation:hover {
 
 nav[aria-label="Repository"] > ul > li > a {
   span[data-component="text"] {
+    opacity: 0 !important;
+    max-width: 0em !important;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
-    max-width: 9em !important;
-    overflow: hidden !important;
   }
-  &:not(:hover) {
+  &:hover {
     span[data-component="text"] {
-      opacity: 0 !important;
-      max-width: 0 !important;
+      max-width: 9em !important;
+      opacity: 1 !important;
     }
   }
 }
