@@ -323,6 +323,7 @@ nav[aria-label="Repository"] > ul > li > a {
   span[data-component="text"] {
     opacity: 0 !important;
     max-width: 0em !important;
+    overflow: hidden !important;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
   }
   &:hover {
