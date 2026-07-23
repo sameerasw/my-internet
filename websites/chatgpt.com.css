@@ -63,7 +63,6 @@ main,
   background-color: light-dark(#fff, #000);
 }
 
-
 /* cgpt-sidebar $ Sidebar glass works standalone; Tampermonkey optionally switches it to scroll-only */
 .sticky.top-0.z-30,
 #stage-sidebar .sticky.top-0.z-30,
@@ -848,6 +847,6 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
 }
 
 /* cgpt-hide hint $ I know ChatGPT can make mistakes */
-[data-testid="thread-disclaimer"]{
+[data-testid="thread-disclaimer"] {
   display: none !important;
 }
