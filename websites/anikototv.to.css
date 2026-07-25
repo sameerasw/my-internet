@@ -1,0 +1,204 @@
+/* transparency $ Makes the main page containers see-through so the browser/tab background shows through */
+html,
+body,
+#wrapper,
+#body,
+header,
+header .wrapper.align-items-center,
+.container,
+.container.watch-container,
+#watch-main,
+#watch-second,
+.aside-wrapper,
+aside.main,
+aside.sidebar,
+#w-media,
+#player-wrapper,
+#w-info,
+.binfo,
+.brating,
+#ani-seasons,
+#watch-order,
+section.w-side-section,
+section#comments,
+.block_area,
+footer,
+#hotest,
+#recent-update,
+#upcoming-anime,
+.top-tables,
+.top-table,
+#schedule-block,
+#schedule,
+#top-anime,
+#home-discussion,
+.hd-strip-inner,
+.anikoto-bookmark-alert,
+aside.main section,
+.filters,
+.list-info {
+  background-color: transparent !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transition:
+    background-color 0.5s ease-in-out,
+    background 0.5s ease-in-out,
+    border 0.5s ease-in-out,
+    box-shadow 0.5s ease-in-out !important;
+}
+
+/* darkreader $ Keeps Dark Reader from painting a solid background back over the transparent page */
+:root {
+  --darkreader-background-ffffff: transparent !important;
+}
+
+/* aniko-glass navbar $ Frosted-glass header instead of a flat solid bar */
+header {
+  background: rgba(20, 20, 25, 0.35) !important;
+  backdrop-filter: blur(14px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(140%) !important;
+}
+
+/* aniko-glass menu panels $ Mega-menu, search popup and dropdowns get a frosted panel look instead of solid backgrounds */
+#menu ul ul,
+.search-popup .inner,
+.dropdown-menu,
+.tooltipster-base {
+  background: rgba(24, 24, 30, 0.55) !important;
+  backdrop-filter: blur(16px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(140%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+}
+
+/* aniko-glass player controls $ The control bar under the video becomes a translucent glass strip */
+#controls,
+#w-servers {
+  background: rgba(18, 18, 22, 0.4) !important;
+  backdrop-filter: blur(12px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(140%) !important;
+  border-radius: 10px !important;
+}
+
+/* aniko-glass episode list $ Episode grid and its filter bar become translucent panels */
+#w-episodes,
+#w-episodes .head,
+#w-episodes .body,
+.episodes.name ul.ep-range li {
+  background: rgba(22, 22, 26, 0.35) !important;
+  backdrop-filter: blur(10px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(140%) !important;
+  box-shadow: none !important;
+}
+
+.episodes.name ul.ep-range li a.active {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-radius: 6px !important;
+}
+
+/* aniko-glass cards $ Anime cards in every grid (home rows, related/recommended, rankings) get a frosted glass tile instead of a flat card */
+.scaff.side.items .item,
+.scaff.side.items.md .item,
+.scaff.side.items .item .inner,
+.scaff.side.items.md .item .inner,
+.scaff.items .item,
+.ani.items .item {
+  background: rgba(255, 255, 255, 0.04) !important;
+  backdrop-filter: blur(8px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(140%) !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  transition: background 0.3s ease-in-out !important;
+}
+
+.scaff.side.items .item:hover,
+.scaff.side.items.md .item:hover,
+.scaff.items .item:hover,
+.ani.items .item:hover {
+  background: rgba(255, 255, 255, 0.09) !important;
+}
+
+/* aniko-glass schedule $ The daily schedule strip's day-picker and episode rows become translucent */
+.days .day .inner,
+.day .inner,
+#schedule .body .items .item {
+  background: rgba(255, 255, 255, 0.04) !important;
+  backdrop-filter: blur(8px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(140%) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.days .day.active .inner {
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* aniko-glass discussion feed $ The homepage discussion strip and its comment rows become translucent */
+.hd-body,
+.hd-list,
+.hd-row {
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(8px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(140%) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.hd-row:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* aniko-glass modals $ Login/register/report/download popups get a frosted glass modal instead of a solid one */
+.modal-content {
+  background: rgba(22, 22, 26, 0.55) !important;
+  backdrop-filter: blur(20px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(140%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: none !important;
+}
+
+/* aniko-glass comments $ Comment section and its reaction bar become translucent */
+#cm-reactions,
+.cm-reactions-inner,
+#content-comments {
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(8px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(140%) !important;
+  box-shadow: none !important;
+}
+
+/* aniko-glass filters $ The browse/filter form's dropdown buttons, search box and display-mode toggle become translucent */
+.filters .filter .form-control,
+.filters .dropdown-toggle,
+.display-modes .mode {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(8px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(140%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: none !important;
+}
+
+.display-modes .mode.active {
+  background: rgba(255, 255, 255, 0.14) !important;
+}
+
+/* aniko-glass pagination $ Page-number links at the bottom of listings become translucent pills */
+.pagination .page-link {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(8px) saturate(140%) !important;
+  -webkit-backdrop-filter: blur(8px) saturate(140%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: none !important;
+}
+
+.pagination .page-item.active .page-link {
+  background: rgba(255, 255, 255, 0.16) !important;
+}
+
+/* aniko-no ads $ Hides injected ad units so they don't sit as opaque boxes on top of the glass layout */
+ins.adsbygoogle,
+div[id^="google_ads_iframe"] {
+  display: none !important;
+}
