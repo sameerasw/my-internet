@@ -8,36 +8,38 @@ body,
   background: none !important;
 }
 #_r_cf_ {
-    background-color: light-dark(#aaaaaaaa, #00000055) !important;
+  background-color: light-dark(#aaaaaaaa, #00000055) !important;
 }
 
-/* Sidebar */
-div.fixed.lg\:sticky > nav.flex.flex-col.px-0.fixed.left-0.border-r-0\.5.h-screen.lg\:bg-gradient-to-t.from-bg-200\/5.to-bg-200\/30.border-border-300.bg-bg-100.transition-\[background-color\,border-color\,box-shadow\].duration-\[35ms\]:first-child {
-background-color: transparent !important
+/* claude-sidebar */
+.z-sidebar nav,
+aside nav {
+  background-color: transparent !important;
 }
 
-/* Input */
-div.relative > div.\!box-content.flex.flex-col.bg-bg-000.mx-2.md\:mx-0.items-stretch.transition-\[background-color\,border-color\,box-shadow\,opacity\].duration-200.relative.z-10.rounded-\[20px\].compact\:rounded-xl.cursor-text.z-\[1\].border.border-transparent.shadow-\[0_0\.25rem_1\.25rem_color-mix\(in_srgb\,var\(--cds-black\)_3\.5\%\,transparent\)\,0_0_0_0\.5px_hsla\(var\(--border-300\)\/0\.15\)\].hover\:shadow-\[0_0\.25rem_1\.25rem_color-mix\(in_srgb\,var\(--cds-black\)_3\.5\%\,transparent\)\,0_0_0_0\.5px_hsla\(var\(--border-200\)\/0\.3\)\].focus-within\:shadow-\[0_0\.25rem_1\.25rem_color-mix\(in_srgb\,var\(--cds-black\)_7\.5\%\,transparent\)\,0_0_0_0\.5px_hsla\(var\(--border-200\)\/0\.3\)\].hover\:focus-within\:shadow-\[0_0\.25rem_1\.25rem_color-mix\(in_srgb\,var\(--cds-black\)_7\.5\%\,transparent\)\,0_0_0_0\.5px_hsla\(var\(--border-200\)\/0\.3\)\]:last-child {
-background-color: light-dark(#aaaaaa44, #00000044) !important;
-backdrop-filter: blur(10px) !important;
+/* claude-input */
+.\!box-content:has([data-testid="chat-input"]) {
+  background-color: light-dark(#aaaaaa44, #00000044) !important;
+  backdrop-filter: blur(10px) !important;
 }
 
-/* Header bar */
+
+/* claude-header-bar */
 .from-bg-100 {
-display: none !important;
-box-shadow: none !important;
+  display: none !important;
+  box-shadow: none !important;
 }
 header.flex {
   background-color: light-dark(#aaaaaa44, #00000044) !important;
-  border-radius: 8px;
+  border-radius: 8px !important;
 }
 
-/* Hide upgrade button */
-div.flex.w-full.h-12.items-center.justify-center.pointer-events-none > div.ml-0\.5.inline-flex.items-center.gap-1\.5.rounded-lg.h-8.pl-2.pr-2\.5.text-center.font-small.sm\:font-base.text-text-500.select-none.transition-opacity.duration-150.pointer-events-auto.bg-bg-300:first-child {
- display: none !important;
+/* claude-hide-upgrade */
+.h-12 > div:nth-child(1) {
+  display: none !important;
 }
 
-/* Hide bottom message */
-div.sticky.bottom-0.mx-auto.w-full.pt-6.print\:hidden.z-\[5\] > div.bg-bg-100.text-text-500.text-center.text-xs.py-2:last-child {
-display: none !important  
+/* claude-hide-bottom-message */
+div.bg-bg-100:nth-child(3) {
+  display: none !important;
 }
