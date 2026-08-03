@@ -7,3 +7,38 @@ body,
   background-color: transparent !important;
   background: none !important;
 }
+#_r_cf_ {
+  background-color: light-dark(#aaaaaaaa, #00000055) !important;
+}
+
+/* claude-sidebar */
+nav.flex {
+  background-color: transparent !important;
+}
+
+/* claude-input */
+.\!box-content:has([data-testid="chat-input"]) {
+  background-color: light-dark(#aaaaaa44, #00000044) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+
+/* claude-header-bar */
+.from-bg-100 {
+  display: none !important;
+  box-shadow: none !important;
+}
+header.flex {
+  background-color: light-dark(#aaaaaa44, #00000044) !important;
+  border-radius: 8px !important;
+}
+
+/* claude-hide-upgrade */
+.h-12 > div:nth-child(1) {
+  display: none !important;
+}
+
+/* claude-hide-bottom-message */
+div.bg-bg-100:nth-child(3) {
+  display: none !important;
+}
