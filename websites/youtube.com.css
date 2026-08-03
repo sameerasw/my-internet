@@ -166,6 +166,10 @@ ytd-app[fullscreen] #contentContainer {
   z-index: 9999;
 }
 
+body.lock-scrollbar {
+  position: initial !important;
+}
+
 /* yt-Transparent header */
 #masthead-container {
   #background.ytd-masthead {
