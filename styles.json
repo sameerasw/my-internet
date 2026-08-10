@@ -396,7 +396,8 @@
       "no footer": "footer {\n  display: none !important;\n}"
     },
     "-miruro.tv.css": {
-      "miruro-transparency": "html, body, .eGxCRW, .iDHeGb, .daqunT, .hIxxKF, .ijmopf, .cqJwte, .eakZjw, .gfuLhl, .kdqxUl, .fwmihZ, .iiVqpN, .ghhYJl {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "miruro-transparency": "html, body, .eGxCRW, .iDHeGb, .daqunT, .hIxxKF, .ijmopf, .cqJwte, .eakZjw, .gfuLhl, .kdqxUl, .fwmihZ, .iiVqpN, .ghhYJl {\n  background-color: transparent !important;\n  background: none !important;\n  --global-primary-bg: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
+      "miruro-16/9 player": ".player {\n  aspect-ratio: 16/9 !important;\n}",
       "miruro-no footer": "footer {\n  display: none !important;\n}"
     },
     "-newegg.com.css": {
