@@ -97,11 +97,11 @@ Custom CSS for websites to make the internet beautiful. Transparency being the m
 
 <br>
 
-<a href="https://star-history.com/#sameerasw/my-internet&Date">
+<a href="https://star-history.dera.page/#sameerasw/my-internet&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sameerasw/my-internet&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sameerasw/my-internet&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sameerasw/my-internet&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=sameerasw/my-internet&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=sameerasw/my-internet&type=Date" />
+   <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=sameerasw/my-internet&type=Date" />
  </picture>
 </a>
 
