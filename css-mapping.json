@@ -3,5 +3,6 @@
   "example.com.css": ["alternativeto.net", "kbin.earth", "mp.weixin.qq.com", "-cifraclub.com.br", "support.atlassian.com", "wearechecking.online"],
   "pling.com.css": ["store.kde.org", "gnome-look.org", "appimagehub.com", "linux-apps.com"],
   "gitlab.com.css": ["gitlab.freedesktop.org"],
-  "+instructure.com.css": ["classroom.ucscout.org"]
+  "+instructure.com.css": ["classroom.ucscout.org"],
+  "notion.so": ["app.notion.com"]
 }
