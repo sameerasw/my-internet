@@ -1,16 +1,56 @@
-/* deepseek-transparency */
-body[data-ds-dark-theme] {
-  --dsr-bg: transparent !important;
-  --dsr-side-bg: transparent !important;
+
+
+/* deepseek-Transparency */
+body {
+  /*@--dsw-static-neutral-bluish-00: transparent !important; <-- Not suggested, as it will break the white color of the page*/
+  --dsw-alias-bg-base: transparent !important;
+    
+  --dsw-alias-markdown-code-block: #f9fafb90 !important; 
+  --dsw-alias-markdown-code-block-banner: #f9fafb90 !important;
+  --dsw-specific-bubble: #edf3fea0 !important;
+    
 }
 
-.b480065b,
-._871cbca,
-._2be88ba,
-.b8812f16,
-._48cdfc1,
-.f0d4f23d {
-  background: none !important;
+/* deepseek-Enhanced white transparency$May cause some display issues */
+body {
+  --dsw-static-neutral-bluish-100: #ebeef2d0;
+  --dsw-static-neutral-bluish-00: #fffd;
+  --dsw-static-neutral-bluish-50: #f9fafb85;
+  --dsw-static-deepseek-100: #e4edfd85;
+  --dsw-static-deepseek-50: #edf3fe85;
+}
+.md-code-block.md-code-block-light .token.comment, .md-code-block.md-code-block-light .token.prolog, .md-code-block.md-code-block-light .token.cdata {
+  color: #626369; /*letting comments in codes visible */
+}
+
+
+/* deepseek-Dark Theme */
+body[data-ds-dark-theme] {
+    /*@
+    --dsw-static-neutral-bluish-950: transparent !important;
+    --dsw-static-neutral-bluish-900: #1b1b1c61 !important;
+    These are also deprecated*/
+    --dsw-alias-bg-base: transparent !important;
+    --dsw-alias-markdown-code-block-banner: #2c2c2e90 !important;
+    --dsw-alias-markdown-code-block: #1b1b1c90 !important;
+    --dsw-specific-bubble: #2c2c2e90 !important;
+}   
+
+/*deepseek-Enhanced dark transparency */
+body[data-ds-dark-theme] {
+    --dsw-static-neutral-bluish-950: transparent ;
+    --dsw-static-neutral-bluish-900: #1b1b1c61 ;
+}
+
+/*deepseek-Translucent bottom chat bar*/
+div:has(> div > div > textarea[name="search"]) {
+  background: #4e4e8b80 !important;  
+  backdrop-filter: blur(10px) saturate(180%) !important;          
+}
+
+body[data-ds-dark-theme] div:has(> div > div > textarea[name="search"]) {
+  background: #1e1e425e !important;  
+  backdrop-filter: blur(10px) saturate(180%) !important;          
 }
 
 /* deepseek-remove decoration */
