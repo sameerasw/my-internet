@@ -1,4 +1,4 @@
-/* cgpt-transparency $ Clears ChatGPT app surfaces so the wallpaper can bleed through */
+/* cgpt-transparency $ Clears ChatGPT surfaces so the wallpaper can bleed through */
 :root {
   color-scheme: light dark !important;
   --main-surface-background: transparent !important;
@@ -20,6 +20,11 @@
   --cgpt-border-strong: light-dark(rgba(15, 23, 42, 0.18), rgba(255, 255, 255, 0.18)) !important;
   --cgpt-hover: light-dark(rgba(15, 23, 42, 0.055), rgba(255, 255, 255, 0.07)) !important;
   --cgpt-active: light-dark(rgba(15, 23, 42, 0.085), rgba(255, 255, 255, 0.12)) !important;
+  --cgpt-think-blue: light-dark(#2563eb, #60a5fa) !important;
+  --cgpt-think-blue-soft: light-dark(rgba(37, 99, 235, 0.12), rgba(96, 165, 250, 0.18)) !important;
+  --cgpt-think-blue-hover: light-dark(rgba(37, 99, 235, 0.18), rgba(96, 165, 250, 0.24)) !important;
+  --cgpt-think-blue-border: light-dark(rgba(37, 99, 235, 0.32), rgba(96, 165, 250, 0.42)) !important;
+  --cgpt-think-blue-glow: light-dark(rgba(37, 99, 235, 0.16), rgba(96, 165, 250, 0.2)) !important;
   --cgpt-blur: 18px !important;
   --cgpt-blur-strong: 30px !important;
   --cgpt-radius: 16px !important;
@@ -27,7 +32,6 @@
   --cgpt-shadow: 0 16px 42px rgba(0, 0, 0, 0.19), inset 0 1px 0 rgba(255, 255, 255, 0.09) !important;
   --cgpt-shadow-soft: 0 8px 28px rgba(0, 0, 0, 0.14) !important;
 }
-
 html,
 html.light,
 html.dark,
@@ -41,7 +45,7 @@ main,
   background: transparent !important;
   background-color: transparent !important;
 }
-
+/* cgpt-main-surfaces $ Removes opaque surface fills while preserving page structure */
 .bg-token-main-surface-primary,
 .bg-token-main-surface-secondary,
 .bg-token-bg-primary,
@@ -58,12 +62,11 @@ main,
   background: transparent !important;
   background-color: transparent !important;
 }
-
+/* cgpt-disclaimer $ Restores the thread disclaimer readability */
 [data-testid="thread-disclaimer"] > div > div > div > div {
-  background-color: light-dark(#fff, #000);
+  background-color: light-dark(#fff, #000) !important;
 }
-
-/* cgpt-sidebar $ Sidebar glass works standalone; Tampermonkey optionally switches it to scroll-only */
+/* cgpt-sidebar-base $ Keeps the main sidebar shell transparent */
 .sticky.top-0.z-30,
 #stage-sidebar .sticky.top-0.z-30,
 #stage-slideover-sidebar .sticky.top-0.z-30 {
@@ -79,7 +82,7 @@ main,
   margin-inline: 0 !important;
   width: 100% !important;
 }
-
+/* cgpt-sidebar-pseudo $ Removes decorative sidebar pseudo-elements */
 .sticky.top-0.z-30::before,
 .sticky.top-0.z-30::after,
 #stage-sidebar .sticky.top-0.z-30::before,
@@ -97,8 +100,7 @@ main,
   border: none !important;
   box-shadow: none !important;
 }
-
-/* @Stylus-only default matches the New chat/Search chats glass darkness */
+/* cgpt-sidebar-buttons $ Adds glass styling to sidebar header controls */
 #sidebar-header a[aria-label="Home"],
 #sidebar-header button[aria-label="Close sidebar"],
 #sidebar-header button[aria-label*="sidebar"],
@@ -109,20 +111,15 @@ main,
   background: var(--cgpt-sidebar-glass) !important;
   background-color: var(--cgpt-sidebar-glass) !important;
   background-image: none !important;
-
   backdrop-filter: blur(40px) saturate(160%) !important;
   -webkit-backdrop-filter: blur(40px) saturate(160%) !important;
-
   border: 1px solid light-dark(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)) !important;
   border-radius: 12px !important;
-
   box-shadow:
     0 10px 28px rgba(0, 0, 0, 0.18),
     0 4px 10px rgba(0, 0, 0, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
-
   color: var(--cgpt-glass-text-primary) !important;
-
   transition:
     background-color 180ms ease,
     border-color 180ms ease,
@@ -130,8 +127,7 @@ main,
     backdrop-filter 180ms ease,
     transform 140ms ease !important;
 }
-
-/* Tampermonkey mode before scroll: logo/sidebar buttons clean */
+/* cgpt-sidebar-before-scroll $ Keeps header controls clean before sidebar scrolling */
 html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) #sidebar-header a[aria-label="Home"],
 html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) #sidebar-header button[aria-label="Close sidebar"],
 html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) #sidebar-header button[aria-label*="sidebar"],
@@ -147,8 +143,7 @@ html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) #page-header a[href="/"]
   border: 1px solid transparent !important;
   box-shadow: none !important;
 }
-
-/* Tampermonkey mode after scroll: logo/sidebar buttons match sidebar nav glass */
+/* cgpt-sidebar-after-scroll $ Restores sidebar glass controls after scrolling */
 html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #sidebar-header a[aria-label="Home"],
 html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #sidebar-header button[aria-label="Close sidebar"],
 html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #sidebar-header button[aria-label*="sidebar"],
@@ -159,22 +154,17 @@ html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #page-header a[href="/"] {
   background: var(--cgpt-sidebar-glass) !important;
   background-color: var(--cgpt-sidebar-glass) !important;
   background-image: none !important;
-
   backdrop-filter: blur(40px) saturate(160%) !important;
   -webkit-backdrop-filter: blur(40px) saturate(160%) !important;
-
   border: 1px solid light-dark(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1)) !important;
   border-radius: 12px !important;
-
   box-shadow:
     0 10px 28px rgba(0, 0, 0, 0.18),
     0 4px 10px rgba(0, 0, 0, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
-
   color: var(--cgpt-glass-text-primary) !important;
 }
-
-/* Hover */
+/* cgpt-sidebar-hover $ Adds subtle hover feedback to sidebar controls */
 #sidebar-header a[aria-label="Home"]:hover,
 #sidebar-header button[aria-label="Close sidebar"]:hover,
 #sidebar-header button[aria-label*="sidebar"]:hover,
@@ -186,7 +176,7 @@ html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #page-header a[href="/"] {
   background-color: light-dark(rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.1)) !important;
   border-color: var(--cgpt-border-strong) !important;
 }
-
+/* cgpt-sidebar-active $ Adds subtle press feedback to sidebar controls */
 #sidebar-header a[aria-label="Home"]:active,
 #sidebar-header button[aria-label="Close sidebar"]:active,
 #sidebar-header button[aria-label*="sidebar"]:active,
@@ -196,8 +186,7 @@ html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled #page-header a[href="/"] {
 #page-header a[href="/"]:active {
   transform: translateY(1px) !important;
 }
-
-/* Stylus-only default: New chat/Search block glass ON */
+/* cgpt-sidebar-section $ Styles the sticky New Chat and Search section */
 div[class*="tall:sticky"][class*="top-header-height"],
 div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] {
   position: sticky !important;
@@ -223,8 +212,7 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] {
     box-shadow 180ms ease,
     backdrop-filter 180ms ease !important;
 }
-
-/* Tampermonkey mode before scroll: New chat/Search block clean */
+/* cgpt-sidebar-section-before-scroll $ Removes the section glass before scrolling */
 html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) div[class*="tall:sticky"][class*="top-header-height"],
 html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] {
   background: transparent !important;
@@ -235,8 +223,7 @@ html.cgpt-sidebar-scroll-js:not(.cgpt-sidebar-scrolled) div[class*="pt-(--sideba
   border: 1px solid transparent !important;
   box-shadow: none !important;
 }
-
-/* Tampermonkey mode after scroll: New chat/Search block glass ON */
+/* cgpt-sidebar-section-after-scroll $ Restores the section glass after scrolling */
 html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled div[class*="tall:sticky"][class*="top-header-height"],
 html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] {
   background: var(--cgpt-sidebar-glass) !important;
@@ -250,7 +237,7 @@ html.cgpt-sidebar-scroll-js.cgpt-sidebar-scrolled div[class*="pt-(--sidebar-sect
     0 4px 10px rgba(0, 0, 0, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
 }
-
+/* cgpt-sidebar-section-pseudo $ Removes section decorative pseudo-elements */
 div[class*="tall:sticky"][class*="top-header-height"]::before,
 div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"]::before,
 div[class*="tall:sticky"][class*="top-header-height"]::after,
@@ -266,7 +253,7 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"]::aft
   border: none !important;
   box-shadow: none !important;
 }
-
+/* cgpt-sidebar-section-hidden $ Hides decorative hidden sidebar layers */
 div[class*="tall:sticky"][class*="top-header-height"] > div[aria-hidden="true"],
 div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] > div[aria-hidden="true"] {
   display: none !important;
@@ -276,7 +263,7 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] > di
   background-color: transparent !important;
   box-shadow: none !important;
 }
-
+/* cgpt-sidebar-list $ Keeps sidebar navigation content above the glass */
 div[class*="tall:sticky"][class*="top-header-height"] > ul,
 div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] > ul {
   position: relative !important;
@@ -284,7 +271,7 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] > ul
   background: transparent !important;
   background-color: transparent !important;
 }
-
+/* cgpt-sidebar-items $ Styles sidebar navigation item surfaces */
 div[class*="tall:sticky"][class*="top-header-height"] [data-sidebar-item],
 div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] [data-sidebar-item] {
   border-radius: 10px !important;
@@ -294,15 +281,14 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] [dat
     background-color 140ms ease,
     box-shadow 140ms ease !important;
 }
-
+/* cgpt-sidebar-items-hover $ Adds sidebar item hover feedback */
 div[class*="tall:sticky"][class*="top-header-height"] [data-sidebar-item]:hover,
 div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] [data-sidebar-item]:hover {
   background: var(--cgpt-hover) !important;
   background-color: var(--cgpt-hover) !important;
   box-shadow: inset 0 0 0 1px var(--cgpt-border) !important;
 }
-
-/* cgpt-page-header $ Keeps the main chat header transparent while styling action buttons */
+/* cgpt-page-header $ Keeps the main chat header transparent */
 #page-header,
 #page-header[data-fixed-header],
 [data-voice-floating-orb-focus-background] > #page-header {
@@ -315,7 +301,7 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] [dat
   border-bottom: 0 !important;
   box-shadow: none !important;
 }
-
+/* cgpt-page-header-pseudo $ Removes decorative header overlays */
 #page-header::before,
 #page-header::after,
 #page-header > .pointer-events-none.absolute,
@@ -330,7 +316,7 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] [dat
   border: 0 !important;
   box-shadow: none !important;
 }
-
+/* cgpt-header-actions $ Keeps header action containers transparent */
 #page-header [data-testid="thread-header-right-actions-container"],
 #page-header [data-testid="thread-header-right-actions"],
 #conversation-header-actions,
@@ -341,7 +327,7 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] [dat
   border: 0 !important;
   box-shadow: none !important;
 }
-
+/* cgpt-header-buttons $ Adds glass styling to header action buttons */
 #page-header [data-testid="share-chat-button"],
 #conversation-header-actions [data-testid="share-chat-button"],
 #page-header [data-testid="conversation-options-button"],
@@ -360,7 +346,7 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] [dat
     border-color 140ms ease,
     transform 140ms ease !important;
 }
-
+/* cgpt-header-buttons-hover $ Adds header action hover feedback */
 #page-header [data-testid="share-chat-button"]:hover,
 #page-header [data-testid="share-chat-button"]:focus-visible,
 #page-header [data-testid="conversation-options-button"]:hover,
@@ -370,20 +356,19 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] [dat
   background-color: light-dark(rgba(255, 255, 255, 0.82), rgba(18, 18, 24, 0.74)) !important;
   border-color: light-dark(rgba(15, 23, 42, 0.2), rgba(255, 255, 255, 0.2)) !important;
 }
-
+/* cgpt-header-buttons-active $ Adds header action press feedback */
 #page-header [data-testid="share-chat-button"]:active,
 #page-header [data-testid="conversation-options-button"]:active {
   transform: translateY(1px) !important;
 }
-
+/* cgpt-header-icons $ Keeps header action icons aligned with button color */
 #page-header [data-testid="share-chat-button"] svg,
 #page-header [data-testid="conversation-options-button"] svg,
 #page-header [data-testid="share-chat-button"] div {
   color: currentColor !important;
   opacity: 0.95 !important;
 }
-
-/* cgpt-composer $ Adds a frosted glass composer without blocking transparency */
+/* cgpt-composer-base $ Removes opaque composer wrapper layers */
 #thread-bottom-container,
 #thread-bottom,
 #thread-bottom-container > div,
@@ -393,7 +378,7 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] [dat
   background-image: none !important;
   box-shadow: none !important;
 }
-
+/* cgpt-composer-pseudo $ Removes decorative composer pseudo-elements */
 #thread-bottom-container::before,
 #thread-bottom-container::after,
 #thread-bottom::before,
@@ -402,11 +387,11 @@ div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"] [dat
   display: none !important;
   opacity: 0 !important;
 }
-
+/* cgpt-composer-fade $ Adds a subtle bottom fade behind the composer */
 #thread-bottom-container {
   background: linear-gradient(to top, light-dark(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.34)), transparent) !important;
 }
-
+/* cgpt-composer-surface $ Creates the main frosted glass composer */
 #thread-bottom-container [data-composer-surface="true"],
 form[data-type="unified-composer"] [data-composer-surface="true"] {
   background:
@@ -421,13 +406,12 @@ form[data-type="unified-composer"] [data-composer-surface="true"] {
     inset 0 1px 0 rgba(255, 255, 255, 0.28),
     inset 0 0 0 1px rgba(255, 255, 255, 0.035) !important;
 }
-
+/* cgpt-composer-editable $ Keeps composer text areas transparent */
 .wcDTda_prosemirror-parent,
 .vertical-scroll-fade-mask {
   -webkit-mask-image: none !important;
   mask-image: none !important;
 }
-
 form[data-type="unified-composer"] textarea,
 form[data-type="unified-composer"] [contenteditable="true"],
 form[data-type="unified-composer"] [role="textbox"],
@@ -443,12 +427,12 @@ form[data-type="unified-composer"] [role="textbox"],
   color: var(--cgpt-glass-text-primary) !important;
   caret-color: light-dark(#0f172a, #ffffff) !important;
 }
-
+/* cgpt-composer-placeholder $ Improves placeholder readability */
 [data-composer-surface="true"] .ProseMirror p.placeholder::before,
 [data-composer-surface="true"] .ProseMirror [data-placeholder]::before {
   color: light-dark(rgba(15, 23, 42, 0.55), rgba(248, 250, 252, 0.48)) !important;
 }
-
+/* cgpt-composer-controls $ Adds the shared glass treatment to composer controls */
 form[data-type="unified-composer"] .composer-btn,
 form[data-type="unified-composer"] .__composer-pill,
 form[data-type="unified-composer"] .__composer-pill-remove,
@@ -463,9 +447,13 @@ form[data-type="unified-composer"] .__composer-pill-remove,
   color: var(--cgpt-glass-text-primary) !important;
   transition:
     background-color 140ms ease,
-    box-shadow 140ms ease !important;
+    background-image 140ms ease,
+    border-color 140ms ease,
+    box-shadow 140ms ease,
+    color 140ms ease,
+    transform 140ms ease !important;
 }
-
+/* cgpt-composer-controls-hover $ Adds shared hover feedback to composer controls */
 form[data-type="unified-composer"] .composer-btn:hover,
 form[data-type="unified-composer"] .__composer-pill:hover,
 [data-composer-surface="true"] .composer-btn:hover,
@@ -474,17 +462,84 @@ form[data-type="unified-composer"] .__composer-pill:hover,
   background: light-dark(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.13)) !important;
   background-color: light-dark(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.13)) !important;
 }
-
+/* cgpt-think-off $ Keeps the Think toggle neutral when disabled */
+form[data-type="unified-composer"] .__composer-pill[aria-pressed="false"],
+[data-composer-surface="true"] .__composer-pill[aria-pressed="false"] {
+  color: var(--cgpt-glass-text-primary) !important;
+  background: light-dark(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.075)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.075)) !important;
+  background-image: none !important;
+  border-color: light-dark(rgba(15, 23, 42, 0.1), rgba(255, 255, 255, 0.13)) !important;
+  box-shadow: none !important;
+}
+/* cgpt-think-off-hover $ Adds normal glass hover feedback to the disabled Think toggle */
+form[data-type="unified-composer"] .__composer-pill[aria-pressed="false"]:hover,
+[data-composer-surface="true"] .__composer-pill[aria-pressed="false"]:hover {
+  color: var(--cgpt-glass-text-primary) !important;
+  background: light-dark(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.13)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.13)) !important;
+  border-color: var(--cgpt-border-strong) !important;
+  box-shadow: none !important;
+}
+/* cgpt-think-on $ Gives the active Think toggle a blue glass accent */
+form[data-type="unified-composer"] .__composer-pill[aria-pressed="true"],
+[data-composer-surface="true"] .__composer-pill[aria-pressed="true"] {
+  color: var(--cgpt-think-blue) !important;
+  background: linear-gradient(to bottom, var(--cgpt-think-blue-soft), light-dark(rgba(255, 255, 255, 0.46), rgba(96, 165, 250, 0.1))) !important;
+  background-color: var(--cgpt-think-blue-soft) !important;
+  background-image: linear-gradient(to bottom, var(--cgpt-think-blue-soft), light-dark(rgba(255, 255, 255, 0.46), rgba(96, 165, 250, 0.1))) !important;
+  border-color: var(--cgpt-think-blue-border) !important;
+  box-shadow:
+    inset 0 1px 0 light-dark(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.12)),
+    0 0 0 1px var(--cgpt-think-blue-glow),
+    0 3px 12px var(--cgpt-think-blue-glow) !important;
+}
+/* cgpt-think-on-hover $ Strengthens the blue glass accent on hover */
+form[data-type="unified-composer"] .__composer-pill[aria-pressed="true"]:hover,
+[data-composer-surface="true"] .__composer-pill[aria-pressed="true"]:hover {
+  color: var(--cgpt-think-blue) !important;
+  background: linear-gradient(to bottom, var(--cgpt-think-blue-hover), light-dark(rgba(255, 255, 255, 0.52), rgba(96, 165, 250, 0.14))) !important;
+  background-color: var(--cgpt-think-blue-hover) !important;
+  background-image: linear-gradient(to bottom, var(--cgpt-think-blue-hover), light-dark(rgba(255, 255, 255, 0.52), rgba(96, 165, 250, 0.14))) !important;
+  border-color: var(--cgpt-think-blue-border) !important;
+  box-shadow:
+    inset 0 1px 0 light-dark(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.16)),
+    0 0 0 1px var(--cgpt-think-blue-glow),
+    0 4px 16px var(--cgpt-think-blue-glow) !important;
+}
+/* cgpt-think-icon $ Keeps the Think icon and label blue while active */
+form[data-type="unified-composer"] .__composer-pill[aria-pressed="true"] .__composer-pill-icon,
+form[data-type="unified-composer"] .__composer-pill[aria-pressed="true"] svg,
+[data-composer-surface="true"] .__composer-pill[aria-pressed="true"] .__composer-pill-icon,
+[data-composer-surface="true"] .__composer-pill[aria-pressed="true"] svg {
+  color: var(--cgpt-think-blue) !important;
+  fill: currentColor !important;
+  opacity: 1 !important;
+}
+/* cgpt-think-icon-off $ Softens the Think icon while inactive */
+form[data-type="unified-composer"] .__composer-pill[aria-pressed="false"] .__composer-pill-icon,
+form[data-type="unified-composer"] .__composer-pill[aria-pressed="false"] svg,
+[data-composer-surface="true"] .__composer-pill[aria-pressed="false"] .__composer-pill-icon,
+[data-composer-surface="true"] .__composer-pill[aria-pressed="false"] svg {
+  color: currentColor !important;
+  fill: currentColor !important;
+  opacity: 0.82 !important;
+}
+/* cgpt-composer-active $ Adds subtle press feedback to composer controls */
+form[data-type="unified-composer"] .__composer-pill:active,
+[data-composer-surface="true"] .__composer-pill:active {
+  transform: translateY(1px) !important;
+}
+/* cgpt-submit $ Adds depth to the composer submit button */
 form[data-type="unified-composer"] .composer-submit-button-color {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
 }
-
+/* cgpt-footer-actions $ Keeps composer footer actions transparent */
 [data-testid="composer-footer-actions"] {
   background: transparent !important;
   background-color: transparent !important;
 }
-
-/* cgpt-messages $ Styles chat turns as readable glass bubbles */
+/* cgpt-messages $ Styles user and assistant messages as readable glass bubbles */
 .user-message-bubble-color,
 .bg-token-message-surface {
   background: light-dark(rgba(255, 255, 255, 0.45), rgba(20, 20, 20, 0.4)) !important;
@@ -495,7 +550,7 @@ form[data-type="unified-composer"] .composer-submit-button-color {
   border-radius: 1.375rem 1.375rem 0.25rem 1.375rem !important;
   box-shadow: var(--cgpt-shadow-soft) !important;
 }
-
+/* cgpt-message-images $ Gives user message images a soft glass surface */
 [data-message-author-role="user"] .group\/message-image {
   background: light-dark(rgba(255, 255, 255, 0.3), rgba(20, 20, 20, 0.3)) !important;
   background-color: light-dark(rgba(255, 255, 255, 0.3), rgba(20, 20, 20, 0.3)) !important;
@@ -503,7 +558,7 @@ form[data-type="unified-composer"] .composer-submit-button-color {
   -webkit-backdrop-filter: blur(10px) !important;
   border-radius: 1.75rem !important;
 }
-
+/* cgpt-assistant-message $ Creates a readable glass panel for assistant responses */
 [data-message-author-role="assistant"] .markdown {
   width: fit-content !important;
   max-width: min(100%, 980px) !important;
@@ -516,20 +571,19 @@ form[data-type="unified-composer"] .composer-submit-button-color {
   border: 1px solid var(--cgpt-border) !important;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12) !important;
 }
-
+/* cgpt-assistant-spacing-top $ Removes excess top spacing from assistant messages */
 [data-message-author-role="assistant"] .markdown > *:first-child {
   margin-top: 0 !important;
 }
-
+/* cgpt-assistant-spacing-bottom $ Removes excess bottom spacing from assistant messages */
 [data-message-author-role="assistant"] .markdown > *:last-child {
   margin-bottom: 0 !important;
 }
-
+/* cgpt-message-actions $ Hides the auxiliary left-side conversation action row */
 .group\/conversation-turn > div > div.justify-start {
   opacity: 0 !important;
 }
-
-/* cgpt-code $ Gives code blocks and copy buttons frosted panels */
+/* cgpt-code-blocks $ Gives code blocks a frosted glass frame */
 [data-message-author-role="assistant"] .markdown .border-token-border-light,
 [data-message-author-role="assistant"] pre > div > div > div > div > div > div.border-token-border-light {
   border: 1px solid light-dark(rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.14)) !important;
@@ -539,7 +593,7 @@ form[data-type="unified-composer"] .composer-submit-button-color {
     0 2px 8px rgba(0, 0, 0, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
 }
-
+/* cgpt-code-surface $ Adds glass depth to code editor surfaces */
 [data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary,
 [data-message-author-role="assistant"] pre > div > div > div > div > div > div > .bg-token-bg-elevated-secondary {
   background: light-dark(rgba(255, 255, 255, 0.22), rgba(12, 12, 18, 0.42)) !important;
@@ -550,16 +604,16 @@ form[data-type="unified-composer"] .composer-submit-button-color {
   border-radius: 1.5rem !important;
   overflow: clip !important;
 }
-
+/* cgpt-code-transparent $ Removes nested opaque code editor backgrounds */
 [data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary .cm-editor,
 [data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary .cm-scroller,
-[data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary pre.cm-content,
+[data-message-author-role="assistant"] pre > div > div > div > div > div > div > .bg-token-bg-elevated-secondary pre.cm-content,
 [data-message-author-role="assistant"] .markdown .bg-token-bg-elevated-secondary code {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
 }
-
+/* cgpt-copy-buttons $ Styles code copy controls as compact glass buttons */
 [data-message-author-role="assistant"] button[aria-label*="Copy"],
 button[aria-label*="Copy code"],
 [data-testid="copy-turn-action-button"],
@@ -580,7 +634,7 @@ button[aria-label*="Copy code"],
     box-shadow 140ms ease,
     transform 140ms ease !important;
 }
-
+/* cgpt-copy-buttons-hover $ Adds copy button hover feedback */
 [data-message-author-role="assistant"] button[aria-label*="Copy"]:hover,
 button[aria-label*="Copy code"]:hover,
 [data-testid="copy-turn-action-button"]:hover,
@@ -589,13 +643,13 @@ button[aria-label*="Copy code"]:hover,
   background-color: light-dark(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.16)) !important;
   border-color: var(--cgpt-border-strong) !important;
 }
-
+/* cgpt-code-sticky $ Removes opaque sticky code surfaces */
 [data-message-author-role="assistant"] .markdown div[class*="sticky"] > div[class*="bg-token-bg-elevated-secondary"] {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
 }
-
+/* cgpt-code-sticky-controls $ Styles sticky code controls with readable glass */
 [data-message-author-role="assistant"] .markdown div[class*="sticky"] > div[class*="bg-token-bg-elevated-secondary"] .text-token-text-primary,
 [data-message-author-role="assistant"] .markdown div[class*="sticky"][class*="top-(--sticky-padding-top)"] button[aria-label="Copy"],
 [data-message-author-role="assistant"] .markdown div[class*="sticky"][class*="top-"][class*="z-"] button[aria-label="Copy"] {
@@ -611,8 +665,7 @@ button[aria-label*="Copy code"]:hover,
     inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
   color: var(--cgpt-glass-text-primary) !important;
 }
-
-/* cgpt-flyout $ Styles reasoning and stage thread flyouts */
+/* cgpt-flyout $ Styles reasoning and stage thread flyouts as glass panels */
 [data-testid="stage-thread-flyout"],
 [data-stage-thread-flyout="true"] {
   background: var(--cgpt-glass-weak) !important;
@@ -623,7 +676,7 @@ button[aria-label*="Copy code"]:hover,
   box-shadow: -14px 0 42px rgba(0, 0, 0, 0.1) !important;
   will-change: backdrop-filter !important;
 }
-
+/* cgpt-flyout-content $ Removes opaque nested flyout surfaces */
 [data-testid="stage-thread-flyout"] > div,
 [data-testid="stage-thread-flyout"] .flex.h-full.flex-col,
 [data-testid="screen-threadFlyOut"],
@@ -634,12 +687,11 @@ section[aria-label="Reasoning details"] > div {
   background-image: none !important;
   box-shadow: none !important;
 }
-
+/* cgpt-flyout-borders $ Keeps reasoning detail borders subtle */
 section[aria-label="Reasoning details"] [class*="border-"] {
   border-color: var(--cgpt-border) !important;
 }
-
-/* cgpt-popovers $ Applies strong glass to menus, dialogs, tooltips, and composer dropdowns */
+/* cgpt-popovers $ Styles menus, dialogs, tooltips, and composer dropdowns as glass */
 [role="tooltip"],
 [class="tooltip"],
 [data-radix-popper-content-wrapper] > div,
@@ -661,19 +713,18 @@ div[class*="popover"][class*="bg-token-"] {
   box-shadow: var(--cgpt-shadow) !important;
   color: var(--cgpt-glass-text-primary) !important;
 }
-
+/* cgpt-settings-modal $ Adds a soft glass overlay to the settings modal */
 #modal-settings > div::before {
   background-color: light-dark(rgba(255, 255, 255, 0.28), rgba(0, 0, 0, 0.45)) !important;
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
 }
-
+/* cgpt-popover-text $ Keeps composer popover text readable */
 form[data-type="unified-composer"] [role="listbox"] input,
 form[data-type="unified-composer"] [role="listbox"] div {
   color: var(--cgpt-glass-text-primary) !important;
 }
-
-/* cgpt-pages $ Fixes Library, Apps, GPTs, and search surfaces */
+/* cgpt-pages $ Clears opaque page-specific surfaces */
 [data-testid="bar-search-sources-header"],
 [data-testid="bar-search-sources-header"] > div,
 [data-testid="artifacts-surface-top-controls"],
@@ -689,7 +740,7 @@ form[data-type="unified-composer"] [role="listbox"] div {
   border-color: transparent !important;
   box-shadow: none !important;
 }
-
+/* cgpt-page-buttons $ Gives page action buttons a consistent glass surface */
 [data-testid="artifacts-surface-top-controls"] button.btn,
 [data-testid="artifacts-surface-top-controls"] .btn-ghost {
   color: var(--cgpt-glass-text-primary) !important;
@@ -699,7 +750,7 @@ form[data-type="unified-composer"] [role="listbox"] div {
   border-color: var(--cgpt-border) !important;
   box-shadow: none !important;
 }
-
+/* cgpt-page-primary-buttons $ Gives primary page controls a glass appearance */
 [data-testid="artifacts-surface-top-controls"] button[aria-current="page"],
 [data-testid="artifacts-surface-top-controls"] .btn-primary-inverse,
 [data-testid="artifacts-surface-top-controls"] .bg-token-bg-tertiary,
@@ -723,7 +774,7 @@ main .btn-secondary {
     0 8px 24px rgba(0, 0, 0, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
 }
-
+/* cgpt-page-buttons-hover $ Adds hover feedback to page action buttons */
 [data-testid="artifacts-surface-top-controls"] .btn-ghost:hover,
 [data-testid="artifacts-surface-top-controls"] button[aria-label]:hover,
 .screen-arch button:hover,
@@ -737,7 +788,7 @@ main button.btn-secondary:hover {
   border-color: var(--cgpt-border-strong) !important;
   color: var(--cgpt-glass-text-primary) !important;
 }
-
+/* cgpt-search-input $ Styles GPT and page search fields as glass */
 #main input[type="search"],
 main input[type="search"],
 input[aria-label="Search GPTs"][role="combobox"] {
@@ -753,12 +804,12 @@ input[aria-label="Search GPTs"][role="combobox"] {
     0 10px 28px rgba(0, 0, 0, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
 }
-
+/* cgpt-search-placeholder $ Styles search field placeholders */
 #main input[type="search"]::placeholder,
 input[aria-label="Search GPTs"][role="combobox"]::placeholder {
   color: var(--cgpt-glass-text-muted) !important;
 }
-
+/* cgpt-tabs $ Styles horizontal page tabs as a compact glass rail */
 .no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] {
   position: relative !important;
   z-index: 2 !important;
@@ -777,7 +828,7 @@ input[aria-label="Search GPTs"][role="combobox"]::placeholder {
   overflow-y: visible !important;
   padding: 0.35rem !important;
 }
-
+/* cgpt-tabs-items $ Keeps page tab items transparent until selected */
 .no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] > div {
   color: var(--cgpt-glass-text-secondary) !important;
   background: transparent !important;
@@ -787,7 +838,7 @@ input[aria-label="Search GPTs"][role="combobox"]::placeholder {
   flex: 0 0 auto !important;
   white-space: nowrap !important;
 }
-
+/* cgpt-tabs-selected $ Highlights selected page tabs */
 .no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] > div.bg-token-bg-tertiary,
 .no-scrollbar.flex[class*="scroll-m-5"][class*="gap-1"] > div[class*="border-token-text-primary"] {
   color: var(--cgpt-glass-text-primary) !important;
@@ -795,8 +846,7 @@ input[aria-label="Search GPTs"][role="combobox"]::placeholder {
   background-color: light-dark(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.1)) !important;
   border-color: var(--cgpt-border-strong) !important;
 }
-
-/* cgpt-decorative $ Softens splash artwork and removes a floating upgrade badge */
+/* cgpt-decorative-image $ Softens decorative splash artwork without affecting interaction */
 body > picture {
   opacity: 0.65 !important;
   mask-image: radial-gradient(circle, #000 25%, transparent 85%) !important;
@@ -804,12 +854,11 @@ body > picture {
   mask-size: cover !important;
   pointer-events: none !important;
 }
-
+/* cgpt-upgrade-badge $ Hides the floating upgrade badge */
 button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light {
   display: none !important;
 }
-
-/* cgpt-fallback $ Uses semi-solid surfaces when backdrop-filter is not supported */
+/* cgpt-fallback $ Uses semi-solid surfaces when backdrop-filter is unavailable */
 @supports not (backdrop-filter: blur(1px)) {
   #stage-slideover-sidebar,
   form[data-type="unified-composer"] [data-composer-surface="true"],
@@ -822,13 +871,11 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
     background-color: light-dark(#ffffffe8, #121212e8) !important;
   }
 }
-
-/* cgpt-reduced-motion $ Reduces transitions for users who prefer less motion */
+/* cgpt-reduced-motion $ Respects the user's reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   :root {
     scroll-behavior: auto !important;
   }
-
   .sticky.top-0.z-30,
   div[class*="tall:sticky"][class*="top-header-height"],
   div[class*="pt-(--sidebar-section-first-margin-top)"][class*="tall:sticky"],
@@ -840,13 +887,14 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
   #page-header button[aria-label*="sidebar"],
   #page-header a[href="/"],
   #page-header [data-testid="share-chat-button"],
-  #page-header [data-testid="conversation-options-button"] {
+  #page-header [data-testid="conversation-options-button"],
+  form[data-type="unified-composer"] .__composer-pill,
+  [data-composer-surface="true"] .__composer-pill {
     transition-duration: 0.001ms !important;
     animation-duration: 0.001ms !important;
   }
 }
-
-/* cgpt-hide hint $ I know ChatGPT can make mistakes */
+/* cgpt-hide-disclaimer $ Hides the "I know ChatGPT can make mistakes" hint */
 [data-testid="thread-disclaimer"] {
   display: none !important;
 }

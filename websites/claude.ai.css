@@ -3,7 +3,20 @@ html,
 body,
 .z-sidebar > nav,
 .min-h-full > .bg-bg-100,
-.max-h-screen > .bg-bg-100 {
+.max-h-screen > .bg-bg-100,
+.root > div > div > div,
+main,
+aside,
+.df-header-backdrop,
+[data-chat-input-container="true"] > [role="note"][data-disclaimer="true"],
+[data-cds="ChatComposerNotices"] > [aria-live="polite"] > div,
+[data-cds="ChatComposerNotices"] > [aria-live="polite"] > div::before,
+[data-testid="answer-now-above-composer"] {
   background-color: transparent !important;
   background: none !important;
+}
+
+/* claude-hide disclaimer */
+[data-chat-input-container="true"] > [role="note"][data-disclaimer="true"] {
+  opacity: 0 !important;
 }
