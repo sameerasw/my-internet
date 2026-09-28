@@ -1004,6 +1004,9 @@
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer, mfe-footer-pharos-footer, .footer, #footer, .api-cta, .advantages {\n  display: none !important;\n}"
     },
+    "copilot.com.css": {
+      "mc-Transparency": ".dGJXZG9L {\n  --m365-copilot-canvas-background: transparent !important;\n}\n.fui-FluentProvider_R_15_ {\n  --colorNeutralBackground2: transparent !important;\n  --colorNeutralBackground1: transparent !important;\n}\n.fui-MenuPopover, .MDM1cWJX.eWpPTGIx .fui-InlineDrawer {\n  --m365-copilot-canvas-background: light-dark(#f6f5f3, #252422) !important;\n}"
+    },
     "copilot.microsoft.com.css": {
       "copilot-transparency": "html, body, #app, .dark\\:bg-midnight-850:is([data-theme=\"dark\"] *), .bg-gradient-chat-light, main > div > div > div, [data-testid=\"chat-page\"] > div > div, [data-testid=\"composer\"] > .t-bottom-fade > div > div, #app > div, .absolute.size-full.bg-background-150, [data-testid=\"sticky-header\"] > div > div, [data-testid=\"sidebar-container\"], .bg-sidebar-light.dark\\:bg-sidebar-dark.before\\:absolute, .bg-sidebar-light.dark\\:bg-sidebar-dark.before\\:absolute > div {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n}\n.w-expanded-composer.to-white\\/35 {\n  background-color: #fff !important;\n}\n.w-expanded-composer.dark\\:to-midnight-800\\/65:is([data-theme=\"dark\"] *) {\n  background-color: #000 !important;\n}"
     },
@@ -1585,6 +1588,12 @@
     "ground.news.css": {
       "transparency": "html, body, nav, header, .app-root, #pass-sidebar, #main, #content, section, header > div {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "hidden": ".hideElementSiteWide, [alt=\"Newspaper background\"] {\n  display: none !important;\n}"
+    },
+    "groups.google.com.css": {
+      "gg-transparency": ":root {\n  --gm3-sys-color-background: transparent !important;\n  --og-bar-background: transparent !important;\n}\n.gKR4Fb, .wo4Ilb, .C5Imhb {\n  background: transparent !important;\n}\ndiv:not(.qHLDxc) > gm-coplanar-drawer .UMrnmb-vyw7Sc-Psmogf {\n  --mdc-container-color: transparent !important;\n}",
+      "gg-transparent conversations list": ".F6rDnb.Wj1LYb:not([aria-selected]), .F6rDnb.Wj1LYb[aria-selected=\"false\"] {\n  background: transparent !important;\n}",
+      "gg-fix floating sidebar padding": "div.qHLDxc .UMrnmb-vyw7Sc-Psmogf {\n  padding-top: 4px !important;\n}",
+      "gg-transparent search bar": "form.gb_2e.gb_Pd {\n  --gm3-sys-color-surface-container: transparent !important;\n}"
     },
     "gsmarena.com.css": {
       "gsm-transparency": "html, body, #header, #header::after, .top-bar, #outer, .main, #specs-list table, .ttl, .nfo, .sidebar, .clearfix, .module-phones.module-related, #user-comments, .user-thread, .sub-footer, .more, table, h3, h4, td {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
@@ -2286,6 +2295,11 @@
       "transparency": "html, body, nav, header {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
       "darkreader": ":root {\n  --darkreader-background-ffffff: transparent !important;\n}",
       "no footer": "footer {\n  display: none !important;\n}"
+    },
+    "opencut.app.css": {
+      "oc-transparency": "body, body > div, header, .sticky, main .text-card-foreground {\n  background: transparent !important;\n}",
+      "oc-panels transparent": ".panel {\n  --background: transparent !important;\n}",
+      "oc-opaque elements in catalogue": ".bg-accent:not(.relative) {\n  --accent: transparent !important;\n}"
     },
     "openrouter.ai.css": {
       "openrouter-transparency": "html, body, nav, header, .bg-background, .bg-popover:has([aria-controls=\"search-command-list\"]), .to-background {\n  background-color: transparent !important;\n  background: none !important;\n  border: none !important;\n  box-shadow: none !important;\n  transition:\n    background-color 0.5s ease-in-out,\n    background 0.5s ease-in-out,\n    border 0.5s ease-in-out,\n    box-shadow 0.5s ease-in-out !important;\n}",
@@ -3380,6 +3394,9 @@
     ],
     "+instructure.com.css": [
       "classroom.ucscout.org"
+    ],
+    "notion.so": [
+      "app.notion.com"
     ]
   }
 }
