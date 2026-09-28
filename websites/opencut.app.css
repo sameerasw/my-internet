@@ -1,6 +1,8 @@
 /* oc-transparency */
-body, body > div,
-header, .sticky,
+body,
+body > div,
+header,
+.sticky,
 main .text-card-foreground {
   background: transparent !important; /* @ There is a --background variable, however we can not apply it to elements such as body as they get inherited and for some reason breaks a lot of buttons. */
 }
