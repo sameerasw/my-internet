@@ -1,0 +1,14 @@
+/* transparency */
+.bg-\[\#f8f8f8\] {
+  background-color: transparent !important;
+}
+.bg-\[\#f9f9f9\] {
+  background-color: transparent !important;
+}
+
+/* cosmetic */
+/* text fixing colour */
+.text-gray-500, .text-gray-500\/80 {
+    color: black;
+    font-weight: bold;
+}
