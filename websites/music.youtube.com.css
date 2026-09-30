@@ -3,9 +3,14 @@
   --ts-body-color: #00000000 !important;
 }
 
-body {
+body,
+#guide-wrapper {
   background-color: transparent !important;
   transition: background-color 0.5s ease-in-out !important;
+}
+
+#guide-wrapper {
+  border: none !important;
 }
 
 ytmusic-player-expanding-menu {

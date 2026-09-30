@@ -1,0 +1,31 @@
+/* gg-transparency */
+:root {
+  --gm3-sys-color-background: transparent !important;
+  --og-bar-background: transparent !important;
+}
+
+.gKR4Fb,
+.wo4Ilb,
+.C5Imhb {
+  background: transparent !important;
+}
+
+div:not(.qHLDxc) > gm-coplanar-drawer .UMrnmb-vyw7Sc-Psmogf {
+  --mdc-container-color: transparent !important;
+}
+
+/* gg-transparent conversations list */
+.F6rDnb.Wj1LYb:not([aria-selected]),
+.F6rDnb.Wj1LYb[aria-selected="false"] {
+  background: transparent !important;
+}
+
+/* gg-fix floating sidebar padding */
+div.qHLDxc .UMrnmb-vyw7Sc-Psmogf {
+  padding-top: 4px !important;
+}
+
+/* gg-transparent search bar */
+form.gb_2e.gb_Pd {
+  --gm3-sys-color-surface-container: transparent !important;
+}

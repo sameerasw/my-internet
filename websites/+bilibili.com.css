@@ -1,6 +1,7 @@
 /* bilibili-transparency */
 html,
 body,
+#app,
 #bili-header-container,
 #i_cecream,
 .bili-header,
@@ -10,6 +11,7 @@ body,
 .bili-header .bili-header__channel {
   background-color: transparent !important;
   background: none !important;
+  background-image: none !important;
   border: none !important;
   box-shadow: none !important;
   transition:
