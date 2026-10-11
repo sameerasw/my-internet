@@ -1,5 +1,14 @@
-/* uw-transparency $ Transparent Upwork navigation and Messages without hiding native menus and dialogs. */
-/* @ Page shells: expose the browser wallpaper without changing interactive elements. */
+/* uw-transparency $ Transparent Upwork interface with consistent panels and safe native dropdowns. */
+/* @ Keep roots clear so the browser wallpaper shows through. */
+:root {
+  --uw-panel: color-mix(in srgb, Canvas 40%, transparent) !important;
+  --uw-panel-strong: color-mix(in srgb, Canvas 54%, transparent) !important;
+  --uw-editor: color-mix(in srgb, Canvas 58%, transparent) !important;
+  --uw-selected: color-mix(in srgb, CanvasText 11%, transparent) !important;
+  --uw-hover: color-mix(in srgb, CanvasText 7%, transparent) !important;
+  --uw-stroke: color-mix(in srgb, CanvasText 13%, transparent) !important;
+}
+
 html,
 body,
 #__nuxt,
@@ -8,79 +17,134 @@ body,
 .ng-sidebar-layout-wrapper,
 .ng-sidebar-parent-wrapper,
 .ng-sidebar-nav,
-.ng-sidebar-bar,
-.ng-sidebar-panes,
-.ng-sidebar-pane,
 .main-content,
 .main-content-inner,
 .desktop-container,
 .desktop-layout-index,
 .desktop-layout-room,
 .desktop-room,
-.desktop-room-layout {
+.desktop-room-layout,
+.room-section,
+.up-d-room {
   background-color: transparent !important;
   background-image: none !important;
+}
+
+/* @ Navigation is one surface; leave buttons and profile menus untouched. */
+.ng-sidebar-bar {
+  background-color: var(--uw-panel) !important;
+  background-image: none !important;
+  border-right: 1px solid var(--uw-stroke) !important;
+}
+
+/* @ Apply tint to the entire conversation list, not just its 102px header. */
+.rooms-panel {
+  background-color: var(--uw-panel) !important;
+  background-image: none !important;
+  border-right: 1px solid var(--uw-stroke) !important;
   box-shadow: none !important;
 }
 
-/* @ Chat navigation, room header, conversation canvas and message composer. */
-.rooms-panel,
 .rooms-panel__list-wrapper,
 .rooms-panel-header,
 .sticky-rooms-panel-header,
 .rooms-panel__body-wrapper,
 .rooms-panel-body,
 .rooms-panel-section,
-.rooms-panel-room-list,
-.room-section,
-.top-room-content,
+.rooms-panel-room-list {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* @ Clear, understated current conversation and hover treatments. */
+.rooms-panel-room-list .room-list-item:not(.is-active-room):hover {
+  background-color: var(--uw-hover) !important;
+}
+
+.rooms-panel-room-list .room-list-item.is-active-room {
+  background-color: var(--uw-selected) !important;
+  box-shadow: inset 3px 0 0 #14a800 !important;
+}
+
+/* @ Treat conversation header and scrolling message area as separate surfaces. */
+.top-room-content {
+  background-color: var(--uw-panel-strong) !important;
+  background-image: none !important;
+  border-bottom: 1px solid var(--uw-stroke) !important;
+  box-shadow: none !important;
+}
+
 .up-d-room-header,
 .room-header,
 .sub-header-content,
-#story-viewport,
+.scroll-wrapper,
 .room-body,
+.story-list,
+.story-list-item-root,
+.story-inner,
+.story-section,
+.story-message {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* @ The message background tint is on the scroll container, not each message. */
+.room-section > .scroll-wrapper {
+  background-color: color-mix(in srgb, Canvas 26%, transparent) !important;
+}
+
+/* @ Restore a cohesive composer while keeping editable content legible. */
 .composer-container,
-.up-d-composer,
+.up-d-composer {
+  background-color: var(--uw-panel) !important;
+  background-image: none !important;
+}
+
 .up-d-composer > .input-area,
-.up-d-composer .composer-wrapper,
 .up-d-composer .composer,
 .up-d-composer .tiptap {
   background-color: transparent !important;
   background-image: none !important;
-  box-shadow: none !important;
 }
 
-/* @ Profile sidebar shells only; retain the native contract timeline, cards and badges. */
-.desktop-room > .sidebar-layout,
-.desktop-room .sidebar,
-.desktop-room .right-sidebar,
-.desktop-room .sidebar-content,
+.up-d-composer .composer-wrapper {
+  background-color: var(--uw-editor) !important;
+  background-image: none !important;
+  border: 1px solid var(--uw-stroke) !important;
+  border-radius: 10px !important;
+}
+
+/* @ Only the sidebar's frame and contract panel receive tint; preserve status badges. */
+.desktop-room .right-sidebar.sidebar-content {
+  background-color: var(--uw-panel) !important;
+  background-image: none !important;
+  border-left: 1px solid var(--uw-stroke) !important;
+}
+
 .desktop-room .sidebar-views,
 .desktop-room .sidebar-state,
-.desktop-room .up-d-sidebar-header,
-.desktop-room .sidebar-profile,
 .desktop-room .panels {
   background-color: transparent !important;
   background-image: none !important;
-  box-shadow: none !important;
 }
 
-/* @ Popup safety: blur on these ancestors creates stacking contexts that can bury Upwork dropdowns. */
-.ng-sidebar-bar,
-.rooms-panel__list-wrapper,
-.top-room-content,
-.desktop-room .sidebar-content,
-.up-d-composer > .input-area {
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
+.desktop-room .up-d-sidebar-header {
+  background-color: var(--uw-panel-strong) !important;
+  background-image: none !important;
 }
 
-/* uw-glass-panels $ Optional translucent surfaces without ancestor blur, keeping filter and options popups on top. */
-/* @ A light tint retains separation between panels; Canvas follows the active color scheme. */
-.ng-sidebar-bar,
-.rooms-panel__list-wrapper,
-.top-room-content,
-.desktop-room .sidebar-content,
-.up-d-composer > .input-area {
-  background-color: color-mix(in srgb, Canvas 10%, transparent) !important;
+.desktop-room .sidebar-profile {
+  background-color: transparent !important;
+  background-image: none !important;
 }
+
+.desktop-room .up-d-generic-collapsible-panel {
+  background-color: var(--uw-panel-strong) !important;
+  background-image: none !important;
+  border: 1px solid var(--uw-stroke) !important;
+  border-radius: 12px !important;
+}
+
+/* @ Popup safety: .air3-dropdown-secondary is a TRIGGER, not the floating menu.
+   Keep Upwork's dropdown, dialog and tooltip styles, stacking and clipping native. */
