@@ -101,139 +101,134 @@ body,
   background-image: none !important;
 }
 
-/* @ Only the sidebar's frame and contract panel receive tint; preserve status badges. */
+/* @ Room viewport: allow the last message to scroll clear of the floating composer. */
+.room-section #story-viewport .story-list {
+  padding-bottom: 44px !important;
+}
+
+/* @ The right sidebar's nested wrappers are genuine background layers. */
+.desktop-room .sidebar-layout,
+.desktop-room .sidebar,
+.desktop-room .sidebar-views,
+.desktop-room .sidebar-state.utility-pane,
+.desktop-room .panels,
+.desktop-room .panels > ul {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* @ Match the sidebar frame to the message list rather than making it a dark slab. */
 .desktop-room .right-sidebar.sidebar-content {
   background-color: var(--uw-panel) !important;
   background-image: none !important;
   border-left: 1px solid var(--uw-stroke) !important;
+  box-shadow: none !important;
 }
 
-.desktop-room .sidebar-views,
-.desktop-room .sidebar-state,
-.desktop-room .panels {
-  background-color: transparent !important;
-  background-image: none !important;
-}
-
+/* @ Profile information has a small contrast boost, without an opaque black header. */
 .desktop-room .up-d-sidebar-header {
-  background-color: var(--uw-panel-strong) !important;
+  background-color: color-mix(in srgb, Canvas 25%, transparent) !important;
   background-image: none !important;
+  border-bottom: 1px solid var(--uw-stroke) !important;
 }
 
-.desktop-room .sidebar-profile {
-  background-color: transparent !important;
-  background-image: none !important;
-}
-
-.desktop-room .up-d-generic-collapsible-panel {
-  background-color: var(--uw-panel-strong) !important;
+/* @ Actual sidebar accordions are LI.panel-list-item, not global .air3-card elements. */
+.desktop-room .panels > ul > li.panel-list-item {
+  background-color: color-mix(in srgb, Canvas 27%, transparent) !important;
   background-image: none !important;
   border: 1px solid var(--uw-stroke) !important;
   border-radius: 12px !important;
+  box-shadow: none !important;
 }
 
-/* @ Popup safety: .air3-dropdown-secondary is a TRIGGER, not the floating menu.
-   Keep Upwork's dropdown, dialog and tooltip styles, stacking and clipping native. */
+/* @ Avoid doubled dark surfaces and outlines on expanded activity timelines. */
+.desktop-room .panels > ul > li.panel-list-item > .up-d-generic-collapsible-panel {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 solid transparent !important;
+  box-shadow: none !important;
+}
 
-/* uw-composer $ Cohesive rounded chatbox with a comfortable editor and integrated toolbar. */
-/* @ Style one outer card instead of adding separate opaque rectangles around the editor and buttons. */
-.up-d-composer {
-  background-color: color-mix(in srgb, Canvas 82%, transparent) !important;
+/* @ Preserve Upwork status badges, collapsible interactions and native popup layers. */
+
+/* uw-composer $ Clean, integrated message composer that respects Upwork's native height and scrolling. */
+/* @ Parent provides separation; no positioning, fixed height or margins on the composer itself. */
+.room-section > .composer-container {
+  background-color: color-mix(in srgb, Canvas 24%, transparent) !important;
+  background-image: none !important;
+  border-top: 1px solid var(--uw-stroke) !important;
+}
+
+/* @ A single soft outer card, staying inside the space reserved by Upwork. */
+.room-section .up-d-composer {
+  background-color: color-mix(in srgb, Canvas 65%, transparent) !important;
   background-image: none !important;
   border: 1px solid color-mix(in srgb, CanvasText 18%, transparent) !important;
-  border-radius: 16px !important;
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
   box-sizing: border-box !important;
-  margin: 2px 12px 10px !important;
-  padding: 9px 12px 7px !important;
-  transition: border-color 140ms ease, box-shadow 140ms ease !important;
+  padding: 5px 10px !important;
 }
 
-/* @ Keyboard focus: highlight the entire composer instead of a narrow text-field outline. */
-.up-d-composer:focus-within {
-  border-color: color-mix(in srgb, #14a800 65%, CanvasText 15%) !important;
-  box-shadow: 0 0 0 2px color-mix(in srgb, #14a800 15%, transparent), 0 8px 28px rgba(0, 0, 0, 0.16) !important;
-}
-
-/* @ Preserve the native input layout and the expand-composer control. */
-.up-d-composer > .input-area {
+/* @ No independent editor box: inputs and toolbar visually belong to the same surface. */
+.room-section .up-d-composer > .input-area,
+.room-section .up-d-composer .composer-wrapper,
+.room-section .up-d-composer .composer {
   background-color: transparent !important;
   background-image: none !important;
   border: 0 solid transparent !important;
   box-shadow: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
-.up-d-composer .composer-wrapper,
-.up-d-composer .composer {
-  background-color: transparent !important;
-  background-image: none !important;
-  border: 0 solid transparent !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-}
-
-.up-d-composer .composer-wrapper {
-  min-height: 46px !important;
-  min-width: 0 !important;
-}
-
-/* @ Comfortable typing space; content still grows and can scroll when long. */
-.up-d-composer .composer .tiptap[contenteditable="true"] {
+.room-section .up-d-composer .composer .tiptap[contenteditable="true"] {
   background-color: transparent !important;
   background-image: none !important;
   border: 0 solid transparent !important;
   box-shadow: none !important;
   box-sizing: border-box !important;
-  min-height: 46px !important;
-  max-height: 180px !important;
+  min-height: 38px !important;
+  max-height: 160px !important;
   overflow-y: auto !important;
   outline: none !important;
-  padding: 10px 6px !important;
+  padding: 6px 7px !important;
   line-height: 1.5 !important;
 }
 
-/* @ Give the empty editor placeholder enough contrast to remain legible. */
-.up-d-composer .tiptap [data-placeholder]::before {
-  color: color-mix(in srgb, CanvasText 57%, transparent) !important;
+/* @ Placeholder and selection contrast match the theme. */
+.room-section .up-d-composer .tiptap [data-placeholder]::before {
+  color: color-mix(in srgb, CanvasText 58%, transparent) !important;
 }
 
-/* @ Integrated action row, separated by a quiet divider. */
-.up-d-composer .up-d-composer-actions {
+/* @ Compact action row, with native attachment, formatting and emoji menus untouched. */
+.room-section .up-d-composer .up-d-composer-actions {
   background-color: transparent !important;
   background-image: none !important;
   border-top: 1px solid color-mix(in srgb, CanvasText 10%, transparent) !important;
   box-shadow: none !important;
-  min-height: 34px !important;
-  margin-top: 2px !important;
-  padding: 4px 0 0 !important;
+  padding-top: 4px !important;
 }
 
-.up-d-composer .up-d-composer-actions .air3-btn:not(:disabled) {
-  border-radius: 9px !important;
-}
-
-.up-d-composer .up-d-composer-actions .air3-btn:not(:disabled):hover {
+.room-section .up-d-composer .up-d-composer-actions button:not(:disabled):hover {
   background-color: var(--uw-hover) !important;
 }
 
-/* @ The enabled Send control is easy to find, but disabled controls stay native. */
-.up-d-composer .send-message-section button[data-cy="send-message"]:not(:disabled) {
+/* @ Highlight the card when typing instead of adding an inner ring to the editor. */
+.room-section .up-d-composer:focus-within {
+  border-color: color-mix(in srgb, #14a800 65%, transparent) !important;
+  box-shadow: 0 0 0 2px color-mix(in srgb, #14a800 12%, transparent) !important;
+}
+
+/* @ Enabled Send stands out; the disabled state keeps Upwork's defaults. */
+.room-section .up-d-composer button[data-cy="send-message"]:not(:disabled) {
   background-color: #14a800 !important;
   color: #fff !important;
   --icon-color: #fff !important;
-  border-radius: 10px !important;
+  border-radius: 9px !important;
 }
 
-.up-d-composer .send-message-section button[data-cy="send-message"]:not(:disabled):hover {
+.room-section .up-d-composer button[data-cy="send-message"]:not(:disabled):hover {
   background-color: #108a00 !important;
 }
 
-/* @ No z-index, transform, position or backdrop-filter overrides: keep attachments, emoji, tooltips and dropdowns working. */
-@media (max-width: 760px) {
-  .up-d-composer {
-    margin: 2px 4px 6px !important;
-    padding: 7px 8px 5px !important;
-  }
-}
+/* @ Never override layout positioning, z-index, transforms or backdrop filters here. */
