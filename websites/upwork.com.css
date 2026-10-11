@@ -1,89 +1,80 @@
-/* uw-transparency $ Make Upwork's layout, navigation, and messaging panels transparent without removing interactive states. */
+/* uw-transparency $ Transparent Upwork navigation and Messages layout, while preserving readable menus, message states and controls. */
+/* @ Page and application shells: leave the browser wallpaper visible. */
 html,
 body,
 #__nuxt,
-#app,
-#root,
 .layout-container,
 .layout,
 .ng-sidebar-layout-wrapper,
 .ng-sidebar-parent-wrapper,
 .ng-sidebar-nav,
 .ng-sidebar-bar,
-.ng-sidebar-list,
 .ng-sidebar-panes,
 .ng-sidebar-pane,
 .main-content,
 .main-content-inner,
-.main-content-sticky-area,
-.main-content-sticky-inner,
 .desktop-container,
 .desktop-layout-index,
 .desktop-layout-room,
 .desktop-room,
-.desktop-room-layout,
-.rooms-panel,
-.rooms-panel__list-wrapper,
-.rooms-panel__body-wrapper,
-.rooms-panel-header,
-.sticky-rooms-panel-header,
-.rooms-panel-body,
-.rooms-panel-section,
-.rooms-panel-room-list,
-.up-d-room,
-.room-section,
-.top-room-content,
-.room-header,
-.sub-header-content,
-.scroll-wrapper,
-.room-body,
-.story-list,
-.story-day-header,
-.composer-container,
-.up-d-composer,
-.sidebar-layout,
-.sidebar,
-.sidebar-content,
-.sidebar-views,
-.air3-card,
-.up-card {
+.desktop-room-layout {
   background-color: transparent !important;
   background-image: none !important;
   box-shadow: none !important;
 }
 
-/* @ Keep the selected conversation, hover feedback, message bubbles, text editors, dropdowns, and dialogs readable. */
-.room-list-item:not([aria-current="page"]):not(:hover):not(:focus-within),
-.ng-sidebar-bar-item:not(.is-active):not([aria-current="page"]):not(:hover):not(:focus-visible) {
-  background-color: transparent !important;
-}
-
-/* uw-glass-panels $ Optionally add translucent, blurred surfaces to navigation and message controls. */
-:root {
-  --uw-glass-surface: rgba(255, 255, 255, 0.72) !important;
-}
-
-html[data-theme="dark"],
-html[data-darkreader-scheme="dark"],
-html.dark {
-  --uw-glass-surface: rgba(20, 26, 23, 0.76) !important;
-}
-
-.ng-sidebar-bar,
+/* @ Messages: use actual Upwork panel, header and scroll-container selectors. */
+.rooms-panel,
+.rooms-panel__list-wrapper,
 .rooms-panel-header,
 .sticky-rooms-panel-header,
+.rooms-panel__body-wrapper,
+.rooms-panel-body,
+.rooms-panel-section,
+.rooms-panel-room-list,
+.room-section,
+.top-room-content,
+.up-d-room-header,
 .room-header,
-.up-d-composer .input-area,
-.sidebar-content,
-.air3-card,
-.up-card {
-  background-color: var(--uw-glass-surface) !important;
-  backdrop-filter: blur(16px) saturate(1.2) !important;
-  -webkit-backdrop-filter: blur(16px) saturate(1.2) !important;
+.sub-header-content,
+#story-viewport,
+.room-body,
+.composer-container,
+.up-d-composer,
+.up-d-composer > .input-area,
+.up-d-composer .composer-wrapper,
+.up-d-composer .composer,
+.up-d-composer .tiptap {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
 }
 
-/* uw-darkreader $ Allow Dark Reader to reveal wallpaper behind common light Upwork surfaces. */
-html[data-darkreader-mode] {
-  --darkreader-background-ffffff: transparent !important;
-  --darkreader-background-f9f9f9: transparent !important;
+/* @ Right-side profile: don't turn contract and activity content into unreadable glass. */
+.desktop-room > .sidebar-layout,
+.desktop-room .sidebar,
+.desktop-room .right-sidebar,
+.desktop-room .sidebar-content,
+.desktop-room .sidebar-views,
+.desktop-room .sidebar-state,
+.desktop-room .up-d-sidebar-header,
+.desktop-room .sidebar-profile,
+.desktop-room .panels {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* @ Keep message-row selection and hover styling, dialogs, popovers, attachments, badges, editor toolbars and activity cards intact. */
+
+/* uw-glass-panels $ Subtle blur without the previous hard-coded white panels; adapts to the active browser color scheme. */
+/* @ Canvas tracks light/dark color schemes, unlike a fixed rgba(255,255,255) background. */
+.ng-sidebar-bar,
+.rooms-panel__list-wrapper,
+.top-room-content,
+.desktop-room .sidebar-content,
+.up-d-composer > .input-area {
+  background-color: color-mix(in srgb, Canvas 14%, transparent) !important;
+  backdrop-filter: blur(14px) saturate(1.1) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(1.1) !important;
 }
