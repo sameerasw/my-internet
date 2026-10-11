@@ -1,0 +1,89 @@
+/* uw-transparency $ Make Upwork's layout, navigation, and messaging panels transparent without removing interactive states. */
+html,
+body,
+#__nuxt,
+#app,
+#root,
+.layout-container,
+.layout,
+.ng-sidebar-layout-wrapper,
+.ng-sidebar-parent-wrapper,
+.ng-sidebar-nav,
+.ng-sidebar-bar,
+.ng-sidebar-list,
+.ng-sidebar-panes,
+.ng-sidebar-pane,
+.main-content,
+.main-content-inner,
+.main-content-sticky-area,
+.main-content-sticky-inner,
+.desktop-container,
+.desktop-layout-index,
+.desktop-layout-room,
+.desktop-room,
+.desktop-room-layout,
+.rooms-panel,
+.rooms-panel__list-wrapper,
+.rooms-panel__body-wrapper,
+.rooms-panel-header,
+.sticky-rooms-panel-header,
+.rooms-panel-body,
+.rooms-panel-section,
+.rooms-panel-room-list,
+.up-d-room,
+.room-section,
+.top-room-content,
+.room-header,
+.sub-header-content,
+.scroll-wrapper,
+.room-body,
+.story-list,
+.story-day-header,
+.composer-container,
+.up-d-composer,
+.sidebar-layout,
+.sidebar,
+.sidebar-content,
+.sidebar-views,
+.air3-card,
+.up-card {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* @ Keep the selected conversation, hover feedback, message bubbles, text editors, dropdowns, and dialogs readable. */
+.room-list-item:not([aria-current="page"]):not(:hover):not(:focus-within),
+.ng-sidebar-bar-item:not(.is-active):not([aria-current="page"]):not(:hover):not(:focus-visible) {
+  background-color: transparent !important;
+}
+
+/* uw-glass-panels $ Optionally add translucent, blurred surfaces to navigation and message controls. */
+:root {
+  --uw-glass-surface: rgba(255, 255, 255, 0.72) !important;
+}
+
+html[data-theme="dark"],
+html[data-darkreader-scheme="dark"],
+html.dark {
+  --uw-glass-surface: rgba(20, 26, 23, 0.76) !important;
+}
+
+.ng-sidebar-bar,
+.rooms-panel-header,
+.sticky-rooms-panel-header,
+.room-header,
+.up-d-composer .input-area,
+.sidebar-content,
+.air3-card,
+.up-card {
+  background-color: var(--uw-glass-surface) !important;
+  backdrop-filter: blur(16px) saturate(1.2) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(1.2) !important;
+}
+
+/* uw-darkreader $ Allow Dark Reader to reveal wallpaper behind common light Upwork surfaces. */
+html[data-darkreader-mode] {
+  --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-f9f9f9: transparent !important;
+}
