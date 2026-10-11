@@ -152,83 +152,119 @@ body,
 
 /* @ Preserve Upwork status badges, collapsible interactions and native popup layers. */
 
-/* uw-composer $ Clean, integrated message composer that respects Upwork's native height and scrolling. */
-/* @ Parent provides separation; no positioning, fixed height or margins on the composer itself. */
+/* uw-composer $ Floating message dock with a spacious typing area and integrated actions. */
+/* @ Style the reserved composer region, not the actual chat viewport or popup ancestors. */
 .room-section > .composer-container {
-  background-color: color-mix(in srgb, Canvas 24%, transparent) !important;
+  background-color: transparent !important;
   background-image: none !important;
-  border-top: 1px solid var(--uw-stroke) !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-/* @ A single soft outer card, staying inside the space reserved by Upwork. */
+/* @ Deliberately narrower than the chat column: a floating capsule instead of a full-width footer. */
 .room-section .up-d-composer {
-  background-color: color-mix(in srgb, Canvas 65%, transparent) !important;
-  background-image: none !important;
-  border: 1px solid color-mix(in srgb, CanvasText 18%, transparent) !important;
-  border-radius: 14px !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
+  width: calc(100% - 28px) !important;
+  max-width: 760px !important;
+  margin: 0 auto 12px !important;
+  padding: 12px 16px 9px !important;
   box-sizing: border-box !important;
-  padding: 5px 10px !important;
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, Canvas 86%, transparent),
+    color-mix(in srgb, Canvas 72%, transparent)
+  ) !important;
+  border: 1px solid color-mix(in srgb, CanvasText 23%, transparent) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.22), 0 1px 2px rgba(0, 0, 0, 0.12) !important;
+  transition: border-color 150ms ease, box-shadow 150ms ease !important;
 }
 
-/* @ No independent editor box: inputs and toolbar visually belong to the same surface. */
+/* @ Focus ring belongs to the complete dock, not the inner ProseMirror editor. */
+.room-section .up-d-composer:focus-within {
+  border-color: color-mix(in srgb, #14a800 76%, CanvasText 12%) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, #14a800 15%, transparent), 0 12px 36px rgba(0, 0, 0, 0.22) !important;
+}
+
+/* @ Remove the native thin field outline and keep the expand-editor button usable. */
 .room-section .up-d-composer > .input-area,
 .room-section .up-d-composer .composer-wrapper,
 .room-section .up-d-composer .composer {
   background-color: transparent !important;
   background-image: none !important;
   border: 0 solid transparent !important;
+  border-radius: 0 !important;
   box-shadow: none !important;
 }
 
+.room-section .up-d-composer .composer-wrapper {
+  min-width: 0 !important;
+  min-height: 64px !important;
+}
+
+/* @ A genuinely roomier edit area, with native rich-text editing and scrolling preserved. */
 .room-section .up-d-composer .composer .tiptap[contenteditable="true"] {
   background-color: transparent !important;
   background-image: none !important;
   border: 0 solid transparent !important;
+  outline: none !important;
   box-shadow: none !important;
   box-sizing: border-box !important;
-  min-height: 38px !important;
-  max-height: 160px !important;
+  min-height: 64px !important;
+  max-height: 220px !important;
   overflow-y: auto !important;
-  outline: none !important;
-  padding: 6px 7px !important;
+  padding: 10px 8px 12px !important;
   line-height: 1.5 !important;
 }
 
-/* @ Placeholder and selection contrast match the theme. */
 .room-section .up-d-composer .tiptap [data-placeholder]::before {
-  color: color-mix(in srgb, CanvasText 58%, transparent) !important;
+  color: color-mix(in srgb, CanvasText 65%, transparent) !important;
 }
 
-/* @ Compact action row, with native attachment, formatting and emoji menus untouched. */
+/* @ The controls are part of the same surface, not a second bar divided by a line. */
 .room-section .up-d-composer .up-d-composer-actions {
-  background-color: transparent !important;
-  background-image: none !important;
-  border-top: 1px solid color-mix(in srgb, CanvasText 10%, transparent) !important;
+  background: transparent !important;
+  border: none !important;
   box-shadow: none !important;
-  padding-top: 4px !important;
+  min-height: 36px !important;
+  padding: 2px 1px 0 !important;
 }
 
-.room-section .up-d-composer .up-d-composer-actions button:not(:disabled):hover {
+/* @ Round icon controls, with soft feedback but no changes to click behavior. */
+.room-section .up-d-composer .up-d-composer-actions .air3-btn {
+  border-radius: 12px !important;
+}
+
+.room-section .up-d-composer .up-d-composer-actions .air3-btn:not(:disabled):hover {
   background-color: var(--uw-hover) !important;
 }
 
-/* @ Highlight the card when typing instead of adding an inner ring to the editor. */
-.room-section .up-d-composer:focus-within {
-  border-color: color-mix(in srgb, #14a800 65%, transparent) !important;
-  box-shadow: 0 0 0 2px color-mix(in srgb, #14a800 12%, transparent) !important;
+/* @ Send is recognizably actionable; disabled stays muted. */
+.room-section .up-d-composer button[data-cy="send-message"] {
+  background-color: color-mix(in srgb, CanvasText 9%, transparent) !important;
+  border-radius: 12px !important;
 }
 
-/* @ Enabled Send stands out; the disabled state keeps Upwork's defaults. */
 .room-section .up-d-composer button[data-cy="send-message"]:not(:disabled) {
   background-color: #14a800 !important;
   color: #fff !important;
   --icon-color: #fff !important;
-  border-radius: 9px !important;
 }
 
 .room-section .up-d-composer button[data-cy="send-message"]:not(:disabled):hover {
   background-color: #108a00 !important;
 }
 
-/* @ Never override layout positioning, z-index, transforms or backdrop filters here. */
+/* @ Responsive dock sizing; no fixed positioning, blur or clipping around native menus. */
+@media (max-width: 760px) {
+  .room-section .up-d-composer {
+    width: calc(100% - 12px) !important;
+    margin: 0 auto 6px !important;
+    padding: 8px 10px 6px !important;
+    border-radius: 18px !important;
+  }
+
+  .room-section .up-d-composer .composer-wrapper,
+  .room-section .up-d-composer .composer .tiptap[contenteditable="true"] {
+    min-height: 48px !important;
+  }
+}
