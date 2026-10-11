@@ -1,5 +1,5 @@
-/* uw-transparency $ Transparent Upwork navigation and Messages layout, while preserving readable menus, message states and controls. */
-/* @ Page and application shells: leave the browser wallpaper visible. */
+/* uw-transparency $ Transparent Upwork navigation and Messages without hiding native menus and dialogs. */
+/* @ Page shells: expose the browser wallpaper without changing interactive elements. */
 html,
 body,
 #__nuxt,
@@ -23,7 +23,7 @@ body,
   box-shadow: none !important;
 }
 
-/* @ Messages: use actual Upwork panel, header and scroll-container selectors. */
+/* @ Chat navigation, room header, conversation canvas and message composer. */
 .rooms-panel,
 .rooms-panel__list-wrapper,
 .rooms-panel-header,
@@ -50,7 +50,7 @@ body,
   box-shadow: none !important;
 }
 
-/* @ Right-side profile: don't turn contract and activity content into unreadable glass. */
+/* @ Profile sidebar shells only; retain the native contract timeline, cards and badges. */
 .desktop-room > .sidebar-layout,
 .desktop-room .sidebar,
 .desktop-room .right-sidebar,
@@ -65,16 +65,22 @@ body,
   box-shadow: none !important;
 }
 
-/* @ Keep message-row selection and hover styling, dialogs, popovers, attachments, badges, editor toolbars and activity cards intact. */
-
-/* uw-glass-panels $ Subtle blur without the previous hard-coded white panels; adapts to the active browser color scheme. */
-/* @ Canvas tracks light/dark color schemes, unlike a fixed rgba(255,255,255) background. */
+/* @ Popup safety: blur on these ancestors creates stacking contexts that can bury Upwork dropdowns. */
 .ng-sidebar-bar,
 .rooms-panel__list-wrapper,
 .top-room-content,
 .desktop-room .sidebar-content,
 .up-d-composer > .input-area {
-  background-color: color-mix(in srgb, Canvas 14%, transparent) !important;
-  backdrop-filter: blur(14px) saturate(1.1) !important;
-  -webkit-backdrop-filter: blur(14px) saturate(1.1) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* uw-glass-panels $ Optional translucent surfaces without ancestor blur, keeping filter and options popups on top. */
+/* @ A light tint retains separation between panels; Canvas follows the active color scheme. */
+.ng-sidebar-bar,
+.rooms-panel__list-wrapper,
+.top-room-content,
+.desktop-room .sidebar-content,
+.up-d-composer > .input-area {
+  background-color: color-mix(in srgb, Canvas 10%, transparent) !important;
 }
