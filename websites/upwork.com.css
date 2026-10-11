@@ -103,7 +103,7 @@ body,
 
 /* @ Room viewport: allow the last message to scroll clear of the floating composer. */
 .room-section #story-viewport .story-list {
-  padding-bottom: 44px !important;
+  padding-bottom: 64px !important;
 }
 
 /* @ The right sidebar's nested wrappers are genuine background layers. */
@@ -152,40 +152,38 @@ body,
 
 /* @ Preserve Upwork status badges, collapsible interactions and native popup layers. */
 
-/* uw-composer $ Floating message dock with a spacious typing area and integrated actions. */
-/* @ Style the reserved composer region, not the actual chat viewport or popup ancestors. */
+/* uw-composer $ Compact, floating message dock that fits Upwork's reserved composer space. */
+/* @ Upwork positions the composer absolutely and reserves space for roughly its native height.
+   Keep the card compact so it cannot cover the last visible chat message. */
 .room-section > .composer-container {
   background-color: transparent !important;
   background-image: none !important;
-  border: none !important;
+  border: 0 solid transparent !important;
   box-shadow: none !important;
 }
 
-/* @ Deliberately narrower than the chat column: a floating capsule instead of a full-width footer. */
+/* @ Center a gently rounded dock within the native footer, avoiding extra bottom margin. */
 .room-section .up-d-composer {
-  width: calc(100% - 28px) !important;
+  width: calc(100% - 24px) !important;
   max-width: 760px !important;
-  margin: 0 auto 12px !important;
-  padding: 12px 16px 9px !important;
+  margin: 0 auto !important;
+  padding: 6px 12px 4px !important;
   box-sizing: border-box !important;
-  background: linear-gradient(
-    145deg,
-    color-mix(in srgb, Canvas 86%, transparent),
-    color-mix(in srgb, Canvas 72%, transparent)
-  ) !important;
-  border: 1px solid color-mix(in srgb, CanvasText 23%, transparent) !important;
-  border-radius: 24px !important;
-  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.22), 0 1px 2px rgba(0, 0, 0, 0.12) !important;
+  background-color: color-mix(in srgb, Canvas 82%, transparent) !important;
+  background-image: none !important;
+  border: 1px solid color-mix(in srgb, CanvasText 19%, transparent) !important;
+  border-radius: 19px !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.16) !important;
   transition: border-color 150ms ease, box-shadow 150ms ease !important;
 }
 
-/* @ Focus ring belongs to the complete dock, not the inner ProseMirror editor. */
+/* @ Keep the subtle focus indication on the entire card. */
 .room-section .up-d-composer:focus-within {
-  border-color: color-mix(in srgb, #14a800 76%, CanvasText 12%) !important;
-  box-shadow: 0 0 0 3px color-mix(in srgb, #14a800 15%, transparent), 0 12px 36px rgba(0, 0, 0, 0.22) !important;
+  border-color: color-mix(in srgb, #14a800 65%, CanvasText 10%) !important;
+  box-shadow: 0 0 0 2px color-mix(in srgb, #14a800 12%, transparent), 0 5px 20px rgba(0, 0, 0, 0.16) !important;
 }
 
-/* @ Remove the native thin field outline and keep the expand-editor button usable. */
+/* @ One surface: remove the nested input outline but keep expand-editor accessible. */
 .room-section .up-d-composer > .input-area,
 .room-section .up-d-composer .composer-wrapper,
 .room-section .up-d-composer .composer {
@@ -198,10 +196,10 @@ body,
 
 .room-section .up-d-composer .composer-wrapper {
   min-width: 0 !important;
-  min-height: 64px !important;
+  min-height: 40px !important;
 }
 
-/* @ A genuinely roomier edit area, with native rich-text editing and scrolling preserved. */
+/* @ Comfortable single-line entry; multiline content scrolls rather than covering chat. */
 .room-section .up-d-composer .composer .tiptap[contenteditable="true"] {
   background-color: transparent !important;
   background-image: none !important;
@@ -209,62 +207,62 @@ body,
   outline: none !important;
   box-shadow: none !important;
   box-sizing: border-box !important;
-  min-height: 64px !important;
-  max-height: 220px !important;
+  min-height: 40px !important;
+  max-height: 144px !important;
   overflow-y: auto !important;
-  padding: 10px 8px 12px !important;
+  padding: 6px 7px !important;
   line-height: 1.5 !important;
 }
 
 .room-section .up-d-composer .tiptap [data-placeholder]::before {
-  color: color-mix(in srgb, CanvasText 65%, transparent) !important;
+  color: color-mix(in srgb, CanvasText 63%, transparent) !important;
 }
 
-/* @ The controls are part of the same surface, not a second bar divided by a line. */
+/* @ Minimal attached toolbar, without a full-width divider. */
 .room-section .up-d-composer .up-d-composer-actions {
-  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
   border: none !important;
   box-shadow: none !important;
-  min-height: 36px !important;
-  padding: 2px 1px 0 !important;
+  min-height: 32px !important;
+  padding: 0 !important;
 }
 
-/* @ Round icon controls, with soft feedback but no changes to click behavior. */
 .room-section .up-d-composer .up-d-composer-actions .air3-btn {
-  border-radius: 12px !important;
+  border-radius: 10px !important;
 }
 
 .room-section .up-d-composer .up-d-composer-actions .air3-btn:not(:disabled):hover {
   background-color: var(--uw-hover) !important;
 }
 
-/* @ Send is recognizably actionable; disabled stays muted. */
-.room-section .up-d-composer button[data-cy="send-message"] {
-  background-color: color-mix(in srgb, CanvasText 9%, transparent) !important;
-  border-radius: 12px !important;
-}
-
+/* @ Distinguish available Send action; leave Upwork disabled behavior intact. */
 .room-section .up-d-composer button[data-cy="send-message"]:not(:disabled) {
   background-color: #14a800 !important;
-  color: #fff !important;
-  --icon-color: #fff !important;
+  color: white !important;
+  --icon-color: white !important;
+  border-radius: 10px !important;
 }
 
 .room-section .up-d-composer button[data-cy="send-message"]:not(:disabled):hover {
   background-color: #108a00 !important;
 }
 
-/* @ Responsive dock sizing; no fixed positioning, blur or clipping around native menus. */
+/* @ Prevent normal scroll-to-bottom positioning from placing text behind the dock. */
+.room-section > #story-viewport {
+  scroll-padding-bottom: 64px !important;
+}
+
+/* @ Narrow layouts retain the same controls with slightly tighter spacing. */
 @media (max-width: 760px) {
   .room-section .up-d-composer {
     width: calc(100% - 12px) !important;
-    margin: 0 auto 6px !important;
-    padding: 8px 10px 6px !important;
-    border-radius: 18px !important;
+    padding: 4px 8px 3px !important;
+    border-radius: 15px !important;
   }
 
   .room-section .up-d-composer .composer-wrapper,
   .room-section .up-d-composer .composer .tiptap[contenteditable="true"] {
-    min-height: 48px !important;
+    min-height: 36px !important;
   }
 }
