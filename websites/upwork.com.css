@@ -266,3 +266,195 @@ body,
     min-height: 36px !important;
   }
 }
+
+/* uw-profile-sidebar $ Compact profile header, elegant contract action and unified timeline cards. */
+/* @ The sidebar should have one consistent translucent shell, without clipping menus. */
+.desktop-room .right-sidebar.sidebar-content {
+  background-color: color-mix(in srgb, Canvas 38%, transparent) !important;
+  background-image: none !important;
+  border: 1px solid var(--uw-stroke) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* @ Keep Upwork's scrolling and collapsible pane layout intact. */
+.desktop-room .right-sidebar .sidebar-views,
+.desktop-room .right-sidebar .sidebar-state.utility-pane {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* @ Profile card: a compact horizontal layout instead of an oversized centered stack. */
+.desktop-room .right-sidebar .up-d-sidebar-header {
+  background-color: color-mix(in srgb, Canvas 43%, transparent) !important;
+  background-image: none !important;
+  border: 1px solid var(--uw-stroke) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  margin: 10px 10px 0 !important;
+  min-height: 0 !important;
+  padding: 14px 42px 14px 14px !important;
+}
+
+.desktop-room .right-sidebar .sidebar-profile {
+  align-items: center !important;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 12px !important;
+  justify-content: flex-start !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  width: 100% !important;
+}
+
+.desktop-room .right-sidebar .sidebar-profile .avatar-badge-wrapper {
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+}
+
+.desktop-room .right-sidebar .sidebar-profile .text-content {
+  flex: 1 1 auto !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  text-align: left !important;
+}
+
+.desktop-room .right-sidebar .sidebar-profile .profile-title {
+  font-size: 15px !important;
+  font-weight: 650 !important;
+  line-height: 1.35 !important;
+  margin: 0 0 3px !important;
+}
+
+/* @ Keep organization name and local time readable, but visually secondary. */
+.desktop-room .right-sidebar .sidebar-profile .subtitle,
+.desktop-room .right-sidebar .sidebar-profile [data-location] {
+  color: color-mix(in srgb, CanvasText 70%, transparent) !important;
+  font-size: 12px !important;
+  line-height: 1.45 !important;
+}
+
+/* @ Give the native close control a predictable target without changing its positioning. */
+.desktop-room .right-sidebar .up-d-sidebar-header .close-button {
+  border-radius: 10px !important;
+}
+
+.desktop-room .right-sidebar .up-d-sidebar-header .close-button:hover {
+  background-color: var(--uw-hover) !important;
+}
+
+/* @ Content gutters make the timeline and action tiles align with the header. */
+.desktop-room .right-sidebar .panels.custom-scrollbar {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-sizing: border-box !important;
+  padding: 12px 10px 14px !important;
+  scrollbar-width: thin !important;
+}
+
+.desktop-room .right-sidebar .panels > ul {
+  background-color: transparent !important;
+  background-image: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* @ Turn View contract into a distinct, full-width action tile, keeping its native click handler. */
+.desktop-room .right-sidebar .panels .plugin-actions {
+  background-color: transparent !important;
+  background-image: none !important;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+}
+
+.desktop-room .right-sidebar .panels #button-wmBtnAction {
+  align-items: center !important;
+  background-color: color-mix(in srgb, #14a800 11%, transparent) !important;
+  border: 1px solid color-mix(in srgb, #14a800 34%, transparent) !important;
+  border-radius: 12px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  gap: 8px !important;
+  justify-content: center !important;
+  min-height: 42px !important;
+  padding: 9px 12px !important;
+  width: 100% !important;
+}
+
+.desktop-room .right-sidebar .panels #button-wmBtnAction:hover {
+  background-color: color-mix(in srgb, #14a800 18%, transparent) !important;
+  border-color: color-mix(in srgb, #14a800 55%, transparent) !important;
+}
+
+/* @ A consistent card treatment for the activity timeline and extra panel actions. */
+.desktop-room .right-sidebar .panels > ul > li.panel-list-item {
+  background-color: color-mix(in srgb, Canvas 34%, transparent) !important;
+  background-image: none !important;
+  border: 1px solid var(--uw-stroke) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  margin: 0 0 9px !important;
+}
+
+.desktop-room .right-sidebar .panels > ul > li.panel-list-item:hover {
+  border-color: color-mix(in srgb, CanvasText 23%, transparent) !important;
+}
+
+.desktop-room .right-sidebar .panels > ul > li.panel-list-item:focus-visible {
+  outline: 2px solid #14a800 !important;
+  outline-offset: 2px !important;
+}
+
+/* @ Avoid a second dark card inside the timeline card. */
+.desktop-room .right-sidebar .panels [data-testid="journey-map-panel"] > .up-d-generic-collapsible-panel,
+.desktop-room .right-sidebar .panels [data-testid="journey-map-panel"] .collapse-content,
+.desktop-room .right-sidebar .panels [data-testid="journey-map-panel"] .journey-map-container {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 solid transparent !important;
+  box-shadow: none !important;
+}
+
+/* @ Make the timeline heading the clear title for its card. */
+.desktop-room .right-sidebar .panels [data-testid="journey-map-panel"] .panel-header {
+  border-radius: 12px !important;
+  min-height: 44px !important;
+}
+
+.desktop-room .right-sidebar .panels [data-testid="journey-map-panel"] .panel-header:hover {
+  background-color: var(--uw-hover) !important;
+}
+
+.desktop-room .right-sidebar .panels [data-testid="journey-map-panel"] .panel-collapse-label {
+  font-weight: 650 !important;
+}
+
+/* @ Preserve payment badge colors, timeline connectors and expand/collapse logic. */
+.desktop-room .right-sidebar .panels .journey-map-step-item .air3-step-indicator-item-title {
+  line-height: 1.4 !important;
+}
+
+/* @ Give Search, Files, People and other utility rows subtle feedback. */
+.desktop-room .right-sidebar .panels > ul > li.panel-list-item.non-collapsible {
+  min-height: 46px !important;
+}
+
+.desktop-room .right-sidebar .panels > ul > li.panel-list-item.non-collapsible:hover {
+  background-color: color-mix(in srgb, CanvasText 9%, transparent) !important;
+}
+
+/* @ Smaller screens have less room for a horizontal profile. */
+@media (max-width: 720px) {
+  .desktop-room .right-sidebar .up-d-sidebar-header {
+    padding: 10px 36px 10px 10px !important;
+  }
+
+  .desktop-room .right-sidebar .sidebar-profile {
+    gap: 8px !important;
+  }
+}
