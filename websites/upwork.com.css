@@ -94,25 +94,11 @@ body,
   background-color: color-mix(in srgb, Canvas 26%, transparent) !important;
 }
 
-/* @ Restore a cohesive composer while keeping editable content legible. */
+/* @ Leave the native composer structure intact; the optional composer feature styles it below. */
 .composer-container,
 .up-d-composer {
-  background-color: var(--uw-panel) !important;
-  background-image: none !important;
-}
-
-.up-d-composer > .input-area,
-.up-d-composer .composer,
-.up-d-composer .tiptap {
   background-color: transparent !important;
   background-image: none !important;
-}
-
-.up-d-composer .composer-wrapper {
-  background-color: var(--uw-editor) !important;
-  background-image: none !important;
-  border: 1px solid var(--uw-stroke) !important;
-  border-radius: 10px !important;
 }
 
 /* @ Only the sidebar's frame and contract panel receive tint; preserve status badges. */
@@ -148,3 +134,106 @@ body,
 
 /* @ Popup safety: .air3-dropdown-secondary is a TRIGGER, not the floating menu.
    Keep Upwork's dropdown, dialog and tooltip styles, stacking and clipping native. */
+
+/* uw-composer $ Cohesive rounded chatbox with a comfortable editor and integrated toolbar. */
+/* @ Style one outer card instead of adding separate opaque rectangles around the editor and buttons. */
+.up-d-composer {
+  background-color: color-mix(in srgb, Canvas 82%, transparent) !important;
+  background-image: none !important;
+  border: 1px solid color-mix(in srgb, CanvasText 18%, transparent) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.16) !important;
+  box-sizing: border-box !important;
+  margin: 2px 12px 10px !important;
+  padding: 9px 12px 7px !important;
+  transition: border-color 140ms ease, box-shadow 140ms ease !important;
+}
+
+/* @ Keyboard focus: highlight the entire composer instead of a narrow text-field outline. */
+.up-d-composer:focus-within {
+  border-color: color-mix(in srgb, #14a800 65%, CanvasText 15%) !important;
+  box-shadow: 0 0 0 2px color-mix(in srgb, #14a800 15%, transparent), 0 8px 28px rgba(0, 0, 0, 0.16) !important;
+}
+
+/* @ Preserve the native input layout and the expand-composer control. */
+.up-d-composer > .input-area {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 solid transparent !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.up-d-composer .composer-wrapper,
+.up-d-composer .composer {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 solid transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.up-d-composer .composer-wrapper {
+  min-height: 46px !important;
+  min-width: 0 !important;
+}
+
+/* @ Comfortable typing space; content still grows and can scroll when long. */
+.up-d-composer .composer .tiptap[contenteditable="true"] {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 solid transparent !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  min-height: 46px !important;
+  max-height: 180px !important;
+  overflow-y: auto !important;
+  outline: none !important;
+  padding: 10px 6px !important;
+  line-height: 1.5 !important;
+}
+
+/* @ Give the empty editor placeholder enough contrast to remain legible. */
+.up-d-composer .tiptap [data-placeholder]::before {
+  color: color-mix(in srgb, CanvasText 57%, transparent) !important;
+}
+
+/* @ Integrated action row, separated by a quiet divider. */
+.up-d-composer .up-d-composer-actions {
+  background-color: transparent !important;
+  background-image: none !important;
+  border-top: 1px solid color-mix(in srgb, CanvasText 10%, transparent) !important;
+  box-shadow: none !important;
+  min-height: 34px !important;
+  margin-top: 2px !important;
+  padding: 4px 0 0 !important;
+}
+
+.up-d-composer .up-d-composer-actions .air3-btn:not(:disabled) {
+  border-radius: 9px !important;
+}
+
+.up-d-composer .up-d-composer-actions .air3-btn:not(:disabled):hover {
+  background-color: var(--uw-hover) !important;
+}
+
+/* @ The enabled Send control is easy to find, but disabled controls stay native. */
+.up-d-composer .send-message-section button[data-cy="send-message"]:not(:disabled) {
+  background-color: #14a800 !important;
+  color: #fff !important;
+  --icon-color: #fff !important;
+  border-radius: 10px !important;
+}
+
+.up-d-composer .send-message-section button[data-cy="send-message"]:not(:disabled):hover {
+  background-color: #108a00 !important;
+}
+
+/* @ No z-index, transform, position or backdrop-filter overrides: keep attachments, emoji, tooltips and dropdowns working. */
+@media (max-width: 760px) {
+  .up-d-composer {
+    margin: 2px 4px 6px !important;
+    padding: 7px 8px 5px !important;
+  }
+}
