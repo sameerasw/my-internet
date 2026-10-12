@@ -1,0 +1,14 @@
+/* mc-Transparency */
+.dGJXZG9L {
+  --m365-copilot-canvas-background: transparent !important;
+}
+
+.fui-FluentProvider_R_15_ {
+  --colorNeutralBackground2: transparent !important;
+  --colorNeutralBackground1: transparent !important;
+}
+
+.fui-MenuPopover,
+.MDM1cWJX.eWpPTGIx .fui-InlineDrawer {
+  --m365-copilot-canvas-background: light-dark(#f6f5f3, #252422) !important;
+}
