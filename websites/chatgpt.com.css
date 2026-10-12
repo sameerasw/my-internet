@@ -823,6 +823,49 @@ body > picture {
 button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light {
     display: none !important;
 }
+/* cgpt-modern-sidebar-backdrop $ Removes the opaque overlay over the new navigation sidebar */
+[data-app-shell-frame="true"] aside[data-app-shell-left-panel-appearance],
+[data-app-shell-frame="true"] aside[data-app-shell-left-panel-appearance] > .max-w-full,
+[data-app-shell-frame="true"] #app-shell-sidebar,
+[data-app-shell-frame="true"] #app-shell-sidebar > .absolute.inset-0.bg-surface,
+[data-app-shell-frame="true"] #app-shell-sidebar nav[data-app-navigation-rail="true"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* cgpt-modern-footer-backdrop $ Clears the thread footer's opaque background without moving controls */
+[data-app-shell-frame="true"] [data-thread-scroll-footer="true"],
+[data-app-shell-frame="true"] [data-thread-scroll-footer="true"] > div.bg-surface,
+[data-app-shell-frame="true"] [data-thread-scroll-footer="true"] [data-pip-obstacle="thread-footer"],
+[data-app-shell-frame="true"] .thread-scroll-container div.pointer-events-none.sticky.bottom-0,
+[data-app-shell-frame="true"] .thread-scroll-container div.pointer-events-none.sticky.bottom-0 > div.bg-gradient-to-t {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* cgpt-modern-thread-composer $ Keeps the thread composer frosted while removing its solid-black wrapper */
+[data-app-shell-frame="true"] form[data-composer-placement="thread"],
+[data-app-shell-frame="true"] form[data-composer-placement="thread"] [class*="ComposerModeSurface-"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+[data-app-shell-frame="true"] form[data-composer-placement="thread"] [data-composer-surface-variant] {
+  background: light-dark(rgba(255, 255, 255, 0.62), rgba(18, 24, 23, 0.5)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.62), rgba(18, 24, 23, 0.5)) !important;
+  background-image: none !important;
+  backdrop-filter: blur(28px) saturate(125%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(125%) !important;
+  border-color: var(--cgpt-border-strong) !important;
+  box-shadow: var(--cgpt-shadow-soft) !important;
+}
+
 /* cgpt-modern-sidebar $ Preserves transparent navigation with readable hover and active states */
 #app-shell-sidebar .sidebar-item {
   background: transparent !important;
@@ -993,6 +1036,7 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
     }
 }
 /* cgpt-hide-disclaimer $ Hides the "I know ChatGPT can make mistakes" hint */
-[data-testid="thread-disclaimer"] {
+[data-testid="thread-disclaimer"],
+[data-app-shell-frame="true"] .thread-scroll-container .z-20.mt-auto.grid [data-markdown-copy="exclude"] {
     display: none !important;
 }
