@@ -743,6 +743,62 @@ div[class*="popover"][class*="bg-token-"] {
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
 }
+/* cgpt-settings-page $ Restores wallpaper transparency to the modern full-page settings layout */
+#root:has(nav[aria-label="Settings"]) [data-app-shell-workspace-row="true"],
+#root:has(nav[aria-label="Settings"]) [class*="WorkspaceContent-"],
+#root:has(nav[aria-label="Settings"]) [class*="MainContentClip-"],
+#root:has(nav[aria-label="Settings"]) [class*="MainContentViewport-"],
+#root:has(nav[aria-label="Settings"]) [class*="MainContentFrame-"],
+#root:has(nav[aria-label="Settings"]) main[data-app-shell-main-surface="browser"],
+#root:has(nav[aria-label="Settings"]) [data-app-shell-main-content-layout="full-bleed"],
+#root:has(nav[aria-label="Settings"]) [data-app-shell-main-content-top-fade],
+#root:has(nav[aria-label="Settings"]) [class*="MainContentTopFade-"],
+#root:has(nav[aria-label="Settings"]) #app-shell-sidebar > .absolute.inset-0.bg-surface,
+#root:has(nav[aria-label="Settings"]) [data-sidebar-navigation-root="true"],
+#root:has(nav[aria-label="Settings"]) nav[aria-label="Settings"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* cgpt-settings-page-fade $ Removes opaque decorative fades over settings content */
+#root:has(nav[aria-label="Settings"]) [class*="MainContentTopFade-"]::before,
+#root:has(nav[aria-label="Settings"]) [class*="MainContentTopFade-"]::after {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* cgpt-settings-cards $ Uses readable glass panels instead of the settings page's inline opaque backgrounds */
+#root:has(nav[aria-label="Settings"]) main[data-app-shell-main-surface="browser"] section > div > div[style*="--color-background-panel"] {
+  background: var(--cgpt-glass-panel) !important;
+  background-color: var(--cgpt-glass-panel) !important;
+  background-image: none !important;
+  backdrop-filter: blur(var(--cgpt-blur)) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(var(--cgpt-blur)) saturate(120%) !important;
+  border-color: var(--cgpt-border-strong) !important;
+  box-shadow: var(--cgpt-shadow-soft) !important;
+}
+
+/* cgpt-settings-search $ Makes the dedicated settings navigation search field translucent */
+#root:has(nav[aria-label="Settings"]) nav[aria-label="Settings"] [data-sidebar-header-search="true"] {
+  background: var(--cgpt-glass-weak) !important;
+  background-color: var(--cgpt-glass-weak) !important;
+  background-image: none !important;
+  backdrop-filter: blur(var(--cgpt-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--cgpt-blur)) !important;
+  border: 1px solid var(--cgpt-border) !important;
+}
+
+/* cgpt-settings-fallback $ Keeps settings cards legible where backdrop blur is unavailable */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  #root:has(nav[aria-label="Settings"]) main[data-app-shell-main-surface="browser"] section > div > div[style*="--color-background-panel"] {
+    background: var(--cgpt-glass-panel-strong) !important;
+    background-color: var(--cgpt-glass-panel-strong) !important;
+  }
+}
+
 /* cgpt-popover-text $ Keeps composer popover text readable */
 form[data-type="unified-composer"] [role="listbox"] input,
 form[data-type="unified-composer"] [role="listbox"] div {
