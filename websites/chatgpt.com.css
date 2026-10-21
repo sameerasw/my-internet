@@ -743,15 +743,19 @@ div[class*="popover"][class*="bg-token-"] {
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
 }
-/* cgpt-settings-page $ Restores wallpaper transparency to the modern full-page settings layout */
+/* cgpt-settings-page $ Clears opaque surfaces on the modern full-page Settings layout */
 #root:has(nav[aria-label="Settings"]) [data-app-shell-workspace-row="true"],
 #root:has(nav[aria-label="Settings"]) [class*="WorkspaceContent-"],
-#root:has(nav[aria-label="Settings"]) [class*="MainContentClip-"],
 #root:has(nav[aria-label="Settings"]) [class*="MainContentViewport-"],
 #root:has(nav[aria-label="Settings"]) [class*="MainContentFrame-"],
-#root:has(nav[aria-label="Settings"]) main[data-app-shell-main-surface="browser"],
+#root:has(nav[aria-label="Settings"]) [class*="MainContentClip-"],
 #root:has(nav[aria-label="Settings"]) [data-app-shell-main-content-layout="full-bleed"],
 #root:has(nav[aria-label="Settings"]) [data-app-shell-main-content-top-fade],
+#root:has(nav[aria-label="Settings"]) [data-app-shell-focus-area="main"],
+#root:has(nav[aria-label="Settings"]) [data-app-shell-focus-area="main"] > div,
+#root:has(nav[aria-label="Settings"]) [data-codex-history-swipe-page="true"],
+#root:has(nav[aria-label="Settings"]) [data-codex-history-swipe-page="true"] > div,
+#root:has(nav[aria-label="Settings"]) [data-codex-history-swipe-page="true"] > div > .scrollbar-stable,
 #root:has(nav[aria-label="Settings"]) [class*="MainContentTopFade-"],
 #root:has(nav[aria-label="Settings"]) #app-shell-sidebar > .absolute.inset-0.bg-surface,
 #root:has(nav[aria-label="Settings"]) [data-sidebar-navigation-root="true"],
@@ -770,8 +774,8 @@ div[class*="popover"][class*="bg-token-"] {
   background-image: none !important;
 }
 
-/* cgpt-settings-cards $ Uses readable glass panels instead of the settings page's inline opaque backgrounds */
-#root:has(nav[aria-label="Settings"]) main[data-app-shell-main-surface="browser"] section > div > div[style*="--color-background-panel"] {
+/* cgpt-settings-cards $ Renders settings cards as readable frosted glass */
+#root:has(nav[aria-label="Settings"]) section > div > div[style*="--color-background-panel"] {
   background: var(--cgpt-glass-panel) !important;
   background-color: var(--cgpt-glass-panel) !important;
   background-image: none !important;
@@ -781,7 +785,7 @@ div[class*="popover"][class*="bg-token-"] {
   box-shadow: var(--cgpt-shadow-soft) !important;
 }
 
-/* cgpt-settings-search $ Makes the dedicated settings navigation search field translucent */
+/* cgpt-settings-search $ Makes the settings navigation search field translucent */
 #root:has(nav[aria-label="Settings"]) nav[aria-label="Settings"] [data-sidebar-header-search="true"] {
   background: var(--cgpt-glass-weak) !important;
   background-color: var(--cgpt-glass-weak) !important;
@@ -791,9 +795,9 @@ div[class*="popover"][class*="bg-token-"] {
   border: 1px solid var(--cgpt-border) !important;
 }
 
-/* cgpt-settings-fallback $ Keeps settings cards legible where backdrop blur is unavailable */
+/* cgpt-settings-fallback $ Keeps settings cards legible without backdrop blur */
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-  #root:has(nav[aria-label="Settings"]) main[data-app-shell-main-surface="browser"] section > div > div[style*="--color-background-panel"] {
+  #root:has(nav[aria-label="Settings"]) section > div > div[style*="--color-background-panel"] {
     background: var(--cgpt-glass-panel-strong) !important;
     background-color: var(--cgpt-glass-panel-strong) !important;
   }
