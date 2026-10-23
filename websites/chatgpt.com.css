@@ -1098,6 +1098,97 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
   background-color: var(--cgpt-hover) !important;
 }
 
+/* cgpt-project-titlebar $ Removes the full-width opaque strip behind project breadcrumbs */
+[data-app-shell-main-titlebar="true"] [data-app-shell-thread-content-overlap="true"]:has(> nav[aria-label="Breadcrumb"]),
+[data-app-shell-main-titlebar="true"] [data-app-shell-header-obstacle="true"] [class*="browser:bg-surface"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* cgpt-project-breadcrumb $ Styles project names as compact frosted-glass pills */
+[data-app-shell-main-titlebar="true"] nav[aria-label="Breadcrumb"] > a {
+  color: var(--cgpt-glass-text-primary) !important;
+  background: light-dark(rgba(255, 255, 255, 0.37), rgba(255, 255, 255, 0.065)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.37), rgba(255, 255, 255, 0.065)) !important;
+  background-image: none !important;
+  backdrop-filter: blur(18px) saturate(115%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(115%) !important;
+  border: 1px solid var(--cgpt-border) !important;
+  border-radius: 12px !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055) !important;
+  transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease !important;
+}
+
+/* cgpt-project-breadcrumb-hover $ Adds subtle interactive feedback to project titles */
+[data-app-shell-main-titlebar="true"] nav[aria-label="Breadcrumb"] > a:hover,
+[data-app-shell-main-titlebar="true"] nav[aria-label="Breadcrumb"] > a:focus-visible {
+  background: light-dark(rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.12)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.12)) !important;
+  border-color: var(--cgpt-border-strong) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09) !important;
+}
+
+/* cgpt-project-titlebar-actions $ Makes More and Share distinct glass controls */
+[data-app-shell-main-titlebar="true"] [data-app-shell-header-obstacle="true"] button:is([aria-label="More"], [aria-label="Share"]) {
+  color: var(--cgpt-glass-text-primary) !important;
+  background: light-dark(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.065)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.065)) !important;
+  background-image: none !important;
+  backdrop-filter: blur(18px) saturate(115%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(115%) !important;
+  border: 1px solid var(--cgpt-border) !important;
+  border-radius: 12px !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055) !important;
+  transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease !important;
+}
+
+/* cgpt-project-titlebar-actions-hover $ Keeps project menu and Share buttons visible on hover */
+[data-app-shell-main-titlebar="true"] [data-app-shell-header-obstacle="true"] button:is([aria-label="More"], [aria-label="Share"]):is(:hover, :focus-visible) {
+  background: light-dark(rgba(255, 255, 255, 0.59), rgba(255, 255, 255, 0.13)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.59), rgba(255, 255, 255, 0.13)) !important;
+  border-color: var(--cgpt-border-strong) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09) !important;
+}
+
+/* cgpt-composer-footer-clear $ Removes the dark capsule behind the reasoning and microphone controls */
+[data-app-shell-frame="true"] [data-composer-footer-responsive] [class*="composer-layout-surface-background"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* cgpt-composer-model-clear $ Keeps the model selector clean without a second opaque pill */
+[data-app-shell-frame="true"] [data-composer-footer-responsive] button[data-codex-intelligence-trigger="true"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-app-shell-frame="true"] [data-composer-footer-responsive] button[data-codex-intelligence-trigger="true"]:is(:hover, :focus-visible, [data-state="open"]) {
+  background: var(--cgpt-hover) !important;
+  background-color: var(--cgpt-hover) !important;
+  border-color: var(--cgpt-border) !important;
+}
+
+/* cgpt-composer-soft-glass $ Reduces the heavy dark fill on the modern thread composer */
+[data-app-shell-frame="true"] form[data-composer-placement="thread"] [data-composer-surface-variant] {
+  background: light-dark(rgba(255, 255, 255, 0.42), rgba(18, 24, 34, 0.26)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.42), rgba(18, 24, 34, 0.26)) !important;
+  background-image: none !important;
+  backdrop-filter: blur(24px) saturate(115%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(115%) !important;
+  border-color: var(--cgpt-border) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
 /* cgpt-modern-fallback $ Provides opaque-enough panels when backdrop blur is unavailable */
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
   [data-app-shell-frame="true"] [data-composer-surface-variant],
