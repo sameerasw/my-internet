@@ -1180,8 +1180,8 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
 
 /* cgpt-composer-soft-glass $ Reduces the heavy dark fill on the modern thread composer */
 [data-app-shell-frame="true"] form[data-composer-placement="thread"] [data-composer-surface-variant] {
-  background: light-dark(rgba(255, 255, 255, 0.42), rgba(18, 24, 34, 0.26)) !important;
-  background-color: light-dark(rgba(255, 255, 255, 0.42), rgba(18, 24, 34, 0.26)) !important;
+  background: light-dark(rgba(255, 255, 255, 0.66), rgba(24, 28, 38, 0.58)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.66), rgba(24, 28, 38, 0.58)) !important;
   background-image: none !important;
   backdrop-filter: blur(24px) saturate(115%) !important;
   -webkit-backdrop-filter: blur(24px) saturate(115%) !important;
