@@ -29,7 +29,7 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies (initial)
-        run: npm install
+        run: npm ci --ignore-scripts
 
       - name: Run Prettier
         uses: creyD/prettier_action@v4.6
@@ -39,7 +39,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Reinstall dependencies after Prettier
-        run: npm install
+        run: npm ci --ignore-scripts
 
       - name: Run script to update styles.json
         run: node update-styles-json.mjs
