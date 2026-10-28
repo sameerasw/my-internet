@@ -4,5 +4,5 @@
   "pling.com.css": ["store.kde.org", "gnome-look.org", "appimagehub.com", "linux-apps.com"],
   "gitlab.com.css": ["gitlab.freedesktop.org"],
   "+instructure.com.css": ["classroom.ucscout.org"],
-  "notion.so": ["app.notion.com"]
+  "notion.so.css": ["app.notion.com"]
 }
