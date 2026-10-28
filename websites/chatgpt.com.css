@@ -68,7 +68,6 @@ aside[data-app-shell-left-panel-appearance],
   background-image: none !important;
 }
 
-
 /* cgpt-main-surfaces $ Removes opaque surface fills while preserving page structure */
 .bg-token-main-surface-primary,
 .bg-token-main-surface-secondary,
@@ -1121,7 +1120,10 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
   border: 1px solid var(--cgpt-border) !important;
   border-radius: 12px !important;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055) !important;
-  transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease !important;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease !important;
 }
 
 /* cgpt-project-breadcrumb-hover $ Adds subtle interactive feedback to project titles */
@@ -1144,7 +1146,10 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
   border: 1px solid var(--cgpt-border) !important;
   border-radius: 12px !important;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055) !important;
-  transition: background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease !important;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease !important;
 }
 
 /* cgpt-project-titlebar-actions-hover $ Keeps project menu and Share buttons visible on hover */
@@ -1248,5 +1253,5 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
 /* cgpt-hide-disclaimer $ Hides the "I know ChatGPT can make mistakes" hint */
 [data-testid="thread-disclaimer"],
 [data-app-shell-frame="true"] .thread-scroll-container .z-20.mt-auto.grid [data-markdown-copy="exclude"] {
-    display: none !important;
+  display: none !important;
 }
