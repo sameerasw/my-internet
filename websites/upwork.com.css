@@ -1,0 +1,460 @@
+/* uw-transparency $ Transparent Upwork interface with consistent panels and safe native dropdowns. */
+/* @ Keep roots clear so the browser wallpaper shows through. */
+:root {
+  --uw-panel: color-mix(in srgb, Canvas 40%, transparent) !important;
+  --uw-panel-strong: color-mix(in srgb, Canvas 54%, transparent) !important;
+  --uw-editor: color-mix(in srgb, Canvas 58%, transparent) !important;
+  --uw-selected: color-mix(in srgb, CanvasText 11%, transparent) !important;
+  --uw-hover: color-mix(in srgb, CanvasText 7%, transparent) !important;
+  --uw-stroke: color-mix(in srgb, CanvasText 13%, transparent) !important;
+}
+
+html,
+body,
+#__nuxt,
+.layout-container,
+.layout,
+.ng-sidebar-layout-wrapper,
+.ng-sidebar-parent-wrapper,
+.ng-sidebar-nav,
+.main-content,
+.main-content-inner,
+.desktop-container,
+.desktop-layout-index,
+.desktop-layout-room,
+.desktop-room,
+.desktop-room-layout,
+.room-section,
+.up-d-room {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* @ Navigation is one surface; leave buttons and profile menus untouched. */
+.ng-sidebar-bar {
+  background-color: var(--uw-panel) !important;
+  background-image: none !important;
+  border-right: 1px solid var(--uw-stroke) !important;
+}
+
+/* @ Apply tint to the entire conversation list, not just its 102px header. */
+.rooms-panel {
+  background-color: var(--uw-panel) !important;
+  background-image: none !important;
+  border-right: 1px solid var(--uw-stroke) !important;
+  box-shadow: none !important;
+}
+
+.rooms-panel__list-wrapper,
+.rooms-panel-header,
+.sticky-rooms-panel-header,
+.rooms-panel__body-wrapper,
+.rooms-panel-body,
+.rooms-panel-section,
+.rooms-panel-room-list {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* @ Clear, understated current conversation and hover treatments. */
+.rooms-panel-room-list .room-list-item:not(.is-active-room):hover {
+  background-color: var(--uw-hover) !important;
+}
+
+.rooms-panel-room-list .room-list-item.is-active-room {
+  background-color: var(--uw-selected) !important;
+  box-shadow: inset 3px 0 0 #14a800 !important;
+}
+
+/* @ Treat conversation header and scrolling message area as separate surfaces. */
+.top-room-content {
+  background-color: var(--uw-panel-strong) !important;
+  background-image: none !important;
+  border-bottom: 1px solid var(--uw-stroke) !important;
+  box-shadow: none !important;
+}
+
+.up-d-room-header,
+.room-header,
+.sub-header-content,
+.scroll-wrapper,
+.room-body,
+.story-list,
+.story-list-item-root,
+.story-inner,
+.story-section,
+.story-message {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* @ The message background tint is on the scroll container, not each message. */
+.room-section > .scroll-wrapper {
+  background-color: color-mix(in srgb, Canvas 26%, transparent) !important;
+}
+
+/* @ Leave the native composer structure intact; the optional composer feature styles it below. */
+.composer-container,
+.up-d-composer {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* @ Room viewport: allow the last message to scroll clear of the floating composer. */
+.room-section #story-viewport .story-list {
+  padding-bottom: 64px !important;
+}
+
+/* @ The right sidebar's nested wrappers are genuine background layers. */
+.desktop-room .sidebar-layout,
+.desktop-room .sidebar,
+.desktop-room .sidebar-views,
+.desktop-room .sidebar-state.utility-pane,
+.desktop-room .panels,
+.desktop-room .panels > ul {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* @ Match the sidebar frame to the message list rather than making it a dark slab. */
+.desktop-room .right-sidebar.sidebar-content {
+  background-color: var(--uw-panel) !important;
+  background-image: none !important;
+  border-left: 1px solid var(--uw-stroke) !important;
+  box-shadow: none !important;
+}
+
+/* @ Profile information has a small contrast boost, without an opaque black header. */
+.desktop-room .up-d-sidebar-header {
+  background-color: color-mix(in srgb, Canvas 25%, transparent) !important;
+  background-image: none !important;
+  border-bottom: 1px solid var(--uw-stroke) !important;
+}
+
+/* @ Actual sidebar accordions are LI.panel-list-item, not global .air3-card elements. */
+.desktop-room .panels > ul > li.panel-list-item {
+  background-color: color-mix(in srgb, Canvas 27%, transparent) !important;
+  background-image: none !important;
+  border: 1px solid var(--uw-stroke) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+}
+
+/* @ Avoid doubled dark surfaces and outlines on expanded activity timelines. */
+.desktop-room .panels > ul > li.panel-list-item > .up-d-generic-collapsible-panel {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 solid transparent !important;
+  box-shadow: none !important;
+}
+
+/* @ Preserve Upwork status badges, collapsible interactions and native popup layers. */
+
+/* uw-composer $ Compact, floating message dock that fits Upwork's reserved composer space. */
+/* @ Upwork positions the composer absolutely and reserves space for roughly its native height.
+   Keep the card compact so it cannot cover the last visible chat message. */
+.room-section > .composer-container {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 solid transparent !important;
+  box-shadow: none !important;
+}
+
+/* @ Center a gently rounded dock within the native footer, avoiding extra bottom margin. */
+.room-section .up-d-composer {
+  width: calc(100% - 24px) !important;
+  max-width: 760px !important;
+  margin: 0 auto !important;
+  padding: 6px 12px 4px !important;
+  box-sizing: border-box !important;
+  background-color: color-mix(in srgb, Canvas 82%, transparent) !important;
+  background-image: none !important;
+  border: 1px solid color-mix(in srgb, CanvasText 19%, transparent) !important;
+  border-radius: 19px !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.16) !important;
+  transition: border-color 150ms ease, box-shadow 150ms ease !important;
+}
+
+/* @ Keep the subtle focus indication on the entire card. */
+.room-section .up-d-composer:focus-within {
+  border-color: color-mix(in srgb, #14a800 65%, CanvasText 10%) !important;
+  box-shadow: 0 0 0 2px color-mix(in srgb, #14a800 12%, transparent), 0 5px 20px rgba(0, 0, 0, 0.16) !important;
+}
+
+/* @ One surface: remove the nested input outline but keep expand-editor accessible. */
+.room-section .up-d-composer > .input-area,
+.room-section .up-d-composer .composer-wrapper,
+.room-section .up-d-composer .composer {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 solid transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.room-section .up-d-composer .composer-wrapper {
+  min-width: 0 !important;
+  min-height: 40px !important;
+}
+
+/* @ Comfortable single-line entry; multiline content scrolls rather than covering chat. */
+.room-section .up-d-composer .composer .tiptap[contenteditable="true"] {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 solid transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  min-height: 40px !important;
+  max-height: 144px !important;
+  overflow-y: auto !important;
+  padding: 6px 7px !important;
+  line-height: 1.5 !important;
+}
+
+.room-section .up-d-composer .tiptap [data-placeholder]::before {
+  color: color-mix(in srgb, CanvasText 63%, transparent) !important;
+}
+
+/* @ Minimal attached toolbar, without a full-width divider. */
+.room-section .up-d-composer .up-d-composer-actions {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  min-height: 32px !important;
+  padding: 0 !important;
+}
+
+.room-section .up-d-composer .up-d-composer-actions .air3-btn {
+  border-radius: 10px !important;
+}
+
+.room-section .up-d-composer .up-d-composer-actions .air3-btn:not(:disabled):hover {
+  background-color: var(--uw-hover) !important;
+}
+
+/* @ Distinguish available Send action; leave Upwork disabled behavior intact. */
+.room-section .up-d-composer button[data-cy="send-message"]:not(:disabled) {
+  background-color: #14a800 !important;
+  color: white !important;
+  --icon-color: white !important;
+  border-radius: 10px !important;
+}
+
+.room-section .up-d-composer button[data-cy="send-message"]:not(:disabled):hover {
+  background-color: #108a00 !important;
+}
+
+/* @ Prevent normal scroll-to-bottom positioning from placing text behind the dock. */
+.room-section > #story-viewport {
+  scroll-padding-bottom: 64px !important;
+}
+
+/* @ Narrow layouts retain the same controls with slightly tighter spacing. */
+@media (max-width: 760px) {
+  .room-section .up-d-composer {
+    width: calc(100% - 12px) !important;
+    padding: 4px 8px 3px !important;
+    border-radius: 15px !important;
+  }
+
+  .room-section .up-d-composer .composer-wrapper,
+  .room-section .up-d-composer .composer .tiptap[contenteditable="true"] {
+    min-height: 36px !important;
+  }
+}
+
+/* uw-profile-sidebar $ Compact profile header, elegant contract action and unified timeline cards. */
+/* @ The sidebar should have one consistent translucent shell, without clipping menus. */
+.desktop-room .right-sidebar.sidebar-content {
+  background-color: color-mix(in srgb, Canvas 38%, transparent) !important;
+  background-image: none !important;
+  border: 1px solid var(--uw-stroke) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* @ Keep Upwork's scrolling and collapsible pane layout intact. */
+.desktop-room .right-sidebar .sidebar-views,
+.desktop-room .right-sidebar .sidebar-state.utility-pane {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* @ Profile card: a compact horizontal layout instead of an oversized centered stack. */
+.desktop-room .right-sidebar .up-d-sidebar-header {
+  background-color: color-mix(in srgb, Canvas 43%, transparent) !important;
+  background-image: none !important;
+  border: 1px solid var(--uw-stroke) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  margin: 10px 10px 0 !important;
+  min-height: 0 !important;
+  padding: 14px 42px 14px 14px !important;
+}
+
+.desktop-room .right-sidebar .sidebar-profile {
+  align-items: center !important;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 12px !important;
+  justify-content: flex-start !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+  width: 100% !important;
+}
+
+.desktop-room .right-sidebar .sidebar-profile .avatar-badge-wrapper {
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+}
+
+.desktop-room .right-sidebar .sidebar-profile .text-content {
+  flex: 1 1 auto !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+  text-align: left !important;
+}
+
+.desktop-room .right-sidebar .sidebar-profile .profile-title {
+  font-size: 15px !important;
+  font-weight: 650 !important;
+  line-height: 1.35 !important;
+  margin: 0 0 3px !important;
+}
+
+/* @ Keep organization name and local time readable, but visually secondary. */
+.desktop-room .right-sidebar .sidebar-profile .subtitle,
+.desktop-room .right-sidebar .sidebar-profile [data-location] {
+  color: color-mix(in srgb, CanvasText 70%, transparent) !important;
+  font-size: 12px !important;
+  line-height: 1.45 !important;
+}
+
+/* @ Give the native close control a predictable target without changing its positioning. */
+.desktop-room .right-sidebar .up-d-sidebar-header .close-button {
+  border-radius: 10px !important;
+}
+
+.desktop-room .right-sidebar .up-d-sidebar-header .close-button:hover {
+  background-color: var(--uw-hover) !important;
+}
+
+/* @ Content gutters make the timeline and action tiles align with the header. */
+.desktop-room .right-sidebar .panels.custom-scrollbar {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-sizing: border-box !important;
+  padding: 12px 10px 14px !important;
+  scrollbar-width: thin !important;
+}
+
+.desktop-room .right-sidebar .panels > ul {
+  background-color: transparent !important;
+  background-image: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* @ Turn View contract into a distinct, full-width action tile, keeping its native click handler. */
+.desktop-room .right-sidebar .panels .plugin-actions {
+  background-color: transparent !important;
+  background-image: none !important;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+}
+
+.desktop-room .right-sidebar .panels #button-wmBtnAction {
+  align-items: center !important;
+  background-color: color-mix(in srgb, #14a800 11%, transparent) !important;
+  border: 1px solid color-mix(in srgb, #14a800 34%, transparent) !important;
+  border-radius: 12px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  gap: 8px !important;
+  justify-content: center !important;
+  min-height: 42px !important;
+  padding: 9px 12px !important;
+  width: 100% !important;
+}
+
+.desktop-room .right-sidebar .panels #button-wmBtnAction:hover {
+  background-color: color-mix(in srgb, #14a800 18%, transparent) !important;
+  border-color: color-mix(in srgb, #14a800 55%, transparent) !important;
+}
+
+/* @ A consistent card treatment for the activity timeline and extra panel actions. */
+.desktop-room .right-sidebar .panels > ul > li.panel-list-item {
+  background-color: color-mix(in srgb, Canvas 34%, transparent) !important;
+  background-image: none !important;
+  border: 1px solid var(--uw-stroke) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  margin: 0 0 9px !important;
+}
+
+.desktop-room .right-sidebar .panels > ul > li.panel-list-item:hover {
+  border-color: color-mix(in srgb, CanvasText 23%, transparent) !important;
+}
+
+.desktop-room .right-sidebar .panels > ul > li.panel-list-item:focus-visible {
+  outline: 2px solid #14a800 !important;
+  outline-offset: 2px !important;
+}
+
+/* @ Avoid a second dark card inside the timeline card. */
+.desktop-room .right-sidebar .panels [data-testid="journey-map-panel"] > .up-d-generic-collapsible-panel,
+.desktop-room .right-sidebar .panels [data-testid="journey-map-panel"] .collapse-content,
+.desktop-room .right-sidebar .panels [data-testid="journey-map-panel"] .journey-map-container {
+  background-color: transparent !important;
+  background-image: none !important;
+  border: 0 solid transparent !important;
+  box-shadow: none !important;
+}
+
+/* @ Make the timeline heading the clear title for its card. */
+.desktop-room .right-sidebar .panels [data-testid="journey-map-panel"] .panel-header {
+  border-radius: 12px !important;
+  min-height: 44px !important;
+}
+
+.desktop-room .right-sidebar .panels [data-testid="journey-map-panel"] .panel-header:hover {
+  background-color: var(--uw-hover) !important;
+}
+
+.desktop-room .right-sidebar .panels [data-testid="journey-map-panel"] .panel-collapse-label {
+  font-weight: 650 !important;
+}
+
+/* @ Preserve payment badge colors, timeline connectors and expand/collapse logic. */
+.desktop-room .right-sidebar .panels .journey-map-step-item .air3-step-indicator-item-title {
+  line-height: 1.4 !important;
+}
+
+/* @ Give Search, Files, People and other utility rows subtle feedback. */
+.desktop-room .right-sidebar .panels > ul > li.panel-list-item.non-collapsible {
+  min-height: 46px !important;
+}
+
+.desktop-room .right-sidebar .panels > ul > li.panel-list-item.non-collapsible:hover {
+  background-color: color-mix(in srgb, CanvasText 9%, transparent) !important;
+}
+
+/* @ Smaller screens have less room for a horizontal profile. */
+@media (max-width: 720px) {
+  .desktop-room .right-sidebar .up-d-sidebar-header {
+    padding: 10px 36px 10px 10px !important;
+  }
+
+  .desktop-room .right-sidebar .sidebar-profile {
+    gap: 8px !important;
+  }
+}
