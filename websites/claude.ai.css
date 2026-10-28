@@ -11,12 +11,58 @@ aside,
 [data-chat-input-container="true"] > [role="note"][data-disclaimer="true"],
 [data-cds="ChatComposerNotices"] > [aria-live="polite"] > div,
 [data-cds="ChatComposerNotices"] > [aria-live="polite"] > div::before,
-[data-testid="answer-now-above-composer"] {
+[data-testid="answer-now-above-composer"],
+[data-cds-part="toolbar-ground"],
+[data-composer-card-holder],
+[data-cds="ChatComposer"],
+[data-cds="ChatComposerChin"],
+[data-testid^="transcript-bottom-"] {
   background-color: transparent !important;
   background: none !important;
 }
 
+[data-cds="ChatComposerChin"] {
+  box-shadow: none !important;
+}
+
+/* claude-composer backing $ Dark rounded backing behind the message box so chat text doesn't show through */
+[data-chat-input-container="true"] {
+  padding-bottom: 1rem !important;
+}
+
+[data-composer-card-holder]::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: -0.375rem !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+  border-radius: calc(var(--cds-radius-composer, 0.875rem) + 0.375rem) !important;
+  background: var(--cds-page-bg) !important;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, currentColor 12%, transparent),
+    0 4px 24px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* claude-header backing $ Translucent backing behind the top bar that fades out so chat text doesn't show through */
+[data-cds-part="toolbar-ground"] {
+  bottom: -1.5rem !important;
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--cds-page-bg) 95%, transparent) calc(100% - 1.5rem), transparent) !important;
+  backdrop-filter: none !important;
+  mask-image: linear-gradient(to right, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent) !important;
+}
+
+[data-testid="chat-header"] [data-cds="Toolbar"]::after {
+  display: none !important;
+}
+
+/* claude-glass composer $ Make the message box translucent instead of solid grey */
+[data-cds="ChatComposer"] .bg-surface-3 {
+  background-color: color-mix(in srgb, currentColor 8%, transparent) !important;
+}
+
 /* claude-hide disclaimer */
-[data-chat-input-container="true"] > [role="note"][data-disclaimer="true"] {
+[data-chat-input-container="true"] > [role="note"][data-disclaimer="true"],
+[data-hub-disclaimer-band="true"],
+[role="note"][data-disclaimer="true"] {
   opacity: 0 !important;
 }
