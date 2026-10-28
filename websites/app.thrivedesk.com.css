@@ -1,0 +1,83 @@
+/* transparency */
+html,
+body,
+td-root,
+td-root > div,
+.app-wrapper,
+.page-wrapper,
+main {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+td-root,
+h1,
+h2,
+h3,
+.text-black,
+.text-gray-900,
+.text-gray-800,
+.text-gray-700,
+.text-gray-600,
+.text-gray-500 {
+  color: rgb(226 232 240) !important;
+}
+
+td-root {
+  color-scheme: dark !important;
+}
+
+/* @ Keep the large application panes translucent without sacrificing text contrast. */
+.app-sidenav,
+.app-content,
+.page-title,
+header.sticky.bg-white,
+.hidden.sm\:block.bg-white,
+.bg-gradient-to-br.from-sky-50.to-gray-50,
+.bg-gradient-to-br.from-blue-50.via-purple-50.to-pink-50,
+.card,
+a.bg-white.shadow-xl {
+  color: rgb(241 245 249) !important;
+  background-color: rgb(10 15 28 / 52%) !important;
+  background-image: none !important;
+  backdrop-filter: blur(18px) saturate(1.2) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(1.2) !important;
+}
+
+.app-sidenav *,
+.app-content *,
+.page-title *,
+.card * {
+  color: rgb(241 245 249) !important;
+  border-color: rgb(255 255 255 / 14%) !important;
+}
+
+/* @ Ticket lists and active folders need a little less opacity than their parent panes. */
+tr.ticket,
+tr.bg-gray-100,
+a.folder-active,
+.bg-blue-50 {
+  background-color: rgb(255 255 255 / 8%) !important;
+  background-image: none !important;
+}
+
+/* @ Search controls, dropdowns, and tooltips remain readable over bright wallpapers. */
+input:not([type="checkbox"]):not([type="radio"]),
+textarea,
+select,
+p-select,
+.bg-white,
+.bg-gray-50,
+.bg-gray-100,
+.bg-green-50,
+.p-checkbox-box,
+.relative.bg-white,
+.border.bg-white,
+a.bg-white.shadow-sm,
+.button-outline.bg-white,
+.tooltip {
+  color: rgb(241 245 249) !important;
+  background-color: rgb(15 23 42 / 72%) !important;
+  backdrop-filter: blur(14px) saturate(1.15) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(1.15) !important;
+}
