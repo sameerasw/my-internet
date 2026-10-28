@@ -45,6 +45,29 @@ main,
   background: transparent !important;
   background-color: transparent !important;
 }
+/* @ Modern app-shell containers from the October 2026 ChatGPT layout. */
+#root,
+[data-app-shell-frame="true"],
+[data-app-shell-workspace-row="true"],
+[data-app-shell-page-surface="false"],
+[data-app-shell-frame="true"] main,
+[data-app-shell-frame="true"] header,
+[data-app-shell-frame="true"] [class*="Workspace-"],
+[data-app-shell-frame="true"] [class*="MainContentSurface-"],
+[data-app-shell-frame="true"] [class*="MainContentClip-"],
+aside[data-app-shell-left-panel-appearance],
+#app-shell-sidebar,
+#app-shell-sidebar .sidebar-navigation,
+#app-shell-sidebar [data-appearance="plain"],
+#app-shell-sidebar [data-app-navigation-rail],
+.thread-scroll-container,
+[data-thread-scroll-footer="true"],
+[data-app-shell-frame="true"] [class*="ComposerModeSurface-"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
 /* cgpt-main-surfaces $ Removes opaque surface fills while preserving page structure */
 .bg-token-main-surface-primary,
 .bg-token-main-surface-secondary,
@@ -719,6 +742,66 @@ div[class*="popover"][class*="bg-token-"] {
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
 }
+/* cgpt-settings-page $ Clears opaque surfaces on the modern full-page Settings layout */
+#root:has(nav[aria-label="Settings"]) [data-app-shell-workspace-row="true"],
+#root:has(nav[aria-label="Settings"]) [class*="WorkspaceContent-"],
+#root:has(nav[aria-label="Settings"]) [class*="MainContentViewport-"],
+#root:has(nav[aria-label="Settings"]) [class*="MainContentFrame-"],
+#root:has(nav[aria-label="Settings"]) [class*="MainContentClip-"],
+#root:has(nav[aria-label="Settings"]) [data-app-shell-main-content-layout="full-bleed"],
+#root:has(nav[aria-label="Settings"]) [data-app-shell-main-content-top-fade],
+#root:has(nav[aria-label="Settings"]) [data-app-shell-focus-area="main"],
+#root:has(nav[aria-label="Settings"]) [data-app-shell-focus-area="main"] > div,
+#root:has(nav[aria-label="Settings"]) [data-codex-history-swipe-page="true"],
+#root:has(nav[aria-label="Settings"]) [data-codex-history-swipe-page="true"] > div,
+#root:has(nav[aria-label="Settings"]) [data-codex-history-swipe-page="true"] > div > .scrollbar-stable,
+#root:has(nav[aria-label="Settings"]) [class*="MainContentTopFade-"],
+#root:has(nav[aria-label="Settings"]) #app-shell-sidebar > .absolute.inset-0.bg-surface,
+#root:has(nav[aria-label="Settings"]) [data-sidebar-navigation-root="true"],
+#root:has(nav[aria-label="Settings"]) nav[aria-label="Settings"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* cgpt-settings-page-fade $ Removes opaque decorative fades over settings content */
+#root:has(nav[aria-label="Settings"]) [class*="MainContentTopFade-"]::before,
+#root:has(nav[aria-label="Settings"]) [class*="MainContentTopFade-"]::after {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* cgpt-settings-cards $ Renders settings cards as readable frosted glass */
+#root:has(nav[aria-label="Settings"]) section > div > div[style*="--color-background-panel"] {
+  background: var(--cgpt-glass-panel) !important;
+  background-color: var(--cgpt-glass-panel) !important;
+  background-image: none !important;
+  backdrop-filter: blur(var(--cgpt-blur)) saturate(120%) !important;
+  -webkit-backdrop-filter: blur(var(--cgpt-blur)) saturate(120%) !important;
+  border-color: var(--cgpt-border-strong) !important;
+  box-shadow: var(--cgpt-shadow-soft) !important;
+}
+
+/* cgpt-settings-search $ Makes the settings navigation search field translucent */
+#root:has(nav[aria-label="Settings"]) nav[aria-label="Settings"] [data-sidebar-header-search="true"] {
+  background: var(--cgpt-glass-weak) !important;
+  background-color: var(--cgpt-glass-weak) !important;
+  background-image: none !important;
+  backdrop-filter: blur(var(--cgpt-blur)) !important;
+  -webkit-backdrop-filter: blur(var(--cgpt-blur)) !important;
+  border: 1px solid var(--cgpt-border) !important;
+}
+
+/* cgpt-settings-fallback $ Keeps settings cards legible without backdrop blur */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  #root:has(nav[aria-label="Settings"]) section > div > div[style*="--color-background-panel"] {
+    background: var(--cgpt-glass-panel-strong) !important;
+    background-color: var(--cgpt-glass-panel-strong) !important;
+  }
+}
+
 /* cgpt-popover-text $ Keeps composer popover text readable */
 form[data-type="unified-composer"] [role="listbox"] input,
 form[data-type="unified-composer"] [role="listbox"] div {
@@ -858,6 +941,279 @@ body > picture {
 button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token-border-light {
   display: none !important;
 }
+/* cgpt-modern-sidebar-backdrop $ Removes the opaque overlay over the new navigation sidebar */
+[data-app-shell-frame="true"] aside[data-app-shell-left-panel-appearance],
+[data-app-shell-frame="true"] aside[data-app-shell-left-panel-appearance] > .max-w-full,
+[data-app-shell-frame="true"] #app-shell-sidebar,
+[data-app-shell-frame="true"] #app-shell-sidebar > .absolute.inset-0.bg-surface,
+[data-app-shell-frame="true"] #app-shell-sidebar nav[data-app-navigation-rail="true"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* cgpt-modern-footer-backdrop $ Clears the thread footer's opaque background without moving controls */
+[data-app-shell-frame="true"] [data-thread-scroll-footer="true"],
+[data-app-shell-frame="true"] [data-thread-scroll-footer="true"] > div.bg-surface,
+[data-app-shell-frame="true"] [data-thread-scroll-footer="true"] [data-pip-obstacle="thread-footer"],
+[data-app-shell-frame="true"] .thread-scroll-container div.pointer-events-none.sticky.bottom-0,
+[data-app-shell-frame="true"] .thread-scroll-container div.pointer-events-none.sticky.bottom-0 > div.bg-gradient-to-t {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* cgpt-modern-thread-composer $ Keeps the thread composer frosted while removing its solid-black wrapper */
+[data-app-shell-frame="true"] form[data-composer-placement="thread"],
+[data-app-shell-frame="true"] form[data-composer-placement="thread"] [class*="ComposerModeSurface-"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+[data-app-shell-frame="true"] form[data-composer-placement="thread"] [data-composer-surface-variant] {
+  background: light-dark(rgba(255, 255, 255, 0.62), rgba(18, 24, 23, 0.5)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.62), rgba(18, 24, 23, 0.5)) !important;
+  background-image: none !important;
+  backdrop-filter: blur(28px) saturate(125%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(125%) !important;
+  border-color: var(--cgpt-border-strong) !important;
+  box-shadow: var(--cgpt-shadow-soft) !important;
+}
+
+/* cgpt-modern-sidebar $ Preserves transparent navigation with readable hover and active states */
+#app-shell-sidebar .sidebar-item {
+  background: transparent !important;
+  background-color: transparent !important;
+  border-radius: 10px !important;
+}
+
+#app-shell-sidebar .sidebar-item:hover,
+#app-shell-sidebar .sidebar-item:focus-visible,
+#app-shell-sidebar .sidebar-item[aria-current="page"] {
+  background: var(--cgpt-hover) !important;
+  background-color: var(--cgpt-hover) !important;
+}
+
+#app-shell-sidebar .sidebar-item:focus-visible {
+  outline: 2px solid var(--cgpt-think-blue) !important;
+  outline-offset: -2px !important;
+}
+
+/* cgpt-modern-composer $ Adds frosted glass to both compact and expanded ChatGPT composers */
+[data-app-shell-frame="true"] [data-composer-surface-variant] {
+  background: var(--cgpt-glass-panel-strong) !important;
+  background-color: var(--cgpt-glass-panel-strong) !important;
+  background-image: none !important;
+  backdrop-filter: blur(32px) saturate(125%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(125%) !important;
+  border: 1px solid var(--cgpt-border-strong) !important;
+  border-radius: 24px !important;
+  box-shadow: var(--cgpt-shadow-soft) !important;
+}
+
+[data-app-shell-frame="true"] [data-composer-surface-variant]:focus-within {
+  border-color: var(--cgpt-border-strong) !important;
+}
+
+[data-app-shell-frame="true"] [data-composer-body],
+[data-app-shell-frame="true"] [data-composer-layout] [role="textbox"],
+[data-app-shell-frame="true"] [data-composer-layout] .ProseMirror {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+[data-app-shell-frame="true"] [data-composer-layout] [role="textbox"] {
+  color: var(--cgpt-glass-text-primary) !important;
+  caret-color: var(--cgpt-glass-text-primary) !important;
+}
+
+[data-app-shell-frame="true"] [data-composer-layout] [role="textbox"] [data-placeholder]::before {
+  color: var(--cgpt-glass-text-muted) !important;
+}
+
+/* cgpt-modern-composer-buttons $ Keeps composer ghost controls legible without overriding primary actions */
+[data-app-shell-frame="true"] [data-composer-layout] button:is([aria-label="Add files and more"], [aria-label="Select ChatGPT model"], [aria-label="Dictate"], [aria-label="Expand"]) {
+  background: var(--cgpt-glass-weak) !important;
+  background-color: var(--cgpt-glass-weak) !important;
+  border: 1px solid var(--cgpt-border) !important;
+  color: var(--cgpt-glass-text-primary) !important;
+}
+
+[data-app-shell-frame="true"] [data-composer-layout] button:is([aria-label="Add files and more"], [aria-label="Select ChatGPT model"], [aria-label="Dictate"], [aria-label="Expand"]):hover {
+  background: var(--cgpt-hover) !important;
+  background-color: var(--cgpt-hover) !important;
+  border-color: var(--cgpt-border-strong) !important;
+}
+
+/* cgpt-modern-messages $ Restores readable glass bubbles for the new message markup */
+[data-app-shell-frame="true"] [data-user-message-bubble="true"] {
+  background: var(--cgpt-glass-panel) !important;
+  background-color: var(--cgpt-glass-panel) !important;
+  background-image: none !important;
+  backdrop-filter: blur(20px) saturate(115%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(115%) !important;
+  border: 1px solid var(--cgpt-border) !important;
+  border-radius: 20px !important;
+  box-shadow: var(--cgpt-shadow-soft) !important;
+  color: var(--cgpt-glass-text-primary) !important;
+}
+
+[data-app-shell-frame="true"] [data-content-search-unit-key$=":assistant"] [data-markdown-text-style="assistant-message"] {
+  background: var(--cgpt-glass-panel) !important;
+  background-color: var(--cgpt-glass-panel) !important;
+  backdrop-filter: blur(20px) saturate(115%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(115%) !important;
+  border: 1px solid var(--cgpt-border) !important;
+  border-radius: 20px !important;
+  box-shadow: var(--cgpt-shadow-soft) !important;
+  color: var(--cgpt-glass-text-primary) !important;
+  padding: 1rem !important;
+}
+
+/* cgpt-modern-code $ Keeps code and inline editing surfaces distinct from transparent message backgrounds */
+[data-app-shell-frame="true"] [data-markdown-text-style="assistant-message"] pre,
+[data-app-shell-frame="true"] [class*="CodeSurface-"] {
+  background: var(--cgpt-glass-panel-strong) !important;
+  background-color: var(--cgpt-glass-panel-strong) !important;
+  border: 1px solid var(--cgpt-border) !important;
+  border-radius: 14px !important;
+  color: var(--cgpt-glass-text-primary) !important;
+}
+
+/* cgpt-modern-header $ Restores transparent titlebars and subtle glass action buttons */
+[data-app-shell-frame="true"] header [data-app-shell-header-slot-content="true"] button[data-variant="ghost"] {
+  background: var(--cgpt-glass-weak) !important;
+  background-color: var(--cgpt-glass-weak) !important;
+  border: 1px solid var(--cgpt-border) !important;
+  border-radius: 12px !important;
+}
+
+[data-app-shell-frame="true"] header [data-app-shell-header-slot-content="true"] button[data-variant="ghost"]:hover {
+  background: var(--cgpt-hover) !important;
+  background-color: var(--cgpt-hover) !important;
+}
+
+/* cgpt-project-titlebar $ Removes the full-width opaque strip behind project breadcrumbs */
+[data-app-shell-main-titlebar="true"] [data-app-shell-thread-content-overlap="true"]:has(> nav[aria-label="Breadcrumb"]),
+[data-app-shell-main-titlebar="true"] [data-app-shell-header-obstacle="true"] [class*="browser:bg-surface"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* cgpt-project-breadcrumb $ Styles project names as compact frosted-glass pills */
+[data-app-shell-main-titlebar="true"] nav[aria-label="Breadcrumb"] > a {
+  color: var(--cgpt-glass-text-primary) !important;
+  background: light-dark(rgba(255, 255, 255, 0.37), rgba(255, 255, 255, 0.065)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.37), rgba(255, 255, 255, 0.065)) !important;
+  background-image: none !important;
+  backdrop-filter: blur(18px) saturate(115%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(115%) !important;
+  border: 1px solid var(--cgpt-border) !important;
+  border-radius: 12px !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055) !important;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease !important;
+}
+
+/* cgpt-project-breadcrumb-hover $ Adds subtle interactive feedback to project titles */
+[data-app-shell-main-titlebar="true"] nav[aria-label="Breadcrumb"] > a:hover,
+[data-app-shell-main-titlebar="true"] nav[aria-label="Breadcrumb"] > a:focus-visible {
+  background: light-dark(rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.12)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0.12)) !important;
+  border-color: var(--cgpt-border-strong) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09) !important;
+}
+
+/* cgpt-project-titlebar-actions $ Makes More and Share distinct glass controls */
+[data-app-shell-main-titlebar="true"] [data-app-shell-header-obstacle="true"] button:is([aria-label="More"], [aria-label="Share"]) {
+  color: var(--cgpt-glass-text-primary) !important;
+  background: light-dark(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.065)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.065)) !important;
+  background-image: none !important;
+  backdrop-filter: blur(18px) saturate(115%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(115%) !important;
+  border: 1px solid var(--cgpt-border) !important;
+  border-radius: 12px !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.055) !important;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease !important;
+}
+
+/* cgpt-project-titlebar-actions-hover $ Keeps project menu and Share buttons visible on hover */
+[data-app-shell-main-titlebar="true"] [data-app-shell-header-obstacle="true"] button:is([aria-label="More"], [aria-label="Share"]):is(:hover, :focus-visible) {
+  background: light-dark(rgba(255, 255, 255, 0.59), rgba(255, 255, 255, 0.13)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.59), rgba(255, 255, 255, 0.13)) !important;
+  border-color: var(--cgpt-border-strong) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09) !important;
+}
+
+/* cgpt-composer-footer-clear $ Removes the dark capsule behind the reasoning and microphone controls */
+[data-app-shell-frame="true"] [data-composer-footer-responsive] [class*="composer-layout-surface-background"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* cgpt-composer-model-clear $ Keeps the model selector clean without a second opaque pill */
+[data-app-shell-frame="true"] [data-composer-footer-responsive] button[data-codex-intelligence-trigger="true"] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-app-shell-frame="true"] [data-composer-footer-responsive] button[data-codex-intelligence-trigger="true"]:is(:hover, :focus-visible, [data-state="open"]) {
+  background: var(--cgpt-hover) !important;
+  background-color: var(--cgpt-hover) !important;
+  border-color: var(--cgpt-border) !important;
+}
+
+/* cgpt-composer-soft-glass $ Reduces the heavy dark fill on the modern thread composer */
+[data-app-shell-frame="true"] form[data-composer-placement="thread"] [data-composer-surface-variant] {
+  background: light-dark(rgba(255, 255, 255, 0.66), rgba(24, 28, 38, 0.58)) !important;
+  background-color: light-dark(rgba(255, 255, 255, 0.66), rgba(24, 28, 38, 0.58)) !important;
+  background-image: none !important;
+  backdrop-filter: blur(24px) saturate(115%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(115%) !important;
+  border-color: var(--cgpt-border) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* cgpt-modern-fallback $ Provides opaque-enough panels when backdrop blur is unavailable */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  [data-app-shell-frame="true"] [data-composer-surface-variant],
+  [data-app-shell-frame="true"] [data-user-message-bubble="true"],
+  [data-app-shell-frame="true"] [data-content-search-unit-key$=":assistant"] [data-markdown-text-style="assistant-message"] {
+    background: var(--cgpt-glass-menu) !important;
+    background-color: var(--cgpt-glass-menu) !important;
+  }
+}
+
+/* cgpt-modern-reduced-motion $ Removes extra transitions for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-app-shell-frame="true"] [data-composer-surface-variant],
+  #app-shell-sidebar .sidebar-item,
+  [data-app-shell-frame="true"] [data-composer-layout] button:is([aria-label="Add files and more"], [aria-label="Select ChatGPT model"], [aria-label="Dictate"], [aria-label="Expand"]) {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+  }
+}
+
 /* cgpt-fallback $ Uses semi-solid surfaces when backdrop-filter is unavailable */
 @supports not (backdrop-filter: blur(1px)) {
   #stage-slideover-sidebar,
@@ -895,6 +1251,7 @@ button.flex.h-6.w-6.items-center.justify-center.rounded-full.border.border-token
   }
 }
 /* cgpt-hide-disclaimer $ Hides the "I know ChatGPT can make mistakes" hint */
-[data-testid="thread-disclaimer"] {
+[data-testid="thread-disclaimer"],
+[data-app-shell-frame="true"] .thread-scroll-container .z-20.mt-auto.grid [data-markdown-copy="exclude"] {
   display: none !important;
 }
