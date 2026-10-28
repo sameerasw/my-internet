@@ -17,11 +17,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repository (pull request)
+        if: github.event_name == 'pull_request'
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: ${{ github.sha }}
+          ref: ${{ github.head_ref }}
+
+      - name: Checkout repository (push/dispatch)
+        if: github.event_name != 'pull_request'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref_name }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -29,7 +37,7 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies (initial)
-        run: npm install
+        run: npm ci --ignore-scripts
 
       - name: Run Prettier
         uses: creyD/prettier_action@v4.6
@@ -39,7 +47,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Reinstall dependencies after Prettier
-        run: npm install
+        run: npm ci --ignore-scripts
 
       - name: Run script to update styles.json
         run: node update-styles-json.mjs
