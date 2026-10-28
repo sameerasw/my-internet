@@ -4,7 +4,9 @@
   --og-bar-background: transparent !important;
 }
 
-.gKR4Fb, .wo4Ilb, .C5Imhb {
+.gKR4Fb,
+.wo4Ilb,
+.C5Imhb {
   background: transparent !important;
 }
 
@@ -13,7 +15,8 @@ div:not(.qHLDxc) > gm-coplanar-drawer .UMrnmb-vyw7Sc-Psmogf {
 }
 
 /* gg-transparent conversations list */
-.F6rDnb.Wj1LYb:not([aria-selected]), .F6rDnb.Wj1LYb[aria-selected="false"] {
+.F6rDnb.Wj1LYb:not([aria-selected]),
+.F6rDnb.Wj1LYb[aria-selected="false"] {
   background: transparent !important;
 }
 
