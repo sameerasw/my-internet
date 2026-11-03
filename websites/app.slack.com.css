@@ -9,6 +9,10 @@
 .p-threads_view_load_older_message,
 .p-threads_view__footer,
 .channel_tab_bar__HY3uU,
+[class*="channel_tab_bar"],
+.p-view_header--primary-background,
+.p-view_header--with-channel-tabs,
+.p-view_header__actions,
 .c-scrollbar__hider,
 .c-wysiwyg_container--theme_dark,
 .workspace__primary_view_footer,
@@ -35,4 +39,60 @@
   --dt_color-theme-surf-inv-sec: transparent !important;
   --dt_color-otl-ter: transparent !important;
   border: none !important;
+}
+
+/* @solid strip that masks the message list under the channel tab row */
+.c-scrollbar__hider::before,
+.c-scrollbar__hider::after {
+  background: transparent !important;
+}
+
+/* slack-glass */
+/* @frosted glass on the channel header, tab row and date pills instead of solid bars */
+.p-view_header--primary-background,
+.p-view_header--with-channel-tabs {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(140%) !important;
+  backdrop-filter: blur(24px) saturate(140%) !important;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.12) !important;
+}
+.sk-client-theme--dark .p-view_header--primary-background,
+.sk-client-theme--dark .p-view_header--with-channel-tabs {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+[class*="channel_tab_bar"] {
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.12) !important;
+  border: 0 !important;
+}
+.sk-client-theme--dark [class*="channel_tab_bar"] {
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+.c-message_list__day_divider__label__pill {
+  background-color: rgba(255, 255, 255, 0.55) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(140%) !important;
+  backdrop-filter: blur(16px) saturate(140%) !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  box-shadow: none !important;
+}
+.sk-client-theme--dark .c-message_list__day_divider__label__pill {
+  background-color: rgba(30, 30, 36, 0.45) !important;
+  border-color: rgba(255, 255, 255, 0.14) !important;
+}
+.c-wysiwyg_container--theme_light {
+  background-color: rgba(0, 0, 0, 0.07) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(140%) !important;
+  backdrop-filter: blur(20px) saturate(140%) !important;
+  border-color: rgba(0, 0, 0, 0.16) !important;
+}
+.c-wysiwyg_container--theme_light .ql-editor,
+.c-wysiwyg_container--theme_light .ql-editor.ql-blank::before {
+  color: #1d1c1d !important;
+}
+.c-wysiwyg_container--theme_light .ql-editor.ql-blank::before {
+  opacity: 0.85 !important;
+}
+.c-message_list .c-scrollbar__hider {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, transparent 10px, #000 30px, #000 calc(100% - 32px), transparent calc(100% - 10px), transparent 100%) !important;
+  mask-image: linear-gradient(to bottom, transparent 0, transparent 10px, #000 30px, #000 calc(100% - 32px), transparent calc(100% - 10px), transparent 100%) !important;
 }
