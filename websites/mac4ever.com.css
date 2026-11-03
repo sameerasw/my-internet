@@ -1,0 +1,64 @@
+/* transparency */
+/* @Remove Mac4Ever's page gradients as well as solid backgrounds; retain native text and media. */
+html,
+body.www,
+body.www #page,
+body.www #main,
+body.www .box > .container,
+body.www .box > a > footer,
+body.www .box a.footer,
+body.www .article > .content,
+body.www .article footer .author {
+  background: transparent !important;
+}
+
+/* darkreader */
+/* @Separate feature so disabling Dark Reader support does not disable transparency. */
+html {
+  --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-202020: transparent !important;
+  --darkreader-background-2b2b2b: transparent !important;
+}
+
+/* navigation $ Keep fixed navigation readable while content scrolls behind it. */
+body.www #headerDesktop > .primary,
+body.www #headerMobile,
+body.www #footer {
+  background-color: rgb(0 114 174 / 94%) !important;
+}
+
+body.www #headerDesktop > .secondary,
+body.www #navbarMobile,
+body.www #navigateMobile {
+  background-color: rgb(255 255 255 / 94%) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body.www #headerDesktop > .primary,
+  body.www #headerMobile,
+  body.www #footer {
+    background-color: rgb(0 0 0 / 94%) !important;
+  }
+
+  body.www #headerDesktop > .secondary,
+  body.www #navbarMobile,
+  body.www #navigateMobile {
+    background-color: rgb(43 43 43 / 94%) !important;
+  }
+}
+
+/* no sidebar $ Hide the right sidebar and let the main column use the available width. */
+body.www #main > .grid-x > .columnRight {
+  display: none !important;
+}
+
+body.www #main > .grid-x > .columnMain {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* no footer */
+body.www #footer {
+  display: none !important;
+}
