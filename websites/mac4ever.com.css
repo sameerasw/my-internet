@@ -1,0 +1,46 @@
+/* m4e-transparency */
+/* @Keep Mac4Ever's native light/dark text, category colours and image backgrounds. */
+html,
+body.www,
+body.www #page,
+body.www #main,
+body.www .box > .container,
+body.www .box > a > footer,
+body.www .box a.footer,
+body.www .article > .content,
+body.www .article footer .author {
+  background-color: transparent !important;
+}
+
+/* @Dark Reader can generate opaque overrides for the page and sidebar. */
+html {
+  --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-202020: transparent !important;
+}
+
+/* m4e-navigation $ Translucent navigation keeps scrolling content from obscuring the controls. */
+body.www #headerDesktop > .primary,
+body.www #headerMobile,
+body.www #footer {
+  background-color: rgb(0 114 174 / 94%) !important;
+}
+
+body.www #headerDesktop > .secondary,
+body.www #navbarMobile,
+body.www #navigateMobile {
+  background-color: rgb(255 255 255 / 94%) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body.www #headerDesktop > .primary,
+  body.www #headerMobile,
+  body.www #footer {
+    background-color: rgb(0 0 0 / 94%) !important;
+  }
+
+  body.www #headerDesktop > .secondary,
+  body.www #navbarMobile,
+  body.www #navigateMobile {
+    background-color: rgb(43 43 43 / 94%) !important;
+  }
+}
