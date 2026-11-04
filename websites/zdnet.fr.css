@@ -1,0 +1,21 @@
+/* transparency */
+/* @ Clear the article panel and its page canvas without changing the header or navigation. */
+body.cnzd__body:has(main#content.cnzd__main article),
+body.cnzd__body:has(main#content.cnzd__main article) .cnzd__lyt,
+main#content.cnzd__main:has(article) {
+  background: transparent !important;
+}
+
+/* @ Match article text to the browser scheme even when ZDNET keeps its light preference. */
+:root {
+  --zen-zdnet-article-text: #000 !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --zen-zdnet-article-text: #fff !important;
+  }
+}
+main#content.cnzd__main article,
+main#content.cnzd__main article :is(h1, h2, h3, h4, h5, h6, p, li, strong, b, em, span, small, figcaption, blockquote, td, th) {
+  color: var(--zen-zdnet-article-text) !important;
+}
