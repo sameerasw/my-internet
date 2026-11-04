@@ -1,0 +1,28 @@
+/* transparency */
+/* @ Let Zen's background show through the page canvas and article reading panel. */
+html,
+body,
+#header,
+#main-content .h-entry > .article-content {
+  background: transparent !important;
+}
+
+/* no promotions $ Hide sponsored sections, related articles, previous/next article links and header support buttons. */
+/* @ Cosmetic filters supplied by the user; this does not block network requests. */
+.guardia-section.recent-articles-section,
+section.recent-articles-section:nth-of-type(2),
+.related-articles-section.recent-articles-section,
+.article-prev-next-older.article-prev-next-link,
+.article-prev-next-newer.article-prev-next-link,
+.flow-unit,
+.patreon-support-banner--eset.patreon-support-banner--sponsor.patreon-support-banner,
+.voxdrop-banner__inner--eset.voxdrop-banner__inner--sponsor.voxdrop-banner__inner,
+#header > .header-buttons > .cta-buttons {
+  display: none !important;
+}
+
+/* no footer */
+/* @ Hide only the site footer, preserving article content and category navigation. */
+#footer.k-footer {
+  display: none !important;
+}
