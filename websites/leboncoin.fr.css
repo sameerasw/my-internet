@@ -1,15 +1,30 @@
 /* transparency */
+/* @Search and SEO footer containers have their own opaque surfaces, independently of the page root. */
 html,
 body,
+#__next,
+#container,
+#mainContent,
+#adSearchWrapper,
+#adSearchWrapper > .centeredContentForAdSkin,
+#seoFooter,
+#footer,
+footer,
 nav,
 header.border-transparent,
 header::after,
 header > div::after,
 header > div,
+header span,
+header li,
+header section,
+nav span,
+nav li,
+nav section,
 .bg-transparent,
-span,
-li,
-section {
+#mainContent:not(:has([data-qa-id="message-bubble"])) span,
+#mainContent:not(:has([data-qa-id="message-bubble"])) li,
+#mainContent:not(:has([data-qa-id="message-bubble"])) section {
   background-color: transparent !important;
   background: none !important;
   border: none !important;
@@ -21,20 +36,170 @@ section {
     box-shadow 0.5s ease-in-out !important;
 }
 
-header.border-transparent {
-  background-color: var(--color-outline) !important;
+/* @Keep one full-width category strip opaque while the upper header stays transparent. */
+header .basis-full:has(> nav) {
+  background: var(--color-surface, #fff) !important;
+  box-shadow: 0 0 0 100vmax var(--color-surface, #fff) !important;
+  clip-path: inset(0 -100vmax) !important;
+}
+
+/* @Saved searches and favorites have a separate sort/filter strip with nested surfaces. */
+#mainContent .bg-surface.pt-md.border-b-0,
+#mainContent .bg-surface.pt-md.border-b-0 .bg-surface.overflow-x-hidden {
+  background: transparent !important;
+}
+
+/* @Favorites use two page-level surfaces around the saved listing cards. */
+#mainContent > .bg-surface:has([data-qa-id="aditem_container"]),
+#mainContent > .bg-surface > .bg-surface:has([data-qa-id="aditem_container"]) {
+  background: transparent !important;
+}
+
+/* @Keep result and favorites cards opaque without adding panels to home carousels. */
+html[data-theme] #adSearchWrapper [data-qa-id="aditem_container"],
+html[data-theme] #mainContent > .bg-surface > .bg-surface.size-full [data-qa-id="aditem_container"],
+html[data-theme] #mainContent article:has(> a[href^="/recherche"]) {
+  background-color: var(--color-surface, #fff) !important;
+  border-radius: 16px !important;
+}
+
+/* @Restore native badge fills removed by the generic span transparency rule. */
+html[data-theme="dark"] #mainContent span.bg-main {
+  background-color: var(--color-main) !important;
+}
+
+html[data-theme="dark"] #mainContent span.bg-main-container {
+  background-color: var(--color-main-container) !important;
+}
+
+html[data-theme="dark"] #mainContent span.bg-neutral-container {
+  background-color: var(--color-neutral-container) !important;
+}
+
+html[data-theme="dark"] #mainContent span.bg-support-container {
+  background-color: var(--color-support-container) !important;
+}
+
+/* @Saved searches have a page-level surface; retain the cards' borders and alert controls. */
+#mainContent > .bg-surface.py-xl {
+  background: transparent !important;
+}
+
+/* @Clear personal-page back bars and full-width shells, not the information cards. */
+html[data-theme] #mainContent .bg-background[class~="text-on-surface/dim-1"],
+html[data-theme] #mainContent .bg-background.flex.flex-col.items-center:has(> section.bg-surface.max-w-page-max),
+html[data-theme] #mainContent > .bg-surface.pt-xl.relative:has([role="group"].max-w-page-max) {
+  background: transparent !important;
+}
+
+/* @Keep profile, purchase, settings, details and job-profile panels legible in the active native theme. */
+html[data-theme] #mainContent [role="group"].max-w-page-max,
+html[data-theme] #mainContent :is(a, button) > .border-sm.border-outline.rounded-md.p-lg,
+html[data-theme] #mainContent .p-xl.border-sm.border-outline.rounded-lg.grid,
+html[data-theme] #mainContent .border-sm.border-outline.rounded-md.p-2xl,
+html[data-theme] #mainContent .rounded-sm.shadow-md:has(input[type="file"]) {
+  background-color: var(--color-surface, #fff) !important;
+}
+
+/* @Settings tabs use dimmed-outline cards, including privacy actions and online visibility. */
+html[data-theme] #mainContent [data-spark-component="tabs-content"] .border-sm[class~="border-outline/dim-2"].rounded-lg:not(.border-none) {
+  background-color: var(--color-surface, #fff) !important;
+}
+
+/* @Paint the complete settings card rather than an inset capsule. */
+html[data-theme] #mainContent [data-spark-component="tabs-content"] .border-sm[class~="border-outline/dim-2"].rounded-lg:not(.border-none) > .bg-surface {
+  background: transparent !important;
+}
+
+/* @The empty listing-management state is a compact card, not a full-page white canvas. */
+html[data-theme] #mainContent .my-xl.p-xl.mx-auto.w-fit {
+  background-color: var(--color-surface, #fff) !important;
+  border-radius: 16px !important;
+}
+
+/* @Clear the deposit page shell, retaining the white form card and its controls. */
+#container .bg-background-variant.min-h-screen:has(> #mainContent > section > article.bg-surface) {
+  background: transparent !important;
+}
+
+/* @Keep the profile and wallet cards readable on the transparent account page. */
+#mainContent .rounded-lg.shadow-sm:has(a[href^="/profile/"]),
+#mainContent a[href*="/compte/porte-monnaie"] {
+  background-color: var(--color-surface, #fff) !important;
+}
+
+#mainContent a[href*="/compte/porte-monnaie"] {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+}
+
+/* @Clear message filters and the composer surround without changing pills, bubbles or buttons. */
+#mainContent [class*="_messaging"] [data-spark-component="scrolling-list"].bg-surface,
+#mainContent [role="presentation"] .border-t-sm.bg-background:has(textarea[data-spark-component="textarea"]) {
+  background: transparent !important;
+}
+
+/* @Clear the conversation canvas while retaining opaque incoming and outgoing bubbles. */
+#mainContent [role="presentation"].bg-surface:has([data-qa-id="message-bubble"]) {
+  background: transparent !important;
+}
+
+#mainContent [data-qa-id="message-bubble"].text-on-surface {
+  background-color: var(--color-surface, #fff) !important;
+}
+
+/* @Filter drawers and their nested category layer use separate portalled surfaces. */
+body [data-spark-component="drawer-content"][role="dialog"],
+body [data-spark-component="drawer-content"] [role="dialog"].bg-surface {
+  background: color-mix(in srgb, var(--color-surface, #fff) 86%, transparent) !important;
+  backdrop-filter: blur(16px) !important;
+}
+
+/* @Photo-gallery transparency is confined to this popup and its own backdrop. */
+[data-qa-id="gallery_modal"],
+[data-qa-id="gallery_modal"] [data-spark-component="carousel-slide"],
+body > [data-spark-component="dialog-portal"]:has(> [data-qa-id="gallery_modal"]) > [data-spark-component="dialog-overlay"] {
+  background: transparent !important;
+}
+
+/* @The gallery is portalled outside the page; hide the underlying page without changing layout. */
+body:has(> [data-spark-component="dialog-portal"] > [data-qa-id="gallery_modal"]) #__next,
+body:has(> [data-spark-component="dialog-portal"] > [data-qa-id="gallery_modal"]) #__next * {
+  visibility: hidden !important;
+}
+
+/* @Keep thumbnails, gallery information and the close control legible on the Zen backdrop. */
+[data-qa-id="gallery_modal"] [data-spark-component="carousel-page-picker"] {
+  background: color-mix(in srgb, var(--color-surface, #fff) 92%, transparent) !important;
+  backdrop-filter: blur(16px) !important;
+  border-radius: 16px !important;
+}
+
+[data-qa-id="gallery_modal"] [data-qa-id="gallery_modal-close"] {
+  background-color: var(--color-surface, #fff) !important;
+}
+
+/* @The listing's native reading surface stays opaque; add space around its title and price. */
+#mainContent [data-qa-id="adview_spotlight_description_container"] {
+  padding-inline: clamp(16px, 2vw, 28px) !important;
+  box-sizing: border-box !important;
 }
 
 /* darkreader */
 :root {
   --darkreader-background-ffffff: transparent !important;
+  --darkreader-background-f4f9fe: transparent !important;
 }
 
-/* no footer */
-footer {
+/* no recommendations $ Hide similar listings and other listings from the seller below an ad. */
+#mainContent [data-qa-id="adview-similar-ads"],
+#mainContent [data-qa-id="adview_profile_part_other_ads"] {
   display: none !important;
 }
 
-header.border-transparent {
-  background-color: #fff !important;
+/* no footer */
+/* @Hide site footers only; keep the filter drawer action footer available. */
+#footer,
+#seoFooter {
+  display: none !important;
 }
