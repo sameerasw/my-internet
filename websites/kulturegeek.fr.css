@@ -21,7 +21,28 @@ body#dark .footer-area {
     background-color: transparent !important;
     background-image: none !important;
 }
-/* @ Keep native text colors, the orange branding, menus, inputs and images. */
+/* @ Native automatic/manual theme selects black or white reading text. */
+body {
+    --zi-kg-text: #000 !important;
+}
+@media (prefers-color-scheme: dark) {
+    body:not(#light) {
+        --zi-kg-text: #fff !important;
+    }
+}
+body#light {
+    --zi-kg-text: #000 !important;
+}
+body#dark {
+    --zi-kg-text: #fff !important;
+}
+:is(body, body#light, body#dark) :is(.blog-details-wrap, .top-news-area, .top-story-area) :is(h1, h2, h3, h4, h5, h6, p, li, blockquote, figcaption),
+:is(body, body#light, body#dark) :is(.blog-details-wrap, .top-news-area, .top-story-area) :is(h1, h2, h3, h4, h5, h6) a,
+:is(body, body#light, body#dark) :is(.blog-details-wrap, .top-news-area, .top-story-area) :is(h1, h2, h3, h4, h5, h6, p, li, blockquote, figcaption) :is(span, strong, em, b, i):not(a *, button *, pre *, code *, svg *) {
+    color: var(--zi-kg-text) !important;
+    -webkit-text-fill-color: currentColor !important;
+}
+/* @ Keep orange branding, links, menus, inputs and images. */
 /* @ Preserve the orange identity even when the add-on forces transparent pseudo-elements. */
 body .main-header .hero-bottom::before,
 body#dark .main-header .hero-bottom::before {
