@@ -1,0 +1,24 @@
+/* transparency */
+/* @ Reading surfaces follow the site's native light, dark and automatic modes. */
+html,
+body,
+body#dark,
+body#light,
+body .main-header,
+body#dark .main-header,
+body .visitors-area,
+body#dark .visitors-area,
+body .between-header-body-area,
+body#dark .between-header-body-area,
+body .blog-details-area,
+body#dark .blog-details-area,
+body .top-news-area,
+body#dark .top-news-area,
+body .top-story-area,
+body#dark .top-story-area,
+body .footer-area,
+body#dark .footer-area {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+/* @ Keep native text colors, the orange branding, menus, inputs and images. */
