@@ -27,3 +27,20 @@ body .main-header .hero-bottom::before,
 body#dark .main-header .hero-bottom::before {
     background-image: linear-gradient(90deg, rgb(241, 96, 34) 0%, rgba(255, 77, 77, 0.99608) 100%) !important;
 }
+/* @ The native orange shape has no layout rule above 4000px. */
+@media (min-width: 4001px) {
+    body .main-header .hero-bottom::before {
+        content: "" !important;
+        display: block !important;
+        position: absolute !important;
+        height: 680px !important;
+        left: -50px !important;
+        right: -70px !important;
+        top: -374px !important;
+        bottom: -292px !important;
+        border-bottom-left-radius: 270px !important;
+        border-bottom-right-radius: 270px !important;
+        transform: rotate(6deg) !important;
+        z-index: 1 !important;
+    }
+}
