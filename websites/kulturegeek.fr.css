@@ -22,3 +22,8 @@ body#dark .footer-area {
     background-image: none !important;
 }
 /* @ Keep native text colors, the orange branding, menus, inputs and images. */
+/* @ Preserve the orange identity even when the add-on forces transparent pseudo-elements. */
+body .main-header .hero-bottom::before,
+body#dark .main-header .hero-bottom::before {
+    background-image: linear-gradient(90deg, rgb(241, 96, 34) 0%, rgba(255, 77, 77, 0.99608) 100%) !important;
+}
