@@ -65,3 +65,61 @@ body#dark .main-header .hero-bottom::before {
         z-index: 1 !important;
     }
 }
+
+/* @ Include reading ancestors and retain the orange header's own paint layer. */
+html:root body :is(.blog-details-area, .top-news-area, .top-story-area, .between-header-body-area),
+html:root body .blog-details-area > .container,
+html:root body .blog-details-area > .container > .ctboc,
+html:root body .blog-details-wrap {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+/* @ A hidden ad rail releases its native space before WildFlow is enabled. */
+@media (min-width: 992px) {
+  body .blog-details-area .ctboc > .row:has(> #sidebar):has(> .col-lg-8 .blog-details-wrap) {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+  }
+  body .blog-details-area .ctboc > .row:has(> #sidebar) > .col-lg-8:has(.blog-details-wrap) {
+    flex: 1 1 0% !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+  }
+  body .blog-details-area .ctboc > .row:has(> .col-lg-8 .blog-details-wrap) > #sidebar {
+    flex: 0 0 33.333333% !important;
+    min-width: 0 !important;
+  }
+}
+
+/* @ Let the latest-news list fill the native home frame when its sidebar is hidden by the visitor. */
+@media (min-width: 992px) {
+    body .top-news-area > .container > .ctboc > .row:has(> #sidebar) {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: flex-start !important;
+    }
+    body .top-news-area > .container > .ctboc > .row:has(> #sidebar) > .col-lg-8 {
+        flex: 1 1 0% !important;
+        width: auto !important;
+        max-width: none !important;
+        min-width: 0 !important;
+    }
+    body .top-news-area > .container > .ctboc > .row > #sidebar {
+        flex: 0 0 33.333333% !important;
+        min-width: 0 !important;
+    }
+}
+
+/* @ Remove the home sidebar shell: blocked ads otherwise still reserve one third of the row. */
+@media (min-width: 992px) {
+  body .top-news-area > .container > .ctboc > .row > #sidebar {
+    display: none !important;
+  }
+}
+
+/* @ Articles also retain an empty sidebar shell after cosmetic ad blocking. */
+@media (min-width: 992px) {
+ body .blog-details-area .ctboc > .row:has(> .col-lg-8 .blog-details-wrap) > #sidebar { display: none !important; }
+}
