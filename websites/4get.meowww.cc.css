@@ -1,0 +1,60 @@
+/* 4get-transparency $ Transparent page background with subtle translucent surfaces */
+/* @4get uses CSS variables for every theme, so only the page background is removed and solid surfaces are turned into translucent overlays */
+html,
+body {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.searchbox,
+.thumb-wrap,
+.thumb-wrap .thumb,
+.web .type,
+.web .info-table,
+.web .wiki-head tr:nth-child(odd),
+.about table tr:nth-child(odd),
+.instances tbody tr:nth-child(even),
+.code-inline {
+  background: rgba(128, 128, 128, 0.08) !important;
+}
+
+.web .info-table tr:nth-child(even),
+.code,
+.duration {
+  background: rgba(128, 128, 128, 0.14) !important;
+}
+
+.searchbox {
+  backdrop-filter: blur(12px) !important;
+}
+
+.nextpage:hover,
+.autocomplete .entry:hover,
+.autocomplete .entry:focus,
+.instances tbody tr:hover,
+.instances th:hover {
+  background: rgba(128, 128, 128, 0.2) !important;
+}
+
+/* @the collapsed answer faded into the solid page color, use a mask instead */
+.web .answer::after {
+  display: none !important;
+}
+
+.web .spoiler:not(:checked) + .answer {
+  mask-image: linear-gradient(to bottom, black calc(100% - 34px), transparent) !important;
+}
+
+/* 4get-blurred popups $ Frosted glass look for autocomplete, dropdowns and popups */
+.autocomplete,
+.favicon-dropdown,
+.instances thead,
+.instances .popup {
+  background: rgba(40, 40, 40, 0.6) !important;
+  backdrop-filter: blur(16px) saturate(140%) !important;
+}
+
+#popup-status {
+  background: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(16px) !important;
+}
