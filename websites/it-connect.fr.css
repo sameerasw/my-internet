@@ -1,0 +1,42 @@
+/* transparency */
+/* @ Clear the page, reading surfaces and header; preserve menus, code blocks and form controls. */
+html,
+body,
+#page,
+#cm-content,
+#cm-masthead,
+.cm-top-bar,
+.breadcrumb-itc,
+#toc_container,
+.aioseo-author-bio-compact,
+.bloc-partage {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* @ Keep text readable against Zen's light and dark backgrounds. */
+:root {
+  --zen-itconnect-text: #000 !important;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --zen-itconnect-text: #fff !important;
+  }
+}
+body,
+.cm-top-bar,
+.cm-top-bar a,
+#cm-content .cm-entry-title,
+#cm-content .cm-entry-title a,
+#cm-content .cm-entry-meta,
+#cm-content .cm-entry-meta a,
+#cm-content .cm-entry-content,
+#cm-content .cm-entry-summary,
+#cm-content .cm-entry-summary :is(p, li, h1, h2, h3, h4, h5, h6, strong, b, em, blockquote),
+#cm-content .cm-entry-content :is(p, li, h1, h2, h3, h4, h5, h6, strong, b, em, blockquote),
+.breadcrumb-itc,
+.breadcrumb-itc a,
+#toc_container,
+#toc_container a {
+  color: var(--zen-itconnect-text) !important;
+}
