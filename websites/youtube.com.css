@@ -471,10 +471,10 @@ yt-searchbox:has(.ytSearchboxComponentInputBoxHasFocus) {
 
   .ytSearchboxComponentInputBox,
   #i0 {
-    background-color: #fffb !important;
+    background-color: color-mix(in srgb, var(--darkreader-neutral-background, #fff) 73.33%, transparent) !important;
 
     @media (prefers-color-scheme: dark) {
-      background-color: #000b !important;
+      background-color: color-mix(in srgb, var(--darkreader-neutral-background, #000) 73.33%, transparent) !important;
     }
 
     box-shadow: black 0 0 30px !important;
@@ -597,11 +597,11 @@ ytlr-watch-metadata,
 .ytVirtualListItem:not(.ytVirtualListItemSelected) ytlr-comment-renderer,
 .ytLrChannelHeaderRendererMetadata,
 ytlr-surface-page::before {
-  background-color: #fff7 !important;
+  background-color: color-mix(in srgb, var(--darkreader-neutral-background, #fff) 46.67%, transparent) !important;
   backdrop-filter: blur(15px) !important;
 
   @media (prefers-color-scheme: dark) {
-    background-color: #0007 !important;
+    background-color: color-mix(in srgb, var(--darkreader-neutral-background, #000) 46.67%, transparent) !important;
   }
 }
 
