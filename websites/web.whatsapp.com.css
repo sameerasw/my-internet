@@ -30,6 +30,7 @@ body,
   --WDS-systems-bubble-surface-system: var(--WDS-surface-highlight) !important;
   --WDS-systems-bubble-surface-incoming: var(--WDS-surface-highlight) !important;
   --WDS-systems-bubble-surface-outgoing: var(--WDS-surface-highlight) !important;
+  --WDS-systems-bubble-surface-e2e: var(--WDS-surface-highlight) !important;
   --compose-input-background: var(--WDS-surface-highlight) !important;
   --background-default-hover: var(--WDS-surface-highlight) !important;
   --background-lightest-hover: var(--WDS-surface-highlight) !important;
@@ -39,6 +40,7 @@ body,
   --panel-input-background: var(--WDS-surface-highlight) !important;
   --chevron-button-background: var(--WDS-surface-highlight) !important;
   --notification-e2e-background: var(--WDS-surface-highlight) !important;
+  --notification-non-e2e-background: var(--WDS-surface-highlight) !important;
 }
 
 .x12peec7 {
@@ -73,7 +75,7 @@ body,
 
 .app-wrapper-web {
   &:has(>div:last-child>div>div>div>div>[data-menu-content], #expressions-panel-container>span>div, >span:nth-child(3)>div) {
-    #side, #main [data-testid="conversation-panel-messages"], [data-testid="drawer-left"], [data-testid="status-player-media"] {
+    #side, #main [data-testid="conversation-panel-messages"], #main>span:nth-child(2), [data-testid="drawer-left"], [data-testid="status-player-media"] {
       filter: blur(20px) !important;
     }
   }
