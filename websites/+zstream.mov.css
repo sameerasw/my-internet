@@ -1,4 +1,4 @@
-/* pstream-transparency $ Apply transparent backgrounds to the pages main containers */
+/* zstream-transparency $ Apply transparent backgrounds to the pages main containers */
 html,
 body,
 #root,
@@ -25,47 +25,47 @@ body,
   display: none !important;
 }
 
-/* pstream-darkreader $ Enables Dark Reader compatibility by making backgrounds transparent */
+/* zstream-darkreader $ Enables Dark Reader compatibility by making backgrounds transparent */
 :root {
   --darkreader-background-ffffff: transparent !important;
 }
 
-/* pstream-no footer $ Removes the footer section from page layout */
+/* zstream-no footer $ Removes the footer section from page layout */
 .flex.min-h-screen.flex-col > footer {
   display: none !important;
 }
 
-/* pstream-no adverts $ Removes the advertisements popup at the top of the page */
+/* zstream-no adverts $ Removes the advertisements popup at the top of the page */
 .w-fit.max-w-\[32rem\].mx-auto.relative.group.pb-4 {
   display: none !important;
 }
 
-/* pstream-no top shadow $ Removes the shadow overlay at the top of the page */
+/* zstream-no top shadow $ Removes the shadow overlay at the top of the page */
 .top-content.fixed.z-\[20\].pointer-events-none.left-0.right-0.top-0.min-h-\[150px\] {
   display: none !important;
 }
 
-/* pstream-no top lightbar $ Removes the decorative "lightbar" element at the top of the page */
+/* zstream-no top lightbar $ Removes the decorative "lightbar" element at the top of the page */
 .absolute.inset-x-0.top-0.flex.h-\[88px\].items-center.justify-center {
   display: none !important;
 }
 
-/* pstream-no flare light $ Removes the decorative flare effects (mouse hover/trail effects) for cleaner appearance */
+/* zstream-no flare light $ Removes the decorative flare effects (mouse hover/trail effects) for cleaner appearance */
 .flare-light {
   display: none !important;
 }
 
-/* pstream-no heading text $ Removes the "heading" text element from the top of the page */
+/* zstream-no heading text $ Removes the "heading" text element from the top of the page */
 h1.text-2xl {
   display: none !important;
 }
 
-/* pstream-no backtotop btn $ Removes the "back to top" button at the bottom of the page */
+/* zstream-no backtotop btn $ Removes the "back to top" button at the bottom of the page */
 .fixed.bottom-9.md\:bottom-4.transform.-translate-x-1\/2.z-50.left-12.md\:left-1\/2 {
   display: none !important;
 }
 
-/* pstream-uniform titles $ Prevents card text wrapping for consistent single-line display — disable when using minimal cards */
+/* zstream-uniform titles $ Prevents card text wrapping for consistent single-line display — disable when using minimal cards */
 .relative.mt-4.group.cursor-pointer.user-select-none,
 .line-clamp-3 {
   display: block !important;
@@ -86,7 +86,7 @@ h1.text-2xl {
   }
 }
 
-/* pstream-brighten text $ Increases visibility of text elements and overrides theme text configuration */
+/* zstream-brighten text $ Increases visibility of text elements and overrides theme text configuration */
 * {
   /* Text/icon - neutral (grey / white / black or close) */
   --colors-type-text: 200 200 200 !important;
@@ -101,7 +101,7 @@ h1.text-2xl {
   --colors-mediaCard-badgeText: 164 164 164 !important;
 }
 
-/* pstream-bg opacity $ Sets background opacity levels for containers, buttons, and UI elements */
+/* zstream-bg opacity $ Sets background opacity levels for containers, buttons, and UI elements */
 .bg-background-secondary\/50 {
   background-color: rgb(var(--colors-background-secondary) / 0.3) !important;
 }
@@ -158,7 +158,7 @@ h1.text-2xl {
   --tw-bg-opacity: 0.7 !important;
 }
 
-/* pstream-unified header $ Creates a fixed unified header layout with search bar integration */
+/* zstream-unified header $ Creates a fixed unified header layout with search bar integration */
 div.h-20:nth-child(2).relative.h-20.z-30,
 .w-\[600px\] > div:nth-child(1):not(.space-y-16) {
   position: fixed !important;
